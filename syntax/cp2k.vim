@@ -2450,6 +2450,7 @@ syn keyword cp2kKeyword R3
 syn keyword cp2kKeyword RADIAL_GRID
 syn keyword cp2kKeyword RADII
 syn keyword cp2kKeyword RADIUS
+syn keyword cp2kKeyword RANDMAT_SEED
 syn keyword cp2kKeyword RANDOMIZE
 syn keyword cp2kKeyword RANDOMIZE_POS
 syn keyword cp2kKeyword RANDOMIZE_VARIABLES
