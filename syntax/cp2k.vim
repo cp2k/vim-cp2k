@@ -1005,7 +1005,6 @@ syn keyword cp2kSection LS_SCF
 syn keyword cp2kSection LYP
 syn keyword cp2kSection LYP_ADIABATIC
 syn keyword cp2kSection M-SAMPLING
-syn keyword cp2kSection MACHINE_ARCH
 syn keyword cp2kSection MAP
 syn keyword cp2kSection MAPPING
 syn keyword cp2kSection MASS
@@ -2102,7 +2101,6 @@ syn keyword cp2kKeyword MD_BUMPS_MAX
 syn keyword cp2kKeyword MEMORY
 syn keyword cp2kKeyword MEMORY_FACTOR
 syn keyword cp2kKeyword MEMORY_PROGRESSION_FACTOR
-syn keyword cp2kKeyword MEM_POL
 syn keyword cp2kKeyword METADYNAMICS
 syn keyword cp2kKeyword METHOD
 syn keyword cp2kKeyword METHOD_TYPE
@@ -2143,7 +2141,6 @@ syn keyword cp2kKeyword MOVES_FILE_NAME
 syn keyword cp2kKeyword MOVE_CENTER_OF_MASS
 syn keyword cp2kKeyword MO_INDEX_RANGE MO_RANGE RANGE
 syn keyword cp2kKeyword MPI
-syn keyword cp2kKeyword MPI_REORDERING
 syn keyword cp2kKeyword MSD_PER_KIND
 syn keyword cp2kKeyword MSD_PER_MOLKIND
 syn keyword cp2kKeyword MSD_PER_REGION
@@ -2377,27 +2374,20 @@ syn keyword cp2kKeyword PRESAMPLE
 syn keyword cp2kKeyword PRESSURE
 syn keyword cp2kKeyword PRESSURE_TOLERANCE
 syn keyword cp2kKeyword PRINT_ALL
-syn keyword cp2kKeyword PRINT_BRANCH
 syn keyword cp2kKeyword PRINT_CELL
 syn keyword cp2kKeyword PRINT_COORDS
 syn keyword cp2kKeyword PRINT_DIPOLE
 syn keyword cp2kKeyword PRINT_ENERGIES
 syn keyword cp2kKeyword PRINT_FIT_ERROR FIT_ERROR
 syn keyword cp2kKeyword PRINT_FORCES
-syn keyword cp2kKeyword PRINT_FULL
 syn keyword cp2kKeyword PRINT_GOP
 syn keyword cp2kKeyword PRINT_GW_DETAILS
 syn keyword cp2kKeyword PRINT_LEVEL IOLEVEL
 syn keyword cp2kKeyword PRINT_ONLY_ACC
-syn keyword cp2kKeyword PRINT_PROC
-syn keyword cp2kKeyword PRINT_RESUME
 syn keyword cp2kKeyword PRINT_TEST_OUTPUT
-syn keyword cp2kKeyword PRINT_THREAD
-syn keyword cp2kKeyword PRINT_THREAD_CUR
 syn keyword cp2kKeyword PRIORITY_BUFFERS
 syn keyword cp2kKeyword PRIORITY_STREAMS
 syn keyword cp2kKeyword PROB
-syn keyword cp2kKeyword PROCESS
 syn keyword cp2kKeyword PROCESS_INHOMOGENOUS
 syn keyword cp2kKeyword PROC_DIST_TYPE
 syn keyword cp2kKeyword PROC_PER_REPLICA
@@ -2624,8 +2614,6 @@ syn keyword cp2kKeyword SCALING A_SCALING
 syn keyword cp2kKeyword SCALING_FACTOR
 syn keyword cp2kKeyword SCF_GUESS
 syn keyword cp2kKeyword SCF_TYPE
-syn keyword cp2kKeyword SCHED_MPI
-syn keyword cp2kKeyword SCHED_THREAD
 syn keyword cp2kKeyword SCHEME
 syn keyword cp2kKeyword SCREEN_ON_INITIAL_P
 syn keyword cp2kKeyword SCREEN_P_FORCES
@@ -2753,7 +2741,6 @@ syn keyword cp2kKeyword TEMP_TOL_SLOW
 syn keyword cp2kKeyword TEMP_TOL_STEPS
 syn keyword cp2kKeyword TEST_TYPE
 syn keyword cp2kKeyword THETA0
-syn keyword cp2kKeyword THREAD
 syn keyword cp2kKeyword THRESHOLD
 syn keyword cp2kKeyword TH_TORB
 syn keyword cp2kKeyword TILE_CUBES
