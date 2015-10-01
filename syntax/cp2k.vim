@@ -80,6 +80,7 @@ syn keyword cp2kConstant 93
 syn keyword cp2kConstant AC
 syn keyword cp2kConstant ACC
 syn keyword cp2kConstant AD
+syn keyword cp2kConstant ADAPT
 syn keyword cp2kConstant ADD
 syn keyword cp2kConstant AD_LANGEVIN
 syn keyword cp2kConstant ALL
@@ -1784,6 +1785,7 @@ syn keyword cp2kKeyword EPS_SINGULARITY_CURVATURES
 syn keyword cp2kKeyword EPS_SKIP_SUB_DIAG
 syn keyword cp2kKeyword EPS_SPLINE
 syn keyword cp2kKeyword EPS_STD_DIAG
+syn keyword cp2kKeyword EPS_STEP_SIZE
 syn keyword cp2kKeyword EPS_STORAGE
 syn keyword cp2kKeyword EPS_STORAGE_SCALING EPS_STORAGE
 syn keyword cp2kKeyword EPS_TAYLOR EPSTAYLOR
@@ -2773,6 +2775,7 @@ syn keyword cp2kKeyword TIMESTEP
 syn keyword cp2kKeyword TIME_CUMUL
 syn keyword cp2kKeyword TIME_MPI
 syn keyword cp2kKeyword TIME_START_VAL
+syn keyword cp2kKeyword TINY_STEP_SIZE
 syn keyword cp2kKeyword TNADD_METHOD
 syn keyword cp2kKeyword TOL
 syn keyword cp2kKeyword TOTAL_DENSITY
