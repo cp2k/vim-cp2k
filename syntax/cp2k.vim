@@ -2748,6 +2748,8 @@ syn keyword cp2kKeyword TARGET_POT_VIRTUAL
 syn keyword cp2kKeyword TASKS_PER_POINT
 syn keyword cp2kKeyword TASK_TYPE
 syn keyword cp2kKeyword TAU_CUTOFF
+syn keyword cp2kKeyword TC_PRESSURE
+syn keyword cp2kKeyword TC_TEMPERATURE
 syn keyword cp2kKeyword TEMP
 syn keyword cp2kKeyword TEMPDIST_INIT_WIDTH
 syn keyword cp2kKeyword TEMPDIST_UPDATE_HEIGHT
@@ -2764,6 +2766,7 @@ syn keyword cp2kKeyword TEMP_TOL_FAST
 syn keyword cp2kKeyword TEMP_TOL_SLOW
 syn keyword cp2kKeyword TEMP_TOL_STEPS
 syn keyword cp2kKeyword TEST_TYPE
+syn keyword cp2kKeyword THERMOCHEMISTRY
 syn keyword cp2kKeyword THETA0
 syn keyword cp2kKeyword THRESHOLD
 syn keyword cp2kKeyword TH_TORB
