@@ -193,7 +193,6 @@ syn keyword cp2kConstant DDAPC_CONSTRAINT
 syn keyword cp2kConstant DEBUG
 syn keyword cp2kConstant DEFAULT
 syn keyword cp2kConstant DEFINED
-syn keyword cp2kConstant DENSITIES
 syn keyword cp2kConstant DENSITY
 syn keyword cp2kConstant DENSITY_DEPENDENT
 syn keyword cp2kConstant DETAILED
