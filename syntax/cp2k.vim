@@ -1518,10 +1518,10 @@ syn keyword cp2kKeyword CHARGE_EXTENDED
 syn keyword cp2kKeyword CHARGE_OCCUP CHARGE_O
 syn keyword cp2kKeyword CHECK_DIIS
 syn keyword cp2kKeyword CHECK_FIT
-syn keyword cp2kKeyword CHECK_GRADIENT_ABORT
 syn keyword cp2kKeyword CHECK_GRADIENT_TOL
 syn keyword cp2kKeyword CHECK_MOS_CONV
 syn keyword cp2kKeyword CHECK_SYMMETRY
+syn keyword cp2kKeyword CHECK_UNITARY_TOL
 syn keyword cp2kKeyword CHI_PBC
 syn keyword cp2kKeyword CHOLESKY
 syn keyword cp2kKeyword CIF_INFO
