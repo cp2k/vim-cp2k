@@ -1742,6 +1742,7 @@ syn keyword cp2kKeyword EPS_EIGVAL
 syn keyword cp2kKeyword EPS_EIGVAL_DEGEN
 syn keyword cp2kKeyword EPS_ENE
 syn keyword cp2kKeyword EPS_ERROR
+syn keyword cp2kKeyword EPS_FB
 syn keyword cp2kKeyword EPS_FERMI_DIRAC
 syn keyword cp2kKeyword EPS_FILTER
 syn keyword cp2kKeyword EPS_FILTER_MATRIX
