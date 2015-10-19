@@ -409,6 +409,7 @@ syn keyword cp2kConstant MM
 syn keyword cp2kConstant MM2
 syn keyword cp2kConstant MM3
 syn keyword cp2kConstant MM4
+syn keyword cp2kConstant MME
 syn keyword cp2kConstant MNDO
 syn keyword cp2kConstant MNDOD
 syn keyword cp2kConstant MOLDEN_RESTART
@@ -824,6 +825,7 @@ syn keyword cp2kSection CUBE_DATA
 syn keyword cp2kSection CURRENT
 syn keyword cp2kSection CURRENT_CUBES
 syn keyword cp2kSection CURVY_STEPS
+syn keyword cp2kSection CUTOFF_CALIB
 syn keyword cp2kSection DAMPING
 syn keyword cp2kSection DAVIDSON
 syn keyword cp2kSection DBCSR
@@ -884,6 +886,9 @@ syn keyword cp2kSection ENERGIES_VAR
 syn keyword cp2kSection ENERGY
 syn keyword cp2kSection ENFORCE_OCCUPATION
 syn keyword cp2kSection EPR
+syn keyword cp2kSection ERI_MME
+syn keyword cp2kSection ERI_MME_INFO
+syn keyword cp2kSection ERI_MME_TEST
 syn keyword cp2kSection ET_COUPLING
 syn keyword cp2kSection EWALD
 syn keyword cp2kSection EWALD_INFO
@@ -1516,6 +1521,7 @@ syn keyword cp2kKeyword CHARGE
 syn keyword cp2kKeyword CHARGE_BETA CHARGE_B
 syn keyword cp2kKeyword CHARGE_EXTENDED
 syn keyword cp2kKeyword CHARGE_OCCUP CHARGE_O
+syn keyword cp2kKeyword CHECK_ACCURACY
 syn keyword cp2kKeyword CHECK_DIIS
 syn keyword cp2kKeyword CHECK_FIT
 syn keyword cp2kKeyword CHECK_GRADIENT_TOL
@@ -1666,6 +1672,8 @@ syn keyword cp2kKeyword DISTRIBUTION_TYPE
 syn keyword cp2kKeyword DKH_ORDER
 syn keyword cp2kKeyword DM
 syn keyword cp2kKeyword DOT_TREE
+syn keyword cp2kKeyword DO_CALIBRATE_CUTOFF
+syn keyword cp2kKeyword DO_CALIBRATE_GR_SWITCH
 syn keyword cp2kKeyword DO_DSO
 syn keyword cp2kKeyword DO_EWALD
 syn keyword cp2kKeyword DO_FC
@@ -1929,6 +1937,7 @@ syn keyword cp2kKeyword HILL_TAIL_CUTOFF
 syn keyword cp2kKeyword HOST
 syn keyword cp2kKeyword HYDROGENS
 syn keyword cp2kKeyword IGNORE_MISSING_CRITICAL_PARAMS
+syn keyword cp2kKeyword IMAGE_MATRIX_METHOD
 syn keyword cp2kKeyword IMAGE_RESTART_FILE_NAME
 syn keyword cp2kKeyword INDICES
 syn keyword cp2kKeyword INERTIA
@@ -2063,6 +2072,7 @@ syn keyword cp2kKeyword MATMUL
 syn keyword cp2kKeyword MATRIX_CLUSTER_TYPE
 syn keyword cp2kKeyword MATRIX_VXC
 syn keyword cp2kKeyword MAT_EXP
+syn keyword cp2kKeyword MAX
 syn keyword cp2kKeyword MAXR
 syn keyword cp2kKeyword MAX_ALLOWED_STEP
 syn keyword cp2kKeyword MAX_ANGULAR_MOMENTUM
@@ -2122,6 +2132,7 @@ syn keyword cp2kKeyword MEMORY_PROGRESSION_FACTOR
 syn keyword cp2kKeyword METADYNAMICS
 syn keyword cp2kKeyword METHOD
 syn keyword cp2kKeyword METHOD_TYPE
+syn keyword cp2kKeyword MIN
 syn keyword cp2kKeyword MINIMAX_QUADRATURE MINIMAX
 syn keyword cp2kKeyword MINIMIZER
 syn keyword cp2kKeyword MIN_DISP
@@ -2179,6 +2190,7 @@ syn keyword cp2kKeyword MU_MIN_0
 syn keyword cp2kKeyword MU_PEXSI_SAFE_GUARD
 syn keyword cp2kKeyword N
 syn keyword cp2kKeyword N0 N_0
+syn keyword cp2kKeyword NAB_MIN
 syn keyword cp2kKeyword NATOMS
 syn keyword cp2kKeyword NBEADS
 syn keyword cp2kKeyword NBIN
@@ -2230,6 +2242,7 @@ syn keyword cp2kKeyword NPROC_REP
 syn keyword cp2kKeyword NP_LS
 syn keyword cp2kKeyword NP_SYMB_FACT
 syn keyword cp2kKeyword NREORTHO N_REORTHO REORTHO REORTHOGONALITAZIONS
+syn keyword cp2kKeyword NREP
 syn keyword cp2kKeyword NRESPA
 syn keyword cp2kKeyword NROW_BLOCK
 syn keyword cp2kKeyword NROW_BLOCKS
@@ -2263,6 +2276,7 @@ syn keyword cp2kKeyword NUM_POLYNOM
 syn keyword cp2kKeyword NUM_SLATER
 syn keyword cp2kKeyword NUM_STEPS
 syn keyword cp2kKeyword NVIRIAL
+syn keyword cp2kKeyword NZET
 syn keyword cp2kKeyword N_ABSCISSAE
 syn keyword cp2kKeyword N_BCH_HISTORY
 syn keyword cp2kKeyword N_CELLS
@@ -2273,6 +2287,7 @@ syn keyword cp2kKeyword N_GRIDPOINTS
 syn keyword cp2kKeyword N_HISTORY_VEC NDIIS N_DIIS N_BROYDEN
 syn keyword cp2kKeyword N_KPOINTS
 syn keyword cp2kKeyword N_LOOP
+syn keyword cp2kKeyword N_MINIMAX
 syn keyword cp2kKeyword N_PRTN
 syn keyword cp2kKeyword N_RESP_FAST
 syn keyword cp2kKeyword N_SIDES
@@ -2398,6 +2413,7 @@ syn keyword cp2kKeyword PRESAMPLE
 syn keyword cp2kKeyword PRESSURE
 syn keyword cp2kKeyword PRESSURE_TOLERANCE
 syn keyword cp2kKeyword PRINT_ALL
+syn keyword cp2kKeyword PRINT_CALIB
 syn keyword cp2kKeyword PRINT_CELL
 syn keyword cp2kKeyword PRINT_COORDS
 syn keyword cp2kKeyword PRINT_DIPOLE
@@ -2903,6 +2919,8 @@ syn keyword cp2kKeyword Y_LOW
 syn keyword cp2kKeyword Y_XTNT
 syn keyword cp2kKeyword ZBL_SCATTERING
 syn keyword cp2kKeyword ZERO_INITIAL_GUESS
+syn keyword cp2kKeyword ZET_MAX
+syn keyword cp2kKeyword ZET_MIN
 syn keyword cp2kKeyword ZMP_CONSTRAINT
 syn keyword cp2kKeyword ZORA_TYPE
 syn keyword cp2kKeyword ZRANGE
