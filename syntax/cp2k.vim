@@ -1384,6 +1384,8 @@ syn keyword cp2kKeyword ATOM_TYPE
 syn keyword cp2kKeyword ATYPE
 syn keyword cp2kKeyword AUTOGEN_EXCLUDE_LISTS
 syn keyword cp2kKeyword AUTO_CUTOFF_SCALE
+syn keyword cp2kKeyword AUTO_RMAX_SCALE
+syn keyword cp2kKeyword AUTO_RMIN_SCALE
 syn keyword cp2kKeyword AUX_BASIS_SET AUXILIARY_BASIS_SET AUX_BASIS
 syn keyword cp2kKeyword AUX_FIT_BASIS_SET AUXILIARY_FIT_BASIS_SET AUX_FIT_BASIS
 syn keyword cp2kKeyword AVBMC_ATOM
@@ -2840,6 +2842,7 @@ syn keyword cp2kKeyword USE_MPI_RMA
 syn keyword cp2kKeyword USE_OLD_GAUGE_ATOM
 syn keyword cp2kKeyword USE_PLUMED
 syn keyword cp2kKeyword USE_RAT_FUN_OPT
+syn keyword cp2kKeyword USE_REPEAT_METHOD
 syn keyword cp2kKeyword USE_SCF_ENERGY_INFO
 syn keyword cp2kKeyword UTIL_INFO
 syn keyword cp2kKeyword U_MINUS_J
