@@ -139,6 +139,7 @@ syn keyword cp2kConstant BROYDEN_MIXING_NEW
 syn keyword cp2kConstant BSSE
 syn keyword cp2kConstant BUFFER
 syn keyword cp2kConstant CALC_MATRIX
+syn keyword cp2kConstant CAMBRIDGE
 syn keyword cp2kConstant CAUCHY
 syn keyword cp2kConstant CAUCHY_SUBSPACE
 syn keyword cp2kConstant CD3
@@ -1386,6 +1387,7 @@ syn keyword cp2kKeyword AUTOGEN_EXCLUDE_LISTS
 syn keyword cp2kKeyword AUTO_CUTOFF_SCALE
 syn keyword cp2kKeyword AUTO_RMAX_SCALE
 syn keyword cp2kKeyword AUTO_RMIN_SCALE
+syn keyword cp2kKeyword AUTO_VDW_RADII_TABLE
 syn keyword cp2kKeyword AUX_BASIS_SET AUXILIARY_BASIS_SET AUX_BASIS
 syn keyword cp2kKeyword AUX_FIT_BASIS_SET AUXILIARY_FIT_BASIS_SET AUX_FIT_BASIS
 syn keyword cp2kKeyword AVBMC_ATOM
