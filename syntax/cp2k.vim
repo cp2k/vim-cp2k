@@ -252,6 +252,7 @@ syn keyword cp2kConstant EVERY_STEP
 syn keyword cp2kConstant EWALD
 syn keyword cp2kConstant EWALD_GKS
 syn keyword cp2kConstant EWALD_R3
+syn keyword cp2kConstant EXACT
 syn keyword cp2kConstant EXHAUSTIVE
 syn keyword cp2kConstant EXP
 syn keyword cp2kConstant EXPER
@@ -496,6 +497,7 @@ syn keyword cp2kConstant PDG
 syn keyword cp2kConstant PDGEMM
 syn keyword cp2kConstant PERIODIC
 syn keyword cp2kConstant PEXSI
+syn keyword cp2kConstant PIMD
 syn keyword cp2kConstant PINT
 syn keyword cp2kConstant PIPEK
 syn keyword cp2kConstant PM3
@@ -556,6 +558,7 @@ syn keyword cp2kConstant RM1
 syn keyword cp2kConstant ROHF
 syn keyword cp2kConstant ROTINV
 syn keyword cp2kConstant ROW
+syn keyword cp2kConstant RPMD
 syn keyword cp2kConstant RT_PROPAGATION
 syn keyword cp2kConstant RT_RESTART
 syn keyword cp2kConstant RVV10
@@ -1932,6 +1935,7 @@ syn keyword cp2kKeyword H
 syn keyword cp2kKeyword HALO_REDUCTION_FACTOR
 syn keyword cp2kKeyword HALO_SIZE
 syn keyword cp2kKeyword HARD_EXP_RADIUS
+syn keyword cp2kKeyword HARM_INT
 syn keyword cp2kKeyword HB_SR_GAMMA
 syn keyword cp2kKeyword HB_SR_PARAM
 syn keyword cp2kKeyword HELIUM_ONLY
