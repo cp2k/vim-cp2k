@@ -1947,6 +1947,7 @@ syn keyword cp2kKeyword HYDROGENS
 syn keyword cp2kKeyword IGNORE_MISSING_CRITICAL_PARAMS
 syn keyword cp2kKeyword IMAGE_MATRIX_METHOD
 syn keyword cp2kKeyword IMAGE_RESTART_FILE_NAME
+syn keyword cp2kKeyword IMAGINARY_TIME_STRIDE
 syn keyword cp2kKeyword INDICES
 syn keyword cp2kKeyword INERTIA
 syn keyword cp2kKeyword INFO_OUT_STEP_SIZE
