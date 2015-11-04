@@ -362,6 +362,7 @@ syn keyword cp2kConstant LBFGS
 syn keyword cp2kConstant LB_ALPHA
 syn keyword cp2kConstant LC
 syn keyword cp2kConstant LDA
+syn keyword cp2kConstant LEGENDRE
 syn keyword cp2kConstant LENGTH
 syn keyword cp2kConstant LENOSKY
 syn keyword cp2kConstant LINEAR_COMBINATION
@@ -2036,6 +2037,7 @@ syn keyword cp2kKeyword LAST_SNAPSHOT
 syn keyword cp2kKeyword LBIAS
 syn keyword cp2kKeyword LDISCRETE
 syn keyword cp2kKeyword LEBEDEV_GRID
+syn keyword cp2kKeyword LEGENDRE
 syn keyword cp2kKeyword LENGTH
 syn keyword cp2kKeyword LEVEL_SHIFT LSHIFT
 syn keyword cp2kKeyword LEVY_CORRELATED
