@@ -1109,6 +1109,7 @@ syn keyword cp2kSection PERIODIC_INFO
 syn keyword cp2kSection PERM
 syn keyword cp2kSection PEXSI
 syn keyword cp2kSection PGF
+syn keyword cp2kSection PILE
 syn keyword cp2kSection PINT
 syn keyword cp2kSection PLANAR
 syn keyword cp2kSection PLANE
@@ -2775,6 +2776,7 @@ syn keyword cp2kKeyword TARGET_POT_VALENCE
 syn keyword cp2kKeyword TARGET_POT_VIRTUAL
 syn keyword cp2kKeyword TASKS_PER_POINT
 syn keyword cp2kKeyword TASK_TYPE
+syn keyword cp2kKeyword TAU
 syn keyword cp2kKeyword TAU_CUTOFF
 syn keyword cp2kKeyword TC_PRESSURE
 syn keyword cp2kKeyword TC_TEMPERATURE
@@ -2795,6 +2797,7 @@ syn keyword cp2kKeyword TEMP_TOL_SLOW
 syn keyword cp2kKeyword TEMP_TOL_STEPS
 syn keyword cp2kKeyword TEST_TYPE
 syn keyword cp2kKeyword THERMOCHEMISTRY
+syn keyword cp2kKeyword THERMOSTAT_SEED
 syn keyword cp2kKeyword THETA0
 syn keyword cp2kKeyword THRESHOLD
 syn keyword cp2kKeyword TH_TORB
