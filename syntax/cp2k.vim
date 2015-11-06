@@ -691,6 +691,7 @@ syn keyword cp2kConstant XALMO_X
 syn keyword cp2kConstant XC_FUNCTIONAL
 syn keyword cp2kConstant XMOL
 syn keyword cp2kConstant XSC
+syn keyword cp2kConstant XSMM
 syn keyword cp2kConstant XTL
 syn keyword cp2kConstant XY
 syn keyword cp2kConstant XYZ
