@@ -1632,6 +1632,7 @@ syn keyword cp2kKeyword DEF_TYPE
 syn keyword cp2kKeyword DEGREES_OF_FREEDOM
 syn keyword cp2kKeyword DELOCALIZE_METHOD
 syn keyword cp2kKeyword DELTA
+syn keyword cp2kKeyword DELTA_ALPHA
 syn keyword cp2kKeyword DELTA_CHARGE
 syn keyword cp2kKeyword DELTA_I_REL DI_REL
 syn keyword cp2kKeyword DELTA_PULSE_DIRECTION
@@ -2709,7 +2710,6 @@ syn keyword cp2kKeyword SKIP_OPTIMIZATION
 syn keyword cp2kKeyword SK_FILE
 syn keyword cp2kKeyword SLOW_GROWTH
 syn keyword cp2kKeyword SMEAR
-syn keyword cp2kKeyword SMOOTH
 syn keyword cp2kKeyword SMOOTHING
 syn keyword cp2kKeyword SMOOTHING_WIDTH ZETA
 syn keyword cp2kKeyword SMOOTH_WIDTH
@@ -2800,6 +2800,7 @@ syn keyword cp2kKeyword TEST_TYPE
 syn keyword cp2kKeyword THERMOCHEMISTRY
 syn keyword cp2kKeyword THERMOSTAT_SEED
 syn keyword cp2kKeyword THETA0
+syn keyword cp2kKeyword THICKNESS
 syn keyword cp2kKeyword THRESHOLD
 syn keyword cp2kKeyword TH_TORB
 syn keyword cp2kKeyword TILE_CUBES
