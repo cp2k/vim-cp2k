@@ -78,7 +78,6 @@ syn keyword cp2kConstant 3POINT_2D
 syn keyword cp2kConstant 407
 syn keyword cp2kConstant 93
 syn keyword cp2kConstant AC
-syn keyword cp2kConstant ACC
 syn keyword cp2kConstant AD
 syn keyword cp2kConstant ADAPT
 syn keyword cp2kConstant ADD
@@ -95,6 +94,7 @@ syn keyword cp2kConstant ASPC
 syn keyword cp2kConstant ATOM
 syn keyword cp2kConstant ATOMIC
 syn keyword cp2kConstant ATOMS
+syn keyword cp2kConstant AUTO
 syn keyword cp2kConstant AUTOMATIC
 syn keyword cp2kConstant AUTOSELECT
 syn keyword cp2kConstant AVX_BLOCK2
