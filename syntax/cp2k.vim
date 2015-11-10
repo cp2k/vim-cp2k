@@ -153,6 +153,7 @@ syn keyword cp2kConstant CHARGE_CONSTRAINED_PROJECTION
 syn keyword cp2kConstant CHARMM
 syn keyword cp2kConstant CHM
 syn keyword cp2kConstant CHOL
+syn keyword cp2kConstant CHOLESKY
 syn keyword cp2kConstant CI-NEB
 syn keyword cp2kConstant CIF
 syn keyword cp2kConstant CIRCUMSCRIBED
@@ -202,6 +203,7 @@ syn keyword cp2kConstant DFTD2
 syn keyword cp2kConstant DFTD3
 syn keyword cp2kConstant DFTD3(BJ)
 syn keyword cp2kConstant DIAG
+syn keyword cp2kConstant DIAGONAL
 syn keyword cp2kConstant DIAGONAL_ANALYTICAL
 syn keyword cp2kConstant DIAGONAL_NUMERICAL
 syn keyword cp2kConstant DIFF
@@ -905,6 +907,7 @@ syn keyword cp2kSection EXTERNAL_DENSITY
 syn keyword cp2kSection EXTERNAL_POTENTIAL
 syn keyword cp2kSection EXTERNAL_POTENTIAL_CUBE
 syn keyword cp2kSection EXTERNAL_VXC
+syn keyword cp2kSection EXTRA_DOF
 syn keyword cp2kSection EXT_LAGRANGE_FS
 syn keyword cp2kSection EXT_LAGRANGE_SS
 syn keyword cp2kSection EXT_LAGRANGE_SS0
@@ -1110,6 +1113,7 @@ syn keyword cp2kSection PERIODIC_INFO
 syn keyword cp2kSection PERM
 syn keyword cp2kSection PEXSI
 syn keyword cp2kSection PGF
+syn keyword cp2kSection PIGLET
 syn keyword cp2kSection PILE
 syn keyword cp2kSection PINT
 syn keyword cp2kSection PLANAR
@@ -2083,6 +2087,7 @@ syn keyword cp2kKeyword MASS
 syn keyword cp2kKeyword MASS_FRACTION MASS
 syn keyword cp2kKeyword MASTER_SLAVE
 syn keyword cp2kKeyword MATMUL
+syn keyword cp2kKeyword MATRICES_FILE_NAME
 syn keyword cp2kKeyword MATRIX_CLUSTER_TYPE
 syn keyword cp2kKeyword MATRIX_VXC
 syn keyword cp2kKeyword MAT_EXP
@@ -2224,6 +2229,7 @@ syn keyword cp2kKeyword NEL
 syn keyword cp2kKeyword NEQUIL_STEPS
 syn keyword cp2kKeyword NEV N_EV EV
 syn keyword cp2kKeyword NEW_PREC_EACH
+syn keyword cp2kKeyword NEXTRA_DOF
 syn keyword cp2kKeyword NGAUSS
 syn keyword cp2kKeyword NGRIDS
 syn keyword cp2kKeyword NGROUPS NGROUP
@@ -2709,6 +2715,7 @@ syn keyword cp2kKeyword SKIP_LOAD_BALANCE_DISTRIBUTED
 syn keyword cp2kKeyword SKIP_OPTIMIZATION
 syn keyword cp2kKeyword SK_FILE
 syn keyword cp2kKeyword SLOW_GROWTH
+syn keyword cp2kKeyword SMATRIX_INIT
 syn keyword cp2kKeyword SMEAR
 syn keyword cp2kKeyword SMOOTHING
 syn keyword cp2kKeyword SMOOTHING_WIDTH ZETA
