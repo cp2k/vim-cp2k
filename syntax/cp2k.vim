@@ -1538,9 +1538,9 @@ syn keyword cp2kKeyword CHARGE_OCCUP CHARGE_O
 syn keyword cp2kKeyword CHECK_ACCURACY
 syn keyword cp2kKeyword CHECK_DIIS
 syn keyword cp2kKeyword CHECK_FIT
-syn keyword cp2kKeyword CHECK_GRADIENT_TOL
+syn keyword cp2kKeyword CHECK_GRADIENT_MCWEENY_TOL
+syn keyword cp2kKeyword CHECK_GRADIENT_PARAM_TOL
 syn keyword cp2kKeyword CHECK_MOS_CONV
-syn keyword cp2kKeyword CHECK_PARAMETRIZATION_TOL
 syn keyword cp2kKeyword CHECK_SYMMETRY
 syn keyword cp2kKeyword CHECK_UNITARY_TOL
 syn keyword cp2kKeyword CHI_PBC
@@ -1796,6 +1796,7 @@ syn keyword cp2kKeyword EPS_PGF_ORB
 syn keyword cp2kKeyword EPS_POL
 syn keyword cp2kKeyword EPS_PPL
 syn keyword cp2kKeyword EPS_PPNL
+syn keyword cp2kKeyword EPS_PREOPT
 syn keyword cp2kKeyword EPS_R
 syn keyword cp2kKeyword EPS_RHO
 syn keyword cp2kKeyword EPS_RHO_GSPACE
@@ -2139,6 +2140,7 @@ syn keyword cp2kKeyword MAX_STEPS
 syn keyword cp2kKeyword MAX_STEPSIZE
 syn keyword cp2kKeyword MAX_STEP_SIZE
 syn keyword cp2kKeyword MAX_TAYLOR
+syn keyword cp2kKeyword MAX_TRS4_PREOPT
 syn keyword cp2kKeyword MAX_VAR_FRACTION
 syn keyword cp2kKeyword MC
 syn keyword cp2kKeyword MCWEENY_EPS
@@ -2429,6 +2431,7 @@ syn keyword cp2kKeyword PRECOND_SOLVER
 syn keyword cp2kKeyword PREFERRED_DIAG_LIBRARY
 syn keyword cp2kKeyword PREFERRED_FFT_LIBRARY
 syn keyword cp2kKeyword PREFIX_ANA_FILES
+syn keyword cp2kKeyword PREOPT_DM_FILE
 syn keyword cp2kKeyword PRESAMPLE
 syn keyword cp2kKeyword PRESSURE
 syn keyword cp2kKeyword PRESSURE_TOLERANCE
