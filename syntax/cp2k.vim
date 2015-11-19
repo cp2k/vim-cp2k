@@ -2140,7 +2140,6 @@ syn keyword cp2kKeyword MAX_STEPS
 syn keyword cp2kKeyword MAX_STEPSIZE
 syn keyword cp2kKeyword MAX_STEP_SIZE
 syn keyword cp2kKeyword MAX_TAYLOR
-syn keyword cp2kKeyword MAX_TRS4_PREOPT
 syn keyword cp2kKeyword MAX_VAR_FRACTION
 syn keyword cp2kKeyword MC
 syn keyword cp2kKeyword MCWEENY_EPS
