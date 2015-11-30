@@ -477,6 +477,7 @@ syn keyword cp2kConstant OL2
 syn keyword cp2kConstant OLD
 syn keyword cp2kConstant OLYP
 syn keyword cp2kConstant ON
+syn keyword cp2kConstant OPLS
 syn keyword cp2kConstant OPTIMIZE_BASIS
 syn keyword cp2kConstant OPTIMIZE_INPUT
 syn keyword cp2kConstant OPTIMIZE_RI_BASIS
