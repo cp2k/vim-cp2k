@@ -116,6 +116,7 @@ syn keyword cp2kConstant BECKE_CONSTRAINT
 syn keyword cp2kConstant BEEFVDW
 syn keyword cp2kConstant BERRY
 syn keyword cp2kConstant BETA
+syn keyword cp2kConstant BEYN
 syn keyword cp2kConstant BFGS
 syn keyword cp2kConstant BFGS_HESS
 syn keyword cp2kConstant BGP
@@ -251,6 +252,7 @@ syn keyword cp2kConstant ESTIMATE
 syn keyword cp2kConstant ETRS
 syn keyword cp2kConstant EV93
 syn keyword cp2kConstant EVERY_STEP
+syn keyword cp2kConstant EVP
 syn keyword cp2kConstant EWALD
 syn keyword cp2kConstant EWALD_GKS
 syn keyword cp2kConstant EWALD_R3
@@ -438,6 +440,8 @@ syn keyword cp2kConstant MULLIKEN_CHARGES
 syn keyword cp2kConstant MULTIPLE_MINIMUM_DEGREE
 syn keyword cp2kConstant MULTIPOLE
 syn keyword cp2kConstant MULTISECANT_MIXING
+syn keyword cp2kConstant MUMPS
+syn keyword cp2kConstant NEGATIVE
 syn keyword cp2kConstant NEUMANN
 syn keyword cp2kConstant NEVER
 syn keyword cp2kConstant NEW
@@ -509,6 +513,7 @@ syn keyword cp2kConstant PM6
 syn keyword cp2kConstant PME
 syn keyword cp2kConstant PNNL
 syn keyword cp2kConstant POINT_CHARGE
+syn keyword cp2kConstant POISTIVE
 syn keyword cp2kConstant POLAK_RIBIERE
 syn keyword cp2kConstant POLY
 syn keyword cp2kConstant PS
@@ -611,6 +616,7 @@ syn keyword cp2kConstant SPLINE2_SMOOTH
 syn keyword cp2kConstant SPLINE3
 syn keyword cp2kConstant SPLINE3_NOPBC
 syn keyword cp2kConstant SPLINE3_SMOOTH
+syn keyword cp2kConstant SPLITSOLVE
 syn keyword cp2kConstant SPME
 syn keyword cp2kConstant SPREADMAX
 syn keyword cp2kConstant SPREADMIN
@@ -620,6 +626,7 @@ syn keyword cp2kConstant STAGE
 syn keyword cp2kConstant STANDARD
 syn keyword cp2kConstant STRICT
 syn keyword cp2kConstant SUM_EIGENVALUES
+syn keyword cp2kConstant SUPERLU
 syn keyword cp2kConstant SWARM
 syn keyword cp2kConstant SYEVD
 syn keyword cp2kConstant SYEVX
@@ -806,6 +813,7 @@ syn keyword cp2kSection CONSTANT_ENV
 syn keyword cp2kSection CONSTRAINT
 syn keyword cp2kSection CONSTRAINT_INFO
 syn keyword cp2kSection CONSTRAIN_EXPONENTS
+syn keyword cp2kSection CONTACT
 syn keyword cp2kSection CONTROL
 syn keyword cp2kSection CONVERGENCE_CONTROL
 syn keyword cp2kSection CONVERGENCE_INFO
@@ -1590,7 +1598,6 @@ syn keyword cp2kKeyword COORD_FILE_FORMAT COORDINATE
 syn keyword cp2kKeyword COORD_FILE_NAME
 syn keyword cp2kKeyword COPY
 syn keyword cp2kKeyword CORE
-syn keyword cp2kKeyword CORES_PER_NODE
 syn keyword cp2kKeyword CORE_CHARGE CORE
 syn keyword cp2kKeyword CORE_CHARGES_RADII
 syn keyword cp2kKeyword CORE_CHARGE_RADII
@@ -1619,6 +1626,7 @@ syn keyword cp2kKeyword CUBE_EVAL_RANGE
 syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_RADIUS
+syn keyword cp2kKeyword CUTOUT
 syn keyword cp2kKeyword CYCLE
 syn keyword cp2kKeyword C_LIST
 syn keyword cp2kKeyword D
@@ -1973,6 +1981,8 @@ syn keyword cp2kKeyword INIT_ARGS
 syn keyword cp2kKeyword INIT_METHOD
 syn keyword cp2kKeyword INIT_U_RAMPING_EACH_SCF
 syn keyword cp2kKeyword INI_DIIS
+syn keyword cp2kKeyword INJECTION_METHOD
+syn keyword cp2kKeyword INJECTION_SIGN
 syn keyword cp2kKeyword INNER_ATOMS
 syn keyword cp2kKeyword INNER_RADIUS
 syn keyword cp2kKeyword INOROT
@@ -2053,6 +2063,7 @@ syn keyword cp2kKeyword LEVY_CORRELATED
 syn keyword cp2kKeyword LEVY_POS_SAMPLE
 syn keyword cp2kKeyword LEVY_SEED
 syn keyword cp2kKeyword LEVY_TEMP_FACTOR
+syn keyword cp2kKeyword LINEAR_SOLVER
 syn keyword cp2kKeyword LINESEARCH LINE_SEARCH
 syn keyword cp2kKeyword LINE_SEARCH
 syn keyword cp2kKeyword LINK_TYPE LINK TYPE LTYPE
@@ -2282,7 +2293,6 @@ syn keyword cp2kKeyword NUMBER_OF_SHELLS
 syn keyword cp2kKeyword NUMBER_OF_WALKERS
 syn keyword cp2kKeyword NUMBER_OF_WORKERS
 syn keyword cp2kKeyword NUMB_POLES
-syn keyword cp2kKeyword NUM_CONTACTS
 syn keyword cp2kKeyword NUM_ELECTRON_INITIAL_TOLERANCE
 syn keyword cp2kKeyword NUM_ELECTRON_PEXSI_TOLERANCE
 syn keyword cp2kKeyword NUM_ENV
@@ -2301,7 +2311,6 @@ syn keyword cp2kKeyword NVIRIAL
 syn keyword cp2kKeyword NZET
 syn keyword cp2kKeyword N_ABSCISSAE
 syn keyword cp2kKeyword N_BCH_HISTORY
-syn keyword cp2kKeyword N_CELLS
 syn keyword cp2kKeyword N_CHEBYSHEV
 syn keyword cp2kKeyword N_DIIS NDIIS
 syn keyword cp2kKeyword N_DOF
@@ -2310,6 +2319,7 @@ syn keyword cp2kKeyword N_HISTORY_VEC NDIIS N_DIIS N_BROYDEN
 syn keyword cp2kKeyword N_KPOINTS
 syn keyword cp2kKeyword N_LOOP
 syn keyword cp2kKeyword N_MINIMAX
+syn keyword cp2kKeyword N_OCC
 syn keyword cp2kKeyword N_PRTN
 syn keyword cp2kKeyword N_RESP_FAST
 syn keyword cp2kKeyword N_SIDES
@@ -2737,6 +2747,7 @@ syn keyword cp2kKeyword SPLINE_INFO
 syn keyword cp2kKeyword SPLINE_ORDER
 syn keyword cp2kKeyword SPLIT_RESTART_FILE
 syn keyword cp2kKeyword STANDARD_ORIENTATION
+syn keyword cp2kKeyword START
 syn keyword cp2kKeyword START_ELEM
 syn keyword cp2kKeyword START_INDEX
 syn keyword cp2kKeyword START_STEP
