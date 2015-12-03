@@ -259,7 +259,6 @@ syn keyword cp2kConstant EWALD_R3
 syn keyword cp2kConstant EXACT
 syn keyword cp2kConstant EXHAUSTIVE
 syn keyword cp2kConstant EXP
-syn keyword cp2kConstant EXPER
 syn keyword cp2kConstant EXPLICIT_ORBITALS
 syn keyword cp2kConstant EXPONENTS
 syn keyword cp2kConstant FALSE
@@ -378,6 +377,7 @@ syn keyword cp2kConstant LIST
 syn keyword cp2kConstant LIU_STOREY
 syn keyword cp2kConstant LLP
 syn keyword cp2kConstant LMKLL
+syn keyword cp2kConstant LOCAL_SCF
 syn keyword cp2kConstant LONGRANGE
 syn keyword cp2kConstant LOW
 syn keyword cp2kConstant LOWDIN
@@ -405,7 +405,6 @@ syn keyword cp2kConstant MINIMA_CRAWLING
 syn keyword cp2kConstant MINIMA_HOPPING
 syn keyword cp2kConstant MINIMIZATION
 syn keyword cp2kConstant MINIMUM
-syn keyword cp2kConstant MISC
 syn keyword cp2kConstant MIXED
 syn keyword cp2kConstant MIXED_BEND_STRETCH
 syn keyword cp2kConstant MIXED_PERIODIC
@@ -513,9 +512,9 @@ syn keyword cp2kConstant PM6
 syn keyword cp2kConstant PME
 syn keyword cp2kConstant PNNL
 syn keyword cp2kConstant POINT_CHARGE
-syn keyword cp2kConstant POISTIVE
 syn keyword cp2kConstant POLAK_RIBIERE
 syn keyword cp2kConstant POLY
+syn keyword cp2kConstant POSITIVE
 syn keyword cp2kConstant PS
 syn keyword cp2kConstant PSEUDO
 syn keyword cp2kConstant PSEUDOPOTENTIAL_OPTIMIZATION
@@ -655,6 +654,7 @@ syn keyword cp2kConstant TP_XFH
 syn keyword cp2kConstant TP_XHH
 syn keyword cp2kConstant TRADITIONAL
 syn keyword cp2kConstant TRANSITION_STATE
+syn keyword cp2kConstant TRANSMISSION
 syn keyword cp2kConstant TRANSPORT
 syn keyword cp2kConstant TRICLINIC
 syn keyword cp2kConstant TRIPLET
@@ -694,6 +694,7 @@ syn keyword cp2kConstant WAVELET
 syn keyword cp2kConstant WB97X-V
 syn keyword cp2kConstant WEIGHT_LIST
 syn keyword cp2kConstant WFN_OPT
+syn keyword cp2kConstant WRITEOUT
 syn keyword cp2kConstant X
 syn keyword cp2kConstant XALMO_1DIAG
 syn keyword cp2kConstant XALMO_SCF
@@ -1655,7 +1656,6 @@ syn keyword cp2kKeyword DELTA_RI DRI
 syn keyword cp2kKeyword DELTA_T
 syn keyword cp2kKeyword DENSITY
 syn keyword cp2kKeyword DENSITY_CUTOFF
-syn keyword cp2kKeyword DENSITY_MATRIX_CONSTRUCTION_METHOD
 syn keyword cp2kKeyword DENSITY_PROPAGATION
 syn keyword cp2kKeyword DENSITY_SMOOTH_CUTOFF_RANGE
 syn keyword cp2kKeyword DEPENDENCIES
@@ -1981,6 +1981,7 @@ syn keyword cp2kKeyword INIT_ARGS
 syn keyword cp2kKeyword INIT_METHOD
 syn keyword cp2kKeyword INIT_U_RAMPING_EACH_SCF
 syn keyword cp2kKeyword INI_DIIS
+syn keyword cp2kKeyword INJECTING_CONTACT
 syn keyword cp2kKeyword INJECTION_METHOD
 syn keyword cp2kKeyword INJECTION_SIGN
 syn keyword cp2kKeyword INNER_ATOMS
@@ -2314,12 +2315,12 @@ syn keyword cp2kKeyword N_BCH_HISTORY
 syn keyword cp2kKeyword N_CHEBYSHEV
 syn keyword cp2kKeyword N_DIIS NDIIS
 syn keyword cp2kKeyword N_DOF
+syn keyword cp2kKeyword N_ELEC
 syn keyword cp2kKeyword N_GRIDPOINTS
 syn keyword cp2kKeyword N_HISTORY_VEC NDIIS N_DIIS N_BROYDEN
 syn keyword cp2kKeyword N_KPOINTS
 syn keyword cp2kKeyword N_LOOP
 syn keyword cp2kKeyword N_MINIMAX
-syn keyword cp2kKeyword N_OCC
 syn keyword cp2kKeyword N_PRTN
 syn keyword cp2kKeyword N_RESP_FAST
 syn keyword cp2kKeyword N_SIDES
@@ -2845,6 +2846,7 @@ syn keyword cp2kKeyword TRANSA
 syn keyword cp2kKeyword TRANSB
 syn keyword cp2kKeyword TRANSFORMATION
 syn keyword cp2kKeyword TRANSPORT
+syn keyword cp2kKeyword TRANSPORT_METHOD
 syn keyword cp2kKeyword TREAT_FORCES_IN_CORE
 syn keyword cp2kKeyword TREAT_LSD_IN_CORE
 syn keyword cp2kKeyword TRUNCATION
