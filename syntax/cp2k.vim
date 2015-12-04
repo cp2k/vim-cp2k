@@ -592,7 +592,6 @@ syn keyword cp2kConstant SIGN_SQRT
 syn keyword cp2kConstant SILENT
 syn keyword cp2kConstant SINGLET
 syn keyword cp2kConstant SINGLETS
-syn keyword cp2kConstant SINV
 syn keyword cp2kConstant SL
 syn keyword cp2kConstant SL2
 syn keyword cp2kConstant SLATER
@@ -1548,7 +1547,7 @@ syn keyword cp2kKeyword CHARGE_OCCUP CHARGE_O
 syn keyword cp2kKeyword CHECK_ACCURACY
 syn keyword cp2kKeyword CHECK_DIIS
 syn keyword cp2kKeyword CHECK_FIT
-syn keyword cp2kKeyword CHECK_GRADIENT_MCWEENY_TOL
+syn keyword cp2kKeyword CHECK_GRADIENT_FULL_TOL
 syn keyword cp2kKeyword CHECK_GRADIENT_PARAM_TOL
 syn keyword cp2kKeyword CHECK_MOS_CONV
 syn keyword cp2kKeyword CHECK_SYMMETRY
@@ -1805,7 +1804,6 @@ syn keyword cp2kKeyword EPS_PGF_ORB
 syn keyword cp2kKeyword EPS_POL
 syn keyword cp2kKeyword EPS_PPL
 syn keyword cp2kKeyword EPS_PPNL
-syn keyword cp2kKeyword EPS_PREOPT
 syn keyword cp2kKeyword EPS_R
 syn keyword cp2kKeyword EPS_RHO
 syn keyword cp2kKeyword EPS_RHO_GSPACE
@@ -2179,6 +2177,7 @@ syn keyword cp2kKeyword MIN_NT_HILLS
 syn keyword cp2kKeyword MIN_OR_MAX
 syn keyword cp2kKeyword MIN_RADIUS
 syn keyword cp2kKeyword MIN_RANKS_PER_POLE
+syn keyword cp2kKeyword MIN_STEP
 syn keyword cp2kKeyword MIXED_PRECISION
 syn keyword cp2kKeyword MIXING ETA
 syn keyword cp2kKeyword MIXING_FRACTION
