@@ -1566,6 +1566,7 @@ syn keyword cp2kKeyword CHECK_GRADIENT_FULL_TOL
 syn keyword cp2kKeyword CHECK_GRADIENT_PARAM_TOL
 syn keyword cp2kKeyword CHECK_MOS_CONV
 syn keyword cp2kKeyword CHECK_SYMMETRY
+syn keyword cp2kKeyword CHECK_S_INV
 syn keyword cp2kKeyword CHECK_UNITARY_TOL
 syn keyword cp2kKeyword CHI_PBC
 syn keyword cp2kKeyword CHOLESKY
