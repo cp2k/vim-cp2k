@@ -1604,6 +1604,9 @@ syn keyword cp2kKeyword CONJUGATOR
 syn keyword cp2kKeyword CONN_FILE_FORMAT CONNECTIVITY
 syn keyword cp2kKeyword CONN_FILE_NAME CONN_FILE
 syn keyword cp2kKeyword CONSTRAINT_INIT
+syn keyword cp2kKeyword CONTOUR_DEF_END CD_END
+syn keyword cp2kKeyword CONTOUR_DEF_OFFSET CD_OFFSET
+syn keyword cp2kKeyword CONTOUR_DEF_START CD_START
 syn keyword cp2kKeyword CONVERGENCE CONV
 syn keyword cp2kKeyword CONV_MOS_PERCENT
 syn keyword cp2kKeyword COORDINATE
