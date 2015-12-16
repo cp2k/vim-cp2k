@@ -2132,6 +2132,7 @@ syn keyword cp2kKeyword MAX_ANGULAR_MOMENTUM
 syn keyword cp2kKeyword MAX_COARSE_GRAINED_WIDTH MAX_CG_WIDTH
 syn keyword cp2kKeyword MAX_CONDITION_NUM
 syn keyword cp2kKeyword MAX_CRAZY_ANGLE
+syn keyword cp2kKeyword MAX_CYCLES
 syn keyword cp2kKeyword MAX_DIIS MAX_DIIS_BUFFER_SIZE
 syn keyword cp2kKeyword MAX_DISK_SPACE
 syn keyword cp2kKeyword MAX_DISP_FILE_NAME
@@ -2204,7 +2205,7 @@ syn keyword cp2kKeyword MIN_RADIUS
 syn keyword cp2kKeyword MIN_RANKS_PER_POLE
 syn keyword cp2kKeyword MIN_STEP
 syn keyword cp2kKeyword MIXED_PRECISION
-syn keyword cp2kKeyword MIXING ETA
+syn keyword cp2kKeyword MIXING
 syn keyword cp2kKeyword MIXING_FRACTION
 syn keyword cp2kKeyword MIXING_FUNCTION
 syn keyword cp2kKeyword MIXING_TYPE
