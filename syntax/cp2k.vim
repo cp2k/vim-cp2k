@@ -2095,6 +2095,7 @@ syn keyword cp2kKeyword LIST_UNOCCUPIED
 syn keyword cp2kKeyword LMAX
 syn keyword cp2kKeyword LMAXN0 LMAXRHO0
 syn keyword cp2kKeyword LMAXN1 LMAXRHO1
+syn keyword cp2kKeyword LMAX_DFTB
 syn keyword cp2kKeyword LOAD_BALANCE_INFO
 syn keyword cp2kKeyword LOCHOMO_RESTART_FILE_NAME
 syn keyword cp2kKeyword LOCK_DISTRIBUTION
