@@ -1119,6 +1119,7 @@ syn keyword cp2kSection OPT_RI_BASIS
 syn keyword cp2kSection ORBITALS
 syn keyword cp2kSection OT
 syn keyword cp2kSection OUTER_SCF
+syn keyword cp2kSection OVERLAP_CONDITION
 syn keyword cp2kSection P86C
 syn keyword cp2kSection PADE
 syn keyword cp2kSection PAIR_POTENTIAL
