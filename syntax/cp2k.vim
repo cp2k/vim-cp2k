@@ -451,6 +451,7 @@ syn keyword cp2kConstant NEGATIVE
 syn keyword cp2kConstant NEUMANN
 syn keyword cp2kConstant NEVER
 syn keyword cp2kConstant NEW
+syn keyword cp2kConstant NEWTON
 syn keyword cp2kConstant NN10
 syn keyword cp2kConstant NN10_SMOOTH
 syn keyword cp2kConstant NN4
@@ -496,6 +497,7 @@ syn keyword cp2kConstant ORIG
 syn keyword cp2kConstant ORIGINAL
 syn keyword cp2kConstant ORTHORHOMBIC
 syn keyword cp2kConstant OT
+syn keyword cp2kConstant OVERLAP
 syn keyword cp2kConstant PADE
 syn keyword cp2kConstant PAIR_POTENTIAL
 syn keyword cp2kConstant PARALLEL
@@ -1364,6 +1366,7 @@ syn keyword cp2kKeyword ACQUISITION_START_TIME
 syn keyword cp2kKeyword ADAPTIVE_EXCLUDE_MOLECULES
 syn keyword cp2kKeyword ADDED_MOS
 syn keyword cp2kKeyword ADD_LAST
+syn keyword cp2kKeyword ADMM
 syn keyword cp2kKeyword ADMM_PURIFICATION_METHOD
 syn keyword cp2kKeyword AINT_PRECOND
 syn keyword cp2kKeyword ALGORITHM
@@ -1795,6 +1798,7 @@ syn keyword cp2kKeyword EPS_EIGVAL
 syn keyword cp2kKeyword EPS_EIGVAL_DEGEN
 syn keyword cp2kKeyword EPS_ENE
 syn keyword cp2kKeyword EPS_ERROR
+syn keyword cp2kKeyword EPS_EV_SC_ITER
 syn keyword cp2kKeyword EPS_FB
 syn keyword cp2kKeyword EPS_FERMI_DIRAC
 syn keyword cp2kKeyword EPS_FILTER
@@ -1854,6 +1858,7 @@ syn keyword cp2kKeyword ESCAPE_HISTORY_LENGTH
 syn keyword cp2kKeyword ESIMATE_ACC_PROB
 syn keyword cp2kKeyword ETA
 syn keyword cp2kKeyword EVAL_ENERGY_FORCES
+syn keyword cp2kKeyword EV_SC_GW_REMOVE_NEG_VIRT_ENERGIES REMOVE_NEG
 syn keyword cp2kKeyword EV_SC_ITER
 syn keyword cp2kKeyword EWALD_ACCURACY
 syn keyword cp2kKeyword EWALD_PRECISION
@@ -1915,6 +1920,7 @@ syn keyword cp2kKeyword FORCE_PAW
 syn keyword cp2kKeyword FORCE_RESCALING
 syn keyword cp2kKeyword FORMAT
 syn keyword cp2kKeyword FRACTION
+syn keyword cp2kKeyword FRACTION_EXX ALPHA
 syn keyword cp2kKeyword FRAGMENTATION_THRESHOLD
 syn keyword cp2kKeyword FRAME_COUNT
 syn keyword cp2kKeyword FRAME_START
@@ -1987,6 +1993,7 @@ syn keyword cp2kKeyword IGNORE_MISSING_CRITICAL_PARAMS
 syn keyword cp2kKeyword IMAGE_MATRIX_METHOD
 syn keyword cp2kKeyword IMAGE_RESTART_FILE_NAME
 syn keyword cp2kKeyword IMAGINARY_TIME_STRIDE
+syn keyword cp2kKeyword IM_TIME IMAG_TIME
 syn keyword cp2kKeyword INDICES
 syn keyword cp2kKeyword INERTIA
 syn keyword cp2kKeyword INFO_OUT_STEP_SIZE
@@ -2210,6 +2217,7 @@ syn keyword cp2kKeyword MIXING
 syn keyword cp2kKeyword MIXING_FRACTION
 syn keyword cp2kKeyword MIXING_FUNCTION
 syn keyword cp2kKeyword MIXING_TYPE
+syn keyword cp2kKeyword MIX_EXCHANGE
 syn keyword cp2kKeyword MM_ATOM_LIST
 syn keyword cp2kKeyword MM_DRIVER
 syn keyword cp2kKeyword MM_INDEX
@@ -2651,6 +2659,8 @@ syn keyword cp2kKeyword RHO_MIN
 syn keyword cp2kKeyword RHO_ZERO RHO0
 syn keyword cp2kKeyword RI_AUX_BASIS_SET RI_MP2_BASIS_SET RI_RPA_BASIS_SET RI_AUX_BASIS
 syn keyword cp2kKeyword RI_G0W0 GW
+syn keyword cp2kKeyword RI_METRIC RI
+syn keyword cp2kKeyword RI_SIGMA_X
 syn keyword cp2kKeyword RMANGLE
 syn keyword cp2kKeyword RMAX
 syn keyword cp2kKeyword RMAX_KIND
@@ -2885,7 +2895,6 @@ syn keyword cp2kKeyword TRANSPORT
 syn keyword cp2kKeyword TRANSPORT_METHOD
 syn keyword cp2kKeyword TREAT_FORCES_IN_CORE
 syn keyword cp2kKeyword TREAT_LSD_IN_CORE
-syn keyword cp2kKeyword TRUNCATION
 syn keyword cp2kKeyword TRUNCATION_RADIUS
 syn keyword cp2kKeyword TRUST_RADIUS
 syn keyword cp2kKeyword TSHPSC_DATA
