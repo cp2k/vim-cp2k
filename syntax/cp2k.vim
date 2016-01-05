@@ -2168,7 +2168,6 @@ syn keyword cp2kKeyword MAX_MEMORY
 syn keyword cp2kKeyword MAX_MOMENT
 syn keyword cp2kKeyword MAX_MULTIPOLE_EXPANSION
 syn keyword cp2kKeyword MAX_N_QM
-syn keyword cp2kKeyword MAX_OUTER_PAO
 syn keyword cp2kKeyword MAX_PAO
 syn keyword cp2kKeyword MAX_PERM_CYCLE
 syn keyword cp2kKeyword MAX_PEXSI_ITER
