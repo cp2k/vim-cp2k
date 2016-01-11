@@ -106,6 +106,7 @@ syn keyword cp2kConstant B3LYP
 syn keyword cp2kConstant B97GRIMME
 syn keyword cp2kConstant B97_GRIMME
 syn keyword cp2kConstant BAND
+syn keyword cp2kConstant BARRIER
 syn keyword cp2kConstant BASIC
 syn keyword cp2kConstant BASIS_OPTIMIZATION
 syn keyword cp2kConstant BASIS_PROJECTION
@@ -524,6 +525,7 @@ syn keyword cp2kConstant PNNL
 syn keyword cp2kConstant POINT_CHARGE
 syn keyword cp2kConstant POLAK_RIBIERE
 syn keyword cp2kConstant POLY
+syn keyword cp2kConstant POLYNOM
 syn keyword cp2kConstant POSITIVE
 syn keyword cp2kConstant PS
 syn keyword cp2kConstant PSEUDO
@@ -1604,6 +1606,7 @@ syn keyword cp2kKeyword COMVEL_TOL
 syn keyword cp2kKeyword CONDITION_NUMBER
 syn keyword cp2kKeyword CONDITION_WEIGHT
 syn keyword cp2kKeyword CONFINEMENT
+syn keyword cp2kKeyword CONFINEMENT_TYPE
 syn keyword cp2kKeyword CONJUGATOR
 syn keyword cp2kKeyword CONN_FILE_FORMAT CONNECTIVITY
 syn keyword cp2kKeyword CONN_FILE_NAME CONN_FILE
