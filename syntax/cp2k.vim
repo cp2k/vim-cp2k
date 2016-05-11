@@ -403,6 +403,7 @@ syn keyword cp2kConstant LOWDIN
 syn keyword cp2kConstant LR
 syn keyword cp2kConstant LRIGPW
 syn keyword cp2kConstant LWDN
+syn keyword cp2kConstant MAO
 syn keyword cp2kConstant MASS
 syn keyword cp2kConstant MASSIVE
 syn keyword cp2kConstant MASTER
@@ -721,6 +722,7 @@ syn keyword cp2kConstant VWN5
 syn keyword cp2kConstant WALL_MINUS
 syn keyword cp2kConstant WALL_PLUS
 syn keyword cp2kConstant WANNIER
+syn keyword cp2kConstant WANNIER_PROJECTION
 syn keyword cp2kConstant WAVEFUNCTION_OPTIMIZATION
 syn keyword cp2kConstant WAVELET
 syn keyword cp2kConstant WB97X-V
