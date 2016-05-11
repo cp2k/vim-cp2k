@@ -3051,6 +3051,7 @@ syn keyword cp2kKeyword WANTED_PROJ_GRADIENT
 syn keyword cp2kKeyword WANTED_REL_F_ERROR
 syn keyword cp2kKeyword WAVEFUNCTIONS
 syn keyword cp2kKeyword WAVELENGTH
+syn keyword cp2kKeyword WEIGHT
 syn keyword cp2kKeyword WEIGHTING_FUNCTION
 syn keyword cp2kKeyword WEIGHTS
 syn keyword cp2kKeyword WEIGHT_DELTA_ENERGY
