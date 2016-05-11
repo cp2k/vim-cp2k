@@ -313,6 +313,7 @@ syn keyword cp2kConstant GAPW
 syn keyword cp2kConstant GAPW_XC
 syn keyword cp2kConstant GAUSS
 syn keyword cp2kConstant GAUSSIAN
+syn keyword cp2kConstant GAUSSIAN_PROCESS
 syn keyword cp2kConstant GAUSS_CHEBYSHEV
 syn keyword cp2kConstant GC_LOG
 syn keyword cp2kConstant GC_SIMPLE
@@ -341,6 +342,7 @@ syn keyword cp2kConstant GPW_HALF_TRANSFORM
 syn keyword cp2kConstant GREEDY
 syn keyword cp2kConstant GRID
 syn keyword cp2kConstant GTH
+syn keyword cp2kConstant GTHEXP
 syn keyword cp2kConstant HAGER_ZHANG
 syn keyword cp2kConstant HARMONIC
 syn keyword cp2kConstant HARTREE-FOCK
@@ -460,6 +462,7 @@ syn keyword cp2kConstant MUMPS
 syn keyword cp2kConstant MWATER
 syn keyword cp2kConstant NEGATIVE
 syn keyword cp2kConstant NEUMANN
+syn keyword cp2kConstant NEURAL_NETWORK
 syn keyword cp2kConstant NEVER
 syn keyword cp2kConstant NEW
 syn keyword cp2kConstant NEWTON
@@ -1072,6 +1075,7 @@ syn keyword cp2kSection LS_SCF
 syn keyword cp2kSection LYP
 syn keyword cp2kSection LYP_ADIABATIC
 syn keyword cp2kSection M-SAMPLING
+syn keyword cp2kSection MACHINE_LEARNING
 syn keyword cp2kSection MAO_ANALYSIS
 syn keyword cp2kSection MAP
 syn keyword cp2kSection MAPPING
@@ -2012,6 +2016,8 @@ syn keyword cp2kKeyword GMAX
 syn keyword cp2kKeyword GOLD_TARGET
 syn keyword cp2kKeyword GPUS_PER_POINT
 syn keyword cp2kKeyword GPW_TYPE
+syn keyword cp2kKeyword GP_NOISE_VAR
+syn keyword cp2kKeyword GP_SCALE
 syn keyword cp2kKeyword GRADIENT_CUTOFF
 syn keyword cp2kKeyword GRID
 syn keyword cp2kKeyword GRID_2D
@@ -2974,11 +2980,13 @@ syn keyword cp2kKeyword TIME_START_VAL
 syn keyword cp2kKeyword TINY_STEP_SIZE
 syn keyword cp2kKeyword TNADD_METHOD
 syn keyword cp2kKeyword TOL
+syn keyword cp2kKeyword TOLERANCE
 syn keyword cp2kKeyword TOTAL_DENSITY
 syn keyword cp2kKeyword TRACE
 syn keyword cp2kKeyword TRACE_MASTER
 syn keyword cp2kKeyword TRACE_MAX
 syn keyword cp2kKeyword TRACE_ROUTINES
+syn keyword cp2kKeyword TRAINING_FILE
 syn keyword cp2kKeyword TRAJ_FILE_NAME
 syn keyword cp2kKeyword TRANSA
 syn keyword cp2kKeyword TRANSB
