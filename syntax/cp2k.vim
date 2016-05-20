@@ -2915,6 +2915,8 @@ syn keyword cp2kKeyword STRESS_TENSOR
 syn keyword cp2kKeyword STRIDE
 syn keyword cp2kKeyword SUBCELLS
 syn keyword cp2kKeyword SUBSET_TYPE
+syn keyword cp2kKeyword SUBSPACE_ATOM
+syn keyword cp2kKeyword SUBSPACE_SHELL
 syn keyword cp2kKeyword SUB_BOX
 syn keyword cp2kKeyword SUB_CONF
 syn keyword cp2kKeyword SURFACE_DIPOLE_CORRECTION SURFACE_DIPOLE SURF_DIP
