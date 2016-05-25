@@ -114,6 +114,7 @@ syn keyword cp2kConstant BAND
 syn keyword cp2kConstant BANDED
 syn keyword cp2kConstant BARRIER
 syn keyword cp2kConstant BASIC
+syn keyword cp2kConstant BASIS_CENTER_OPT
 syn keyword cp2kConstant BASIS_OPTIMIZATION
 syn keyword cp2kConstant BASIS_PROJECTION
 syn keyword cp2kConstant BAZANT
@@ -1967,6 +1968,7 @@ syn keyword cp2kKeyword FIXED_MAGNETIC_MOMENT
 syn keyword cp2kKeyword FIXED_MU
 syn keyword cp2kKeyword FIX_CENTROID_POS
 syn keyword cp2kKeyword FLETCHER_REEVES
+syn keyword cp2kKeyword FLOATING_BASIS_CENTER
 syn keyword cp2kKeyword FLUSH_SHOULD_FLUSH
 syn keyword cp2kKeyword FORCE_BLOCKSIZE
 syn keyword cp2kKeyword FORCE_BLOCK_SIZE
