@@ -2017,6 +2017,7 @@ syn keyword cp2kKeyword GHOST
 syn keyword cp2kKeyword GLB_CONF
 syn keyword cp2kKeyword GLOBAL_GAUSSIAN_RNG
 syn keyword cp2kKeyword GMAX
+syn keyword cp2kKeyword GMIX_P
 syn keyword cp2kKeyword GOLD_TARGET
 syn keyword cp2kKeyword GPUS_PER_POINT
 syn keyword cp2kKeyword GPW_TYPE
