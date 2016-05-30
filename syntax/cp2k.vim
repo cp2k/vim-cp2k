@@ -668,6 +668,7 @@ syn keyword cp2kConstant TAMC
 syn keyword cp2kConstant TAYLOR
 syn keyword cp2kConstant TC2
 syn keyword cp2kConstant TDDFPT
+syn keyword cp2kConstant TDDFPT2
 syn keyword cp2kConstant TDLR
 syn keyword cp2kConstant TEST
 syn keyword cp2kConstant TEST_LSD
@@ -1013,6 +1014,7 @@ syn keyword cp2kSection GOLD
 syn keyword cp2kSection GOODWIN
 syn keyword cp2kSection GRID_INFORMATION
 syn keyword cp2kSection GTH_POTENTIAL
+syn keyword cp2kSection GUESS_VECTORS
 syn keyword cp2kSection GV09
 syn keyword cp2kSection GYRATION_RADIUS
 syn keyword cp2kSection G_TENSOR
@@ -1303,6 +1305,7 @@ syn keyword cp2kSection SUBSYS
 syn keyword cp2kSection SWARM
 syn keyword cp2kSection SYMMETRY
 syn keyword cp2kSection TDDFPT
+syn keyword cp2kSection TDDFPT2
 syn keyword cp2kSection TEMPERATURE
 syn keyword cp2kSection TEMPERATURE_COLVAR
 syn keyword cp2kSection TEMP_CONTROL
@@ -1410,6 +1413,9 @@ syn keyword cp2kKeyword ACTIVE_ELECTRONS
 syn keyword cp2kKeyword ACTIVE_ORBITALS
 syn keyword cp2kKeyword ADAPTIVE_EXCLUDE_MOLECULES
 syn keyword cp2kKeyword ADDED_MOS
+syn keyword cp2kKeyword ADDED_OCC_MOS
+syn keyword cp2kKeyword ADDED_STATES
+syn keyword cp2kKeyword ADD_DEGENERATE_STATES
 syn keyword cp2kKeyword ADD_LAST
 syn keyword cp2kKeyword ADMM
 syn keyword cp2kKeyword ADMM_PURIFICATION_METHOD
@@ -1716,6 +1722,7 @@ syn keyword cp2kKeyword DEBUG_LRI_INTEGRALS
 syn keyword cp2kKeyword DEBUG_STRESS_TENSOR
 syn keyword cp2kKeyword DEFINE_FRAGMENTS
 syn keyword cp2kKeyword DEF_TYPE
+syn keyword cp2kKeyword DEGENERATE_EPS
 syn keyword cp2kKeyword DEGREES_OF_FREEDOM
 syn keyword cp2kKeyword DELOCALIZE_METHOD
 syn keyword cp2kKeyword DELTA
@@ -2392,6 +2399,7 @@ syn keyword cp2kKeyword NROW_BLOCKS
 syn keyword cp2kKeyword NR_NMC_STEPS
 syn keyword cp2kKeyword NR_TEMPERATURE
 syn keyword cp2kKeyword NSKIP NSKIP_MIXING
+syn keyword cp2kKeyword NSTATES
 syn keyword cp2kKeyword NSTEP
 syn keyword cp2kKeyword NSTEPS_IT
 syn keyword cp2kKeyword NSWAPMOVES
@@ -2955,6 +2963,7 @@ syn keyword cp2kKeyword TAU
 syn keyword cp2kKeyword TAU_CUTOFF
 syn keyword cp2kKeyword TC_PRESSURE
 syn keyword cp2kKeyword TC_TEMPERATURE
+syn keyword cp2kKeyword TDDFT_SCF
 syn keyword cp2kKeyword TEMP
 syn keyword cp2kKeyword TEMPDIST_INIT_WIDTH
 syn keyword cp2kKeyword TEMPDIST_UPDATE_HEIGHT
