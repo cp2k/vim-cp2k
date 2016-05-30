@@ -1277,6 +1277,7 @@ syn keyword cp2kSection SHELL_OPT
 syn keyword cp2kSection SHELL_TRAJECTORY
 syn keyword cp2kSection SHELL_VELOCITIES
 syn keyword cp2kSection SHELL_VELOCITY
+syn keyword cp2kSection SHG_INTEGRALS_TEST
 syn keyword cp2kSection SHIELDING_TENSOR
 syn keyword cp2kSection SIC
 syn keyword cp2kSection SIEPMANN
