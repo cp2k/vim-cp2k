@@ -2957,7 +2957,8 @@ syn keyword cp2kKeyword TARGET_LIMIT
 syn keyword cp2kKeyword TARGET_POT_SEMICORE
 syn keyword cp2kKeyword TARGET_POT_VALENCE
 syn keyword cp2kKeyword TARGET_POT_VIRTUAL
-syn keyword cp2kKeyword TASKS_PER_POINT
+syn keyword cp2kKeyword TASKS_PER_ENERGY_POINT
+syn keyword cp2kKeyword TASKS_PER_INTEGRATION_POINT
 syn keyword cp2kKeyword TASK_TYPE
 syn keyword cp2kKeyword TAU
 syn keyword cp2kKeyword TAU_CUTOFF
