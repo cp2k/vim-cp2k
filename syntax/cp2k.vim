@@ -235,6 +235,7 @@ syn keyword cp2kConstant DKH(3)
 syn keyword cp2kConstant DKH(4)
 syn keyword cp2kConstant DKH(5)
 syn keyword cp2kConstant DMC
+syn keyword cp2kConstant DMFT
 syn keyword cp2kConstant DRIVER
 syn keyword cp2kConstant DRSLL
 syn keyword cp2kConstant DSATUR
@@ -597,6 +598,7 @@ syn keyword cp2kConstant ROHF
 syn keyword cp2kConstant ROTINV
 syn keyword cp2kConstant ROW
 syn keyword cp2kConstant RPMD
+syn keyword cp2kConstant RSDFT
 syn keyword cp2kConstant RT_PROPAGATION
 syn keyword cp2kConstant RT_RESTART
 syn keyword cp2kConstant RVV10
@@ -2304,6 +2306,7 @@ syn keyword cp2kKeyword MM_STACK_SIZE
 syn keyword cp2kKeyword MM_STYLE
 syn keyword cp2kKeyword MM_SUBSYS PROTEIN
 syn keyword cp2kKeyword MODEFACTOR
+syn keyword cp2kKeyword MODEL
 syn keyword cp2kKeyword MOLECULE
 syn keyword cp2kKeyword MOLECULES_FILE_NAME
 syn keyword cp2kKeyword MOLNAME SEGNAME
