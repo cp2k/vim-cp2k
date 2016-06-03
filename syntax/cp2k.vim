@@ -2277,6 +2277,7 @@ syn keyword cp2kKeyword MIN
 syn keyword cp2kKeyword MINIMAX
 syn keyword cp2kKeyword MINIMAX_QUADRATURE MINIMAX
 syn keyword cp2kKeyword MINIMIZER
+syn keyword cp2kKeyword MIN_AMPLITUDE
 syn keyword cp2kKeyword MIN_CYCLE_LENGTHS_ALL
 syn keyword cp2kKeyword MIN_CYCLE_LENGTHS_NON
 syn keyword cp2kKeyword MIN_CYCLE_LENGTHS_WDG
