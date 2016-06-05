@@ -1431,6 +1431,7 @@ syn keyword cp2kKeyword ALIST
 syn keyword cp2kKeyword ALL
 syn keyword cp2kKeyword ALLOW_H3O_FORMATION
 syn keyword cp2kKeyword ALLOW_OH_FORMATION
+syn keyword cp2kKeyword ALLOW_O_FORMATION
 syn keyword cp2kKeyword ALLTOALL_SGL
 syn keyword cp2kKeyword ALL_CONF_FILE_NAME
 syn keyword cp2kKeyword ALMO_ALGORITHM
