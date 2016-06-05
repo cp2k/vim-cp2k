@@ -718,6 +718,7 @@ syn keyword cp2kConstant VDW
 syn keyword cp2kConstant VECTOR
 syn keyword cp2kConstant VELOCITY
 syn keyword cp2kConstant VERY_LARGE
+syn keyword cp2kConstant VIBRATIONAL
 syn keyword cp2kConstant VIBRATIONAL_ANALYSIS
 syn keyword cp2kConstant VIRIAL
 syn keyword cp2kConstant VMC
@@ -821,6 +822,7 @@ syn keyword cp2kSection BUCK4RANGES
 syn keyword cp2kSection BUCKMORSE
 syn keyword cp2kSection BUFFER_LINKS
 syn keyword cp2kSection BUFFER_NON_ADAPTIVE
+syn keyword cp2kSection CARTESIAN_EIGS
 syn keyword cp2kSection CASCADE
 syn keyword cp2kSection CELL
 syn keyword cp2kSection CELL_OPT
@@ -1039,6 +1041,7 @@ syn keyword cp2kSection IMPLICIT_PSOLVER
 syn keyword cp2kSection IMPROPER
 syn keyword cp2kSection IMPROPERS
 syn keyword cp2kSection INIT
+syn keyword cp2kSection INITIAL_VIBRATION
 syn keyword cp2kSection INTERACTION_POTENTIAL
 syn keyword cp2kSection INTERATOMIC_DISTANCES
 syn keyword cp2kSection INTERPOLATOR
@@ -2073,6 +2076,7 @@ syn keyword cp2kKeyword INACTIVE_ORBITALS
 syn keyword cp2kKeyword INDICES
 syn keyword cp2kKeyword INERTIA
 syn keyword cp2kKeyword INFO_OUT_STEP_SIZE
+syn keyword cp2kKeyword INITIALIZATION_METHOD
 syn keyword cp2kKeyword INITIAL_CONFIGURATION_INFO
 syn keyword cp2kKeyword INITIAL_DEGREES_OF_FREEDOM
 syn keyword cp2kKeyword INITIAL_GUESS
@@ -3063,6 +3067,7 @@ syn keyword cp2kKeyword VERBOSE
 syn keyword cp2kKeyword VERBOSE_OUTPUT
 syn keyword cp2kKeyword VERBOSITY
 syn keyword cp2kKeyword VERLET_SKIN
+syn keyword cp2kKeyword VIB_EIGS_FILE_NAME
 syn keyword cp2kKeyword VIRIAL
 syn keyword cp2kKeyword VIRIAL_TEMPS
 syn keyword cp2kKeyword VN_CONFIDENCE_LIMIT
