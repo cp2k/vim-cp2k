@@ -1031,7 +1031,8 @@ syn keyword cp2kSection HF_INFO
 syn keyword cp2kSection HILLS
 syn keyword cp2kSection HIRSHFELD
 syn keyword cp2kSection HISTORY
-syn keyword cp2kSection HYDRONIUM
+syn keyword cp2kSection HYDRONIUM_DISTANCE
+syn keyword cp2kSection HYDRONIUM_SHELL
 syn keyword cp2kSection HYPERFINE_COUPLING_TENSOR
 syn keyword cp2kSection IMAGE_CHARGE
 syn keyword cp2kSection IMAGE_CHARGE_INFO
@@ -2537,6 +2538,7 @@ syn keyword cp2kKeyword PENALTY_STRENGTH
 syn keyword cp2kKeyword PERFORM_MU_SCAN
 syn keyword cp2kKeyword PERIODIC
 syn keyword cp2kKeyword PERIODICITY
+syn keyword cp2kKeyword PF
 syn keyword cp2kKeyword PFACTOR
 syn keyword cp2kKeyword PGF_RADII
 syn keyword cp2kKeyword PHASE
@@ -2637,6 +2639,7 @@ syn keyword cp2kKeyword P_QUANTUM_NUMBERS
 syn keyword cp2kKeyword P_SCREEN_CORRECTION_FACTOR
 syn keyword cp2kKeyword QAOH
 syn keyword cp2kKeyword QCUT
+syn keyword cp2kKeyword QF
 syn keyword cp2kKeyword QM EXPON_DENOMINATOR
 syn keyword cp2kKeyword QMMM_SCALE_FACTOR QMMM_CHARGE_SCALE QMMM_CHARGE_FACTOR QMMM_SCALE_CHARGE
 syn keyword cp2kKeyword QM_EXTENDED_SEED_IS_ONLY_CORE_LIST
