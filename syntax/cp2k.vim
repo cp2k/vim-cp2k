@@ -344,7 +344,6 @@ syn keyword cp2kConstant GPW_HALF_TRANSFORM
 syn keyword cp2kConstant GREEDY
 syn keyword cp2kConstant GRID
 syn keyword cp2kConstant GTH
-syn keyword cp2kConstant GTHEXP
 syn keyword cp2kConstant HAGER_ZHANG
 syn keyword cp2kConstant HARMONIC
 syn keyword cp2kConstant HARTREE-FOCK
@@ -2179,6 +2178,10 @@ syn keyword cp2kKeyword LINESEARCH LINE_SEARCH
 syn keyword cp2kKeyword LINE_SEARCH
 syn keyword cp2kKeyword LINK_TYPE LINK TYPE LTYPE
 syn keyword cp2kKeyword LINMIN_GRAD_ONLY
+syn keyword cp2kKeyword LINPOT_INITGUESS_DELTA
+syn keyword cp2kKeyword LINPOT_PRECONDITION_DELTA
+syn keyword cp2kKeyword LINPOT_REGULARIZATION_DELTA
+syn keyword cp2kKeyword LINPOT_REGULARIZATION_STRENGTH
 syn keyword cp2kKeyword LIN_SEARCH_EPS_ERROR
 syn keyword cp2kKeyword LIN_SEARCH_STEP_SIZE_GUESS
 syn keyword cp2kKeyword LIST
@@ -2362,7 +2365,6 @@ syn keyword cp2kKeyword NDIGITS
 syn keyword cp2kKeyword NDIM
 syn keyword cp2kKeyword ND_B EXPON_DENOMINATOR_B
 syn keyword cp2kKeyword NEGLECT_ABC
-syn keyword cp2kKeyword NEIGHBORS
 syn keyword cp2kKeyword NEIGHBOR_LISTS_FROM_SCRATCH
 syn keyword cp2kKeyword NEL
 syn keyword cp2kKeyword NEQUIL_STEPS
