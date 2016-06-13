@@ -1171,6 +1171,7 @@ syn keyword cp2kSection P86C
 syn keyword cp2kSection PADE
 syn keyword cp2kSection PAIR_POTENTIAL
 syn keyword cp2kSection PAO
+syn keyword cp2kSection PAO_DESCRIPTOR
 syn keyword cp2kSection PAO_POTENTIAL
 syn keyword cp2kSection PARAMETER
 syn keyword cp2kSection PBE
