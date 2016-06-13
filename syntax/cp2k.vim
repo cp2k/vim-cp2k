@@ -1717,6 +1717,7 @@ syn keyword cp2kKeyword CYCLE
 syn keyword cp2kKeyword C_LIST
 syn keyword cp2kKeyword D
 syn keyword cp2kKeyword D3BJ_SCALING
+syn keyword cp2kKeyword D3_EXCLUDE_KIND
 syn keyword cp2kKeyword D3_SCALING
 syn keyword cp2kKeyword DAMPING
 syn keyword cp2kKeyword DATA_FILE_NAME
