@@ -1341,6 +1341,7 @@ syn keyword cp2kSection TOTAL_NUMBERS
 syn keyword cp2kSection TOT_DENSITY_CUBE
 syn keyword cp2kSection TPSS
 syn keyword cp2kSection TRAINING_FILES
+syn keyword cp2kSection TRAINING_SET
 syn keyword cp2kSection TRAJECTORY
 syn keyword cp2kSection TRANSITION_STATE
 syn keyword cp2kSection TRANSLATION_VECTOR
@@ -3020,7 +3021,6 @@ syn keyword cp2kKeyword TRACE
 syn keyword cp2kKeyword TRACE_MASTER
 syn keyword cp2kKeyword TRACE_MAX
 syn keyword cp2kKeyword TRACE_ROUTINES
-syn keyword cp2kKeyword TRAINING_FILE
 syn keyword cp2kKeyword TRAJ_FILE_NAME
 syn keyword cp2kKeyword TRANSA
 syn keyword cp2kKeyword TRANSB
