@@ -418,6 +418,7 @@ syn keyword cp2kConstant MCY3
 syn keyword cp2kConstant MC_ANALYSIS
 syn keyword cp2kConstant MD
 syn keyword cp2kConstant ME
+syn keyword cp2kConstant MEAN
 syn keyword cp2kConstant MEASURE
 syn keyword cp2kConstant MEDIUM
 syn keyword cp2kConstant MERLOT
@@ -2611,6 +2612,7 @@ syn keyword cp2kKeyword PRINT_GW_DETAILS
 syn keyword cp2kKeyword PRINT_LEVEL IOLEVEL
 syn keyword cp2kKeyword PRINT_ONLY_ACC
 syn keyword cp2kKeyword PRINT_TEST_OUTPUT
+syn keyword cp2kKeyword PRIOR
 syn keyword cp2kKeyword PRIORITY_BUFFERS
 syn keyword cp2kKeyword PRIORITY_STREAMS
 syn keyword cp2kKeyword PROB
