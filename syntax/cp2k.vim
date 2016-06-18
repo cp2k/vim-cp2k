@@ -378,6 +378,7 @@ syn keyword cp2kConstant LANCZOS
 syn keyword cp2kConstant LANGEVIN
 syn keyword cp2kConstant LARGE
 syn keyword cp2kConstant LAST
+syn keyword cp2kConstant LAZY
 syn keyword cp2kConstant LB
 syn keyword cp2kConstant LB94
 syn keyword cp2kConstant LBFGS
