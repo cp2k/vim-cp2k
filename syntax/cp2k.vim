@@ -546,6 +546,7 @@ syn keyword cp2kConstant POLAK_RIBIERE
 syn keyword cp2kConstant POLY
 syn keyword cp2kConstant POLYNOM
 syn keyword cp2kConstant POSITIVE
+syn keyword cp2kConstant POTENTIAL
 syn keyword cp2kConstant PRIMITIVE
 syn keyword cp2kConstant PS
 syn keyword cp2kConstant PSEUDO
@@ -570,6 +571,7 @@ syn keyword cp2kConstant QUADRUPOLE
 syn keyword cp2kConstant QUARTIC
 syn keyword cp2kConstant QUICKSTEP
 syn keyword cp2kConstant R
+syn keyword cp2kConstant R12
 syn keyword cp2kConstant RAMP
 syn keyword cp2kConstant RANDOM
 syn keyword cp2kConstant READ
@@ -1754,6 +1756,7 @@ syn keyword cp2kKeyword DEOCC_BETA
 syn keyword cp2kKeyword DEPENDENCIES
 syn keyword cp2kKeyword DERIVATIVES
 syn keyword cp2kKeyword DERIVATIVE_METHOD
+syn keyword cp2kKeyword DESCRIPTOR
 syn keyword cp2kKeyword DETERM_COEFF
 syn keyword cp2kKeyword DEVIATION
 syn keyword cp2kKeyword DFTB3_PARAM
