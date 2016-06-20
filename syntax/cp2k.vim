@@ -768,6 +768,7 @@ syn keyword cp2kSection ACC
 syn keyword cp2kSection ACCEPTS
 syn keyword cp2kSection ACID_HYDRONIUM_DISTANCE
 syn keyword cp2kSection ACID_HYDRONIUM_SHELL
+syn keyword cp2kSection ACTION
 syn keyword cp2kSection ACTIVE_SPACE
 syn keyword cp2kSection ADD_MM_CHARGE
 syn keyword cp2kSection ADIABATIC_DYNAMICS
