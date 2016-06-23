@@ -2866,6 +2866,7 @@ syn keyword cp2kKeyword SCALING_FACTOR
 syn keyword cp2kKeyword SCF_GUESS
 syn keyword cp2kKeyword SCF_TYPE
 syn keyword cp2kKeyword SCHEME
+syn keyword cp2kKeyword SCREENING
 syn keyword cp2kKeyword SCREEN_ON_INITIAL_P
 syn keyword cp2kKeyword SCREEN_P_FORCES
 syn keyword cp2kKeyword SC_CHECK_START
