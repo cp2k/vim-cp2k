@@ -763,6 +763,7 @@ syn keyword cp2kConstant Z_SHOT
 
 syn keyword cp2kSection 2PNT
 syn keyword cp2kSection AA_CUBOIDAL
+syn keyword cp2kSection AA_CYLINDRICAL
 syn keyword cp2kSection AA_PLANAR
 syn keyword cp2kSection ACC
 syn keyword cp2kSection ACCEPTS
@@ -1386,7 +1387,6 @@ syn keyword cp2kSection WILLIAMS
 syn keyword cp2kSection WINDING_NUMBER
 syn keyword cp2kSection WINDING_NUMBER_2_AVG
 syn keyword cp2kSection WORKER_RUN_INFO
-syn keyword cp2kSection XAA_CYLINDRICAL
 syn keyword cp2kSection XALMO_OPTIMIZER_PCG
 syn keyword cp2kSection XALPHA
 syn keyword cp2kSection XAS
@@ -2526,6 +2526,7 @@ syn keyword cp2kKeyword P2_BOND2
 syn keyword cp2kKeyword PAIR_CUTOFF
 syn keyword cp2kKeyword PAOH
 syn keyword cp2kKeyword PAO_BASIS_SIZE
+syn keyword cp2kKeyword PARALLEL_AXIS
 syn keyword cp2kKeyword PARALLEL_GROUP_SIZE
 syn keyword cp2kKeyword PARALLEL_PLANE
 syn keyword cp2kKeyword PARALLEL_SCHEME
@@ -3140,6 +3141,7 @@ syn keyword cp2kKeyword XES_EMPTY_HOMO
 syn keyword cp2kKeyword XRANGE
 syn keyword cp2kKeyword XRD_INTERFACE
 syn keyword cp2kKeyword XTL_INFO
+syn keyword cp2kKeyword XTNT
 syn keyword cp2kKeyword XYZ
 syn keyword cp2kKeyword XYZ_INFO
 syn keyword cp2kKeyword X_HI
