@@ -2400,6 +2400,7 @@ syn keyword cp2kKeyword NNOS
 syn keyword cp2kKeyword NN_B EXPON_NUMERATOR_B
 syn keyword cp2kKeyword NOCOMPATIBILITY
 syn keyword cp2kKeyword NOISY_GAMMA NOISYGAMMA
+syn keyword cp2kKeyword NOISY_GAMMA_REGION
 syn keyword cp2kKeyword NONDIAG_ENERGY
 syn keyword cp2kKeyword NONDIAG_ENERGY_STRENGTH
 syn keyword cp2kKeyword NON_MONOTONIC
