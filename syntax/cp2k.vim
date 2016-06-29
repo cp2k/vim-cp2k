@@ -952,6 +952,7 @@ syn keyword cp2kSection ENERGIES
 syn keyword cp2kSection ENERGIES_MINUS_KINETIC
 syn keyword cp2kSection ENERGIES_VAR
 syn keyword cp2kSection ENERGY
+syn keyword cp2kSection ENERGY_WINDOWS
 syn keyword cp2kSection ENFORCE_OCCUPATION
 syn keyword cp2kSection EPR
 syn keyword cp2kSection ERI
@@ -2471,6 +2472,7 @@ syn keyword cp2kKeyword N_RESP_FAST
 syn keyword cp2kKeyword N_SIDES
 syn keyword cp2kKeyword N_SIMPLE_MIX NSIMPLEMIX
 syn keyword cp2kKeyword N_SIZE_MNK_STACKS
+syn keyword cp2kKeyword N_WINDOWS
 syn keyword cp2kKeyword OCCUPATION_NUMBERS OCCNUMS
 syn keyword cp2kKeyword OCCUPATION_PRECONDITIONER
 syn keyword cp2kKeyword OCC_ALPHA
@@ -2610,6 +2612,7 @@ syn keyword cp2kKeyword PRINT_BASIS
 syn keyword cp2kKeyword PRINT_CALIB
 syn keyword cp2kKeyword PRINT_CELL
 syn keyword cp2kKeyword PRINT_COORDS
+syn keyword cp2kKeyword PRINT_CUBES
 syn keyword cp2kKeyword PRINT_DIPOLE
 syn keyword cp2kKeyword PRINT_ENERGIES
 syn keyword cp2kKeyword PRINT_FIT_ERROR FIT_ERROR
