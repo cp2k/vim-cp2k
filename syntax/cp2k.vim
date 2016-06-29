@@ -1908,6 +1908,7 @@ syn keyword cp2kKeyword EPS_NO_ERROR_CHECK
 syn keyword cp2kKeyword EPS_OCCUPATION
 syn keyword cp2kKeyword EPS_OUT
 syn keyword cp2kKeyword EPS_PAO
+syn keyword cp2kKeyword EPS_PGF
 syn keyword cp2kKeyword EPS_PGF_ORB
 syn keyword cp2kKeyword EPS_POL
 syn keyword cp2kKeyword EPS_PPL
