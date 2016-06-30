@@ -795,6 +795,7 @@ syn keyword cp2kSection AUXILIARY_DENSITY_MATRIX_METHOD
 syn keyword cp2kSection AVBMC
 syn keyword cp2kSection AVERAGES
 syn keyword cp2kSection BAND
+syn keyword cp2kSection BAND_STRUCTURE
 syn keyword cp2kSection BANNER
 syn keyword cp2kSection BAROSTAT
 syn keyword cp2kSection BASIS
@@ -1066,6 +1067,7 @@ syn keyword cp2kSection KIND
 syn keyword cp2kSection KINDS
 syn keyword cp2kSection KINETIC_ENERGY
 syn keyword cp2kSection KPOINTS
+syn keyword cp2kSection KPOINT_SET
 syn keyword cp2kSection KRYLOV
 syn keyword cp2kSection K_MATRIX
 syn keyword cp2kSection LAGRANGE_MULTIPLIERS
@@ -1374,6 +1376,7 @@ syn keyword cp2kSection V_XC_CUBE
 syn keyword cp2kSection WALKERS_FILE_NAME
 syn keyword cp2kSection WALL
 syn keyword cp2kSection WALLS
+syn keyword cp2kSection WANNIER90
 syn keyword cp2kSection WANNIER_CENTERS
 syn keyword cp2kSection WANNIER_CUBES
 syn keyword cp2kSection WANNIER_SPREADS
@@ -1951,6 +1954,7 @@ syn keyword cp2kKeyword EXCHANGE_INTEGRALS
 syn keyword cp2kKeyword EXCH_CORRECTION_FUNC
 syn keyword cp2kKeyword EXCH_SCALING_MODEL
 syn keyword cp2kKeyword EXCITATIONS
+syn keyword cp2kKeyword EXCLUDE_BANDS
 syn keyword cp2kKeyword EXCLUDE_EI
 syn keyword cp2kKeyword EXCLUDE_MM
 syn keyword cp2kKeyword EXCLUDE_QM
@@ -1978,6 +1982,7 @@ syn keyword cp2kKeyword FFTW_WISDOM_FILE_NAME
 syn keyword cp2kKeyword FFT_POOL_SCRATCH_LIMIT
 syn keyword cp2kKeyword FILENAME
 syn keyword cp2kKeyword FILE_DENSITY
+syn keyword cp2kKeyword FILE_NAME
 syn keyword cp2kKeyword FILE_RESTART
 syn keyword cp2kKeyword FILE_VXC
 syn keyword cp2kKeyword FILTER_EPS
@@ -2339,6 +2344,7 @@ syn keyword cp2kKeyword MOVES_FILE_NAME
 syn keyword cp2kKeyword MOVE_CENTER_OF_MASS
 syn keyword cp2kKeyword MO_INDEX_RANGE MO_RANGE RANGE
 syn keyword cp2kKeyword MPI
+syn keyword cp2kKeyword MP_GRID
 syn keyword cp2kKeyword MSD_PER_KIND
 syn keyword cp2kKeyword MSD_PER_MOLKIND
 syn keyword cp2kKeyword MSD_PER_REGION
@@ -2878,6 +2884,7 @@ syn keyword cp2kKeyword SCREEN_P_FORCES
 syn keyword cp2kKeyword SC_CHECK_START
 syn keyword cp2kKeyword SD_LIKE
 syn keyword cp2kKeyword SEED
+syn keyword cp2kKeyword SEED_NAME
 syn keyword cp2kKeyword SELECTED_STATES_ATOM_RADIUS
 syn keyword cp2kKeyword SELECTED_STATES_ON_ATOM_LIST
 syn keyword cp2kKeyword SELF_CONSISTENT
@@ -2923,6 +2930,7 @@ syn keyword cp2kKeyword SOO_LIST
 syn keyword cp2kKeyword SOO_RHO_HARD
 syn keyword cp2kKeyword SORT_BY_SELF_TIME
 syn keyword cp2kKeyword SPARSE_MOS
+syn keyword cp2kKeyword SPECIAL_POINT
 syn keyword cp2kKeyword SPECULATIVE_CANCELING
 syn keyword cp2kKeyword SPHERICAL_CUTOFF
 syn keyword cp2kKeyword SPHERICAL_HARMONICS
@@ -3104,6 +3112,7 @@ syn keyword cp2kKeyword WALKER_COMM_FREQUENCY
 syn keyword cp2kKeyword WALKER_ID
 syn keyword cp2kKeyword WALLTIME WALLTI
 syn keyword cp2kKeyword WALL_SKIN
+syn keyword cp2kKeyword WANNIER_FUNCTIONS
 syn keyword cp2kKeyword WANTED_PROJ_GRADIENT
 syn keyword cp2kKeyword WANTED_REL_F_ERROR
 syn keyword cp2kKeyword WAVEFUNCTIONS
