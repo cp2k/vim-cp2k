@@ -2451,6 +2451,7 @@ syn keyword cp2kKeyword NUM_GRADIENT_EPS
 syn keyword cp2kKeyword NUM_GRADIENT_ORDER
 syn keyword cp2kKeyword NUM_GTO
 syn keyword cp2kKeyword NUM_INTERVAL
+syn keyword cp2kKeyword NUM_LAYERS_3D
 syn keyword cp2kKeyword NUM_MC_ELEM
 syn keyword cp2kKeyword NUM_MV_ELEM_IN_CELL
 syn keyword cp2kKeyword NUM_POLE
