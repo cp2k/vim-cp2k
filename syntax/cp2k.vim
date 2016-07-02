@@ -1048,6 +1048,7 @@ syn keyword cp2kSection IMPLICIT
 syn keyword cp2kSection IMPLICIT_PSOLVER
 syn keyword cp2kSection IMPROPER
 syn keyword cp2kSection IMPROPERS
+syn keyword cp2kSection IM_TIME
 syn keyword cp2kSection INIT
 syn keyword cp2kSection INITIAL_VIBRATION
 syn keyword cp2kSection INTERACTION_POTENTIAL
@@ -1431,6 +1432,7 @@ syn keyword cp2kKeyword ADAPTIVE_EXCLUDE_MOLECULES
 syn keyword cp2kKeyword ADDED_MOS
 syn keyword cp2kKeyword ADDED_OCC_MOS
 syn keyword cp2kKeyword ADDED_STATES
+syn keyword cp2kKeyword ADD_CUT_RI ADD_RI_CUT
 syn keyword cp2kKeyword ADD_DEGENERATE_STATES
 syn keyword cp2kKeyword ADD_LAST
 syn keyword cp2kKeyword ADMM
@@ -1865,6 +1867,7 @@ syn keyword cp2kKeyword EPS_ADAPT_SCF
 syn keyword cp2kKeyword EPS_ADDED
 syn keyword cp2kKeyword EPS_CANONICAL
 syn keyword cp2kKeyword EPS_CN
+syn keyword cp2kKeyword EPS_COMM
 syn keyword cp2kKeyword EPS_CONV
 syn keyword cp2kKeyword EPS_CORE_CHARGE
 syn keyword cp2kKeyword EPS_CPC
@@ -1883,6 +1886,7 @@ syn keyword cp2kKeyword EPS_FB
 syn keyword cp2kKeyword EPS_FERMI
 syn keyword cp2kKeyword EPS_FERMI_DIRAC
 syn keyword cp2kKeyword EPS_FILTER
+syn keyword cp2kKeyword EPS_FILTER_IM_TIME
 syn keyword cp2kKeyword EPS_FILTER_MATRIX
 syn keyword cp2kKeyword EPS_FUNCTION
 syn keyword cp2kKeyword EPS_GEO
@@ -1913,6 +1917,7 @@ syn keyword cp2kKeyword EPS_OUT
 syn keyword cp2kKeyword EPS_PAO
 syn keyword cp2kKeyword EPS_PGF
 syn keyword cp2kKeyword EPS_PGF_ORB
+syn keyword cp2kKeyword EPS_PGF_ORB_S
 syn keyword cp2kKeyword EPS_POL
 syn keyword cp2kKeyword EPS_PPL
 syn keyword cp2kKeyword EPS_PPNL
@@ -2065,6 +2070,8 @@ syn keyword cp2kKeyword GROUP_ENERGY_NR
 syn keyword cp2kKeyword GROUP_ENERGY_SIZE
 syn keyword cp2kKeyword GROUP_PARTITION
 syn keyword cp2kKeyword GROUP_SIZE NUMBER_PROC
+syn keyword cp2kKeyword GROUP_SIZE_3C
+syn keyword cp2kKeyword GROUP_SIZE_P
 syn keyword cp2kKeyword GSPACE_SMOOTHING
 syn keyword cp2kKeyword GTH_PPL_RADII
 syn keyword cp2kKeyword GTH_PPNL_RADII
@@ -2293,7 +2300,9 @@ syn keyword cp2kKeyword MCWEENY_MAX_ITER
 syn keyword cp2kKeyword MD
 syn keyword cp2kKeyword MD_BUMPS_MAX
 syn keyword cp2kKeyword MEMORY
+syn keyword cp2kKeyword MEMORY_CUT
 syn keyword cp2kKeyword MEMORY_FACTOR
+syn keyword cp2kKeyword MEMORY_INFO
 syn keyword cp2kKeyword MEMORY_PROGRESSION_FACTOR
 syn keyword cp2kKeyword METADYNAMICS
 syn keyword cp2kKeyword METHOD
@@ -2481,6 +2490,7 @@ syn keyword cp2kKeyword N_SIDES
 syn keyword cp2kKeyword N_SIMPLE_MIX NSIMPLEMIX
 syn keyword cp2kKeyword N_SIZE_MNK_STACKS
 syn keyword cp2kKeyword N_WINDOWS
+syn keyword cp2kKeyword OBARA_SAIKA_OVERLAP OSO
 syn keyword cp2kKeyword OCCUPATION_NUMBERS OCCNUMS
 syn keyword cp2kKeyword OCCUPATION_PRECONDITIONER
 syn keyword cp2kKeyword OCC_ALPHA
