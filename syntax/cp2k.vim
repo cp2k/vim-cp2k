@@ -216,6 +216,7 @@ syn keyword cp2kConstant DFTD3
 syn keyword cp2kConstant DFTD3(BJ)
 syn keyword cp2kConstant DIAG
 syn keyword cp2kConstant DIAGONAL
+syn keyword cp2kConstant DIAGONALIZATION
 syn keyword cp2kConstant DIAGONAL_ANALYTICAL
 syn keyword cp2kConstant DIAGONAL_NUMERICAL
 syn keyword cp2kConstant DIFF
@@ -346,6 +347,7 @@ syn keyword cp2kConstant GRID
 syn keyword cp2kConstant GTH
 syn keyword cp2kConstant HAGER_ZHANG
 syn keyword cp2kConstant HARMONIC
+syn keyword cp2kConstant HARRIS
 syn keyword cp2kConstant HARTREE-FOCK
 syn keyword cp2kConstant HCTH120
 syn keyword cp2kConstant HESTENES_STIEFEL
@@ -953,6 +955,7 @@ syn keyword cp2kSection ENERGIES
 syn keyword cp2kSection ENERGIES_MINUS_KINETIC
 syn keyword cp2kSection ENERGIES_VAR
 syn keyword cp2kSection ENERGY
+syn keyword cp2kSection ENERGY_CORRECTION
 syn keyword cp2kSection ENERGY_WINDOWS
 syn keyword cp2kSection ENFORCE_OCCUPATION
 syn keyword cp2kSection EPR
@@ -1848,6 +1851,7 @@ syn keyword cp2kKeyword ENERGIES
 syn keyword cp2kKeyword ENERGY
 syn keyword cp2kKeyword ENERGY_FILE_NAME
 syn keyword cp2kKeyword ENERGY_FUNCTION
+syn keyword cp2kKeyword ENERGY_FUNCTIONAL
 syn keyword cp2kKeyword ENERGY_GAP
 syn keyword cp2kKeyword ENERGY_INTERVAL
 syn keyword cp2kKeyword ENERGY_PRECISION
@@ -1977,6 +1981,7 @@ syn keyword cp2kKeyword E_COUPL QMMM_COUPLING ECOUPL
 syn keyword cp2kKeyword E_TARGET
 syn keyword cp2kKeyword F
 syn keyword cp2kKeyword F0
+syn keyword cp2kKeyword FACTORIZATION
 syn keyword cp2kKeyword FERMI_AMALDI
 syn keyword cp2kKeyword FERMI_CONTACT
 syn keyword cp2kKeyword FERMI_EXP
