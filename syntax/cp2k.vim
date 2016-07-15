@@ -1267,6 +1267,7 @@ syn keyword cp2kSection RHO
 syn keyword cp2kSection RHO0_INFORMATION
 syn keyword cp2kSection RHO_MIXING
 syn keyword cp2kSection RING_PUCKERING
+syn keyword cp2kSection RI_AXK
 syn keyword cp2kSection RI_G0W0
 syn keyword cp2kSection RI_LAPLACE
 syn keyword cp2kSection RI_MP2
@@ -2817,6 +2818,7 @@ syn keyword cp2kKeyword RHO_MAX
 syn keyword cp2kKeyword RHO_MIN
 syn keyword cp2kKeyword RHO_ZERO RHO0
 syn keyword cp2kKeyword RI_AUX_BASIS_SET RI_MP2_BASIS_SET RI_RPA_BASIS_SET RI_AUX_BASIS
+syn keyword cp2kKeyword RI_AXK AXK
 syn keyword cp2kKeyword RI_G0W0 GW
 syn keyword cp2kKeyword RI_METRIC RI
 syn keyword cp2kKeyword RI_SIGMA_X
