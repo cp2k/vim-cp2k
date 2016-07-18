@@ -1828,6 +1828,7 @@ syn keyword cp2kKeyword DT
 syn keyword cp2kKeyword DX
 syn keyword cp2kKeyword DYNAMIC_THRESHOLD
 syn keyword cp2kKeyword D_EXPONENTS
+syn keyword cp2kKeyword D_FILTER
 syn keyword cp2kKeyword D_QUANTUM_NUMBERS
 syn keyword cp2kKeyword E
 syn keyword cp2kKeyword ECHO_ALL_HOSTS
