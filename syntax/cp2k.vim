@@ -2020,6 +2020,7 @@ syn keyword cp2kKeyword FORCE_ENV_FILE
 syn keyword cp2kKeyword FORCE_EVAL_ORDER
 syn keyword cp2kKeyword FORCE_KDSO-D_EXCHANGE
 syn keyword cp2kKeyword FORCE_LAST
+syn keyword cp2kKeyword FORCE_NO_FULL
 syn keyword cp2kKeyword FORCE_PAW
 syn keyword cp2kKeyword FORCE_RESCALING
 syn keyword cp2kKeyword FORMAT
