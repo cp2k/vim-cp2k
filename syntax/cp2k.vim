@@ -776,6 +776,8 @@ syn keyword cp2kSection ACTIVE_SPACE
 syn keyword cp2kSection ADD_MM_CHARGE
 syn keyword cp2kSection ADIABATIC_DYNAMICS
 syn keyword cp2kSection ADIABATIC_RESCALING
+syn keyword cp2kSection ADMM
+syn keyword cp2kSection ADMM_BASIS
 syn keyword cp2kSection AD_LANGEVIN
 syn keyword cp2kSection AE_BASIS
 syn keyword cp2kSection ALCHEMICAL_CHANGE
