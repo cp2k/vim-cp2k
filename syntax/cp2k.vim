@@ -1436,7 +1436,6 @@ syn keyword cp2kKeyword ACTIVE_ELECTRONS
 syn keyword cp2kKeyword ACTIVE_ORBITALS
 syn keyword cp2kKeyword ADAPTIVE_EXCLUDE_MOLECULES
 syn keyword cp2kKeyword ADDED_MOS
-syn keyword cp2kKeyword ADDED_OCC_MOS
 syn keyword cp2kKeyword ADDED_STATES
 syn keyword cp2kKeyword ADD_CUT_RI ADD_RI_CUT
 syn keyword cp2kKeyword ADD_DEGENERATE_STATES
@@ -2096,6 +2095,7 @@ syn keyword cp2kKeyword HB_SR_GAMMA
 syn keyword cp2kKeyword HB_SR_PARAM
 syn keyword cp2kKeyword HELIUM_ONLY
 syn keyword cp2kKeyword HFX_BALANCE_IN_CORE
+syn keyword cp2kKeyword HFX_RESIDUAL
 syn keyword cp2kKeyword HF_LIKE_EV_START
 syn keyword cp2kKeyword HILL_TAIL_CUTOFF
 syn keyword cp2kKeyword HOST
@@ -2294,6 +2294,7 @@ syn keyword cp2kKeyword MAX_PERM_CYCLE
 syn keyword cp2kKeyword MAX_PEXSI_ITER
 syn keyword cp2kKeyword MAX_PROJECTOR
 syn keyword cp2kKeyword MAX_RAD_LOCAL
+syn keyword cp2kKeyword MAX_REORTHO
 syn keyword cp2kKeyword MAX_SCF
 syn keyword cp2kKeyword MAX_SCF_HISTORY MAX_SCF_HIST
 syn keyword cp2kKeyword MAX_SD_STEPS
@@ -2534,6 +2535,7 @@ syn keyword cp2kKeyword ORIG_SCALE
 syn keyword cp2kKeyword ORIG_SPIN_INDEX
 syn keyword cp2kKeyword ORTHO
 syn keyword cp2kKeyword ORTHOGONAL_BASIS
+syn keyword cp2kKeyword ORTHOGONAL_EPS
 syn keyword cp2kKeyword ORTHONORMAL
 syn keyword cp2kKeyword ORTHO_IRAC
 syn keyword cp2kKeyword OR_PARAMETER OMEGA
@@ -2826,6 +2828,7 @@ syn keyword cp2kKeyword RI_AXK AXK
 syn keyword cp2kKeyword RI_G0W0 GW
 syn keyword cp2kKeyword RI_METRIC RI
 syn keyword cp2kKeyword RI_SIGMA_X
+syn keyword cp2kKeyword RKS_TRIPLETS
 syn keyword cp2kKeyword RMANGLE
 syn keyword cp2kKeyword RMAX
 syn keyword cp2kKeyword RMAX_KIND
