@@ -1643,6 +1643,7 @@ syn keyword cp2kKeyword CHARGE
 syn keyword cp2kKeyword CHARGE_BETA CHARGE_B
 syn keyword cp2kKeyword CHARGE_EXTENDED
 syn keyword cp2kKeyword CHARGE_OCCUP CHARGE_O
+syn keyword cp2kKeyword CHECK_2C_ACCURACY
 syn keyword cp2kKeyword CHECK_ACCURACY
 syn keyword cp2kKeyword CHECK_DIIS
 syn keyword cp2kKeyword CHECK_FIT
@@ -1745,6 +1746,7 @@ syn keyword cp2kKeyword DEBUG
 syn keyword cp2kKeyword DEBUG_FORCES
 syn keyword cp2kKeyword DEBUG_LRI_INTEGRALS
 syn keyword cp2kKeyword DEBUG_STRESS_TENSOR
+syn keyword cp2kKeyword DEBUG_TOLERANCE
 syn keyword cp2kKeyword DEFINE_FRAGMENTS
 syn keyword cp2kKeyword DEF_TYPE
 syn keyword cp2kKeyword DEGENERATE_EPS
@@ -2333,6 +2335,7 @@ syn keyword cp2kKeyword MIN_FLOP_PROCESS
 syn keyword cp2kKeyword MIN_FLOP_SORT
 syn keyword cp2kKeyword MIN_HESSIAN_SHIFT
 syn keyword cp2kKeyword MIN_INTERVAL
+syn keyword cp2kKeyword MIN_NPOS
 syn keyword cp2kKeyword MIN_NT_HILLS
 syn keyword cp2kKeyword MIN_OR_MAX
 syn keyword cp2kKeyword MIN_RADIUS
@@ -2448,6 +2451,7 @@ syn keyword cp2kKeyword NROW_BLOCK
 syn keyword cp2kKeyword NROW_BLOCKS
 syn keyword cp2kKeyword NR_NMC_STEPS
 syn keyword cp2kKeyword NR_TEMPERATURE
+syn keyword cp2kKeyword NSAMPLE_3C
 syn keyword cp2kKeyword NSKIP NSKIP_MIXING
 syn keyword cp2kKeyword NSTATES
 syn keyword cp2kKeyword NSTEP
@@ -3044,6 +3048,8 @@ syn keyword cp2kKeyword TEMP_TOL TEMP_TO TEMPERATURE_TOLERANCE
 syn keyword cp2kKeyword TEMP_TOL_FAST
 syn keyword cp2kKeyword TEMP_TOL_SLOW
 syn keyword cp2kKeyword TEMP_TOL_STEPS
+syn keyword cp2kKeyword TEST_2C
+syn keyword cp2kKeyword TEST_3C
 syn keyword cp2kKeyword TEST_TYPE
 syn keyword cp2kKeyword THERMOCHEMISTRY
 syn keyword cp2kKeyword THERMOSTAT_SEED
