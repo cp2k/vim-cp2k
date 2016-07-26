@@ -2817,6 +2817,7 @@ syn keyword cp2kKeyword RESTRAINT_STRENGTH
 syn keyword cp2kKeyword RESTRAINT_TARGET
 syn keyword cp2kKeyword RESTRAIN_HEAVIES_STRENGTH
 syn keyword cp2kKeyword RESTRAIN_HEAVIES_TO_ZERO
+syn keyword cp2kKeyword RESTRICT_RANGE
 syn keyword cp2kKeyword RESULT_LIST_IN_MEMORY
 syn keyword cp2kKeyword RESULT_MARKED_STATE
 syn keyword cp2kKeyword RESULT_MO_INDEX
