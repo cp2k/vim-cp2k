@@ -1673,6 +1673,7 @@ syn keyword cp2kKeyword COL_BLOCK COL_BLOCK_SIZE
 syn keyword cp2kKeyword COMMENSURATE
 syn keyword cp2kKeyword COMMON_CENTER
 syn keyword cp2kKeyword COMMON_ITERATION_LEVELS
+syn keyword cp2kKeyword COMMUTATOR_HR
 syn keyword cp2kKeyword COMM_THREAD_LOAD
 syn keyword cp2kKeyword COMPLETENESS
 syn keyword cp2kKeyword COMPONENT
