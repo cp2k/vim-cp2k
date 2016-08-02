@@ -2520,6 +2520,7 @@ syn keyword cp2kKeyword OMEGA
 syn keyword cp2kKeyword OMEGA_MAX_FIT
 syn keyword cp2kKeyword OMIT_HEADERS
 syn keyword cp2kKeyword ONE_CIRCLE
+syn keyword cp2kKeyword ONE_TIME_POINT
 syn keyword cp2kKeyword ON_THE_FLY_LOC
 syn keyword cp2kKeyword OPERATOR
 syn keyword cp2kKeyword OPERATOR_PARAMETER
