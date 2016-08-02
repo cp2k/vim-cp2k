@@ -2094,6 +2094,7 @@ syn keyword cp2kKeyword HALO_REDUCTION_FACTOR
 syn keyword cp2kKeyword HALO_SIZE
 syn keyword cp2kKeyword HARD_EXP_RADIUS
 syn keyword cp2kKeyword HARM_INT
+syn keyword cp2kKeyword HARRIS_BASIS
 syn keyword cp2kKeyword HB_SR_GAMMA
 syn keyword cp2kKeyword HB_SR_PARAM
 syn keyword cp2kKeyword HELIUM_ONLY
