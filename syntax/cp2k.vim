@@ -1430,6 +1430,7 @@ syn keyword cp2kKeyword ABC_THRESHOLD
 syn keyword cp2kKeyword ABSOLUTE_POSITION
 syn keyword cp2kKeyword AB_THRESHOLD
 syn keyword cp2kKeyword ACCURACY
+syn keyword cp2kKeyword ACCURACY_LEVEL
 syn keyword cp2kKeyword ACCURACY_REFINEMENT
 syn keyword cp2kKeyword ACQUISITION_START_TIME
 syn keyword cp2kKeyword ACTIVE_ELECTRONS
@@ -1617,6 +1618,7 @@ syn keyword cp2kKeyword BUMP_STEPS_DOWNWARDS
 syn keyword cp2kKeyword BUMP_STEPS_UPWARDS
 syn keyword cp2kKeyword C
 syn keyword cp2kKeyword CALCULATE_C9_TERM
+syn keyword cp2kKeyword CALCULATE_DERIVATIVES
 syn keyword cp2kKeyword CALCULATE_STATES
 syn keyword cp2kKeyword CALC_ARGS
 syn keyword cp2kKeyword CALC_COND_NUM CALC_CONDITION_NUMBER
@@ -3053,7 +3055,15 @@ syn keyword cp2kKeyword TEMP_TOL_SLOW
 syn keyword cp2kKeyword TEMP_TOL_STEPS
 syn keyword cp2kKeyword TEST_2C
 syn keyword cp2kKeyword TEST_3C
+syn keyword cp2kKeyword TEST_COULOMB
+syn keyword cp2kKeyword TEST_GAUSS
+syn keyword cp2kKeyword TEST_OVERLAP
+syn keyword cp2kKeyword TEST_OVERLAP_ABA
+syn keyword cp2kKeyword TEST_OVERLAP_ABB
 syn keyword cp2kKeyword TEST_TYPE
+syn keyword cp2kKeyword TEST_VERF
+syn keyword cp2kKeyword TEST_VERFC
+syn keyword cp2kKeyword TEST_VGAUSS
 syn keyword cp2kKeyword THERMOCHEMISTRY
 syn keyword cp2kKeyword THERMOSTAT_SEED
 syn keyword cp2kKeyword THETA0
