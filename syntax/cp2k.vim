@@ -1827,7 +1827,6 @@ syn keyword cp2kKeyword DO_SCP
 syn keyword cp2kKeyword DO_SD
 syn keyword cp2kKeyword DR
 syn keyword cp2kKeyword DROPLET_RADIUS
-syn keyword cp2kKeyword DROP_UNUSED_ENVS
 syn keyword cp2kKeyword DT
 syn keyword cp2kKeyword DX
 syn keyword cp2kKeyword DYNAMIC_THRESHOLD
@@ -2854,6 +2853,7 @@ syn keyword cp2kKeyword RMVOLUME
 syn keyword cp2kKeyword RND_DETERMINISTIC
 syn keyword cp2kKeyword RNG_CHECK
 syn keyword cp2kKeyword RNG_MATRICES
+syn keyword cp2kKeyword RNG_SEED
 syn keyword cp2kKeyword ROH
 syn keyword cp2kKeyword ROKS RESTRICTED_OPEN_KOHN_SHAM
 syn keyword cp2kKeyword ROKS_F F_ROKS
