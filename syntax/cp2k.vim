@@ -793,6 +793,7 @@ syn keyword cp2kSection AO_MATRICES
 syn keyword cp2kSection ATOM
 syn keyword cp2kSection ATOMIC
 syn keyword cp2kSection ATOMIC_COORDINATES
+syn keyword cp2kSection ATOM_INFO
 syn keyword cp2kSection ATOM_LIST
 syn keyword cp2kSection AUXILIARY_DENSITY_MATRIX_METHOD
 syn keyword cp2kSection AVBMC
@@ -998,6 +999,8 @@ syn keyword cp2kSection FIXED_ATOMS
 syn keyword cp2kSection FIX_ATOM_RESTART
 syn keyword cp2kSection FLEXIBLE_PARTITIONING
 syn keyword cp2kSection FM
+syn keyword cp2kSection FOCK_EIGENVALUES
+syn keyword cp2kSection FOCK_GAP
 syn keyword cp2kSection FORCE
 syn keyword cp2kSection FORCEFIELD
 syn keyword cp2kSection FORCES
@@ -1121,6 +1124,8 @@ syn keyword cp2kSection MINIMA_TRAJECTORY
 syn keyword cp2kSection MIXED
 syn keyword cp2kSection MIXED_ENERGIES
 syn keyword cp2kSection MIXING
+syn keyword cp2kSection ML_TRAINING_DATA
+syn keyword cp2kSection ML_VARIANCE
 syn keyword cp2kSection MM
 syn keyword cp2kSection MM_KIND
 syn keyword cp2kSection MM_POTENTIAL
