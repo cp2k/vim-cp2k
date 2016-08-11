@@ -675,7 +675,6 @@ syn keyword cp2kConstant TAMC
 syn keyword cp2kConstant TAYLOR
 syn keyword cp2kConstant TC2
 syn keyword cp2kConstant TDDFPT
-syn keyword cp2kConstant TDDFPT2
 syn keyword cp2kConstant TDLR
 syn keyword cp2kConstant TEST
 syn keyword cp2kConstant TEST_LSD
@@ -1327,7 +1326,6 @@ syn keyword cp2kSection SUBSYS
 syn keyword cp2kSection SWARM
 syn keyword cp2kSection SYMMETRY
 syn keyword cp2kSection TDDFPT
-syn keyword cp2kSection TDDFPT2
 syn keyword cp2kSection TEMPERATURE
 syn keyword cp2kSection TEMPERATURE_COLVAR
 syn keyword cp2kSection TEMP_CONTROL
@@ -2100,7 +2098,6 @@ syn keyword cp2kKeyword HB_SR_GAMMA
 syn keyword cp2kKeyword HB_SR_PARAM
 syn keyword cp2kKeyword HELIUM_ONLY
 syn keyword cp2kKeyword HFX_BALANCE_IN_CORE
-syn keyword cp2kKeyword HFX_RESIDUAL
 syn keyword cp2kKeyword HF_LIKE_EV_START
 syn keyword cp2kKeyword HILL_TAIL_CUTOFF
 syn keyword cp2kKeyword HOST
