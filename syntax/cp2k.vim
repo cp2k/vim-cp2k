@@ -2205,6 +2205,7 @@ syn keyword cp2kKeyword LANGEVIN
 syn keyword cp2kKeyword LAST_SNAPSHOT
 syn keyword cp2kKeyword LBIAS
 syn keyword cp2kKeyword LDISCRETE
+syn keyword cp2kKeyword LEAST_SQ_FT
 syn keyword cp2kKeyword LEBEDEV_GRID
 syn keyword cp2kKeyword LEGENDRE
 syn keyword cp2kKeyword LENGTH
@@ -2618,6 +2619,7 @@ syn keyword cp2kKeyword PMTRANS_MOL
 syn keyword cp2kKeyword PMVOLUME
 syn keyword cp2kKeyword PMVOL_BOX
 syn keyword cp2kKeyword POH EXPON_NUMERATORB
+syn keyword cp2kKeyword POINTS_PER_MAGNITUDE PPM
 syn keyword cp2kKeyword POISSON_SOLVER POISSON PSOLVER
 syn keyword cp2kKeyword POLARISATION
 syn keyword cp2kKeyword POLY1
