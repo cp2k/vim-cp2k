@@ -2247,6 +2247,8 @@ syn keyword cp2kKeyword M-RATIO
 syn keyword cp2kKeyword M-VALUE
 syn keyword cp2kKeyword MAGNETIC
 syn keyword cp2kKeyword MAO
+syn keyword cp2kKeyword MAO_EPS_GRAD
+syn keyword cp2kKeyword MAO_MAX_ITER
 syn keyword cp2kKeyword MAP
 syn keyword cp2kKeyword MAP_ATOMS
 syn keyword cp2kKeyword MAP_CONSISTENT
