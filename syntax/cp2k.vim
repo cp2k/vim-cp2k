@@ -3066,6 +3066,7 @@ syn keyword cp2kKeyword TEST_GAUSS
 syn keyword cp2kKeyword TEST_OVERLAP
 syn keyword cp2kKeyword TEST_OVERLAP_ABA
 syn keyword cp2kKeyword TEST_OVERLAP_ABB
+syn keyword cp2kKeyword TEST_RA2M
 syn keyword cp2kKeyword TEST_TYPE
 syn keyword cp2kKeyword TEST_VERF
 syn keyword cp2kKeyword TEST_VERFC
