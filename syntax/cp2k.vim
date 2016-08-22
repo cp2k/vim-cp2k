@@ -379,6 +379,7 @@ syn keyword cp2kConstant L1SD
 syn keyword cp2kConstant LANCZOS
 syn keyword cp2kConstant LANGEVIN
 syn keyword cp2kConstant LARGE
+syn keyword cp2kConstant LARGEDIAG
 syn keyword cp2kConstant LAST
 syn keyword cp2kConstant LAZY
 syn keyword cp2kConstant LB
@@ -487,6 +488,7 @@ syn keyword cp2kConstant NON_LOCAL
 syn keyword cp2kConstant NORM
 syn keyword cp2kConstant NORMAL
 syn keyword cp2kConstant NORMAL_MODES
+syn keyword cp2kConstant NOROWPERM
 syn keyword cp2kConstant NOSE
 syn keyword cp2kConstant NO_SHORTCUT
 syn keyword cp2kConstant NPE_F
@@ -2873,6 +2875,7 @@ syn keyword cp2kKeyword ROTATION_MATRICES
 syn keyword cp2kKeyword ROT_OPT
 syn keyword cp2kKeyword ROW_BLOCK ROW_BLOCK_SIZE
 syn keyword cp2kKeyword ROW_MAJOR
+syn keyword cp2kKeyword ROW_ORDERING
 syn keyword cp2kKeyword RS2PW
 syn keyword cp2kKeyword RUN_TYPE
 syn keyword cp2kKeyword RWOH
