@@ -1443,7 +1443,6 @@ syn keyword cp2kKeyword ACTIVE_ORBITALS
 syn keyword cp2kKeyword ADAPTIVE_EXCLUDE_MOLECULES
 syn keyword cp2kKeyword ADDED_MOS
 syn keyword cp2kKeyword ADDED_STATES
-syn keyword cp2kKeyword ADD_CUT_RI ADD_RI_CUT
 syn keyword cp2kKeyword ADD_DEGENERATE_STATES
 syn keyword cp2kKeyword ADD_LAST
 syn keyword cp2kKeyword ADMM
@@ -1883,7 +1882,6 @@ syn keyword cp2kKeyword EPS_ADAPT_SCF
 syn keyword cp2kKeyword EPS_ADDED
 syn keyword cp2kKeyword EPS_CANONICAL
 syn keyword cp2kKeyword EPS_CN
-syn keyword cp2kKeyword EPS_COMM
 syn keyword cp2kKeyword EPS_CONV
 syn keyword cp2kKeyword EPS_CORE_CHARGE
 syn keyword cp2kKeyword EPS_CPC
