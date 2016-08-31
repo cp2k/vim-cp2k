@@ -2595,6 +2595,7 @@ syn keyword cp2kKeyword PENALTY_STRENGTH
 syn keyword cp2kKeyword PERFORM_MU_SCAN
 syn keyword cp2kKeyword PERIODIC
 syn keyword cp2kKeyword PERIODICITY
+syn keyword cp2kKeyword PERIODIC_REGION
 syn keyword cp2kKeyword PF
 syn keyword cp2kKeyword PFACTOR
 syn keyword cp2kKeyword PGF_RADII
