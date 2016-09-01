@@ -2548,7 +2548,6 @@ syn keyword cp2kKeyword ORIG_SPIN_INDEX
 syn keyword cp2kKeyword ORTHO
 syn keyword cp2kKeyword ORTHOGONAL_BASIS
 syn keyword cp2kKeyword ORTHOGONAL_EPS
-syn keyword cp2kKeyword ORTHONORMAL
 syn keyword cp2kKeyword ORTHO_IRAC
 syn keyword cp2kKeyword OR_PARAMETER OMEGA
 syn keyword cp2kKeyword OUTER_ATOMS
