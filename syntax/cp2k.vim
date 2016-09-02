@@ -468,6 +468,7 @@ syn keyword cp2kConstant MULTISECANT_MIXING
 syn keyword cp2kConstant MUMPS
 syn keyword cp2kConstant MWATER
 syn keyword cp2kConstant NEGATIVE
+syn keyword cp2kConstant NEGF
 syn keyword cp2kConstant NEUMANN
 syn keyword cp2kConstant NEURAL_NETWORK
 syn keyword cp2kConstant NEVER
@@ -570,6 +571,7 @@ syn keyword cp2kConstant PZ
 syn keyword cp2kConstant QM
 syn keyword cp2kConstant QMMM
 syn keyword cp2kConstant QS
+syn keyword cp2kConstant QTMB
 syn keyword cp2kConstant QUADRATIC
 syn keyword cp2kConstant QUADRUPOLE
 syn keyword cp2kConstant QUARTIC
@@ -739,7 +741,6 @@ syn keyword cp2kConstant WAVELET
 syn keyword cp2kConstant WB97X-V
 syn keyword cp2kConstant WEIGHT_LIST
 syn keyword cp2kConstant WFN_OPT
-syn keyword cp2kConstant WRITEOUT
 syn keyword cp2kConstant X
 syn keyword cp2kConstant XALMO_1DIAG
 syn keyword cp2kConstant XALMO_SCF
@@ -2505,6 +2506,7 @@ syn keyword cp2kKeyword N_LOOP
 syn keyword cp2kKeyword N_MINIMAX
 syn keyword cp2kKeyword N_OUTER IROT
 syn keyword cp2kKeyword N_POINTS_BEYN
+syn keyword cp2kKeyword N_POINTS_INV
 syn keyword cp2kKeyword N_PRTN
 syn keyword cp2kKeyword N_RAND
 syn keyword cp2kKeyword N_RAND_CC
@@ -2514,6 +2516,7 @@ syn keyword cp2kKeyword N_SIMPLE_MIX NSIMPLEMIX
 syn keyword cp2kKeyword N_SIZE_MNK_STACKS
 syn keyword cp2kKeyword N_WINDOWS
 syn keyword cp2kKeyword OBARA_SAIKA_OVERLAP OSO
+syn keyword cp2kKeyword OBC_EQUILIBRIUM
 syn keyword cp2kKeyword OCCUPATION_NUMBERS OCCNUMS
 syn keyword cp2kKeyword OCCUPATION_PRECONDITIONER
 syn keyword cp2kKeyword OCC_ALPHA
@@ -2710,6 +2713,7 @@ syn keyword cp2kKeyword QM_SUBSYS
 syn keyword cp2kKeyword QOH EXPON_DENOMINATORB
 syn keyword cp2kKeyword QOO EXPON_DENOMINATORA
 syn keyword cp2kKeyword QS_SCF
+syn keyword cp2kKeyword QT_FORMALISM
 syn keyword cp2kKeyword QUADRATURE
 syn keyword cp2kKeyword QUADRATURE_POINTS RPA_NUM_QUAD_POINTS
 syn keyword cp2kKeyword QWOH
