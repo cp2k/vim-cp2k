@@ -571,7 +571,7 @@ syn keyword cp2kConstant PZ
 syn keyword cp2kConstant QM
 syn keyword cp2kConstant QMMM
 syn keyword cp2kConstant QS
-syn keyword cp2kConstant QTMB
+syn keyword cp2kConstant QTBM
 syn keyword cp2kConstant QUADRATIC
 syn keyword cp2kConstant QUADRUPOLE
 syn keyword cp2kConstant QUARTIC
