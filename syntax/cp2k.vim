@@ -526,6 +526,7 @@ syn keyword cp2kConstant OVERLAP
 syn keyword cp2kConstant PADE
 syn keyword cp2kConstant PAIR_POTENTIAL
 syn keyword cp2kConstant PARALLEL
+syn keyword cp2kConstant PARDISO
 syn keyword cp2kConstant PATIENT
 syn keyword cp2kConstant PBC_AWARE_MAX_MINUS_MIN
 syn keyword cp2kConstant PBE
@@ -596,6 +597,7 @@ syn keyword cp2kConstant RESTORE
 syn keyword cp2kConstant RESTRAINT
 syn keyword cp2kConstant REVPBE
 syn keyword cp2kConstant REV_PBEX
+syn keyword cp2kConstant RGF
 syn keyword cp2kConstant RHF
 syn keyword cp2kConstant RHOMBOHEDRAL
 syn keyword cp2kConstant RI_MP2_GPW
@@ -710,6 +712,7 @@ syn keyword cp2kConstant UFF
 syn keyword cp2kConstant UHF
 syn keyword cp2kConstant UI
 syn keyword cp2kConstant UKS
+syn keyword cp2kConstant UMFPACK
 syn keyword cp2kConstant UNIFORM
 syn keyword cp2kConstant UNIT
 syn keyword cp2kConstant UNOCCUPIED
@@ -2261,6 +2264,7 @@ syn keyword cp2kKeyword MASTER_SLAVE
 syn keyword cp2kKeyword MATMUL
 syn keyword cp2kKeyword MATRICES_FILE_NAME
 syn keyword cp2kKeyword MATRIX_CLUSTER_TYPE
+syn keyword cp2kKeyword MATRIX_INVERSION_METHOD
 syn keyword cp2kKeyword MATRIX_VXC
 syn keyword cp2kKeyword MAT_EXP
 syn keyword cp2kKeyword MAX
@@ -2493,7 +2497,6 @@ syn keyword cp2kKeyword NUM_SLATER
 syn keyword cp2kKeyword NUM_STEPS
 syn keyword cp2kKeyword NVIRIAL
 syn keyword cp2kKeyword NZET
-syn keyword cp2kKeyword N_ABSCISSAE
 syn keyword cp2kKeyword N_ATOMS
 syn keyword cp2kKeyword N_BCH_HISTORY
 syn keyword cp2kKeyword N_CHEBYSHEV
