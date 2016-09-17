@@ -2540,6 +2540,9 @@ syn keyword cp2kKeyword OPERATOR_PARAMETER
 syn keyword cp2kKeyword OPTIMIZER MINIMIZER
 syn keyword cp2kKeyword OPTIMIZE_END_POINTS
 syn keyword cp2kKeyword OPTIMIZE_FILE_NAME
+syn keyword cp2kKeyword OPTX_A1
+syn keyword cp2kKeyword OPTX_A2
+syn keyword cp2kKeyword OPTX_GAMMA
 syn keyword cp2kKeyword OPT_TYPE
 syn keyword cp2kKeyword ORBITALS M
 syn keyword cp2kKeyword ORBITAL_CENTER
