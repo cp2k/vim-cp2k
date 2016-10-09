@@ -2781,6 +2781,7 @@ syn keyword cp2kKeyword REPLAY_COMMUNICATION_LOG
 syn keyword cp2kKeyword REPLICA
 syn keyword cp2kKeyword REPLICA_EVAL
 syn keyword cp2kKeyword REPORT_ALL_SPARSITIES
+syn keyword cp2kKeyword REPORT_MAXLOC
 syn keyword cp2kKeyword RESIDUUM_WEIGHT
 syn keyword cp2kKeyword RESTART
 syn keyword cp2kKeyword RESTARTS N_RESTARTS
