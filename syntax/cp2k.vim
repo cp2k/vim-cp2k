@@ -2455,6 +2455,7 @@ syn keyword cp2kKeyword NO_OPTIMIZE
 syn keyword cp2kKeyword NPOINTS
 syn keyword cp2kKeyword NPROC
 syn keyword cp2kKeyword NPROC_REP
+syn keyword cp2kKeyword NPROC_STATE
 syn keyword cp2kKeyword NP_LS
 syn keyword cp2kKeyword NP_SYMB_FACT
 syn keyword cp2kKeyword NREORTHO N_REORTHO REORTHO REORTHOGONALITAZIONS
