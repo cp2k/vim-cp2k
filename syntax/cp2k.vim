@@ -1109,6 +1109,7 @@ syn keyword cp2kSection LYP
 syn keyword cp2kSection LYP_ADIABATIC
 syn keyword cp2kSection M-SAMPLING
 syn keyword cp2kSection MACHINE_LEARNING
+syn keyword cp2kSection MAO
 syn keyword cp2kSection MAO_ANALYSIS
 syn keyword cp2kSection MAP
 syn keyword cp2kSection MAPPING
@@ -1909,6 +1910,8 @@ syn keyword cp2kKeyword EPS_FILTER_MATRIX
 syn keyword cp2kKeyword EPS_FUNCTION
 syn keyword cp2kKeyword EPS_GEO
 syn keyword cp2kKeyword EPS_GRAD
+syn keyword cp2kKeyword EPS_GRAD_OCC
+syn keyword cp2kKeyword EPS_GRAD_VIRT
 syn keyword cp2kKeyword EPS_GRID
 syn keyword cp2kKeyword EPS_GVG_RSPACE EPS_GVG
 syn keyword cp2kKeyword EPS_INTEGRAL
@@ -2254,6 +2257,8 @@ syn keyword cp2kKeyword MAGNETIC
 syn keyword cp2kKeyword MAO
 syn keyword cp2kKeyword MAO_EPS_GRAD
 syn keyword cp2kKeyword MAO_MAX_ITER
+syn keyword cp2kKeyword MAO_OCC
+syn keyword cp2kKeyword MAO_VIRT
 syn keyword cp2kKeyword MAP
 syn keyword cp2kKeyword MAP_ATOMS
 syn keyword cp2kKeyword MAP_CONSISTENT
@@ -2297,7 +2302,9 @@ syn keyword cp2kKeyword MAX_ITER_ADDED
 syn keyword cp2kKeyword MAX_ITER_FIT
 syn keyword cp2kKeyword MAX_ITER_LANCZOS
 syn keyword cp2kKeyword MAX_ITER_LUMO MAX_ITER_LUMOS
+syn keyword cp2kKeyword MAX_ITER_OCC
 syn keyword cp2kKeyword MAX_ITER_OUTER_LOOP
+syn keyword cp2kKeyword MAX_ITER_VIRT
 syn keyword cp2kKeyword MAX_JOBS_PER_GROUP MAX_JOBS
 syn keyword cp2kKeyword MAX_KV MAX_VECTORS
 syn keyword cp2kKeyword MAX_MEMORY
@@ -2541,6 +2548,8 @@ syn keyword cp2kKeyword OPERATOR_PARAMETER
 syn keyword cp2kKeyword OPTIMIZER MINIMIZER
 syn keyword cp2kKeyword OPTIMIZE_END_POINTS
 syn keyword cp2kKeyword OPTIMIZE_FILE_NAME
+syn keyword cp2kKeyword OPTIMIZE_SCALED_OCC_DM OPT_SC_DM_OCC
+syn keyword cp2kKeyword OPTIMIZE_SCALED_VIRT_DM OPT_SC_DM_VIRT
 syn keyword cp2kKeyword OPTX_A1
 syn keyword cp2kKeyword OPTX_A2
 syn keyword cp2kKeyword OPTX_GAMMA
