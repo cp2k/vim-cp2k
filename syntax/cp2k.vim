@@ -636,6 +636,7 @@ syn keyword cp2kConstant SILENT
 syn keyword cp2kConstant SINGLET
 syn keyword cp2kConstant SINGLETS
 syn keyword cp2kConstant SINGLEV
+syn keyword cp2kConstant SKIP
 syn keyword cp2kConstant SL
 syn keyword cp2kConstant SL2
 syn keyword cp2kConstant SLATER
@@ -667,6 +668,7 @@ syn keyword cp2kConstant SSE
 syn keyword cp2kConstant STAGE
 syn keyword cp2kConstant STANDARD
 syn keyword cp2kConstant STRICT
+syn keyword cp2kConstant SUBLATTICE
 syn keyword cp2kConstant SUM
 syn keyword cp2kConstant SUM_EIGENVALUES
 syn keyword cp2kConstant SUPERLU
@@ -786,10 +788,13 @@ syn keyword cp2kSection ADMM_BASIS
 syn keyword cp2kSection AD_LANGEVIN
 syn keyword cp2kSection AE_BASIS
 syn keyword cp2kSection ALCHEMICAL_CHANGE
+syn keyword cp2kSection ALMO_CTA
+syn keyword cp2kSection ALMO_EDA_CT
 syn keyword cp2kSection ALMO_OPTIMIZER_DIIS
 syn keyword cp2kSection ALMO_OPTIMIZER_PCG
 syn keyword cp2kSection ALMO_SCF
 syn keyword cp2kSection ALPHA
+syn keyword cp2kSection ANALYSIS
 syn keyword cp2kSection ANALYZE_BASIS
 syn keyword cp2kSection ANDREUSSI
 syn keyword cp2kSection ANGLE
@@ -2046,6 +2051,7 @@ syn keyword cp2kKeyword FRAME_STOP
 syn keyword cp2kKeyword FRAME_STRIDE
 syn keyword cp2kKeyword FREE_HFX_BUFFER
 syn keyword cp2kKeyword FREQUENCY
+syn keyword cp2kKeyword FROZEN_MO_ENERGY_TERM
 syn keyword cp2kKeyword FULLY_PERIODIC
 syn keyword cp2kKeyword FULL_GRID
 syn keyword cp2kKeyword FUNCTION
@@ -2121,6 +2127,7 @@ syn keyword cp2kKeyword IMAGINARY_TIME_STRIDE
 syn keyword cp2kKeyword IM_TIME IMAG_TIME
 syn keyword cp2kKeyword INACTIVE_ELECTRONS
 syn keyword cp2kKeyword INACTIVE_ORBITALS
+syn keyword cp2kKeyword INCLUDE_IMAGES
 syn keyword cp2kKeyword INDICES
 syn keyword cp2kKeyword INERTIA
 syn keyword cp2kKeyword INFO_OUT_STEP_SIZE
@@ -2897,6 +2904,7 @@ syn keyword cp2kKeyword ROW_BLOCK ROW_BLOCK_SIZE
 syn keyword cp2kKeyword ROW_MAJOR
 syn keyword cp2kKeyword ROW_ORDERING
 syn keyword cp2kKeyword RS2PW
+syn keyword cp2kKeyword RSTART
 syn keyword cp2kKeyword RUN_TYPE
 syn keyword cp2kKeyword RWOH
 syn keyword cp2kKeyword R_BUF
