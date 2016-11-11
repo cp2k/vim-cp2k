@@ -1573,6 +1573,7 @@ syn keyword cp2kKeyword BASIS_COMBINATIONS
 syn keyword cp2kKeyword BASIS_OUTPUT_FILE
 syn keyword cp2kKeyword BASIS_SET
 syn keyword cp2kKeyword BASIS_SET_FILE_NAME
+syn keyword cp2kKeyword BASIS_SET_NAME
 syn keyword cp2kKeyword BASIS_SIZE
 syn keyword cp2kKeyword BASIS_TEMPLATE_FILE
 syn keyword cp2kKeyword BASIS_TYPE
