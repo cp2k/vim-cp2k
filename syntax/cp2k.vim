@@ -1155,6 +1155,7 @@ syn keyword cp2kSection MOM
 syn keyword cp2kSection MOMENTS
 syn keyword cp2kSection MOMENT_OF_INERTIA
 syn keyword cp2kSection MOMENT_OF_INERTIA_AVG
+syn keyword cp2kSection MOS_MOLDEN
 syn keyword cp2kSection MOTION
 syn keyword cp2kSection MOVE_MM_CHARGE
 syn keyword cp2kSection MOVE_PROBABILITIES
