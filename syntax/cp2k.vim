@@ -1438,6 +1438,7 @@ syn match cp2kEndSection '^\s*&END\s*\w\+' contains=cp2kSection
 " CP2K keywords
 "----------------------------------------------------------------/
 
+syn keyword cp2kKeyword 1-NORM
 syn keyword cp2kKeyword 2D_MOLECULAR_DISTRIBUTION
 syn keyword cp2kKeyword A
 syn keyword cp2kKeyword A1
@@ -1493,6 +1494,7 @@ syn keyword cp2kKeyword APOL
 syn keyword cp2kKeyword APPEND
 syn keyword cp2kKeyword APPLY_DELTA_PULSE
 syn keyword cp2kKeyword APX_TYPE
+syn keyword cp2kKeyword ARNOLDI
 syn keyword cp2kKeyword ASPARSITY
 syn keyword cp2kKeyword ASPC_ORDER
 syn keyword cp2kKeyword ATOM
@@ -1795,6 +1797,7 @@ syn keyword cp2kKeyword DETERM_COEFF
 syn keyword cp2kKeyword DEVIATION
 syn keyword cp2kKeyword DFTB3_PARAM
 syn keyword cp2kKeyword DGEMM
+syn keyword cp2kKeyword DIAGONALIZATION
 syn keyword cp2kKeyword DIAGONAL_DFTB3
 syn keyword cp2kKeyword DIAG_METHOD
 syn keyword cp2kKeyword DIELECTRIC_CONSTANT EPSILON
