@@ -1036,6 +1036,7 @@ syn keyword cp2kSection GAUSSIAN_ENV
 syn keyword cp2kSection GENERATE
 syn keyword cp2kSection GENERIC
 syn keyword cp2kSection GENPOT
+syn keyword cp2kSection GEOMETRICAL_RESPONSE_BASIS
 syn keyword cp2kSection GEO_OPT
 syn keyword cp2kSection GLE
 syn keyword cp2kSection GLOBAL
@@ -2000,6 +2001,7 @@ syn keyword cp2kKeyword EXP_ACCURACY
 syn keyword cp2kKeyword EXP_PRE
 syn keyword cp2kKeyword EXTENDED_DELTA_CHARGE
 syn keyword cp2kKeyword EXTENDED_FFT_LENGTHS
+syn keyword cp2kKeyword EXTENSION_BASIS
 syn keyword cp2kKeyword EXTERNAL_PRESSURE
 syn keyword cp2kKeyword EXTRAPOLATION INTERPOLATION WF_INTERPOLATION
 syn keyword cp2kKeyword EXTRAPOLATION_ORDER
@@ -2422,6 +2424,7 @@ syn keyword cp2kKeyword MU_PEXSI_SAFE_GUARD
 syn keyword cp2kKeyword N
 syn keyword cp2kKeyword N0 N_0
 syn keyword cp2kKeyword NAB_MIN
+syn keyword cp2kKeyword NAME_BODY
 syn keyword cp2kKeyword NATOMS
 syn keyword cp2kKeyword NBEADS
 syn keyword cp2kKeyword NBIN
@@ -2508,6 +2511,9 @@ syn keyword cp2kKeyword NUM_GAUSSIAN
 syn keyword cp2kKeyword NUM_GRADIENT_EPS
 syn keyword cp2kKeyword NUM_GRADIENT_ORDER
 syn keyword cp2kKeyword NUM_GTO
+syn keyword cp2kKeyword NUM_GTO_CORE
+syn keyword cp2kKeyword NUM_GTO_EXTENDED
+syn keyword cp2kKeyword NUM_GTO_POLARIZATION
 syn keyword cp2kKeyword NUM_INTERVAL
 syn keyword cp2kKeyword NUM_LAYERS_3D
 syn keyword cp2kKeyword NUM_MC_ELEM
@@ -2965,6 +2971,7 @@ syn keyword cp2kKeyword SEED_NAME
 syn keyword cp2kKeyword SELECTED_STATES_ATOM_RADIUS
 syn keyword cp2kKeyword SELECTED_STATES_ON_ATOM_LIST
 syn keyword cp2kKeyword SELF_CONSISTENT
+syn keyword cp2kKeyword SEMICORE_LEVEL
 syn keyword cp2kKeyword SET_RADII
 syn keyword cp2kKeyword SE_PARAMETERS
 syn keyword cp2kKeyword SE_P_ORBITALS_ON_H
@@ -3073,6 +3080,7 @@ syn keyword cp2kKeyword TARGET_LIMIT
 syn keyword cp2kKeyword TARGET_POT_SEMICORE
 syn keyword cp2kKeyword TARGET_POT_VALENCE
 syn keyword cp2kKeyword TARGET_POT_VIRTUAL
+syn keyword cp2kKeyword TARGET_PSIR0
 syn keyword cp2kKeyword TASKS_PER_ENERGY_POINT
 syn keyword cp2kKeyword TASKS_PER_INTEGRATION_POINT
 syn keyword cp2kKeyword TASKS_PER_POLE
