@@ -940,6 +940,7 @@ syn keyword cp2kSection DIMER
 syn keyword cp2kSection DIMER_VECTOR
 syn keyword cp2kSection DIPOLE
 syn keyword cp2kSection DIPOLES
+syn keyword cp2kSection DIPOLE_MOMENTS
 syn keyword cp2kSection DIRECT_CANONICAL
 syn keyword cp2kSection DIRICHLET_BC
 syn keyword cp2kSection DIRICHLET_BC_CUBE
