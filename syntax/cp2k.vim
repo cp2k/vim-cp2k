@@ -2590,6 +2590,7 @@ syn keyword cp2kKeyword ORTHOGONAL_BASIS
 syn keyword cp2kKeyword ORTHOGONAL_EPS
 syn keyword cp2kKeyword ORTHO_IRAC
 syn keyword cp2kKeyword OR_PARAMETER OMEGA
+syn keyword cp2kKeyword OSCILLATING_FRACTION
 syn keyword cp2kKeyword OUTER_ATOMS
 syn keyword cp2kKeyword OUTER_RADIUS
 syn keyword cp2kKeyword OUTPUT_FILE_NAME
