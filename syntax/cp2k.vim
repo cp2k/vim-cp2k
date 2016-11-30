@@ -2859,6 +2859,7 @@ syn keyword cp2kKeyword RESTART_SHELL_POS
 syn keyword cp2kKeyword RESTART_SHELL_THERMOSTAT
 syn keyword cp2kKeyword RESTART_SHELL_VELOCITY
 syn keyword cp2kKeyword RESTART_SPINSPIN
+syn keyword cp2kKeyword RESTART_TEMPERATURE_ANNEALING
 syn keyword cp2kKeyword RESTART_THERMOSTAT
 syn keyword cp2kKeyword RESTART_VEL
 syn keyword cp2kKeyword RESTART_WALKERS
@@ -3096,6 +3097,7 @@ syn keyword cp2kKeyword TEMPDIST_INIT_WIDTH
 syn keyword cp2kKeyword TEMPDIST_UPDATE_HEIGHT
 syn keyword cp2kKeyword TEMPDIST_UPDATE_WIDTH
 syn keyword cp2kKeyword TEMPERATURE
+syn keyword cp2kKeyword TEMPERATURE_ANNEALING
 syn keyword cp2kKeyword TEMPERATURE_INIT
 syn keyword cp2kKeyword TEMPSTEP_BASE
 syn keyword cp2kKeyword TEMPSTEP_MAX
