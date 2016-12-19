@@ -1473,6 +1473,7 @@ syn keyword cp2kKeyword ALLOW_O_FORMATION
 syn keyword cp2kKeyword ALLTOALL_SGL
 syn keyword cp2kKeyword ALL_CONF_FILE_NAME
 syn keyword cp2kKeyword ALMO_ALGORITHM
+syn keyword cp2kKeyword ALMO_EXTRAPOLATION_ORDER
 syn keyword cp2kKeyword ALMO_SCF
 syn keyword cp2kKeyword ALMO_SCF_GUESS
 syn keyword cp2kKeyword ALPHA
@@ -3243,6 +3244,7 @@ syn keyword cp2kKeyword WW
 syn keyword cp2kKeyword W_MATRIX
 syn keyword cp2kKeyword W_MATRIX_AUX_FIT
 syn keyword cp2kKeyword XA
+syn keyword cp2kKeyword XALMO_EXTRAPOLATION_ORDER
 syn keyword cp2kKeyword XALMO_R_CUTOFF_FACTOR
 syn keyword cp2kKeyword XAS_CORE
 syn keyword cp2kKeyword XAS_SCF
