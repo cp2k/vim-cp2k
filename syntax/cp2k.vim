@@ -1133,6 +1133,8 @@ syn keyword cp2kSection METAVAR
 syn keyword cp2kSection METHOD
 syn keyword cp2kSection METHOD_INFO
 syn keyword cp2kSection MGRID
+syn keyword cp2kSection MINBAS_ANALYSIS
+syn keyword cp2kSection MINBAS_CUBE
 syn keyword cp2kSection MINIMA_CRAWLING
 syn keyword cp2kSection MINIMA_HOPPING
 syn keyword cp2kSection MINIMA_TRAJECTORY
@@ -1611,6 +1613,7 @@ syn keyword cp2kKeyword BONDLENGTH_MAX
 syn keyword cp2kKeyword BONDLENGTH_MIN
 syn keyword cp2kKeyword BONDPARM
 syn keyword cp2kKeyword BONDPARM_FACTOR
+syn keyword cp2kKeyword BOND_ORDER
 syn keyword cp2kKeyword BOUNDARIES
 syn keyword cp2kKeyword BOUNDARY_CONDITIONS
 syn keyword cp2kKeyword BOX2_FILE_NAME
@@ -2064,6 +2067,7 @@ syn keyword cp2kKeyword FREQUENCY
 syn keyword cp2kKeyword FROZEN_MO_ENERGY_TERM
 syn keyword cp2kKeyword FULLY_PERIODIC
 syn keyword cp2kKeyword FULL_GRID
+syn keyword cp2kKeyword FULL_ORTHOGONALIZATION
 syn keyword cp2kKeyword FUNCTION
 syn keyword cp2kKeyword FUNCTIONAL
 syn keyword cp2kKeyword FUNCTIONAL_FORM
