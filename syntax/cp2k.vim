@@ -104,6 +104,12 @@ syn keyword cp2kConstant AUTO
 syn keyword cp2kConstant AUTOMATIC
 syn keyword cp2kConstant AUTOSELECT
 syn keyword cp2kConstant AVERAGE
+syn keyword cp2kConstant AVX2_BLOCK2
+syn keyword cp2kConstant AVX2_BLOCK4
+syn keyword cp2kConstant AVX2_BLOCK6
+syn keyword cp2kConstant AVX512_BLOCK2
+syn keyword cp2kConstant AVX512_BLOCK4
+syn keyword cp2kConstant AVX512_BLOCK6
 syn keyword cp2kConstant AVX_BLOCK2
 syn keyword cp2kConstant AVX_BLOCK4
 syn keyword cp2kConstant AVX_BLOCK6
@@ -341,6 +347,7 @@ syn keyword cp2kConstant GLLB
 syn keyword cp2kConstant GLOBAL
 syn keyword cp2kConstant GLOBAL_OPT
 syn keyword cp2kConstant GOLD
+syn keyword cp2kConstant GPU
 syn keyword cp2kConstant GPW
 syn keyword cp2kConstant GPW_HALF_TRANSFORM
 syn keyword cp2kConstant GREEDY
@@ -666,6 +673,9 @@ syn keyword cp2kConstant SPREADMAX
 syn keyword cp2kConstant SPREADMIN
 syn keyword cp2kConstant SQUARE
 syn keyword cp2kConstant SSE
+syn keyword cp2kConstant SSE_BLOCK2
+syn keyword cp2kConstant SSE_BLOCK4
+syn keyword cp2kConstant SSE_BLOCK6
 syn keyword cp2kConstant STAGE
 syn keyword cp2kConstant STANDARD
 syn keyword cp2kConstant STRICT
