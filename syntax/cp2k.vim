@@ -363,6 +363,7 @@ syn keyword cp2kConstant HEXAGONAL
 syn keyword cp2kConstant HIGH
 syn keyword cp2kConstant HIGH-SPIN
 syn keyword cp2kConstant HISTORY_RESTART
+syn keyword cp2kConstant HLE
 syn keyword cp2kConstant HOTELLING
 syn keyword cp2kConstant HYDROSTATICSHOCK
 syn keyword cp2kConstant IDENTITY
