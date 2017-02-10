@@ -1577,6 +1577,7 @@ syn keyword cp2kKeyword AVEKIN
 syn keyword cp2kKeyword AVEKIN_QM
 syn keyword cp2kKeyword AVEPOT
 syn keyword cp2kKeyword AVERAGE_COLVAR
+syn keyword cp2kKeyword AVERAGE_DEGENERATE_LEVELS ADL
 syn keyword cp2kKeyword AVETEMP
 syn keyword cp2kKeyword AVETEMP_BARO
 syn keyword cp2kKeyword AVETEMP_QM
@@ -1880,6 +1881,7 @@ syn keyword cp2kKeyword DKH_ORDER
 syn keyword cp2kKeyword DM
 syn keyword cp2kKeyword DM_RESTART_WRITE
 syn keyword cp2kKeyword DOT_TREE
+syn keyword cp2kKeyword DO_AUX_BAS_GW
 syn keyword cp2kKeyword DO_CALIBRATE_CUTOFF
 syn keyword cp2kKeyword DO_DSO
 syn keyword cp2kKeyword DO_EWALD
@@ -1958,6 +1960,7 @@ syn keyword cp2kKeyword EPS_DEFAULT
 syn keyword cp2kKeyword EPS_DERIV EPS_NUM_DERIV
 syn keyword cp2kKeyword EPS_DIIS
 syn keyword cp2kKeyword EPS_DISP
+syn keyword cp2kKeyword EPS_EIGENVAL
 syn keyword cp2kKeyword EPS_EIGENVALUE
 syn keyword cp2kKeyword EPS_EIGVAL
 syn keyword cp2kKeyword EPS_EIGVAL_DEGEN
@@ -1985,6 +1988,7 @@ syn keyword cp2kKeyword EPS_IRAC_SWITCH
 syn keyword cp2kKeyword EPS_ITER
 syn keyword cp2kKeyword EPS_JACOBI
 syn keyword cp2kKeyword EPS_KG_ORB
+syn keyword cp2kKeyword EPS_KPOINT
 syn keyword cp2kKeyword EPS_KRYLOV
 syn keyword cp2kKeyword EPS_LANCZOS
 syn keyword cp2kKeyword EPS_LIMIT
@@ -2055,6 +2059,7 @@ syn keyword cp2kKeyword EXTENDED_DELTA_CHARGE
 syn keyword cp2kKeyword EXTENDED_FFT_LENGTHS
 syn keyword cp2kKeyword EXTENSION_BASIS
 syn keyword cp2kKeyword EXTERNAL_PRESSURE
+syn keyword cp2kKeyword EXTRAPOLATE_KPOINTS EXTRAPOLATE
 syn keyword cp2kKeyword EXTRAPOLATION INTERPOLATION WF_INTERPOLATION
 syn keyword cp2kKeyword EXTRAPOLATION_ORDER
 syn keyword cp2kKeyword EXT_POTENTIAL
@@ -2103,6 +2108,7 @@ syn keyword cp2kKeyword FORCE_PAW
 syn keyword cp2kKeyword FORCE_RESCALING
 syn keyword cp2kKeyword FORMAT
 syn keyword cp2kKeyword FRACTION
+syn keyword cp2kKeyword FRACTION_AUX_MOS
 syn keyword cp2kKeyword FRACTION_EXX ALPHA
 syn keyword cp2kKeyword FRAGMENTATION_THRESHOLD
 syn keyword cp2kKeyword FRAGMENT_A_FILE_NAME
@@ -2270,6 +2276,7 @@ syn keyword cp2kKeyword KIND_RADII
 syn keyword cp2kKeyword KINETIC_ENERGY
 syn keyword cp2kKeyword KOHN_SHAM_MATRIX
 syn keyword cp2kKeyword KPOINT
+syn keyword cp2kKeyword KPOINTS
 syn keyword cp2kKeyword KSS
 syn keyword cp2kKeyword K_CONFIDENCE_LIMIT
 syn keyword cp2kKeyword K_RHO
@@ -2467,6 +2474,7 @@ syn keyword cp2kKeyword MOMENT_OF_INERTIA
 syn keyword cp2kKeyword MORE_WORK
 syn keyword cp2kKeyword MOVES_FILE_NAME
 syn keyword cp2kKeyword MOVE_CENTER_OF_MASS
+syn keyword cp2kKeyword MO_COEFF_GAMMA
 syn keyword cp2kKeyword MO_INDEX_RANGE MO_RANGE RANGE
 syn keyword cp2kKeyword MPI
 syn keyword cp2kKeyword MP_GRID
@@ -2582,6 +2590,7 @@ syn keyword cp2kKeyword NUM_GTO_CORE
 syn keyword cp2kKeyword NUM_GTO_EXTENDED
 syn keyword cp2kKeyword NUM_GTO_POLARIZATION
 syn keyword cp2kKeyword NUM_INTERVAL
+syn keyword cp2kKeyword NUM_KP_GRIDS
 syn keyword cp2kKeyword NUM_LAYERS_3D
 syn keyword cp2kKeyword NUM_MC_ELEM
 syn keyword cp2kKeyword NUM_MULT_IMAGES
