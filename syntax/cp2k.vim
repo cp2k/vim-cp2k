@@ -155,6 +155,14 @@ syn keyword cp2kConstant BROYDEN
 syn keyword cp2kConstant BROYDEN_MIXING
 syn keyword cp2kConstant BROYDEN_MIXING_NEW
 syn keyword cp2kConstant BSSE
+syn keyword cp2kConstant BT1
+syn keyword cp2kConstant BT1_EXPLICIT
+syn keyword cp2kConstant BT1_EXPLICIT_LS
+syn keyword cp2kConstant BT1_LS
+syn keyword cp2kConstant BT2
+syn keyword cp2kConstant BT2_EXPLICIT
+syn keyword cp2kConstant BT2_EXPLICIT_LS
+syn keyword cp2kConstant BT2_LS
 syn keyword cp2kConstant BUFFER
 syn keyword cp2kConstant CALC_MATRIX
 syn keyword cp2kConstant CAMBRIDGE
@@ -497,6 +505,7 @@ syn keyword cp2kConstant NEURAL_NETWORK
 syn keyword cp2kConstant NEVER
 syn keyword cp2kConstant NEW
 syn keyword cp2kConstant NEWTON
+syn keyword cp2kConstant NEWTON_LS
 syn keyword cp2kConstant NN10
 syn keyword cp2kConstant NN10_SMOOTH
 syn keyword cp2kConstant NN4
@@ -647,6 +656,7 @@ syn keyword cp2kConstant SCMP
 syn keyword cp2kConstant SCPTB
 syn keyword cp2kConstant SCZORA(MP)
 syn keyword cp2kConstant SD
+syn keyword cp2kConstant SECANT
 syn keyword cp2kConstant SELF_CONSISTENT
 syn keyword cp2kConstant SEMI_ANALYTIC
 syn keyword cp2kConstant SEQUENTIAL
@@ -1664,6 +1674,7 @@ syn keyword cp2kKeyword BROYDEN_OMEGA
 syn keyword cp2kKeyword BROYDEN_SIGMA
 syn keyword cp2kKeyword BROYDEN_SIGMA_DECREASE
 syn keyword cp2kKeyword BROYDEN_SIGMA_MIN
+syn keyword cp2kKeyword BROYDEN_TYPE
 syn keyword cp2kKeyword BROY_W0
 syn keyword cp2kKeyword BROY_WMAX
 syn keyword cp2kKeyword BROY_WREF
@@ -1785,6 +1796,7 @@ syn keyword cp2kKeyword CORR_MOS_VIRT CORR_VIRT
 syn keyword cp2kKeyword CORR_RADIUS
 syn keyword cp2kKeyword COST_MODEL
 syn keyword cp2kKeyword COULOMB_INTEGRALS
+syn keyword cp2kKeyword COUNTER
 syn keyword cp2kKeyword COUPLING_PARAMETER
 syn keyword cp2kKeyword CPOL
 syn keyword cp2kKeyword CRAZY_SCALE
@@ -2248,6 +2260,7 @@ syn keyword cp2kKeyword IUPTRANS
 syn keyword cp2kKeyword IUPVOLUME
 syn keyword cp2kKeyword IWEIGHT
 syn keyword cp2kKeyword J
+syn keyword cp2kKeyword JACOBIAN_FREQ
 syn keyword cp2kKeyword JACOBIAN_STEP
 syn keyword cp2kKeyword JACOBIAN_TYPE
 syn keyword cp2kKeyword JACOBI_FALLBACK
