@@ -1279,6 +1279,7 @@ syn keyword cp2kSection PP_BASIS
 syn keyword cp2kSection PRINT
 syn keyword cp2kSection PRINT_AVERAGES
 syn keyword cp2kSection PRINT_DFTD
+syn keyword cp2kSection PRINT_ELPA
 syn keyword cp2kSection PRINT_ORBITAL_CUBES
 syn keyword cp2kSection PRINT_SPECIFIC_E_DENSITY_CUBE
 syn keyword cp2kSection PROGRAM_BANNER
@@ -1933,6 +1934,8 @@ syn keyword cp2kKeyword ELEC_CONF
 syn keyword cp2kKeyword ELEMENT ELEMENT_SYMBOL
 syn keyword cp2kKeyword ELEMENT_CUTOFF
 syn keyword cp2kKeyword ELPA_KERNEL
+syn keyword cp2kKeyword ELPA_QR
+syn keyword cp2kKeyword ELPA_QR_UNSAFE
 syn keyword cp2kKeyword EMAX_ACCURACY
 syn keyword cp2kKeyword EMAX_SPLINE
 syn keyword cp2kKeyword END_ELEM
@@ -2340,6 +2343,7 @@ syn keyword cp2kKeyword LOCK_DISTRIBUTION
 syn keyword cp2kKeyword LOCLUMO_RESTART_FILE_NAME
 syn keyword cp2kKeyword LOG_PRINT_KEY
 syn keyword cp2kKeyword LONG_RANGE_CORRECTION
+syn keyword cp2kKeyword LOWEST_FREQUENCY
 syn keyword cp2kKeyword LRI_BASIS_SET LRI_BASIS
 syn keyword cp2kKeyword LRI_OVERLAP_MATRIX
 syn keyword cp2kKeyword LSD_SINGLETS
