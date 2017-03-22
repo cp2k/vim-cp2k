@@ -84,7 +84,6 @@ syn keyword cp2kConstant <ERFC(A*R)/R>
 syn keyword cp2kConstant <EXP(-A*R)/R>
 syn keyword cp2kConstant <EXP(-A*R2)/R>
 syn keyword cp2kConstant AC
-syn keyword cp2kConstant ACCEPTOR
 syn keyword cp2kConstant AD
 syn keyword cp2kConstant ADAPT
 syn keyword cp2kConstant ADD
@@ -169,7 +168,6 @@ syn keyword cp2kConstant CAMBRIDGE
 syn keyword cp2kConstant CANONICAL
 syn keyword cp2kConstant CAUCHY
 syn keyword cp2kConstant CAUCHY_SUBSPACE
-syn keyword cp2kConstant CAVITY
 syn keyword cp2kConstant CD3
 syn keyword cp2kConstant CD5
 syn keyword cp2kConstant CD7
@@ -192,7 +190,6 @@ syn keyword cp2kConstant COEFFICIENTS
 syn keyword cp2kConstant COLLOCATE
 syn keyword cp2kConstant COLUMN
 syn keyword cp2kConstant COM
-syn keyword cp2kConstant COMBINED
 syn keyword cp2kConstant COMMON
 syn keyword cp2kConstant COMPLEX
 syn keyword cp2kConstant COMPLEX_4
@@ -256,7 +253,6 @@ syn keyword cp2kConstant DKH(4)
 syn keyword cp2kConstant DKH(5)
 syn keyword cp2kConstant DMC
 syn keyword cp2kConstant DMFT
-syn keyword cp2kConstant DONOR
 syn keyword cp2kConstant DRIVER
 syn keyword cp2kConstant DRSLL
 syn keyword cp2kConstant DSATUR
@@ -264,7 +260,6 @@ syn keyword cp2kConstant DSCF
 syn keyword cp2kConstant DX2
 syn keyword cp2kConstant DXY
 syn keyword cp2kConstant DY2
-syn keyword cp2kConstant DYNAMIC
 syn keyword cp2kConstant DYZ
 syn keyword cp2kConstant DZ2
 syn keyword cp2kConstant DZX
@@ -438,7 +433,6 @@ syn keyword cp2kConstant LOWDIN
 syn keyword cp2kConstant LR
 syn keyword cp2kConstant LRIGPW
 syn keyword cp2kConstant LWDN
-syn keyword cp2kConstant MAGNETIZATION
 syn keyword cp2kConstant MAO
 syn keyword cp2kConstant MASS
 syn keyword cp2kConstant MASSIVE
@@ -704,7 +698,6 @@ syn keyword cp2kConstant SSE_BLOCK4
 syn keyword cp2kConstant SSE_BLOCK6
 syn keyword cp2kConstant STAGE
 syn keyword cp2kConstant STANDARD
-syn keyword cp2kConstant STATIC
 syn keyword cp2kConstant STRICT
 syn keyword cp2kConstant SUBLATTICE
 syn keyword cp2kConstant SUM
@@ -729,7 +722,6 @@ syn keyword cp2kConstant TETRAGONAL_AB
 syn keyword cp2kConstant TETRAGONAL_AC
 syn keyword cp2kConstant TETRAGONAL_BC
 syn keyword cp2kConstant TMC
-syn keyword cp2kConstant TOTAL
 syn keyword cp2kConstant TPSS
 syn keyword cp2kConstant TP_FH
 syn keyword cp2kConstant TP_FLEX
@@ -843,6 +835,7 @@ syn keyword cp2kSection AO_MATRICES
 syn keyword cp2kSection ATOM
 syn keyword cp2kSection ATOMIC
 syn keyword cp2kSection ATOMIC_COORDINATES
+syn keyword cp2kSection ATOM_GROUP
 syn keyword cp2kSection ATOM_INFO
 syn keyword cp2kSection ATOM_LIST
 syn keyword cp2kSection AUXILIARY_DENSITY_MATRIX_METHOD
@@ -860,9 +853,9 @@ syn keyword cp2kSection BECKE88
 syn keyword cp2kSection BECKE88_LR
 syn keyword cp2kSection BECKE88_LR_ADIABATIC
 syn keyword cp2kSection BECKE97
-syn keyword cp2kSection BECKE_RESTRAINT
-syn keyword cp2kSection BECKE_RESTRAINT_A
-syn keyword cp2kSection BECKE_RESTRAINT_B
+syn keyword cp2kSection BECKE_CONSTRAINT
+syn keyword cp2kSection BECKE_CONSTRAINT_A
+syn keyword cp2kSection BECKE_CONSTRAINT_B
 syn keyword cp2kSection BECKE_ROUSSEL
 syn keyword cp2kSection BEEF
 syn keyword cp2kSection BEND
@@ -994,6 +987,7 @@ syn keyword cp2kSection DISTRIBUTION1D
 syn keyword cp2kSection DISTRIBUTION2D
 syn keyword cp2kSection DOS
 syn keyword cp2kSection DRIVER
+syn keyword cp2kSection DUMMY_ATOMS
 syn keyword cp2kSection DUMP_PDB
 syn keyword cp2kSection DUMP_PSF
 syn keyword cp2kSection EACH
@@ -1696,6 +1690,7 @@ syn keyword cp2kKeyword CALC_COND_NUM CALC_CONDITION_NUMBER
 syn keyword cp2kKeyword CALLGRAPH
 syn keyword cp2kKeyword CALLGRAPH_FILE_NAME
 syn keyword cp2kKeyword CARTESIAN
+syn keyword cp2kKeyword CAVITY_CONFINE
 syn keyword cp2kKeyword CAVITY_PRINT
 syn keyword cp2kKeyword CAVITY_RADIUS
 syn keyword cp2kKeyword CAVITY_SHAPE
@@ -1718,6 +1713,7 @@ syn keyword cp2kKeyword CG_INIT_STEPS
 syn keyword cp2kKeyword CG_RESET_LIMIT
 syn keyword cp2kKeyword CHARGE
 syn keyword cp2kKeyword CHARGE_BETA CHARGE_B
+syn keyword cp2kKeyword CHARGE_CONSTRAINT
 syn keyword cp2kKeyword CHARGE_EXTENDED
 syn keyword cp2kKeyword CHARGE_OCCUP CHARGE_O
 syn keyword cp2kKeyword CHECK_2C_ACCURACY
@@ -1747,7 +1743,6 @@ syn keyword cp2kKeyword COLVAR
 syn keyword cp2kKeyword COLVAR_AVG_TEMPERATURE_RESTART
 syn keyword cp2kKeyword COLZERO_THRESHOLD
 syn keyword cp2kKeyword COL_BLOCK COL_BLOCK_SIZE
-syn keyword cp2kKeyword COMBINED_TYPE
 syn keyword cp2kKeyword COMMENSURATE
 syn keyword cp2kKeyword COMMON_CENTER
 syn keyword cp2kKeyword COMMON_ITERATION_LEVELS
@@ -1763,16 +1758,12 @@ syn keyword cp2kKeyword COMPRESS
 syn keyword cp2kKeyword COMVEL_TOL
 syn keyword cp2kKeyword CONDITION_NUMBER
 syn keyword cp2kKeyword CONDITION_WEIGHT
-syn keyword cp2kKeyword CONFINE
 syn keyword cp2kKeyword CONFINEMENT
 syn keyword cp2kKeyword CONFINEMENT_TYPE
-syn keyword cp2kKeyword CONFINE_BOUNDS
-syn keyword cp2kKeyword CONFINE_DIR
 syn keyword cp2kKeyword CONJUGATOR
 syn keyword cp2kKeyword CONN_FILE_FORMAT CONNECTIVITY
 syn keyword cp2kKeyword CONN_FILE_NAME CONN_FILE
 syn keyword cp2kKeyword CONSTRAINT_INIT
-syn keyword cp2kKeyword CONSTRAINT_TYPE
 syn keyword cp2kKeyword CONTOUR_DEF_END CD_END
 syn keyword cp2kKeyword CONTOUR_DEF_OFFSET CD_OFFSET
 syn keyword cp2kKeyword CONTOUR_DEF_START CD_START
@@ -1913,7 +1904,6 @@ syn keyword cp2kKeyword DR
 syn keyword cp2kKeyword DROPLET_RADIUS
 syn keyword cp2kKeyword DT
 syn keyword cp2kKeyword DX
-syn keyword cp2kKeyword DYNAMIC_RADIUS
 syn keyword cp2kKeyword DYNAMIC_THRESHOLD
 syn keyword cp2kKeyword D_EXPONENTS
 syn keyword cp2kKeyword D_FILTER
@@ -2462,8 +2452,10 @@ syn keyword cp2kKeyword MIN_OR_MAX
 syn keyword cp2kKeyword MIN_RADIUS
 syn keyword cp2kKeyword MIN_RANKS_PER_POLE
 syn keyword cp2kKeyword MIXED_CDFT
+syn keyword cp2kKeyword MIXED_CDFT_CI
 syn keyword cp2kKeyword MIXED_CDFT_COUPLING
 syn keyword cp2kKeyword MIXED_CDFT_DLB
+syn keyword cp2kKeyword MIXED_CDFT_LOWDIN
 syn keyword cp2kKeyword MIXED_CDFT_METRIC
 syn keyword cp2kKeyword MIXED_CDFT_WFN_OVERLAP
 syn keyword cp2kKeyword MIXING
