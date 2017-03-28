@@ -547,6 +547,7 @@ syn keyword cp2kConstant ORBITAL
 syn keyword cp2kConstant ORIG
 syn keyword cp2kConstant ORIGINAL
 syn keyword cp2kConstant ORTHORHOMBIC
+syn keyword cp2kConstant OS
 syn keyword cp2kConstant OT
 syn keyword cp2kConstant OVERLAP
 syn keyword cp2kConstant PADE
@@ -1887,6 +1888,7 @@ syn keyword cp2kKeyword DM_RESTART_WRITE
 syn keyword cp2kKeyword DOT_TREE
 syn keyword cp2kKeyword DO_AUX_BAS_GW
 syn keyword cp2kKeyword DO_CALIBRATE_CUTOFF
+syn keyword cp2kKeyword DO_CHOLESKY_SUBGROUPS DCS
 syn keyword cp2kKeyword DO_DSO
 syn keyword cp2kKeyword DO_EWALD
 syn keyword cp2kKeyword DO_FC
@@ -2604,6 +2606,7 @@ syn keyword cp2kKeyword NUM_LAYERS_3D
 syn keyword cp2kKeyword NUM_MC_ELEM
 syn keyword cp2kKeyword NUM_MULT_IMAGES
 syn keyword cp2kKeyword NUM_MV_ELEM_IN_CELL
+syn keyword cp2kKeyword NUM_OMEGA_POINTS
 syn keyword cp2kKeyword NUM_POLE
 syn keyword cp2kKeyword NUM_POLYNOM
 syn keyword cp2kKeyword NUM_SLATER
@@ -2631,7 +2634,6 @@ syn keyword cp2kKeyword N_SIDES
 syn keyword cp2kKeyword N_SIMPLE_MIX NSIMPLEMIX
 syn keyword cp2kKeyword N_SIZE_MNK_STACKS
 syn keyword cp2kKeyword N_WINDOWS
-syn keyword cp2kKeyword OBARA_SAIKA_OVERLAP OSO
 syn keyword cp2kKeyword OBC_EQUILIBRIUM
 syn keyword cp2kKeyword OCCUPATION_NUMBERS OCCNUMS
 syn keyword cp2kKeyword OCCUPATION_PRECONDITIONER
@@ -3089,6 +3091,7 @@ syn keyword cp2kKeyword SIGN_SQRT_ORDER
 syn keyword cp2kKeyword SINGLE_PRECISION_MATRICES
 syn keyword cp2kKeyword SIP_LIST
 syn keyword cp2kKeyword SIZE
+syn keyword cp2kKeyword SIZE_CHOLESKY_SUBGROUP SIZE_CS
 syn keyword cp2kKeyword SIZE_FREQ_INTEG_GROUP RPA_GROUP_SIZE
 syn keyword cp2kKeyword SIZE_INTEG_GROUP LAPLACE_GROUP_SIZE
 syn keyword cp2kKeyword SKIP_LOAD_BALANCE_DISTRIBUTED
