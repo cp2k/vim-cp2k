@@ -1495,8 +1495,6 @@ syn keyword cp2kKeyword ACTIVE_ELECTRONS
 syn keyword cp2kKeyword ACTIVE_ORBITALS
 syn keyword cp2kKeyword ADAPTIVE_EXCLUDE_MOLECULES
 syn keyword cp2kKeyword ADDED_MOS
-syn keyword cp2kKeyword ADDED_STATES
-syn keyword cp2kKeyword ADD_DEGENERATE_STATES
 syn keyword cp2kKeyword ADD_LAST
 syn keyword cp2kKeyword ADJUST_SIZE
 syn keyword cp2kKeyword ADMM
@@ -1826,7 +1824,6 @@ syn keyword cp2kKeyword DEBUG_STRESS_TENSOR
 syn keyword cp2kKeyword DEBUG_TOLERANCE
 syn keyword cp2kKeyword DEFINE_FRAGMENTS
 syn keyword cp2kKeyword DEF_TYPE
-syn keyword cp2kKeyword DEGENERATE_EPS
 syn keyword cp2kKeyword DEGREES_OF_FREEDOM
 syn keyword cp2kKeyword DELOCALIZE_METHOD
 syn keyword cp2kKeyword DELTA
@@ -2408,7 +2405,6 @@ syn keyword cp2kKeyword MAX_PERM_CYCLE
 syn keyword cp2kKeyword MAX_PEXSI_ITER
 syn keyword cp2kKeyword MAX_PROJECTOR
 syn keyword cp2kKeyword MAX_RAD_LOCAL
-syn keyword cp2kKeyword MAX_REORTHO
 syn keyword cp2kKeyword MAX_REUSE
 syn keyword cp2kKeyword MAX_SCF
 syn keyword cp2kKeyword MAX_SCF_HISTORY MAX_SCF_HIST
