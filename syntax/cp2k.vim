@@ -3266,6 +3266,7 @@ syn keyword cp2kKeyword USE_G96_VELOCITY
 syn keyword cp2kKeyword USE_GEEP_LIB
 syn keyword cp2kKeyword USE_HISTORY
 syn keyword cp2kKeyword USE_MODEL_HESSIAN
+syn keyword cp2kKeyword USE_MPI_ALLOCATOR
 syn keyword cp2kKeyword USE_MPI_RMA
 syn keyword cp2kKeyword USE_OLD_GAUGE_ATOM
 syn keyword cp2kKeyword USE_PLUMED
