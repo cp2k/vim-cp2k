@@ -1351,6 +1351,7 @@ syn keyword cp2kSection SCPTB
 syn keyword cp2kSection SCREENING
 syn keyword cp2kSection SCRF
 syn keyword cp2kSection SE
+syn keyword cp2kSection SEPARABLE_GAUSSIAN_PSEUDO
 syn keyword cp2kSection SHELL
 syn keyword cp2kSection SHELL_COORD
 syn keyword cp2kSection SHELL_ENERGY
