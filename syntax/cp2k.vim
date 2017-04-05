@@ -2272,6 +2272,7 @@ syn keyword cp2kKeyword KERNEL DO_KERNEL
 syn keyword cp2kKeyword KERNEL_FILE_NAME
 syn keyword cp2kKeyword KG_METHOD
 syn keyword cp2kKeyword KG_POTENTIAL KG_POT
+syn keyword cp2kKeyword KG_POTENTIAL_FILE_NAME
 syn keyword cp2kKeyword KIND
 syn keyword cp2kKeyword KINDS
 syn keyword cp2kKeyword KINDS_FROM
