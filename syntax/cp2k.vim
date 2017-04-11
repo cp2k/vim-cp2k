@@ -458,6 +458,7 @@ syn keyword cp2kConstant MINIMIZATION
 syn keyword cp2kConstant MINIMUM
 syn keyword cp2kConstant MIXED
 syn keyword cp2kConstant MIXED_BEND_STRETCH
+syn keyword cp2kConstant MIXED_CDFT
 syn keyword cp2kConstant MIXED_PERIODIC
 syn keyword cp2kConstant MIX_CL
 syn keyword cp2kConstant MIX_CL_TRUNC
@@ -1174,6 +1175,7 @@ syn keyword cp2kSection MINIMA_CRAWLING
 syn keyword cp2kSection MINIMA_HOPPING
 syn keyword cp2kSection MINIMA_TRAJECTORY
 syn keyword cp2kSection MIXED
+syn keyword cp2kSection MIXED_CDFT
 syn keyword cp2kSection MIXED_ENERGIES
 syn keyword cp2kSection MIXING
 syn keyword cp2kSection ML_TRAINING_DATA
@@ -1727,6 +1729,7 @@ syn keyword cp2kKeyword CHECK_S_INV
 syn keyword cp2kKeyword CHECK_UNITARY_TOL
 syn keyword cp2kKeyword CHI_PBC
 syn keyword cp2kKeyword CHOLESKY
+syn keyword cp2kKeyword CI CONFIGURATION_INTERACTION
 syn keyword cp2kKeyword CIF_INFO
 syn keyword cp2kKeyword CIJ
 syn keyword cp2kKeyword CLASSICAL_DIPOLE_MOMENTS
@@ -1789,6 +1792,7 @@ syn keyword cp2kKeyword CORR_RADIUS
 syn keyword cp2kKeyword COST_MODEL
 syn keyword cp2kKeyword COULOMB_INTEGRALS
 syn keyword cp2kKeyword COUNTER
+syn keyword cp2kKeyword COUPLING
 syn keyword cp2kKeyword COUPLING_PARAMETER
 syn keyword cp2kKeyword CPOL
 syn keyword cp2kKeyword CRAZY_SCALE
@@ -1881,6 +1885,7 @@ syn keyword cp2kKeyword DISTRIBUTION-TYPE
 syn keyword cp2kKeyword DISTRIBUTION_LAYOUT
 syn keyword cp2kKeyword DISTRIBUTION_TYPE
 syn keyword cp2kKeyword DKH_ORDER
+syn keyword cp2kKeyword DLB
 syn keyword cp2kKeyword DM
 syn keyword cp2kKeyword DM_RESTART_WRITE
 syn keyword cp2kKeyword DOT_TREE
@@ -2111,6 +2116,7 @@ syn keyword cp2kKeyword FORCE_LAST
 syn keyword cp2kKeyword FORCE_NO_FULL
 syn keyword cp2kKeyword FORCE_PAW
 syn keyword cp2kKeyword FORCE_RESCALING
+syn keyword cp2kKeyword FORCE_STATES
 syn keyword cp2kKeyword FORMAT
 syn keyword cp2kKeyword FRACTION
 syn keyword cp2kKeyword FRACTION_AUX_MOS
@@ -2334,6 +2340,7 @@ syn keyword cp2kKeyword LOCK_DISTRIBUTION
 syn keyword cp2kKeyword LOCLUMO_RESTART_FILE_NAME
 syn keyword cp2kKeyword LOG_PRINT_KEY
 syn keyword cp2kKeyword LONG_RANGE_CORRECTION
+syn keyword cp2kKeyword LOWDIN
 syn keyword cp2kKeyword LOWEST_FREQUENCY
 syn keyword cp2kKeyword LRI_BASIS_SET LRI_BASIS
 syn keyword cp2kKeyword LRI_OVERLAP_MATRIX
@@ -2431,6 +2438,7 @@ syn keyword cp2kKeyword MEMORY_PROGRESSION_FACTOR
 syn keyword cp2kKeyword METADYNAMICS
 syn keyword cp2kKeyword METHOD
 syn keyword cp2kKeyword METHOD_TYPE
+syn keyword cp2kKeyword METRIC COUPLING_METRIC
 syn keyword cp2kKeyword MIN
 syn keyword cp2kKeyword MINIMAX
 syn keyword cp2kKeyword MINIMAX_QUADRATURE MINIMAX
@@ -2451,13 +2459,6 @@ syn keyword cp2kKeyword MIN_NT_HILLS
 syn keyword cp2kKeyword MIN_OR_MAX
 syn keyword cp2kKeyword MIN_RADIUS
 syn keyword cp2kKeyword MIN_RANKS_PER_POLE
-syn keyword cp2kKeyword MIXED_CDFT
-syn keyword cp2kKeyword MIXED_CDFT_CI
-syn keyword cp2kKeyword MIXED_CDFT_COUPLING
-syn keyword cp2kKeyword MIXED_CDFT_DLB
-syn keyword cp2kKeyword MIXED_CDFT_LOWDIN
-syn keyword cp2kKeyword MIXED_CDFT_METRIC
-syn keyword cp2kKeyword MIXED_CDFT_WFN_OVERLAP
 syn keyword cp2kKeyword MIXING
 syn keyword cp2kKeyword MIXING_FRACTION
 syn keyword cp2kKeyword MIXING_FUNCTION
@@ -2554,6 +2555,7 @@ syn keyword cp2kKeyword NOISY_GAMMA NOISYGAMMA
 syn keyword cp2kKeyword NOISY_GAMMA_REGION
 syn keyword cp2kKeyword NONDIAG_ENERGY
 syn keyword cp2kKeyword NONDIAG_ENERGY_STRENGTH
+syn keyword cp2kKeyword NONORTHOGONAL_COUPLING NONORTHO_COUPLING
 syn keyword cp2kKeyword NON_MONOTONIC
 syn keyword cp2kKeyword NORMAL_VECTOR
 syn keyword cp2kKeyword NOSE_PARTICLE
@@ -3323,6 +3325,7 @@ syn keyword cp2kKeyword WEIGHT_POT_VIRTUAL
 syn keyword cp2kKeyword WEIGHT_PSIR0
 syn keyword cp2kKeyword WEIGHT_TYPE
 syn keyword cp2kKeyword WELL_TEMPERED
+syn keyword cp2kKeyword WFN_OVERLAP
 syn keyword cp2kKeyword WFN_RESTART_FILE_NAME
 syn keyword cp2kKeyword WIDTH
 syn keyword cp2kKeyword WINDING_CYCLE_2
