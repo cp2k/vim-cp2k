@@ -2105,6 +2105,8 @@ syn keyword cp2kKeyword FIXED_MAGNETIC_MOMENT
 syn keyword cp2kKeyword FIXED_MU
 syn keyword cp2kKeyword FIX_CENTROID_POS
 syn keyword cp2kKeyword FLETCHER_REEVES
+syn keyword cp2kKeyword FLIP_FRAGMENT_A
+syn keyword cp2kKeyword FLIP_FRAGMENT_B
 syn keyword cp2kKeyword FLOATING_BASIS_CENTER
 syn keyword cp2kKeyword FLUSH_SHOULD_FLUSH
 syn keyword cp2kKeyword FORCE_BLOCKSIZE
@@ -2122,9 +2124,11 @@ syn keyword cp2kKeyword FRACTION
 syn keyword cp2kKeyword FRACTION_AUX_MOS
 syn keyword cp2kKeyword FRACTION_EXX ALPHA
 syn keyword cp2kKeyword FRAGMENTATION_THRESHOLD
-syn keyword cp2kKeyword FRAGMENT_A_FILE_NAME
-syn keyword cp2kKeyword FRAGMENT_B_FILE_NAME
-syn keyword cp2kKeyword FRAGMENT_DENSITIES
+syn keyword cp2kKeyword FRAGMENT_A_FILE_NAME FRAGMENT_A_FILE
+syn keyword cp2kKeyword FRAGMENT_A_SPIN_FILE FRAGMENT_A_SPIN_FILE_NAME
+syn keyword cp2kKeyword FRAGMENT_B_FILE_NAME FRAGMENT_B_FILE
+syn keyword cp2kKeyword FRAGMENT_B_SPIN_FILE FRAGMENT_B_SPIN_FILE_NAME
+syn keyword cp2kKeyword FRAGMENT_CONSTRAINT
 syn keyword cp2kKeyword FRAME_COUNT
 syn keyword cp2kKeyword FRAME_START
 syn keyword cp2kKeyword FRAME_STOP
