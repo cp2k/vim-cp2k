@@ -1089,6 +1089,7 @@ syn keyword cp2kSection HBONDS
 syn keyword cp2kSection HBP
 syn keyword cp2kSection HCTH
 syn keyword cp2kSection HELIUM
+syn keyword cp2kSection HESSIAN
 syn keyword cp2kSection HF
 syn keyword cp2kSection HF_INFO
 syn keyword cp2kSection HILLS
@@ -1127,6 +1128,7 @@ syn keyword cp2kSection KINETIC_ENERGY
 syn keyword cp2kSection KPOINTS
 syn keyword cp2kSection KPOINT_SET
 syn keyword cp2kSection KRYLOV
+syn keyword cp2kSection KS_CSR_WRITE
 syn keyword cp2kSection K_MATRIX
 syn keyword cp2kSection LAGRANGE_MULTIPLIERS
 syn keyword cp2kSection LANCZOS
@@ -1387,6 +1389,7 @@ syn keyword cp2kSection SUBCELL
 syn keyword cp2kSection SUBSYS
 syn keyword cp2kSection SWARM
 syn keyword cp2kSection SYMMETRY
+syn keyword cp2kSection S_CSR_WRITE
 syn keyword cp2kSection TDDFPT
 syn keyword cp2kSection TEMPERATURE
 syn keyword cp2kSection TEMPERATURE_COLVAR
@@ -3263,6 +3266,7 @@ syn keyword cp2kKeyword UNIQUE_SPLINE
 syn keyword cp2kKeyword UNIT
 syn keyword cp2kKeyword UNITS
 syn keyword cp2kKeyword UNIX
+syn keyword cp2kKeyword UPPER_TRIANGULAR
 syn keyword cp2kKeyword USER_RADIUS
 syn keyword cp2kKeyword USE_COLVARS
 syn keyword cp2kKeyword USE_COMM_THREAD
