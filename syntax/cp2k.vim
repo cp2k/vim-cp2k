@@ -2735,6 +2735,7 @@ syn keyword cp2kKeyword PGF_RADII
 syn keyword cp2kKeyword PHASE
 syn keyword cp2kKeyword PHI0
 syn keyword cp2kKeyword PHYSCON
+syn keyword cp2kKeyword PINT
 syn keyword cp2kKeyword PINT_UNIT
 syn keyword cp2kKeyword PLUMED_INPUT_FILE
 syn keyword cp2kKeyword PLUS_U_METHOD
