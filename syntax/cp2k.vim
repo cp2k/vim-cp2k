@@ -2207,7 +2207,6 @@ syn keyword cp2kKeyword HELIUM_ONLY
 syn keyword cp2kKeyword HFX_BALANCE_IN_CORE
 syn keyword cp2kKeyword HF_LIKE_EV_START
 syn keyword cp2kKeyword HILL_TAIL_CUTOFF
-syn keyword cp2kKeyword HOMO_LIST
 syn keyword cp2kKeyword HOST
 syn keyword cp2kKeyword HYDROGENS
 syn keyword cp2kKeyword IGNORE_MISSING_CRITICAL_PARAMS
