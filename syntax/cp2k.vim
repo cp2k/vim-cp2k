@@ -2191,8 +2191,6 @@ syn keyword cp2kKeyword GROUP_SIZE NUMBER_PROC
 syn keyword cp2kKeyword GROUP_SIZE_3C
 syn keyword cp2kKeyword GROUP_SIZE_P
 syn keyword cp2kKeyword GSPACE_SMOOTHING
-syn keyword cp2kKeyword GTH_PPL_RADII
-syn keyword cp2kKeyword GTH_PPNL_RADII
 syn keyword cp2kKeyword GTOP_INFO
 syn keyword cp2kKeyword G_R
 syn keyword cp2kKeyword H
@@ -2775,6 +2773,8 @@ syn keyword cp2kKeyword POTENTIAL_NAME POT_NAME
 syn keyword cp2kKeyword POTENTIAL_TYPE
 syn keyword cp2kKeyword POT_TYPE
 syn keyword cp2kKeyword POWELL_OPT
+syn keyword cp2kKeyword PPL_RADII
+syn keyword cp2kKeyword PPNL_RADII
 syn keyword cp2kKeyword PRECOND
 syn keyword cp2kKeyword PRECONDITION
 syn keyword cp2kKeyword PRECONDITIONER
