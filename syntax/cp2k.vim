@@ -779,6 +779,7 @@ syn keyword cp2kConstant WAVELET
 syn keyword cp2kConstant WB97X-V
 syn keyword cp2kConstant WEIGHT_LIST
 syn keyword cp2kConstant WFN_OPT
+syn keyword cp2kConstant WORM
 syn keyword cp2kConstant X
 syn keyword cp2kConstant XALMO_1DIAG
 syn keyword cp2kConstant XALMO_SCF
@@ -889,6 +890,7 @@ syn keyword cp2kSection CENTER_OF_MASS
 syn keyword cp2kSection CENTROID_GYR
 syn keyword cp2kSection CENTROID_POS
 syn keyword cp2kSection CENTROID_VEL
+syn keyword cp2kSection CEPERLEY
 syn keyword cp2kSection CG
 syn keyword cp2kSection CHARGE
 syn keyword cp2kSection CHARGES
@@ -1461,6 +1463,7 @@ syn keyword cp2kSection WILLIAMS
 syn keyword cp2kSection WINDING_NUMBER
 syn keyword cp2kSection WINDING_NUMBER_2_AVG
 syn keyword cp2kSection WORKER_RUN_INFO
+syn keyword cp2kSection WORM
 syn keyword cp2kSection XALMO_OPTIMIZER_PCG
 syn keyword cp2kSection XALPHA
 syn keyword cp2kSection XAS
@@ -1713,6 +1716,8 @@ syn keyword cp2kKeyword CENTER_GRID
 syn keyword cp2kKeyword CENTER_POINT
 syn keyword cp2kKeyword CENTER_TYPE
 syn keyword cp2kKeyword CENTRAL_ATOM
+syn keyword cp2kKeyword CENTROID_MOVE_DRMAX
+syn keyword cp2kKeyword CENTROID_MOVE_FREQ
 syn keyword cp2kKeyword CENTROID_SPEED
 syn keyword cp2kKeyword CG_INIT_STEPS
 syn keyword cp2kKeyword CG_RESET_LIMIT
@@ -1775,6 +1780,7 @@ syn keyword cp2kKeyword CONTOUR_DEF_OFFSET CD_OFFSET
 syn keyword cp2kKeyword CONTOUR_DEF_START CD_START
 syn keyword cp2kKeyword CONVERGENCE CONV
 syn keyword cp2kKeyword CONV_MOS_PERCENT
+syn keyword cp2kKeyword COORD
 syn keyword cp2kKeyword COORDINATE
 syn keyword cp2kKeyword COORDINATES
 syn keyword cp2kKeyword COORDINATE_FILE_NAME
@@ -2150,6 +2156,8 @@ syn keyword cp2kKeyword FUNCTIONAL_ROUTINE
 syn keyword cp2kKeyword FUNCTIONAL_TYPE
 syn keyword cp2kKeyword F_EXPONENTS
 syn keyword cp2kKeyword F_QUANTUM_NUMBERS
+syn keyword cp2kKeyword G-SECTOR_MOVE
+syn keyword cp2kKeyword G-SECTOR_MOVE_REP
 syn keyword cp2kKeyword G96_INFO
 syn keyword cp2kKeyword GAMMA
 syn keyword cp2kKeyword GAP
@@ -2201,6 +2209,7 @@ syn keyword cp2kKeyword HARM_INT
 syn keyword cp2kKeyword HARRIS_BASIS
 syn keyword cp2kKeyword HB_SR_GAMMA
 syn keyword cp2kKeyword HB_SR_PARAM
+syn keyword cp2kKeyword HEAD_TAIL_MOVE_LMAX
 syn keyword cp2kKeyword HELIUM_ONLY
 syn keyword cp2kKeyword HFX_BALANCE_IN_CORE
 syn keyword cp2kKeyword HF_LIKE_EV_START
@@ -2655,6 +2664,8 @@ syn keyword cp2kKeyword OMEGA_MAX_FIT
 syn keyword cp2kKeyword OMIT_HEADERS
 syn keyword cp2kKeyword ONE_CIRCLE
 syn keyword cp2kKeyword ON_THE_FLY_LOC
+syn keyword cp2kKeyword OPEN_CLOSE_MOVE_C
+syn keyword cp2kKeyword OPEN_CLOSE_MOVE_LMAX
 syn keyword cp2kKeyword OPERATOR
 syn keyword cp2kKeyword OPERATOR_PARAMETER
 syn keyword cp2kKeyword OPTIMIZER MINIMIZER
@@ -3128,6 +3139,8 @@ syn keyword cp2kKeyword SPLINE_FIND_COEFFS
 syn keyword cp2kKeyword SPLINE_INFO
 syn keyword cp2kKeyword SPLINE_ORDER
 syn keyword cp2kKeyword SPLIT_RESTART_FILE
+syn keyword cp2kKeyword STAGING_MOVE_L
+syn keyword cp2kKeyword STAGING_MOVE_REP
 syn keyword cp2kKeyword STANDARD_ORIENTATION
 syn keyword cp2kKeyword START
 syn keyword cp2kKeyword START_ELEM
@@ -3162,6 +3175,7 @@ syn keyword cp2kKeyword SURFACE_DIPOLE_CORRECTION SURFACE_DIPOLE SURF_DIP
 syn keyword cp2kKeyword SURF_DIP_DIR
 syn keyword cp2kKeyword SURF_DIRECTION
 syn keyword cp2kKeyword SVD_CUTOFF
+syn keyword cp2kKeyword SWAP_MOVE_LMAX
 syn keyword cp2kKeyword SWITCH_COEFF_STATE
 syn keyword cp2kKeyword SWITCH_CONTRACTION_STATE
 syn keyword cp2kKeyword SWITCH_EXP_STATE
@@ -3342,6 +3356,7 @@ syn keyword cp2kKeyword WINDING_CYCLE_2
 syn keyword cp2kKeyword WINDING_NUMBER_2
 syn keyword cp2kKeyword WINDOW_SIZE
 syn keyword cp2kKeyword WORKER_PER_MINIMA
+syn keyword cp2kKeyword WRITE
 syn keyword cp2kKeyword WRITE_CUBE
 syn keyword cp2kKeyword WRITE_CYCLES
 syn keyword cp2kKeyword WRITE_FREQUENCY
