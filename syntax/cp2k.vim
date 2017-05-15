@@ -657,6 +657,7 @@ syn keyword cp2kConstant SELF_CONSISTENT
 syn keyword cp2kConstant SEMI_ANALYTIC
 syn keyword cp2kConstant SEQUENTIAL
 syn keyword cp2kConstant SETUP_ONLY
+syn keyword cp2kConstant SGP
 syn keyword cp2kConstant SHORTRANGE
 syn keyword cp2kConstant SIC
 syn keyword cp2kConstant SIGN_MATRIX
@@ -2367,6 +2368,7 @@ syn keyword cp2kKeyword M
 syn keyword cp2kKeyword M-RATIO
 syn keyword cp2kKeyword M-VALUE
 syn keyword cp2kKeyword MAGNETIC
+syn keyword cp2kKeyword MAGNETIZATION
 syn keyword cp2kKeyword MAO
 syn keyword cp2kKeyword MAO_EPS_GRAD
 syn keyword cp2kKeyword MAO_MAX_ITER
