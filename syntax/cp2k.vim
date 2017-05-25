@@ -139,6 +139,7 @@ syn keyword cp2kConstant BGP
 syn keyword cp2kConstant BGQ
 syn keyword cp2kConstant BINARY_IO
 syn keyword cp2kConstant BISECT
+syn keyword cp2kConstant BISECTION
 syn keyword cp2kConstant BLAS
 syn keyword cp2kConstant BLOCKED
 syn keyword cp2kConstant BLOCKED_PROJECTION
@@ -744,6 +745,7 @@ syn keyword cp2kConstant TRS4
 syn keyword cp2kConstant TRUE
 syn keyword cp2kConstant TRUNCATED
 syn keyword cp2kConstant TSHPSC
+syn keyword cp2kConstant TWO_POLE
 syn keyword cp2kConstant UFF
 syn keyword cp2kConstant UHF
 syn keyword cp2kConstant UI
@@ -1535,6 +1537,7 @@ syn keyword cp2kKeyword ALWAYS_CHECKSUM
 syn keyword cp2kKeyword AMBER_INFO
 syn keyword cp2kKeyword ANALYTICAL_GRADIENTS
 syn keyword cp2kKeyword ANALYTICAL_GTERM
+syn keyword cp2kKeyword ANALYTIC_CONTINUATION
 syn keyword cp2kKeyword ANALYZE_UNASSIGNED_CHARGE
 syn keyword cp2kKeyword ANGLE ANG
 syn keyword cp2kKeyword ANGLE_TOLERANCE
@@ -2592,6 +2595,7 @@ syn keyword cp2kKeyword NORMAL_VECTOR
 syn keyword cp2kKeyword NOSE_PARTICLE
 syn keyword cp2kKeyword NO_LS
 syn keyword cp2kKeyword NO_OPTIMIZE
+syn keyword cp2kKeyword NPARAM_PADE
 syn keyword cp2kKeyword NPOINTS
 syn keyword cp2kKeyword NPROC
 syn keyword cp2kKeyword NPROC_REP
