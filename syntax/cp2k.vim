@@ -574,6 +574,7 @@ syn keyword cp2kConstant PIPEK
 syn keyword cp2kConstant PLAIN
 syn keyword cp2kConstant PM3
 syn keyword cp2kConstant PM6
+syn keyword cp2kConstant PM6-FM
 syn keyword cp2kConstant PME
 syn keyword cp2kConstant PNNL
 syn keyword cp2kConstant POINT_CHARGE
