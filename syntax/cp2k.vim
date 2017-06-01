@@ -651,7 +651,6 @@ syn keyword cp2kConstant SAME_AS_PARTICLE
 syn keyword cp2kConstant SAOP
 syn keyword cp2kConstant SCF_WFN
 syn keyword cp2kConstant SCMP
-syn keyword cp2kConstant SCPTB
 syn keyword cp2kConstant SCZORA(MP)
 syn keyword cp2kConstant SD
 syn keyword cp2kConstant SECANT
@@ -1009,7 +1008,6 @@ syn keyword cp2kSection EIP
 syn keyword cp2kSection ELECTRIC_FIELD_GRADIENT
 syn keyword cp2kSection ELF_CUBE
 syn keyword cp2kSection ENERGIES
-syn keyword cp2kSection ENERGIES_MINUS_KINETIC
 syn keyword cp2kSection ENERGIES_VAR
 syn keyword cp2kSection ENERGY
 syn keyword cp2kSection ENERGY_CORRECTION
@@ -1359,7 +1357,6 @@ syn keyword cp2kSection SAOP
 syn keyword cp2kSection SCCS
 syn keyword cp2kSection SCF
 syn keyword cp2kSection SCF_INFO
-syn keyword cp2kSection SCPTB
 syn keyword cp2kSection SCREENING
 syn keyword cp2kSection SCRF
 syn keyword cp2kSection SE
@@ -1920,8 +1917,6 @@ syn keyword cp2kKeyword DO_NONBONDED
 syn keyword cp2kKeyword DO_PSO
 syn keyword cp2kKeyword DO_RAMAN
 syn keyword cp2kKeyword DO_RESTART
-syn keyword cp2kKeyword DO_SCC
-syn keyword cp2kKeyword DO_SCP
 syn keyword cp2kKeyword DO_SD
 syn keyword cp2kKeyword DR
 syn keyword cp2kKeyword DROPLET_RADIUS
@@ -2734,7 +2729,6 @@ syn keyword cp2kKeyword P1_BOND1
 syn keyword cp2kKeyword P1_BOND2
 syn keyword cp2kKeyword P2_BOND1
 syn keyword cp2kKeyword P2_BOND2
-syn keyword cp2kKeyword PAIR_CUTOFF
 syn keyword cp2kKeyword PAOH
 syn keyword cp2kKeyword PAO_BASIS_SIZE
 syn keyword cp2kKeyword PARALLEL_AXIS
