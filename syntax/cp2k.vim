@@ -250,8 +250,6 @@ syn keyword cp2kConstant DKH(0)
 syn keyword cp2kConstant DKH(1)
 syn keyword cp2kConstant DKH(2)
 syn keyword cp2kConstant DKH(3)
-syn keyword cp2kConstant DKH(4)
-syn keyword cp2kConstant DKH(5)
 syn keyword cp2kConstant DMC
 syn keyword cp2kConstant DMFT
 syn keyword cp2kConstant DRIVER
