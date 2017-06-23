@@ -2279,6 +2279,7 @@ syn keyword cp2kKeyword IS_INERTIA_COUNT
 syn keyword cp2kKeyword ITERATION
 syn keyword cp2kKeyword ITER_START_VAL
 syn keyword cp2kKeyword ITIMES_START
+syn keyword cp2kKeyword IUPCLTRANS
 syn keyword cp2kKeyword IUPTRANS
 syn keyword cp2kKeyword IUPVOLUME
 syn keyword cp2kKeyword IWEIGHT
@@ -2767,6 +2768,8 @@ syn keyword cp2kKeyword PLUS_U_METHOD
 syn keyword cp2kKeyword PM EXPON_NUMERATOR
 syn keyword cp2kKeyword PMAVBMC
 syn keyword cp2kKeyword PMAVBMC_MOL
+syn keyword cp2kKeyword PMCLTRANS
+syn keyword cp2kKeyword PMCLUS_BOX
 syn keyword cp2kKeyword PMHMC
 syn keyword cp2kKeyword PMHMC_BOX
 syn keyword cp2kKeyword PMROT_MOL
@@ -2904,6 +2907,7 @@ syn keyword cp2kKeyword RANDOMTOSKIP
 syn keyword cp2kKeyword RANDOM_NUMBER_GENERATOR RNG
 syn keyword cp2kKeyword RANGE
 syn keyword cp2kKeyword RAOH
+syn keyword cp2kKeyword RCLUS
 syn keyword cp2kKeyword RCOV_MULTIPLICATION
 syn keyword cp2kKeyword RCUT
 syn keyword cp2kKeyword RCUT_NB
@@ -3017,6 +3021,7 @@ syn keyword cp2kKeyword RMANGLE
 syn keyword cp2kKeyword RMAX
 syn keyword cp2kKeyword RMAX_KIND
 syn keyword cp2kKeyword RMBOND
+syn keyword cp2kKeyword RMCLTRANS
 syn keyword cp2kKeyword RMDIHEDRAL
 syn keyword cp2kKeyword RMIN
 syn keyword cp2kKeyword RMIN_KIND
