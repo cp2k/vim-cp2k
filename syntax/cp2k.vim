@@ -119,6 +119,7 @@ syn keyword cp2kConstant B97GRIMME
 syn keyword cp2kConstant B97_GRIMME
 syn keyword cp2kConstant BAND
 syn keyword cp2kConstant BANDED
+syn keyword cp2kConstant BAND_STRUCTURE
 syn keyword cp2kConstant BARRIER
 syn keyword cp2kConstant BASIC
 syn keyword cp2kConstant BASIS_CENTER_OPT
@@ -252,6 +253,7 @@ syn keyword cp2kConstant DKH(2)
 syn keyword cp2kConstant DKH(3)
 syn keyword cp2kConstant DMC
 syn keyword cp2kConstant DMFT
+syn keyword cp2kConstant DOS
 syn keyword cp2kConstant DRIVER
 syn keyword cp2kConstant DRSLL
 syn keyword cp2kConstant DSATUR
@@ -1779,6 +1781,7 @@ syn keyword cp2kKeyword CONJUGATOR
 syn keyword cp2kKeyword CONN_FILE_FORMAT CONNECTIVITY
 syn keyword cp2kKeyword CONN_FILE_NAME CONN_FILE
 syn keyword cp2kKeyword CONSTRAINT_INIT
+syn keyword cp2kKeyword CONTACT_FILLING
 syn keyword cp2kKeyword CONTOUR_DEF_END CD_END
 syn keyword cp2kKeyword CONTOUR_DEF_OFFSET CD_OFFSET
 syn keyword cp2kKeyword CONTOUR_DEF_START CD_START
@@ -1855,6 +1858,7 @@ syn keyword cp2kKeyword DELTA_RI DRI
 syn keyword cp2kKeyword DELTA_T
 syn keyword cp2kKeyword DENSITY
 syn keyword cp2kKeyword DENSITY_CUTOFF
+syn keyword cp2kKeyword DENSITY_MIXING
 syn keyword cp2kKeyword DENSITY_PROPAGATION
 syn keyword cp2kKeyword DENSITY_SMOOTH_CUTOFF_RANGE
 syn keyword cp2kKeyword DEOCC_ALPHA
