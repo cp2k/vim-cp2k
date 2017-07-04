@@ -1782,6 +1782,7 @@ syn keyword cp2kKeyword CONN_FILE_FORMAT CONNECTIVITY
 syn keyword cp2kKeyword CONN_FILE_NAME CONN_FILE
 syn keyword cp2kKeyword CONSTRAINT_INIT
 syn keyword cp2kKeyword CONTACT_FILLING
+syn keyword cp2kKeyword CONTINUE_LS
 syn keyword cp2kKeyword CONTOUR_DEF_END CD_END
 syn keyword cp2kKeyword CONTOUR_DEF_OFFSET CD_OFFSET
 syn keyword cp2kKeyword CONTOUR_DEF_START CD_START
@@ -2096,6 +2097,7 @@ syn keyword cp2kKeyword E_TARGET
 syn keyword cp2kKeyword F
 syn keyword cp2kKeyword F0
 syn keyword cp2kKeyword FACTORIZATION
+syn keyword cp2kKeyword FACTOR_LS
 syn keyword cp2kKeyword FERMI_AMALDI
 syn keyword cp2kKeyword FERMI_CONTACT
 syn keyword cp2kKeyword FERMI_EXP
@@ -2289,8 +2291,10 @@ syn keyword cp2kKeyword IUPVOLUME
 syn keyword cp2kKeyword IWEIGHT
 syn keyword cp2kKeyword J
 syn keyword cp2kKeyword JACOBIAN_FREQ
+syn keyword cp2kKeyword JACOBIAN_RESTART
 syn keyword cp2kKeyword JACOBIAN_STEP
 syn keyword cp2kKeyword JACOBIAN_TYPE
+syn keyword cp2kKeyword JACOBIAN_VECTOR
 syn keyword cp2kKeyword JACOBI_FALLBACK
 syn keyword cp2kKeyword JACOBI_THRESHOLD
 syn keyword cp2kKeyword JOB_ID
@@ -2435,6 +2439,7 @@ syn keyword cp2kKeyword MAX_ITER_OUTER_LOOP
 syn keyword cp2kKeyword MAX_ITER_VIRT
 syn keyword cp2kKeyword MAX_JOBS_PER_GROUP MAX_JOBS
 syn keyword cp2kKeyword MAX_KV MAX_VECTORS
+syn keyword cp2kKeyword MAX_LS
 syn keyword cp2kKeyword MAX_MEMORY
 syn keyword cp2kKeyword MAX_MOMENT
 syn keyword cp2kKeyword MAX_MULTIPOLE_EXPANSION
