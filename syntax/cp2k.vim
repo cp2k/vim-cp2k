@@ -630,6 +630,7 @@ syn keyword cp2kConstant REV_PBEX
 syn keyword cp2kConstant RGF
 syn keyword cp2kConstant RHF
 syn keyword cp2kConstant RHOMBOHEDRAL
+syn keyword cp2kConstant RIGPW
 syn keyword cp2kConstant RI_MP2_GPW
 syn keyword cp2kConstant RI_RPA_GPW
 syn keyword cp2kConstant RI_SOS_LAPLACE
@@ -1336,6 +1337,7 @@ syn keyword cp2kSection RESTRAINT
 syn keyword cp2kSection RHO
 syn keyword cp2kSection RHO0_INFORMATION
 syn keyword cp2kSection RHO_MIXING
+syn keyword cp2kSection RIGPW
 syn keyword cp2kSection RING_PUCKERING
 syn keyword cp2kSection RI_AXK
 syn keyword cp2kSection RI_G0W0
