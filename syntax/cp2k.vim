@@ -3027,6 +3027,7 @@ syn keyword cp2kKeyword RI_AXK AXK
 syn keyword cp2kKeyword RI_G0W0 GW
 syn keyword cp2kKeyword RI_METRIC RI
 syn keyword cp2kKeyword RI_SIGMA_X
+syn keyword cp2kKeyword RI_SINV
 syn keyword cp2kKeyword RKS_TRIPLETS
 syn keyword cp2kKeyword RMANGLE
 syn keyword cp2kKeyword RMAX
