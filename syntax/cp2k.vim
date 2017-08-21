@@ -2030,6 +2030,7 @@ syn keyword cp2kKeyword EPS_MM_RSPACE
 syn keyword cp2kKeyword EPS_MU
 syn keyword cp2kKeyword EPS_NORM
 syn keyword cp2kKeyword EPS_NO_ERROR_CHECK
+syn keyword cp2kKeyword EPS_O3_INT
 syn keyword cp2kKeyword EPS_OCCUPATION
 syn keyword cp2kKeyword EPS_OUT
 syn keyword cp2kKeyword EPS_PAO
