@@ -2032,6 +2032,7 @@ syn keyword cp2kKeyword EPS_NORM
 syn keyword cp2kKeyword EPS_NO_ERROR_CHECK
 syn keyword cp2kKeyword EPS_O3_INT
 syn keyword cp2kKeyword EPS_OCCUPATION
+syn keyword cp2kKeyword EPS_OCCUPIED
 syn keyword cp2kKeyword EPS_OUT
 syn keyword cp2kKeyword EPS_PAO
 syn keyword cp2kKeyword EPS_PGF
@@ -2525,6 +2526,8 @@ syn keyword cp2kKeyword MOVES_FILE_NAME
 syn keyword cp2kKeyword MOVE_CENTER_OF_MASS
 syn keyword cp2kKeyword MO_COEFF_GAMMA
 syn keyword cp2kKeyword MO_INDEX_RANGE MO_RANGE RANGE
+syn keyword cp2kKeyword MO_OVERLAP_EIGENVALUES
+syn keyword cp2kKeyword MO_OVERLAP_MATRIX
 syn keyword cp2kKeyword MPI
 syn keyword cp2kKeyword MP_GRID
 syn keyword cp2kKeyword MSD_PER_KIND
@@ -3101,6 +3104,7 @@ syn keyword cp2kKeyword SCALE_LONGRANGE
 syn keyword cp2kKeyword SCALE_S
 syn keyword cp2kKeyword SCALE_T
 syn keyword cp2kKeyword SCALE_TEMP_KIND
+syn keyword cp2kKeyword SCALE_WITH_OCCUPATION_NUMBERS
 syn keyword cp2kKeyword SCALE_X
 syn keyword cp2kKeyword SCALE_X0
 syn keyword cp2kKeyword SCALING A_SCALING
