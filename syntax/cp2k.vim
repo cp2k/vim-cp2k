@@ -1846,6 +1846,7 @@ syn keyword cp2kKeyword DC
 syn keyword cp2kKeyword DEBUG
 syn keyword cp2kKeyword DEBUG_FORCES
 syn keyword cp2kKeyword DEBUG_LRI_INTEGRALS
+syn keyword cp2kKeyword DEBUG_NSUM_MAX
 syn keyword cp2kKeyword DEBUG_STRESS_TENSOR
 syn keyword cp2kKeyword DEBUG_TOLERANCE
 syn keyword cp2kKeyword DEFINE_FRAGMENTS
@@ -3219,6 +3220,7 @@ syn keyword cp2kKeyword SUBSPACE_ATOM
 syn keyword cp2kKeyword SUBSPACE_SHELL
 syn keyword cp2kKeyword SUB_BOX
 syn keyword cp2kKeyword SUB_CONF
+syn keyword cp2kKeyword SUM_PRECISION
 syn keyword cp2kKeyword SURFACE_DIPOLE_CORRECTION SURFACE_DIPOLE SURF_DIP
 syn keyword cp2kKeyword SURF_DIP_DIR
 syn keyword cp2kKeyword SURF_DIRECTION
