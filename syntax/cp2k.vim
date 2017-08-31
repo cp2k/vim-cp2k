@@ -434,6 +434,7 @@ syn keyword cp2kConstant LOWDIN
 syn keyword cp2kConstant LR
 syn keyword cp2kConstant LRIGPW
 syn keyword cp2kConstant LWDN
+syn keyword cp2kConstant MAGNETIZATION
 syn keyword cp2kConstant MAO
 syn keyword cp2kConstant MASS
 syn keyword cp2kConstant MASSIVE
@@ -1732,7 +1733,6 @@ syn keyword cp2kKeyword CG_INIT_STEPS
 syn keyword cp2kKeyword CG_RESET_LIMIT
 syn keyword cp2kKeyword CHARGE
 syn keyword cp2kKeyword CHARGE_BETA CHARGE_B
-syn keyword cp2kKeyword CHARGE_CONSTRAINT
 syn keyword cp2kKeyword CHARGE_EXTENDED
 syn keyword cp2kKeyword CHARGE_OCCUP CHARGE_O
 syn keyword cp2kKeyword CHECK_2C_ACCURACY
@@ -1785,6 +1785,7 @@ syn keyword cp2kKeyword CONJUGATOR
 syn keyword cp2kKeyword CONN_FILE_FORMAT CONNECTIVITY
 syn keyword cp2kKeyword CONN_FILE_NAME CONN_FILE
 syn keyword cp2kKeyword CONSTRAINT_INIT
+syn keyword cp2kKeyword CONSTRAINT_TYPE
 syn keyword cp2kKeyword CONTACT_FILLING
 syn keyword cp2kKeyword CONTINUE_LS
 syn keyword cp2kKeyword CONTOUR_DEF_END CD_END
