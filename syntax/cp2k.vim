@@ -3301,6 +3301,7 @@ syn keyword cp2kKeyword TIMESTEP
 syn keyword cp2kKeyword TIME_CUMUL
 syn keyword cp2kKeyword TIME_MPI
 syn keyword cp2kKeyword TIME_START_VAL
+syn keyword cp2kKeyword TIMINGS_LEVEL
 syn keyword cp2kKeyword TINY_STEP_SIZE
 syn keyword cp2kKeyword TNADD_METHOD
 syn keyword cp2kKeyword TOL
