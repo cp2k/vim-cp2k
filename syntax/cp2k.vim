@@ -1907,6 +1907,9 @@ syn keyword cp2kKeyword DISPLACEMENT_TOL
 syn keyword cp2kKeyword DISTANCE DIS
 syn keyword cp2kKeyword DISTANCES
 syn keyword cp2kKeyword DISTANCES_RMSD
+syn keyword cp2kKeyword DISTANT_PAIR_APPROXIMATION
+syn keyword cp2kKeyword DISTANT_PAIR_METHOD
+syn keyword cp2kKeyword DISTANT_PAIR_RADII
 syn keyword cp2kKeyword DISTRIBUTION-TYPE
 syn keyword cp2kKeyword DISTRIBUTION_LAYOUT
 syn keyword cp2kKeyword DISTRIBUTION_TYPE
@@ -2083,6 +2086,7 @@ syn keyword cp2kKeyword EV_SC_ITER
 syn keyword cp2kKeyword EWALD_ACCURACY
 syn keyword cp2kKeyword EWALD_PRECISION
 syn keyword cp2kKeyword EWALD_TYPE
+syn keyword cp2kKeyword EXACT_1C_TERMS
 syn keyword cp2kKeyword EXCHANGE_INTEGRALS
 syn keyword cp2kKeyword EXCH_CORRECTION_FUNC
 syn keyword cp2kKeyword EXCH_SCALING_MODEL
