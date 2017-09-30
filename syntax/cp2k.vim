@@ -1784,6 +1784,7 @@ syn keyword cp2kKeyword CONFINEMENT_TYPE
 syn keyword cp2kKeyword CONJUGATOR
 syn keyword cp2kKeyword CONN_FILE_FORMAT CONNECTIVITY
 syn keyword cp2kKeyword CONN_FILE_NAME CONN_FILE
+syn keyword cp2kKeyword CONSTRAINT
 syn keyword cp2kKeyword CONSTRAINT_INIT
 syn keyword cp2kKeyword CONSTRAINT_TYPE
 syn keyword cp2kKeyword CONTACT_FILLING
