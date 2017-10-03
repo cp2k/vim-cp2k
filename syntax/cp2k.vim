@@ -1009,6 +1009,9 @@ syn keyword cp2kSection EIGENSOLVER
 syn keyword cp2kSection EIP
 syn keyword cp2kSection ELECTRIC_FIELD_GRADIENT
 syn keyword cp2kSection ELF_CUBE
+syn keyword cp2kSection EMBED_DENS_DIFF
+syn keyword cp2kSection EMBED_POT_CUBE
+syn keyword cp2kSection EMBED_POT_VECTOR
 syn keyword cp2kSection ENERGIES
 syn keyword cp2kSection ENERGIES_VAR
 syn keyword cp2kSection ENERGY
@@ -1962,6 +1965,7 @@ syn keyword cp2kKeyword ELPA_QR_UNSAFE
 syn keyword cp2kKeyword EMAX_ACCURACY
 syn keyword cp2kKeyword EMAX_SPLINE
 syn keyword cp2kKeyword EMBED
+syn keyword cp2kKeyword EMBED_RESTART_FILE_NAME
 syn keyword cp2kKeyword END_ELEM
 syn keyword cp2kKeyword END_STEP
 syn keyword cp2kKeyword END_STEP_IN
@@ -2943,6 +2947,7 @@ syn keyword cp2kKeyword RCUT_NB
 syn keyword cp2kKeyword RC_RANGE
 syn keyword cp2kKeyword RC_TAPER
 syn keyword cp2kKeyword RDF
+syn keyword cp2kKeyword READ_EMBED_POT
 syn keyword cp2kKeyword READ_FROM_CUBE
 syn keyword cp2kKeyword REALSPACE
 syn keyword cp2kKeyword REAL_AXIS_INTEGRATION_METHOD
