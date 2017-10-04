@@ -115,6 +115,7 @@ syn keyword cp2kConstant AVX_BLOCK4
 syn keyword cp2kConstant AVX_BLOCK6
 syn keyword cp2kConstant B-NEB
 syn keyword cp2kConstant B3LYP
+syn keyword cp2kConstant B97-3C
 syn keyword cp2kConstant B97GRIMME
 syn keyword cp2kConstant B97_GRIMME
 syn keyword cp2kConstant BAND
@@ -3161,6 +3162,7 @@ syn keyword cp2kKeyword SHIFT_CUTOFF
 syn keyword cp2kKeyword SHIFT_GAPW_RADIUS
 syn keyword cp2kKeyword SHIFT_MM
 syn keyword cp2kKeyword SHIFT_QM
+syn keyword cp2kKeyword SHORT_RANGE_CORRECTION
 syn keyword cp2kKeyword SHOULD_SKIP
 syn keyword cp2kKeyword SIC_METHOD
 syn keyword cp2kKeyword SIC_SCALING_A
