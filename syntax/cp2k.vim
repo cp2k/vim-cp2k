@@ -2534,6 +2534,7 @@ syn keyword cp2kKeyword MODEFACTOR
 syn keyword cp2kKeyword MODEL
 syn keyword cp2kKeyword MOLECULE
 syn keyword cp2kKeyword MOLECULES_FILE_NAME
+syn keyword cp2kKeyword MOLECULE_CORRECTION
 syn keyword cp2kKeyword MOLECULE_CORRECTION_C8
 syn keyword cp2kKeyword MOLNAME SEGNAME
 syn keyword cp2kKeyword MOL_CHECK
