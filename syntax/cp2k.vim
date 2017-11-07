@@ -479,6 +479,7 @@ syn keyword cp2kConstant MOLECULAR_DYNAMICS
 syn keyword cp2kConstant MOLECULE
 syn keyword cp2kConstant MOL_SET
 syn keyword cp2kConstant MONOCLINIC
+syn keyword cp2kConstant MONOCLINIC_GAMMA_AB
 syn keyword cp2kConstant MONTECARLO
 syn keyword cp2kConstant MOPAC
 syn keyword cp2kConstant MORSE
