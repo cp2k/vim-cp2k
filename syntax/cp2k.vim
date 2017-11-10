@@ -2323,6 +2323,7 @@ syn keyword cp2kKeyword JACOBI_THRESHOLD
 syn keyword cp2kKeyword JOB_ID
 syn keyword cp2kKeyword JUST_ENERGY
 syn keyword cp2kKeyword K
+syn keyword cp2kKeyword K-DIMER
 syn keyword cp2kKeyword K2_SPRING K2 SPRING
 syn keyword cp2kKeyword K4_SPRING K4
 syn keyword cp2kKeyword KBS12
