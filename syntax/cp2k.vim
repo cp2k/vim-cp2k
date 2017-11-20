@@ -3205,6 +3205,7 @@ syn keyword cp2kKeyword SPLINE_INFO
 syn keyword cp2kKeyword SPLINE_ORDER
 syn keyword cp2kKeyword SPLIT_RESTART_FILE
 syn keyword cp2kKeyword STABILIZE_EXP
+syn keyword cp2kKeyword STACK_SORT
 syn keyword cp2kKeyword STAGING_MOVE_L
 syn keyword cp2kKeyword STAGING_MOVE_REP
 syn keyword cp2kKeyword STANDARD_ORIENTATION
