@@ -872,6 +872,7 @@ syn keyword cp2kSection BEND
 syn keyword cp2kSection BETA
 syn keyword cp2kSection BEYN
 syn keyword cp2kSection BFGS
+syn keyword cp2kSection BLOCK_DIAGONALIZE
 syn keyword cp2kSection BMHFT
 syn keyword cp2kSection BMHFTD
 syn keyword cp2kSection BOND
@@ -1667,6 +1668,8 @@ syn keyword cp2kKeyword BISECT_TRUST_COUNT
 syn keyword cp2kKeyword BLACS_GRID
 syn keyword cp2kKeyword BLACS_REPEATABLE
 syn keyword cp2kKeyword BLIST
+syn keyword cp2kKeyword BLOCK
+syn keyword cp2kKeyword BLOCK_DIAGONALIZE
 syn keyword cp2kKeyword BLOCK_LIST
 syn keyword cp2kKeyword BLOCK_SIZE
 syn keyword cp2kKeyword BOND
@@ -2254,6 +2257,7 @@ syn keyword cp2kKeyword HOST
 syn keyword cp2kKeyword HYDROGENS
 syn keyword cp2kKeyword IC_CORR_LIST
 syn keyword cp2kKeyword IC_CORR_LIST_BETA
+syn keyword cp2kKeyword IGNORE_EXCITED
 syn keyword cp2kKeyword IGNORE_MISSING_CRITICAL_PARAMS
 syn keyword cp2kKeyword IMAGE_CHARGE_MODEL IC
 syn keyword cp2kKeyword IMAGE_MATRIX_METHOD
