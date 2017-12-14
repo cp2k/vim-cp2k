@@ -858,6 +858,7 @@ syn keyword cp2kSection BAROSTAT
 syn keyword cp2kSection BASIS
 syn keyword cp2kSection BASIS_MOLOPT_QUANTITIES
 syn keyword cp2kSection BASIS_SET
+syn keyword cp2kSection BASIS_SET_FILE
 syn keyword cp2kSection BEADS
 syn keyword cp2kSection BECKE88
 syn keyword cp2kSection BECKE88_LR
@@ -1584,6 +1585,7 @@ syn keyword cp2kKeyword ATOM_RANGE
 syn keyword cp2kKeyword ATOM_TYPE
 syn keyword cp2kKeyword ATYPE
 syn keyword cp2kKeyword AUTOGEN_EXCLUDE_LISTS
+syn keyword cp2kKeyword AUTO_BASIS
 syn keyword cp2kKeyword AUTO_CUTOFF_SCALE
 syn keyword cp2kKeyword AUTO_RMAX_SCALE
 syn keyword cp2kKeyword AUTO_RMIN_SCALE
