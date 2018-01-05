@@ -873,6 +873,7 @@ syn keyword cp2kSection BEND
 syn keyword cp2kSection BETA
 syn keyword cp2kSection BEYN
 syn keyword cp2kSection BFGS
+syn keyword cp2kSection BLOCK
 syn keyword cp2kSection BLOCK_DIAGONALIZE
 syn keyword cp2kSection BMHFT
 syn keyword cp2kSection BMHFTD
@@ -1302,6 +1303,7 @@ syn keyword cp2kSection PROGRAM_RUN_INFO
 syn keyword cp2kSection PROGRESS_TRAJECTORY
 syn keyword cp2kSection PROJECTED_AREA
 syn keyword cp2kSection PROJECTED_AREA_2_AVG
+syn keyword cp2kSection PROJECTION
 syn keyword cp2kSection PROJECTORS
 syn keyword cp2kSection PROPERTIES
 syn keyword cp2kSection PW92
@@ -2552,8 +2554,11 @@ syn keyword cp2kKeyword MOMENT_OF_INERTIA
 syn keyword cp2kKeyword MORE_WORK
 syn keyword cp2kKeyword MOVES_FILE_NAME
 syn keyword cp2kKeyword MOVE_CENTER_OF_MASS
+syn keyword cp2kKeyword MO_COEFF_ATOM
+syn keyword cp2kKeyword MO_COEFF_ATOM_STATE
 syn keyword cp2kKeyword MO_COEFF_GAMMA
 syn keyword cp2kKeyword MO_INDEX_RANGE MO_RANGE RANGE
+syn keyword cp2kKeyword MO_LIST
 syn keyword cp2kKeyword MO_OVERLAP_EIGENVALUES
 syn keyword cp2kKeyword MO_OVERLAP_MATRIX
 syn keyword cp2kKeyword MPI
@@ -2599,6 +2604,7 @@ syn keyword cp2kKeyword NEGLECT_ABC
 syn keyword cp2kKeyword NEGLECT_NORMALIZATION_SIGMA_X
 syn keyword cp2kKeyword NEIGHBOR_LISTS_FROM_SCRATCH
 syn keyword cp2kKeyword NEL
+syn keyword cp2kKeyword NELECTRON
 syn keyword cp2kKeyword NEQUIL_STEPS
 syn keyword cp2kKeyword NEUMANN_DIRECTIONS
 syn keyword cp2kKeyword NEV N_EV EV
