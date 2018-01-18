@@ -2874,6 +2874,7 @@ syn keyword cp2kKeyword POTENTIAL_TYPE
 syn keyword cp2kKeyword POT_TYPE
 syn keyword cp2kKeyword POWELL_OPT
 syn keyword cp2kKeyword PPL_RADII
+syn keyword cp2kKeyword PPL_RI
 syn keyword cp2kKeyword PPNL_RADII
 syn keyword cp2kKeyword PRECOND
 syn keyword cp2kKeyword PRECONDITION
@@ -3092,6 +3093,7 @@ syn keyword cp2kKeyword RI_G0W0 GW
 syn keyword cp2kKeyword RI_METRIC RI
 syn keyword cp2kKeyword RI_SIGMA_X
 syn keyword cp2kKeyword RI_SINV
+syn keyword cp2kKeyword RI_STATISTIC
 syn keyword cp2kKeyword RKS_TRIPLETS
 syn keyword cp2kKeyword RMANGLE
 syn keyword cp2kKeyword RMAX
