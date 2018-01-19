@@ -3235,6 +3235,8 @@ syn keyword cp2kKeyword SPECULATIVE_CANCELING
 syn keyword cp2kKeyword SPHERICAL_CUTOFF
 syn keyword cp2kKeyword SPHERICAL_HARMONICS
 syn keyword cp2kKeyword SPIN_CONFIGURATION
+syn keyword cp2kKeyword SPIN_DENS_CONV_INT
+syn keyword cp2kKeyword SPIN_DENS_CONV_MAX
 syn keyword cp2kKeyword SPLINE_DATA
 syn keyword cp2kKeyword SPLINE_FIND_COEFFS
 syn keyword cp2kKeyword SPLINE_INFO
