@@ -891,7 +891,7 @@ syn keyword cp2kSection BUCK4RANGES
 syn keyword cp2kSection BUCKMORSE
 syn keyword cp2kSection BUFFER_LINKS
 syn keyword cp2kSection BUFFER_NON_ADAPTIVE
-syn keyword cp2kSection BULK_CONTACT
+syn keyword cp2kSection BULK_REGION
 syn keyword cp2kSection CARTESIAN_EIGS
 syn keyword cp2kSection CASCADE
 syn keyword cp2kSection CDFT
@@ -1716,7 +1716,6 @@ syn keyword cp2kKeyword BS_K
 syn keyword cp2kKeyword BS_M
 syn keyword cp2kKeyword BS_N
 syn keyword cp2kKeyword BTYPE
-syn keyword cp2kKeyword BULK_FORCE_EVAL_SECTION
 syn keyword cp2kKeyword BUMP_STEPS_DOWNWARDS
 syn keyword cp2kKeyword BUMP_STEPS_UPWARDS
 syn keyword cp2kKeyword C
@@ -2175,6 +2174,7 @@ syn keyword cp2kKeyword FORCE_BLOCKSIZE
 syn keyword cp2kKeyword FORCE_BLOCK_SIZE
 syn keyword cp2kKeyword FORCE_ENV_FILE
 syn keyword cp2kKeyword FORCE_EVAL_ORDER
+syn keyword cp2kKeyword FORCE_EVAL_SECTION
 syn keyword cp2kKeyword FORCE_KDSO-D_EXCHANGE
 syn keyword cp2kKeyword FORCE_LAST
 syn keyword cp2kKeyword FORCE_NO_FULL
