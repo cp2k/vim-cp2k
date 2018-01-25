@@ -2990,6 +2990,7 @@ syn keyword cp2kKeyword READ_EMBED_POT
 syn keyword cp2kKeyword READ_FROM_CUBE
 syn keyword cp2kKeyword REALSPACE
 syn keyword cp2kKeyword REAL_AXIS_INTEGRATION_METHOD
+syn keyword cp2kKeyword RECURSIVE_DIAGONALIZATION
 syn keyword cp2kKeyword REF0_FILENAME
 syn keyword cp2kKeyword REFERENCE REF
 syn keyword cp2kKeyword REFERENCE_BASIS
