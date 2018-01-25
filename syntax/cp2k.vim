@@ -635,6 +635,7 @@ syn keyword cp2kConstant RGF
 syn keyword cp2kConstant RHF
 syn keyword cp2kConstant RHOMBOHEDRAL
 syn keyword cp2kConstant RIGPW
+syn keyword cp2kConstant RI_EMBEDDING
 syn keyword cp2kConstant RI_MP2_GPW
 syn keyword cp2kConstant RI_RPA_GPW
 syn keyword cp2kConstant RI_SOS_LAPLACE
