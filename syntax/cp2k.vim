@@ -1066,6 +1066,7 @@ syn keyword cp2kSection FIXED_ATOMS
 syn keyword cp2kSection FIX_ATOM_RESTART
 syn keyword cp2kSection FLEXIBLE_PARTITIONING
 syn keyword cp2kSection FM
+syn keyword cp2kSection FM_DIAG_SETTINGS
 syn keyword cp2kSection FOCK_EIGENVALUES
 syn keyword cp2kSection FOCK_GAP
 syn keyword cp2kSection FORCE
@@ -1978,6 +1979,7 @@ syn keyword cp2kKeyword ELECTRON_CONFIGURATION
 syn keyword cp2kKeyword ELEC_CONF
 syn keyword cp2kKeyword ELEMENT ELEMENT_SYMBOL
 syn keyword cp2kKeyword ELEMENT_CUTOFF
+syn keyword cp2kKeyword ELPA_FORCE_REDISTRIBUTE
 syn keyword cp2kKeyword ELPA_KERNEL
 syn keyword cp2kKeyword ELPA_QR
 syn keyword cp2kKeyword ELPA_QR_UNSAFE
@@ -2809,8 +2811,10 @@ syn keyword cp2kKeyword PARALLEL_SCHEME
 syn keyword cp2kKeyword PARAMETER
 syn keyword cp2kKeyword PARAMETERIZATION
 syn keyword cp2kKeyword PARAMETERS
+syn keyword cp2kKeyword PARAMETER_A
 syn keyword cp2kKeyword PARAMETER_FILE_NAME
 syn keyword cp2kKeyword PARAMETER_SET
+syn keyword cp2kKeyword PARAMETER_X
 syn keyword cp2kKeyword PARAMETRIZATION
 syn keyword cp2kKeyword PARAM_FILE_NAME
 syn keyword cp2kKeyword PARAM_FILE_PATH
@@ -2898,6 +2902,7 @@ syn keyword cp2kKeyword PRINT_CUBES
 syn keyword cp2kKeyword PRINT_DIPOLE
 syn keyword cp2kKeyword PRINT_ENERGIES
 syn keyword cp2kKeyword PRINT_FIT_ERROR FIT_ERROR
+syn keyword cp2kKeyword PRINT_FM_REDISTRIBUTE
 syn keyword cp2kKeyword PRINT_FORCES
 syn keyword cp2kKeyword PRINT_GOP
 syn keyword cp2kKeyword PRINT_GW_DETAILS
