@@ -275,6 +275,7 @@ syn keyword cp2kConstant ELECTRONIC_SPECTRA
 syn keyword cp2kConstant ELEMENT
 syn keyword cp2kConstant ELPA
 syn keyword cp2kConstant EM
+syn keyword cp2kConstant EMBED
 syn keyword cp2kConstant EMBEDDING
 syn keyword cp2kConstant ENERGY
 syn keyword cp2kConstant ENERGY_FORCE
@@ -1018,6 +1019,7 @@ syn keyword cp2kSection EIGENSOLVER
 syn keyword cp2kSection EIP
 syn keyword cp2kSection ELECTRIC_FIELD_GRADIENT
 syn keyword cp2kSection ELF_CUBE
+syn keyword cp2kSection EMBED
 syn keyword cp2kSection EMBED_DENS_DIFF
 syn keyword cp2kSection EMBED_POT_CUBE
 syn keyword cp2kSection EMBED_POT_VECTOR
@@ -1074,6 +1076,7 @@ syn keyword cp2kSection FORCEFIELD
 syn keyword cp2kSection FORCES
 syn keyword cp2kSection FORCES_INST
 syn keyword cp2kSection FORCE_EVAL
+syn keyword cp2kSection FORCE_EVAL_EMBED
 syn keyword cp2kSection FORCE_EVAL_MIXED
 syn keyword cp2kSection FORCE_MATCHING
 syn keyword cp2kSection FORCE_MIXING
@@ -1901,6 +1904,7 @@ syn keyword cp2kKeyword DERIVATIVE_METHOD
 syn keyword cp2kKeyword DESCRIPTOR
 syn keyword cp2kKeyword DETERM_COEFF
 syn keyword cp2kKeyword DEVIATION
+syn keyword cp2kKeyword DFET
 syn keyword cp2kKeyword DFTB3_PARAM
 syn keyword cp2kKeyword DGEMM
 syn keyword cp2kKeyword DIAGONALIZATION
