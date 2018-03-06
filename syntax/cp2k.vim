@@ -1327,6 +1327,7 @@ syn keyword cp2kSection QM_NON_ADAPTIVE
 syn keyword cp2kSection QPARM
 syn keyword cp2kSection QS
 syn keyword cp2kSection QS_DERIVATIVES
+syn keyword cp2kSection QTB
 syn keyword cp2kSection QUADRATIC
 syn keyword cp2kSection QUADRUPOLE
 syn keyword cp2kSection QUADRUPOLES
@@ -2189,6 +2190,7 @@ syn keyword cp2kKeyword FORCE_PAW
 syn keyword cp2kKeyword FORCE_RESCALING
 syn keyword cp2kKeyword FORCE_STATES
 syn keyword cp2kKeyword FORMAT
+syn keyword cp2kKeyword FP
 syn keyword cp2kKeyword FRACTION
 syn keyword cp2kKeyword FRACTION_AUX_MOS
 syn keyword cp2kKeyword FRACTION_EXX ALPHA
@@ -2391,6 +2393,7 @@ syn keyword cp2kKeyword LABEL
 syn keyword cp2kKeyword LABELS
 syn keyword cp2kKeyword LADDN0
 syn keyword cp2kKeyword LAGRANGE
+syn keyword cp2kKeyword LAMBCUT
 syn keyword cp2kKeyword LAMBDA
 syn keyword cp2kKeyword LAMBDA1
 syn keyword cp2kKeyword LAMBDA2
@@ -2637,6 +2640,7 @@ syn keyword cp2kKeyword NEUMANN_DIRECTIONS
 syn keyword cp2kKeyword NEV N_EV EV
 syn keyword cp2kKeyword NEW_PREC_EACH
 syn keyword cp2kKeyword NEXTRA_DOF
+syn keyword cp2kKeyword NF
 syn keyword cp2kKeyword NGAUSS
 syn keyword cp2kKeyword NGRIDS
 syn keyword cp2kKeyword NGROUPS NGROUP
@@ -3321,6 +3325,7 @@ syn keyword cp2kKeyword TASKS_PER_INTEGRATION_POINT
 syn keyword cp2kKeyword TASKS_PER_POLE
 syn keyword cp2kKeyword TASK_TYPE
 syn keyword cp2kKeyword TAU
+syn keyword cp2kKeyword TAUCUT
 syn keyword cp2kKeyword TAU_CUTOFF
 syn keyword cp2kKeyword TC_PRESSURE
 syn keyword cp2kKeyword TC_TEMPERATURE
