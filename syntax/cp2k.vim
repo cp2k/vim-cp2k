@@ -3249,6 +3249,7 @@ syn keyword cp2kKeyword SPECIAL_POINT
 syn keyword cp2kKeyword SPECULATIVE_CANCELING
 syn keyword cp2kKeyword SPHERICAL_CUTOFF
 syn keyword cp2kKeyword SPHERICAL_HARMONICS
+syn keyword cp2kKeyword SPIN_CHANNEL
 syn keyword cp2kKeyword SPIN_CONFIGURATION
 syn keyword cp2kKeyword SPIN_DENS_CONV_INT
 syn keyword cp2kKeyword SPIN_DENS_CONV_MAX
