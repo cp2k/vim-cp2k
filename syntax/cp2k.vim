@@ -387,6 +387,7 @@ syn keyword cp2kConstant HLE
 syn keyword cp2kConstant HOTELLING
 syn keyword cp2kConstant HYDROSTATICSHOCK
 syn keyword cp2kConstant IDENTITY
+syn keyword cp2kConstant IMOM
 syn keyword cp2kConstant IMOMM
 syn keyword cp2kConstant IMPLICIT
 syn keyword cp2kConstant INSCRIBED
@@ -480,6 +481,7 @@ syn keyword cp2kConstant MOLECULAR
 syn keyword cp2kConstant MOLECULAR_DYNAMICS
 syn keyword cp2kConstant MOLECULE
 syn keyword cp2kConstant MOL_SET
+syn keyword cp2kConstant MOM
 syn keyword cp2kConstant MONOCLINIC
 syn keyword cp2kConstant MONOCLINIC_GAMMA_AB
 syn keyword cp2kConstant MONTECARLO
@@ -2581,6 +2583,7 @@ syn keyword cp2kKeyword MOL_CHECK
 syn keyword cp2kKeyword MOMENTUM_CONSERVATION_REGION
 syn keyword cp2kKeyword MOMENTUM_CONSERVATION_TYPE
 syn keyword cp2kKeyword MOMENT_OF_INERTIA
+syn keyword cp2kKeyword MOM_TYPE
 syn keyword cp2kKeyword MORE_WORK
 syn keyword cp2kKeyword MOVES_FILE_NAME
 syn keyword cp2kKeyword MOVE_CENTER_OF_MASS
