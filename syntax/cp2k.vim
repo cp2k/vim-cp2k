@@ -830,6 +830,7 @@ syn keyword cp2kSection ACTIVE_SPACE
 syn keyword cp2kSection ADD_MM_CHARGE
 syn keyword cp2kSection ADIABATIC_DYNAMICS
 syn keyword cp2kSection ADIABATIC_RESCALING
+syn keyword cp2kSection ADJMAT_WRITE
 syn keyword cp2kSection ADMM
 syn keyword cp2kSection ADMM_BASIS
 syn keyword cp2kSection AD_LANGEVIN
@@ -1679,6 +1680,7 @@ syn keyword cp2kKeyword BIGD
 syn keyword cp2kKeyword BIGR
 syn keyword cp2kKeyword BIG_SEND
 syn keyword cp2kKeyword BIJ
+syn keyword cp2kKeyword BINARY
 syn keyword cp2kKeyword BINARY_RESTART_FILE_NAME BINARY_RESTART_FILE
 syn keyword cp2kKeyword BINNING_BINSIZE
 syn keyword cp2kKeyword BINNING_NBINS
