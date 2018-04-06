@@ -900,6 +900,7 @@ syn keyword cp2kSection BULK_REGION
 syn keyword cp2kSection CARTESIAN_EIGS
 syn keyword cp2kSection CASCADE
 syn keyword cp2kSection CDFT
+syn keyword cp2kSection CDFT_OPT
 syn keyword cp2kSection CELL
 syn keyword cp2kSection CELL_OPT
 syn keyword cp2kSection CELL_REF
