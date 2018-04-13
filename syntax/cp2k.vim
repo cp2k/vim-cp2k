@@ -421,6 +421,7 @@ syn keyword cp2kConstant LDA
 syn keyword cp2kConstant LEGENDRE
 syn keyword cp2kConstant LENGTH
 syn keyword cp2kConstant LENOSKY
+syn keyword cp2kConstant LEVEL_SHIFT
 syn keyword cp2kConstant LINEAR
 syn keyword cp2kConstant LINEAR_COMBINATION
 syn keyword cp2kConstant LINEAR_P
@@ -613,6 +614,7 @@ syn keyword cp2kConstant QTBM
 syn keyword cp2kConstant QUADRATIC
 syn keyword cp2kConstant QUADRUPOLE
 syn keyword cp2kConstant QUARTIC
+syn keyword cp2kConstant QUASI_NEWTON
 syn keyword cp2kConstant QUICKSTEP
 syn keyword cp2kConstant R
 syn keyword cp2kConstant R12
@@ -712,6 +714,7 @@ syn keyword cp2kConstant SSE_BLOCK4
 syn keyword cp2kConstant SSE_BLOCK6
 syn keyword cp2kConstant STAGE
 syn keyword cp2kConstant STANDARD
+syn keyword cp2kConstant STEEPEST_DESCENT
 syn keyword cp2kConstant STRICT
 syn keyword cp2kConstant SUBLATTICE
 syn keyword cp2kConstant SUM
@@ -2256,6 +2259,7 @@ syn keyword cp2kKeyword GP_SCALE
 syn keyword cp2kKeyword GRADIENT_CUTOFF
 syn keyword cp2kKeyword GRID
 syn keyword cp2kKeyword GRID_2D
+syn keyword cp2kKeyword GRID_OPT
 syn keyword cp2kKeyword GRID_POINTS
 syn keyword cp2kKeyword GRID_SPACING
 syn keyword cp2kKeyword GRID_TOL
