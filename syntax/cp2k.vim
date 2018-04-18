@@ -2644,6 +2644,7 @@ syn keyword cp2kKeyword NEGLECT_ABC
 syn keyword cp2kKeyword NEGLECT_NORMALIZATION_SIGMA_X
 syn keyword cp2kKeyword NEIGHBOR_LISTS_FROM_SCRATCH
 syn keyword cp2kKeyword NEL
+syn keyword cp2kKeyword NELEC N_ELECTRONS
 syn keyword cp2kKeyword NELECTRON
 syn keyword cp2kKeyword NEQUIL_STEPS
 syn keyword cp2kKeyword NEUMANN_DIRECTIONS
