@@ -1914,6 +1914,7 @@ syn keyword cp2kKeyword DESCRIPTOR
 syn keyword cp2kKeyword DETERM_COEFF
 syn keyword cp2kKeyword DEVIATION
 syn keyword cp2kKeyword DFET
+syn keyword cp2kKeyword DFET_EMBEDDED
 syn keyword cp2kKeyword DFTB3_PARAM
 syn keyword cp2kKeyword DGEMM
 syn keyword cp2kKeyword DIAGONALIZATION
@@ -1930,6 +1931,7 @@ syn keyword cp2kKeyword DIPOLE_FORM DIP_FORM
 syn keyword cp2kKeyword DIRECTION
 syn keyword cp2kKeyword DIRECTORIES
 syn keyword cp2kKeyword DIRECTORY
+syn keyword cp2kKeyword DISABLE_CACHE
 syn keyword cp2kKeyword DISABLE_EXCLUSION_LISTS
 syn keyword cp2kKeyword DISCRETE_STEP
 syn keyword cp2kKeyword DISPERSION
@@ -1999,7 +2001,9 @@ syn keyword cp2kKeyword ELPA_QR_UNSAFE
 syn keyword cp2kKeyword EMAX_ACCURACY
 syn keyword cp2kKeyword EMAX_SPLINE
 syn keyword cp2kKeyword EMBED
+syn keyword cp2kKeyword EMBED_CUBE_FILE_NAME
 syn keyword cp2kKeyword EMBED_RESTART_FILE_NAME
+syn keyword cp2kKeyword EMBED_SPIN_CUBE_FILE_NAME
 syn keyword cp2kKeyword END_ELEM
 syn keyword cp2kKeyword END_STEP
 syn keyword cp2kKeyword END_STEP_IN
@@ -2117,6 +2121,7 @@ syn keyword cp2kKeyword EP_LIN_SOLVER
 syn keyword cp2kKeyword EQUAL_CHARGES
 syn keyword cp2kKeyword ERANGE
 syn keyword cp2kKeyword ERI
+syn keyword cp2kKeyword ERI_BLKSIZE
 syn keyword cp2kKeyword ERI_METHOD
 syn keyword cp2kKeyword ERROR_LIMIT
 syn keyword cp2kKeyword ESCAPE_HISTORY_LENGTH
@@ -3012,6 +3017,7 @@ syn keyword cp2kKeyword RC_RANGE
 syn keyword cp2kKeyword RC_TAPER
 syn keyword cp2kKeyword RDF
 syn keyword cp2kKeyword READ_EMBED_POT
+syn keyword cp2kKeyword READ_EMBED_POT_CUBE
 syn keyword cp2kKeyword READ_FROM_CUBE
 syn keyword cp2kKeyword REALSPACE
 syn keyword cp2kKeyword REAL_AXIS_INTEGRATION_METHOD
@@ -3288,6 +3294,7 @@ syn keyword cp2kKeyword STATIC
 syn keyword cp2kKeyword STEPS
 syn keyword cp2kKeyword STEPSIZE
 syn keyword cp2kKeyword STEP_SIZE
+syn keyword cp2kKeyword STEP_SIZE_SCALING
 syn keyword cp2kKeyword STEP_START_VAL
 syn keyword cp2kKeyword STOP_CRIT STOP_CRIT_1
 syn keyword cp2kKeyword STOP_ON_MISMATCH
@@ -3463,6 +3470,9 @@ syn keyword cp2kKeyword VOLUME_ISOTROPIC
 syn keyword cp2kKeyword VR0
 syn keyword cp2kKeyword VSHOCK V_SHOCK
 syn keyword cp2kKeyword V_D
+syn keyword cp2kKeyword V_SHIFT
+syn keyword cp2kKeyword V_SHIFT_MAX_ITERS
+syn keyword cp2kKeyword V_SHIFT_OFFSET
 syn keyword cp2kKeyword WAIT_TIME
 syn keyword cp2kKeyword WALKERS_STATUS
 syn keyword cp2kKeyword WALKER_COMM_FREQUENCY
