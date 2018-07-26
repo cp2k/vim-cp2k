@@ -1980,6 +1980,7 @@ syn keyword cp2kKeyword DO_DSO
 syn keyword cp2kKeyword DO_EWALD
 syn keyword cp2kKeyword DO_FC
 syn keyword cp2kKeyword DO_HILLS
+syn keyword cp2kKeyword DO_KPOINTS
 syn keyword cp2kKeyword DO_LANGEVIN
 syn keyword cp2kKeyword DO_LANGEVIN_DEFAULT
 syn keyword cp2kKeyword DO_NONBONDED
@@ -3274,6 +3275,7 @@ syn keyword cp2kKeyword SIZE
 syn keyword cp2kKeyword SIZE_CHOLESKY_SUBGROUP SIZE_CS
 syn keyword cp2kKeyword SIZE_FREQ_INTEG_GROUP RPA_GROUP_SIZE
 syn keyword cp2kKeyword SIZE_INTEG_GROUP LAPLACE_GROUP_SIZE
+syn keyword cp2kKeyword SIZE_LATTICE_SUM
 syn keyword cp2kKeyword SKIP_LOAD_BALANCE_DISTRIBUTED
 syn keyword cp2kKeyword SKIP_OPTIMIZATION
 syn keyword cp2kKeyword SK_FILE
