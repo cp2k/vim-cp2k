@@ -694,6 +694,7 @@ syn keyword cp2kConstant SINGLE
 syn keyword cp2kConstant SINGLET
 syn keyword cp2kConstant SINGLETS
 syn keyword cp2kConstant SINGLEV
+syn keyword cp2kConstant SIRIUS
 syn keyword cp2kConstant SKIP
 syn keyword cp2kConstant SL
 syn keyword cp2kConstant SL2
@@ -1225,6 +1226,7 @@ syn keyword cp2kSection MINIMA_TRAJECTORY
 syn keyword cp2kSection MIXED
 syn keyword cp2kSection MIXED_CDFT
 syn keyword cp2kSection MIXED_ENERGIES
+syn keyword cp2kSection MIXER
 syn keyword cp2kSection MIXING
 syn keyword cp2kSection ML_TRAINING_DATA
 syn keyword cp2kSection ML_VARIANCE
@@ -1339,6 +1341,7 @@ syn keyword cp2kSection PROJECTION
 syn keyword cp2kSection PROJECTORS
 syn keyword cp2kSection PROPERTIES
 syn keyword cp2kSection PW92
+syn keyword cp2kSection PW_DFT
 syn keyword cp2kSection PW_TRANSFER
 syn keyword cp2kSection PZ81
 syn keyword cp2kSection QMMM
@@ -1422,6 +1425,7 @@ syn keyword cp2kSection SIC
 syn keyword cp2kSection SIEPMANN
 syn keyword cp2kSection SLAB_SAMPLING
 syn keyword cp2kSection SMEAR
+syn keyword cp2kSection SOLVER
 syn keyword cp2kSection SPAWNED_HILLS_HEIGHT
 syn keyword cp2kSection SPAWNED_HILLS_INVDT
 syn keyword cp2kSection SPAWNED_HILLS_POS
