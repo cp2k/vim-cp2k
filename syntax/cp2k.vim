@@ -1855,6 +1855,7 @@ syn keyword cp2kKeyword COORDINATE_FILE_NAME
 syn keyword cp2kKeyword COORDINATION_CUTOFF
 syn keyword cp2kKeyword COORD_FILE_FORMAT COORDINATE
 syn keyword cp2kKeyword COORD_FILE_NAME
+syn keyword cp2kKeyword COORD_INIT_TEMP
 syn keyword cp2kKeyword COPY
 syn keyword cp2kKeyword CORE
 syn keyword cp2kKeyword CORE_CHARGE CORE
@@ -3291,6 +3292,7 @@ syn keyword cp2kKeyword SMOOTHING
 syn keyword cp2kKeyword SMOOTHING_WIDTH ZETA
 syn keyword cp2kKeyword SMOOTH_WIDTH
 syn keyword cp2kKeyword SOLUTE_INTERACTION
+syn keyword cp2kKeyword SOLUTE_RADIUS
 syn keyword cp2kKeyword SOO_LIST
 syn keyword cp2kKeyword SOO_RHO_HARD
 syn keyword cp2kKeyword SORT_BY_SELF_TIME
