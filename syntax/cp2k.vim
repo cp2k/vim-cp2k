@@ -102,6 +102,7 @@ syn keyword cp2kConstant AMBER
 syn keyword cp2kConstant ANALYTIC
 syn keyword cp2kConstant ANALYTICAL
 syn keyword cp2kConstant ANDREUSSI
+syn keyword cp2kConstant ANGSTROM
 syn keyword cp2kConstant ARNOLDI
 syn keyword cp2kConstant ASPC
 syn keyword cp2kConstant ATOM
@@ -157,6 +158,7 @@ syn keyword cp2kConstant BLOCK_COUNT
 syn keyword cp2kConstant BLOCK_LMAX
 syn keyword cp2kConstant BLOCK_SURFACE
 syn keyword cp2kConstant BLYP
+syn keyword cp2kConstant BOHR
 syn keyword cp2kConstant BOX
 syn keyword cp2kConstant BOYS
 syn keyword cp2kConstant BP
@@ -1519,6 +1521,7 @@ syn keyword cp2kSection WINDING_NUMBER
 syn keyword cp2kSection WINDING_NUMBER_2_AVG
 syn keyword cp2kSection WORKER_RUN_INFO
 syn keyword cp2kSection WORM
+syn keyword cp2kSection WRITE_SIMPLE_GRID
 syn keyword cp2kSection XALMO_NEWTON_PCG_SOLVER
 syn keyword cp2kSection XALMO_OPTIMIZER_PCG
 syn keyword cp2kSection XALPHA
