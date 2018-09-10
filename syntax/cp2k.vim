@@ -2029,6 +2029,7 @@ syn keyword cp2kKeyword EMAX_SPLINE
 syn keyword cp2kKeyword EMBED_CUBE_FILE_NAME
 syn keyword cp2kKeyword EMBED_RESTART_FILE_NAME
 syn keyword cp2kKeyword EMBED_SPIN_CUBE_FILE_NAME
+syn keyword cp2kKeyword ENABLE_MPI_IO
 syn keyword cp2kKeyword END_ELEM
 syn keyword cp2kKeyword END_STEP
 syn keyword cp2kKeyword END_STEP_IN
