@@ -2363,6 +2363,7 @@ syn keyword cp2kKeyword INNER_RADIUS
 syn keyword cp2kKeyword INPUT_FILE_NAME
 syn keyword cp2kKeyword INTEGER_TOTAL_CHARGE
 syn keyword cp2kKeyword INTEGRAL_SCREENING
+syn keyword cp2kKeyword INTEGRATION_GRID
 syn keyword cp2kKeyword INTEGRATION_MAX_POINTS
 syn keyword cp2kKeyword INTEGRATION_METHOD
 syn keyword cp2kKeyword INTEGRATION_MIN_POINTS
