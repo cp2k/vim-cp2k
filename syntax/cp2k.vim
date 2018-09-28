@@ -240,6 +240,7 @@ syn keyword cp2kConstant DENSE_CHOLESKY
 syn keyword cp2kConstant DENSITY
 syn keyword cp2kConstant DENSITY_DEPENDENT
 syn keyword cp2kConstant DETAILED
+syn keyword cp2kConstant DFET
 syn keyword cp2kConstant DFTB
 syn keyword cp2kConstant DFTD2
 syn keyword cp2kConstant DFTD3
@@ -264,6 +265,7 @@ syn keyword cp2kConstant DKH(1)
 syn keyword cp2kConstant DKH(2)
 syn keyword cp2kConstant DKH(3)
 syn keyword cp2kConstant DMC
+syn keyword cp2kConstant DMFET
 syn keyword cp2kConstant DMFT
 syn keyword cp2kConstant DOMAIN
 syn keyword cp2kConstant DOS
@@ -1288,6 +1290,7 @@ syn keyword cp2kSection OPTIMIZE_BASIS
 syn keyword cp2kSection OPTIMIZE_INPUT
 syn keyword cp2kSection OPTIMIZE_LRI_BASIS
 syn keyword cp2kSection OPTX
+syn keyword cp2kSection OPT_DMFET
 syn keyword cp2kSection OPT_EMBED
 syn keyword cp2kSection OPT_INFO
 syn keyword cp2kSection OPT_RI_BASIS
@@ -1703,6 +1706,8 @@ syn keyword cp2kKeyword BETA
 syn keyword cp2kKeyword BETA_1
 syn keyword cp2kKeyword BETA_2
 syn keyword cp2kKeyword BETA_3
+syn keyword cp2kKeyword BETA_DM_CONV_INT
+syn keyword cp2kKeyword BETA_DM_CONV_MAX
 syn keyword cp2kKeyword BIAS
 syn keyword cp2kKeyword BIGD
 syn keyword cp2kKeyword BIGR
@@ -1938,7 +1943,6 @@ syn keyword cp2kKeyword DERIVATIVE_METHOD
 syn keyword cp2kKeyword DESCRIPTOR
 syn keyword cp2kKeyword DETERM_COEFF
 syn keyword cp2kKeyword DEVIATION
-syn keyword cp2kKeyword DFET
 syn keyword cp2kKeyword DFET_EMBEDDED
 syn keyword cp2kKeyword DFTB3_PARAM
 syn keyword cp2kKeyword DGEMM
@@ -1979,6 +1983,10 @@ syn keyword cp2kKeyword DISTRIBUTION_TYPE
 syn keyword cp2kKeyword DKH_ORDER
 syn keyword cp2kKeyword DLB
 syn keyword cp2kKeyword DM
+syn keyword cp2kKeyword DMFET_EMBEDDED
+syn keyword cp2kKeyword DMFET_RESTART_FILE_NAME
+syn keyword cp2kKeyword DM_CONV_INT
+syn keyword cp2kKeyword DM_CONV_MAX
 syn keyword cp2kKeyword DM_RESTART_WRITE
 syn keyword cp2kKeyword DOT_TREE
 syn keyword cp2kKeyword DO_AUX_BAS_GW
@@ -2027,6 +2035,7 @@ syn keyword cp2kKeyword ELPA_QR_UNSAFE
 syn keyword cp2kKeyword EMAX_ACCURACY
 syn keyword cp2kKeyword EMAX_SPLINE
 syn keyword cp2kKeyword EMBED_CUBE_FILE_NAME
+syn keyword cp2kKeyword EMBED_METHOD
 syn keyword cp2kKeyword EMBED_RESTART_FILE_NAME
 syn keyword cp2kKeyword EMBED_SPIN_CUBE_FILE_NAME
 syn keyword cp2kKeyword ENABLE_MPI_IO
@@ -3053,6 +3062,7 @@ syn keyword cp2kKeyword RCUT_NB
 syn keyword cp2kKeyword RC_RANGE
 syn keyword cp2kKeyword RC_TAPER
 syn keyword cp2kKeyword RDF
+syn keyword cp2kKeyword READ_DMFET_POT
 syn keyword cp2kKeyword READ_EMBED_POT
 syn keyword cp2kKeyword READ_EMBED_POT_CUBE
 syn keyword cp2kKeyword READ_FROM_CUBE
