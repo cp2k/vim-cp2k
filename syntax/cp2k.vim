@@ -7,6 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
+" CP2K-Version: CP2K version 7.0 (git:44b70af)
 
 if exists("b:current_syntax")
    finish
@@ -138,7 +139,6 @@ syn keyword cp2kConstant BAZANT
 syn keyword cp2kConstant BCH
 syn keyword cp2kConstant BECKE
 syn keyword cp2kConstant BECKE88X
-syn keyword cp2kConstant BECKE_CONSTRAINT
 syn keyword cp2kConstant BEEFVDW
 syn keyword cp2kConstant BERRY
 syn keyword cp2kConstant BETA
@@ -894,8 +894,6 @@ syn keyword cp2kSection BECKE88_LR
 syn keyword cp2kSection BECKE88_LR_ADIABATIC
 syn keyword cp2kSection BECKE97
 syn keyword cp2kSection BECKE_CONSTRAINT
-syn keyword cp2kSection BECKE_CONSTRAINT_A
-syn keyword cp2kSection BECKE_CONSTRAINT_B
 syn keyword cp2kSection BECKE_ROUSSEL
 syn keyword cp2kSection BEEF
 syn keyword cp2kSection BEND
@@ -1516,6 +1514,7 @@ syn keyword cp2kSection WANNIER_STATES
 syn keyword cp2kSection WAVELET
 syn keyword cp2kSection WC
 syn keyword cp2kSection WEIGHTS
+syn keyword cp2kSection WEIGHT_FUNCTION
 syn keyword cp2kSection WFC_GPW
 syn keyword cp2kSection WFN_MIX
 syn keyword cp2kSection WF_CORRELATION
@@ -2165,6 +2164,7 @@ syn keyword cp2kKeyword ESCAPE_HISTORY_LENGTH
 syn keyword cp2kKeyword ESIMATE_ACC_PROB
 syn keyword cp2kKeyword ETA
 syn keyword cp2kKeyword EVAL_ENERGY_FORCES
+syn keyword cp2kKeyword EVAL_FORCES
 syn keyword cp2kKeyword EV_SC_GW_REMOVE_NEG_VIRT_ENERGIES REMOVE_NEG
 syn keyword cp2kKeyword EV_SC_ITER
 syn keyword cp2kKeyword EWALD_ACCURACY
@@ -2228,6 +2228,7 @@ syn keyword cp2kKeyword FLIP_FRAGMENT_A
 syn keyword cp2kKeyword FLIP_FRAGMENT_B
 syn keyword cp2kKeyword FLOATING_BASIS_CENTER
 syn keyword cp2kKeyword FLUSH_SHOULD_FLUSH
+syn keyword cp2kKeyword FOLD_COORD
 syn keyword cp2kKeyword FORCE_BLOCKSIZE
 syn keyword cp2kKeyword FORCE_BLOCK_SIZE
 syn keyword cp2kKeyword FORCE_ENV_FILE
@@ -2279,6 +2280,8 @@ syn keyword cp2kKeyword GAPW_MAX_ALPHA
 syn keyword cp2kKeyword GAPW_PRJ_RADII
 syn keyword cp2kKeyword GAUGE
 syn keyword cp2kKeyword GAUGE_ATOM_RADIUS
+syn keyword cp2kKeyword GAUSSIAN_RADIUS
+syn keyword cp2kKeyword GAUSSIAN_SHAPE
 syn keyword cp2kKeyword GCUT
 syn keyword cp2kKeyword GENERATE_INFO
 syn keyword cp2kKeyword GEOMETRICAL_FACTOR
@@ -2456,6 +2459,7 @@ syn keyword cp2kKeyword LBIAS
 syn keyword cp2kKeyword LDISCRETE
 syn keyword cp2kKeyword LEAST_SQ_FT
 syn keyword cp2kKeyword LEBEDEV_GRID
+syn keyword cp2kKeyword LEEUWEN-BAERENDS
 syn keyword cp2kKeyword LEGENDRE
 syn keyword cp2kKeyword LENGTH
 syn keyword cp2kKeyword LEVEL_SHIFT LSHIFT
@@ -2724,6 +2728,7 @@ syn keyword cp2kKeyword NON_MONOTONIC
 syn keyword cp2kKeyword NORMALIZE_SIGMA
 syn keyword cp2kKeyword NORMAL_VECTOR
 syn keyword cp2kKeyword NOSE_PARTICLE
+syn keyword cp2kKeyword NOTCONV_STOPALL
 syn keyword cp2kKeyword NO_LS
 syn keyword cp2kKeyword NO_OPTIMIZE
 syn keyword cp2kKeyword NPARAM_PADE
@@ -2874,6 +2879,7 @@ syn keyword cp2kKeyword P2_BOND2
 syn keyword cp2kKeyword PAOH
 syn keyword cp2kKeyword PAO_BASIS_SIZE
 syn keyword cp2kKeyword PARALLEL_AXIS
+syn keyword cp2kKeyword PARALLEL_BUILD
 syn keyword cp2kKeyword PARALLEL_GROUP_SIZE
 syn keyword cp2kKeyword PARALLEL_PLANE
 syn keyword cp2kKeyword PARALLEL_SCHEME
@@ -3479,6 +3485,7 @@ syn keyword cp2kKeyword UNITS
 syn keyword cp2kKeyword UNIX
 syn keyword cp2kKeyword UPPER_TRIANGULAR
 syn keyword cp2kKeyword USER_RADIUS
+syn keyword cp2kKeyword USE_BOHR
 syn keyword cp2kKeyword USE_COLVARS
 syn keyword cp2kKeyword USE_COMM_THREAD
 syn keyword cp2kKeyword USE_CONDITION_NUMBER
