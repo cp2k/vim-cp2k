@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:93a1695)
+" CP2K-Version: CP2K version 7.0 (git:8d3215f)
 
 if exists("b:current_syntax")
    finish
@@ -823,6 +823,7 @@ syn keyword cp2kConstant XC_FUNCTIONAL
 syn keyword cp2kConstant XMOL
 syn keyword cp2kConstant XSC
 syn keyword cp2kConstant XSMM
+syn keyword cp2kConstant XTB
 syn keyword cp2kConstant XTL
 syn keyword cp2kConstant XY
 syn keyword cp2kConstant XYZ
@@ -877,6 +878,7 @@ syn keyword cp2kSection ATOMIC_COORDINATES
 syn keyword cp2kSection ATOM_GROUP
 syn keyword cp2kSection ATOM_INFO
 syn keyword cp2kSection ATOM_LIST
+syn keyword cp2kSection ATOM_PARAMETER
 syn keyword cp2kSection AUXILIARY_DENSITY_MATRIX_METHOD
 syn keyword cp2kSection AVBMC
 syn keyword cp2kSection AVERAGES
@@ -1536,6 +1538,7 @@ syn keyword cp2kSection XC_POTENTIAL
 syn keyword cp2kSection XES_SPECTRUM
 syn keyword cp2kSection XGGA
 syn keyword cp2kSection XRAY_DIFFRACTION_SPECTRUM
+syn keyword cp2kSection XTB
 syn keyword cp2kSection XWPBE
 syn keyword cp2kSection XYZ_DIAG
 syn keyword cp2kSection XYZ_OUTERDIAG
@@ -1814,6 +1817,7 @@ syn keyword cp2kKeyword CLASSICAL_DIPOLE_MOMENTS
 syn keyword cp2kKeyword CLEBSCH_GORDON CLEBSCH
 syn keyword cp2kKeyword CLUSTER_EMBED_SUBSYS
 syn keyword cp2kKeyword CMASS
+syn keyword cp2kKeyword CN_CONSTANTS
 syn keyword cp2kKeyword COARSE_GRAINED_POINTS CG_POINTS
 syn keyword cp2kKeyword COARSE_GRAINED_WIDTH CG_WIDTH
 syn keyword cp2kKeyword COEFF
@@ -1875,7 +1879,9 @@ syn keyword cp2kKeyword CORR_MOS_OCC CORR_OCC
 syn keyword cp2kKeyword CORR_MOS_VIRT CORR_VIRT
 syn keyword cp2kKeyword CORR_RADIUS
 syn keyword cp2kKeyword COST_MODEL
+syn keyword cp2kKeyword COULOMB_CONSTANTS
 syn keyword cp2kKeyword COULOMB_INTEGRALS
+syn keyword cp2kKeyword COULOMB_INTERACTION
 syn keyword cp2kKeyword COUNTER
 syn keyword cp2kKeyword COUPLING
 syn keyword cp2kKeyword COUPLING_PARAMETER
@@ -1900,6 +1906,7 @@ syn keyword cp2kKeyword CUTOUT
 syn keyword cp2kKeyword CYCLE
 syn keyword cp2kKeyword C_LIST
 syn keyword cp2kKeyword D
+syn keyword cp2kKeyword D3BJ_PARAM
 syn keyword cp2kKeyword D3BJ_SCALING
 syn keyword cp2kKeyword D3_EXCLUDE_KIND
 syn keyword cp2kKeyword D3_SCALING
@@ -2056,6 +2063,7 @@ syn keyword cp2kKeyword ENERGY_SCALING
 syn keyword cp2kKeyword ENERGY_WEIGHT
 syn keyword cp2kKeyword ENSEMBLE
 syn keyword cp2kKeyword ENVELOP
+syn keyword cp2kKeyword EN_CONSTANT
 syn keyword cp2kKeyword EPS
 syn keyword cp2kKeyword EPSFIT EPS_FIT
 syn keyword cp2kKeyword EPSILON
@@ -2322,6 +2330,7 @@ syn keyword cp2kKeyword GW_EIGENVALUES
 syn keyword cp2kKeyword GW_EIGENVALUES_BETA
 syn keyword cp2kKeyword G_R
 syn keyword cp2kKeyword H
+syn keyword cp2kKeyword HALOGEN_BINDING
 syn keyword cp2kKeyword HALO_REDUCTION_FACTOR
 syn keyword cp2kKeyword HALO_SIZE
 syn keyword cp2kKeyword HARD_EXP_RADIUS
@@ -2338,7 +2347,9 @@ syn keyword cp2kKeyword HILL_TAIL_CUTOFF
 syn keyword cp2kKeyword HOMO_LIST
 syn keyword cp2kKeyword HOMO_LUMO_GAP
 syn keyword cp2kKeyword HOST
+syn keyword cp2kKeyword HUCKEL_CONSTANTS
 syn keyword cp2kKeyword HYDROGENS
+syn keyword cp2kKeyword HYDROGEN_STO_NG
 syn keyword cp2kKeyword IC_CORR_LIST
 syn keyword cp2kKeyword IC_CORR_LIST_BETA
 syn keyword cp2kKeyword IGNORE_EXCITED
@@ -2418,6 +2429,7 @@ syn keyword cp2kKeyword K
 syn keyword cp2kKeyword K-DIMER
 syn keyword cp2kKeyword K2_SPRING K2 SPRING
 syn keyword cp2kKeyword K4_SPRING K4
+syn keyword cp2kKeyword KAB_PARAM
 syn keyword cp2kKeyword KBS12
 syn keyword cp2kKeyword KBS32
 syn keyword cp2kKeyword KEEPSPARSE
@@ -3234,6 +3246,7 @@ syn keyword cp2kKeyword SAB_SCP
 syn keyword cp2kKeyword SAB_SE
 syn keyword cp2kKeyword SAB_TBE
 syn keyword cp2kKeyword SAB_VDW
+syn keyword cp2kKeyword SAB_XB
 syn keyword cp2kKeyword SAC_AE
 syn keyword cp2kKeyword SAC_KIN
 syn keyword cp2kKeyword SAC_PPL
@@ -3402,6 +3415,7 @@ syn keyword cp2kKeyword TASK_TYPE
 syn keyword cp2kKeyword TAU
 syn keyword cp2kKeyword TAUCUT
 syn keyword cp2kKeyword TAU_CUTOFF
+syn keyword cp2kKeyword TB3_INTERACTION
 syn keyword cp2kKeyword TC_PRESSURE
 syn keyword cp2kKeyword TC_TEMPERATURE
 syn keyword cp2kKeyword TDDFT_SCF
@@ -3493,6 +3507,7 @@ syn keyword cp2kKeyword USE_EXP
 syn keyword cp2kKeyword USE_FINER_GRID
 syn keyword cp2kKeyword USE_G96_VELOCITY
 syn keyword cp2kKeyword USE_GEEP_LIB
+syn keyword cp2kKeyword USE_HALOGEN_CORRECTION
 syn keyword cp2kKeyword USE_HISTORY
 syn keyword cp2kKeyword USE_MODEL_HESSIAN
 syn keyword cp2kKeyword USE_MPI_ALLOCATOR
@@ -3576,6 +3591,7 @@ syn keyword cp2kKeyword XALMO_TRIAL_WF
 syn keyword cp2kKeyword XAS_CORE
 syn keyword cp2kKeyword XAS_SCF
 syn keyword cp2kKeyword XAS_TOT_EL
+syn keyword cp2kKeyword XB_RADIUS
 syn keyword cp2kKeyword XC_DERIV
 syn keyword cp2kKeyword XC_SMOOTH_RHO
 syn keyword cp2kKeyword XES_CORE
