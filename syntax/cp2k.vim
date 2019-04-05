@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:3461ef9)
+" CP2K-Version: CP2K version 7.0 (git:55cf030)
 
 if exists("b:current_syntax")
    finish
@@ -1647,7 +1647,6 @@ syn keyword cp2kKeyword ATOM_INDEX_2 MM2
 syn keyword cp2kKeyword ATOM_LIST
 syn keyword cp2kKeyword ATOM_NUMBER
 syn keyword cp2kKeyword ATOM_POINT POINT_POINT
-syn keyword cp2kKeyword ATOM_RANGE
 syn keyword cp2kKeyword ATOM_TYPE
 syn keyword cp2kKeyword ATYPE
 syn keyword cp2kKeyword AUTOGEN_EXCLUDE_LISTS
@@ -1873,9 +1872,6 @@ syn keyword cp2kKeyword CONSTRAINT_INIT
 syn keyword cp2kKeyword CONSTRAINT_TYPE
 syn keyword cp2kKeyword CONTACT_FILLING
 syn keyword cp2kKeyword CONTINUE_LS
-syn keyword cp2kKeyword CONTOUR_DEF_END CD_END
-syn keyword cp2kKeyword CONTOUR_DEF_OFFSET CD_OFFSET
-syn keyword cp2kKeyword CONTOUR_DEF_START CD_START
 syn keyword cp2kKeyword CONVERGENCE CONV
 syn keyword cp2kKeyword CONVERGE_BY_ENERGY
 syn keyword cp2kKeyword CONV_MOS_PERCENT
@@ -2019,7 +2015,6 @@ syn keyword cp2kKeyword DM_RESTART_WRITE
 syn keyword cp2kKeyword DOT_TREE
 syn keyword cp2kKeyword DO_AUX_BAS_GW
 syn keyword cp2kKeyword DO_CALIBRATE_CUTOFF
-syn keyword cp2kKeyword DO_CHOLESKY_SUBGROUPS DCS
 syn keyword cp2kKeyword DO_DSO
 syn keyword cp2kKeyword DO_EWALD
 syn keyword cp2kKeyword DO_FC
@@ -2101,7 +2096,6 @@ syn keyword cp2kKeyword EPS_ADAPT_SCF
 syn keyword cp2kKeyword EPS_ADDED
 syn keyword cp2kKeyword EPS_CANONICAL
 syn keyword cp2kKeyword EPS_CAVITY
-syn keyword cp2kKeyword EPS_CHARGE
 syn keyword cp2kKeyword EPS_CN
 syn keyword cp2kKeyword EPS_CONV
 syn keyword cp2kKeyword EPS_CORE_CHARGE
@@ -2279,7 +2273,6 @@ syn keyword cp2kKeyword FORMAT
 syn keyword cp2kKeyword FP
 syn keyword cp2kKeyword FRACTION
 syn keyword cp2kKeyword FRACTION_AUX_MOS
-syn keyword cp2kKeyword FRACTION_EXX ALPHA
 syn keyword cp2kKeyword FRAGMENTATION_THRESHOLD
 syn keyword cp2kKeyword FRAGMENT_A_FILE_NAME FRAGMENT_A_FILE
 syn keyword cp2kKeyword FRAGMENT_A_SPIN_FILE FRAGMENT_A_SPIN_FILE_NAME
@@ -2646,7 +2639,6 @@ syn keyword cp2kKeyword METHOD
 syn keyword cp2kKeyword METHOD_TYPE
 syn keyword cp2kKeyword METRIC COUPLING_METRIC
 syn keyword cp2kKeyword MIN
-syn keyword cp2kKeyword MINIMAL_GAP
 syn keyword cp2kKeyword MINIMAX
 syn keyword cp2kKeyword MINIMAX_QUADRATURE MINIMAX
 syn keyword cp2kKeyword MINIMIZER
@@ -2671,7 +2663,6 @@ syn keyword cp2kKeyword MIXING
 syn keyword cp2kKeyword MIXING_FRACTION
 syn keyword cp2kKeyword MIXING_FUNCTION
 syn keyword cp2kKeyword MIXING_TYPE
-syn keyword cp2kKeyword MIX_EXCHANGE
 syn keyword cp2kKeyword MM_ATOM_LIST
 syn keyword cp2kKeyword MM_DRIVER
 syn keyword cp2kKeyword MM_INDEX
@@ -2717,7 +2708,6 @@ syn keyword cp2kKeyword MULTIPLE_POTENTIAL
 syn keyword cp2kKeyword MULTIPLE_SUBSYS
 syn keyword cp2kKeyword MULTIPLE_UNIT_CELL
 syn keyword cp2kKeyword MULTIPLICITY MULTIP
-syn keyword cp2kKeyword MULTIPOLE_TWO_CENT_INT
 syn keyword cp2kKeyword MULTREC_LIMIT
 syn keyword cp2kKeyword MU_INERTIA_EXPANSION
 syn keyword cp2kKeyword MU_INERTIA_TOLERANCE
@@ -2744,7 +2734,6 @@ syn keyword cp2kKeyword NDIGITS
 syn keyword cp2kKeyword NDIM
 syn keyword cp2kKeyword ND_B EXPON_DENOMINATOR_B
 syn keyword cp2kKeyword NEGLECT_ABC
-syn keyword cp2kKeyword NEGLECT_NORMALIZATION_SIGMA_X
 syn keyword cp2kKeyword NEIGHBOR_LISTS_FROM_SCRATCH
 syn keyword cp2kKeyword NEL
 syn keyword cp2kKeyword NELEC N_ELECTRONS
@@ -2779,7 +2768,6 @@ syn keyword cp2kKeyword NONDIAG_ENERGY
 syn keyword cp2kKeyword NONDIAG_ENERGY_STRENGTH
 syn keyword cp2kKeyword NONORTHOGONAL_COUPLING NONORTHO_COUPLING
 syn keyword cp2kKeyword NON_MONOTONIC
-syn keyword cp2kKeyword NORMALIZE_SIGMA
 syn keyword cp2kKeyword NORMAL_VECTOR
 syn keyword cp2kKeyword NOSE_PARTICLE
 syn keyword cp2kKeyword NOTCONV_STOPALL
@@ -3322,7 +3310,7 @@ syn keyword cp2kKeyword SCALE_TEMP_KIND
 syn keyword cp2kKeyword SCALE_WITH_OCCUPATION_NUMBERS
 syn keyword cp2kKeyword SCALE_X
 syn keyword cp2kKeyword SCALE_X0
-syn keyword cp2kKeyword SCALING A_SCALING
+syn keyword cp2kKeyword SCALING
 syn keyword cp2kKeyword SCALING_FACTOR
 syn keyword cp2kKeyword SCF_GUESS
 syn keyword cp2kKeyword SCF_TYPE
@@ -3365,7 +3353,6 @@ syn keyword cp2kKeyword SIGN_SQRT_ORDER
 syn keyword cp2kKeyword SINGLE_PRECISION_MATRICES
 syn keyword cp2kKeyword SIP_LIST
 syn keyword cp2kKeyword SIZE
-syn keyword cp2kKeyword SIZE_CHOLESKY_SUBGROUP SIZE_CS
 syn keyword cp2kKeyword SIZE_FREQ_INTEG_GROUP RPA_GROUP_SIZE
 syn keyword cp2kKeyword SIZE_INTEG_GROUP LAPLACE_GROUP_SIZE
 syn keyword cp2kKeyword SIZE_LATTICE_SUM
@@ -3423,7 +3410,6 @@ syn keyword cp2kKeyword STEPSIZE
 syn keyword cp2kKeyword STEP_SIZE
 syn keyword cp2kKeyword STEP_SIZE_SCALING
 syn keyword cp2kKeyword STEP_START_VAL
-syn keyword cp2kKeyword STOP_CRIT STOP_CRIT_1
 syn keyword cp2kKeyword STOP_ON_MISMATCH
 syn keyword cp2kKeyword STORAGE_LOCATION
 syn keyword cp2kKeyword STORE_WFN STORE_WAVEFUNCTION
