@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:3a41d2f)
+" CP2K-Version: CP2K version 7.0 (git:2ac9a3e)
 
 if exists("b:current_syntax")
    finish
@@ -712,7 +712,6 @@ syn keyword cp2kConstant SINGLEV
 syn keyword cp2kConstant SIRIUS
 syn keyword cp2kConstant SKIP
 syn keyword cp2kConstant SL
-syn keyword cp2kConstant SL2
 syn keyword cp2kConstant SLATER
 syn keyword cp2kConstant SM
 syn keyword cp2kConstant SMM
@@ -2481,9 +2480,7 @@ syn keyword cp2kKeyword KPOINT
 syn keyword cp2kKeyword KPOINTS
 syn keyword cp2kKeyword KSS
 syn keyword cp2kKeyword K_CONFIDENCE_LIMIT
-syn keyword cp2kKeyword K_GRID
 syn keyword cp2kKeyword K_RHO
-syn keyword cp2kKeyword K_SHIFT
 syn keyword cp2kKeyword K_SPRING K
 syn keyword cp2kKeyword L
 syn keyword cp2kKeyword LABEL
@@ -2748,6 +2745,7 @@ syn keyword cp2kKeyword NEW_PREC_EACH
 syn keyword cp2kKeyword NEXTRA_DOF
 syn keyword cp2kKeyword NF
 syn keyword cp2kKeyword NGAUSS
+syn keyword cp2kKeyword NGRIDK
 syn keyword cp2kKeyword NGRIDS
 syn keyword cp2kKeyword NGROUPS NGROUP
 syn keyword cp2kKeyword NH
@@ -3341,6 +3339,7 @@ syn keyword cp2kKeyword SHELL_CUTOFF
 syn keyword cp2kKeyword SHELL_OPT
 syn keyword cp2kKeyword SHG_LRI_INTEGRALS
 syn keyword cp2kKeyword SHIFT
+syn keyword cp2kKeyword SHIFTK
 syn keyword cp2kKeyword SHIFT_AVERAGE
 syn keyword cp2kKeyword SHIFT_CUTOFF
 syn keyword cp2kKeyword SHIFT_GAPW_RADIUS
