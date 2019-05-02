@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:2ac9a3e)
+" CP2K-Version: CP2K version 7.0 (git:70d0603)
 
 if exists("b:current_syntax")
    finish
@@ -533,6 +533,7 @@ syn keyword cp2kConstant NEURAL_NETWORK
 syn keyword cp2kConstant NEVER
 syn keyword cp2kConstant NEW
 syn keyword cp2kConstant NEWTON
+syn keyword cp2kConstant NEWTONSCHULZ
 syn keyword cp2kConstant NEWTON_LS
 syn keyword cp2kConstant NN10
 syn keyword cp2kConstant NN10_SMOOTH
@@ -617,6 +618,7 @@ syn keyword cp2kConstant POSITIVE
 syn keyword cp2kConstant POTENTIAL
 syn keyword cp2kConstant PRIMITIVE
 syn keyword cp2kConstant PROJECT_R0_OUT
+syn keyword cp2kConstant PROOT
 syn keyword cp2kConstant PS
 syn keyword cp2kConstant PSEUDO
 syn keyword cp2kConstant PSEUDOPOTENTIAL
@@ -700,7 +702,7 @@ syn keyword cp2kConstant SETUP_ONLY
 syn keyword cp2kConstant SGP
 syn keyword cp2kConstant SHORTRANGE
 syn keyword cp2kConstant SIC
-syn keyword cp2kConstant SIGN_MATRIX
+syn keyword cp2kConstant SIGN
 syn keyword cp2kConstant SIGN_SQRT
 syn keyword cp2kConstant SILENT
 syn keyword cp2kConstant SIMPLE
@@ -3351,7 +3353,7 @@ syn keyword cp2kKeyword SIC_METHOD
 syn keyword cp2kKeyword SIC_SCALING_A
 syn keyword cp2kKeyword SIC_SCALING_B
 syn keyword cp2kKeyword SIGMA
-syn keyword cp2kKeyword SIGN_SQRT_ORDER
+syn keyword cp2kKeyword SIGN_METHOD
 syn keyword cp2kKeyword SINGLE_PRECISION_MATRICES
 syn keyword cp2kKeyword SIP_LIST
 syn keyword cp2kKeyword SIZE
@@ -3444,6 +3446,8 @@ syn keyword cp2kKeyword S_EXPONENTS
 syn keyword cp2kKeyword S_INVERSION
 syn keyword cp2kKeyword S_PRECONDITIONER
 syn keyword cp2kKeyword S_QUANTUM_NUMBERS
+syn keyword cp2kKeyword S_SQRT_METHOD
+syn keyword cp2kKeyword S_SQRT_ORDER SIGN_SQRT_ORDER
 syn keyword cp2kKeyword T0
 syn keyword cp2kKeyword TAMCSTEPS
 syn keyword cp2kKeyword TARGET
