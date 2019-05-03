@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:70d0603)
+" CP2K-Version: CP2K version 7.0 (git:efb4dd7)
 
 if exists("b:current_syntax")
    finish
@@ -713,6 +713,7 @@ syn keyword cp2kConstant SINGLETS
 syn keyword cp2kConstant SINGLEV
 syn keyword cp2kConstant SIRIUS
 syn keyword cp2kConstant SKIP
+syn keyword cp2kConstant SKIP_FOR_REGTEST
 syn keyword cp2kConstant SL
 syn keyword cp2kConstant SLATER
 syn keyword cp2kConstant SM
@@ -1920,6 +1921,7 @@ syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_RADIUS
 syn keyword cp2kKeyword CUTOFF_TYPE
+syn keyword cp2kKeyword CUTOFF_W
 syn keyword cp2kKeyword CUTOUT
 syn keyword cp2kKeyword CYCLE
 syn keyword cp2kKeyword CYCLIC_BLOCK_SIZE
@@ -2211,6 +2213,7 @@ syn keyword cp2kKeyword EXCLUDE_MM
 syn keyword cp2kKeyword EXCLUDE_QM
 syn keyword cp2kKeyword EXCLUDE_VDW
 syn keyword cp2kKeyword EXP_ACCURACY
+syn keyword cp2kKeyword EXP_KPOINTS
 syn keyword cp2kKeyword EXP_PRE
 syn keyword cp2kKeyword EXTENDED_DELTA_CHARGE
 syn keyword cp2kKeyword EXTENDED_FFT_LENGTHS
@@ -2306,6 +2309,7 @@ syn keyword cp2kKeyword G-SECTOR_MOVE_REP
 syn keyword cp2kKeyword G96_INFO
 syn keyword cp2kKeyword GAMMA
 syn keyword cp2kKeyword GAMMA_KT
+syn keyword cp2kKeyword GAMMA_ONLY_SIGMA GAMMA
 syn keyword cp2kKeyword GAMMA_POINT
 syn keyword cp2kKeyword GAP
 syn keyword cp2kKeyword GAPW_MAX_ALPHA
@@ -3028,6 +3032,7 @@ syn keyword cp2kKeyword PRINT_COORDS
 syn keyword cp2kKeyword PRINT_CUBES
 syn keyword cp2kKeyword PRINT_DIPOLE
 syn keyword cp2kKeyword PRINT_ENERGIES
+syn keyword cp2kKeyword PRINT_EXX
 syn keyword cp2kKeyword PRINT_FIT_ERROR FIT_ERROR
 syn keyword cp2kKeyword PRINT_FM_REDISTRIBUTE
 syn keyword cp2kKeyword PRINT_FORCES
