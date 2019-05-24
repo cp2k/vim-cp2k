@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:a354d49)
+" CP2K-Version: CP2K version 7.0 (git:2532f9e)
 
 if exists("b:current_syntax")
    finish
@@ -845,6 +845,7 @@ syn keyword cp2kConstant XY
 syn keyword cp2kConstant XYZ
 syn keyword cp2kConstant XZ
 syn keyword cp2kConstant Y
+syn keyword cp2kConstant YUKAWA
 syn keyword cp2kConstant YZ
 syn keyword cp2kConstant Z
 syn keyword cp2kConstant ZERO
@@ -2020,6 +2021,7 @@ syn keyword cp2kKeyword DO_AUX_BAS_GW
 syn keyword cp2kKeyword DO_CALIBRATE_CUTOFF
 syn keyword cp2kKeyword DO_DBCSR_T
 syn keyword cp2kKeyword DO_DSO
+syn keyword cp2kKeyword DO_ERROR_ESTIMATE
 syn keyword cp2kKeyword DO_EWALD
 syn keyword cp2kKeyword DO_FC
 syn keyword cp2kKeyword DO_HILLS
@@ -3004,6 +3006,7 @@ syn keyword cp2kKeyword POTENTIAL
 syn keyword cp2kKeyword POTENTIAL_ENERGY
 syn keyword cp2kKeyword POTENTIAL_FILE_NAME
 syn keyword cp2kKeyword POTENTIAL_NAME POT_NAME
+syn keyword cp2kKeyword POTENTIAL_PARAM
 syn keyword cp2kKeyword POTENTIAL_TOL
 syn keyword cp2kKeyword POTENTIAL_TYPE
 syn keyword cp2kKeyword POT_TYPE
