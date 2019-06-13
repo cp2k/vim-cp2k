@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:2532f9e)
+" CP2K-Version: CP2K version 7.0 (git:4519a8a)
 
 if exists("b:current_syntax")
    finish
@@ -324,6 +324,7 @@ syn keyword cp2kConstant FD1_CENTRAL
 syn keyword cp2kConstant FD2
 syn keyword cp2kConstant FD2_BACKWARD
 syn keyword cp2kConstant FE
+syn keyword cp2kConstant FERMI_AMALDI
 syn keyword cp2kConstant FERMI_DIRAC
 syn keyword cp2kConstant FFT
 syn keyword cp2kConstant FFTSG
@@ -657,6 +658,7 @@ syn keyword cp2kConstant REFLECTIVE
 syn keyword cp2kConstant REFTRAJ
 syn keyword cp2kConstant REMOVE
 syn keyword cp2kConstant REPLICATED
+syn keyword cp2kConstant RESP
 syn keyword cp2kConstant RESTART
 syn keyword cp2kConstant RESTART_VEC
 syn keyword cp2kConstant RESTART_WFN
@@ -1586,7 +1588,6 @@ syn keyword cp2kKeyword ACTIVE_ELECTRONS
 syn keyword cp2kKeyword ACTIVE_ORBITALS
 syn keyword cp2kKeyword ADAPTIVE_EXCLUDE_MOLECULES
 syn keyword cp2kKeyword ADDED_MOS
-syn keyword cp2kKeyword ADD_CONST_POT
 syn keyword cp2kKeyword ADD_LAST
 syn keyword cp2kKeyword ADJUST_SIZE
 syn keyword cp2kKeyword ADMM
@@ -1818,6 +1819,7 @@ syn keyword cp2kKeyword CG_INIT_STEPS
 syn keyword cp2kKeyword CG_RESET_LIMIT
 syn keyword cp2kKeyword CHARGE
 syn keyword cp2kKeyword CHARGE_BETA CHARGE_B
+syn keyword cp2kKeyword CHARGE_DISTR_WIDTH
 syn keyword cp2kKeyword CHARGE_EXTENDED
 syn keyword cp2kKeyword CHARGE_OCCUP CHARGE_O
 syn keyword cp2kKeyword CHECK_2C_ACCURACY
@@ -3009,6 +3011,7 @@ syn keyword cp2kKeyword POTENTIAL_NAME POT_NAME
 syn keyword cp2kKeyword POTENTIAL_PARAM
 syn keyword cp2kKeyword POTENTIAL_TOL
 syn keyword cp2kKeyword POTENTIAL_TYPE
+syn keyword cp2kKeyword POT_GUESS
 syn keyword cp2kKeyword POT_TYPE
 syn keyword cp2kKeyword POWELL_OPT
 syn keyword cp2kKeyword PPL_RADII
