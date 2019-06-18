@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:d0d6bfb)
+" CP2K-Version: CP2K version 7.0 (git:20ad1a1)
 
 if exists("b:current_syntax")
    finish
@@ -691,6 +691,7 @@ syn keyword cp2kConstant S2_CONSTRAINT
 syn keyword cp2kConstant SAME_AS_PARTICLE
 syn keyword cp2kConstant SAOP
 syn keyword cp2kConstant SCALAPACK
+syn keyword cp2kConstant SCDM
 syn keyword cp2kConstant SCF_WFN
 syn keyword cp2kConstant SCMP
 syn keyword cp2kConstant SCZORA(MP)
@@ -1137,6 +1138,7 @@ syn keyword cp2kSection GA
 syn keyword cp2kSection GAPW
 syn keyword cp2kSection GAUSSIAN
 syn keyword cp2kSection GAUSSIAN_ENV
+syn keyword cp2kSection GCP_POTENTIAL
 syn keyword cp2kSection GENERATE
 syn keyword cp2kSection GENERIC
 syn keyword cp2kSection GENPOT
@@ -1952,6 +1954,7 @@ syn keyword cp2kKeyword DELOCALIZE_METHOD
 syn keyword cp2kKeyword DELTA
 syn keyword cp2kKeyword DELTA_ALPHA
 syn keyword cp2kKeyword DELTA_CHARGE
+syn keyword cp2kKeyword DELTA_ENERGY
 syn keyword cp2kKeyword DELTA_I_REL DI_REL
 syn keyword cp2kKeyword DELTA_NPOLES
 syn keyword cp2kKeyword DELTA_PULSE_DIRECTION
@@ -2337,6 +2340,7 @@ syn keyword cp2kKeyword GK_CUTOFF
 syn keyword cp2kKeyword GLB_CONF
 syn keyword cp2kKeyword GLOBAL_CUTOFF
 syn keyword cp2kKeyword GLOBAL_GAUSSIAN_RNG
+syn keyword cp2kKeyword GLOBAL_PARAMETERS
 syn keyword cp2kKeyword GMAX
 syn keyword cp2kKeyword GMIX_P
 syn keyword cp2kKeyword GOLD_TARGET
@@ -2460,6 +2464,7 @@ syn keyword cp2kKeyword JACOBIAN_STEP
 syn keyword cp2kKeyword JACOBIAN_TYPE
 syn keyword cp2kKeyword JACOBIAN_VECTOR
 syn keyword cp2kKeyword JACOBI_FALLBACK
+syn keyword cp2kKeyword JACOBI_REFINEMENT
 syn keyword cp2kKeyword JACOBI_THRESHOLD
 syn keyword cp2kKeyword JOB_ID
 syn keyword cp2kKeyword JUST_ENERGY
@@ -3360,6 +3365,7 @@ syn keyword cp2kKeyword SHIFT_GAPW_RADIUS
 syn keyword cp2kKeyword SHIFT_MM
 syn keyword cp2kKeyword SHIFT_QM
 syn keyword cp2kKeyword SHORT_RANGE_CORRECTION
+syn keyword cp2kKeyword SHORT_RANGE_CORRECTION_PARAMETERS
 syn keyword cp2kKeyword SHOULD_SKIP
 syn keyword cp2kKeyword SIC_METHOD
 syn keyword cp2kKeyword SIC_SCALING_A
