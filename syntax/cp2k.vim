@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:30e4d8f)
+" CP2K-Version: CP2K version 7.0 (git:984dcfd)
 
 if exists("b:current_syntax")
    finish
@@ -997,6 +997,7 @@ syn keyword cp2kSection CORE_VELOCITY
 syn keyword cp2kSection COULOMB
 syn keyword cp2kSection COUNT
 syn keyword cp2kSection COUPLING
+syn keyword cp2kSection COUPLINGS
 syn keyword cp2kSection CPHF
 syn keyword cp2kSection CP_DBCSR
 syn keyword cp2kSection CP_FM_GEMM
