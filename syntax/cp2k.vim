@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:95014e7)
+" CP2K-Version: CP2K version 7.0 (git:f4b239e)
 
 if exists("b:current_syntax")
    finish
@@ -2787,6 +2787,7 @@ syn keyword cp2kKeyword NONDIAG_ENERGY
 syn keyword cp2kKeyword NONDIAG_ENERGY_STRENGTH
 syn keyword cp2kKeyword NONORTHOGONAL_COUPLING NONORTHO_COUPLING
 syn keyword cp2kKeyword NON_MONOTONIC
+syn keyword cp2kKeyword NOOPT_NLCC
 syn keyword cp2kKeyword NORMAL_VECTOR
 syn keyword cp2kKeyword NOSE_PARTICLE
 syn keyword cp2kKeyword NOTCONV_STOPALL
@@ -3036,6 +3037,7 @@ syn keyword cp2kKeyword PREFERRED_DIAG_LIBRARY
 syn keyword cp2kKeyword PREFERRED_FFT_LIBRARY
 syn keyword cp2kKeyword PREFIX_ANA_FILES
 syn keyword cp2kKeyword PREOPT_DM_FILE
+syn keyword cp2kKeyword PREOPT_NLCC
 syn keyword cp2kKeyword PRESAMPLE
 syn keyword cp2kKeyword PRESSURE
 syn keyword cp2kKeyword PRESSURE_TOLERANCE
