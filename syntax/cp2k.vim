@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:5ffd82a)
+" CP2K-Version: CP2K version 7.0 (git:f82b7a7)
 
 if exists("b:current_syntax")
    finish
@@ -1151,6 +1151,7 @@ syn keyword cp2kSection GLOBAL_OPT
 syn keyword cp2kSection GOLD
 syn keyword cp2kSection GOODWIN
 syn keyword cp2kSection GRID_INFORMATION
+syn keyword cp2kSection GRRM
 syn keyword cp2kSection GTH_POTENTIAL
 syn keyword cp2kSection GUESS_VECTORS
 syn keyword cp2kSection GV09
@@ -3294,6 +3295,7 @@ syn keyword cp2kKeyword ROW_BLOCK ROW_BLOCK_SIZE
 syn keyword cp2kKeyword ROW_MAJOR
 syn keyword cp2kKeyword ROW_ORDERING
 syn keyword cp2kKeyword RS2PW
+syn keyword cp2kKeyword RSE SE
 syn keyword cp2kKeyword RSTART
 syn keyword cp2kKeyword RUN_TYPE
 syn keyword cp2kKeyword RWOH
