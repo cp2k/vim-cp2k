@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:f82b7a7)
+" CP2K-Version: CP2K version 7.0 (git:ae9949d)
 
 if exists("b:current_syntax")
    finish
@@ -1811,7 +1811,6 @@ syn keyword cp2kKeyword CELL_OPT
 syn keyword cp2kKeyword CELL_SHAPE
 syn keyword cp2kKeyword CELL_SIZE
 syn keyword cp2kKeyword CENTER
-syn keyword cp2kKeyword CENTERS_FILE_NAME
 syn keyword cp2kKeyword CENTER_GRID
 syn keyword cp2kKeyword CENTER_POINT
 syn keyword cp2kKeyword CENTER_TYPE
@@ -2381,6 +2380,7 @@ syn keyword cp2kKeyword HB_SR_GAMMA
 syn keyword cp2kKeyword HB_SR_PARAM
 syn keyword cp2kKeyword HEAD_TAIL_MOVE_LMAX
 syn keyword cp2kKeyword HELIUM_ONLY
+syn keyword cp2kKeyword HE_HE
 syn keyword cp2kKeyword HFX_BALANCE_IN_CORE
 syn keyword cp2kKeyword HF_LIKE_EV_START
 syn keyword cp2kKeyword HIGH_LEVEL_EMBED_SUBSYS
@@ -3397,6 +3397,7 @@ syn keyword cp2kKeyword SMEARING_WIDTH
 syn keyword cp2kKeyword SMOOTHING
 syn keyword cp2kKeyword SMOOTHING_WIDTH ZETA
 syn keyword cp2kKeyword SMOOTH_WIDTH
+syn keyword cp2kKeyword SOLUTE_HE
 syn keyword cp2kKeyword SOLUTE_INTERACTION
 syn keyword cp2kKeyword SOLUTE_RADIUS
 syn keyword cp2kKeyword SOO_LIST
