@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:e35496b)
+" CP2K-Version: CP2K version 7.0 (git:43f50e2)
 
 if exists("b:current_syntax")
    finish
@@ -1605,6 +1605,7 @@ syn keyword cp2kKeyword ALIST
 syn keyword cp2kKeyword ALL
 syn keyword cp2kKeyword ALLOW_H3O_FORMATION
 syn keyword cp2kKeyword ALLOW_OH_FORMATION
+syn keyword cp2kKeyword ALLOW_OPEN
 syn keyword cp2kKeyword ALLOW_O_FORMATION
 syn keyword cp2kKeyword ALLTOALL_SGL
 syn keyword cp2kKeyword ALL_CONF_FILE_NAME
@@ -1817,9 +1818,9 @@ syn keyword cp2kKeyword CENTER_GRID
 syn keyword cp2kKeyword CENTER_POINT
 syn keyword cp2kKeyword CENTER_TYPE
 syn keyword cp2kKeyword CENTRAL_ATOM
-syn keyword cp2kKeyword CENTROID_MOVE_DRMAX
-syn keyword cp2kKeyword CENTROID_MOVE_FREQ
+syn keyword cp2kKeyword CENTROID_DRMAX
 syn keyword cp2kKeyword CENTROID_SPEED
+syn keyword cp2kKeyword CENTROID_WEIGHT
 syn keyword cp2kKeyword CG_INIT_STEPS
 syn keyword cp2kKeyword CG_RESET_LIMIT
 syn keyword cp2kKeyword CHARGE
@@ -1886,7 +1887,6 @@ syn keyword cp2kKeyword CONTINUE_LS
 syn keyword cp2kKeyword CONVERGENCE CONV
 syn keyword cp2kKeyword CONVERGE_BY_ENERGY
 syn keyword cp2kKeyword CONV_MOS_PERCENT
-syn keyword cp2kKeyword COORD
 syn keyword cp2kKeyword COORDINATE
 syn keyword cp2kKeyword COORDINATES
 syn keyword cp2kKeyword COORDINATE_FILE_NAME
@@ -1914,6 +1914,8 @@ syn keyword cp2kKeyword COUNTER
 syn keyword cp2kKeyword COUPLING
 syn keyword cp2kKeyword COUPLING_PARAMETER
 syn keyword cp2kKeyword CPOL
+syn keyword cp2kKeyword CRAWL_REPETITION
+syn keyword cp2kKeyword CRAWL_WEIGHT
 syn keyword cp2kKeyword CRAZY_SCALE
 syn keyword cp2kKeyword CRAZY_USE_DIAG
 syn keyword cp2kKeyword CRD_INFO
@@ -2318,8 +2320,6 @@ syn keyword cp2kKeyword FUNCTIONAL_ROUTINE
 syn keyword cp2kKeyword FUNCTIONAL_TYPE
 syn keyword cp2kKeyword F_EXPONENTS
 syn keyword cp2kKeyword F_QUANTUM_NUMBERS
-syn keyword cp2kKeyword G-SECTOR_MOVE
-syn keyword cp2kKeyword G-SECTOR_MOVE_REP
 syn keyword cp2kKeyword G96_INFO
 syn keyword cp2kKeyword GAMMA
 syn keyword cp2kKeyword GAMMA_KT
@@ -2383,7 +2383,7 @@ syn keyword cp2kKeyword HARM_INT
 syn keyword cp2kKeyword HARRIS_BASIS
 syn keyword cp2kKeyword HB_SR_GAMMA
 syn keyword cp2kKeyword HB_SR_PARAM
-syn keyword cp2kKeyword HEAD_TAIL_MOVE_LMAX
+syn keyword cp2kKeyword HEAD_TAIL_WEIGHT
 syn keyword cp2kKeyword HELIUM_ONLY
 syn keyword cp2kKeyword HE_HE
 syn keyword cp2kKeyword HFX_BALANCE_IN_CORE
@@ -2898,8 +2898,8 @@ syn keyword cp2kKeyword OMEGA_MAX_FIT
 syn keyword cp2kKeyword OMIT_HEADERS
 syn keyword cp2kKeyword ONE_CIRCLE
 syn keyword cp2kKeyword ON_THE_FLY_LOC
-syn keyword cp2kKeyword OPEN_CLOSE_MOVE_C
-syn keyword cp2kKeyword OPEN_CLOSE_MOVE_LMAX
+syn keyword cp2kKeyword OPEN_CLOSE_SCALE
+syn keyword cp2kKeyword OPEN_CLOSE_WEIGHT
 syn keyword cp2kKeyword OPERATOR
 syn keyword cp2kKeyword OPERATOR_PARAMETER
 syn keyword cp2kKeyword OPTIMIZER MINIMIZER
@@ -3379,6 +3379,7 @@ syn keyword cp2kKeyword SHIFT_QM
 syn keyword cp2kKeyword SHORT_RANGE_CORRECTION
 syn keyword cp2kKeyword SHORT_RANGE_CORRECTION_PARAMETERS
 syn keyword cp2kKeyword SHOULD_SKIP
+syn keyword cp2kKeyword SHOW_STATISTICS
 syn keyword cp2kKeyword SIC_METHOD
 syn keyword cp2kKeyword SIC_SCALING_A
 syn keyword cp2kKeyword SIC_SCALING_B
@@ -3426,8 +3427,8 @@ syn keyword cp2kKeyword SPLINE_ORDER
 syn keyword cp2kKeyword SPLIT_RESTART_FILE
 syn keyword cp2kKeyword STABILIZE_EXP
 syn keyword cp2kKeyword STACK_SORT
-syn keyword cp2kKeyword STAGING_MOVE_L
-syn keyword cp2kKeyword STAGING_MOVE_REP
+syn keyword cp2kKeyword STAGING_L
+syn keyword cp2kKeyword STAGING_WEIGHT
 syn keyword cp2kKeyword STANDARD_ORIENTATION
 syn keyword cp2kKeyword START
 syn keyword cp2kKeyword START_ELEM
@@ -3465,7 +3466,7 @@ syn keyword cp2kKeyword SURFACE_DIPOLE_CORRECTION SURFACE_DIPOLE SURF_DIP
 syn keyword cp2kKeyword SURF_DIP_DIR
 syn keyword cp2kKeyword SURF_DIRECTION
 syn keyword cp2kKeyword SVD_CUTOFF
-syn keyword cp2kKeyword SWAP_MOVE_LMAX
+syn keyword cp2kKeyword SWAP_WEIGHT
 syn keyword cp2kKeyword SWITCH_COEFF_STATE
 syn keyword cp2kKeyword SWITCH_CONTRACTION_STATE
 syn keyword cp2kKeyword SWITCH_EXP_STATE
@@ -3665,7 +3666,6 @@ syn keyword cp2kKeyword WINDING_CYCLE_2
 syn keyword cp2kKeyword WINDING_NUMBER_2
 syn keyword cp2kKeyword WINDOW_SIZE
 syn keyword cp2kKeyword WORKER_PER_MINIMA
-syn keyword cp2kKeyword WRITE
 syn keyword cp2kKeyword WRITE_CUBE
 syn keyword cp2kKeyword WRITE_CYCLES
 syn keyword cp2kKeyword WRITE_FREQUENCY
