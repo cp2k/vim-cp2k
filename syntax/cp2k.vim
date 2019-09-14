@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:43f50e2)
+" CP2K-Version: CP2K version 7.0 (git:74ef05b)
 
 if exists("b:current_syntax")
    finish
@@ -1267,6 +1267,7 @@ syn keyword cp2kSection MO
 syn keyword cp2kSection MODE_SELECTIVE
 syn keyword cp2kSection MOLDEN_VIB
 syn keyword cp2kSection MOLECULAR_DIPOLES
+syn keyword cp2kSection MOLECULAR_MOMENTS
 syn keyword cp2kSection MOLECULAR_STATES
 syn keyword cp2kSection MOLECULE
 syn keyword cp2kSection MOLECULES
@@ -2368,6 +2369,7 @@ syn keyword cp2kKeyword GROUP_ENERGY_SIZE
 syn keyword cp2kKeyword GROUP_PARTITION
 syn keyword cp2kKeyword GROUP_SIZE NUMBER_PROC
 syn keyword cp2kKeyword GROUP_SIZE_3C
+syn keyword cp2kKeyword GROUP_SIZE_INTERNAL
 syn keyword cp2kKeyword GROUP_SIZE_P
 syn keyword cp2kKeyword GSPACE_SMOOTHING
 syn keyword cp2kKeyword GTOP_INFO
