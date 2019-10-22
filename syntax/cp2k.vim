@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:a957e65)
+" CP2K-Version: CP2K version 7.0 (git:dd13ebc)
 
 if exists("b:current_syntax")
    finish
@@ -1594,6 +1594,8 @@ syn match cp2kEndSection '^\s*&END\s*\w\+' contains=cp2kSection
 
 syn keyword cp2kKeyword 1-NORM
 syn keyword cp2kKeyword 2D_MOLECULAR_DISTRIBUTION
+syn keyword cp2kKeyword 2ND_DERIV_ANALYTICAL
+syn keyword cp2kKeyword 3RD_DERIV_ANALYTICAL
 syn keyword cp2kKeyword A
 syn keyword cp2kKeyword A1
 syn keyword cp2kKeyword A2
