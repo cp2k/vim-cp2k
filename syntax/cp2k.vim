@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:7766285)
+" CP2K-Version: CP2K version 7.0 (git:21e0c18)
 
 if exists("b:current_syntax")
    finish
@@ -3371,6 +3371,7 @@ syn keyword cp2kKeyword SCALE_C
 syn keyword cp2kKeyword SCALE_COULOMB
 syn keyword cp2kKeyword SCALE_GAUSSIAN
 syn keyword cp2kKeyword SCALE_LONGRANGE
+syn keyword cp2kKeyword SCALE_RPA
 syn keyword cp2kKeyword SCALE_S
 syn keyword cp2kKeyword SCALE_T
 syn keyword cp2kKeyword SCALE_TEMP_KIND
