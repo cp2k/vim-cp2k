@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:21e0c18)
+" CP2K-Version: CP2K version 7.0 (git:4a9b0ec)
 
 if exists("b:current_syntax")
    finish
@@ -756,7 +756,6 @@ syn keyword cp2kConstant SSE_BLOCK4
 syn keyword cp2kConstant SSE_BLOCK6
 syn keyword cp2kConstant STAGE
 syn keyword cp2kConstant STANDARD
-syn keyword cp2kConstant STD
 syn keyword cp2kConstant STEEPEST_DESCENT
 syn keyword cp2kConstant STRICT
 syn keyword cp2kConstant SUBLATTICE
@@ -765,7 +764,6 @@ syn keyword cp2kConstant SUM_EIGENVALUES
 syn keyword cp2kConstant SUPERLU
 syn keyword cp2kConstant SWARM
 syn keyword cp2kConstant SYEVD
-syn keyword cp2kConstant SYEVR
 syn keyword cp2kConstant SYEVX
 syn keyword cp2kConstant SYMBOLIC
 syn keyword cp2kConstant SYRK
@@ -1433,6 +1431,7 @@ syn keyword cp2kSection RING_PUCKERING
 syn keyword cp2kSection RI_AXK
 syn keyword cp2kSection RI_G0W0
 syn keyword cp2kSection RI_LAPLACE
+syn keyword cp2kSection RI_METRIC
 syn keyword cp2kSection RI_MP2
 syn keyword cp2kSection RI_RPA
 syn keyword cp2kSection RMSD
@@ -1480,6 +1479,7 @@ syn keyword cp2kSection SPHERE_SAMPLING
 syn keyword cp2kSection SPINSPIN
 syn keyword cp2kSection SPLINE
 syn keyword cp2kSection SPL_COEFFS
+syn keyword cp2kSection SRLDA
 syn keyword cp2kSection STAGING
 syn keyword cp2kSection STM
 syn keyword cp2kSection STRESS
@@ -1949,6 +1949,7 @@ syn keyword cp2kKeyword CUBE_EVAL_RANGE
 syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_RADIUS
+syn keyword cp2kKeyword CUTOFF_RADIUS_METRIC
 syn keyword cp2kKeyword CUTOFF_TYPE
 syn keyword cp2kKeyword CUTOFF_W
 syn keyword cp2kKeyword CUTOUT
@@ -2008,7 +2009,6 @@ syn keyword cp2kKeyword DFET_EMBEDDED
 syn keyword cp2kKeyword DFTB3_PARAM
 syn keyword cp2kKeyword DGEMM
 syn keyword cp2kKeyword DIAGONALIZATION
-syn keyword cp2kKeyword DIAGONALIZATION_TYPE DIAG_TYPE DIAG
 syn keyword cp2kKeyword DIAGONAL_DFTB3
 syn keyword cp2kKeyword DIAG_METHOD
 syn keyword cp2kKeyword DIELECTRIC_CONSTANT EPSILON
@@ -2204,6 +2204,7 @@ syn keyword cp2kKeyword EPS_PPL
 syn keyword cp2kKeyword EPS_PPNL
 syn keyword cp2kKeyword EPS_R
 syn keyword cp2kKeyword EPS_RANGE
+syn keyword cp2kKeyword EPS_RANGE_METRIC
 syn keyword cp2kKeyword EPS_RHO
 syn keyword cp2kKeyword EPS_RHO_GSPACE
 syn keyword cp2kKeyword EPS_RHO_RSPACE
