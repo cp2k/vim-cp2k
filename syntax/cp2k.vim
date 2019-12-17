@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:4a9b0ec)
+" CP2K-Version: CP2K version 7.0 (git:e13e3ec)
 
 if exists("b:current_syntax")
    finish
@@ -182,6 +182,7 @@ syn keyword cp2kConstant BY_KIND
 syn keyword cp2kConstant CALC_MATRIX
 syn keyword cp2kConstant CAMBRIDGE
 syn keyword cp2kConstant CANONICAL
+syn keyword cp2kConstant CARTESIAN
 syn keyword cp2kConstant CAUCHY
 syn keyword cp2kConstant CAUCHY_SUBSPACE
 syn keyword cp2kConstant CD3
@@ -1260,6 +1261,7 @@ syn keyword cp2kSection METHOD_INFO
 syn keyword cp2kSection MGRID
 syn keyword cp2kSection MINBAS_ANALYSIS
 syn keyword cp2kSection MINBAS_CUBE
+syn keyword cp2kSection MINBAS_MOLDEN
 syn keyword cp2kSection MINIMA_CRAWLING
 syn keyword cp2kSection MINIMA_HOPPING
 syn keyword cp2kSection MINIMA_TRAJECTORY
@@ -1288,7 +1290,6 @@ syn keyword cp2kSection MOM
 syn keyword cp2kSection MOMENTS
 syn keyword cp2kSection MOMENT_OF_INERTIA
 syn keyword cp2kSection MOMENT_OF_INERTIA_AVG
-syn keyword cp2kSection MOS_MOLDEN
 syn keyword cp2kSection MOTION
 syn keyword cp2kSection MOVE_MM_CHARGE
 syn keyword cp2kSection MOVE_PROBABILITIES
@@ -1296,6 +1297,7 @@ syn keyword cp2kSection MOVE_TYPE
 syn keyword cp2kSection MOVE_UPDATES
 syn keyword cp2kSection MO_CUBES
 syn keyword cp2kSection MO_MAGNITUDE
+syn keyword cp2kSection MO_MOLDEN
 syn keyword cp2kSection MO_ORTHONORMALITY
 syn keyword cp2kSection MP2_INFO
 syn keyword cp2kSection MSD
@@ -2384,6 +2386,7 @@ syn keyword cp2kKeyword GRID
 syn keyword cp2kKeyword GRID_2D
 syn keyword cp2kKeyword GRID_OPT
 syn keyword cp2kKeyword GRID_POINTS
+syn keyword cp2kKeyword GRID_POINTS_GH
 syn keyword cp2kKeyword GRID_SPACING
 syn keyword cp2kKeyword GRID_TOL
 syn keyword cp2kKeyword GROUP_ANLYSIS_NR
@@ -2397,6 +2400,7 @@ syn keyword cp2kKeyword GROUP_SIZE_INTERNAL
 syn keyword cp2kKeyword GROUP_SIZE_P
 syn keyword cp2kKeyword GSPACE_SMOOTHING
 syn keyword cp2kKeyword GTOP_INFO
+syn keyword cp2kKeyword GTO_KIND
 syn keyword cp2kKeyword GW_EIGENVALUES
 syn keyword cp2kKeyword GW_EIGENVALUES_BETA
 syn keyword cp2kKeyword G_R
@@ -3631,6 +3635,7 @@ syn keyword cp2kKeyword USE_ELEMENT_AS_KIND
 syn keyword cp2kKeyword USE_EXP
 syn keyword cp2kKeyword USE_FINER_GRID
 syn keyword cp2kKeyword USE_G96_VELOCITY
+syn keyword cp2kKeyword USE_GAUSS_HERMITE
 syn keyword cp2kKeyword USE_GEEP_LIB
 syn keyword cp2kKeyword USE_HALOGEN_CORRECTION
 syn keyword cp2kKeyword USE_HISTORY
