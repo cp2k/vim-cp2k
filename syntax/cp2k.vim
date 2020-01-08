@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 7.0 (git:e13e3ec)
+" CP2K-Version: CP2K version 8.0 (git:7a9f316)
 
 if exists("b:current_syntax")
    finish
@@ -228,6 +228,7 @@ syn keyword cp2kConstant CRD
 syn keyword cp2kConstant CSVR
 syn keyword cp2kConstant CUBE
 syn keyword cp2kConstant CUBIC
+syn keyword cp2kConstant CURVY_STEPS
 syn keyword cp2kConstant CUSTOM
 syn keyword cp2kConstant CYCLE
 syn keyword cp2kConstant D-NEB
@@ -473,6 +474,7 @@ syn keyword cp2kConstant MASS
 syn keyword cp2kConstant MASSIVE
 syn keyword cp2kConstant MASTER
 syn keyword cp2kConstant MATMUL
+syn keyword cp2kConstant MATRIX_SIGN
 syn keyword cp2kConstant MAURI_SPZ
 syn keyword cp2kConstant MAURI_US
 syn keyword cp2kConstant MAX_MINUS_MIN
@@ -1238,6 +1240,7 @@ syn keyword cp2kSection LOW_SPIN_ROKS
 syn keyword cp2kSection LRIGPW
 syn keyword cp2kSection LR_CORRECTION
 syn keyword cp2kSection LS_SCF
+syn keyword cp2kSection LS_SOLVER
 syn keyword cp2kSection LYP
 syn keyword cp2kSection LYP_ADIABATIC
 syn keyword cp2kSection M-SAMPLING
