@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:7a9f316)
+" CP2K-Version: CP2K version 8.0 (git:cf243b8)
 
 if exists("b:current_syntax")
    finish
@@ -713,6 +713,7 @@ syn keyword cp2kConstant SEQUENTIAL
 syn keyword cp2kConstant SERIAL
 syn keyword cp2kConstant SETUP_ONLY
 syn keyword cp2kConstant SGP
+syn keyword cp2kConstant SHIFT
 syn keyword cp2kConstant SHORTRANGE
 syn keyword cp2kConstant SIC
 syn keyword cp2kConstant SIGN
@@ -759,6 +760,7 @@ syn keyword cp2kConstant SSE_BLOCK4
 syn keyword cp2kConstant SSE_BLOCK6
 syn keyword cp2kConstant STAGE
 syn keyword cp2kConstant STANDARD
+syn keyword cp2kConstant STDA
 syn keyword cp2kConstant STEEPEST_DESCENT
 syn keyword cp2kConstant STRICT
 syn keyword cp2kConstant SUBLATTICE
@@ -1293,6 +1295,7 @@ syn keyword cp2kSection MOM
 syn keyword cp2kSection MOMENTS
 syn keyword cp2kSection MOMENT_OF_INERTIA
 syn keyword cp2kSection MOMENT_OF_INERTIA_AVG
+syn keyword cp2kSection MOS_MOLDEN
 syn keyword cp2kSection MOTION
 syn keyword cp2kSection MOVE_MM_CHARGE
 syn keyword cp2kSection MOVE_PROBABILITIES
@@ -1325,6 +1328,7 @@ syn keyword cp2kSection NONBONDED14
 syn keyword cp2kSection NON_LOCAL
 syn keyword cp2kSection NORMALMODE
 syn keyword cp2kSection NOSE
+syn keyword cp2kSection NTO_ANALYSIS
 syn keyword cp2kSection OPBEND
 syn keyword cp2kSection OPTIMIZATION
 syn keyword cp2kSection OPTIMIZE_BAND
@@ -1368,6 +1372,7 @@ syn keyword cp2kSection PLUS_U
 syn keyword cp2kSection POINT
 syn keyword cp2kSection POISSON
 syn keyword cp2kSection POLAR
+syn keyword cp2kSection POLARISATION_CHARGE_DENSITY
 syn keyword cp2kSection POLARISATION_POTENTIAL
 syn keyword cp2kSection POLAR_MATRIX
 syn keyword cp2kSection POPULATION
@@ -1486,6 +1491,7 @@ syn keyword cp2kSection SPLINE
 syn keyword cp2kSection SPL_COEFFS
 syn keyword cp2kSection SRLDA
 syn keyword cp2kSection STAGING
+syn keyword cp2kSection STDA
 syn keyword cp2kSection STM
 syn keyword cp2kSection STRESS
 syn keyword cp2kSection STRESS_TENSOR
@@ -1520,6 +1526,7 @@ syn keyword cp2kSection TOPOLOGY
 syn keyword cp2kSection TOPOLOGY_INFO
 syn keyword cp2kSection TORSION
 syn keyword cp2kSection TORSIONS
+syn keyword cp2kSection TOTAL_CHARGE_DENSITY
 syn keyword cp2kSection TOTAL_DENSITIES
 syn keyword cp2kSection TOTAL_DIPOLE
 syn keyword cp2kSection TOTAL_NUMBERS
@@ -1951,6 +1958,7 @@ syn keyword cp2kKeyword CTYPE
 syn keyword cp2kKeyword CUBES_LIST
 syn keyword cp2kKeyword CUBES_LU_BOUNDS CUBES_LU
 syn keyword cp2kKeyword CUBE_EVAL_RANGE
+syn keyword cp2kKeyword CUBE_FILES
 syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_RADIUS
@@ -1987,6 +1995,7 @@ syn keyword cp2kKeyword DELOCALIZE_METHOD
 syn keyword cp2kKeyword DELTA
 syn keyword cp2kKeyword DELTA_ALPHA
 syn keyword cp2kKeyword DELTA_CHARGE
+syn keyword cp2kKeyword DELTA_E
 syn keyword cp2kKeyword DELTA_ENERGY
 syn keyword cp2kKeyword DELTA_I_REL DI_REL
 syn keyword cp2kKeyword DELTA_NPOLES
@@ -2131,6 +2140,7 @@ syn keyword cp2kKeyword ENERGY_WEIGHT
 syn keyword cp2kKeyword ENSEMBLE
 syn keyword cp2kKeyword ENVELOP
 syn keyword cp2kKeyword EN_CONSTANT
+syn keyword cp2kKeyword EOS_SHIFT OPEN_SHELL_SHIFT
 syn keyword cp2kKeyword EPS
 syn keyword cp2kKeyword EPSFIT EPS_FIT
 syn keyword cp2kKeyword EPSILON
@@ -2229,6 +2239,7 @@ syn keyword cp2kKeyword EPS_STORAGE_SCALING EPS_STORAGE
 syn keyword cp2kKeyword EPS_SVD
 syn keyword cp2kKeyword EPS_TARGET_FACTOR
 syn keyword cp2kKeyword EPS_TAYLOR EPSTAYLOR
+syn keyword cp2kKeyword EPS_TD_FILTER
 syn keyword cp2kKeyword EPS_U_RAMPING
 syn keyword cp2kKeyword EPS_X
 syn keyword cp2kKeyword EP_LIN_SOLVER
@@ -2245,6 +2256,7 @@ syn keyword cp2kKeyword EVAL_ENERGY_FORCES
 syn keyword cp2kKeyword EVAL_FORCES
 syn keyword cp2kKeyword EV_SC_GW_REMOVE_NEG_VIRT_ENERGIES REMOVE_NEG
 syn keyword cp2kKeyword EV_SC_ITER
+syn keyword cp2kKeyword EV_SHIFT VIRTUAL_SHIFT
 syn keyword cp2kKeyword EWALD_ACCURACY
 syn keyword cp2kKeyword EWALD_PRECISION
 syn keyword cp2kKeyword EWALD_TYPE
@@ -3180,7 +3192,6 @@ syn keyword cp2kKeyword RANDOMIZE
 syn keyword cp2kKeyword RANDOMIZE_POS
 syn keyword cp2kKeyword RANDOMIZE_VARIABLES
 syn keyword cp2kKeyword RANDOMTOSKIP
-syn keyword cp2kKeyword RANDOM_NUMBER_GENERATOR RNG
 syn keyword cp2kKeyword RANGE
 syn keyword cp2kKeyword RAOH
 syn keyword cp2kKeyword RCLUS
