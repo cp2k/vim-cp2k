@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:cf243b8)
+" CP2K-Version: CP2K version 8.0 (git:8a41e87)
 
 if exists("b:current_syntax")
    finish
@@ -1460,6 +1460,7 @@ syn keyword cp2kSection SCATTERING_REGION
 syn keyword cp2kSection SCCS
 syn keyword cp2kSection SCF
 syn keyword cp2kSection SCF_INFO
+syn keyword cp2kSection SCINE
 syn keyword cp2kSection SCREENING
 syn keyword cp2kSection SCREENING_REGION
 syn keyword cp2kSection SCRF
