@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:8a41e87)
+" CP2K-Version: CP2K version 8.0 (git:7bf9092)
 
 if exists("b:current_syntax")
    finish
@@ -3104,6 +3104,7 @@ syn keyword cp2kKeyword PRINT_ALL
 syn keyword cp2kKeyword PRINT_BASIS
 syn keyword cp2kKeyword PRINT_CALIB
 syn keyword cp2kKeyword PRINT_CELL
+syn keyword cp2kKeyword PRINT_CHECKSUM
 syn keyword cp2kKeyword PRINT_COORDS
 syn keyword cp2kKeyword PRINT_CUBES
 syn keyword cp2kKeyword PRINT_DIPOLE
@@ -3680,6 +3681,7 @@ syn keyword cp2kKeyword VELOCITY_SCALE
 syn keyword cp2kKeyword VERBOSE
 syn keyword cp2kKeyword VERBOSE_OUTPUT
 syn keyword cp2kKeyword VERBOSITY
+syn keyword cp2kKeyword VERIFICATION
 syn keyword cp2kKeyword VERLET_SKIN
 syn keyword cp2kKeyword VERY_OVERLOADED
 syn keyword cp2kKeyword VIB_EIGS_FILE_NAME
