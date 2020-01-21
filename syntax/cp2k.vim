@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:7bf9092)
+" CP2K-Version: CP2K version 8.0 (git:7532d95)
 
 if exists("b:current_syntax")
    finish
@@ -1247,7 +1247,6 @@ syn keyword cp2kSection LYP
 syn keyword cp2kSection LYP_ADIABATIC
 syn keyword cp2kSection M-SAMPLING
 syn keyword cp2kSection MACHINE_LEARNING
-syn keyword cp2kSection MAO
 syn keyword cp2kSection MAO_ANALYSIS
 syn keyword cp2kSection MAP
 syn keyword cp2kSection MAPPING
@@ -1963,7 +1962,6 @@ syn keyword cp2kKeyword CUBE_FILES
 syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_RADIUS
-syn keyword cp2kKeyword CUTOFF_RADIUS_METRIC
 syn keyword cp2kKeyword CUTOFF_TYPE
 syn keyword cp2kKeyword CUTOFF_W
 syn keyword cp2kKeyword CUTOUT
@@ -2068,7 +2066,6 @@ syn keyword cp2kKeyword DM_RESTART_WRITE
 syn keyword cp2kKeyword DOT_TREE
 syn keyword cp2kKeyword DO_AUX_BAS_GW
 syn keyword cp2kKeyword DO_CALIBRATE_CUTOFF
-syn keyword cp2kKeyword DO_DBCSR_T
 syn keyword cp2kKeyword DO_DSO
 syn keyword cp2kKeyword DO_ERROR_ESTIMATE
 syn keyword cp2kKeyword DO_EWALD
@@ -2176,13 +2173,11 @@ syn keyword cp2kKeyword EPS_FB
 syn keyword cp2kKeyword EPS_FERMI
 syn keyword cp2kKeyword EPS_FERMI_DIRAC
 syn keyword cp2kKeyword EPS_FILTER
-syn keyword cp2kKeyword EPS_FILTER_IM_TIME
+syn keyword cp2kKeyword EPS_FILTER_FACTOR
 syn keyword cp2kKeyword EPS_FILTER_MATRIX
 syn keyword cp2kKeyword EPS_FUNCTION
 syn keyword cp2kKeyword EPS_GEO
 syn keyword cp2kKeyword EPS_GRAD
-syn keyword cp2kKeyword EPS_GRAD_OCC
-syn keyword cp2kKeyword EPS_GRAD_VIRT
 syn keyword cp2kKeyword EPS_GREEN
 syn keyword cp2kKeyword EPS_GRID
 syn keyword cp2kKeyword EPS_GVG_RSPACE EPS_GVG
@@ -2220,7 +2215,6 @@ syn keyword cp2kKeyword EPS_PPL
 syn keyword cp2kKeyword EPS_PPNL
 syn keyword cp2kKeyword EPS_R
 syn keyword cp2kKeyword EPS_RANGE
-syn keyword cp2kKeyword EPS_RANGE_METRIC
 syn keyword cp2kKeyword EPS_RHO
 syn keyword cp2kKeyword EPS_RHO_GSPACE
 syn keyword cp2kKeyword EPS_RHO_RSPACE
@@ -2412,13 +2406,10 @@ syn keyword cp2kKeyword GROUP_ENERGY_SIZE
 syn keyword cp2kKeyword GROUP_PARTITION
 syn keyword cp2kKeyword GROUP_SIZE NUMBER_PROC
 syn keyword cp2kKeyword GROUP_SIZE_3C
-syn keyword cp2kKeyword GROUP_SIZE_INTERNAL
 syn keyword cp2kKeyword GROUP_SIZE_P
 syn keyword cp2kKeyword GSPACE_SMOOTHING
 syn keyword cp2kKeyword GTOP_INFO
 syn keyword cp2kKeyword GTO_KIND
-syn keyword cp2kKeyword GW_EIGENVALUES
-syn keyword cp2kKeyword GW_EIGENVALUES_BETA
 syn keyword cp2kKeyword G_R
 syn keyword cp2kKeyword H
 syn keyword cp2kKeyword HALOGEN_BINDING
@@ -2451,7 +2442,6 @@ syn keyword cp2kKeyword IMAGE_CHARGE_MODEL IC
 syn keyword cp2kKeyword IMAGE_MATRIX_METHOD
 syn keyword cp2kKeyword IMAGE_RESTART_FILE_NAME
 syn keyword cp2kKeyword IMAGINARY_TIME_STRIDE
-syn keyword cp2kKeyword IM_TIME IMAG_TIME
 syn keyword cp2kKeyword INACTIVE_ELECTRONS
 syn keyword cp2kKeyword INACTIVE_ORBITALS
 syn keyword cp2kKeyword INCLUDE_IMAGES
@@ -2622,8 +2612,6 @@ syn keyword cp2kKeyword MAGNETIZATION
 syn keyword cp2kKeyword MAO
 syn keyword cp2kKeyword MAO_EPS_GRAD
 syn keyword cp2kKeyword MAO_MAX_ITER
-syn keyword cp2kKeyword MAO_OCC
-syn keyword cp2kKeyword MAO_VIRT
 syn keyword cp2kKeyword MAP
 syn keyword cp2kKeyword MAP_ATOMS
 syn keyword cp2kKeyword MAP_CONSISTENT
@@ -2670,9 +2658,7 @@ syn keyword cp2kKeyword MAX_ITER_EARLY
 syn keyword cp2kKeyword MAX_ITER_FIT
 syn keyword cp2kKeyword MAX_ITER_LANCZOS
 syn keyword cp2kKeyword MAX_ITER_LUMO MAX_ITER_LUMOS
-syn keyword cp2kKeyword MAX_ITER_OCC
 syn keyword cp2kKeyword MAX_ITER_OUTER_LOOP
-syn keyword cp2kKeyword MAX_ITER_VIRT
 syn keyword cp2kKeyword MAX_JOBS_PER_GROUP MAX_JOBS
 syn keyword cp2kKeyword MAX_KV MAX_VECTORS
 syn keyword cp2kKeyword MAX_LS
@@ -2946,7 +2932,6 @@ syn keyword cp2kKeyword OLD_HILL_NUMBER
 syn keyword cp2kKeyword OLD_HILL_STEP
 syn keyword cp2kKeyword OMEGA
 syn keyword cp2kKeyword OMEGA_MAX_FIT
-syn keyword cp2kKeyword OMEGA_METRIC
 syn keyword cp2kKeyword OMIT_HEADERS
 syn keyword cp2kKeyword ONE_CIRCLE
 syn keyword cp2kKeyword ON_THE_FLY_LOC
@@ -2957,9 +2942,6 @@ syn keyword cp2kKeyword OPERATOR_PARAMETER
 syn keyword cp2kKeyword OPTIMIZER MINIMIZER
 syn keyword cp2kKeyword OPTIMIZE_END_POINTS
 syn keyword cp2kKeyword OPTIMIZE_FILE_NAME
-syn keyword cp2kKeyword OPTIMIZE_HOMO_LUMO OPTIMIZE
-syn keyword cp2kKeyword OPTIMIZE_SCALED_OCC_DM OPT_SC_DM_OCC
-syn keyword cp2kKeyword OPTIMIZE_SCALED_VIRT_DM OPT_SC_DM_VIRT
 syn keyword cp2kKeyword OPTX_A1
 syn keyword cp2kKeyword OPTX_A2
 syn keyword cp2kKeyword OPTX_GAMMA
@@ -3315,7 +3297,6 @@ syn keyword cp2kKeyword RHO_ZERO RHO0
 syn keyword cp2kKeyword RI_AUX_BASIS_SET RI_MP2_BASIS_SET RI_RPA_BASIS_SET RI_AUX_BASIS
 syn keyword cp2kKeyword RI_AXK AXK
 syn keyword cp2kKeyword RI_G0W0 GW
-syn keyword cp2kKeyword RI_METRIC RI
 syn keyword cp2kKeyword RI_REGION RI_RADIUS
 syn keyword cp2kKeyword RI_SIGMA_X
 syn keyword cp2kKeyword RI_SINV
