@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:7532d95)
+" CP2K-Version: CP2K version 8.0 (git:8df80fb)
 
 if exists("b:current_syntax")
    finish
@@ -275,6 +275,7 @@ syn keyword cp2kConstant DKH(3)
 syn keyword cp2kConstant DMC
 syn keyword cp2kConstant DMFET
 syn keyword cp2kConstant DMFT
+syn keyword cp2kConstant DOGLEG
 syn keyword cp2kConstant DOMAIN
 syn keyword cp2kConstant DOS
 syn keyword cp2kConstant DRIVER
@@ -804,6 +805,7 @@ syn keyword cp2kConstant TRIPLETS
 syn keyword cp2kConstant TRS4
 syn keyword cp2kConstant TRUE
 syn keyword cp2kConstant TRUNCATED
+syn keyword cp2kConstant TRUST_REGION
 syn keyword cp2kConstant TSHPSC
 syn keyword cp2kConstant TWO_POLE
 syn keyword cp2kConstant UFF
@@ -1580,6 +1582,7 @@ syn keyword cp2kSection WORM
 syn keyword cp2kSection WRITE_SIMPLE_GRID
 syn keyword cp2kSection XALMO_NEWTON_PCG_SOLVER
 syn keyword cp2kSection XALMO_OPTIMIZER_PCG
+syn keyword cp2kSection XALMO_OPTIMIZER_TRUSTR
 syn keyword cp2kSection XALPHA
 syn keyword cp2kSection XAS
 syn keyword cp2kSection XAS_SPECTRUM
@@ -2455,6 +2458,7 @@ syn keyword cp2kKeyword INITIAL_GUESS
 syn keyword cp2kKeyword INITIAL_STEP
 syn keyword cp2kKeyword INITIAL_STEP_SIZE
 syn keyword cp2kKeyword INITIAL_TRANSLATION_VECTOR
+syn keyword cp2kKeyword INITIAL_TRUST_RADIUS
 syn keyword cp2kKeyword INITIAL_WFN
 syn keyword cp2kKeyword INIT_ACC_PROB
 syn keyword cp2kKeyword INIT_ARGS
@@ -2681,6 +2685,7 @@ syn keyword cp2kKeyword MAX_STEPS
 syn keyword cp2kKeyword MAX_STEPSIZE
 syn keyword cp2kKeyword MAX_STEP_SIZE
 syn keyword cp2kKeyword MAX_TAYLOR
+syn keyword cp2kKeyword MAX_TRUST_RADIUS
 syn keyword cp2kKeyword MAX_VAR_FRACTION
 syn keyword cp2kKeyword MC
 syn keyword cp2kKeyword MCWEENY_EPS
@@ -2732,6 +2737,7 @@ syn keyword cp2kKeyword MM_STYLE
 syn keyword cp2kKeyword MM_SUBSYS PROTEIN
 syn keyword cp2kKeyword MODEFACTOR
 syn keyword cp2kKeyword MODEL
+syn keyword cp2kKeyword MODEL_GRAD_NORM_RATIO
 syn keyword cp2kKeyword MOLECULE
 syn keyword cp2kKeyword MOLECULES_FILE_NAME
 syn keyword cp2kKeyword MOLECULE_CORRECTION
@@ -3718,6 +3724,7 @@ syn keyword cp2kKeyword WW
 syn keyword cp2kKeyword W_MATRIX
 syn keyword cp2kKeyword W_MATRIX_AUX_FIT
 syn keyword cp2kKeyword XA
+syn keyword cp2kKeyword XALMO_ALGORITHM
 syn keyword cp2kKeyword XALMO_EXTRAPOLATION_ORDER
 syn keyword cp2kKeyword XALMO_R_CUTOFF_FACTOR
 syn keyword cp2kKeyword XALMO_TRIAL_WF
