@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:a8ceefa)
+" CP2K-Version: CP2K version 8.0 (git:0482296)
 
 if exists("b:current_syntax")
    finish
@@ -458,7 +458,6 @@ syn keyword cp2kConstant LIST
 syn keyword cp2kConstant LIU_STOREY
 syn keyword cp2kConstant LLP
 syn keyword cp2kConstant LMKLL
-syn keyword cp2kConstant LNDET
 syn keyword cp2kConstant LOCAL_SCF
 syn keyword cp2kConstant LONGRANGE
 syn keyword cp2kConstant LOW
@@ -1322,6 +1321,7 @@ syn keyword cp2kSection MULTIPOLES
 syn keyword cp2kSection NABLAVKS_CUBES
 syn keyword cp2kSection NEGF
 syn keyword cp2kSection NEIGHBOR_LISTS
+syn keyword cp2kSection NLMO_OPTIMIZER_PCG
 syn keyword cp2kSection NMC_MOVES
 syn keyword cp2kSection NMR
 syn keyword cp2kSection NONBONDED
@@ -1897,6 +1897,7 @@ syn keyword cp2kKeyword COMMON_CENTER
 syn keyword cp2kKeyword COMMON_ITERATION_LEVELS
 syn keyword cp2kKeyword COMMUTATOR_HR
 syn keyword cp2kKeyword COMM_THREAD_LOAD
+syn keyword cp2kKeyword COMPACTIFICATION_FILTER_START
 syn keyword cp2kKeyword COMPLETENESS
 syn keyword cp2kKeyword COMPONENT
 syn keyword cp2kKeyword COMPONENTS
@@ -1915,6 +1916,7 @@ syn keyword cp2kKeyword CONN_FILE_NAME CONN_FILE
 syn keyword cp2kKeyword CONSTRAINT
 syn keyword cp2kKeyword CONSTRAINT_INIT
 syn keyword cp2kKeyword CONSTRAINT_TYPE
+syn keyword cp2kKeyword CONSTRUCT_NLMOS
 syn keyword cp2kKeyword CONTACT_FILLING
 syn keyword cp2kKeyword CONTINUE_LS
 syn keyword cp2kKeyword CONVERGENCE CONV
@@ -2020,6 +2022,7 @@ syn keyword cp2kKeyword DEPENDENCIES
 syn keyword cp2kKeyword DERIVATIVES
 syn keyword cp2kKeyword DERIVATIVE_METHOD
 syn keyword cp2kKeyword DESCRIPTOR
+syn keyword cp2kKeyword DETERMINANT_TOLERANCE
 syn keyword cp2kKeyword DETERM_COEFF
 syn keyword cp2kKeyword DEVIATION
 syn keyword cp2kKeyword DFET_EMBEDDED
@@ -2307,6 +2310,7 @@ syn keyword cp2kKeyword FILTER_EPS
 syn keyword cp2kKeyword FILTER_FACTOR
 syn keyword cp2kKeyword FILTER_FACTOR_SCALE
 syn keyword cp2kKeyword FILTER_TEMPERATURE
+syn keyword cp2kKeyword FINAL_DETERMINANT
 syn keyword cp2kKeyword FINGERPRINT_PRECISION
 syn keyword cp2kKeyword FIRST_PREC
 syn keyword cp2kKeyword FIRST_SNAPSHOT
@@ -2929,8 +2933,6 @@ syn keyword cp2kKeyword N_WINDOWS
 syn keyword cp2kKeyword OBC_EQUILIBRIUM
 syn keyword cp2kKeyword OCCUPATION_NUMBERS OCCNUMS
 syn keyword cp2kKeyword OCCUPATION_PRECONDITIONER
-syn keyword cp2kKeyword OCCUPIED_VOLUME_PENALTY_COEFF
-syn keyword cp2kKeyword OCCUPIED_VOLUME_PENALTY_METHOD
 syn keyword cp2kKeyword OCC_ALPHA
 syn keyword cp2kKeyword OCC_BETA
 syn keyword cp2kKeyword OCE_HARD
@@ -3018,6 +3020,7 @@ syn keyword cp2kKeyword PCUT
 syn keyword cp2kKeyword PDB_INFO
 syn keyword cp2kKeyword PENALTY_DISTANCE
 syn keyword cp2kKeyword PENALTY_STRENGTH
+syn keyword cp2kKeyword PENALTY_STRENGTH_DECREASE_FACTOR
 syn keyword cp2kKeyword PERFORM_MU_SCAN
 syn keyword cp2kKeyword PERIODIC
 syn keyword cp2kKeyword PERIODICITY
@@ -3678,6 +3681,7 @@ syn keyword cp2kKeyword VERY_OVERLOADED
 syn keyword cp2kKeyword VIB_EIGS_FILE_NAME
 syn keyword cp2kKeyword VIRIAL
 syn keyword cp2kKeyword VIRIAL_TEMPS
+syn keyword cp2kKeyword VIRTUAL_NLMOS
 syn keyword cp2kKeyword VN_CONFIDENCE_LIMIT
 syn keyword cp2kKeyword VOLUME
 syn keyword cp2kKeyword VOLUME_ISOTROPIC
