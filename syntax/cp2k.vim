@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:e1bf4e7)
+" CP2K-Version: CP2K version 8.0 (git:9844dd2)
 
 if exists("b:current_syntax")
    finish
@@ -1607,6 +1607,7 @@ syn match cp2kEndSection '^\s*&END\s*\w\+' contains=cp2kSection
 " CP2K keywords
 "----------------------------------------------------------------/
 
+syn keyword cp2kKeyword  SELF_ENERGY
 syn keyword cp2kKeyword 1-NORM
 syn keyword cp2kKeyword 2D_MOLECULAR_DISTRIBUTION
 syn keyword cp2kKeyword 2ND_DERIV_ANALYTICAL
@@ -2175,7 +2176,6 @@ syn keyword cp2kKeyword EPS_EIGVAL_DEGEN
 syn keyword cp2kKeyword EPS_ENE
 syn keyword cp2kKeyword EPS_ERROR
 syn keyword cp2kKeyword EPS_ERROR_EARLY
-syn keyword cp2kKeyword EPS_EV_SC_ITER
 syn keyword cp2kKeyword EPS_FB
 syn keyword cp2kKeyword EPS_FERMI
 syn keyword cp2kKeyword EPS_FERMI_DIRAC
@@ -2256,7 +2256,6 @@ syn keyword cp2kKeyword ESIMATE_ACC_PROB
 syn keyword cp2kKeyword ETA
 syn keyword cp2kKeyword EVAL_ENERGY_FORCES
 syn keyword cp2kKeyword EVAL_FORCES
-syn keyword cp2kKeyword EV_SC_GW_REMOVE_NEG_VIRT_ENERGIES REMOVE_NEG
 syn keyword cp2kKeyword EV_SC_ITER
 syn keyword cp2kKeyword EV_SHIFT VIRTUAL_SHIFT
 syn keyword cp2kKeyword EWALD_ACCURACY
@@ -2432,7 +2431,6 @@ syn keyword cp2kKeyword HEAD_TAIL_WEIGHT
 syn keyword cp2kKeyword HELIUM_ONLY
 syn keyword cp2kKeyword HE_HE
 syn keyword cp2kKeyword HFX_BALANCE_IN_CORE
-syn keyword cp2kKeyword HF_LIKE_EV_START
 syn keyword cp2kKeyword HIGH_LEVEL_EMBED_SUBSYS
 syn keyword cp2kKeyword HILL_TAIL_CUTOFF
 syn keyword cp2kKeyword HOMO_LIST
@@ -2663,7 +2661,6 @@ syn keyword cp2kKeyword MAX_IRAC
 syn keyword cp2kKeyword MAX_ITER
 syn keyword cp2kKeyword MAX_ITER_ADDED
 syn keyword cp2kKeyword MAX_ITER_EARLY
-syn keyword cp2kKeyword MAX_ITER_FIT
 syn keyword cp2kKeyword MAX_ITER_LANCZOS
 syn keyword cp2kKeyword MAX_ITER_LUMO MAX_ITER_LUMOS
 syn keyword cp2kKeyword MAX_ITER_OUTER_LOOP
@@ -3102,11 +3099,9 @@ syn keyword cp2kKeyword PRINT_CUBES
 syn keyword cp2kKeyword PRINT_DIPOLE
 syn keyword cp2kKeyword PRINT_ENERGIES
 syn keyword cp2kKeyword PRINT_EXX
-syn keyword cp2kKeyword PRINT_FIT_ERROR FIT_ERROR
 syn keyword cp2kKeyword PRINT_FM_REDISTRIBUTE
 syn keyword cp2kKeyword PRINT_FORCES
 syn keyword cp2kKeyword PRINT_GOP
-syn keyword cp2kKeyword PRINT_GW_DETAILS
 syn keyword cp2kKeyword PRINT_IC_LIST
 syn keyword cp2kKeyword PRINT_LEVEL IOLEVEL
 syn keyword cp2kKeyword PRINT_ONLY_ACC
@@ -3399,6 +3394,7 @@ syn keyword cp2kKeyword SCREENING
 syn keyword cp2kKeyword SCREEN_ON_INITIAL_P
 syn keyword cp2kKeyword SCREEN_P_FORCES
 syn keyword cp2kKeyword SC_CHECK_START
+syn keyword cp2kKeyword SC_GW0_ITER
 syn keyword cp2kKeyword SD_LIKE
 syn keyword cp2kKeyword SEED
 syn keyword cp2kKeyword SEED_NAME
