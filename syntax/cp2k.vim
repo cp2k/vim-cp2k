@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:9844dd2)
+" CP2K-Version: CP2K version 8.0 (git:64e21a5)
 
 if exists("b:current_syntax")
    finish
@@ -655,6 +655,7 @@ syn keyword cp2kConstant QUASI_NEWTON
 syn keyword cp2kConstant QUICKSTEP
 syn keyword cp2kConstant R
 syn keyword cp2kConstant R12
+syn keyword cp2kConstant RADIUS
 syn keyword cp2kConstant RAMP
 syn keyword cp2kConstant RANDOM
 syn keyword cp2kConstant RCS_SINGLET
@@ -1170,6 +1171,7 @@ syn keyword cp2kSection GRRM
 syn keyword cp2kSection GTH_POTENTIAL
 syn keyword cp2kSection GUESS_VECTORS
 syn keyword cp2kSection GV09
+syn keyword cp2kSection GW
 syn keyword cp2kSection GYRATION_RADIUS
 syn keyword cp2kSection G_TENSOR
 syn keyword cp2kSection HBONDS
@@ -1194,7 +1196,6 @@ syn keyword cp2kSection IMPLICIT
 syn keyword cp2kSection IMPLICIT_PSOLVER
 syn keyword cp2kSection IMPROPER
 syn keyword cp2kSection IMPROPERS
-syn keyword cp2kSection IM_TIME
 syn keyword cp2kSection INIT
 syn keyword cp2kSection INITIAL_VIBRATION
 syn keyword cp2kSection INTERACTION_POTENTIAL
@@ -1239,6 +1240,7 @@ syn keyword cp2kSection LOCAL_ENERGY_CUBE
 syn keyword cp2kSection LOCAL_STRESS_CUBE
 syn keyword cp2kSection LOC_RESTART
 syn keyword cp2kSection LOWDIN
+syn keyword cp2kSection LOW_SCALING
 syn keyword cp2kSection LOW_SPIN_ROKS
 syn keyword cp2kSection LRIGPW
 syn keyword cp2kSection LR_CORRECTION
@@ -1440,7 +1442,6 @@ syn keyword cp2kSection RHO0_INFORMATION
 syn keyword cp2kSection RHO_MIXING
 syn keyword cp2kSection RING_PUCKERING
 syn keyword cp2kSection RI_AXK
-syn keyword cp2kSection RI_G0W0
 syn keyword cp2kSection RI_LAPLACE
 syn keyword cp2kSection RI_METRIC
 syn keyword cp2kSection RI_MP2
@@ -1907,6 +1908,7 @@ syn keyword cp2kKeyword COMPONENT_A
 syn keyword cp2kKeyword COMPONENT_B
 syn keyword cp2kKeyword COMPRESS
 syn keyword cp2kKeyword COMVEL_TOL
+syn keyword cp2kKeyword COM_NL
 syn keyword cp2kKeyword CONDITION_NUMBER
 syn keyword cp2kKeyword CONDITION_WEIGHT
 syn keyword cp2kKeyword CONFINEMENT
@@ -2636,7 +2638,6 @@ syn keyword cp2kKeyword MAXL
 syn keyword cp2kKeyword MAXR
 syn keyword cp2kKeyword MAX_ALLOWED_STEP
 syn keyword cp2kKeyword MAX_ANGULAR_MOMENTUM
-syn keyword cp2kKeyword MAX_BLOCK_SIZE_SQRT
 syn keyword cp2kKeyword MAX_COARSE_GRAINED_WIDTH MAX_CG_WIDTH
 syn keyword cp2kKeyword MAX_CONDITION_NUM
 syn keyword cp2kKeyword MAX_CRAZY_ANGLE
@@ -2708,6 +2709,7 @@ syn keyword cp2kKeyword MINIMAX
 syn keyword cp2kKeyword MINIMAX_QUADRATURE MINIMAX
 syn keyword cp2kKeyword MINIMIZER
 syn keyword cp2kKeyword MIN_AMPLITUDE
+syn keyword cp2kKeyword MIN_BLOCK_SIZE
 syn keyword cp2kKeyword MIN_CYCLE_LENGTHS_ALL
 syn keyword cp2kKeyword MIN_CYCLE_LENGTHS_NON
 syn keyword cp2kKeyword MIN_CYCLE_LENGTHS_WDG
@@ -3201,11 +3203,13 @@ syn keyword cp2kKeyword REDUCE_AUX_BF
 syn keyword cp2kKeyword REDUCE_GVEC
 syn keyword cp2kKeyword REF0_FILENAME
 syn keyword cp2kKeyword REFERENCE REF
+syn keyword cp2kKeyword REFERENCE_2 REF_2
 syn keyword cp2kKeyword REFERENCE_BASIS
 syn keyword cp2kKeyword REFERENCE_C9_TERM
 syn keyword cp2kKeyword REFERENCE_CHARGE
 syn keyword cp2kKeyword REFERENCE_FUNCTIONAL
 syn keyword cp2kKeyword REFERENCE_POINT REF_POINT
+syn keyword cp2kKeyword REFERENCE_POINT_2 REF_POINT_2
 syn keyword cp2kKeyword REFERENCE_SET
 syn keyword cp2kKeyword REFINE_FERMI_LEVEL
 syn keyword cp2kKeyword REF_CELL_FILE_NAME
@@ -3301,7 +3305,6 @@ syn keyword cp2kKeyword RHO_MIN
 syn keyword cp2kKeyword RHO_ZERO RHO0
 syn keyword cp2kKeyword RI_AUX_BASIS_SET RI_MP2_BASIS_SET RI_RPA_BASIS_SET RI_AUX_BASIS
 syn keyword cp2kKeyword RI_AXK AXK
-syn keyword cp2kKeyword RI_G0W0 GW
 syn keyword cp2kKeyword RI_REGION RI_RADIUS
 syn keyword cp2kKeyword RI_SIGMA_X
 syn keyword cp2kKeyword RI_SINV
@@ -3396,6 +3399,7 @@ syn keyword cp2kKeyword SCREEN_P_FORCES
 syn keyword cp2kKeyword SC_CHECK_START
 syn keyword cp2kKeyword SC_GW0_ITER
 syn keyword cp2kKeyword SD_LIKE
+syn keyword cp2kKeyword SECOND_REFERENCE_POINT
 syn keyword cp2kKeyword SEED
 syn keyword cp2kKeyword SEED_NAME
 syn keyword cp2kKeyword SELECTED_STATES_ATOM_RADIUS
@@ -3452,6 +3456,7 @@ syn keyword cp2kKeyword SOLUTE_INTERACTION
 syn keyword cp2kKeyword SOLUTE_RADIUS
 syn keyword cp2kKeyword SOO_LIST
 syn keyword cp2kKeyword SOO_RHO_HARD
+syn keyword cp2kKeyword SORT_BASIS
 syn keyword cp2kKeyword SORT_BY_SELF_TIME
 syn keyword cp2kKeyword SPARSE_MOS
 syn keyword cp2kKeyword SPECIAL_POINT
@@ -3667,6 +3672,7 @@ syn keyword cp2kKeyword VDW_FUNCTIONALS
 syn keyword cp2kKeyword VDW_SCALE14
 syn keyword cp2kKeyword VELOCITY_QUENCH
 syn keyword cp2kKeyword VELOCITY_SCALE
+syn keyword cp2kKeyword VEL_REPRS
 syn keyword cp2kKeyword VERBOSE
 syn keyword cp2kKeyword VERBOSE_OUTPUT
 syn keyword cp2kKeyword VERBOSITY
