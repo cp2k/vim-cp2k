@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:64e21a5)
+" CP2K-Version: CP2K version 8.0 (git:bc478fe)
 
 if exists("b:current_syntax")
    finish
@@ -2878,7 +2878,6 @@ syn keyword cp2kKeyword NUM_DFT_ITER
 syn keyword cp2kKeyword NUM_ELECTRON_INITIAL_TOLERANCE
 syn keyword cp2kKeyword NUM_ELECTRON_PEXSI_TOLERANCE
 syn keyword cp2kKeyword NUM_ENV
-syn keyword cp2kKeyword NUM_FREQ_POINTS_CLENSHAW_LOW_SCALING_GW
 syn keyword cp2kKeyword NUM_FUNC
 syn keyword cp2kKeyword NUM_FV_STATES
 syn keyword cp2kKeyword NUM_GAUSS
