@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:bc478fe)
+" CP2K-Version: CP2K version 8.0 (git:f483131)
 
 if exists("b:current_syntax")
    finish
@@ -403,6 +403,7 @@ syn keyword cp2kConstant HARTREE-FOCK
 syn keyword cp2kConstant HCTH120
 syn keyword cp2kConstant HESTENES_STIEFEL
 syn keyword cp2kConstant HEXAGONAL
+syn keyword cp2kConstant HFX
 syn keyword cp2kConstant HIGH
 syn keyword cp2kConstant HIGH-SPIN
 syn keyword cp2kConstant HIRSHFELD
@@ -423,6 +424,7 @@ syn keyword cp2kConstant INVERSE_UPDATE
 syn keyword cp2kConstant IRAC
 syn keyword cp2kConstant ISOKIN
 syn keyword cp2kConstant IT-NEB
+syn keyword cp2kConstant ITER
 syn keyword cp2kConstant ITERATIVE
 syn keyword cp2kConstant JACOBI
 syn keyword cp2kConstant KDSO
@@ -507,6 +509,7 @@ syn keyword cp2kConstant MM4
 syn keyword cp2kConstant MME
 syn keyword cp2kConstant MNDO
 syn keyword cp2kConstant MNDOD
+syn keyword cp2kConstant MO
 syn keyword cp2kConstant MOLDEN_RESTART
 syn keyword cp2kConstant MOLECULAR
 syn keyword cp2kConstant MOLECULAR_DYNAMICS
@@ -679,6 +682,7 @@ syn keyword cp2kConstant REVPBE
 syn keyword cp2kConstant REV_PBEX
 syn keyword cp2kConstant RGF
 syn keyword cp2kConstant RHF
+syn keyword cp2kConstant RHO
 syn keyword cp2kConstant RHOMBOHEDRAL
 syn keyword cp2kConstant RIGPW
 syn keyword cp2kConstant RI_EMBEDDING
@@ -1440,8 +1444,10 @@ syn keyword cp2kSection RESTRAINT
 syn keyword cp2kSection RHO
 syn keyword cp2kSection RHO0_INFORMATION
 syn keyword cp2kSection RHO_MIXING
+syn keyword cp2kSection RI
 syn keyword cp2kSection RING_PUCKERING
 syn keyword cp2kSection RI_AXK
+syn keyword cp2kSection RI_INFO
 syn keyword cp2kSection RI_LAPLACE
 syn keyword cp2kSection RI_METRIC
 syn keyword cp2kSection RI_MP2
@@ -1610,6 +1616,7 @@ syn match cp2kEndSection '^\s*&END\s*\w\+' contains=cp2kSection
 
 syn keyword cp2kKeyword  SELF_ENERGY
 syn keyword cp2kKeyword 1-NORM
+syn keyword cp2kKeyword 2C_MATRIX_FUNCTIONS
 syn keyword cp2kKeyword 2D_MOLECULAR_DISTRIBUTION
 syn keyword cp2kKeyword 2ND_DERIV_ANALYTICAL
 syn keyword cp2kKeyword 3RD_DERIV_ANALYTICAL
@@ -1863,6 +1870,7 @@ syn keyword cp2kKeyword CHARGE_DISTR_WIDTH
 syn keyword cp2kKeyword CHARGE_EXTENDED
 syn keyword cp2kKeyword CHARGE_OCCUP CHARGE_O
 syn keyword cp2kKeyword CHECK_2C_ACCURACY
+syn keyword cp2kKeyword CHECK_2C_MATRIX
 syn keyword cp2kKeyword CHECK_ACCURACY
 syn keyword cp2kKeyword CHECK_ATOMIC_CHARGES
 syn keyword cp2kKeyword CHECK_DIIS
@@ -2182,8 +2190,11 @@ syn keyword cp2kKeyword EPS_FB
 syn keyword cp2kKeyword EPS_FERMI
 syn keyword cp2kKeyword EPS_FERMI_DIRAC
 syn keyword cp2kKeyword EPS_FILTER
+syn keyword cp2kKeyword EPS_FILTER_2C
+syn keyword cp2kKeyword EPS_FILTER_3C
 syn keyword cp2kKeyword EPS_FILTER_FACTOR
 syn keyword cp2kKeyword EPS_FILTER_MATRIX
+syn keyword cp2kKeyword EPS_FILTER_MO
 syn keyword cp2kKeyword EPS_FUNCTION
 syn keyword cp2kKeyword EPS_GEO
 syn keyword cp2kKeyword EPS_GRAD
@@ -2710,6 +2721,7 @@ syn keyword cp2kKeyword MINIMAX_QUADRATURE MINIMAX
 syn keyword cp2kKeyword MINIMIZER
 syn keyword cp2kKeyword MIN_AMPLITUDE
 syn keyword cp2kKeyword MIN_BLOCK_SIZE
+syn keyword cp2kKeyword MIN_BLOCK_SIZE_MO
 syn keyword cp2kKeyword MIN_CYCLE_LENGTHS_ALL
 syn keyword cp2kKeyword MIN_CYCLE_LENGTHS_NON
 syn keyword cp2kKeyword MIN_CYCLE_LENGTHS_WDG
@@ -3304,6 +3316,8 @@ syn keyword cp2kKeyword RHO_MIN
 syn keyword cp2kKeyword RHO_ZERO RHO0
 syn keyword cp2kKeyword RI_AUX_BASIS_SET RI_MP2_BASIS_SET RI_RPA_BASIS_SET RI_AUX_BASIS
 syn keyword cp2kKeyword RI_AXK AXK
+syn keyword cp2kKeyword RI_FLAVOR
+syn keyword cp2kKeyword RI_METRIC
 syn keyword cp2kKeyword RI_REGION RI_RADIUS
 syn keyword cp2kKeyword RI_SIGMA_X
 syn keyword cp2kKeyword RI_SINV
@@ -3474,6 +3488,7 @@ syn keyword cp2kKeyword SPLINE_FIND_COEFFS
 syn keyword cp2kKeyword SPLINE_INFO
 syn keyword cp2kKeyword SPLINE_ORDER
 syn keyword cp2kKeyword SPLIT_RESTART_FILE
+syn keyword cp2kKeyword SQRT_ORDER
 syn keyword cp2kKeyword STABILIZE_EXP
 syn keyword cp2kKeyword STACK_SORT
 syn keyword cp2kKeyword STAGING_L
