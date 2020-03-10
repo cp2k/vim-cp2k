@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:f483131)
+" CP2K-Version: CP2K version 8.0 (git:8bd161b)
 
 if exists("b:current_syntax")
    finish
@@ -586,7 +586,6 @@ syn keyword cp2kConstant ON
 syn keyword cp2kConstant OPLS
 syn keyword cp2kConstant OPTIMIZE_BASIS
 syn keyword cp2kConstant OPTIMIZE_INPUT
-syn keyword cp2kConstant OPTIMIZE_RI_BASIS
 syn keyword cp2kConstant OPTX
 syn keyword cp2kConstant ORBITAL
 syn keyword cp2kConstant ORIG
@@ -686,9 +685,6 @@ syn keyword cp2kConstant RHO
 syn keyword cp2kConstant RHOMBOHEDRAL
 syn keyword cp2kConstant RIGPW
 syn keyword cp2kConstant RI_EMBEDDING
-syn keyword cp2kConstant RI_MP2_GPW
-syn keyword cp2kConstant RI_RPA_GPW
-syn keyword cp2kConstant RI_SOS_LAPLACE
 syn keyword cp2kConstant RKS
 syn keyword cp2kConstant RM1
 syn keyword cp2kConstant ROHF
@@ -1058,7 +1054,6 @@ syn keyword cp2kSection DIMER_VECTOR
 syn keyword cp2kSection DIPOLE
 syn keyword cp2kSection DIPOLES
 syn keyword cp2kSection DIPOLE_MOMENTS
-syn keyword cp2kSection DIRECT_CANONICAL
 syn keyword cp2kSection DIRICHLET_BC
 syn keyword cp2kSection DIRICHLET_BC_CUBE
 syn keyword cp2kSection DIRICHLET_CSTR_CHARGE_CUBE
@@ -1202,6 +1197,7 @@ syn keyword cp2kSection IMPROPER
 syn keyword cp2kSection IMPROPERS
 syn keyword cp2kSection INIT
 syn keyword cp2kSection INITIAL_VIBRATION
+syn keyword cp2kSection INTEGRALS
 syn keyword cp2kSection INTERACTION_POTENTIAL
 syn keyword cp2kSection INTERATOMIC_DISTANCES
 syn keyword cp2kSection INTERPOLATOR
@@ -1311,6 +1307,7 @@ syn keyword cp2kSection MO_CUBES
 syn keyword cp2kSection MO_MAGNITUDE
 syn keyword cp2kSection MO_MOLDEN
 syn keyword cp2kSection MO_ORTHONORMALITY
+syn keyword cp2kSection MP2
 syn keyword cp2kSection MP2_INFO
 syn keyword cp2kSection MSD
 syn keyword cp2kSection MSD_KIND
@@ -1448,10 +1445,10 @@ syn keyword cp2kSection RI
 syn keyword cp2kSection RING_PUCKERING
 syn keyword cp2kSection RI_AXK
 syn keyword cp2kSection RI_INFO
-syn keyword cp2kSection RI_LAPLACE
 syn keyword cp2kSection RI_METRIC
 syn keyword cp2kSection RI_MP2
 syn keyword cp2kSection RI_RPA
+syn keyword cp2kSection RI_SOS_MP2
 syn keyword cp2kSection RMSD
 syn keyword cp2kSection RNG_INIT
 syn keyword cp2kSection RNG_STATE
@@ -1874,7 +1871,6 @@ syn keyword cp2kKeyword CHECK_2C_MATRIX
 syn keyword cp2kKeyword CHECK_ACCURACY
 syn keyword cp2kKeyword CHECK_ATOMIC_CHARGES
 syn keyword cp2kKeyword CHECK_DIIS
-syn keyword cp2kKeyword CHECK_FIT
 syn keyword cp2kKeyword CHECK_GRADIENT_TOL
 syn keyword cp2kKeyword CHECK_MOS_CONV
 syn keyword cp2kKeyword CHECK_ONLY
@@ -2269,7 +2265,7 @@ syn keyword cp2kKeyword ESIMATE_ACC_PROB
 syn keyword cp2kKeyword ETA
 syn keyword cp2kKeyword EVAL_ENERGY_FORCES
 syn keyword cp2kKeyword EVAL_FORCES
-syn keyword cp2kKeyword EV_SC_ITER
+syn keyword cp2kKeyword EV_GW_ITER
 syn keyword cp2kKeyword EV_SHIFT VIRTUAL_SHIFT
 syn keyword cp2kKeyword EWALD_ACCURACY
 syn keyword cp2kKeyword EWALD_PRECISION
@@ -3062,7 +3058,6 @@ syn keyword cp2kKeyword PMTRANS_MOL
 syn keyword cp2kKeyword PMVOLUME
 syn keyword cp2kKeyword PMVOL_BOX
 syn keyword cp2kKeyword POH EXPON_NUMERATORB
-syn keyword cp2kKeyword POINTS_PER_MAGNITUDE PPM
 syn keyword cp2kKeyword POISSON_SOLVER POISSON PSOLVER
 syn keyword cp2kKeyword POLARISATION
 syn keyword cp2kKeyword POLY1
@@ -3489,7 +3484,6 @@ syn keyword cp2kKeyword SPLINE_INFO
 syn keyword cp2kKeyword SPLINE_ORDER
 syn keyword cp2kKeyword SPLIT_RESTART_FILE
 syn keyword cp2kKeyword SQRT_ORDER
-syn keyword cp2kKeyword STABILIZE_EXP
 syn keyword cp2kKeyword STACK_SORT
 syn keyword cp2kKeyword STAGING_L
 syn keyword cp2kKeyword STAGING_WEIGHT
