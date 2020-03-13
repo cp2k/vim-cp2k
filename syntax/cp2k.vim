@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:8bd161b)
+" CP2K-Version: CP2K version 8.0 (git:40b9ef4)
 
 if exists("b:current_syntax")
    finish
@@ -765,6 +765,7 @@ syn keyword cp2kConstant STDA
 syn keyword cp2kConstant STEEPEST_DESCENT
 syn keyword cp2kConstant STRICT
 syn keyword cp2kConstant SUBLATTICE
+syn keyword cp2kConstant SUBMATRIX
 syn keyword cp2kConstant SUM
 syn keyword cp2kConstant SUM_EIGENVALUES
 syn keyword cp2kConstant SUPERLU
@@ -3442,6 +3443,7 @@ syn keyword cp2kKeyword SIC_SCALING_B
 syn keyword cp2kKeyword SIGMA
 syn keyword cp2kKeyword SIGN_METHOD
 syn keyword cp2kKeyword SIGN_ORDER
+syn keyword cp2kKeyword SIGN_SYMMETRIC
 syn keyword cp2kKeyword SINGLE_PRECISION_MATRICES
 syn keyword cp2kKeyword SIP_LIST
 syn keyword cp2kKeyword SIZE
@@ -3514,6 +3516,7 @@ syn keyword cp2kKeyword STRENGTH
 syn keyword cp2kKeyword STRESS_TENSOR
 syn keyword cp2kKeyword STRIDE
 syn keyword cp2kKeyword SUBCELLS
+syn keyword cp2kKeyword SUBMATRIX_SIGN_METHOD
 syn keyword cp2kKeyword SUBSET_TYPE
 syn keyword cp2kKeyword SUBSPACE_ATOM
 syn keyword cp2kKeyword SUBSPACE_SHELL
