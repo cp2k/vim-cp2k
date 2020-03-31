@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:40b9ef4)
+" CP2K-Version: CP2K version 8.0 (git:470af4c)
 
 if exists("b:current_syntax")
    finish
@@ -2855,7 +2855,6 @@ syn keyword cp2kKeyword NO_OPTIMIZE
 syn keyword cp2kKeyword NPARAM_PADE
 syn keyword cp2kKeyword NPOINTS
 syn keyword cp2kKeyword NPROC
-syn keyword cp2kKeyword NPROCS_GRID BATCH_SIZE NPROCS_PER_GRID
 syn keyword cp2kKeyword NPROC_POINT
 syn keyword cp2kKeyword NPROC_REP
 syn keyword cp2kKeyword NPROC_STATE
