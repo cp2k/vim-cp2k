@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:9040e97)
+" CP2K-Version: CP2K version 8.0 (git:6415e23)
 
 if exists("b:current_syntax")
    finish
@@ -2187,7 +2187,6 @@ syn keyword cp2kKeyword EPS_FERMI
 syn keyword cp2kKeyword EPS_FERMI_DIRAC
 syn keyword cp2kKeyword EPS_FILTER
 syn keyword cp2kKeyword EPS_FILTER_2C
-syn keyword cp2kKeyword EPS_FILTER_3C
 syn keyword cp2kKeyword EPS_FILTER_FACTOR
 syn keyword cp2kKeyword EPS_FILTER_MATRIX
 syn keyword cp2kKeyword EPS_FILTER_MO
