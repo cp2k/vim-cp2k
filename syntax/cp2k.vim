@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:6415e23)
+" CP2K-Version: CP2K version 8.0 (git:9a1d529)
 
 if exists("b:current_syntax")
    finish
@@ -897,6 +897,7 @@ syn keyword cp2kSection ALMO_CTA
 syn keyword cp2kSection ALMO_EDA_CT
 syn keyword cp2kSection ALMO_OPTIMIZER_DIIS
 syn keyword cp2kSection ALMO_OPTIMIZER_PCG
+syn keyword cp2kSection ALMO_OPTIMIZER_TRUSTR
 syn keyword cp2kSection ALMO_SCF
 syn keyword cp2kSection ALPHA
 syn keyword cp2kSection ANALYSIS
@@ -2705,7 +2706,6 @@ syn keyword cp2kKeyword MEMORY_CUT
 syn keyword cp2kKeyword MEMORY_FACTOR
 syn keyword cp2kKeyword MEMORY_INFO
 syn keyword cp2kKeyword MEMORY_PROGRESSION_FACTOR
-syn keyword cp2kKeyword MEMORY_USAGE
 syn keyword cp2kKeyword METADYNAMICS
 syn keyword cp2kKeyword METHOD
 syn keyword cp2kKeyword METHOD_TYPE
@@ -3224,6 +3224,7 @@ syn keyword cp2kKeyword REF_TRAJ_FILE_NAME
 syn keyword cp2kKeyword REGION
 syn keyword cp2kKeyword REGULARIZATION
 syn keyword cp2kKeyword REG_LAMBDA
+syn keyword cp2kKeyword RELATIVE_TOLERANCE
 syn keyword cp2kKeyword RELATIVISTIC
 syn keyword cp2kKeyword RELAX_MULTIPLICITY RELAX_MULTIP
 syn keyword cp2kKeyword REL_CUTOFF RELATIVE_CUTOFF
@@ -3750,7 +3751,6 @@ syn keyword cp2kKeyword XAS_SCF
 syn keyword cp2kKeyword XAS_TOT_EL
 syn keyword cp2kKeyword XB_RADIUS
 syn keyword cp2kKeyword XC_DERIV
-syn keyword cp2kKeyword XC_FUNCTIONALS
 syn keyword cp2kKeyword XC_SMOOTH_RHO
 syn keyword cp2kKeyword XES_CORE
 syn keyword cp2kKeyword XES_EMPTY_HOMO
