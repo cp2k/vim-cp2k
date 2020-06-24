@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:9a1d529)
+" CP2K-Version: CP2K version 8.0 (git:b3d5a84)
 
 if exists("b:current_syntax")
    finish
@@ -1152,9 +1152,11 @@ syn keyword cp2kSection FREE_ENERGY_INFO
 syn keyword cp2kSection G3X3
 syn keyword cp2kSection G4X6
 syn keyword cp2kSection GA
+syn keyword cp2kSection GAL19
 syn keyword cp2kSection GAPW
 syn keyword cp2kSection GAUSSIAN
 syn keyword cp2kSection GAUSSIAN_ENV
+syn keyword cp2kSection GCN
 syn keyword cp2kSection GCP_POTENTIAL
 syn keyword cp2kSection GENERATE
 syn keyword cp2kSection GENERIC
@@ -1621,6 +1623,8 @@ syn keyword cp2kKeyword 3RD_DERIV_ANALYTICAL
 syn keyword cp2kKeyword A
 syn keyword cp2kKeyword A1
 syn keyword cp2kKeyword A2
+syn keyword cp2kKeyword A3
+syn keyword cp2kKeyword A4
 syn keyword cp2kKeyword ABC
 syn keyword cp2kKeyword ABC_THRESHOLD
 syn keyword cp2kKeyword ABSOLUTE_POSITION
@@ -1831,6 +1835,8 @@ syn keyword cp2kKeyword BS_N
 syn keyword cp2kKeyword BTYPE
 syn keyword cp2kKeyword BUMP_STEPS_DOWNWARDS
 syn keyword cp2kKeyword BUMP_STEPS_UPWARDS
+syn keyword cp2kKeyword BXY
+syn keyword cp2kKeyword BZ
 syn keyword cp2kKeyword C
 syn keyword cp2kKeyword CALCULATE_C9_TERM
 syn keyword cp2kKeyword CALCULATE_DERIVATIVES
@@ -1986,6 +1992,7 @@ syn keyword cp2kKeyword D
 syn keyword cp2kKeyword D3BJ_PARAM
 syn keyword cp2kKeyword D3BJ_SCALING
 syn keyword cp2kKeyword D3_EXCLUDE_KIND
+syn keyword cp2kKeyword D3_EXCLUDE_KIND_PAIR
 syn keyword cp2kKeyword D3_SCALING
 syn keyword cp2kKeyword DAMPING
 syn keyword cp2kKeyword DATA_FILE_NAME
@@ -2323,6 +2330,7 @@ syn keyword cp2kKeyword FINGERPRINT_PRECISION
 syn keyword cp2kKeyword FIRST_PREC
 syn keyword cp2kKeyword FIRST_SNAPSHOT
 syn keyword cp2kKeyword FIST_SCALE_FACTOR FIST_CHARGE_SCALE FIST_CHARGE_FACTOR FIST_SCALE_CHARGE
+syn keyword cp2kKeyword FIT_EXPRESS
 syn keyword cp2kKeyword FIXED
 syn keyword cp2kKeyword FIXED_MAGNETIC_MOMENT
 syn keyword cp2kKeyword FIXED_MU
@@ -2707,6 +2715,7 @@ syn keyword cp2kKeyword MEMORY_FACTOR
 syn keyword cp2kKeyword MEMORY_INFO
 syn keyword cp2kKeyword MEMORY_PROGRESSION_FACTOR
 syn keyword cp2kKeyword METADYNAMICS
+syn keyword cp2kKeyword METALS
 syn keyword cp2kKeyword METHOD
 syn keyword cp2kKeyword METHOD_TYPE
 syn keyword cp2kKeyword METRIC COUPLING_METRIC
@@ -3172,6 +3181,7 @@ syn keyword cp2kKeyword Q_CENTROID
 syn keyword cp2kKeyword Q_END
 syn keyword cp2kKeyword Q_EXPONENT
 syn keyword cp2kKeyword Q_MAX Q_MAXIMUM
+syn keyword cp2kKeyword R
 syn keyword cp2kKeyword R0
 syn keyword cp2kKeyword R012
 syn keyword cp2kKeyword R032
