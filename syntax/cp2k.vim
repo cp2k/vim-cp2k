@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:b3d5a84)
+" CP2K-Version: CP2K version 8.0 (git:3b42c2a)
 
 if exists("b:current_syntax")
    finish
@@ -3654,6 +3654,7 @@ syn keyword cp2kKeyword UNIQUE_SPLINE
 syn keyword cp2kKeyword UNIT
 syn keyword cp2kKeyword UNITS
 syn keyword cp2kKeyword UNIX
+syn keyword cp2kKeyword UPDATE_XC_ENERGY
 syn keyword cp2kKeyword UPPER_TRIANGULAR
 syn keyword cp2kKeyword USER_RADIUS
 syn keyword cp2kKeyword USE_BOHR
