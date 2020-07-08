@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:3b42c2a)
+" CP2K-Version: CP2K version 8.0 (git:c4ddbdf)
 
 if exists("b:current_syntax")
    finish
@@ -265,6 +265,8 @@ syn keyword cp2kConstant DIRAC
 syn keyword cp2kConstant DIRECT
 syn keyword cp2kConstant DIRECT_CANONICAL
 syn keyword cp2kConstant DIRECT_CELL_OPT
+syn keyword cp2kConstant DIRECT_MUADJ
+syn keyword cp2kConstant DIRECT_MUADJ_LOWMEM
 syn keyword cp2kConstant DIRECT_P_MIXING
 syn keyword cp2kConstant DISTRIBUTED
 syn keyword cp2kConstant DKH
