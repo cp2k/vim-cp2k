@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:c4ddbdf)
+" CP2K-Version: CP2K version 8.0 (git:9a68f79)
 
 if exists("b:current_syntax")
    finish
@@ -1351,6 +1351,7 @@ syn keyword cp2kSection OPT_INFO
 syn keyword cp2kSection OPT_RI_BASIS
 syn keyword cp2kSection ORBITALS
 syn keyword cp2kSection OT
+syn keyword cp2kSection OT_SOLVER
 syn keyword cp2kSection OUTER_SCF
 syn keyword cp2kSection OVERLAP_CONDITION
 syn keyword cp2kSection P86C
