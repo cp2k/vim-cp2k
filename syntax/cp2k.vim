@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:9a68f79)
+" CP2K-Version: CP2K version 8.0 (git:dd8d7d6)
 
 if exists("b:current_syntax")
    finish
@@ -668,6 +668,7 @@ syn keyword cp2kConstant REAL
 syn keyword cp2kConstant REAL_4
 syn keyword cp2kConstant REAL_8
 syn keyword cp2kConstant REDUCE
+syn keyword cp2kConstant REF
 syn keyword cp2kConstant REFLECTIVE
 syn keyword cp2kConstant REFTRAJ
 syn keyword cp2kConstant REMOVE
@@ -1170,6 +1171,7 @@ syn keyword cp2kSection GLOBAL
 syn keyword cp2kSection GLOBAL_OPT
 syn keyword cp2kSection GOLD
 syn keyword cp2kSection GOODWIN
+syn keyword cp2kSection GRID
 syn keyword cp2kSection GRID_INFORMATION
 syn keyword cp2kSection GRRM
 syn keyword cp2kSection GTH_POTENTIAL
@@ -1755,6 +1757,7 @@ syn keyword cp2kKeyword A_SCALE
 syn keyword cp2kKeyword B
 syn keyword cp2kKeyword B1
 syn keyword cp2kKeyword B2
+syn keyword cp2kKeyword BACKEND
 syn keyword cp2kKeyword BACKUP_COPIES
 syn keyword cp2kKeyword BAND
 syn keyword cp2kKeyword BANDWIDTH
@@ -3686,6 +3689,7 @@ syn keyword cp2kKeyword UTIL_INFO
 syn keyword cp2kKeyword U_MINUS_J
 syn keyword cp2kKeyword U_RAMPING
 syn keyword cp2kKeyword VALENCE_RELATIVITY
+syn keyword cp2kKeyword VALIDATE
 syn keyword cp2kKeyword VALUE
 syn keyword cp2kKeyword VALUES
 syn keyword cp2kKeyword VARIABLE
