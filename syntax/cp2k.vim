@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:d70bb55)
+" CP2K-Version: CP2K version 8.0 (git:4c7077f)
 
 if exists("b:current_syntax")
    finish
@@ -1523,6 +1523,7 @@ syn keyword cp2kSection TEMPERATURE_COLVAR
 syn keyword cp2kSection TEMP_CONTROL
 syn keyword cp2kSection TEMP_KIND
 syn keyword cp2kSection TEMP_SHELL_KIND
+syn keyword cp2kSection TENSOR
 syn keyword cp2kSection TERSOFF
 syn keyword cp2kSection TEST
 syn keyword cp2kSection TF
@@ -2436,8 +2437,6 @@ syn keyword cp2kKeyword GROUP_ENERGY_NR
 syn keyword cp2kKeyword GROUP_ENERGY_SIZE
 syn keyword cp2kKeyword GROUP_PARTITION
 syn keyword cp2kKeyword GROUP_SIZE NUMBER_PROC
-syn keyword cp2kKeyword GROUP_SIZE_3C
-syn keyword cp2kKeyword GROUP_SIZE_P
 syn keyword cp2kKeyword GSPACE_SMOOTHING
 syn keyword cp2kKeyword GTOP_INFO
 syn keyword cp2kKeyword GTO_KIND
@@ -3576,6 +3575,7 @@ syn keyword cp2kKeyword TASKS_PER_ENERGY_POINT
 syn keyword cp2kKeyword TASKS_PER_INTEGRATION_POINT
 syn keyword cp2kKeyword TASKS_PER_POLE
 syn keyword cp2kKeyword TASK_TYPE
+syn keyword cp2kKeyword TAS_SPLIT_FACTOR
 syn keyword cp2kKeyword TAU
 syn keyword cp2kKeyword TAUCUT
 syn keyword cp2kKeyword TAU_CUTOFF
