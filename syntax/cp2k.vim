@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:fe04ab9)
+" CP2K-Version: CP2K version 8.0 (git:bba320d)
 
 if exists("b:current_syntax")
    finish
@@ -3240,6 +3240,7 @@ syn keyword cp2kKeyword REF_TRAJ_FILE_NAME
 syn keyword cp2kKeyword REGION
 syn keyword cp2kKeyword REGULARIZATION
 syn keyword cp2kKeyword REG_LAMBDA
+syn keyword cp2kKeyword RELATIVE_PERMITTIVITY DIELECTRIC_CONSTANT EPSILON_RELATIVE EPSILON_SOLVENT
 syn keyword cp2kKeyword RELATIVE_TOLERANCE
 syn keyword cp2kKeyword RELATIVISTIC
 syn keyword cp2kKeyword RELAX_MULTIPLICITY RELAX_MULTIP
