@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:bba320d)
+" CP2K-Version: CP2K version 8.0 (git:97eec91)
 
 if exists("b:current_syntax")
    finish
@@ -555,6 +555,7 @@ syn keyword cp2kConstant NN50
 syn keyword cp2kConstant NN50_SMOOTH
 syn keyword cp2kConstant NN6
 syn keyword cp2kConstant NN6_SMOOTH
+syn keyword cp2kConstant NNP
 syn keyword cp2kConstant NO
 syn keyword cp2kConstant NONE
 syn keyword cp2kConstant NONE_DM
@@ -940,6 +941,9 @@ syn keyword cp2kSection BEND
 syn keyword cp2kSection BETA
 syn keyword cp2kSection BEYN
 syn keyword cp2kSection BFGS
+syn keyword cp2kSection BIAS
+syn keyword cp2kSection BIAS_ENERGY
+syn keyword cp2kSection BIAS_FORCES
 syn keyword cp2kSection BLOCK
 syn keyword cp2kSection BLOCK_DIAGONALIZE
 syn keyword cp2kSection BMHFT
@@ -1112,6 +1116,7 @@ syn keyword cp2kSection EXTERNAL_DENSITY
 syn keyword cp2kSection EXTERNAL_POTENTIAL
 syn keyword cp2kSection EXTERNAL_POTENTIAL_CUBE
 syn keyword cp2kSection EXTERNAL_VXC
+syn keyword cp2kSection EXTRAPOLATION
 syn keyword cp2kSection EXTRA_DOF
 syn keyword cp2kSection EXT_LAGRANGE_FS
 syn keyword cp2kSection EXT_LAGRANGE_SS
@@ -1142,6 +1147,7 @@ syn keyword cp2kSection FORCE
 syn keyword cp2kSection FORCEFIELD
 syn keyword cp2kSection FORCES
 syn keyword cp2kSection FORCES_INST
+syn keyword cp2kSection FORCES_SIGMA
 syn keyword cp2kSection FORCE_EVAL
 syn keyword cp2kSection FORCE_EVAL_EMBED
 syn keyword cp2kSection FORCE_EVAL_MIXED
@@ -1291,6 +1297,7 @@ syn keyword cp2kSection MM
 syn keyword cp2kSection MM_KIND
 syn keyword cp2kSection MM_POTENTIAL
 syn keyword cp2kSection MO
+syn keyword cp2kSection MODEL
 syn keyword cp2kSection MODE_SELECTIVE
 syn keyword cp2kSection MOLDEN_VIB
 syn keyword cp2kSection MOLECULAR_DIPOLES
@@ -1335,6 +1342,7 @@ syn keyword cp2kSection NEIGHBOR_LISTS
 syn keyword cp2kSection NLMO_OPTIMIZER_PCG
 syn keyword cp2kSection NMC_MOVES
 syn keyword cp2kSection NMR
+syn keyword cp2kSection NNP
 syn keyword cp2kSection NONBONDED
 syn keyword cp2kSection NONBONDED14
 syn keyword cp2kSection NON_LOCAL
@@ -1514,6 +1522,7 @@ syn keyword cp2kSection STRING_METHOD
 syn keyword cp2kSection STRUCTURE_DATA
 syn keyword cp2kSection SUBCELL
 syn keyword cp2kSection SUBSYS
+syn keyword cp2kSection SUM_FORCE
 syn keyword cp2kSection SWARM
 syn keyword cp2kSection SYMMETRY
 syn keyword cp2kSection S_CSR_WRITE
@@ -1651,6 +1660,7 @@ syn keyword cp2kKeyword ADMM_PURIFICATION_METHOD
 syn keyword cp2kKeyword AINT_PRECOND
 syn keyword cp2kKeyword ALGORITHM
 syn keyword cp2kKeyword ALIGN_FRAMES
+syn keyword cp2kKeyword ALIGN_NNP_ENERGIES
 syn keyword cp2kKeyword ALIST
 syn keyword cp2kKeyword ALL
 syn keyword cp2kKeyword ALLOW_H3O_FORMATION
@@ -2570,6 +2580,7 @@ syn keyword cp2kKeyword KPOINT
 syn keyword cp2kKeyword KPOINTS
 syn keyword cp2kKeyword KSS
 syn keyword cp2kKeyword KT_CORRECTION
+syn keyword cp2kKeyword K_B
 syn keyword cp2kKeyword K_CONFIDENCE_LIMIT
 syn keyword cp2kKeyword K_RHO
 syn keyword cp2kKeyword K_SPRING K
@@ -2851,6 +2862,7 @@ syn keyword cp2kKeyword NMOL
 syn keyword cp2kKeyword NMOVES
 syn keyword cp2kKeyword NN EXPON_NUMERATOR
 syn keyword cp2kKeyword NNOS
+syn keyword cp2kKeyword NNP_INPUT_FILE_NAME
 syn keyword cp2kKeyword NN_B EXPON_NUMERATOR_B
 syn keyword cp2kKeyword NOCOMPATIBILITY
 syn keyword cp2kKeyword NOISY_GAMMA NOISYGAMMA
@@ -3404,6 +3416,7 @@ syn keyword cp2kKeyword SCALE WIDTH
 syn keyword cp2kKeyword SCALED
 syn keyword cp2kKeyword SCALE_C
 syn keyword cp2kKeyword SCALE_COULOMB
+syn keyword cp2kKeyword SCALE_FILE_NAME
 syn keyword cp2kKeyword SCALE_GAUSSIAN
 syn keyword cp2kKeyword SCALE_LONGRANGE
 syn keyword cp2kKeyword SCALE_RPA
@@ -3457,6 +3470,7 @@ syn keyword cp2kKeyword SIC_METHOD
 syn keyword cp2kKeyword SIC_SCALING_A
 syn keyword cp2kKeyword SIC_SCALING_B
 syn keyword cp2kKeyword SIGMA
+syn keyword cp2kKeyword SIGMA_0
 syn keyword cp2kKeyword SIGN_METHOD
 syn keyword cp2kKeyword SIGN_ORDER
 syn keyword cp2kKeyword SIGN_SYMMETRIC
