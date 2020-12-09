@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:f53524d)
+" CP2K-Version: CP2K version 8.0 (git:909fc0d)
 
 if exists("b:current_syntax")
    finish
@@ -658,6 +658,7 @@ syn keyword cp2kConstant QUADRATIC
 syn keyword cp2kConstant QUADRUPOLE
 syn keyword cp2kConstant QUARTIC
 syn keyword cp2kConstant QUASI_NEWTON
+syn keyword cp2kConstant QUICK
 syn keyword cp2kConstant QUICKSTEP
 syn keyword cp2kConstant R
 syn keyword cp2kConstant R12
@@ -820,6 +821,7 @@ syn keyword cp2kConstant UKS
 syn keyword cp2kConstant UMFPACK
 syn keyword cp2kConstant UNIFORM
 syn keyword cp2kConstant UNIT
+syn keyword cp2kConstant UNITY
 syn keyword cp2kConstant UNOCCUPIED
 syn keyword cp2kConstant UNPAIRED
 syn keyword cp2kConstant UPF
@@ -1124,6 +1126,7 @@ syn keyword cp2kSection EXT_LAGRANGE_SS
 syn keyword cp2kSection EXT_LAGRANGE_SS0
 syn keyword cp2kSection EXT_LAGRANGE_VVP
 syn keyword cp2kSection EXT_RESTART
+syn keyword cp2kSection E_DENSITY_BQB
 syn keyword cp2kSection E_DENSITY_CUBE
 syn keyword cp2kSection FARMING
 syn keyword cp2kSection FATTEBERT-GYGI
@@ -1271,6 +1274,7 @@ syn keyword cp2kSection MAPPING
 syn keyword cp2kSection MASS
 syn keyword cp2kSection MASTER_RUN_INFO
 syn keyword cp2kSection MATRIX_ITERATE
+syn keyword cp2kSection MAXWELL
 syn keyword cp2kSection MAX_DISPLACEMENTS
 syn keyword cp2kSection MC
 syn keyword cp2kSection MD
@@ -1579,6 +1583,7 @@ syn keyword cp2kSection VELOCITY_SOFTENING
 syn keyword cp2kSection VEL_CONTROL
 syn keyword cp2kSection VIBRATIONAL_ANALYSIS
 syn keyword cp2kSection VIRTUAL_SITE
+syn keyword cp2kSection VORONOI
 syn keyword cp2kSection VWN
 syn keyword cp2kSection V_HARTREE_CUBE
 syn keyword cp2kSection V_RESP_CUBE
@@ -1893,6 +1898,7 @@ syn keyword cp2kKeyword CHARGE_BETA CHARGE_B
 syn keyword cp2kKeyword CHARGE_DISTR_WIDTH
 syn keyword cp2kKeyword CHARGE_EXTENDED
 syn keyword cp2kKeyword CHARGE_OCCUP CHARGE_O
+syn keyword cp2kKeyword CHECK
 syn keyword cp2kKeyword CHECK_2C_ACCURACY
 syn keyword cp2kKeyword CHECK_2C_MATRIX
 syn keyword cp2kKeyword CHECK_ACCURACY
@@ -2468,6 +2474,7 @@ syn keyword cp2kKeyword HE_HE
 syn keyword cp2kKeyword HFX_BALANCE_IN_CORE
 syn keyword cp2kKeyword HIGH_LEVEL_EMBED_SUBSYS
 syn keyword cp2kKeyword HILL_TAIL_CUTOFF
+syn keyword cp2kKeyword HISTORY
 syn keyword cp2kKeyword HOMO_LIST
 syn keyword cp2kKeyword HOMO_LUMO_GAP
 syn keyword cp2kKeyword HOST
@@ -2981,6 +2988,7 @@ syn keyword cp2kKeyword OPEN_CLOSE_SCALE
 syn keyword cp2kKeyword OPEN_CLOSE_WEIGHT
 syn keyword cp2kKeyword OPERATOR
 syn keyword cp2kKeyword OPERATOR_PARAMETER
+syn keyword cp2kKeyword OPTIMIZE
 syn keyword cp2kKeyword OPTIMIZER MINIMIZER
 syn keyword cp2kKeyword OPTIMIZE_END_POINTS
 syn keyword cp2kKeyword OPTIMIZE_FILE_NAME
@@ -3010,7 +3018,9 @@ syn keyword cp2kKeyword OR_PARAMETER OMEGA
 syn keyword cp2kKeyword OSCILLATING_FRACTION
 syn keyword cp2kKeyword OUTER_ATOMS
 syn keyword cp2kKeyword OUTER_RADIUS
+syn keyword cp2kKeyword OUTPUT_EMP
 syn keyword cp2kKeyword OUTPUT_FILE_NAME
+syn keyword cp2kKeyword OUTPUT_TEXT
 syn keyword cp2kKeyword OUT_EACH_MO
 syn keyword cp2kKeyword OUT_ITER_EACH
 syn keyword cp2kKeyword OVERLAP
@@ -3038,6 +3048,7 @@ syn keyword cp2kKeyword PARAMETERIZATION
 syn keyword cp2kKeyword PARAMETERS
 syn keyword cp2kKeyword PARAMETER_A
 syn keyword cp2kKeyword PARAMETER_FILE_NAME
+syn keyword cp2kKeyword PARAMETER_KEY
 syn keyword cp2kKeyword PARAMETER_SET
 syn keyword cp2kKeyword PARAMETER_X
 syn keyword cp2kKeyword PARAMETRIZATION
@@ -3246,6 +3257,7 @@ syn keyword cp2kKeyword REFERENCE_FUNCTIONAL
 syn keyword cp2kKeyword REFERENCE_POINT REF_POINT
 syn keyword cp2kKeyword REFERENCE_POINT_2 REF_POINT_2
 syn keyword cp2kKeyword REFERENCE_SET
+syn keyword cp2kKeyword REFINEMENT_FACTOR
 syn keyword cp2kKeyword REFINE_FERMI_LEVEL
 syn keyword cp2kKeyword REF_CELL_FILE_NAME
 syn keyword cp2kKeyword REF_EMBED_SUBSYS
@@ -3412,6 +3424,7 @@ syn keyword cp2kKeyword SAC_PPL
 syn keyword cp2kKeyword SAFE_COMPUTATION
 syn keyword cp2kKeyword SAFE_DIIS SAFER_DIIS
 syn keyword cp2kKeyword SAMPLING_METHOD
+syn keyword cp2kKeyword SANITY_CHECK
 syn keyword cp2kKeyword SAP_OCE
 syn keyword cp2kKeyword SAP_PPNL
 syn keyword cp2kKeyword SAVE_MEM
@@ -3483,6 +3496,7 @@ syn keyword cp2kKeyword SIZE
 syn keyword cp2kKeyword SIZE_FREQ_INTEG_GROUP RPA_GROUP_SIZE
 syn keyword cp2kKeyword SIZE_INTEG_GROUP LAPLACE_GROUP_SIZE
 syn keyword cp2kKeyword SIZE_LATTICE_SUM
+syn keyword cp2kKeyword SKIP_FIRST
 syn keyword cp2kKeyword SKIP_LOAD_BALANCE_DISTRIBUTED
 syn keyword cp2kKeyword SKIP_OPTIMIZATION
 syn keyword cp2kKeyword SK_FILE
@@ -3543,6 +3557,7 @@ syn keyword cp2kKeyword STEP_SIZE_SCALING
 syn keyword cp2kKeyword STEP_START_VAL
 syn keyword cp2kKeyword STOP_ON_MISMATCH
 syn keyword cp2kKeyword STORAGE_LOCATION
+syn keyword cp2kKeyword STORE_STEP_NUMBER
 syn keyword cp2kKeyword STORE_WFN STORE_WAVEFUNCTION
 syn keyword cp2kKeyword STO_NG
 syn keyword cp2kKeyword STRENGTH
@@ -3622,10 +3637,13 @@ syn keyword cp2kKeyword TEST_2C
 syn keyword cp2kKeyword TEST_3C
 syn keyword cp2kKeyword TEST_COULOMB
 syn keyword cp2kKeyword TEST_GAUSS
+syn keyword cp2kKeyword TEST_INTEGER
+syn keyword cp2kKeyword TEST_LOGICAL
 syn keyword cp2kKeyword TEST_OVERLAP
 syn keyword cp2kKeyword TEST_OVERLAP_ABA
 syn keyword cp2kKeyword TEST_OVERLAP_ABB
 syn keyword cp2kKeyword TEST_RA2M
+syn keyword cp2kKeyword TEST_REAL
 syn keyword cp2kKeyword TEST_TYPE
 syn keyword cp2kKeyword TEST_VERF
 syn keyword cp2kKeyword TEST_VERFC
@@ -3682,6 +3700,7 @@ syn keyword cp2kKeyword UNITS
 syn keyword cp2kKeyword UNIX
 syn keyword cp2kKeyword UPDATE_XC_ENERGY
 syn keyword cp2kKeyword UPPER_TRIANGULAR
+syn keyword cp2kKeyword USER_RADII
 syn keyword cp2kKeyword USER_RADIUS
 syn keyword cp2kKeyword USE_BOHR
 syn keyword cp2kKeyword USE_COLVARS
@@ -3733,6 +3752,7 @@ syn keyword cp2kKeyword VIRTUAL_NLMOS
 syn keyword cp2kKeyword VN_CONFIDENCE_LIMIT
 syn keyword cp2kKeyword VOLUME
 syn keyword cp2kKeyword VOLUME_ISOTROPIC
+syn keyword cp2kKeyword VORONOI_RADII
 syn keyword cp2kKeyword VR0
 syn keyword cp2kKeyword VSHOCK V_SHOCK
 syn keyword cp2kKeyword VW_CUTOFF
