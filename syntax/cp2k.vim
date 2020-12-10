@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:909fc0d)
+" CP2K-Version: CP2K version 8.0 (git:36b46d5)
 
 if exists("b:current_syntax")
    finish
@@ -1189,6 +1189,7 @@ syn keyword cp2kSection GTH_POTENTIAL
 syn keyword cp2kSection GUESS_VECTORS
 syn keyword cp2kSection GV09
 syn keyword cp2kSection GW
+syn keyword cp2kSection GW2X
 syn keyword cp2kSection GYRATION_RADIUS
 syn keyword cp2kSection G_TENSOR
 syn keyword cp2kSection HBONDS
@@ -1797,6 +1798,7 @@ syn keyword cp2kKeyword BASIS_SIZE
 syn keyword cp2kKeyword BASIS_TEMPLATE_FILE
 syn keyword cp2kKeyword BASIS_TYPE
 syn keyword cp2kKeyword BASIS_WORK_FILE
+syn keyword cp2kKeyword BATCH_SIZE
 syn keyword cp2kKeyword BD
 syn keyword cp2kKeyword BEHAVIOR
 syn keyword cp2kKeyword BETA
@@ -2014,6 +2016,8 @@ syn keyword cp2kKeyword CUTOUT
 syn keyword cp2kKeyword CYCLE
 syn keyword cp2kKeyword CYCLIC_BLOCK_SIZE
 syn keyword cp2kKeyword C_LIST
+syn keyword cp2kKeyword C_OS
+syn keyword cp2kKeyword C_SS
 syn keyword cp2kKeyword D
 syn keyword cp2kKeyword D3BJ_PARAM
 syn keyword cp2kKeyword D3BJ_SCALING
@@ -2230,6 +2234,7 @@ syn keyword cp2kKeyword EPS_GRAD
 syn keyword cp2kKeyword EPS_GREEN
 syn keyword cp2kKeyword EPS_GRID
 syn keyword cp2kKeyword EPS_GVG_RSPACE EPS_GVG
+syn keyword cp2kKeyword EPS_GW2X
 syn keyword cp2kKeyword EPS_INTEGRAL
 syn keyword cp2kKeyword EPS_IRAC
 syn keyword cp2kKeyword EPS_IRAC_FILTER_MATRIX
@@ -2695,6 +2700,7 @@ syn keyword cp2kKeyword MAX_FORCE
 syn keyword cp2kKeyword MAX_FUN
 syn keyword cp2kKeyword MAX_F_PER_ITER
 syn keyword cp2kKeyword MAX_GVEC_EXP
+syn keyword cp2kKeyword MAX_GW2X_ITER
 syn keyword cp2kKeyword MAX_HISTORY
 syn keyword cp2kKeyword MAX_H_RANK
 syn keyword cp2kKeyword MAX_INIT
@@ -3168,6 +3174,7 @@ syn keyword cp2kKeyword PROJECT_NAME PROJECT
 syn keyword cp2kKeyword PROJ_FORMULA
 syn keyword cp2kKeyword PROJ_VELOCITY_VERLET
 syn keyword cp2kKeyword PROPAGATOR
+syn keyword cp2kKeyword PSEUDO_CANONICAL
 syn keyword cp2kKeyword PSEUDO_TYPE
 syn keyword cp2kKeyword PSF_INFO
 syn keyword cp2kKeyword PSO
@@ -3812,6 +3819,7 @@ syn keyword cp2kKeyword XC_DERIV
 syn keyword cp2kKeyword XC_SMOOTH_RHO
 syn keyword cp2kKeyword XES_CORE
 syn keyword cp2kKeyword XES_EMPTY_HOMO
+syn keyword cp2kKeyword XPS_ONLY
 syn keyword cp2kKeyword XRANGE
 syn keyword cp2kKeyword XRD_INTERFACE
 syn keyword cp2kKeyword XTL_INFO
