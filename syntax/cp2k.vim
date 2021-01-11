@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 8.0 (git:baca8c7)
+" CP2K-Version: CP2K version 9.0 (git:dc262fe)
 
 if exists("b:current_syntax")
    finish
@@ -3657,6 +3657,7 @@ syn keyword cp2kKeyword TEST_VERF
 syn keyword cp2kKeyword TEST_VERFC
 syn keyword cp2kKeyword TEST_VGAUSS
 syn keyword cp2kKeyword THERMOCHEMISTRY
+syn keyword cp2kKeyword THERMOSTAT_ENERGY
 syn keyword cp2kKeyword THERMOSTAT_SEED
 syn keyword cp2kKeyword THETA0
 syn keyword cp2kKeyword THICKNESS
