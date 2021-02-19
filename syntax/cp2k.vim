@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:49c2a23)
+" CP2K-Version: CP2K version 9.0 (git:a538c74)
 
 if exists("b:current_syntax")
    finish
@@ -2286,6 +2286,7 @@ syn keyword cp2kKeyword EPS_STEP_SIZE
 syn keyword cp2kKeyword EPS_STORAGE
 syn keyword cp2kKeyword EPS_STORAGE_SCALING EPS_STORAGE
 syn keyword cp2kKeyword EPS_SVD
+syn keyword cp2kKeyword EPS_SYMMETRY
 syn keyword cp2kKeyword EPS_TARGET_FACTOR
 syn keyword cp2kKeyword EPS_TAYLOR EPSTAYLOR
 syn keyword cp2kKeyword EPS_TD_FILTER
@@ -2574,6 +2575,7 @@ syn keyword cp2kKeyword KBS12
 syn keyword cp2kKeyword KBS32
 syn keyword cp2kKeyword KEEPSPARSE
 syn keyword cp2kKeyword KEEP_ANGLES
+syn keyword cp2kKeyword KEEP_SPACE_GROUP
 syn keyword cp2kKeyword KEEP_SYMMETRY
 syn keyword cp2kKeyword KERNEL DO_KERNEL
 syn keyword cp2kKeyword KERNEL_FILE_NAME
@@ -3527,6 +3529,8 @@ syn keyword cp2kKeyword SPARSE_MOS
 syn keyword cp2kKeyword SPECIAL_POINT
 syn keyword cp2kKeyword SPECULATIVE_CANCELING
 syn keyword cp2kKeyword SPGLIB_TOLERANCE
+syn keyword cp2kKeyword SPGR_FILE_NAME
+syn keyword cp2kKeyword SPGR_PRINT_LEVEL
 syn keyword cp2kKeyword SPHERICAL_CUTOFF
 syn keyword cp2kKeyword SPHERICAL_HARMONICS
 syn keyword cp2kKeyword SPIN_CHANNEL
@@ -3595,6 +3599,8 @@ syn keyword cp2kKeyword SW_CONFIDENCE_LIMIT
 syn keyword cp2kKeyword SYMMETRIC
 syn keyword cp2kKeyword SYMMETRY
 syn keyword cp2kKeyword SYMMETRY_ELEMENTS
+syn keyword cp2kKeyword SYMM_EXCLUDE_RANGE
+syn keyword cp2kKeyword SYMM_REDUCTION
 syn keyword cp2kKeyword S_EXPONENTS
 syn keyword cp2kKeyword S_INVERSION
 syn keyword cp2kKeyword S_PRECONDITIONER
