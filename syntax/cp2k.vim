@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:a538c74)
+" CP2K-Version: CP2K version 9.0 (git:a130d97)
 
 if exists("b:current_syntax")
    finish
@@ -3529,8 +3529,7 @@ syn keyword cp2kKeyword SPARSE_MOS
 syn keyword cp2kKeyword SPECIAL_POINT
 syn keyword cp2kKeyword SPECULATIVE_CANCELING
 syn keyword cp2kKeyword SPGLIB_TOLERANCE
-syn keyword cp2kKeyword SPGR_FILE_NAME
-syn keyword cp2kKeyword SPGR_PRINT_LEVEL
+syn keyword cp2kKeyword SPGR_PRINT_ATOMS
 syn keyword cp2kKeyword SPHERICAL_CUTOFF
 syn keyword cp2kKeyword SPHERICAL_HARMONICS
 syn keyword cp2kKeyword SPIN_CHANNEL
