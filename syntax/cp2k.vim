@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:a130d97)
+" CP2K-Version: CP2K version 9.0 (git:efd8891)
 
 if exists("b:current_syntax")
    finish
@@ -1991,6 +1991,7 @@ syn keyword cp2kKeyword COULOMB_INTERACTION
 syn keyword cp2kKeyword COUNTER
 syn keyword cp2kKeyword COUPLING
 syn keyword cp2kKeyword COUPLING_PARAMETER
+syn keyword cp2kKeyword COVALENT_RADIUS
 syn keyword cp2kKeyword CPOL
 syn keyword cp2kKeyword CRAWL_REPETITION
 syn keyword cp2kKeyword CRAWL_WEIGHT
@@ -3739,7 +3740,7 @@ syn keyword cp2kKeyword USE_REPEAT_METHOD
 syn keyword cp2kKeyword USE_SCF_ENERGY_INFO
 syn keyword cp2kKeyword USE_SYMMETRY
 syn keyword cp2kKeyword UTIL_INFO
-syn keyword cp2kKeyword U_MINUS_J
+syn keyword cp2kKeyword U_MINUS_J U_EFF
 syn keyword cp2kKeyword U_RAMPING
 syn keyword cp2kKeyword VALENCE_RELATIVITY
 syn keyword cp2kKeyword VALIDATE
@@ -3749,6 +3750,7 @@ syn keyword cp2kKeyword VARIABLE
 syn keyword cp2kKeyword VARIABLES
 syn keyword cp2kKeyword VARIABLE_VOLUME
 syn keyword cp2kKeyword VDW_FUNCTIONALS
+syn keyword cp2kKeyword VDW_RADIUS
 syn keyword cp2kKeyword VDW_SCALE14
 syn keyword cp2kKeyword VELOCITY_QUENCH
 syn keyword cp2kKeyword VELOCITY_SCALE
