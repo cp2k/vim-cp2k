@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:f2d2751)
+" CP2K-Version: CP2K version 9.0 (git:1f5bbc4)
 
 if exists("b:current_syntax")
    finish
@@ -412,7 +412,6 @@ syn keyword cp2kConstant HIRSHFELD
 syn keyword cp2kConstant HISTORY_RESTART
 syn keyword cp2kConstant HLE
 syn keyword cp2kConstant HOTELLING
-syn keyword cp2kConstant HYBRID
 syn keyword cp2kConstant HYDROSTATICSHOCK
 syn keyword cp2kConstant IDENTITY
 syn keyword cp2kConstant IMOM
@@ -3814,7 +3813,6 @@ syn keyword cp2kKeyword QT_FORMALISM
 syn keyword cp2kKeyword QUADRATURE
 syn keyword cp2kKeyword QUADRATURE_POINTS RPA_NUM_QUAD_POINTS
 syn keyword cp2kKeyword QUADRUPOLE DO_QUADRUPOLE DO_QUAD QUAD
-syn keyword cp2kKeyword QUEUE_LENGTH
 syn keyword cp2kKeyword QWOH
 syn keyword cp2kKeyword Q_BEAD
 syn keyword cp2kKeyword Q_CENTROID
