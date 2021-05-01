@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:1f5bbc4)
+" CP2K-Version: CP2K version 9.0 (git:d8b6a4f)
 
 if exists("b:current_syntax")
    finish
@@ -3850,6 +3850,7 @@ syn keyword cp2kKeyword READ_EMBED_POT_CUBE
 syn keyword cp2kKeyword READ_FROM_CUBE
 syn keyword cp2kKeyword REALSPACE
 syn keyword cp2kKeyword REAL_AXIS_INTEGRATION_METHOD
+syn keyword cp2kKeyword REAL_SPACE
 syn keyword cp2kKeyword RECURSIVE_DIAGONALIZATION
 syn keyword cp2kKeyword REDUCE_AUX_BF
 syn keyword cp2kKeyword REDUCE_GVEC
