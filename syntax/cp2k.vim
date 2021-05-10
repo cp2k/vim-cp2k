@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:927b34c)
+" CP2K-Version: CP2K version 9.0 (git:c26d761)
 
 if exists("b:current_syntax")
    finish
@@ -2521,6 +2521,7 @@ syn keyword cp2kKeyword COARSE_GRAINED_POINTS CG_POINTS
 syn keyword cp2kKeyword COARSE_GRAINED_WIDTH CG_WIDTH
 syn keyword cp2kKeyword COEFF
 syn keyword cp2kKeyword COEFFICIENT
+syn keyword cp2kKeyword COEFFICIENTS EIGENVECTORS EIGVECS
 syn keyword cp2kKeyword COLLECTIVE
 syn keyword cp2kKeyword COLLECTIVE_COMMUNICATION
 syn keyword cp2kKeyword COLORING_METHOD
@@ -2743,7 +2744,6 @@ syn keyword cp2kKeyword ECONS_START_VAL
 syn keyword cp2kKeyword EFG
 syn keyword cp2kKeyword EFIELD_FILE_NAME
 syn keyword cp2kKeyword EIGENVALUES
-syn keyword cp2kKeyword EIGENVECTORS EIGVECS
 syn keyword cp2kKeyword EIP_MODEL EIP-MODEL
 syn keyword cp2kKeyword EI_SCALE14
 syn keyword cp2kKeyword ELECTRIC_POTENTIAL
