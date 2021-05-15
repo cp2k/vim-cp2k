@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:12b22ca)
+" CP2K-Version: CP2K version 9.0 (git:d1bae27)
 
 if exists("b:current_syntax")
    finish
@@ -1304,7 +1304,6 @@ syn keyword cp2kSection GGA_XC_HLE16
 syn keyword cp2kSection GGA_XC_KT1
 syn keyword cp2kSection GGA_XC_KT2
 syn keyword cp2kSection GGA_XC_KT3
-syn keyword cp2kSection GGA_XC_LB07
 syn keyword cp2kSection GGA_XC_MOHLYP
 syn keyword cp2kSection GGA_XC_MOHLYP2
 syn keyword cp2kSection GGA_XC_MPWLYP1W
@@ -1458,6 +1457,7 @@ syn keyword cp2kSection HYB_GGA_XC_B1LYP
 syn keyword cp2kSection HYB_GGA_XC_B1PW91
 syn keyword cp2kSection HYB_GGA_XC_B1WC
 syn keyword cp2kSection HYB_GGA_XC_B3LYP
+syn keyword cp2kSection HYB_GGA_XC_B3LYP3
 syn keyword cp2kSection HYB_GGA_XC_B3LYP5
 syn keyword cp2kSection HYB_GGA_XC_B3LYPS
 syn keyword cp2kSection HYB_GGA_XC_B3LYP_MCM1
@@ -1499,6 +1499,7 @@ syn keyword cp2kSection HYB_GGA_XC_HSE12
 syn keyword cp2kSection HYB_GGA_XC_HSE12S
 syn keyword cp2kSection HYB_GGA_XC_HSE_SOL
 syn keyword cp2kSection HYB_GGA_XC_KMLYP
+syn keyword cp2kSection HYB_GGA_XC_LB07
 syn keyword cp2kSection HYB_GGA_XC_LCY_BLYP
 syn keyword cp2kSection HYB_GGA_XC_LCY_PBE
 syn keyword cp2kSection HYB_GGA_XC_LC_BLYP
@@ -1516,6 +1517,7 @@ syn keyword cp2kSection HYB_GGA_XC_LC_WPBE_WHS
 syn keyword cp2kSection HYB_GGA_XC_LRC_WPBE
 syn keyword cp2kSection HYB_GGA_XC_LRC_WPBEH
 syn keyword cp2kSection HYB_GGA_XC_MB3LYP_RC04
+syn keyword cp2kSection HYB_GGA_XC_MCAM_B3LYP
 syn keyword cp2kSection HYB_GGA_XC_MPW1K
 syn keyword cp2kSection HYB_GGA_XC_MPW1LYP
 syn keyword cp2kSection HYB_GGA_XC_MPW1PBE
@@ -1525,9 +1527,11 @@ syn keyword cp2kSection HYB_GGA_XC_MPW3PW
 syn keyword cp2kSection HYB_GGA_XC_MPWLYP1M
 syn keyword cp2kSection HYB_GGA_XC_O3LYP
 syn keyword cp2kSection HYB_GGA_XC_PBE0_13
+syn keyword cp2kSection HYB_GGA_XC_PBE38
 syn keyword cp2kSection HYB_GGA_XC_PBE50
 syn keyword cp2kSection HYB_GGA_XC_PBEB0
 syn keyword cp2kSection HYB_GGA_XC_PBEH
+syn keyword cp2kSection HYB_GGA_XC_PBE_2X
 syn keyword cp2kSection HYB_GGA_XC_PBE_MOL0
 syn keyword cp2kSection HYB_GGA_XC_PBE_MOLB0
 syn keyword cp2kSection HYB_GGA_XC_PBE_SOL0
@@ -1850,6 +1854,7 @@ syn keyword cp2kSection MGGA_X_MS2
 syn keyword cp2kSection MGGA_X_MS2B
 syn keyword cp2kSection MGGA_X_MS2BS
 syn keyword cp2kSection MGGA_X_MS2_REV
+syn keyword cp2kSection MGGA_X_MTASK
 syn keyword cp2kSection MGGA_X_MVS
 syn keyword cp2kSection MGGA_X_MVSB
 syn keyword cp2kSection MGGA_X_MVSBS
@@ -2112,7 +2117,6 @@ syn keyword cp2kSection SPHERE_SAMPLING
 syn keyword cp2kSection SPINSPIN
 syn keyword cp2kSection SPLINE
 syn keyword cp2kSection SPL_COEFFS
-syn keyword cp2kSection SRLDA
 syn keyword cp2kSection STAGING
 syn keyword cp2kSection STDA
 syn keyword cp2kSection STM
@@ -4481,6 +4485,9 @@ syn keyword cp2kKeyword _ALPHAR
 syn keyword cp2kKeyword _ALPHA_AB
 syn keyword cp2kKeyword _ALPHA_OS
 syn keyword cp2kKeyword _ALPHA_SS
+syn keyword cp2kKeyword _ANU0
+syn keyword cp2kKeyword _ANU1
+syn keyword cp2kKeyword _ANU2
 syn keyword cp2kKeyword _AP
 syn keyword cp2kKeyword _AT
 syn keyword cp2kKeyword _AX
@@ -4527,6 +4534,11 @@ syn keyword cp2kKeyword _BETA4[2]
 syn keyword cp2kKeyword _BF
 syn keyword cp2kKeyword _BLOC_A
 syn keyword cp2kKeyword _BLOC_B
+syn keyword cp2kKeyword _BNU0
+syn keyword cp2kKeyword _BNU1
+syn keyword cp2kKeyword _BNU2
+syn keyword cp2kKeyword _BNU3
+syn keyword cp2kKeyword _BNU4
 syn keyword cp2kKeyword _BP
 syn keyword cp2kKeyword _BT
 syn keyword cp2kKeyword _C
@@ -4685,6 +4697,7 @@ syn keyword cp2kKeyword _GAMMA1
 syn keyword cp2kKeyword _GAMMA_AB
 syn keyword cp2kKeyword _GAMMA_SS
 syn keyword cp2kKeyword _H
+syn keyword cp2kKeyword _H0X
 syn keyword cp2kKeyword _K
 syn keyword cp2kKeyword _K0
 syn keyword cp2kKeyword _K1
@@ -4724,6 +4737,7 @@ syn keyword cp2kKeyword _R1
 syn keyword cp2kKeyword _SX
 syn keyword cp2kKeyword _TAUR
 syn keyword cp2kKeyword _U
+syn keyword cp2kKeyword _W
 syn keyword cp2kKeyword _W[0]
 syn keyword cp2kKeyword _W[10]
 syn keyword cp2kKeyword _W[11]
