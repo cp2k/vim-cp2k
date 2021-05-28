@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:d1bae27)
+" CP2K-Version: CP2K version 9.0 (git:310b7ab)
 
 if exists("b:current_syntax")
    finish
@@ -218,6 +218,7 @@ syn keyword cp2kConstant CONSTRAINT
 syn keyword cp2kConstant CONTRACTED_GTO
 syn keyword cp2kConstant COPY
 syn keyword cp2kConstant CORE
+syn keyword cp2kConstant COSMA
 syn keyword cp2kConstant COULOMB
 syn keyword cp2kConstant COUPLED
 syn keyword cp2kConstant COVALENT
