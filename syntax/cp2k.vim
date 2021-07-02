@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:6ba799a)
+" CP2K-Version: CP2K version 9.0 (git:c92d997)
 
 if exists("b:current_syntax")
    finish
@@ -103,6 +103,7 @@ syn keyword cp2kConstant AMBER
 syn keyword cp2kConstant AMD_GPU
 syn keyword cp2kConstant ANALYTIC
 syn keyword cp2kConstant ANALYTICAL
+syn keyword cp2kConstant ANDERSON
 syn keyword cp2kConstant ANDREUSSI
 syn keyword cp2kConstant ANGSTROM
 syn keyword cp2kConstant ARNOLDI
@@ -164,7 +165,6 @@ syn keyword cp2kConstant BOX
 syn keyword cp2kConstant BOYS
 syn keyword cp2kConstant BP
 syn keyword cp2kConstant BROYDEN
-syn keyword cp2kConstant BROYDEN1
 syn keyword cp2kConstant BROYDEN2
 syn keyword cp2kConstant BROYDEN_MIXING
 syn keyword cp2kConstant BROYDEN_MIXING_NEW
