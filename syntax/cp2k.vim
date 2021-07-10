@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:c92d997)
+" CP2K-Version: CP2K version 9.0 (git:b5a86d8)
 
 if exists("b:current_syntax")
    finish
@@ -1170,6 +1170,7 @@ syn keyword cp2kSection G3X3
 syn keyword cp2kSection G4X6
 syn keyword cp2kSection GA
 syn keyword cp2kSection GAL19
+syn keyword cp2kSection GAL21
 syn keyword cp2kSection GAPW
 syn keyword cp2kSection GAUSSIAN
 syn keyword cp2kSection GAUSSIAN_ENV
@@ -2152,6 +2153,7 @@ syn keyword cp2kSection THERMOSTAT_FAST
 syn keyword cp2kSection THERMOSTAT_INFO
 syn keyword cp2kSection THERMOSTAT_SLOW
 syn keyword cp2kSection TIMINGS
+syn keyword cp2kSection TIP_SCAN
 syn keyword cp2kSection TMC
 syn keyword cp2kSection TMC_ANALYSIS
 syn keyword cp2kSection TMC_ANALYSIS_FILES
@@ -2266,6 +2268,7 @@ syn keyword cp2kKeyword ADD_LAST
 syn keyword cp2kKeyword ADJUST_SIZE
 syn keyword cp2kKeyword ADMM
 syn keyword cp2kKeyword ADMM_PURIFICATION_METHOD
+syn keyword cp2kKeyword AH
 syn keyword cp2kKeyword AINT_PRECOND
 syn keyword cp2kKeyword ALGORITHM
 syn keyword cp2kKeyword ALIGN_FRAMES
@@ -2412,6 +2415,7 @@ syn keyword cp2kKeyword BETA_3
 syn keyword cp2kKeyword BETA_DM_CONV_INT
 syn keyword cp2kKeyword BETA_DM_CONV_MAX
 syn keyword cp2kKeyword BETA_SCALING_FACTOR
+syn keyword cp2kKeyword BH
 syn keyword cp2kKeyword BIAS
 syn keyword cp2kKeyword BIGD
 syn keyword cp2kKeyword BIGR
@@ -4061,6 +4065,9 @@ syn keyword cp2kKeyword SCALE_X
 syn keyword cp2kKeyword SCALE_X0
 syn keyword cp2kKeyword SCALING
 syn keyword cp2kKeyword SCALING_FACTOR
+syn keyword cp2kKeyword SCAN_DIRECTION
+syn keyword cp2kKeyword SCAN_POINTS
+syn keyword cp2kKeyword SCAN_STEP
 syn keyword cp2kKeyword SCF_GUESS
 syn keyword cp2kKeyword SCF_TYPE
 syn keyword cp2kKeyword SCHEME
@@ -4288,6 +4295,7 @@ syn keyword cp2kKeyword TIME_MPI
 syn keyword cp2kKeyword TIME_START_VAL
 syn keyword cp2kKeyword TIMINGS_LEVEL
 syn keyword cp2kKeyword TINY_STEP_SIZE
+syn keyword cp2kKeyword TIP_FILENAME
 syn keyword cp2kKeyword TNADD_METHOD
 syn keyword cp2kKeyword TOL
 syn keyword cp2kKeyword TOLERANCE
