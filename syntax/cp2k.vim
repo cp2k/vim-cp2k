@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:55d3731)
+" CP2K-Version: CP2K version 9.0 (git:3ce8905)
 
 if exists("b:current_syntax")
    finish
@@ -1562,6 +1562,7 @@ syn keyword cp2kSection HYB_GGA_XC_X3LYP
 syn keyword cp2kSection HYB_GGA_X_N12_SX
 syn keyword cp2kSection HYB_GGA_X_S12H
 syn keyword cp2kSection HYB_GGA_X_SOGGA11_X
+syn keyword cp2kSection HYB_LDA_XC_BN05
 syn keyword cp2kSection HYB_LDA_XC_CAM_LDA0
 syn keyword cp2kSection HYB_LDA_XC_LDA0
 syn keyword cp2kSection HYB_MGGA_XC_B0KCIS
@@ -1703,7 +1704,6 @@ syn keyword cp2kSection LDA_X
 syn keyword cp2kSection LDA_XC_1D_EHWLRG_1
 syn keyword cp2kSection LDA_XC_1D_EHWLRG_2
 syn keyword cp2kSection LDA_XC_1D_EHWLRG_3
-syn keyword cp2kSection LDA_XC_BN05
 syn keyword cp2kSection LDA_XC_GDSMFB
 syn keyword cp2kSection LDA_XC_KSDT
 syn keyword cp2kSection LDA_XC_LP_A
@@ -1718,6 +1718,7 @@ syn keyword cp2kSection LDA_X_ERF
 syn keyword cp2kSection LDA_X_RAE
 syn keyword cp2kSection LDA_X_REL
 syn keyword cp2kSection LDA_X_SLOC
+syn keyword cp2kSection LDA_X_YUKAWA
 syn keyword cp2kSection LDOS
 syn keyword cp2kSection LENNARD-JONES
 syn keyword cp2kSection LIBXC
