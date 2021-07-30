@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:f8023de)
+" CP2K-Version: CP2K version 9.0 (git:b37f30e)
 
 if exists("b:current_syntax")
    finish
@@ -3789,7 +3789,7 @@ syn keyword cp2kKeyword PROJECT_NAME PROJECT
 syn keyword cp2kKeyword PROJ_FORMULA
 syn keyword cp2kKeyword PROJ_VELOCITY_VERLET
 syn keyword cp2kKeyword PROPAGATOR
-syn keyword cp2kKeyword PSEUDO_CANONICAL
+syn keyword cp2kKeyword PSEUDO_CANONICAL PSEUDO_CANO
 syn keyword cp2kKeyword PSEUDO_TYPE
 syn keyword cp2kKeyword PSF_INFO
 syn keyword cp2kKeyword PSO
