@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:b37f30e)
+" CP2K-Version: CP2K version 9.0 (git:78fcdce)
 
 if exists("b:current_syntax")
    finish
@@ -1408,6 +1408,7 @@ syn keyword cp2kSection GGA_X_PBE_TCA
 syn keyword cp2kSection GGA_X_PW86
 syn keyword cp2kSection GGA_X_PW91
 syn keyword cp2kSection GGA_X_PW91_MOD
+syn keyword cp2kSection GGA_X_Q1D
 syn keyword cp2kSection GGA_X_Q2D
 syn keyword cp2kSection GGA_X_REVSSB_D
 syn keyword cp2kSection GGA_X_RGE2
@@ -1782,6 +1783,7 @@ syn keyword cp2kSection MGGA_C_MN15
 syn keyword cp2kSection MGGA_C_MN15_L
 syn keyword cp2kSection MGGA_C_PKZB
 syn keyword cp2kSection MGGA_C_R2SCAN
+syn keyword cp2kSection MGGA_C_R2SCAN01
 syn keyword cp2kSection MGGA_C_R2SCANL
 syn keyword cp2kSection MGGA_C_REVM06
 syn keyword cp2kSection MGGA_C_REVM06_L
@@ -1790,6 +1792,8 @@ syn keyword cp2kSection MGGA_C_REVSCAN
 syn keyword cp2kSection MGGA_C_REVSCAN_VV10
 syn keyword cp2kSection MGGA_C_REVTM
 syn keyword cp2kSection MGGA_C_REVTPSS
+syn keyword cp2kSection MGGA_C_RMGGAC
+syn keyword cp2kSection MGGA_C_RREGTM
 syn keyword cp2kSection MGGA_C_RSCAN
 syn keyword cp2kSection MGGA_C_SCAN
 syn keyword cp2kSection MGGA_C_SCANL
@@ -1847,6 +1851,7 @@ syn keyword cp2kSection MGGA_X_MBEEFVDW
 syn keyword cp2kSection MGGA_X_MBR
 syn keyword cp2kSection MGGA_X_MBRXC_BG
 syn keyword cp2kSection MGGA_X_MBRXH_BG
+syn keyword cp2kSection MGGA_X_MCML
 syn keyword cp2kSection MGGA_X_MGGAC
 syn keyword cp2kSection MGGA_X_MK00
 syn keyword cp2kSection MGGA_X_MK00B
