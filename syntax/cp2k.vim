@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:6ed3193)
+" CP2K-Version: CP2K version 9.0 (git:a938171)
 
 if exists("b:current_syntax")
    finish
@@ -105,6 +105,7 @@ syn keyword cp2kConstant ANALYTIC
 syn keyword cp2kConstant ANALYTICAL
 syn keyword cp2kConstant ANDREUSSI
 syn keyword cp2kConstant ANGSTROM
+syn keyword cp2kConstant AO_ORTHO
 syn keyword cp2kConstant ARNOLDI
 syn keyword cp2kConstant ASPC
 syn keyword cp2kConstant ATOM
@@ -142,6 +143,7 @@ syn keyword cp2kConstant BECKE
 syn keyword cp2kConstant BECKE88X
 syn keyword cp2kConstant BEEFVDW
 syn keyword cp2kConstant BERRY
+syn keyword cp2kConstant BEST_AVAILABLE
 syn keyword cp2kConstant BETA
 syn keyword cp2kConstant BEYN
 syn keyword cp2kConstant BFGS
@@ -228,7 +230,6 @@ syn keyword cp2kConstant CRD
 syn keyword cp2kConstant CSVR
 syn keyword cp2kConstant CUBE
 syn keyword cp2kConstant CUBIC
-syn keyword cp2kConstant CURVY_STEPS
 syn keyword cp2kConstant CUSTOM
 syn keyword cp2kConstant CYCLE
 syn keyword cp2kConstant D-NEB
@@ -394,6 +395,7 @@ syn keyword cp2kConstant GPW
 syn keyword cp2kConstant GPW_HALF_TRANSFORM
 syn keyword cp2kConstant GREEDY
 syn keyword cp2kConstant GRID
+syn keyword cp2kConstant GROUND_STATE
 syn keyword cp2kConstant GTH
 syn keyword cp2kConstant HAGER_ZHANG
 syn keyword cp2kConstant HARMONIC
@@ -520,6 +522,7 @@ syn keyword cp2kConstant MOPAC
 syn keyword cp2kConstant MORSE
 syn keyword cp2kConstant MO_DIAG
 syn keyword cp2kConstant MO_NO_DIAG
+syn keyword cp2kConstant MO_SOLVER
 syn keyword cp2kConstant MP
 syn keyword cp2kConstant MP2_GPW
 syn keyword cp2kConstant MSST
@@ -530,6 +533,7 @@ syn keyword cp2kConstant MULLIKEN_CHARGES
 syn keyword cp2kConstant MULTIPLE_MINIMUM_DEGREE
 syn keyword cp2kConstant MULTIPOLE
 syn keyword cp2kConstant MULTISECANT_MIXING
+syn keyword cp2kConstant MULTI_LEVEL
 syn keyword cp2kConstant MUMPS
 syn keyword cp2kConstant MWATER
 syn keyword cp2kConstant NE
@@ -594,6 +598,7 @@ syn keyword cp2kConstant OS
 syn keyword cp2kConstant OS_SPIN_CONS
 syn keyword cp2kConstant OS_SPIN_FLIP
 syn keyword cp2kConstant OT
+syn keyword cp2kConstant OT_DIAG
 syn keyword cp2kConstant OVERLAP
 syn keyword cp2kConstant PADE
 syn keyword cp2kConstant PAIR_POTENTIAL
@@ -1103,6 +1108,7 @@ syn keyword cp2kSection EWALD
 syn keyword cp2kSection EWALD_INFO
 syn keyword cp2kSection EXACT_EXCHANGE
 syn keyword cp2kSection EXCHANGE
+syn keyword cp2kSection EXCITED_STATES
 syn keyword cp2kSection EXCLUDE_EI_LIST
 syn keyword cp2kSection EXCLUDE_VDW_LIST
 syn keyword cp2kSection EXTERNAL_DENSITY
@@ -1725,7 +1731,6 @@ syn keyword cp2kSection LOW_SPIN_ROKS
 syn keyword cp2kSection LRIGPW
 syn keyword cp2kSection LR_CORRECTION
 syn keyword cp2kSection LS_SCF
-syn keyword cp2kSection LS_SOLVER
 syn keyword cp2kSection LYP
 syn keyword cp2kSection LYP_ADIABATIC
 syn keyword cp2kSection M-SAMPLING
@@ -2052,6 +2057,7 @@ syn keyword cp2kSection RESP
 syn keyword cp2kSection RESPA
 syn keyword cp2kSection RESPONSE_BASIS
 syn keyword cp2kSection RESPONSE_FUNCTION_CUBES
+syn keyword cp2kSection RESPONSE_SOLVER
 syn keyword cp2kSection RESP_CHARGES_TO_FILE
 syn keyword cp2kSection RESTART
 syn keyword cp2kSection RESTART_AVERAGES
@@ -2261,6 +2267,7 @@ syn keyword cp2kKeyword ADDED_MOS
 syn keyword cp2kKeyword ADD_LAST
 syn keyword cp2kKeyword ADJUST_SIZE
 syn keyword cp2kKeyword ADMM
+syn keyword cp2kKeyword ADMM_KERNEL_CORRECTION_SYMMETRIC
 syn keyword cp2kKeyword ADMM_PURIFICATION_METHOD
 syn keyword cp2kKeyword AH
 syn keyword cp2kKeyword AINT_PRECOND
@@ -2593,6 +2600,7 @@ syn keyword cp2kKeyword COST_MODEL
 syn keyword cp2kKeyword COULOMB_CONSTANTS
 syn keyword cp2kKeyword COULOMB_INTEGRALS
 syn keyword cp2kKeyword COULOMB_INTERACTION
+syn keyword cp2kKeyword COULOMB_LR
 syn keyword cp2kKeyword COUNTER
 syn keyword cp2kKeyword COUPLING
 syn keyword cp2kKeyword COUPLING_PARAMETER
@@ -3649,6 +3657,7 @@ syn keyword cp2kKeyword ORTHOGONAL_EPS
 syn keyword cp2kKeyword ORTHO_IRAC
 syn keyword cp2kKeyword OR_PARAMETER OMEGA
 syn keyword cp2kKeyword OSCILLATING_FRACTION
+syn keyword cp2kKeyword OT_INITIAL_GUESS
 syn keyword cp2kKeyword OUTER_ATOMS
 syn keyword cp2kKeyword OUTER_RADIUS
 syn keyword cp2kKeyword OUTPUT_EMP
@@ -4142,6 +4151,7 @@ syn keyword cp2kKeyword SIZE
 syn keyword cp2kKeyword SIZE_FREQ_INTEG_GROUP RPA_GROUP_SIZE
 syn keyword cp2kKeyword SIZE_INTEG_GROUP LAPLACE_GROUP_SIZE
 syn keyword cp2kKeyword SIZE_LATTICE_SUM
+syn keyword cp2kKeyword SKIP_EC
 syn keyword cp2kKeyword SKIP_FIRST
 syn keyword cp2kKeyword SKIP_LOAD_BALANCE_DISTRIBUTED
 syn keyword cp2kKeyword SKIP_OPTIMIZATION
@@ -4192,6 +4202,7 @@ syn keyword cp2kKeyword START_ITER
 syn keyword cp2kKeyword START_STEP
 syn keyword cp2kKeyword START_STEP_IN
 syn keyword cp2kKeyword START_STEP_OUT
+syn keyword cp2kKeyword STATE
 syn keyword cp2kKeyword STATES
 syn keyword cp2kKeyword STATE_SEARCH
 syn keyword cp2kKeyword STATE_TYPE TYPE
@@ -4373,6 +4384,7 @@ syn keyword cp2kKeyword USE_MODEL_HESSIAN
 syn keyword cp2kKeyword USE_MPI_ALLOCATOR
 syn keyword cp2kKeyword USE_MPI_RMA
 syn keyword cp2kKeyword USE_OLD_GAUGE_ATOM
+syn keyword cp2kKeyword USE_OLD_GRADIENT_CODE
 syn keyword cp2kKeyword USE_PLUMED
 syn keyword cp2kKeyword USE_RAT_FUN_OPT
 syn keyword cp2kKeyword USE_REPEAT_METHOD
@@ -4466,6 +4478,7 @@ syn keyword cp2kKeyword XAS_TOT_EL
 syn keyword cp2kKeyword XB_RADIUS
 syn keyword cp2kKeyword XC_DENS_TRE
 syn keyword cp2kKeyword XC_DERIV
+syn keyword cp2kKeyword XC_KERNEL_METHOD
 syn keyword cp2kKeyword XC_SMOOTH_RHO
 syn keyword cp2kKeyword XES_CORE
 syn keyword cp2kKeyword XES_EMPTY_HOMO
