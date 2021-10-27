@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:40adc59)
+" CP2K-Version: CP2K version 9.0 (git:c346f44)
 
 if exists("b:current_syntax")
    finish
@@ -1484,6 +1484,7 @@ syn keyword cp2kSection HYB_GGA_XC_CAM_QTP_00
 syn keyword cp2kSection HYB_GGA_XC_CAM_QTP_01
 syn keyword cp2kSection HYB_GGA_XC_CAM_QTP_02
 syn keyword cp2kSection HYB_GGA_XC_CAP0
+syn keyword cp2kSection HYB_GGA_XC_CASE21
 syn keyword cp2kSection HYB_GGA_XC_EDF2
 syn keyword cp2kSection HYB_GGA_XC_HAPBE
 syn keyword cp2kSection HYB_GGA_XC_HFLYP
@@ -1553,6 +1554,8 @@ syn keyword cp2kSection HYB_GGA_XC_WC04
 syn keyword cp2kSection HYB_GGA_XC_WHPBE0
 syn keyword cp2kSection HYB_GGA_XC_WP04
 syn keyword cp2kSection HYB_GGA_XC_X3LYP
+syn keyword cp2kSection HYB_GGA_X_CAM_S12G
+syn keyword cp2kSection HYB_GGA_X_CAM_S12H
 syn keyword cp2kSection HYB_GGA_X_N12_SX
 syn keyword cp2kSection HYB_GGA_X_S12H
 syn keyword cp2kSection HYB_GGA_X_SOGGA11_X
@@ -1698,6 +1701,7 @@ syn keyword cp2kSection LDA_X
 syn keyword cp2kSection LDA_XC_1D_EHWLRG_1
 syn keyword cp2kSection LDA_XC_1D_EHWLRG_2
 syn keyword cp2kSection LDA_XC_1D_EHWLRG_3
+syn keyword cp2kSection LDA_XC_CORRKSDT
 syn keyword cp2kSection LDA_XC_GDSMFB
 syn keyword cp2kSection LDA_XC_KSDT
 syn keyword cp2kSection LDA_XC_LP_A
@@ -1786,6 +1790,7 @@ syn keyword cp2kSection MGGA_C_REVSCAN_VV10
 syn keyword cp2kSection MGGA_C_REVTM
 syn keyword cp2kSection MGGA_C_REVTPSS
 syn keyword cp2kSection MGGA_C_RMGGAC
+syn keyword cp2kSection MGGA_C_RPPSCAN
 syn keyword cp2kSection MGGA_C_RREGTM
 syn keyword cp2kSection MGGA_C_RSCAN
 syn keyword cp2kSection MGGA_C_SCAN
@@ -1864,7 +1869,9 @@ syn keyword cp2kSection MGGA_X_MVSBS
 syn keyword cp2kSection MGGA_X_PBE_GX
 syn keyword cp2kSection MGGA_X_PKZB
 syn keyword cp2kSection MGGA_X_R2SCAN
+syn keyword cp2kSection MGGA_X_R2SCAN01
 syn keyword cp2kSection MGGA_X_R2SCANL
+syn keyword cp2kSection MGGA_X_R4SCAN
 syn keyword cp2kSection MGGA_X_REGTM
 syn keyword cp2kSection MGGA_X_REGTPSS
 syn keyword cp2kSection MGGA_X_REVM06_L
@@ -1874,6 +1881,7 @@ syn keyword cp2kSection MGGA_X_REVTM
 syn keyword cp2kSection MGGA_X_REVTPSS
 syn keyword cp2kSection MGGA_X_RLDA
 syn keyword cp2kSection MGGA_X_RPP09
+syn keyword cp2kSection MGGA_X_RPPSCAN
 syn keyword cp2kSection MGGA_X_RSCAN
 syn keyword cp2kSection MGGA_X_RTPSS
 syn keyword cp2kSection MGGA_X_SA_TPSS
@@ -4617,6 +4625,7 @@ syn keyword cp2kKeyword _CAB2
 syn keyword cp2kKeyword _CAB3
 syn keyword cp2kKeyword _CAB4
 syn keyword cp2kKeyword _CC
+syn keyword cp2kKeyword _CC0
 syn keyword cp2kKeyword _CC00
 syn keyword cp2kKeyword _CC000
 syn keyword cp2kKeyword _CC001
@@ -4639,6 +4648,7 @@ syn keyword cp2kKeyword _CC03
 syn keyword cp2kKeyword _CC030
 syn keyword cp2kKeyword _CC031
 syn keyword cp2kKeyword _CC032
+syn keyword cp2kKeyword _CC1
 syn keyword cp2kKeyword _CC10
 syn keyword cp2kKeyword _CC100
 syn keyword cp2kKeyword _CC101
@@ -4655,6 +4665,7 @@ syn keyword cp2kKeyword _CC120
 syn keyword cp2kKeyword _CC121
 syn keyword cp2kKeyword _CC122
 syn keyword cp2kKeyword _CC13
+syn keyword cp2kKeyword _CC2
 syn keyword cp2kKeyword _CC20
 syn keyword cp2kKeyword _CC200
 syn keyword cp2kKeyword _CC201
@@ -4666,6 +4677,7 @@ syn keyword cp2kKeyword _CC211
 syn keyword cp2kKeyword _CC212
 syn keyword cp2kKeyword _CC22
 syn keyword cp2kKeyword _CC23
+syn keyword cp2kKeyword _CC3
 syn keyword cp2kKeyword _CC30
 syn keyword cp2kKeyword _CC300
 syn keyword cp2kKeyword _CC301
@@ -4673,6 +4685,12 @@ syn keyword cp2kKeyword _CC302
 syn keyword cp2kKeyword _CC31
 syn keyword cp2kKeyword _CC32
 syn keyword cp2kKeyword _CC33
+syn keyword cp2kKeyword _CC4
+syn keyword cp2kKeyword _CC5
+syn keyword cp2kKeyword _CC6
+syn keyword cp2kKeyword _CC7
+syn keyword cp2kKeyword _CC8
+syn keyword cp2kKeyword _CC9
 syn keyword cp2kKeyword _CLR
 syn keyword cp2kKeyword _CLYP
 syn keyword cp2kKeyword _COPP
@@ -4697,6 +4715,11 @@ syn keyword cp2kKeyword _CX1
 syn keyword cp2kKeyword _CX2
 syn keyword cp2kKeyword _CX3
 syn keyword cp2kKeyword _CX4
+syn keyword cp2kKeyword _CX5
+syn keyword cp2kKeyword _CX6
+syn keyword cp2kKeyword _CX7
+syn keyword cp2kKeyword _CX8
+syn keyword cp2kKeyword _CX9
 syn keyword cp2kKeyword _CXL0
 syn keyword cp2kKeyword _CXL1
 syn keyword cp2kKeyword _CXL2
@@ -4719,6 +4742,7 @@ syn keyword cp2kKeyword _D6
 syn keyword cp2kKeyword _D7
 syn keyword cp2kKeyword _D8
 syn keyword cp2kKeyword _D9
+syn keyword cp2kKeyword _DA4
 syn keyword cp2kKeyword _DAB0
 syn keyword cp2kKeyword _DAB1
 syn keyword cp2kKeyword _DAB2
@@ -4727,6 +4751,7 @@ syn keyword cp2kKeyword _DAB4
 syn keyword cp2kKeyword _DAB5
 syn keyword cp2kKeyword _DELTA
 syn keyword cp2kKeyword _DP2
+syn keyword cp2kKeyword _DP4
 syn keyword cp2kKeyword _DSS0
 syn keyword cp2kKeyword _DSS1
 syn keyword cp2kKeyword _DSS2
@@ -4746,6 +4771,8 @@ syn keyword cp2kKeyword _FZ20
 syn keyword cp2kKeyword _GAMMA
 syn keyword cp2kKeyword _GAMMA0
 syn keyword cp2kKeyword _GAMMA1
+syn keyword cp2kKeyword _GAMMAC
+syn keyword cp2kKeyword _GAMMAX
 syn keyword cp2kKeyword _GAMMA_AB
 syn keyword cp2kKeyword _GAMMA_SS
 syn keyword cp2kKeyword _H
