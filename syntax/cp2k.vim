@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:eb7a397)
+" CP2K-Version: CP2K version 9.0 (git:e56e7b7)
 
 if exists("b:current_syntax")
    finish
@@ -3300,7 +3300,9 @@ syn keyword cp2kKeyword M-VALUE
 syn keyword cp2kKeyword MAGNETIC
 syn keyword cp2kKeyword MAGNETIZATION
 syn keyword cp2kKeyword MAO
+syn keyword cp2kKeyword MAO_EPS1
 syn keyword cp2kKeyword MAO_EPS_GRAD
+syn keyword cp2kKeyword MAO_IOLEVEL
 syn keyword cp2kKeyword MAO_MAX_ITER
 syn keyword cp2kKeyword MAP
 syn keyword cp2kKeyword MAP_ATOMS
