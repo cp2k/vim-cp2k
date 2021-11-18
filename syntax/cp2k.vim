@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:c88c052)
+" CP2K-Version: CP2K version 9.0 (git:9cea0ff)
 
 if exists("b:current_syntax")
    finish
@@ -909,6 +909,7 @@ syn keyword cp2kSection ANGLE
 syn keyword cp2kSection ANGLES
 syn keyword cp2kSection ANGLE_PLANE_PLANE
 syn keyword cp2kSection AO_MATRICES
+syn keyword cp2kSection APT
 syn keyword cp2kSection ATOM
 syn keyword cp2kSection ATOMIC
 syn keyword cp2kSection ATOMIC_COORDINATES
@@ -1033,6 +1034,7 @@ syn keyword cp2kSection CUTOFF_CALIB
 syn keyword cp2kSection DAMPING
 syn keyword cp2kSection DAVIDSON
 syn keyword cp2kSection DBCSR
+syn keyword cp2kSection DCDR
 syn keyword cp2kSection DDAPC_RESTRAINT
 syn keyword cp2kSection DDAPC_RESTRAINT_A
 syn keyword cp2kSection DDAPC_RESTRAINT_B
@@ -2728,6 +2730,7 @@ syn keyword cp2kKeyword DISTANCES_RMSD
 syn keyword cp2kKeyword DISTANT_PAIR_APPROXIMATION
 syn keyword cp2kKeyword DISTANT_PAIR_METHOD
 syn keyword cp2kKeyword DISTANT_PAIR_RADII
+syn keyword cp2kKeyword DISTRIBUTED_ORIGIN DO_GAUGE
 syn keyword cp2kKeyword DISTRIBUTION-TYPE
 syn keyword cp2kKeyword DISTRIBUTION_LAYOUT
 syn keyword cp2kKeyword DISTRIBUTION_TYPE
@@ -3269,6 +3272,7 @@ syn keyword cp2kKeyword LINPOT_REGULARIZATION_STRENGTH
 syn keyword cp2kKeyword LIN_SEARCH_EPS_ERROR
 syn keyword cp2kKeyword LIN_SEARCH_STEP_SIZE_GUESS
 syn keyword cp2kKeyword LIST
+syn keyword cp2kKeyword LIST_OF_ATOMS
 syn keyword cp2kKeyword LIST_UNOCCUPIED
 syn keyword cp2kKeyword LMAX
 syn keyword cp2kKeyword LMAXN0 LMAXRHO0
