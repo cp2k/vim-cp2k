@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:9cea0ff)
+" CP2K-Version: CP2K version 9.0 (git:8b72b57)
 
 if exists("b:current_syntax")
    finish
@@ -243,6 +243,7 @@ syn keyword cp2kConstant DDAPC_CONSTRAINT
 syn keyword cp2kConstant DEBUG
 syn keyword cp2kConstant DEFAULT
 syn keyword cp2kConstant DEFINED
+syn keyword cp2kConstant DENSE
 syn keyword cp2kConstant DENSE_CHOLESKY
 syn keyword cp2kConstant DENSITY
 syn keyword cp2kConstant DENSITY_DEPENDENT
@@ -490,6 +491,7 @@ syn keyword cp2kConstant MEASURE
 syn keyword cp2kConstant MEDIUM
 syn keyword cp2kConstant MERLOT
 syn keyword cp2kConstant METADYN
+syn keyword cp2kConstant MINIMAL
 syn keyword cp2kConstant MINIMA_CRAWLING
 syn keyword cp2kConstant MINIMA_HOPPING
 syn keyword cp2kConstant MINIMIZATION
@@ -2448,6 +2450,7 @@ syn keyword cp2kKeyword BLOCK
 syn keyword cp2kKeyword BLOCK_DIAGONALIZE
 syn keyword cp2kKeyword BLOCK_LIST
 syn keyword cp2kKeyword BLOCK_SIZE
+syn keyword cp2kKeyword BLOCK_SIZE_RI
 syn keyword cp2kKeyword BOND
 syn keyword cp2kKeyword BONDLENGTH_MAX
 syn keyword cp2kKeyword BONDLENGTH_MIN
