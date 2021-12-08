@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:8d484e4)
+" CP2K-Version: CP2K version 9.0 (git:da05a11)
 
 if exists("b:current_syntax")
    finish
@@ -779,6 +779,7 @@ syn keyword cp2kConstant SYMBOLIC
 syn keyword cp2kConstant SYRK
 syn keyword cp2kConstant T
 syn keyword cp2kConstant T92
+syn keyword cp2kConstant TAILORED
 syn keyword cp2kConstant TAMC
 syn keyword cp2kConstant TAYLOR
 syn keyword cp2kConstant TC2
@@ -1996,6 +1997,7 @@ syn keyword cp2kSection PBE_HOLE_T_C_LR
 syn keyword cp2kSection PDOS
 syn keyword cp2kSection PENALTY
 syn keyword cp2kSection PERIODIC
+syn keyword cp2kSection PERIODIC_CORRECTION
 syn keyword cp2kSection PERIODIC_EFIELD
 syn keyword cp2kSection PERIODIC_INFO
 syn keyword cp2kSection PERM
@@ -2636,7 +2638,6 @@ syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_RADIUS
 syn keyword cp2kKeyword CUTOFF_TYPE
-syn keyword cp2kKeyword CUTOFF_W
 syn keyword cp2kKeyword CUTOUT
 syn keyword cp2kKeyword CYCLE
 syn keyword cp2kKeyword CYCLIC_BLOCK_SIZE
@@ -2948,8 +2949,8 @@ syn keyword cp2kKeyword EXCLUDE_EI
 syn keyword cp2kKeyword EXCLUDE_MM
 syn keyword cp2kKeyword EXCLUDE_QM
 syn keyword cp2kKeyword EXCLUDE_VDW
+syn keyword cp2kKeyword EXPONENT_TAILORED_WEIGHTS
 syn keyword cp2kKeyword EXP_ACCURACY
-syn keyword cp2kKeyword EXP_KPOINTS
 syn keyword cp2kKeyword EXP_PRE
 syn keyword cp2kKeyword EXTENDED_DELTA_CHARGE
 syn keyword cp2kKeyword EXTENDED_FFT_LENGTHS
@@ -3230,10 +3231,12 @@ syn keyword cp2kKeyword KINETIC_ENERGY
 syn keyword cp2kKeyword KOHN_SHAM_MATRIX
 syn keyword cp2kKeyword KPOINT
 syn keyword cp2kKeyword KPOINTS
+syn keyword cp2kKeyword KPOINT_WEIGHTS_W
 syn keyword cp2kKeyword KSS
 syn keyword cp2kKeyword KT_CORRECTION
 syn keyword cp2kKeyword K_B
 syn keyword cp2kKeyword K_CONFIDENCE_LIMIT
+syn keyword cp2kKeyword K_MESH_G_FACTOR
 syn keyword cp2kKeyword K_RHO
 syn keyword cp2kKeyword K_SPRING K
 syn keyword cp2kKeyword L
@@ -3304,6 +3307,7 @@ syn keyword cp2kKeyword M-RATIO
 syn keyword cp2kKeyword M-VALUE
 syn keyword cp2kKeyword MAGNETIC
 syn keyword cp2kKeyword MAGNETIZATION
+syn keyword cp2kKeyword MAKE_CHI_POS_DEFINITE
 syn keyword cp2kKeyword MAO
 syn keyword cp2kKeyword MAO_EPS1
 syn keyword cp2kKeyword MAO_EPS_GRAD
@@ -3728,6 +3732,7 @@ syn keyword cp2kKeyword PENALTY_STRENGTH_DECREASE_FACTOR
 syn keyword cp2kKeyword PERFORM_MU_SCAN
 syn keyword cp2kKeyword PERIODIC
 syn keyword cp2kKeyword PERIODICITY
+syn keyword cp2kKeyword PERIODIC_CORRECTION
 syn keyword cp2kKeyword PERIODIC_DIPOLE_OPERATOR
 syn keyword cp2kKeyword PERIODIC_REGION
 syn keyword cp2kKeyword PF
@@ -3937,12 +3942,14 @@ syn keyword cp2kKeyword REF_FORCE_FILE_NAME
 syn keyword cp2kKeyword REF_TRAJ_FILE_NAME
 syn keyword cp2kKeyword REGION
 syn keyword cp2kKeyword REGULARIZATION
+syn keyword cp2kKeyword REGULARIZATION_RI
 syn keyword cp2kKeyword REG_LAMBDA
 syn keyword cp2kKeyword RELATIVE_PERMITTIVITY DIELECTRIC_CONSTANT EPSILON_RELATIVE EPSILON_SOLVENT
 syn keyword cp2kKeyword RELATIVE_TOLERANCE
 syn keyword cp2kKeyword RELATIVISTIC
 syn keyword cp2kKeyword RELAX_MULTIPLICITY RELAX_MULTIP
 syn keyword cp2kKeyword REL_CUTOFF RELATIVE_CUTOFF
+syn keyword cp2kKeyword REL_CUTOFFS_CHI_W
 syn keyword cp2kKeyword REMOVE_CONTRACTION
 syn keyword cp2kKeyword REMOVE_SET
 syn keyword cp2kKeyword REORDER
