@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:da05a11)
+" CP2K-Version: CP2K version 9.0 (git:faa73d2)
 
 if exists("b:current_syntax")
    finish
@@ -61,6 +61,7 @@ syn match cp2kComment "!.*$" contains=cp2kTodo
 " CP2K predefined constants
 "----------------------------------------------------------------/
 
+syn keyword cp2kConstant 
 syn keyword cp2kConstant -X
 syn keyword cp2kConstant -Y
 syn keyword cp2kConstant -Z
@@ -103,6 +104,8 @@ syn keyword cp2kConstant AMBER
 syn keyword cp2kConstant AMD_GPU
 syn keyword cp2kConstant ANALYTIC
 syn keyword cp2kConstant ANALYTICAL
+syn keyword cp2kConstant ANDERSON
+syn keyword cp2kConstant ANDERSON_STABLE
 syn keyword cp2kConstant ANDREUSSI
 syn keyword cp2kConstant ANGSTROM
 syn keyword cp2kConstant AO_ORTHO
@@ -166,6 +169,7 @@ syn keyword cp2kConstant BOX
 syn keyword cp2kConstant BOYS
 syn keyword cp2kConstant BP
 syn keyword cp2kConstant BROYDEN
+syn keyword cp2kConstant BROYDEN2
 syn keyword cp2kConstant BROYDEN_MIXING
 syn keyword cp2kConstant BROYDEN_MIXING_NEW
 syn keyword cp2kConstant BSSE
@@ -206,6 +210,7 @@ syn keyword cp2kConstant CLENSHAW-CURTIS
 syn keyword cp2kConstant CN
 syn keyword cp2kConstant COAC
 syn keyword cp2kConstant COEFFICIENTS
+syn keyword cp2kConstant COLD
 syn keyword cp2kConstant COLLOCATE
 syn keyword cp2kConstant COLUMN
 syn keyword cp2kConstant COM
@@ -230,6 +235,7 @@ syn keyword cp2kConstant CRD
 syn keyword cp2kConstant CSVR
 syn keyword cp2kConstant CUBE
 syn keyword cp2kConstant CUBIC
+syn keyword cp2kConstant CUSOLVER
 syn keyword cp2kConstant CUSTOM
 syn keyword cp2kConstant CYCLE
 syn keyword cp2kConstant D-NEB
@@ -261,6 +267,7 @@ syn keyword cp2kConstant DIFF
 syn keyword cp2kConstant DIIS
 syn keyword cp2kConstant DIMER
 syn keyword cp2kConstant DIPOLE
+syn keyword cp2kConstant DIRAC
 syn keyword cp2kConstant DIRECT
 syn keyword cp2kConstant DIRECT_CANONICAL
 syn keyword cp2kConstant DIRECT_CELL_OPT
@@ -297,6 +304,8 @@ syn keyword cp2kConstant EIP
 syn keyword cp2kConstant ELECTRONIC_SPECTRA
 syn keyword cp2kConstant ELEMENT
 syn keyword cp2kConstant ELPA
+syn keyword cp2kConstant ELPA1
+syn keyword cp2kConstant ELPA2
 syn keyword cp2kConstant EM
 syn keyword cp2kConstant EMBED
 syn keyword cp2kConstant EMBEDDING
@@ -346,6 +355,8 @@ syn keyword cp2kConstant FLETCHER
 syn keyword cp2kConstant FLETCHER_REEVES
 syn keyword cp2kConstant FOCK
 syn keyword cp2kConstant FORCE_MATCHING
+syn keyword cp2kConstant FP32
+syn keyword cp2kConstant FP64
 syn keyword cp2kConstant FREE
 syn keyword cp2kConstant FROZEN
 syn keyword cp2kConstant FUES
@@ -353,6 +364,7 @@ syn keyword cp2kConstant FULL
 syn keyword cp2kConstant FULL_ALL
 syn keyword cp2kConstant FULL_GPW
 syn keyword cp2kConstant FULL_KINETIC
+syn keyword cp2kConstant FULL_POTENTIAL_LAPWLO
 syn keyword cp2kConstant FULL_SCF
 syn keyword cp2kConstant FULL_SINGLE
 syn keyword cp2kConstant FULL_SINGLE_INVERSE
@@ -367,6 +379,7 @@ syn keyword cp2kConstant GAPW_XC
 syn keyword cp2kConstant GAUSS
 syn keyword cp2kConstant GAUSSIAN
 syn keyword cp2kConstant GAUSSIAN_PROCESS
+syn keyword cp2kConstant GAUSSIAN_SPLINE
 syn keyword cp2kConstant GAUSS_CHEBYSHEV
 syn keyword cp2kConstant GC_LOG
 syn keyword cp2kConstant GC_SIMPLE
@@ -423,6 +436,7 @@ syn keyword cp2kConstant INVERSE
 syn keyword cp2kConstant INVERSE_CHOLESKY
 syn keyword cp2kConstant INVERSE_DBCSR
 syn keyword cp2kConstant INVERSE_UPDATE
+syn keyword cp2kConstant IORA
 syn keyword cp2kConstant IRAC
 syn keyword cp2kConstant ISOKIN
 syn keyword cp2kConstant IT-NEB
@@ -432,10 +446,12 @@ syn keyword cp2kConstant JACOBI
 syn keyword cp2kConstant KDSO
 syn keyword cp2kConstant KDSO-D
 syn keyword cp2kConstant KERKER_MIXING
+syn keyword cp2kConstant KOELLING_HARMON
 syn keyword cp2kConstant KOHN-SHAM
 syn keyword cp2kConstant L1SD
 syn keyword cp2kConstant LANCZOS
 syn keyword cp2kConstant LANGEVIN
+syn keyword cp2kConstant LAPACK
 syn keyword cp2kConstant LARGE
 syn keyword cp2kConstant LARGEDIAG
 syn keyword cp2kConstant LAST
@@ -445,6 +461,7 @@ syn keyword cp2kConstant LB94
 syn keyword cp2kConstant LBFGS
 syn keyword cp2kConstant LB_ALPHA
 syn keyword cp2kConstant LC
+syn keyword cp2kConstant LCAO
 syn keyword cp2kConstant LDA
 syn keyword cp2kConstant LEGENDRE
 syn keyword cp2kConstant LENGTH
@@ -469,6 +486,8 @@ syn keyword cp2kConstant LRIGPW
 syn keyword cp2kConstant LS_HOTELLING
 syn keyword cp2kConstant LS_TAYLOR
 syn keyword cp2kConstant LWDN
+syn keyword cp2kConstant MAGMA
+syn keyword cp2kConstant MAGMA_GPU
 syn keyword cp2kConstant MAGNETIZATION
 syn keyword cp2kConstant MAO
 syn keyword cp2kConstant MASS
@@ -490,6 +509,7 @@ syn keyword cp2kConstant MEASURE
 syn keyword cp2kConstant MEDIUM
 syn keyword cp2kConstant MERLOT
 syn keyword cp2kConstant METADYN
+syn keyword cp2kConstant METHFESEL_PAXTON
 syn keyword cp2kConstant MINIMA_CRAWLING
 syn keyword cp2kConstant MINIMA_HOPPING
 syn keyword cp2kConstant MINIMIZATION
@@ -620,6 +640,7 @@ syn keyword cp2kConstant PIMD
 syn keyword cp2kConstant PINT
 syn keyword cp2kConstant PIPEK
 syn keyword cp2kConstant PLAIN
+syn keyword cp2kConstant PLASMA
 syn keyword cp2kConstant PM3
 syn keyword cp2kConstant PM6
 syn keyword cp2kConstant PM6-FM
@@ -636,6 +657,7 @@ syn keyword cp2kConstant PROJECT_R0_OUT
 syn keyword cp2kConstant PROOT
 syn keyword cp2kConstant PS
 syn keyword cp2kConstant PSEUDO
+syn keyword cp2kConstant PSEUDOPOTENTIAL
 syn keyword cp2kConstant PSEUDOPOTENTIAL_OPTIMIZATION
 syn keyword cp2kConstant PSEUDO_INVERSE_DIAG
 syn keyword cp2kConstant PSEUDO_INVERSE_SVD
@@ -715,6 +737,7 @@ syn keyword cp2kConstant SECANT
 syn keyword cp2kConstant SELF_CONSISTENT
 syn keyword cp2kConstant SEMI_ANALYTIC
 syn keyword cp2kConstant SEQUENTIAL
+syn keyword cp2kConstant SERIAL
 syn keyword cp2kConstant SETUP_ONLY
 syn keyword cp2kConstant SGP
 syn keyword cp2kConstant SHIFT
@@ -2960,6 +2983,7 @@ syn keyword cp2kKeyword EXTRAPOLATE_KPOINTS EXTRAPOLATE
 syn keyword cp2kKeyword EXTRAPOLATION INTERPOLATION WF_INTERPOLATION
 syn keyword cp2kKeyword EXTRAPOLATION_ORDER
 syn keyword cp2kKeyword EXTRA_CHARGE
+syn keyword cp2kKeyword EXTRA_ORTHO
 syn keyword cp2kKeyword EXT_POTENTIAL
 syn keyword cp2kKeyword E_ACCEPT_INIT
 syn keyword cp2kKeyword E_COUPL QMMM_COUPLING ECOUPL
@@ -3019,6 +3043,7 @@ syn keyword cp2kKeyword FORCE_RESCALING
 syn keyword cp2kKeyword FORCE_STATES
 syn keyword cp2kKeyword FORMAT
 syn keyword cp2kKeyword FP
+syn keyword cp2kKeyword FP32_TO_FP64_RMS
 syn keyword cp2kKeyword FRACTION
 syn keyword cp2kKeyword FRACTION_AUX_MOS
 syn keyword cp2kKeyword FRAGMENTATION_THRESHOLD
@@ -3788,7 +3813,9 @@ syn keyword cp2kKeyword POWELL_OPT
 syn keyword cp2kKeyword PPL_RADII
 syn keyword cp2kKeyword PPL_RI
 syn keyword cp2kKeyword PPNL_RADII
-syn keyword cp2kKeyword PRECISION
+syn keyword cp2kKeyword PRECISION_GS
+syn keyword cp2kKeyword PRECISION_HS
+syn keyword cp2kKeyword PRECISION_WF
 syn keyword cp2kKeyword PRECOND
 syn keyword cp2kKeyword PRECONDITION
 syn keyword cp2kKeyword PRECONDITIONER
