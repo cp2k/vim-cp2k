@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:faa73d2)
+" CP2K-Version: CP2K version 9.0 (git:5f63bcb)
 
 if exists("b:current_syntax")
    finish
@@ -1979,6 +1979,7 @@ syn keyword cp2kSection MULTIPLE_WALKERS
 syn keyword cp2kSection MULTIPOLE
 syn keyword cp2kSection MULTIPOLES
 syn keyword cp2kSection NABLAVKS_CUBES
+syn keyword cp2kSection NAMD_PRINT
 syn keyword cp2kSection NEGF
 syn keyword cp2kSection NEIGHBOR_LISTS
 syn keyword cp2kSection NLMO_OPTIMIZER_PCG
@@ -3854,6 +3855,7 @@ syn keyword cp2kKeyword PRINT_PERFORMANCE
 syn keyword cp2kKeyword PRINT_STRESS
 syn keyword cp2kKeyword PRINT_TEST_OUTPUT
 syn keyword cp2kKeyword PRINT_TIMERS
+syn keyword cp2kKeyword PRINT_VIRTUALS
 syn keyword cp2kKeyword PRIOR
 syn keyword cp2kKeyword PRIORITY_BUFFERS
 syn keyword cp2kKeyword PRIORITY_STREAMS
