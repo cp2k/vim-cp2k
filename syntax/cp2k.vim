@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 9.0 (git:99c4a1c)
+" CP2K-Version: CP2K version 9.0 (git:067e01a)
 
 if exists("b:current_syntax")
    finish
@@ -1966,7 +1966,6 @@ syn keyword cp2kSection MO_MAGNITUDE
 syn keyword cp2kSection MO_MOLDEN
 syn keyword cp2kSection MO_ORTHONORMALITY
 syn keyword cp2kSection MP2
-syn keyword cp2kSection MP2_INFO
 syn keyword cp2kSection MSD
 syn keyword cp2kSection MSD_KIND
 syn keyword cp2kSection MSD_MOLECULE
