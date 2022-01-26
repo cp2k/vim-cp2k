@@ -61,7 +61,6 @@ syn match cp2kComment "!.*$" contains=cp2kTodo
 " CP2K predefined constants
 "----------------------------------------------------------------/
 
-syn keyword cp2kConstant 
 syn keyword cp2kConstant -X
 syn keyword cp2kConstant -Y
 syn keyword cp2kConstant -Z
