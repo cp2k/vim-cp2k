@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:6ed042c)
+" CP2K-Version: CP2K version 10.0 (git:13e1999)
 
 if exists("b:current_syntax")
    finish
@@ -1472,6 +1472,8 @@ syn keyword cp2kSection HCTH
 syn keyword cp2kSection HELIUM
 syn keyword cp2kSection HESSIAN
 syn keyword cp2kSection HF
+syn keyword cp2kSection HFXLR
+syn keyword cp2kSection HFX_KERNEL
 syn keyword cp2kSection HF_INFO
 syn keyword cp2kSection HILLS
 syn keyword cp2kSection HIRSHFELD
@@ -2217,6 +2219,7 @@ syn keyword cp2kSection UMBRELLA_INTEGRATION
 syn keyword cp2kSection UPDATE
 syn keyword cp2kSection UPF_FILE
 syn keyword cp2kSection UVAR
+syn keyword cp2kSection UZH2022
 syn keyword cp2kSection VARIABLE
 syn keyword cp2kSection VDW_POTENTIAL
 syn keyword cp2kSection VELOCITIES
@@ -2261,6 +2264,7 @@ syn keyword cp2kSection XAS_TDP
 syn keyword cp2kSection XC
 syn keyword cp2kSection XC_FUNCTIONAL
 syn keyword cp2kSection XC_GRID
+syn keyword cp2kSection XC_KERNEL
 syn keyword cp2kSection XC_POTENTIAL
 syn keyword cp2kSection XES_SPECTRUM
 syn keyword cp2kSection XGGA
@@ -3468,11 +3472,13 @@ syn keyword cp2kKeyword MM_SUBSYS PROTEIN
 syn keyword cp2kKeyword MODEFACTOR
 syn keyword cp2kKeyword MODEL
 syn keyword cp2kKeyword MODEL_GRAD_NORM_RATIO
+syn keyword cp2kKeyword MOLECULAR_PROPERTIES
 syn keyword cp2kKeyword MOLECULE
 syn keyword cp2kKeyword MOLECULES_FILE_NAME
 syn keyword cp2kKeyword MOLECULE_CORRECTION
 syn keyword cp2kKeyword MOLECULE_CORRECTION_C8
 syn keyword cp2kKeyword MOLNAME SEGNAME
+syn keyword cp2kKeyword MOLPROP_FILE_NAME
 syn keyword cp2kKeyword MOL_CHECK
 syn keyword cp2kKeyword MOMENTUM_CONSERVATION_REGION
 syn keyword cp2kKeyword MOMENTUM_CONSERVATION_TYPE
