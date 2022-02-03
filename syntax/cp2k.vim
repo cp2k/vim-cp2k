@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:13e1999)
+" CP2K-Version: CP2K version 10.0 (git:b639cfd)
 
 if exists("b:current_syntax")
    finish
@@ -1662,7 +1662,6 @@ syn keyword cp2kSection ITER_INFO
 syn keyword cp2kSection JOB
 syn keyword cp2kSection KERNEL
 syn keyword cp2kSection KE_GGA
-syn keyword cp2kSection KE_LIBXC
 syn keyword cp2kSection KG_METHOD
 syn keyword cp2kSection KG_POTENTIAL
 syn keyword cp2kSection KIND
@@ -1748,7 +1747,6 @@ syn keyword cp2kSection LDA_X_SLOC
 syn keyword cp2kSection LDA_X_YUKAWA
 syn keyword cp2kSection LDOS
 syn keyword cp2kSection LENNARD-JONES
-syn keyword cp2kSection LIBXC
 syn keyword cp2kSection LINEAR
 syn keyword cp2kSection LINE_SEARCH
 syn keyword cp2kSection LINK
