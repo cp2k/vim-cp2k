@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:b639cfd)
+" CP2K-Version: CP2K version 10.0 (git:b290291)
 
 if exists("b:current_syntax")
    finish
@@ -353,7 +353,6 @@ syn keyword cp2kConstant FIT
 syn keyword cp2kConstant FIX_POINT
 syn keyword cp2kConstant FLETCHER
 syn keyword cp2kConstant FLETCHER_REEVES
-syn keyword cp2kConstant FLEX
 syn keyword cp2kConstant FOCK
 syn keyword cp2kConstant FORCE_MATCHING
 syn keyword cp2kConstant FP32
