@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:b290291)
+" CP2K-Version: CP2K version 10.0 (git:903cfe9)
 
 if exists("b:current_syntax")
    finish
@@ -3349,6 +3349,8 @@ syn keyword cp2kKeyword MARK_STATES
 syn keyword cp2kKeyword MASS
 syn keyword cp2kKeyword MASS_FRACTION MASS
 syn keyword cp2kKeyword MASTER_SLAVE
+syn keyword cp2kKeyword MATAGA_NISHIMOTO_CEXP
+syn keyword cp2kKeyword MATAGA_NISHIMOTO_XEXP
 syn keyword cp2kKeyword MATMUL
 syn keyword cp2kKeyword MATRICES_FILE_NAME
 syn keyword cp2kKeyword MATRIX_CLUSTER_TYPE
