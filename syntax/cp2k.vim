@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:903cfe9)
+" CP2K-Version: CP2K version 10.0 (git:d40d240)
 
 if exists("b:current_syntax")
    finish
@@ -207,6 +207,7 @@ syn keyword cp2kConstant CI-NEB
 syn keyword cp2kConstant CIF
 syn keyword cp2kConstant CIRCUMSCRIBED
 syn keyword cp2kConstant CLENSHAW-CURTIS
+syn keyword cp2kConstant CMD
 syn keyword cp2kConstant CN
 syn keyword cp2kConstant COAC
 syn keyword cp2kConstant COEFFICIENTS
@@ -1185,6 +1186,7 @@ syn keyword cp2kSection FRAGMENT_ENERGIES
 syn keyword cp2kSection FRAME
 syn keyword cp2kSection FREE_ENERGY
 syn keyword cp2kSection FREE_ENERGY_INFO
+syn keyword cp2kSection FULL_RESTART
 syn keyword cp2kSection G3X3
 syn keyword cp2kSection G4X6
 syn keyword cp2kSection GA
