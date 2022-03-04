@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:d40d240)
+" CP2K-Version: CP2K version 10.0 (git:e3747cb)
 
 if exists("b:current_syntax")
    finish
@@ -144,6 +144,7 @@ syn keyword cp2kConstant BAZANT
 syn keyword cp2kConstant BCH
 syn keyword cp2kConstant BECKE
 syn keyword cp2kConstant BECKE88X
+syn keyword cp2kConstant BECKE88X_LIBXC
 syn keyword cp2kConstant BEEFVDW
 syn keyword cp2kConstant BERRY
 syn keyword cp2kConstant BEST_AVAILABLE
@@ -249,6 +250,7 @@ syn keyword cp2kConstant DDAPC
 syn keyword cp2kConstant DDAPC_CONSTRAINT
 syn keyword cp2kConstant DEBUG
 syn keyword cp2kConstant DEFAULT
+syn keyword cp2kConstant DEFAULT_LIBXC
 syn keyword cp2kConstant DEFINED
 syn keyword cp2kConstant DENSE_CHOLESKY
 syn keyword cp2kConstant DENSITY
@@ -611,6 +613,7 @@ syn keyword cp2kConstant OPLS
 syn keyword cp2kConstant OPTIMIZE_BASIS
 syn keyword cp2kConstant OPTIMIZE_INPUT
 syn keyword cp2kConstant OPTX
+syn keyword cp2kConstant OPTX_LIBXC
 syn keyword cp2kConstant ORBITAL
 syn keyword cp2kConstant ORIG
 syn keyword cp2kConstant ORIGINAL
@@ -631,6 +634,7 @@ syn keyword cp2kConstant PBE
 syn keyword cp2kConstant PBE0
 syn keyword cp2kConstant PBESOL
 syn keyword cp2kConstant PBEX
+syn keyword cp2kConstant PBEX_LIBXC
 syn keyword cp2kConstant PCG
 syn keyword cp2kConstant PDB
 syn keyword cp2kConstant PDG
