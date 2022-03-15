@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:e3747cb)
+" CP2K-Version: CP2K version 10.0 (git:820d80c)
 
 if exists("b:current_syntax")
    finish
@@ -565,7 +565,6 @@ syn keyword cp2kConstant NEGF
 syn keyword cp2kConstant NEUMANN
 syn keyword cp2kConstant NEURAL_NETWORK
 syn keyword cp2kConstant NEVER
-syn keyword cp2kConstant NEW
 syn keyword cp2kConstant NEWTON
 syn keyword cp2kConstant NEWTONSCHULZ
 syn keyword cp2kConstant NEWTON_LS
@@ -592,6 +591,7 @@ syn keyword cp2kConstant NPE_F
 syn keyword cp2kConstant NPE_I
 syn keyword cp2kConstant NPT_F
 syn keyword cp2kConstant NPT_I
+syn keyword cp2kConstant NPT_IA
 syn keyword cp2kConstant NS-FULLSPACE
 syn keyword cp2kConstant NS-HALFSPACE
 syn keyword cp2kConstant NUMERIC
@@ -606,7 +606,6 @@ syn keyword cp2kConstant OFF
 syn keyword cp2kConstant OFGPW
 syn keyword cp2kConstant OL1
 syn keyword cp2kConstant OL2
-syn keyword cp2kConstant OLD
 syn keyword cp2kConstant OLYP
 syn keyword cp2kConstant ON
 syn keyword cp2kConstant OPLS
