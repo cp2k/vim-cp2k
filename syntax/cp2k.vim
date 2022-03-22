@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:820d80c)
+" CP2K-Version: CP2K version 10.0 (git:349cba1)
 
 if exists("b:current_syntax")
    finish
@@ -423,6 +423,7 @@ syn keyword cp2kConstant HEXAGONAL
 syn keyword cp2kConstant HFX
 syn keyword cp2kConstant HIGH
 syn keyword cp2kConstant HIGH-SPIN
+syn keyword cp2kConstant HIP
 syn keyword cp2kConstant HIRSHFELD
 syn keyword cp2kConstant HISTORY_RESTART
 syn keyword cp2kConstant HLE
