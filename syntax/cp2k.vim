@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:349cba1)
+" CP2K-Version: CP2K version 10.0 (git:1336b54)
 
 if exists("b:current_syntax")
    finish
@@ -3813,8 +3813,6 @@ syn keyword cp2kKeyword PORT
 syn keyword cp2kKeyword POSITION
 syn keyword cp2kKeyword POSITION_FILE
 syn keyword cp2kKeyword POSITION_SCALED POS_SCALED
-syn keyword cp2kKeyword POSTERIOR_BUFFERS
-syn keyword cp2kKeyword POSTERIOR_STREAMS
 syn keyword cp2kKeyword POTENTIAL
 syn keyword cp2kKeyword POTENTIAL_DATA TSHPSC_DATA T_C_G_DATA
 syn keyword cp2kKeyword POTENTIAL_ENERGY
@@ -3871,8 +3869,6 @@ syn keyword cp2kKeyword PRINT_TEST_OUTPUT
 syn keyword cp2kKeyword PRINT_TIMERS
 syn keyword cp2kKeyword PRINT_VIRTUALS
 syn keyword cp2kKeyword PRIOR
-syn keyword cp2kKeyword PRIORITY_BUFFERS
-syn keyword cp2kKeyword PRIORITY_STREAMS
 syn keyword cp2kKeyword PROB
 syn keyword cp2kKeyword PROCESSING_UNIT
 syn keyword cp2kKeyword PROCESS_INHOMOGENOUS
@@ -4386,6 +4382,7 @@ syn keyword cp2kKeyword THERMOSTAT_ENERGY
 syn keyword cp2kKeyword THERMOSTAT_SEED
 syn keyword cp2kKeyword THETA0
 syn keyword cp2kKeyword THICKNESS
+syn keyword cp2kKeyword THREAD_BUFFERS
 syn keyword cp2kKeyword THRESHOLD
 syn keyword cp2kKeyword THRESHOLD_MIN_TRANS EPS
 syn keyword cp2kKeyword TH_TORB
