@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:1336b54)
+" CP2K-Version: CP2K version 10.0 (git:c73f66f)
 
 if exists("b:current_syntax")
    finish
@@ -3248,6 +3248,7 @@ syn keyword cp2kKeyword KBS12
 syn keyword cp2kKeyword KBS32
 syn keyword cp2kKeyword KEEPSPARSE
 syn keyword cp2kKeyword KEEP_ANGLES
+syn keyword cp2kKeyword KEEP_QUADRATURE KEEP_WEIGHTS KEEP_QUAD KEEP_WEIGHT
 syn keyword cp2kKeyword KEEP_SPACE_GROUP
 syn keyword cp2kKeyword KEEP_SYMMETRY
 syn keyword cp2kKeyword KERNEL DO_KERNEL
@@ -3606,6 +3607,7 @@ syn keyword cp2kKeyword NSAMPLE_3C
 syn keyword cp2kKeyword NSKIP NSKIP_MIXING
 syn keyword cp2kKeyword NSTATES
 syn keyword cp2kKeyword NSTEP
+syn keyword cp2kKeyword NSTEPS
 syn keyword cp2kKeyword NSTEPS_IT
 syn keyword cp2kKeyword NSWAPMOVES
 syn keyword cp2kKeyword NS_MAX
