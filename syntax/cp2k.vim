@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:c73f66f)
+" CP2K-Version: CP2K version 10.0 (git:cc2ee1b)
 
 if exists("b:current_syntax")
    finish
@@ -3853,6 +3853,7 @@ syn keyword cp2kKeyword PRINT_CELL
 syn keyword cp2kKeyword PRINT_CHECKSUM
 syn keyword cp2kKeyword PRINT_COORDS
 syn keyword cp2kKeyword PRINT_CUBES
+syn keyword cp2kKeyword PRINT_DGEMM_INFO
 syn keyword cp2kKeyword PRINT_DIPOLE
 syn keyword cp2kKeyword PRINT_ENERGIES
 syn keyword cp2kKeyword PRINT_EXX
