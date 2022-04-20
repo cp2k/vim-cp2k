@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:cc2ee1b)
+" CP2K-Version: CP2K version 10.0 (git:85288d7)
 
 if exists("b:current_syntax")
    finish
@@ -377,6 +377,7 @@ syn keyword cp2kConstant FULL_X_THEN_SCF
 syn keyword cp2kConstant FUNCTIONAL
 syn keyword cp2kConstant G87
 syn keyword cp2kConstant G96
+syn keyword cp2kConstant GAMMA
 syn keyword cp2kConstant GAPW
 syn keyword cp2kConstant GAPW_XC
 syn keyword cp2kConstant GAUSS
@@ -514,6 +515,7 @@ syn keyword cp2kConstant MEDIUM
 syn keyword cp2kConstant MERLOT
 syn keyword cp2kConstant METADYN
 syn keyword cp2kConstant METHFESEL_PAXTON
+syn keyword cp2kConstant MIC
 syn keyword cp2kConstant MINIMA_CRAWLING
 syn keyword cp2kConstant MINIMA_HOPPING
 syn keyword cp2kConstant MINIMIZATION
@@ -3117,6 +3119,7 @@ syn keyword cp2kKeyword GPW_TYPE
 syn keyword cp2kKeyword GP_NOISE_VAR
 syn keyword cp2kKeyword GP_SCALE
 syn keyword cp2kKeyword GRADIENT_CUTOFF
+syn keyword cp2kKeyword GREENS_FUNCTION
 syn keyword cp2kKeyword GRID
 syn keyword cp2kKeyword GRID_2D
 syn keyword cp2kKeyword GRID_OPT
@@ -3268,6 +3271,7 @@ syn keyword cp2kKeyword KINETIC_ENERGY
 syn keyword cp2kKeyword KOHN_SHAM_MATRIX
 syn keyword cp2kKeyword KPOINT
 syn keyword cp2kKeyword KPOINTS
+syn keyword cp2kKeyword KPOINTS_SELF_ENERGY
 syn keyword cp2kKeyword KPOINT_WEIGHTS_W
 syn keyword cp2kKeyword KSS
 syn keyword cp2kKeyword KT_CORRECTION
@@ -4418,6 +4422,7 @@ syn keyword cp2kKeyword TRANSPORT_METHOD
 syn keyword cp2kKeyword TREAT_FORCES_IN_CORE
 syn keyword cp2kKeyword TREAT_LSD_IN_CORE
 syn keyword cp2kKeyword TRUNCATION_RADIUS CUTOFF_RADIUS
+syn keyword cp2kKeyword TRUNC_COLOUMB_RI_X
 syn keyword cp2kKeyword TRUST_RAD
 syn keyword cp2kKeyword TRUST_RADIUS
 syn keyword cp2kKeyword TYPE
