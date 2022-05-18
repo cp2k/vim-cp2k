@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:85288d7)
+" CP2K-Version: CP2K version 10.0 (git:d19b00a)
 
 if exists("b:current_syntax")
    finish
@@ -2361,6 +2361,7 @@ syn keyword cp2kKeyword ASPARSITY
 syn keyword cp2kKeyword ASPC_ORDER
 syn keyword cp2kKeyword ATOM
 syn keyword cp2kKeyword ATOMIC_CHARGES
+syn keyword cp2kKeyword ATOMIC_CUTOFF
 syn keyword cp2kKeyword ATOMIC_NUMBER
 syn keyword cp2kKeyword ATOMIC_RADII
 syn keyword cp2kKeyword ATOMPARM
@@ -2369,6 +2370,7 @@ syn keyword cp2kKeyword ATOMS_DISTANCE
 syn keyword cp2kKeyword ATOMS_FROM POINTS_FROM
 syn keyword cp2kKeyword ATOMS_LIST
 syn keyword cp2kKeyword ATOMS_LU_BOUNDS ATOMS_LU
+syn keyword cp2kKeyword ATOMS_MEMORY
 syn keyword cp2kKeyword ATOMS_PLANE POINTS_PLANE
 syn keyword cp2kKeyword ATOMS_TO POINTS_TO
 syn keyword cp2kKeyword ATOMS_TO_B POINTS_TO_B
@@ -2872,6 +2874,7 @@ syn keyword cp2kKeyword EPS_CN
 syn keyword cp2kKeyword EPS_CONV
 syn keyword cp2kKeyword EPS_CORE_CHARGE
 syn keyword cp2kKeyword EPS_CPC
+syn keyword cp2kKeyword EPS_CUTOFF
 syn keyword cp2kKeyword EPS_DECAY
 syn keyword cp2kKeyword EPS_DEFAULT
 syn keyword cp2kKeyword EPS_DENSITY
@@ -3857,6 +3860,7 @@ syn keyword cp2kKeyword PRINT_CELL
 syn keyword cp2kKeyword PRINT_CHECKSUM
 syn keyword cp2kKeyword PRINT_COORDS
 syn keyword cp2kKeyword PRINT_CUBES
+syn keyword cp2kKeyword PRINT_DENSITY
 syn keyword cp2kKeyword PRINT_DGEMM_INFO
 syn keyword cp2kKeyword PRINT_DIPOLE
 syn keyword cp2kKeyword PRINT_ENERGIES
@@ -4441,6 +4445,7 @@ syn keyword cp2kKeyword UPDATE_XC_ENERGY
 syn keyword cp2kKeyword UPPER_TRIANGULAR
 syn keyword cp2kKeyword USER_RADII
 syn keyword cp2kKeyword USER_RADIUS
+syn keyword cp2kKeyword USE_ATOMIC_CUTOFF
 syn keyword cp2kKeyword USE_BOHR
 syn keyword cp2kKeyword USE_COLVARS
 syn keyword cp2kKeyword USE_COMM_THREAD
