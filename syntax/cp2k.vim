@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:d19b00a)
+" CP2K-Version: CP2K version 10.0 (git:dfd5341)
 
 if exists("b:current_syntax")
    finish
@@ -657,6 +657,7 @@ syn keyword cp2kConstant POINT_CHARGE
 syn keyword cp2kConstant POLAK_RIBIERE
 syn keyword cp2kConstant POLY
 syn keyword cp2kConstant POLYNOM
+syn keyword cp2kConstant POPLE
 syn keyword cp2kConstant POSITIVE
 syn keyword cp2kConstant POTENTIAL
 syn keyword cp2kConstant PRIMITIVE
@@ -716,6 +717,7 @@ syn keyword cp2kConstant RGF
 syn keyword cp2kConstant RHF
 syn keyword cp2kConstant RHO
 syn keyword cp2kConstant RHOMBOHEDRAL
+syn keyword cp2kConstant RICHARDSON
 syn keyword cp2kConstant RIGPW
 syn keyword cp2kConstant RI_EMBEDDING
 syn keyword cp2kConstant RKS
@@ -2793,6 +2795,7 @@ syn keyword cp2kKeyword DO_LANGEVIN
 syn keyword cp2kKeyword DO_LANGEVIN_DEFAULT
 syn keyword cp2kKeyword DO_LRIGPW
 syn keyword cp2kKeyword DO_NONBONDED
+syn keyword cp2kKeyword DO_POLAK_RIBIERE
 syn keyword cp2kKeyword DO_PSO
 syn keyword cp2kKeyword DO_RAMAN
 syn keyword cp2kKeyword DO_RESTART
@@ -2854,6 +2857,7 @@ syn keyword cp2kKeyword ENERGY_SCALING
 syn keyword cp2kKeyword ENERGY_TOL
 syn keyword cp2kKeyword ENERGY_TOLERANCE
 syn keyword cp2kKeyword ENERGY_WEIGHT
+syn keyword cp2kKeyword ENFORCE_DECREASE
 syn keyword cp2kKeyword ENSEMBLE
 syn keyword cp2kKeyword ENVELOP
 syn keyword cp2kKeyword EN_CONSTANT
@@ -3970,6 +3974,7 @@ syn keyword cp2kKeyword READ_FROM_CUBE
 syn keyword cp2kKeyword REALSPACE
 syn keyword cp2kKeyword REAL_AXIS_INTEGRATION_METHOD
 syn keyword cp2kKeyword REAL_SPACE
+syn keyword cp2kKeyword RECALC_RESIDUAL
 syn keyword cp2kKeyword RECURSIVE_DIAGONALIZATION
 syn keyword cp2kKeyword REDUCE_AUX_BF
 syn keyword cp2kKeyword REDUCE_GVEC
@@ -4165,6 +4170,7 @@ syn keyword cp2kKeyword SCALE_GAUSSIAN
 syn keyword cp2kKeyword SCALE_LONGRANGE
 syn keyword cp2kKeyword SCALE_RPA
 syn keyword cp2kKeyword SCALE_S
+syn keyword cp2kKeyword SCALE_STEP_SIZE
 syn keyword cp2kKeyword SCALE_T
 syn keyword cp2kKeyword SCALE_TEMP_KIND
 syn keyword cp2kKeyword SCALE_WITH_OCCUPATION_NUMBERS
@@ -4246,6 +4252,7 @@ syn keyword cp2kKeyword SMOOTH_WIDTH
 syn keyword cp2kKeyword SOLUTE_HE
 syn keyword cp2kKeyword SOLUTE_INTERACTION
 syn keyword cp2kKeyword SOLUTE_RADIUS
+syn keyword cp2kKeyword SOLVER_METHOD
 syn keyword cp2kKeyword SOO_LIST
 syn keyword cp2kKeyword SOO_RHO_HARD
 syn keyword cp2kKeyword SORT_BASIS
