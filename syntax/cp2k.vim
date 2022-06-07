@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:dfd5341)
+" CP2K-Version: CP2K version 10.0 (git:9bef181)
 
 if exists("b:current_syntax")
    finish
@@ -2890,6 +2890,7 @@ syn keyword cp2kKeyword EPS_EIGENVAL
 syn keyword cp2kKeyword EPS_EIGENVALUE
 syn keyword cp2kKeyword EPS_EIGVAL
 syn keyword cp2kKeyword EPS_EIGVAL_DEGEN
+syn keyword cp2kKeyword EPS_EIGVAL_S
 syn keyword cp2kKeyword EPS_ENE
 syn keyword cp2kKeyword EPS_ERROR
 syn keyword cp2kKeyword EPS_ERROR_EARLY
@@ -3535,6 +3536,7 @@ syn keyword cp2kKeyword MU_PEXSI_SAFE_GUARD
 syn keyword cp2kKeyword N
 syn keyword cp2kKeyword N0 N_0
 syn keyword cp2kKeyword NAB_MIN
+syn keyword cp2kKeyword NAMD_PRINT
 syn keyword cp2kKeyword NAME_BODY
 syn keyword cp2kKeyword NATOMS
 syn keyword cp2kKeyword NBEADS
@@ -4005,6 +4007,7 @@ syn keyword cp2kKeyword RELATIVISTIC
 syn keyword cp2kKeyword RELAX_MULTIPLICITY RELAX_MULTIP
 syn keyword cp2kKeyword REL_CUTOFF RELATIVE_CUTOFF
 syn keyword cp2kKeyword REL_CUTOFFS_CHI_W
+syn keyword cp2kKeyword REL_CUTOFF_TRUNC_COLOUMB_RI_X
 syn keyword cp2kKeyword REMOVE_CONTRACTION
 syn keyword cp2kKeyword REMOVE_SET
 syn keyword cp2kKeyword REORDER
