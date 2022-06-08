@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:9bef181)
+" CP2K-Version: CP2K version 10.0 (git:9b7da12)
 
 if exists("b:current_syntax")
    finish
@@ -378,6 +378,7 @@ syn keyword cp2kConstant FUNCTIONAL
 syn keyword cp2kConstant G87
 syn keyword cp2kConstant G96
 syn keyword cp2kConstant GAMMA
+syn keyword cp2kConstant GAPO
 syn keyword cp2kConstant GAPW
 syn keyword cp2kConstant GAPW_XC
 syn keyword cp2kConstant GAUSS
@@ -875,6 +876,7 @@ syn keyword cp2kConstant VWN3
 syn keyword cp2kConstant VWN5
 syn keyword cp2kConstant WALL_MINUS
 syn keyword cp2kConstant WALL_PLUS
+syn keyword cp2kConstant WAN
 syn keyword cp2kConstant WANNIER
 syn keyword cp2kConstant WANNIER_PROJECTION
 syn keyword cp2kConstant WAVEFUNCTION_OPTIMIZATION
@@ -2289,7 +2291,6 @@ syn match cp2kEndSection '^\s*&END\s*\w\+' contains=cp2kSection
 " CP2K keywords
 "----------------------------------------------------------------/
 
-syn keyword cp2kKeyword  SELF_ENERGY
 syn keyword cp2kKeyword 1-NORM
 syn keyword cp2kKeyword 2C_MATRIX_FUNCTIONS
 syn keyword cp2kKeyword 2D_MOLECULAR_DISTRIBUTION
@@ -2555,6 +2556,7 @@ syn keyword cp2kKeyword CENTROID_DRMAX
 syn keyword cp2kKeyword CENTROID_SPEED
 syn keyword cp2kKeyword CENTROID_WEIGHT
 syn keyword cp2kKeyword CG_INIT_STEPS
+syn keyword cp2kKeyword CG_PO
 syn keyword cp2kKeyword CG_RESET_LIMIT
 syn keyword cp2kKeyword CHARGE
 syn keyword cp2kKeyword CHARGE_BETA CHARGE_B
@@ -2657,6 +2659,8 @@ syn keyword cp2kKeyword COUPLING
 syn keyword cp2kKeyword COUPLING_PARAMETER
 syn keyword cp2kKeyword COVALENT_RADIUS
 syn keyword cp2kKeyword CPOL
+syn keyword cp2kKeyword CPO_GUESS
+syn keyword cp2kKeyword CPO_GUESS_SPACE
 syn keyword cp2kKeyword CRAWL_REPETITION
 syn keyword cp2kKeyword CRAWL_WEIGHT
 syn keyword cp2kKeyword CRAZY_SCALE
@@ -3341,6 +3345,7 @@ syn keyword cp2kKeyword LOCHOMO_RESTART_FILE_NAME
 syn keyword cp2kKeyword LOCKING
 syn keyword cp2kKeyword LOCK_DISTRIBUTION
 syn keyword cp2kKeyword LOCLUMO_RESTART_FILE_NAME
+syn keyword cp2kKeyword LOCMIXD_RESTART_FILE_NAME
 syn keyword cp2kKeyword LOG_PRINT_KEY
 syn keyword cp2kKeyword LONG_RANGE_CORRECTION
 syn keyword cp2kKeyword LOWDIN
@@ -3562,6 +3567,7 @@ syn keyword cp2kKeyword NEQUIL_STEPS
 syn keyword cp2kKeyword NEUMANN_DIRECTIONS
 syn keyword cp2kKeyword NEV N_EV EV
 syn keyword cp2kKeyword NEW_PREC_EACH
+syn keyword cp2kKeyword NEXTRA
 syn keyword cp2kKeyword NEXTRA_DOF
 syn keyword cp2kKeyword NF
 syn keyword cp2kKeyword NGAUSS
@@ -4200,6 +4206,7 @@ syn keyword cp2kKeyword SEED_NAME
 syn keyword cp2kKeyword SELECTED_STATES_ATOM_RADIUS
 syn keyword cp2kKeyword SELECTED_STATES_ON_ATOM_LIST
 syn keyword cp2kKeyword SELF_CONSISTENT
+syn keyword cp2kKeyword SELF_ENERGY
 syn keyword cp2kKeyword SEMICORE_LEVEL
 syn keyword cp2kKeyword SET_RADII
 syn keyword cp2kKeyword SE_PARAMETERS
