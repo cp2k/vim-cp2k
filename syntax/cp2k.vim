@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:9b7da12)
+" CP2K-Version: CP2K version 10.0 (git:db61127)
 
 if exists("b:current_syntax")
    finish
@@ -3252,6 +3252,9 @@ syn keyword cp2kKeyword JACOBIAN_VECTOR
 syn keyword cp2kKeyword JACOBI_FALLBACK
 syn keyword cp2kKeyword JACOBI_REFINEMENT
 syn keyword cp2kKeyword JACOBI_THRESHOLD
+syn keyword cp2kKeyword JITTER
+syn keyword cp2kKeyword JITTER_AMPLITUDE
+syn keyword cp2kKeyword JITTER_SEED
 syn keyword cp2kKeyword JOB_ID
 syn keyword cp2kKeyword JUST_ENERGY
 syn keyword cp2kKeyword K
