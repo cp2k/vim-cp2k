@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:db61127)
+" CP2K-Version: CP2K version 10.0 (git:32ccd55)
 
 if exists("b:current_syntax")
    finish
@@ -1069,6 +1069,7 @@ syn keyword cp2kSection CUTOFF_CALIB
 syn keyword cp2kSection DAMPING
 syn keyword cp2kSection DAVIDSON
 syn keyword cp2kSection DBCSR
+syn keyword cp2kSection DBM
 syn keyword cp2kSection DCDR
 syn keyword cp2kSection DDAPC_RESTRAINT
 syn keyword cp2kSection DDAPC_RESTRAINT_A
