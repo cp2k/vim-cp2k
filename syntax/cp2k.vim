@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 10.0 (git:32ccd55)
+" CP2K-Version: CP2K version 10.0 (git:20fe009)
 
 if exists("b:current_syntax")
    finish
@@ -3452,7 +3452,7 @@ syn keyword cp2kKeyword MD_BUMPS_MAX
 syn keyword cp2kKeyword MEMORY
 syn keyword cp2kKeyword MEMORY_CUT
 syn keyword cp2kKeyword MEMORY_FACTOR
-syn keyword cp2kKeyword MEMORY_INFO
+syn keyword cp2kKeyword MEMORY_INFO MEMORY
 syn keyword cp2kKeyword MEMORY_PROGRESSION_FACTOR
 syn keyword cp2kKeyword METADYNAMICS
 syn keyword cp2kKeyword METALS
