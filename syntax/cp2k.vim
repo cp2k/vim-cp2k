@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2022.1 (Development Version) (git:35eee55)
+" CP2K-Version: CP2K version 2022.1 (Development Version) (git:ec9b4a4)
 
 if exists("b:current_syntax")
    finish
@@ -2113,6 +2113,7 @@ syn keyword cp2kSection RESTART
 syn keyword cp2kSection RESTART_AVERAGES
 syn keyword cp2kSection RESTART_HISTORY
 syn keyword cp2kSection RESTART_INFO
+syn keyword cp2kSection RESTART_WFN
 syn keyword cp2kSection RESTRAINT
 syn keyword cp2kSection RHO
 syn keyword cp2kSection RHO0_INFORMATION
@@ -2995,6 +2996,7 @@ syn keyword cp2kKeyword EXCHANGE_INTEGRALS
 syn keyword cp2kKeyword EXCH_CORRECTION_FUNC
 syn keyword cp2kKeyword EXCH_SCALING_MODEL
 syn keyword cp2kKeyword EXCITATIONS
+syn keyword cp2kKeyword EXCITED_STATE_INDEX INDEX
 syn keyword cp2kKeyword EXCLUDE_BANDS
 syn keyword cp2kKeyword EXCLUDE_EI
 syn keyword cp2kKeyword EXCLUDE_MM
