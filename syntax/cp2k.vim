@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2022.1 (Development Version) (git:ec9b4a4)
+" CP2K-Version: CP2K version 2022.1 (Development Version) (git:4528110)
 
 if exists("b:current_syntax")
    finish
@@ -2796,6 +2796,7 @@ syn keyword cp2kKeyword DO_DSO
 syn keyword cp2kKeyword DO_ERROR_ESTIMATE
 syn keyword cp2kKeyword DO_EWALD
 syn keyword cp2kKeyword DO_EXCHANGE
+syn keyword cp2kKeyword DO_EXTRAPOLATE_KPOINTS
 syn keyword cp2kKeyword DO_FC
 syn keyword cp2kKeyword DO_HILLS
 syn keyword cp2kKeyword DO_KPOINTS
@@ -4021,7 +4022,7 @@ syn keyword cp2kKeyword RELATIVISTIC
 syn keyword cp2kKeyword RELAX_MULTIPLICITY RELAX_MULTIP
 syn keyword cp2kKeyword REL_CUTOFF RELATIVE_CUTOFF
 syn keyword cp2kKeyword REL_CUTOFFS_CHI_W
-syn keyword cp2kKeyword REL_CUTOFF_TRUNC_COLOUMB_RI_X
+syn keyword cp2kKeyword REL_CUTOFF_TRUNC_COULOMB_RI_X
 syn keyword cp2kKeyword REMOVE_CONTRACTION
 syn keyword cp2kKeyword REMOVE_SET
 syn keyword cp2kKeyword REORDER
@@ -4451,7 +4452,7 @@ syn keyword cp2kKeyword TRANSPORT_METHOD
 syn keyword cp2kKeyword TREAT_FORCES_IN_CORE
 syn keyword cp2kKeyword TREAT_LSD_IN_CORE
 syn keyword cp2kKeyword TRUNCATION_RADIUS CUTOFF_RADIUS
-syn keyword cp2kKeyword TRUNC_COLOUMB_RI_X
+syn keyword cp2kKeyword TRUNC_COULOMB_RI_X
 syn keyword cp2kKeyword TRUST_RAD
 syn keyword cp2kKeyword TRUST_RADIUS
 syn keyword cp2kKeyword TYPE
