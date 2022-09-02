@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2022.1 (Development Version) (git:4528110)
+" CP2K-Version: CP2K version 2022.1 (Development Version) (git:350aa13)
 
 if exists("b:current_syntax")
    finish
@@ -61,7 +61,6 @@ syn match cp2kComment "!.*$" contains=cp2kTodo
 " CP2K predefined constants
 "----------------------------------------------------------------/
 
-syn keyword cp2kConstant 
 syn keyword cp2kConstant -X
 syn keyword cp2kConstant -Y
 syn keyword cp2kConstant -Z
@@ -3747,6 +3746,7 @@ syn keyword cp2kKeyword ORTHO
 syn keyword cp2kKeyword ORTHOGONAL_BASIS
 syn keyword cp2kKeyword ORTHOGONAL_EPS
 syn keyword cp2kKeyword ORTHO_IRAC
+syn keyword cp2kKeyword ORTHO_RF
 syn keyword cp2kKeyword OR_PARAMETER OMEGA
 syn keyword cp2kKeyword OSCILLATING_FRACTION
 syn keyword cp2kKeyword OT_INITIAL_GUESS
