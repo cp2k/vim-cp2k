@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2022.1 (Development Version) (git:350aa13)
+" CP2K-Version: CP2K version 2022.1 (Development Version) (git:d56aa67)
 
 if exists("b:current_syntax")
    finish
@@ -374,6 +374,9 @@ syn keyword cp2kConstant FULL_S_INVERSE
 syn keyword cp2kConstant FULL_X
 syn keyword cp2kConstant FULL_X_THEN_SCF
 syn keyword cp2kConstant FUNCTIONAL
+syn keyword cp2kConstant FUNC_VDWDF
+syn keyword cp2kConstant FUNC_VDWDF2
+syn keyword cp2kConstant FUNC_VDWDFCX
 syn keyword cp2kConstant G87
 syn keyword cp2kConstant G96
 syn keyword cp2kConstant GAMMA
@@ -2657,6 +2660,8 @@ syn keyword cp2kKeyword COULOMB_CONSTANTS
 syn keyword cp2kKeyword COULOMB_INTEGRALS
 syn keyword cp2kKeyword COULOMB_INTERACTION
 syn keyword cp2kKeyword COULOMB_LR
+syn keyword cp2kKeyword COULOMB_SR_CUT
+syn keyword cp2kKeyword COULOMB_SR_EPS
 syn keyword cp2kKeyword COUNTER
 syn keyword cp2kKeyword COUPLING
 syn keyword cp2kKeyword COUPLING_PARAMETER
@@ -3661,6 +3666,7 @@ syn keyword cp2kKeyword NUM_GTO
 syn keyword cp2kKeyword NUM_GTO_CORE
 syn keyword cp2kKeyword NUM_GTO_EXTENDED
 syn keyword cp2kKeyword NUM_GTO_POLARIZATION
+syn keyword cp2kKeyword NUM_INTEG_GROUPS
 syn keyword cp2kKeyword NUM_INTERVAL
 syn keyword cp2kKeyword NUM_KP_GRIDS
 syn keyword cp2kKeyword NUM_LAYERS_3D
@@ -3710,6 +3716,7 @@ syn keyword cp2kKeyword OCC_BETA
 syn keyword cp2kKeyword OCE_HARD
 syn keyword cp2kKeyword OCE_SOFT
 syn keyword cp2kKeyword OE_CORR ORBITAL_EIGENVALUES_CORRECTION
+syn keyword cp2kKeyword OLD_COULOMB_DAMPING
 syn keyword cp2kKeyword OLD_HILL_NUMBER
 syn keyword cp2kKeyword OLD_HILL_STEP
 syn keyword cp2kKeyword OMEGA
@@ -4251,8 +4258,6 @@ syn keyword cp2kKeyword SIGN_SYMMETRIC
 syn keyword cp2kKeyword SINGLE_PRECISION_MATRICES
 syn keyword cp2kKeyword SIP_LIST
 syn keyword cp2kKeyword SIZE
-syn keyword cp2kKeyword SIZE_FREQ_INTEG_GROUP RPA_GROUP_SIZE
-syn keyword cp2kKeyword SIZE_INTEG_GROUP LAPLACE_GROUP_SIZE
 syn keyword cp2kKeyword SIZE_LATTICE_SUM
 syn keyword cp2kKeyword SKIP_EC
 syn keyword cp2kKeyword SKIP_FIRST
@@ -4509,6 +4514,7 @@ syn keyword cp2kKeyword VALUES
 syn keyword cp2kKeyword VARIABLE
 syn keyword cp2kKeyword VARIABLES
 syn keyword cp2kKeyword VARIABLE_VOLUME
+syn keyword cp2kKeyword VDW_FUNCTIONAL
 syn keyword cp2kKeyword VDW_RADIUS
 syn keyword cp2kKeyword VDW_SCALE14
 syn keyword cp2kKeyword VELOCITY_QUENCH
