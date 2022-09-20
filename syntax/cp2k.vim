@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2022.1 (Development Version) (git:d529ce5)
+" CP2K-Version: CP2K version 2022.1 (Development Version) (git:1ca6ba6)
 
 if exists("b:current_syntax")
    finish
@@ -3255,6 +3255,7 @@ syn keyword cp2kKeyword IUPTRANS
 syn keyword cp2kKeyword IUPVOLUME
 syn keyword cp2kKeyword IWEIGHT
 syn keyword cp2kKeyword J
+syn keyword cp2kKeyword J0
 syn keyword cp2kKeyword JACOBIAN_FREQ
 syn keyword cp2kKeyword JACOBIAN_RESTART
 syn keyword cp2kKeyword JACOBIAN_STEP
@@ -3709,6 +3710,7 @@ syn keyword cp2kKeyword N_SIMPLE_MIX NSIMPLEMIX
 syn keyword cp2kKeyword N_SIZE_MNK_STACKS
 syn keyword cp2kKeyword N_WINDOWS
 syn keyword cp2kKeyword OBC_EQUILIBRIUM
+syn keyword cp2kKeyword OCCUPATION
 syn keyword cp2kKeyword OCCUPATION_NUMBERS OCCNUMS
 syn keyword cp2kKeyword OCCUPATION_NUMBERS_STATS OCCNUMSTATS
 syn keyword cp2kKeyword OCCUPATION_PRECONDITIONER
@@ -4469,6 +4471,7 @@ syn keyword cp2kKeyword TYPE_OF_DENSITY
 syn keyword cp2kKeyword TYPE_OF_MATRIX_MULTIPLICATION
 syn keyword cp2kKeyword T_C_G_DATA
 syn keyword cp2kKeyword T_TOL TEMP_TO
+syn keyword cp2kKeyword U
 syn keyword cp2kKeyword UFF_FORCE_FIELD
 syn keyword cp2kKeyword UKS UNRESTRICTED_KOHN_SHAM LSD SPIN_POLARIZED
 syn keyword cp2kKeyword UNIQUE_SPLINE
