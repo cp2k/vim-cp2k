@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2022.1 (Development Version) (git:1ca6ba6)
+" CP2K-Version: CP2K version 2022.1 (Development Version) (git:948733f)
 
 if exists("b:current_syntax")
    finish
@@ -2124,8 +2124,10 @@ syn keyword cp2kSection RHO_MIXING
 syn keyword cp2kSection RI
 syn keyword cp2kSection RING_PUCKERING
 syn keyword cp2kSection RI_AXK
+syn keyword cp2kSection RI_DENSITY_COEFFS
 syn keyword cp2kSection RI_INFO
 syn keyword cp2kSection RI_METRIC
+syn keyword cp2kSection RI_METRIC_2C_INTS
 syn keyword cp2kSection RI_MP2
 syn keyword cp2kSection RI_RPA
 syn keyword cp2kSection RI_SOS_MP2
@@ -3547,6 +3549,7 @@ syn keyword cp2kKeyword MULTIPLE_POTENTIAL
 syn keyword cp2kKeyword MULTIPLE_SUBSYS
 syn keyword cp2kKeyword MULTIPLE_UNIT_CELL
 syn keyword cp2kKeyword MULTIPLICITY MULTIP
+syn keyword cp2kKeyword MULTIPLY_BY_RI_2C_INTEGRALS MULT_BY_RI MULT_BY_S MULT_BY_RI_INTS
 syn keyword cp2kKeyword MULTREC_LIMIT
 syn keyword cp2kKeyword MU_INERTIA_EXPANSION
 syn keyword cp2kKeyword MU_INERTIA_TOLERANCE
