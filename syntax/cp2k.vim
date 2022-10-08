@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2022.1 (Development Version) (git:f5e83b7)
+" CP2K-Version: CP2K version 2022.1 (Development Version) (git:f51da1b)
 
 if exists("b:current_syntax")
    finish
@@ -2192,6 +2192,7 @@ syn keyword cp2kSection SUM_FORCE
 syn keyword cp2kSection SWARM
 syn keyword cp2kSection SYMMETRY
 syn keyword cp2kSection S_CSR_WRITE
+syn keyword cp2kSection TABPOT
 syn keyword cp2kSection TDDFPT
 syn keyword cp2kSection TEMPERATURE
 syn keyword cp2kSection TEMPERATURE_COLVAR
