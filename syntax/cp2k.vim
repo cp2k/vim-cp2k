@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2022.1 (Development Version) (git:c46dbb5)
+" CP2K-Version: CP2K version 2022.1 (Development Version) (git:e64daf4)
 
 if exists("b:current_syntax")
    finish
@@ -2369,6 +2369,7 @@ syn keyword cp2kKeyword APOL
 syn keyword cp2kKeyword APPEND
 syn keyword cp2kKeyword APPLY_CUTOFF
 syn keyword cp2kKeyword APPLY_DELTA_PULSE
+syn keyword cp2kKeyword APPLY_DELTA_PULSE_MAG
 syn keyword cp2kKeyword APX_TYPE
 syn keyword cp2kKeyword ARNOLDI
 syn keyword cp2kKeyword ASPARSITY
@@ -3123,6 +3124,8 @@ syn keyword cp2kKeyword GAPW_MAX_ALPHA
 syn keyword cp2kKeyword GAPW_PRJ_RADII
 syn keyword cp2kKeyword GAUGE
 syn keyword cp2kKeyword GAUGE_ATOM_RADIUS
+syn keyword cp2kKeyword GAUGE_ORIG
+syn keyword cp2kKeyword GAUGE_ORIG_MANUAL
 syn keyword cp2kKeyword GAUSSIAN_RADIUS
 syn keyword cp2kKeyword GAUSSIAN_SHAPE
 syn keyword cp2kKeyword GCUT
@@ -3332,6 +3335,7 @@ syn keyword cp2kKeyword LEBEDEV_GRID
 syn keyword cp2kKeyword LEEUWEN-BAERENDS
 syn keyword cp2kKeyword LEGENDRE
 syn keyword cp2kKeyword LENGTH
+syn keyword cp2kKeyword LEN_REP
 syn keyword cp2kKeyword LEVEL_SHIFT LSHIFT
 syn keyword cp2kKeyword LEVY_CORRELATED
 syn keyword cp2kKeyword LEVY_POS_SAMPLE
@@ -4530,6 +4534,7 @@ syn keyword cp2kKeyword VARIABLE_VOLUME
 syn keyword cp2kKeyword VDW_FUNCTIONAL
 syn keyword cp2kKeyword VDW_RADIUS
 syn keyword cp2kKeyword VDW_SCALE14
+syn keyword cp2kKeyword VELOCITY_GAUGE
 syn keyword cp2kKeyword VELOCITY_QUENCH
 syn keyword cp2kKeyword VELOCITY_SCALE
 syn keyword cp2kKeyword VEL_REPRS
@@ -4539,6 +4544,7 @@ syn keyword cp2kKeyword VERBOSITY
 syn keyword cp2kKeyword VERIFICATION
 syn keyword cp2kKeyword VERLET_SKIN
 syn keyword cp2kKeyword VERY_OVERLOADED
+syn keyword cp2kKeyword VG_COM_NL
 syn keyword cp2kKeyword VIB_EIGS_FILE_NAME
 syn keyword cp2kKeyword VIRIAL
 syn keyword cp2kKeyword VIRIAL_TEMPS
