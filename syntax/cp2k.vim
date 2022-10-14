@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2022.1 (Development Version) (git:e64daf4)
+" CP2K-Version: CP2K version 2022.1 (Development Version) (git:cea20fb)
 
 if exists("b:current_syntax")
    finish
@@ -472,6 +472,7 @@ syn keyword cp2kConstant LB_ALPHA
 syn keyword cp2kConstant LC
 syn keyword cp2kConstant LCAO
 syn keyword cp2kConstant LDA
+syn keyword cp2kConstant LDA_X_LIBXC
 syn keyword cp2kConstant LEGENDRE
 syn keyword cp2kConstant LENGTH
 syn keyword cp2kConstant LENOSKY
@@ -498,6 +499,7 @@ syn keyword cp2kConstant LWDN
 syn keyword cp2kConstant MAGMA
 syn keyword cp2kConstant MAGMA_GPU
 syn keyword cp2kConstant MAGNETIZATION
+syn keyword cp2kConstant MANUAL
 syn keyword cp2kConstant MAO
 syn keyword cp2kConstant MASS
 syn keyword cp2kConstant MASSIVE
@@ -2321,6 +2323,7 @@ syn keyword cp2kKeyword ACCURACY_REFINEMENT
 syn keyword cp2kKeyword ACQUISITION_START_TIME
 syn keyword cp2kKeyword ACTIVE_ELECTRONS
 syn keyword cp2kKeyword ACTIVE_ORBITALS
+syn keyword cp2kKeyword ACTIVE_ORBITAL_INDICES
 syn keyword cp2kKeyword ADAPTIVE_EXCLUDE_MOLECULES
 syn keyword cp2kKeyword ADDED_MOS
 syn keyword cp2kKeyword ADD_LAST
@@ -3954,6 +3957,7 @@ syn keyword cp2kKeyword PW_GRID_LAYOUT
 syn keyword cp2kKeyword PW_GRID_LAYOUT_ALL
 syn keyword cp2kKeyword PW_HFX
 syn keyword cp2kKeyword PW_HFX_BLOCKSIZE
+syn keyword cp2kKeyword P_ACTIVE_FILE_NAME
 syn keyword cp2kKeyword P_EXPONENT
 syn keyword cp2kKeyword P_EXPONENTS
 syn keyword cp2kKeyword P_QUANTUM_NUMBERS
@@ -4010,6 +4014,7 @@ syn keyword cp2kKeyword READ_DMFET_POT
 syn keyword cp2kKeyword READ_EMBED_POT
 syn keyword cp2kKeyword READ_EMBED_POT_CUBE
 syn keyword cp2kKeyword READ_FROM_CUBE
+syn keyword cp2kKeyword READ_P_ACTIVE
 syn keyword cp2kKeyword REALSPACE
 syn keyword cp2kKeyword REAL_AXIS_INTEGRATION_METHOD
 syn keyword cp2kKeyword REAL_SPACE
@@ -4339,6 +4344,7 @@ syn keyword cp2kKeyword STEPSIZE
 syn keyword cp2kKeyword STEP_SIZE
 syn keyword cp2kKeyword STEP_SIZE_SCALING
 syn keyword cp2kKeyword STEP_START_VAL
+syn keyword cp2kKeyword STOP_AFTER_CUBES
 syn keyword cp2kKeyword STOP_ON_MISMATCH
 syn keyword cp2kKeyword STORAGE_LOCATION
 syn keyword cp2kKeyword STORE_STEP_NUMBER
