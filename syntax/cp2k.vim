@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2022.1 (Development Version) (git:cea20fb)
+" CP2K-Version: CP2K version 2022.1 (Development Version) (git:9400c5a)
 
 if exists("b:current_syntax")
    finish
@@ -1254,6 +1254,7 @@ syn keyword cp2kSection GGA_C_PBE
 syn keyword cp2kSection GGA_C_PBEFE
 syn keyword cp2kSection GGA_C_PBEINT
 syn keyword cp2kSection GGA_C_PBELOC
+syn keyword cp2kSection GGA_C_PBE_GAUSSIAN
 syn keyword cp2kSection GGA_C_PBE_JRGX
 syn keyword cp2kSection GGA_C_PBE_MOL
 syn keyword cp2kSection GGA_C_PBE_SOL
@@ -1333,6 +1334,7 @@ syn keyword cp2kSection GGA_K_VSK
 syn keyword cp2kSection GGA_K_VT84F
 syn keyword cp2kSection GGA_K_VW
 syn keyword cp2kSection GGA_K_YT65
+syn keyword cp2kSection GGA_XC_B97_3C
 syn keyword cp2kSection GGA_XC_B97_D
 syn keyword cp2kSection GGA_XC_B97_GGA1
 syn keyword cp2kSection GGA_XC_BEEFVDW
@@ -1428,6 +1430,7 @@ syn keyword cp2kSection GGA_X_MPBE
 syn keyword cp2kSection GGA_X_MPW91
 syn keyword cp2kSection GGA_X_N12
 syn keyword cp2kSection GGA_X_NCAP
+syn keyword cp2kSection GGA_X_NCAPR
 syn keyword cp2kSection GGA_X_OL2
 syn keyword cp2kSection GGA_X_OPTB86B_VDW
 syn keyword cp2kSection GGA_X_OPTB88_VDW
@@ -1440,7 +1443,9 @@ syn keyword cp2kSection GGA_X_PBEINT
 syn keyword cp2kSection GGA_X_PBEK1_VDW
 syn keyword cp2kSection GGA_X_PBEPOW
 syn keyword cp2kSection GGA_X_PBETRANS
+syn keyword cp2kSection GGA_X_PBE_GAUSSIAN
 syn keyword cp2kSection GGA_X_PBE_JSJR
+syn keyword cp2kSection GGA_X_PBE_MOD
 syn keyword cp2kSection GGA_X_PBE_MOL
 syn keyword cp2kSection GGA_X_PBE_R
 syn keyword cp2kSection GGA_X_PBE_SOL
@@ -1510,6 +1515,7 @@ syn keyword cp2kSection HYB_GGA_XC_B3LYPS
 syn keyword cp2kSection HYB_GGA_XC_B3LYP_MCM1
 syn keyword cp2kSection HYB_GGA_XC_B3LYP_MCM2
 syn keyword cp2kSection HYB_GGA_XC_B3P86
+syn keyword cp2kSection HYB_GGA_XC_B3P86_NWCHEM
 syn keyword cp2kSection HYB_GGA_XC_B3PW91
 syn keyword cp2kSection HYB_GGA_XC_B5050LYP
 syn keyword cp2kSection HYB_GGA_XC_B97
@@ -1616,6 +1622,7 @@ syn keyword cp2kSection HYB_MGGA_XC_B88B95
 syn keyword cp2kSection HYB_MGGA_XC_B94_HYB
 syn keyword cp2kSection HYB_MGGA_XC_B98
 syn keyword cp2kSection HYB_MGGA_XC_BB1K
+syn keyword cp2kSection HYB_MGGA_XC_BR3P86
 syn keyword cp2kSection HYB_MGGA_XC_EDMGGAH
 syn keyword cp2kSection HYB_MGGA_XC_LC_TMLYP
 syn keyword cp2kSection HYB_MGGA_XC_MPW1B95
@@ -1804,6 +1811,8 @@ syn keyword cp2kSection METHOD_INFO
 syn keyword cp2kSection MGGA_C_B88
 syn keyword cp2kSection MGGA_C_B94
 syn keyword cp2kSection MGGA_C_BC95
+syn keyword cp2kSection MGGA_C_CC
+syn keyword cp2kSection MGGA_C_CCALDA
 syn keyword cp2kSection MGGA_C_CS
 syn keyword cp2kSection MGGA_C_DLDF
 syn keyword cp2kSection MGGA_C_HLTAPW
@@ -1848,6 +1857,7 @@ syn keyword cp2kSection MGGA_C_SCAN_VV10
 syn keyword cp2kSection MGGA_C_TM
 syn keyword cp2kSection MGGA_C_TPSS
 syn keyword cp2kSection MGGA_C_TPSSLOC
+syn keyword cp2kSection MGGA_C_TPSS_GAUSSIAN
 syn keyword cp2kSection MGGA_C_VSXC
 syn keyword cp2kSection MGGA_K_CSK1
 syn keyword cp2kSection MGGA_K_CSK4
@@ -1867,6 +1877,7 @@ syn keyword cp2kSection MGGA_XC_HLE17
 syn keyword cp2kSection MGGA_XC_LP90
 syn keyword cp2kSection MGGA_XC_OTPSS_D
 syn keyword cp2kSection MGGA_XC_TPSSLYP1W
+syn keyword cp2kSection MGGA_XC_VCML_RVV10
 syn keyword cp2kSection MGGA_XC_ZLP
 syn keyword cp2kSection MGGA_X_2D_JS17
 syn keyword cp2kSection MGGA_X_2D_PRHG07
@@ -1941,6 +1952,7 @@ syn keyword cp2kSection MGGA_X_TH
 syn keyword cp2kSection MGGA_X_TLDA
 syn keyword cp2kSection MGGA_X_TM
 syn keyword cp2kSection MGGA_X_TPSS
+syn keyword cp2kSection MGGA_X_VCML
 syn keyword cp2kSection MGGA_X_VT84
 syn keyword cp2kSection MGRID
 syn keyword cp2kSection MINBAS_ANALYSIS
@@ -2303,6 +2315,7 @@ syn match cp2kEndSection '^\s*&END\s*\w\+' contains=cp2kSection
 " CP2K keywords
 "----------------------------------------------------------------/
 
+syn keyword cp2kKeyword 
 syn keyword cp2kKeyword 1-NORM
 syn keyword cp2kKeyword 2C_MATRIX_FUNCTIONS
 syn keyword cp2kKeyword 2D_MOLECULAR_DISTRIBUTION
@@ -4819,27 +4832,50 @@ syn keyword cp2kKeyword _CC6
 syn keyword cp2kKeyword _CC7
 syn keyword cp2kKeyword _CC8
 syn keyword cp2kKeyword _CC9
+syn keyword cp2kKeyword _CF
 syn keyword cp2kKeyword _CLR
 syn keyword cp2kKeyword _CLYP
 syn keyword cp2kKeyword _COPP
 syn keyword cp2kKeyword _COS0
+syn keyword cp2kKeyword _COS00
+syn keyword cp2kKeyword _COS01
+syn keyword cp2kKeyword _COS03
 syn keyword cp2kKeyword _COS1
+syn keyword cp2kKeyword _COS10
 syn keyword cp2kKeyword _COS2
+syn keyword cp2kKeyword _COS20
+syn keyword cp2kKeyword _COS21
 syn keyword cp2kKeyword _COS3
+syn keyword cp2kKeyword _COS32
 syn keyword cp2kKeyword _COS4
+syn keyword cp2kKeyword _COS60
+syn keyword cp2kKeyword _COS61
 syn keyword cp2kKeyword _CP
 syn keyword cp2kKeyword _CQ
 syn keyword cp2kKeyword _CSI_HF
 syn keyword cp2kKeyword _CSR
 syn keyword cp2kKeyword _CSS
 syn keyword cp2kKeyword _CSS0
+syn keyword cp2kKeyword _CSS00
+syn keyword cp2kKeyword _CSS02
+syn keyword cp2kKeyword _CSS04
 syn keyword cp2kKeyword _CSS1
+syn keyword cp2kKeyword _CSS10
 syn keyword cp2kKeyword _CSS2
+syn keyword cp2kKeyword _CSS20
 syn keyword cp2kKeyword _CSS3
+syn keyword cp2kKeyword _CSS32
 syn keyword cp2kKeyword _CSS4
+syn keyword cp2kKeyword _CSS42
+syn keyword cp2kKeyword _CSS43
 syn keyword cp2kKeyword _CX
 syn keyword cp2kKeyword _CX0
+syn keyword cp2kKeyword _CX00
+syn keyword cp2kKeyword _CX01
+syn keyword cp2kKeyword _CX02
 syn keyword cp2kKeyword _CX1
+syn keyword cp2kKeyword _CX10
+syn keyword cp2kKeyword _CX11_CSS00
 syn keyword cp2kKeyword _CX2
 syn keyword cp2kKeyword _CX3
 syn keyword cp2kKeyword _CX4
