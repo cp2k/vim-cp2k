@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2022.1 (Development Version) (git:9400c5a)
+" CP2K-Version: CP2K version 2022.1 (Development Version) (git:d7412ee)
 
 if exists("b:current_syntax")
    finish
@@ -2815,6 +2815,7 @@ syn keyword cp2kKeyword DMFET_RESTART_FILE_NAME
 syn keyword cp2kKeyword DM_CONV_INT
 syn keyword cp2kKeyword DM_CONV_MAX
 syn keyword cp2kKeyword DM_RESTART_WRITE
+syn keyword cp2kKeyword DOT_PRODUCT_BLKSIZE
 syn keyword cp2kKeyword DOT_TREE
 syn keyword cp2kKeyword DO_AUX_BAS_GW
 syn keyword cp2kKeyword DO_CALIBRATE_CUTOFF
