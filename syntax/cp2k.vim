@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2022.1 (Development Version) (git:06cede5)
+" CP2K-Version: CP2K version 2022.1 (Development Version) (git:7444654)
 
 if exists("b:current_syntax")
    finish
@@ -3588,7 +3588,6 @@ syn keyword cp2kKeyword MU_PEXSI_SAFE_GUARD
 syn keyword cp2kKeyword N
 syn keyword cp2kKeyword N0 N_0
 syn keyword cp2kKeyword NAB_MIN
-syn keyword cp2kKeyword NAMD_PRINT
 syn keyword cp2kKeyword NAME_BODY
 syn keyword cp2kKeyword NATOMS
 syn keyword cp2kKeyword NBEADS
@@ -3801,6 +3800,7 @@ syn keyword cp2kKeyword OUT_EACH_MO
 syn keyword cp2kKeyword OUT_ITER_EACH
 syn keyword cp2kKeyword OVERLAP
 syn keyword cp2kKeyword OVERLAP_CONDITION_NUMBER
+syn keyword cp2kKeyword OVERLAP_DELTAT
 syn keyword cp2kKeyword OVERLAP_THRESHOLD
 syn keyword cp2kKeyword OVERWRITE
 syn keyword cp2kKeyword OVERWRITE_MOS
@@ -3939,6 +3939,7 @@ syn keyword cp2kKeyword PRINT_MEMORY_USAGE
 syn keyword cp2kKeyword PRINT_NEIGHBORS
 syn keyword cp2kKeyword PRINT_ONLY_ACC
 syn keyword cp2kKeyword PRINT_PERFORMANCE
+syn keyword cp2kKeyword PRINT_PHASES
 syn keyword cp2kKeyword PRINT_STRESS
 syn keyword cp2kKeyword PRINT_TEST_OUTPUT
 syn keyword cp2kKeyword PRINT_TIMERS
@@ -4238,6 +4239,7 @@ syn keyword cp2kKeyword SCALE_STEP_SIZE
 syn keyword cp2kKeyword SCALE_T
 syn keyword cp2kKeyword SCALE_TEMP_KIND
 syn keyword cp2kKeyword SCALE_WITH_OCCUPATION_NUMBERS
+syn keyword cp2kKeyword SCALE_WITH_PHASES
 syn keyword cp2kKeyword SCALE_X
 syn keyword cp2kKeyword SCALE_X0
 syn keyword cp2kKeyword SCALING
