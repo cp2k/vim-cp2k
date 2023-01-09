@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2022.1 (Development Version) (git:3169bf5)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:ebdeb28)
 
 if exists("b:current_syntax")
    finish
@@ -382,7 +382,6 @@ syn keyword cp2kConstant FUNC_VDWDF2
 syn keyword cp2kConstant FUNC_VDWDFCX
 syn keyword cp2kConstant G87
 syn keyword cp2kConstant G96
-syn keyword cp2kConstant GAMMA
 syn keyword cp2kConstant GAPO
 syn keyword cp2kConstant GAPW
 syn keyword cp2kConstant GAPW_XC
@@ -523,7 +522,6 @@ syn keyword cp2kConstant MEDIUM
 syn keyword cp2kConstant MERLOT
 syn keyword cp2kConstant METADYN
 syn keyword cp2kConstant METHFESEL_PAXTON
-syn keyword cp2kConstant MIC
 syn keyword cp2kConstant MINIMA_CRAWLING
 syn keyword cp2kConstant MINIMA_HOPPING
 syn keyword cp2kConstant MINIMIZATION
@@ -2930,6 +2928,7 @@ syn keyword cp2kKeyword EPS_EIGENVALUE
 syn keyword cp2kKeyword EPS_EIGVAL
 syn keyword cp2kKeyword EPS_EIGVAL_DEGEN
 syn keyword cp2kKeyword EPS_EIGVAL_S
+syn keyword cp2kKeyword EPS_EIGVAL_S_GAMMA
 syn keyword cp2kKeyword EPS_ENE
 syn keyword cp2kKeyword EPS_ERROR
 syn keyword cp2kKeyword EPS_ERROR_EARLY
@@ -3171,7 +3170,6 @@ syn keyword cp2kKeyword GPW_TYPE
 syn keyword cp2kKeyword GP_NOISE_VAR
 syn keyword cp2kKeyword GP_SCALE
 syn keyword cp2kKeyword GRADIENT_CUTOFF
-syn keyword cp2kKeyword GREENS_FUNCTION
 syn keyword cp2kKeyword GRID
 syn keyword cp2kKeyword GRID_2D
 syn keyword cp2kKeyword GRID_OPT
@@ -3407,6 +3405,7 @@ syn keyword cp2kKeyword M-VALUE
 syn keyword cp2kKeyword MAGNETIC
 syn keyword cp2kKeyword MAGNETIZATION
 syn keyword cp2kKeyword MAKE_CHI_POS_DEFINITE
+syn keyword cp2kKeyword MAKE_OVERLAP_MAT_AO_POS_DEFINITE
 syn keyword cp2kKeyword MAO
 syn keyword cp2kKeyword MAO_EPS1
 syn keyword cp2kKeyword MAO_EPS_GRAD
@@ -4067,7 +4066,6 @@ syn keyword cp2kKeyword RELATIVE_TOLERANCE
 syn keyword cp2kKeyword RELATIVISTIC
 syn keyword cp2kKeyword RELAX_MULTIPLICITY RELAX_MULTIP
 syn keyword cp2kKeyword REL_CUTOFF RELATIVE_CUTOFF
-syn keyword cp2kKeyword REL_CUTOFFS_CHI_W
 syn keyword cp2kKeyword REL_CUTOFF_TRUNC_COULOMB_RI_X
 syn keyword cp2kKeyword REMOVE_CONTRACTION
 syn keyword cp2kKeyword REMOVE_SET
