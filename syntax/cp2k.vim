@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:ebdeb28)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:0e722df)
 
 if exists("b:current_syntax")
    finish
@@ -1403,7 +1403,6 @@ syn keyword cp2kSection GGA_X_G96
 syn keyword cp2kSection GGA_X_GAM
 syn keyword cp2kSection GGA_X_GG99
 syn keyword cp2kSection GGA_X_HCTH_A
-syn keyword cp2kSection GGA_X_HERMAN
 syn keyword cp2kSection GGA_X_HJS_B88
 syn keyword cp2kSection GGA_X_HJS_B88_V2
 syn keyword cp2kSection GGA_X_HJS_B97X
@@ -1591,6 +1590,7 @@ syn keyword cp2kSection HYB_GGA_XC_PBE_MOLB0
 syn keyword cp2kSection HYB_GGA_XC_PBE_SOL0
 syn keyword cp2kSection HYB_GGA_XC_QTP17
 syn keyword cp2kSection HYB_GGA_XC_RCAM_B3LYP
+syn keyword cp2kSection HYB_GGA_XC_RELPBE0
 syn keyword cp2kSection HYB_GGA_XC_REVB3LYP
 syn keyword cp2kSection HYB_GGA_XC_SB98_1A
 syn keyword cp2kSection HYB_GGA_XC_SB98_1B
@@ -1624,6 +1624,7 @@ syn keyword cp2kSection HYB_MGGA_XC_B98
 syn keyword cp2kSection HYB_MGGA_XC_BB1K
 syn keyword cp2kSection HYB_MGGA_XC_BR3P86
 syn keyword cp2kSection HYB_MGGA_XC_EDMGGAH
+syn keyword cp2kSection HYB_MGGA_XC_GAS22
 syn keyword cp2kSection HYB_MGGA_XC_LC_TMLYP
 syn keyword cp2kSection HYB_MGGA_XC_MPW1B95
 syn keyword cp2kSection HYB_MGGA_XC_MPW1KCIS
@@ -1633,6 +1634,9 @@ syn keyword cp2kSection HYB_MGGA_XC_PBE1KCIS
 syn keyword cp2kSection HYB_MGGA_XC_PW6B95
 syn keyword cp2kSection HYB_MGGA_XC_PW86B95
 syn keyword cp2kSection HYB_MGGA_XC_PWB6K
+syn keyword cp2kSection HYB_MGGA_XC_R2SCAN0
+syn keyword cp2kSection HYB_MGGA_XC_R2SCAN50
+syn keyword cp2kSection HYB_MGGA_XC_R2SCANH
 syn keyword cp2kSection HYB_MGGA_XC_REVTPSSH
 syn keyword cp2kSection HYB_MGGA_XC_TPSS0
 syn keyword cp2kSection HYB_MGGA_XC_TPSS1KCIS
@@ -4770,6 +4774,7 @@ syn keyword cp2kKeyword _CAB1
 syn keyword cp2kKeyword _CAB2
 syn keyword cp2kKeyword _CAB3
 syn keyword cp2kKeyword _CAB4
+syn keyword cp2kKeyword _CBETAPBE
 syn keyword cp2kKeyword _CC
 syn keyword cp2kKeyword _CC0
 syn keyword cp2kKeyword _CC00
@@ -4982,6 +4987,8 @@ syn keyword cp2kKeyword _PREFACTOR
 syn keyword cp2kKeyword _Q
 syn keyword cp2kKeyword _R0
 syn keyword cp2kKeyword _R1
+syn keyword cp2kKeyword _SCALGGAC
+syn keyword cp2kKeyword _SCALLDAC
 syn keyword cp2kKeyword _SX
 syn keyword cp2kKeyword _TAUR
 syn keyword cp2kKeyword _U
@@ -5008,6 +5015,8 @@ syn keyword cp2kKeyword _W[7]
 syn keyword cp2kKeyword _W[8]
 syn keyword cp2kKeyword _W[9]
 syn keyword cp2kKeyword _X
+syn keyword cp2kKeyword _XKAPPA
+syn keyword cp2kKeyword _XMUEPBE
 syn keyword cp2kKeyword _ZETA
 syn keyword cp2kKeyword __CONTROL_VAL
 syn keyword cp2kKeyword __ROOT__
