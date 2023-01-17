@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:0e722df)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:d252d28)
 
 if exists("b:current_syntax")
    finish
@@ -335,6 +335,10 @@ syn keyword cp2kConstant EXPLICIT_ORBITALS
 syn keyword cp2kConstant EXPONENTIAL
 syn keyword cp2kConstant EXPONENTS
 syn keyword cp2kConstant EXTERNAL
+syn keyword cp2kConstant EXT_LARGE
+syn keyword cp2kConstant EXT_MEDIUM
+syn keyword cp2kConstant EXT_SMALL
+syn keyword cp2kConstant EXT_VERY_LARGE
 syn keyword cp2kConstant FALSE
 syn keyword cp2kConstant FARMING
 syn keyword cp2kConstant FATTEBERT-GYGI
@@ -622,6 +626,7 @@ syn keyword cp2kConstant OPTIMIZE_BASIS
 syn keyword cp2kConstant OPTIMIZE_INPUT
 syn keyword cp2kConstant OPTX
 syn keyword cp2kConstant OPTX_LIBXC
+syn keyword cp2kConstant ORB
 syn keyword cp2kConstant ORBITAL
 syn keyword cp2kConstant ORIG
 syn keyword cp2kConstant ORIGINAL
@@ -3143,6 +3148,7 @@ syn keyword cp2kKeyword GAMMA_KT
 syn keyword cp2kKeyword GAMMA_ONLY_SIGMA GAMMA
 syn keyword cp2kKeyword GAMMA_POINT
 syn keyword cp2kKeyword GAP
+syn keyword cp2kKeyword GAPW_1C_BASIS
 syn keyword cp2kKeyword GAPW_MAX_ALPHA
 syn keyword cp2kKeyword GAPW_PRJ_RADII
 syn keyword cp2kKeyword GAUGE
@@ -3680,6 +3686,7 @@ syn keyword cp2kKeyword NSTEPS_IT
 syn keyword cp2kKeyword NSWAPMOVES
 syn keyword cp2kKeyword NS_MAX
 syn keyword cp2kKeyword NT_HILLS
+syn keyword cp2kKeyword NUMBER_INTEGRATION_GROUPS
 syn keyword cp2kKeyword NUMBER_OF_ATOMS NATOMS NATOM
 syn keyword cp2kKeyword NUMBER_OF_REPLICA
 syn keyword cp2kKeyword NUMBER_OF_SHELLS
