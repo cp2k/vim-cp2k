@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:4832040)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:1ed42ca)
 
 if exists("b:current_syntax")
    finish
@@ -2024,6 +2024,7 @@ syn keyword cp2kSection NABLAVKS_CUBES
 syn keyword cp2kSection NAMD_PRINT
 syn keyword cp2kSection NEGF
 syn keyword cp2kSection NEIGHBOR_LISTS
+syn keyword cp2kSection NEQUIP
 syn keyword cp2kSection NLMO_OPTIMIZER_PCG
 syn keyword cp2kSection NMC_MOVES
 syn keyword cp2kSection NMR
@@ -4525,6 +4526,10 @@ syn keyword cp2kKeyword UKS UNRESTRICTED_KOHN_SHAM LSD SPIN_POLARIZED
 syn keyword cp2kKeyword UNIQUE_SPLINE
 syn keyword cp2kKeyword UNIT
 syn keyword cp2kKeyword UNITS
+syn keyword cp2kKeyword UNIT_CELL
+syn keyword cp2kKeyword UNIT_COORDS
+syn keyword cp2kKeyword UNIT_ENERGY
+syn keyword cp2kKeyword UNIT_FORCES
 syn keyword cp2kKeyword UNIX
 syn keyword cp2kKeyword UPDATE_XC_ENERGY
 syn keyword cp2kKeyword UPPER_TRIANGULAR
