@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:81b9807)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:685d0db)
 
 if exists("b:current_syntax")
    finish
@@ -2265,6 +2265,7 @@ syn keyword cp2kSection UPF_FILE
 syn keyword cp2kSection UVAR
 syn keyword cp2kSection UZH2022
 syn keyword cp2kSection VARIABLE
+syn keyword cp2kSection VCD
 syn keyword cp2kSection VDW_POTENTIAL
 syn keyword cp2kSection VELOCITIES
 syn keyword cp2kSection VELOCITY
@@ -3416,6 +3417,8 @@ syn keyword cp2kKeyword M
 syn keyword cp2kKeyword M-RATIO
 syn keyword cp2kKeyword M-VALUE
 syn keyword cp2kKeyword MAGNETIC
+syn keyword cp2kKeyword MAGNETIC_ORIGIN
+syn keyword cp2kKeyword MAGNETIC_ORIGIN_REFERENCE
 syn keyword cp2kKeyword MAGNETIZATION
 syn keyword cp2kKeyword MAKE_CHI_POS_DEFINITE
 syn keyword cp2kKeyword MAKE_OVERLAP_MAT_AO_POS_DEFINITE
@@ -3792,6 +3795,7 @@ syn keyword cp2kKeyword ORBITAL_SET
 syn keyword cp2kKeyword ORDER
 syn keyword cp2kKeyword ORDERING
 syn keyword cp2kKeyword ORDER_LANCZOS
+syn keyword cp2kKeyword ORIGIN_DEPENDENT_MFP
 syn keyword cp2kKeyword ORIG_IS_VIRTUAL
 syn keyword cp2kKeyword ORIG_MARKED_STATE
 syn keyword cp2kKeyword ORIG_MO_INDEX
@@ -4339,6 +4343,8 @@ syn keyword cp2kKeyword SORT_BASIS
 syn keyword cp2kKeyword SORT_BY_SELF_TIME
 syn keyword cp2kKeyword SO_CORRECTION
 syn keyword cp2kKeyword SPARSE_MOS
+syn keyword cp2kKeyword SPATIAL_ORIGIN
+syn keyword cp2kKeyword SPATIAL_ORIGIN_REFERENCE
 syn keyword cp2kKeyword SPECIAL_POINT
 syn keyword cp2kKeyword SPECULATIVE_CANCELING
 syn keyword cp2kKeyword SPGLIB_TOLERANCE
