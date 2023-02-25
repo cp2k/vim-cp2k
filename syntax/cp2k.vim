@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:685d0db)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:d649f8f)
 
 if exists("b:current_syntax")
    finish
@@ -410,6 +410,7 @@ syn keyword cp2kConstant GEOMETRICAL_GTO
 syn keyword cp2kConstant GEOMETRY_OPTIMIZATION
 syn keyword cp2kConstant GEO_CENTER
 syn keyword cp2kConstant GEO_OPT
+syn keyword cp2kConstant GGAFXC
 syn keyword cp2kConstant GHO
 syn keyword cp2kConstant GLB
 syn keyword cp2kConstant GLE
@@ -478,6 +479,7 @@ syn keyword cp2kConstant LB_ALPHA
 syn keyword cp2kConstant LC
 syn keyword cp2kConstant LCAO
 syn keyword cp2kConstant LDA
+syn keyword cp2kConstant LDAFXC
 syn keyword cp2kConstant LDA_X_LIBXC
 syn keyword cp2kConstant LEGENDRE
 syn keyword cp2kConstant LENGTH
@@ -639,6 +641,7 @@ syn keyword cp2kConstant OT
 syn keyword cp2kConstant OT_DIAG
 syn keyword cp2kConstant OVERLAP
 syn keyword cp2kConstant PADE
+syn keyword cp2kConstant PADEFXC
 syn keyword cp2kConstant PAIR_POTENTIAL
 syn keyword cp2kConstant PARALLEL
 syn keyword cp2kConstant PARDISO
@@ -1180,6 +1183,7 @@ syn keyword cp2kSection FATTEBERT-GYGI
 syn keyword cp2kSection FCIDUMP
 syn keyword cp2kSection FF_INFO
 syn keyword cp2kSection FF_PARAMETER_FILE
+syn keyword cp2kSection FIELD
 syn keyword cp2kSection FILTER_MATRIX
 syn keyword cp2kSection FIT_BASIS
 syn keyword cp2kSection FIT_CHARGE
@@ -2263,7 +2267,6 @@ syn keyword cp2kSection UMBRELLA_INTEGRATION
 syn keyword cp2kSection UPDATE
 syn keyword cp2kSection UPF_FILE
 syn keyword cp2kSection UVAR
-syn keyword cp2kSection UZH2022
 syn keyword cp2kSection VARIABLE
 syn keyword cp2kSection VCD
 syn keyword cp2kSection VDW_POTENTIAL
@@ -2746,6 +2749,7 @@ syn keyword cp2kKeyword DEBUG_FORCES
 syn keyword cp2kKeyword DEBUG_LRI_INTEGRALS
 syn keyword cp2kKeyword DEBUG_NSUM_MAX
 syn keyword cp2kKeyword DEBUG_POLARIZABILITY
+syn keyword cp2kKeyword DEBUG_STRESS
 syn keyword cp2kKeyword DEBUG_STRESS_TENSOR
 syn keyword cp2kKeyword DEBUG_TOLERANCE
 syn keyword cp2kKeyword DEFINE_EXCITED
