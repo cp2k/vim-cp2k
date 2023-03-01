@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:26d600e)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:4e8b7c4)
 
 if exists("b:current_syntax")
    finish
@@ -1793,6 +1793,7 @@ syn keyword cp2kSection LINK
 syn keyword cp2kSection LINRES
 syn keyword cp2kSection LOAD_BALANCE
 syn keyword cp2kSection LOCALIZE
+syn keyword cp2kSection LOCAL_BANDGAP
 syn keyword cp2kSection LOCAL_ENERGY_CUBE
 syn keyword cp2kSection LOCAL_STRESS_CUBE
 syn keyword cp2kSection LOC_RESTART
@@ -2909,9 +2910,11 @@ syn keyword cp2kKeyword ENERGY_LBOUND
 syn keyword cp2kKeyword ENERGY_PRECISION
 syn keyword cp2kKeyword ENERGY_RANGE
 syn keyword cp2kKeyword ENERGY_SCALING
+syn keyword cp2kKeyword ENERGY_SPACING
 syn keyword cp2kKeyword ENERGY_TOL
 syn keyword cp2kKeyword ENERGY_TOLERANCE
 syn keyword cp2kKeyword ENERGY_WEIGHT
+syn keyword cp2kKeyword ENERGY_WINDOW
 syn keyword cp2kKeyword ENFORCE_DECREASE
 syn keyword cp2kKeyword ENSEMBLE
 syn keyword cp2kKeyword ENVELOP
@@ -3368,6 +3371,7 @@ syn keyword cp2kKeyword LANGEVIN
 syn keyword cp2kKeyword LAST_SNAPSHOT
 syn keyword cp2kKeyword LBIAS
 syn keyword cp2kKeyword LDISCRETE
+syn keyword cp2kKeyword LDOS_THRESHOLD_GAP
 syn keyword cp2kKeyword LEAST_SQ_FT
 syn keyword cp2kKeyword LEBEDEV_GRID
 syn keyword cp2kKeyword LEEUWEN-BAERENDS
@@ -3965,6 +3969,7 @@ syn keyword cp2kKeyword PRINT_NEIGHBORS
 syn keyword cp2kKeyword PRINT_ONLY_ACC
 syn keyword cp2kKeyword PRINT_PERFORMANCE
 syn keyword cp2kKeyword PRINT_PHASES
+syn keyword cp2kKeyword PRINT_SELF_ENERGY
 syn keyword cp2kKeyword PRINT_STRESS
 syn keyword cp2kKeyword PRINT_TEST_OUTPUT
 syn keyword cp2kKeyword PRINT_TIMERS
@@ -4287,7 +4292,6 @@ syn keyword cp2kKeyword SEED_NAME
 syn keyword cp2kKeyword SELECTED_STATES_ATOM_RADIUS
 syn keyword cp2kKeyword SELECTED_STATES_ON_ATOM_LIST
 syn keyword cp2kKeyword SELF_CONSISTENT
-syn keyword cp2kKeyword SELF_ENERGY
 syn keyword cp2kKeyword SEMICORE_LEVEL
 syn keyword cp2kKeyword SET_RADII
 syn keyword cp2kKeyword SE_PARAMETERS
