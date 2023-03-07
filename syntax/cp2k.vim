@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:eddef23)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:ffa692a)
 
 if exists("b:current_syntax")
    finish
@@ -2577,6 +2577,7 @@ syn keyword cp2kKeyword CALC_ARGS
 syn keyword cp2kKeyword CALC_COND_NUM CALC_CONDITION_NUMBER
 syn keyword cp2kKeyword CALLGRAPH
 syn keyword cp2kKeyword CALLGRAPH_FILE_NAME
+syn keyword cp2kKeyword CAPTAIN_MINION
 syn keyword cp2kKeyword CARTESIAN
 syn keyword cp2kKeyword CAVITY_CONFINE
 syn keyword cp2kKeyword CAVITY_PRINT
@@ -3445,7 +3446,6 @@ syn keyword cp2kKeyword MAP_ATOMS
 syn keyword cp2kKeyword MARK_STATES
 syn keyword cp2kKeyword MASS
 syn keyword cp2kKeyword MASS_FRACTION MASS
-syn keyword cp2kKeyword MASTER_SLAVE
 syn keyword cp2kKeyword MATAGA_NISHIMOTO_CEXP
 syn keyword cp2kKeyword MATAGA_NISHIMOTO_XEXP
 syn keyword cp2kKeyword MATMUL
