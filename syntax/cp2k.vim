@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:b22e234)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:ef71e33)
 
 if exists("b:current_syntax")
    finish
@@ -999,6 +999,7 @@ syn keyword cp2kSection BMHFT
 syn keyword cp2kSection BMHFTD
 syn keyword cp2kSection BOND
 syn keyword cp2kSection BONDS
+syn keyword cp2kSection BOND_ORBITALS
 syn keyword cp2kSection BOND_ROTATION
 syn keyword cp2kSection BOX_DISPLACEMENTS
 syn keyword cp2kSection BOX_PROBABILITIES
@@ -1029,6 +1030,7 @@ syn keyword cp2kSection CG
 syn keyword cp2kSection CHARGE
 syn keyword cp2kSection CHARGEMOL
 syn keyword cp2kSection CHARGES
+syn keyword cp2kSection CHARGE_CENTER
 syn keyword cp2kSection CHEBYSHEV
 syn keyword cp2kSection CHECK_SPLINE
 syn keyword cp2kSection CHI
@@ -1679,6 +1681,11 @@ syn keyword cp2kSection HYB_MGGA_X_TAU_HCTH
 syn keyword cp2kSection HYDRONIUM_DISTANCE
 syn keyword cp2kSection HYDRONIUM_SHELL
 syn keyword cp2kSection HYPERFINE_COUPLING_TENSOR
+syn keyword cp2kSection IAO_ANALYSIS
+syn keyword cp2kSection IAO_CUBES
+syn keyword cp2kSection IAO_MOLDEN
+syn keyword cp2kSection IBO_CUBES
+syn keyword cp2kSection IBO_MOLDEN
 syn keyword cp2kSection IC
 syn keyword cp2kSection IMAGE_CHARGE
 syn keyword cp2kSection IMAGE_CHARGE_INFO
@@ -2040,6 +2047,7 @@ syn keyword cp2kSection NON_LOCAL
 syn keyword cp2kSection NORMALMODE
 syn keyword cp2kSection NOSE
 syn keyword cp2kSection NTO_ANALYSIS
+syn keyword cp2kSection ONE_CENTER_EXPANSION
 syn keyword cp2kSection OPBEND
 syn keyword cp2kSection OPTIMIZATION
 syn keyword cp2kSection OPTIMIZE_BAND
@@ -2993,6 +3001,7 @@ syn keyword cp2kKeyword EPS_MU
 syn keyword cp2kKeyword EPS_NORM
 syn keyword cp2kKeyword EPS_NO_ERROR_CHECK
 syn keyword cp2kKeyword EPS_O3_INT
+syn keyword cp2kKeyword EPS_OCC
 syn keyword cp2kKeyword EPS_OCCUPATION
 syn keyword cp2kKeyword EPS_OCCUPIED
 syn keyword cp2kKeyword EPS_OUT
@@ -3620,6 +3629,7 @@ syn keyword cp2kKeyword N0 N_0
 syn keyword cp2kKeyword NAB_MIN
 syn keyword cp2kKeyword NAME_BODY
 syn keyword cp2kKeyword NATOMS
+syn keyword cp2kKeyword NBAS
 syn keyword cp2kKeyword NBEADS
 syn keyword cp2kKeyword NBIN
 syn keyword cp2kKeyword NBINS
@@ -3917,6 +3927,7 @@ syn keyword cp2kKeyword POO EXPON_NUMERATORA
 syn keyword cp2kKeyword PORT
 syn keyword cp2kKeyword POSITION
 syn keyword cp2kKeyword POSITION_FILE
+syn keyword cp2kKeyword POSITION_OPERATOR_BERRY
 syn keyword cp2kKeyword POSITION_SCALED POS_SCALED
 syn keyword cp2kKeyword POTENTIAL
 syn keyword cp2kKeyword POTENTIAL_DATA TSHPSC_DATA T_C_G_DATA
