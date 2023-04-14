@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:a5f008f)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:b57c5e4)
 
 if exists("b:current_syntax")
    finish
@@ -945,6 +945,7 @@ syn keyword cp2kSection ADMM_BASIS
 syn keyword cp2kSection AD_LANGEVIN
 syn keyword cp2kSection AE_BASIS
 syn keyword cp2kSection ALCHEMICAL_CHANGE
+syn keyword cp2kSection ALLEGRO
 syn keyword cp2kSection ALMO_CTA
 syn keyword cp2kSection ALMO_EDA_CT
 syn keyword cp2kSection ALMO_OPTIMIZER_DIIS
