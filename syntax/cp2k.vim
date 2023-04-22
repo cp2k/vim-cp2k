@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:b57c5e4)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:84b2f9a)
 
 if exists("b:current_syntax")
    finish
@@ -753,6 +753,7 @@ syn keyword cp2kConstant SAME_AS_PARTICLE
 syn keyword cp2kConstant SAOP
 syn keyword cp2kConstant SCALAPACK
 syn keyword cp2kConstant SCDM
+syn keyword cp2kConstant SCF
 syn keyword cp2kConstant SCF_WFN
 syn keyword cp2kConstant SCMP
 syn keyword cp2kConstant SCZORA(MP)
@@ -904,6 +905,7 @@ syn keyword cp2kConstant X
 syn keyword cp2kConstant XALMO_1DIAG
 syn keyword cp2kConstant XALMO_SCF
 syn keyword cp2kConstant XALMO_X
+syn keyword cp2kConstant XAS_TDP
 syn keyword cp2kConstant XC_FUNCTIONAL
 syn keyword cp2kConstant XMOL
 syn keyword cp2kConstant XSC
@@ -2113,6 +2115,7 @@ syn keyword cp2kSection PROGRESS_TRAJECTORY
 syn keyword cp2kSection PROJECTED_AREA
 syn keyword cp2kSection PROJECTED_AREA_2_AVG
 syn keyword cp2kSection PROJECTION
+syn keyword cp2kSection PROJECTION_MO
 syn keyword cp2kSection PROJECTORS
 syn keyword cp2kSection PROPERTIES
 syn keyword cp2kSection PW92
@@ -4097,12 +4100,16 @@ syn keyword cp2kKeyword REFERENCE_FUNCTIONAL
 syn keyword cp2kKeyword REFERENCE_POINT REF_POINT
 syn keyword cp2kKeyword REFERENCE_POINT_2 REF_POINT_2
 syn keyword cp2kKeyword REFERENCE_SET
+syn keyword cp2kKeyword REFERENCE_TYPE
 syn keyword cp2kKeyword REFINEMENT_FACTOR
 syn keyword cp2kKeyword REFINE_FERMI_LEVEL
 syn keyword cp2kKeyword REF_CELL_FILE_NAME
 syn keyword cp2kKeyword REF_EMBED_SUBSYS
 syn keyword cp2kKeyword REF_ENERGY
 syn keyword cp2kKeyword REF_FORCE_FILE_NAME
+syn keyword cp2kKeyword REF_MO_FILE_NAME
+syn keyword cp2kKeyword REF_MO_INDEX
+syn keyword cp2kKeyword REF_MO_SPIN
 syn keyword cp2kKeyword REF_TRAJ_FILE_NAME
 syn keyword cp2kKeyword REGION
 syn keyword cp2kKeyword REGULARIZATION
@@ -4429,6 +4436,8 @@ syn keyword cp2kKeyword SUBSPACE_SHELL
 syn keyword cp2kKeyword SUBSPACE_SIZE
 syn keyword cp2kKeyword SUB_BOX
 syn keyword cp2kKeyword SUB_CONF
+syn keyword cp2kKeyword SUM_ON_ALL_REF
+syn keyword cp2kKeyword SUM_ON_ALL_TD
 syn keyword cp2kKeyword SUM_PRECISION
 syn keyword cp2kKeyword SURFACE_DIPOLE_CORRECTION SURFACE_DIPOLE SURF_DIP
 syn keyword cp2kKeyword SURF_DIP_DIR
@@ -4478,6 +4487,8 @@ syn keyword cp2kKeyword TB3_INTERACTION
 syn keyword cp2kKeyword TC_PRESSURE
 syn keyword cp2kKeyword TC_TEMPERATURE
 syn keyword cp2kKeyword TDDFT_SCF
+syn keyword cp2kKeyword TD_MO_INDEX
+syn keyword cp2kKeyword TD_MO_SPIN
 syn keyword cp2kKeyword TEMP
 syn keyword cp2kKeyword TEMPDIST_INIT_WIDTH
 syn keyword cp2kKeyword TEMPDIST_UPDATE_HEIGHT
