@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:7d51e9a)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:e0ef5d2)
 
 if exists("b:current_syntax")
    finish
@@ -466,6 +466,7 @@ syn keyword cp2kConstant KDSO-D
 syn keyword cp2kConstant KERKER_MIXING
 syn keyword cp2kConstant KOELLING_HARMON
 syn keyword cp2kConstant KOHN-SHAM
+syn keyword cp2kConstant L1NORM
 syn keyword cp2kConstant L1SD
 syn keyword cp2kConstant LANCZOS
 syn keyword cp2kConstant LANGEVIN
@@ -618,6 +619,7 @@ syn keyword cp2kConstant NVE
 syn keyword cp2kConstant NVIDIA_GPU
 syn keyword cp2kConstant NVT
 syn keyword cp2kConstant NVT_ADIABATIC
+syn keyword cp2kConstant OCCUPATION
 syn keyword cp2kConstant OCCUPIED
 syn keyword cp2kConstant OCTAHEDRON
 syn keyword cp2kConstant OFF
@@ -663,6 +665,8 @@ syn keyword cp2kConstant PEXSI
 syn keyword cp2kConstant PIMD
 syn keyword cp2kConstant PINT
 syn keyword cp2kConstant PIPEK
+syn keyword cp2kConstant PIPEK_MEZEY
+syn keyword cp2kConstant PIPEK_MEZEY_4
 syn keyword cp2kConstant PLAIN
 syn keyword cp2kConstant PLASMA
 syn keyword cp2kConstant PM3
@@ -2925,6 +2929,8 @@ syn keyword cp2kKeyword ENERGY_FUNCTIONAL
 syn keyword cp2kKeyword ENERGY_GAP
 syn keyword cp2kKeyword ENERGY_INTERVAL
 syn keyword cp2kKeyword ENERGY_LBOUND
+syn keyword cp2kKeyword ENERGY_LOCALIZATION_FUNCTION
+syn keyword cp2kKeyword ENERGY_LOCALIZATION_WEIGHT
 syn keyword cp2kKeyword ENERGY_PRECISION
 syn keyword cp2kKeyword ENERGY_RANGE
 syn keyword cp2kKeyword ENERGY_SCALING
@@ -3427,6 +3433,7 @@ syn keyword cp2kKeyword LMAX_POT
 syn keyword cp2kKeyword LMAX_RHO
 syn keyword cp2kKeyword LOAD_BALANCE_INFO
 syn keyword cp2kKeyword LOAD_SCALE
+syn keyword cp2kKeyword LOCALIZATION_OPERATOR
 syn keyword cp2kKeyword LOCALIZE LOC DO_LOC
 syn keyword cp2kKeyword LOCHOMO_RESTART_FILE_NAME
 syn keyword cp2kKeyword LOCKING
