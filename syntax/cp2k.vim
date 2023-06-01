@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:d168495)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:4dc27d6)
 
 if exists("b:current_syntax")
    finish
@@ -1931,6 +1931,32 @@ syn keyword cp2kSection MGGA_X_GVT4
 syn keyword cp2kSection MGGA_X_GX
 syn keyword cp2kSection MGGA_X_HLTA
 syn keyword cp2kSection MGGA_X_JK
+syn keyword cp2kSection MGGA_X_KTBM_0
+syn keyword cp2kSection MGGA_X_KTBM_1
+syn keyword cp2kSection MGGA_X_KTBM_10
+syn keyword cp2kSection MGGA_X_KTBM_11
+syn keyword cp2kSection MGGA_X_KTBM_12
+syn keyword cp2kSection MGGA_X_KTBM_13
+syn keyword cp2kSection MGGA_X_KTBM_14
+syn keyword cp2kSection MGGA_X_KTBM_15
+syn keyword cp2kSection MGGA_X_KTBM_16
+syn keyword cp2kSection MGGA_X_KTBM_17
+syn keyword cp2kSection MGGA_X_KTBM_18
+syn keyword cp2kSection MGGA_X_KTBM_19
+syn keyword cp2kSection MGGA_X_KTBM_2
+syn keyword cp2kSection MGGA_X_KTBM_20
+syn keyword cp2kSection MGGA_X_KTBM_21
+syn keyword cp2kSection MGGA_X_KTBM_22
+syn keyword cp2kSection MGGA_X_KTBM_23
+syn keyword cp2kSection MGGA_X_KTBM_24
+syn keyword cp2kSection MGGA_X_KTBM_3
+syn keyword cp2kSection MGGA_X_KTBM_4
+syn keyword cp2kSection MGGA_X_KTBM_5
+syn keyword cp2kSection MGGA_X_KTBM_6
+syn keyword cp2kSection MGGA_X_KTBM_7
+syn keyword cp2kSection MGGA_X_KTBM_8
+syn keyword cp2kSection MGGA_X_KTBM_9
+syn keyword cp2kSection MGGA_X_KTBM_GAP
 syn keyword cp2kSection MGGA_X_LTA
 syn keyword cp2kSection MGGA_X_M06_L
 syn keyword cp2kSection MGGA_X_M11_L
@@ -2358,8 +2384,11 @@ syn keyword cp2kKeyword 3RD_DERIV_ANALYTICAL
 syn keyword cp2kKeyword A
 syn keyword cp2kKeyword A1
 syn keyword cp2kKeyword A2
+syn keyword cp2kKeyword A2B
+syn keyword cp2kKeyword A2T
 syn keyword cp2kKeyword A3
 syn keyword cp2kKeyword A4
+syn keyword cp2kKeyword AB
 syn keyword cp2kKeyword ABC
 syn keyword cp2kKeyword ABC_THRESHOLD
 syn keyword cp2kKeyword ABSOLUTE_POSITION
@@ -2424,6 +2453,7 @@ syn keyword cp2kKeyword APX_TYPE
 syn keyword cp2kKeyword ARNOLDI
 syn keyword cp2kKeyword ASPARSITY
 syn keyword cp2kKeyword ASPC_ORDER
+syn keyword cp2kKeyword AT
 syn keyword cp2kKeyword ATOM
 syn keyword cp2kKeyword ATOMIC_CHARGES
 syn keyword cp2kKeyword ATOMIC_CUTOFF
@@ -2498,6 +2528,8 @@ syn keyword cp2kKeyword A_SCALE
 syn keyword cp2kKeyword B
 syn keyword cp2kKeyword B1
 syn keyword cp2kKeyword B2
+syn keyword cp2kKeyword B2B
+syn keyword cp2kKeyword B2T
 syn keyword cp2kKeyword B3
 syn keyword cp2kKeyword BACKEND
 syn keyword cp2kKeyword BACKUP_COPIES
@@ -2521,6 +2553,7 @@ syn keyword cp2kKeyword BASIS_TEMPLATE_FILE
 syn keyword cp2kKeyword BASIS_TYPE
 syn keyword cp2kKeyword BASIS_WORK_FILE
 syn keyword cp2kKeyword BATCH_SIZE
+syn keyword cp2kKeyword BB
 syn keyword cp2kKeyword BD
 syn keyword cp2kKeyword BEHAVIOR
 syn keyword cp2kKeyword BETA
@@ -2583,6 +2616,7 @@ syn keyword cp2kKeyword BSSE
 syn keyword cp2kKeyword BS_K
 syn keyword cp2kKeyword BS_M
 syn keyword cp2kKeyword BS_N
+syn keyword cp2kKeyword BT
 syn keyword cp2kKeyword BTYPE
 syn keyword cp2kKeyword BUMP_STEPS_DOWNWARDS
 syn keyword cp2kKeyword BUMP_STEPS_UPWARDS
@@ -2738,6 +2772,7 @@ syn keyword cp2kKeyword CROSSING_SEARCH
 syn keyword cp2kKeyword CS
 syn keyword cp2kKeyword CSPARSITY
 syn keyword cp2kKeyword CSR_SCREENING
+syn keyword cp2kKeyword CT
 syn keyword cp2kKeyword CTYPE
 syn keyword cp2kKeyword CUBES_LIST
 syn keyword cp2kKeyword CUBES_LU_BOUNDS CUBES_LU
@@ -4707,6 +4742,7 @@ syn keyword cp2kKeyword XALMO_TRIAL_WF
 syn keyword cp2kKeyword XAS_CORE
 syn keyword cp2kKeyword XAS_SCF
 syn keyword cp2kKeyword XAS_TOT_EL
+syn keyword cp2kKeyword XB
 syn keyword cp2kKeyword XB_RADIUS
 syn keyword cp2kKeyword XC_DENS_TRE
 syn keyword cp2kKeyword XC_DERIV
@@ -4717,6 +4753,7 @@ syn keyword cp2kKeyword XES_EMPTY_HOMO
 syn keyword cp2kKeyword XPS_ONLY
 syn keyword cp2kKeyword XRANGE
 syn keyword cp2kKeyword XRD_INTERFACE
+syn keyword cp2kKeyword XT
 syn keyword cp2kKeyword XTL_INFO
 syn keyword cp2kKeyword XTNT
 syn keyword cp2kKeyword XYZ
