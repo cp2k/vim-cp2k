@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:1501a5c)
+" CP2K-Version: CP2K version 2023.1 (Development Version) (git:18d5c6e)
 
 if exists("b:current_syntax")
    finish
@@ -2244,6 +2244,8 @@ syn keyword cp2kSection SIC
 syn keyword cp2kSection SIEPMANN
 syn keyword cp2kSection SLAB_SAMPLING
 syn keyword cp2kSection SMEAR
+syn keyword cp2kSection SOC
+syn keyword cp2kSection SOC_PRINT
 syn keyword cp2kSection SPAWNED_HILLS_HEIGHT
 syn keyword cp2kSection SPAWNED_HILLS_INVDT
 syn keyword cp2kSection SPAWNED_HILLS_POS
@@ -4419,6 +4421,7 @@ syn keyword cp2kKeyword SOLUTE_HE
 syn keyword cp2kKeyword SOLUTE_INTERACTION
 syn keyword cp2kKeyword SOLUTE_RADIUS
 syn keyword cp2kKeyword SOLVER_METHOD
+syn keyword cp2kKeyword SOME
 syn keyword cp2kKeyword SOO_LIST
 syn keyword cp2kKeyword SOO_RHO_HARD
 syn keyword cp2kKeyword SORT_BASIS
@@ -4442,6 +4445,7 @@ syn keyword cp2kKeyword SPLINE_DATA
 syn keyword cp2kKeyword SPLINE_FIND_COEFFS
 syn keyword cp2kKeyword SPLINE_INFO
 syn keyword cp2kKeyword SPLINE_ORDER
+syn keyword cp2kKeyword SPLITTING
 syn keyword cp2kKeyword SPLIT_RESTART_FILE
 syn keyword cp2kKeyword SQRT_ORDER
 syn keyword cp2kKeyword STACK_SORT
@@ -4625,7 +4629,9 @@ syn keyword cp2kKeyword UNITS
 syn keyword cp2kKeyword UNIT_CELL
 syn keyword cp2kKeyword UNIT_COORDS
 syn keyword cp2kKeyword UNIT_ENERGY
+syn keyword cp2kKeyword UNIT_EV
 syn keyword cp2kKeyword UNIT_FORCES
+syn keyword cp2kKeyword UNIT_WN
 syn keyword cp2kKeyword UNIX
 syn keyword cp2kKeyword UPDATE_XC_ENERGY
 syn keyword cp2kKeyword UPPER_TRIANGULAR
