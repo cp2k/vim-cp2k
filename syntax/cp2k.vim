@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.1 (Development Version) (git:18d5c6e)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:f008f64)
 
 if exists("b:current_syntax")
    finish
@@ -3564,6 +3564,7 @@ syn keyword cp2kKeyword MAX_PERM_CYCLE
 syn keyword cp2kKeyword MAX_PEXSI_ITER
 syn keyword cp2kKeyword MAX_PROJECTOR
 syn keyword cp2kKeyword MAX_RAD_LOCAL
+syn keyword cp2kKeyword MAX_RELATIVE_ERROR
 syn keyword cp2kKeyword MAX_REUSE
 syn keyword cp2kKeyword MAX_SCF
 syn keyword cp2kKeyword MAX_SCF_HISTORY MAX_SCF_HIST
