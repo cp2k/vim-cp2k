@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:f008f64)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:3c614b3)
 
 if exists("b:current_syntax")
    finish
@@ -1161,6 +1161,7 @@ syn keyword cp2kSection ENERGIES
 syn keyword cp2kSection ENERGIES_VAR
 syn keyword cp2kSection ENERGY
 syn keyword cp2kSection ENERGY_CORRECTION
+syn keyword cp2kSection ENERGY_DECOMPOSITION_ANALYSIS
 syn keyword cp2kSection ENERGY_WINDOWS
 syn keyword cp2kSection ENFORCE_OCCUPATION
 syn keyword cp2kSection EPR
