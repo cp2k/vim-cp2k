@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:3c614b3)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:8ce3b69)
 
 if exists("b:current_syntax")
    finish
@@ -981,6 +981,7 @@ syn keyword cp2kSection AUXILIARY_DENSITY_MATRIX_METHOD
 syn keyword cp2kSection AVBMC
 syn keyword cp2kSection AVERAGES
 syn keyword cp2kSection BAND
+syn keyword cp2kSection BANDSTRUCTURE
 syn keyword cp2kSection BAND_STRUCTURE
 syn keyword cp2kSection BANNER
 syn keyword cp2kSection BAROSTAT
@@ -2990,6 +2991,7 @@ syn keyword cp2kKeyword EPSILON
 syn keyword cp2kKeyword EPSISO EPS_ISO
 syn keyword cp2kKeyword EPSRHO0 EPSVRHO0 EPS_VRHO0
 syn keyword cp2kKeyword EPSSVD EPS_SVD
+syn keyword cp2kKeyword EPS_3C_INT
 syn keyword cp2kKeyword EPS_ADAPT
 syn keyword cp2kKeyword EPS_ADAPT_SCF
 syn keyword cp2kKeyword EPS_ADDED
@@ -3414,7 +3416,9 @@ syn keyword cp2kKeyword KINETIC_ENERGY
 syn keyword cp2kKeyword KOHN_SHAM_MATRIX
 syn keyword cp2kKeyword KPOINT
 syn keyword cp2kKeyword KPOINTS
+syn keyword cp2kKeyword KPOINTS_CHI_EPS_W
 syn keyword cp2kKeyword KPOINTS_SELF_ENERGY
+syn keyword cp2kKeyword KPOINTS_SIGMA
 syn keyword cp2kKeyword KPOINT_WEIGHTS_W
 syn keyword cp2kKeyword KSS
 syn keyword cp2kKeyword KT_CORRECTION
@@ -3808,6 +3812,7 @@ syn keyword cp2kKeyword NUM_POLYNOM
 syn keyword cp2kKeyword NUM_SINGULAR
 syn keyword cp2kKeyword NUM_SLATER
 syn keyword cp2kKeyword NUM_STEPS
+syn keyword cp2kKeyword NUM_TIME_FREQ_POINTS
 syn keyword cp2kKeyword NUM_Z_VECTORS
 syn keyword cp2kKeyword NVIRIAL
 syn keyword cp2kKeyword NZET
@@ -4403,6 +4408,7 @@ syn keyword cp2kKeyword SINGLE_PRECISION_MATRICES
 syn keyword cp2kKeyword SIP_LIST
 syn keyword cp2kKeyword SIZE
 syn keyword cp2kKeyword SIZE_LATTICE_SUM
+syn keyword cp2kKeyword SIZE_LATTICE_SUM_V
 syn keyword cp2kKeyword SKIP_EC
 syn keyword cp2kKeyword SKIP_FIRST
 syn keyword cp2kKeyword SKIP_LOAD_BALANCE_DISTRIBUTED
