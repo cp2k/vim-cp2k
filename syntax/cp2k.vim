@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:8ce3b69)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:0a8eaf6)
 
 if exists("b:current_syntax")
    finish
@@ -701,6 +701,7 @@ syn keyword cp2kConstant PW91X
 syn keyword cp2kConstant PX
 syn keyword cp2kConstant PY
 syn keyword cp2kConstant PZ
+syn keyword cp2kConstant QISKIT
 syn keyword cp2kConstant QM
 syn keyword cp2kConstant QMMM
 syn keyword cp2kConstant QS
@@ -2247,6 +2248,7 @@ syn keyword cp2kSection SIEPMANN
 syn keyword cp2kSection SLAB_SAMPLING
 syn keyword cp2kSection SMEAR
 syn keyword cp2kSection SOC
+syn keyword cp2kSection SOCKET
 syn keyword cp2kSection SOC_PRINT
 syn keyword cp2kSection SPAWNED_HILLS_HEIGHT
 syn keyword cp2kSection SPAWNED_HILLS_INVDT
@@ -2457,6 +2459,7 @@ syn keyword cp2kKeyword APX_TYPE
 syn keyword cp2kKeyword ARNOLDI
 syn keyword cp2kKeyword ASPARSITY
 syn keyword cp2kKeyword ASPC_ORDER
+syn keyword cp2kKeyword AS_SOLVER
 syn keyword cp2kKeyword AT
 syn keyword cp2kKeyword ATOM
 syn keyword cp2kKeyword ATOMIC_CHARGES
@@ -3308,8 +3311,6 @@ syn keyword cp2kKeyword IMAGE_CHARGE_MODEL IC
 syn keyword cp2kKeyword IMAGE_MATRIX_METHOD
 syn keyword cp2kKeyword IMAGE_RESTART_FILE_NAME
 syn keyword cp2kKeyword IMAGINARY_TIME_STRIDE
-syn keyword cp2kKeyword INACTIVE_ELECTRONS
-syn keyword cp2kKeyword INACTIVE_ORBITALS
 syn keyword cp2kKeyword INCLUDE_IMAGES
 syn keyword cp2kKeyword INDICES
 syn keyword cp2kKeyword INERTIA
@@ -4080,12 +4081,12 @@ syn keyword cp2kKeyword PW_GRID_LAYOUT
 syn keyword cp2kKeyword PW_GRID_LAYOUT_ALL
 syn keyword cp2kKeyword PW_HFX
 syn keyword cp2kKeyword PW_HFX_BLOCKSIZE
-syn keyword cp2kKeyword P_ACTIVE_FILE_NAME
 syn keyword cp2kKeyword P_EXPONENT
 syn keyword cp2kKeyword P_EXPONENTS
 syn keyword cp2kKeyword P_QUANTUM_NUMBERS
 syn keyword cp2kKeyword P_SCREEN_CORRECTION_FACTOR
 syn keyword cp2kKeyword QAOH
+syn keyword cp2kKeyword QCSCHEMA
 syn keyword cp2kKeyword QCUT
 syn keyword cp2kKeyword QF
 syn keyword cp2kKeyword QM EXPON_DENOMINATOR
@@ -4137,7 +4138,6 @@ syn keyword cp2kKeyword READ_DMFET_POT
 syn keyword cp2kKeyword READ_EMBED_POT
 syn keyword cp2kKeyword READ_EMBED_POT_CUBE
 syn keyword cp2kKeyword READ_FROM_CUBE
-syn keyword cp2kKeyword READ_P_ACTIVE
 syn keyword cp2kKeyword REALSPACE
 syn keyword cp2kKeyword REAL_AXIS_INTEGRATION_METHOD
 syn keyword cp2kKeyword REAL_SPACE
@@ -4355,6 +4355,7 @@ syn keyword cp2kKeyword SCALING_FACTOR
 syn keyword cp2kKeyword SCAN_DIRECTION
 syn keyword cp2kKeyword SCAN_POINTS
 syn keyword cp2kKeyword SCAN_STEP
+syn keyword cp2kKeyword SCF_EMBEDDING
 syn keyword cp2kKeyword SCF_GUESS
 syn keyword cp2kKeyword SCF_TYPE
 syn keyword cp2kKeyword SCHEME
