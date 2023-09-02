@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:967ffb2)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:5cf5c9b)
 
 if exists("b:current_syntax")
    finish
@@ -1512,6 +1512,7 @@ syn keyword cp2kSection GUESS_VECTORS
 syn keyword cp2kSection GV09
 syn keyword cp2kSection GW
 syn keyword cp2kSection GW2X
+syn keyword cp2kSection GW_DOS
 syn keyword cp2kSection GYRATION_RADIUS
 syn keyword cp2kSection G_TENSOR
 syn keyword cp2kSection HBONDS
@@ -2603,6 +2604,7 @@ syn keyword cp2kKeyword BOX2_FILE_NAME
 syn keyword cp2kKeyword BRACK_LIMIT
 syn keyword cp2kKeyword BRENT_MAX_ITER
 syn keyword cp2kKeyword BRENT_TOL
+syn keyword cp2kKeyword BROADENING
 syn keyword cp2kKeyword BROYDEN_ADAPTIVE_SIGMA
 syn keyword cp2kKeyword BROYDEN_BETA
 syn keyword cp2kKeyword BROYDEN_ENABLE_FLIP
@@ -3489,6 +3491,7 @@ syn keyword cp2kKeyword LOCMIXD_RESTART_FILE_NAME
 syn keyword cp2kKeyword LOG_PRINT_KEY
 syn keyword cp2kKeyword LONG_RANGE_CORRECTION
 syn keyword cp2kKeyword LOWDIN
+syn keyword cp2kKeyword LOWER_BOUND
 syn keyword cp2kKeyword LOWEST_FREQUENCY
 syn keyword cp2kKeyword LRI_BASIS_SET LRI_BASIS
 syn keyword cp2kKeyword LRI_OVERLAP_MATRIX
@@ -3559,6 +3562,7 @@ syn keyword cp2kKeyword MAX_ITER_LUMO MAX_ITER_LUMOS
 syn keyword cp2kKeyword MAX_ITER_OUTER_LOOP
 syn keyword cp2kKeyword MAX_JOBS_PER_GROUP MAX_JOBS
 syn keyword cp2kKeyword MAX_KV MAX_VECTORS
+syn keyword cp2kKeyword MAX_LEVEL_SELF_ENERGY
 syn keyword cp2kKeyword MAX_LS
 syn keyword cp2kKeyword MAX_MEMORY
 syn keyword cp2kKeyword MAX_MOMENT
@@ -3616,6 +3620,7 @@ syn keyword cp2kKeyword MIN_FLOP_PROCESS
 syn keyword cp2kKeyword MIN_FLOP_SORT
 syn keyword cp2kKeyword MIN_HESSIAN_SHIFT
 syn keyword cp2kKeyword MIN_INTERVAL
+syn keyword cp2kKeyword MIN_LEVEL_SELF_ENERGY
 syn keyword cp2kKeyword MIN_NPOS
 syn keyword cp2kKeyword MIN_NT_HILLS
 syn keyword cp2kKeyword MIN_NUM_RES
@@ -4477,6 +4482,7 @@ syn keyword cp2kKeyword STATE_TYPE TYPE
 syn keyword cp2kKeyword STATE_TYPES TYPES
 syn keyword cp2kKeyword STATIC
 syn keyword cp2kKeyword STD_EVP_SOLVER_NAME
+syn keyword cp2kKeyword STEP
 syn keyword cp2kKeyword STEPS
 syn keyword cp2kKeyword STEPSIZE
 syn keyword cp2kKeyword STEP_SIZE
@@ -4644,6 +4650,7 @@ syn keyword cp2kKeyword UNIT_FORCES
 syn keyword cp2kKeyword UNIT_WN
 syn keyword cp2kKeyword UNIX
 syn keyword cp2kKeyword UPDATE_XC_ENERGY
+syn keyword cp2kKeyword UPPER_BOUND
 syn keyword cp2kKeyword UPPER_TRIANGULAR
 syn keyword cp2kKeyword USER_RADII
 syn keyword cp2kKeyword USER_RADIUS
