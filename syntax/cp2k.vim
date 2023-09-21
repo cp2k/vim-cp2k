@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:6636911)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:6a2264c)
 
 if exists("b:current_syntax")
    finish
@@ -984,6 +984,7 @@ syn keyword cp2kSection AVBMC
 syn keyword cp2kSection AVERAGES
 syn keyword cp2kSection BAND
 syn keyword cp2kSection BANDSTRUCTURE
+syn keyword cp2kSection BANDSTRUCTURE_PATH
 syn keyword cp2kSection BAND_STRUCTURE
 syn keyword cp2kSection BANNER
 syn keyword cp2kSection BAROSTAT
@@ -1818,6 +1819,7 @@ syn keyword cp2kSection LOCALIZE
 syn keyword cp2kSection LOCAL_BANDGAP
 syn keyword cp2kSection LOCAL_ENERGY_CUBE
 syn keyword cp2kSection LOCAL_STRESS_CUBE
+syn keyword cp2kSection LOCAL_VBM_CBM_GAP
 syn keyword cp2kSection LOC_RESTART
 syn keyword cp2kSection LOWDIN
 syn keyword cp2kSection LOW_SCALING
@@ -2584,6 +2586,7 @@ syn keyword cp2kKeyword BINARY
 syn keyword cp2kKeyword BINARY_RESTART_FILE_NAME BINARY_RESTART_FILE
 syn keyword cp2kKeyword BINNING_BINSIZE
 syn keyword cp2kKeyword BINNING_NBINS
+syn keyword cp2kKeyword BIN_MESH
 syn keyword cp2kKeyword BISECTION
 syn keyword cp2kKeyword BISECT_TRUST_COUNT
 syn keyword cp2kKeyword BLACS_GRID
@@ -2982,6 +2985,7 @@ syn keyword cp2kKeyword ENERGY_PRECISION
 syn keyword cp2kKeyword ENERGY_RANGE
 syn keyword cp2kKeyword ENERGY_SCALING
 syn keyword cp2kKeyword ENERGY_SPACING
+syn keyword cp2kKeyword ENERGY_STEP
 syn keyword cp2kKeyword ENERGY_TOL
 syn keyword cp2kKeyword ENERGY_TOLERANCE
 syn keyword cp2kKeyword ENERGY_WEIGHT
@@ -2997,7 +3001,6 @@ syn keyword cp2kKeyword EPSILON
 syn keyword cp2kKeyword EPSISO EPS_ISO
 syn keyword cp2kKeyword EPSRHO0 EPSVRHO0 EPS_VRHO0
 syn keyword cp2kKeyword EPSSVD EPS_SVD
-syn keyword cp2kKeyword EPS_3C_INT
 syn keyword cp2kKeyword EPS_ADAPT
 syn keyword cp2kKeyword EPS_ADAPT_SCF
 syn keyword cp2kKeyword EPS_ADDED
@@ -3051,6 +3054,7 @@ syn keyword cp2kKeyword EPS_KG_ORB
 syn keyword cp2kKeyword EPS_KPOINT
 syn keyword cp2kKeyword EPS_KRYLOV
 syn keyword cp2kKeyword EPS_LANCZOS
+syn keyword cp2kKeyword EPS_LDOS
 syn keyword cp2kKeyword EPS_LIMIT
 syn keyword cp2kKeyword EPS_LIMIT_CC
 syn keyword cp2kKeyword EPS_LOCALIZATION
@@ -3279,6 +3283,7 @@ syn keyword cp2kKeyword GROUP_ENERGY_NR
 syn keyword cp2kKeyword GROUP_ENERGY_SIZE
 syn keyword cp2kKeyword GROUP_PARTITION
 syn keyword cp2kKeyword GROUP_SIZE NUMBER_PROC
+syn keyword cp2kKeyword GROUP_SIZE_TENSOR
 syn keyword cp2kKeyword GSPACE_SMOOTHING
 syn keyword cp2kKeyword GTOP_INFO
 syn keyword cp2kKeyword GTO_KIND
@@ -3344,6 +3349,7 @@ syn keyword cp2kKeyword INNER_RADIUS
 syn keyword cp2kKeyword INPUT_FILE_NAME
 syn keyword cp2kKeyword INTEGER_TOTAL_CHARGE
 syn keyword cp2kKeyword INTEGRAL_SCREENING
+syn keyword cp2kKeyword INTEGRATION
 syn keyword cp2kKeyword INTEGRATION_GRID
 syn keyword cp2kKeyword INTEGRATION_MAX_POINTS
 syn keyword cp2kKeyword INTEGRATION_METHOD
@@ -3424,7 +3430,6 @@ syn keyword cp2kKeyword KPOINT
 syn keyword cp2kKeyword KPOINTS
 syn keyword cp2kKeyword KPOINTS_CHI_EPS_W
 syn keyword cp2kKeyword KPOINTS_SELF_ENERGY
-syn keyword cp2kKeyword KPOINTS_SIGMA
 syn keyword cp2kKeyword KPOINT_WEIGHTS_W
 syn keyword cp2kKeyword KP_NGROUPS NGROUPS
 syn keyword cp2kKeyword KP_RI_BUMP_FACTOR RI_BUMP BUMP BUMP_FACTOR
@@ -3603,6 +3608,7 @@ syn keyword cp2kKeyword MEMORY
 syn keyword cp2kKeyword MEMORY_CUT
 syn keyword cp2kKeyword MEMORY_FACTOR
 syn keyword cp2kKeyword MEMORY_INFO MEMORY
+syn keyword cp2kKeyword MEMORY_PER_PROC
 syn keyword cp2kKeyword MEMORY_PROGRESSION_FACTOR
 syn keyword cp2kKeyword METADYNAMICS
 syn keyword cp2kKeyword METALS
