@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:6a2264c)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:e4f5572)
 
 if exists("b:current_syntax")
    finish
@@ -896,6 +896,7 @@ syn keyword cp2kConstant VERY_LARGE
 syn keyword cp2kConstant VIBRATIONAL
 syn keyword cp2kConstant VIBRATIONAL_ANALYSIS
 syn keyword cp2kConstant VIRIAL
+syn keyword cp2kConstant VIRTUAL
 syn keyword cp2kConstant VMC
 syn keyword cp2kConstant VWN3
 syn keyword cp2kConstant VWN5
@@ -2459,6 +2460,7 @@ syn keyword cp2kKeyword APPEND
 syn keyword cp2kKeyword APPLY_CUTOFF
 syn keyword cp2kKeyword APPLY_DELTA_PULSE
 syn keyword cp2kKeyword APPLY_DELTA_PULSE_MAG
+syn keyword cp2kKeyword APPLY_WFN_MIX_INIT_RESTART
 syn keyword cp2kKeyword APX_TYPE
 syn keyword cp2kKeyword ARNOLDI
 syn keyword cp2kKeyword ASPARSITY
@@ -3898,11 +3900,12 @@ syn keyword cp2kKeyword ORDER
 syn keyword cp2kKeyword ORDERING
 syn keyword cp2kKeyword ORDER_LANCZOS
 syn keyword cp2kKeyword ORIGIN_DEPENDENT_MFP
-syn keyword cp2kKeyword ORIG_IS_VIRTUAL
+syn keyword cp2kKeyword ORIG_EXT_FILE_NAME
 syn keyword cp2kKeyword ORIG_MARKED_STATE
 syn keyword cp2kKeyword ORIG_MO_INDEX
 syn keyword cp2kKeyword ORIG_SCALE
 syn keyword cp2kKeyword ORIG_SPIN_INDEX
+syn keyword cp2kKeyword ORIG_TYPE
 syn keyword cp2kKeyword ORTHO
 syn keyword cp2kKeyword ORTHOGONAL_BASIS
 syn keyword cp2kKeyword ORTHOGONAL_EPS
