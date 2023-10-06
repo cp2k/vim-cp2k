@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:e4f5572)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:9a6ee7d)
 
 if exists("b:current_syntax")
    finish
@@ -2859,6 +2859,7 @@ syn keyword cp2kKeyword DEPENDENCIES
 syn keyword cp2kKeyword DERIVATIVES
 syn keyword cp2kKeyword DERIVATIVE_METHOD
 syn keyword cp2kKeyword DESCRIPTOR
+syn keyword cp2kKeyword DETAILED_ENERGY
 syn keyword cp2kKeyword DETERMINANT_TOLERANCE
 syn keyword cp2kKeyword DETERM_COEFF
 syn keyword cp2kKeyword DEVIATION
@@ -4173,6 +4174,7 @@ syn keyword cp2kKeyword REFERENCE_BASIS
 syn keyword cp2kKeyword REFERENCE_C9_TERM
 syn keyword cp2kKeyword REFERENCE_CHARGE
 syn keyword cp2kKeyword REFERENCE_FUNCTIONAL
+syn keyword cp2kKeyword REFERENCE_ORB_CANONICAL
 syn keyword cp2kKeyword REFERENCE_POINT REF_POINT
 syn keyword cp2kKeyword REFERENCE_POINT_2 REF_POINT_2
 syn keyword cp2kKeyword REFERENCE_SET
@@ -4434,6 +4436,7 @@ syn keyword cp2kKeyword SIZE_LATTICE_SUM_V
 syn keyword cp2kKeyword SKIP_EC
 syn keyword cp2kKeyword SKIP_FIRST
 syn keyword cp2kKeyword SKIP_LOAD_BALANCE_DISTRIBUTED
+syn keyword cp2kKeyword SKIP_LOCALIZATION
 syn keyword cp2kKeyword SKIP_OPTIMIZATION
 syn keyword cp2kKeyword SK_FILE
 syn keyword cp2kKeyword SLEEP_TIME
