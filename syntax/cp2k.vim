@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:5db0f86)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:d53834f)
 
 if exists("b:current_syntax")
    finish
@@ -2265,6 +2265,7 @@ syn keyword cp2kSection SPHERE_SAMPLING
 syn keyword cp2kSection SPINSPIN
 syn keyword cp2kSection SPLINE
 syn keyword cp2kSection SPL_COEFFS
+syn keyword cp2kSection SR_CUTOFF
 syn keyword cp2kSection STAGING
 syn keyword cp2kSection STDA
 syn keyword cp2kSection STM
@@ -2461,6 +2462,7 @@ syn keyword cp2kKeyword APPLY_CUTOFF
 syn keyword cp2kKeyword APPLY_DELTA_PULSE
 syn keyword cp2kKeyword APPLY_DELTA_PULSE_MAG
 syn keyword cp2kKeyword APPLY_WFN_MIX_INIT_RESTART
+syn keyword cp2kKeyword APPROX_KP_EXTRAPOL
 syn keyword cp2kKeyword APX_TYPE
 syn keyword cp2kKeyword ARNOLDI
 syn keyword cp2kKeyword ASPARSITY
@@ -2955,7 +2957,7 @@ syn keyword cp2kKeyword ELECTRONIC_STRUCTURE_METHOD
 syn keyword cp2kKeyword ELECTRONIC_TEMPERATURE ELEC_TEMP TELEC
 syn keyword cp2kKeyword ELECTRON_CONFIGURATION
 syn keyword cp2kKeyword ELEC_CONF
-syn keyword cp2kKeyword ELEMENT ELEMENT_SYMBOL
+syn keyword cp2kKeyword ELEMENT
 syn keyword cp2kKeyword ELEMENT_CUTOFF
 syn keyword cp2kKeyword ELPA_FORCE_REDISTRIBUTE
 syn keyword cp2kKeyword ELPA_KERNEL
@@ -3438,6 +3440,7 @@ syn keyword cp2kKeyword KP_NGROUPS NGROUPS
 syn keyword cp2kKeyword KP_RI_BUMP_FACTOR RI_BUMP BUMP BUMP_FACTOR
 syn keyword cp2kKeyword KP_RI_EXTENSION_FACTOR RI_EXTENSION_FACTOR RI_EXT RI_EXT_FACT KP_RI_EXT KP_RI_EXT_FACT KP_RI_BASIS_EXT RI_BASIS_EXT
 syn keyword cp2kKeyword KP_STACK_SIZE STACK_SIZE
+syn keyword cp2kKeyword KP_USE_DELTA_P USE_DELTA_P KP_USE_P_DIFF USE_P_DIFF
 syn keyword cp2kKeyword KSS
 syn keyword cp2kKeyword KT_CORRECTION
 syn keyword cp2kKeyword K_B
