@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:d53834f)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:61cc8ba)
 
 if exists("b:current_syntax")
    finish
@@ -3288,7 +3288,6 @@ syn keyword cp2kKeyword GROUP_ENERGY_NR
 syn keyword cp2kKeyword GROUP_ENERGY_SIZE
 syn keyword cp2kKeyword GROUP_PARTITION
 syn keyword cp2kKeyword GROUP_SIZE NUMBER_PROC
-syn keyword cp2kKeyword GROUP_SIZE_TENSOR
 syn keyword cp2kKeyword GSPACE_SMOOTHING
 syn keyword cp2kKeyword GTOP_INFO
 syn keyword cp2kKeyword GTO_KIND
@@ -3433,7 +3432,6 @@ syn keyword cp2kKeyword KINETIC_ENERGY
 syn keyword cp2kKeyword KOHN_SHAM_MATRIX
 syn keyword cp2kKeyword KPOINT
 syn keyword cp2kKeyword KPOINTS
-syn keyword cp2kKeyword KPOINTS_CHI_EPS_W
 syn keyword cp2kKeyword KPOINTS_SELF_ENERGY
 syn keyword cp2kKeyword KPOINT_WEIGHTS_W
 syn keyword cp2kKeyword KP_NGROUPS NGROUPS
@@ -4436,7 +4434,6 @@ syn keyword cp2kKeyword SINGLE_PRECISION_MATRICES
 syn keyword cp2kKeyword SIP_LIST
 syn keyword cp2kKeyword SIZE
 syn keyword cp2kKeyword SIZE_LATTICE_SUM
-syn keyword cp2kKeyword SIZE_LATTICE_SUM_V
 syn keyword cp2kKeyword SKIP_EC
 syn keyword cp2kKeyword SKIP_FIRST
 syn keyword cp2kKeyword SKIP_LOAD_BALANCE_DISTRIBUTED
