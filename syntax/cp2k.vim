@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:1e070e5)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:39fc2fe)
 
 if exists("b:current_syntax")
    finish
@@ -95,6 +95,11 @@ syn keyword cp2kConstant AC
 syn keyword cp2kConstant AD
 syn keyword cp2kConstant ADAPT
 syn keyword cp2kConstant ADD
+syn keyword cp2kConstant ADMM1
+syn keyword cp2kConstant ADMM2
+syn keyword cp2kConstant ADMMP
+syn keyword cp2kConstant ADMMQ
+syn keyword cp2kConstant ADMMS
 syn keyword cp2kConstant AD_LANGEVIN
 syn keyword cp2kConstant ALL
 syn keyword cp2kConstant ALPHA
@@ -2420,6 +2425,7 @@ syn keyword cp2kKeyword ADMM
 syn keyword cp2kKeyword ADMM_KERNEL_CORRECTION_SYMMETRIC
 syn keyword cp2kKeyword ADMM_KERNEL_XC_CORRECTION
 syn keyword cp2kKeyword ADMM_PURIFICATION_METHOD
+syn keyword cp2kKeyword ADMM_TYPE
 syn keyword cp2kKeyword AH
 syn keyword cp2kKeyword AINT_PRECOND
 syn keyword cp2kKeyword ALGORITHM
