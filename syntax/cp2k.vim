@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:39fc2fe)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:183bfa0)
 
 if exists("b:current_syntax")
    finish
@@ -2880,6 +2880,7 @@ syn keyword cp2kKeyword DIAG_METHOD
 syn keyword cp2kKeyword DIELECTRIC_CONSTANT EPSILON
 syn keyword cp2kKeyword DIELECTRIC_CORE_CORRECTION
 syn keyword cp2kKeyword DIELECTRIC_FUNCTION_TYPE
+syn keyword cp2kKeyword DIFF_ORDER
 syn keyword cp2kKeyword DIHEDRAL_ANGLE DIHEDRAL DIH
 syn keyword cp2kKeyword DIIS_BUFFER_LENGTH
 syn keyword cp2kKeyword DIPOLE_ANALYSIS
@@ -3025,6 +3026,7 @@ syn keyword cp2kKeyword EPS_CPC
 syn keyword cp2kKeyword EPS_CUTOFF
 syn keyword cp2kKeyword EPS_DECAY
 syn keyword cp2kKeyword EPS_DEFAULT
+syn keyword cp2kKeyword EPS_DELTA_RHO
 syn keyword cp2kKeyword EPS_DENSITY
 syn keyword cp2kKeyword EPS_DERIV EPS_NUM_DERIV
 syn keyword cp2kKeyword EPS_DIIS
