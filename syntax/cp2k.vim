@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:183bfa0)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:bbd14a5)
 
 if exists("b:current_syntax")
    finish
@@ -1825,7 +1825,6 @@ syn keyword cp2kSection LOCALIZE
 syn keyword cp2kSection LOCAL_BANDGAP
 syn keyword cp2kSection LOCAL_ENERGY_CUBE
 syn keyword cp2kSection LOCAL_STRESS_CUBE
-syn keyword cp2kSection LOCAL_VBM_CBM_GAP
 syn keyword cp2kSection LOC_RESTART
 syn keyword cp2kSection LOWDIN
 syn keyword cp2kSection LOW_SCALING
@@ -2954,6 +2953,7 @@ syn keyword cp2kKeyword EARLY_RESTART
 syn keyword cp2kKeyword ECHO_ALL_HOSTS
 syn keyword cp2kKeyword ECHO_INPUT
 syn keyword cp2kKeyword ECONS_START_VAL
+syn keyword cp2kKeyword ECP_SEMI_LOCAL
 syn keyword cp2kKeyword EFG
 syn keyword cp2kKeyword EFIELD_FILE_NAME
 syn keyword cp2kKeyword EIGENVALUES
@@ -3067,7 +3067,6 @@ syn keyword cp2kKeyword EPS_KG_ORB
 syn keyword cp2kKeyword EPS_KPOINT
 syn keyword cp2kKeyword EPS_KRYLOV
 syn keyword cp2kKeyword EPS_LANCZOS
-syn keyword cp2kKeyword EPS_LDOS
 syn keyword cp2kKeyword EPS_LIMIT
 syn keyword cp2kKeyword EPS_LIMIT_CC
 syn keyword cp2kKeyword EPS_LOCALIZATION
