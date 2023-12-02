@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:bbd14a5)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:b263019)
 
 if exists("b:current_syntax")
    finish
@@ -222,7 +222,6 @@ syn keyword cp2kConstant COLUMN
 syn keyword cp2kConstant COM
 syn keyword cp2kConstant COMMON
 syn keyword cp2kConstant COMPLEX
-syn keyword cp2kConstant COMPLEX_4
 syn keyword cp2kConstant COMPLEX_8
 syn keyword cp2kConstant CONJUGATE_GRADIENT
 syn keyword cp2kConstant CONSTANT
@@ -726,7 +725,6 @@ syn keyword cp2kConstant RCS_SINGLET
 syn keyword cp2kConstant RCS_TRIPLET
 syn keyword cp2kConstant READ
 syn keyword cp2kConstant REAL
-syn keyword cp2kConstant REAL_4
 syn keyword cp2kConstant REAL_8
 syn keyword cp2kConstant REDUCE
 syn keyword cp2kConstant REFERENCE
