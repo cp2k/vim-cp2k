@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:b7f057d)
+" CP2K-Version: CP2K version 2023.2 (Development Version) (git:7d8e3fb)
 
 if exists("b:current_syntax")
    finish
@@ -2383,6 +2383,7 @@ syn keyword cp2kSection XYZ_DIAG
 syn keyword cp2kSection XYZ_OUTERDIAG
 syn keyword cp2kSection ZMP
 syn keyword cp2kSection END
+syn keyword cp2kSection ENDIF
 syn match cp2kBegSection '^\s*&\w\+' contains=cp2kSection
 syn match cp2kEndSection '^\s*&END\s*\w\+' contains=cp2kSection
 
@@ -5186,7 +5187,7 @@ syn keyword cp2kKeyword __ROOT__
 " CP2K preprocessing directives
 "-----------------------------------------------------------------/
 
-syn keyword cp2kPreProc endif if include set
+syn keyword cp2kPreProc endif if include set xctype
 
 "-----------------------------------------------------------------/
 " CP2K strings
@@ -5213,7 +5214,7 @@ endif
 let b:did_indent = 1
 
 setlocal indentexpr=GetCp2kIndent()
-setlocal indentkeys+=0=~&END,0=#,0=@
+setlocal indentkeys+=0=~&END,0=~@ENDIF,0=#,0=@
 setlocal nosmartindent
 
 if exists("*GetCp2kIndent")
@@ -5227,23 +5228,15 @@ function! GetCp2kIndent()
    endif
    let ind = indent(lnum)
    let line = getline(lnum)
-   if line =~ '^\s*&'
+   if line =~ '^\s*\c\%(&\|@IF\)'
       let ind += &shiftwidth
-      if line =~ '^\s*\c\%(&END\)\>'
+      if line =~ '^\s*\c\%(&END\|@ENDIF\)\>'
          let ind -= &shiftwidth
       endif
-   elseif line =~ '^\s*\c\%(@if\|@endif\|@include\|@set\)\>'
-      let plnum = lnum
-      while getline(plnum) =~ '^\s*@'
-         let plnum -= 1
-      endwhile
-      let ind = indent(plnum)
    endif
    let line = getline(v:lnum)
-   if line =~ '^\s*\c\%(&END\)\>'
+   if line =~ '^\s*\c\%(&END\|@ENDIF\)\>'
       let ind -= &shiftwidth
-   elseif line =~ '^\s*@'
-      let ind = 0
    endif
    return ind
 endfunction
