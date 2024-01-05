@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2023.2 (Development Version) (git:2b6ea54)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:38b08aa)
 
 if exists("b:current_syntax")
    finish
@@ -1112,6 +1112,7 @@ syn keyword cp2kSection DDAPC_RESTRAINT
 syn keyword cp2kSection DDAPC_RESTRAINT_A
 syn keyword cp2kSection DDAPC_RESTRAINT_B
 syn keyword cp2kSection DEBUG
+syn keyword cp2kSection DEEPMD
 syn keyword cp2kSection DEFINE_REGION
 syn keyword cp2kSection DENSITY_FITTING
 syn keyword cp2kSection DENSITY_GRADIENT
@@ -2481,6 +2482,7 @@ syn keyword cp2kKeyword ATOMIC_NUMBER
 syn keyword cp2kKeyword ATOMIC_RADII
 syn keyword cp2kKeyword ATOMPARM
 syn keyword cp2kKeyword ATOMS
+syn keyword cp2kKeyword ATOMS_DEEPMD_TYPE
 syn keyword cp2kKeyword ATOMS_DISTANCE
 syn keyword cp2kKeyword ATOMS_FROM
 syn keyword cp2kKeyword ATOMS_LIST
@@ -4028,6 +4030,7 @@ syn keyword cp2kKeyword POTENTIAL_FILE_NAME
 syn keyword cp2kKeyword POTENTIAL_NAME
 syn keyword cp2kKeyword POTENTIAL_PARAM
 syn keyword cp2kKeyword POTENTIAL_TYPE
+syn keyword cp2kKeyword POT_FILE_NAME
 syn keyword cp2kKeyword POT_GUESS
 syn keyword cp2kKeyword POT_TYPE
 syn keyword cp2kKeyword POWELL_OPT
