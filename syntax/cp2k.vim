@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:1f31a16)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:54edd9b)
 
 if exists("b:current_syntax")
    finish
@@ -675,7 +675,6 @@ syn keyword cp2kConstant PIPEK
 syn keyword cp2kConstant PIPEK_MEZEY
 syn keyword cp2kConstant PIPEK_MEZEY_4
 syn keyword cp2kConstant PLAIN
-syn keyword cp2kConstant PLASMA
 syn keyword cp2kConstant PM3
 syn keyword cp2kConstant PM6
 syn keyword cp2kConstant PM6-FM
@@ -2586,6 +2585,7 @@ syn keyword cp2kKeyword BETA_3
 syn keyword cp2kKeyword BETA_CHUNK_SIZE
 syn keyword cp2kKeyword BETA_DM_CONV_INT
 syn keyword cp2kKeyword BETA_DM_CONV_MAX
+syn keyword cp2kKeyword BETA_ON_DEVICE
 syn keyword cp2kKeyword BETA_SCALING_FACTOR
 syn keyword cp2kKeyword BH
 syn keyword cp2kKeyword BIAS
@@ -4060,7 +4060,6 @@ syn keyword cp2kKeyword PRINT_ATOM_KIND
 syn keyword cp2kKeyword PRINT_BASIS
 syn keyword cp2kKeyword PRINT_CALIB
 syn keyword cp2kKeyword PRINT_CELL
-syn keyword cp2kKeyword PRINT_CHECKSUM
 syn keyword cp2kKeyword PRINT_COORDS
 syn keyword cp2kKeyword PRINT_CUBES
 syn keyword cp2kKeyword PRINT_DENSITY
@@ -4071,18 +4070,14 @@ syn keyword cp2kKeyword PRINT_EXX
 syn keyword cp2kKeyword PRINT_FM_REDISTRIBUTE
 syn keyword cp2kKeyword PRINT_FORCES
 syn keyword cp2kKeyword PRINT_GOP
-syn keyword cp2kKeyword PRINT_HASH
 syn keyword cp2kKeyword PRINT_IC_LIST
 syn keyword cp2kKeyword PRINT_LEVEL
-syn keyword cp2kKeyword PRINT_MEMORY_USAGE
 syn keyword cp2kKeyword PRINT_NEIGHBORS
 syn keyword cp2kKeyword PRINT_ONLY_ACC
-syn keyword cp2kKeyword PRINT_PERFORMANCE
 syn keyword cp2kKeyword PRINT_PHASES
 syn keyword cp2kKeyword PRINT_SELF_ENERGY
 syn keyword cp2kKeyword PRINT_STRESS
 syn keyword cp2kKeyword PRINT_TEST_OUTPUT
-syn keyword cp2kKeyword PRINT_TIMERS
 syn keyword cp2kKeyword PRINT_VIRTUALS
 syn keyword cp2kKeyword PRIOR
 syn keyword cp2kKeyword PROB
@@ -4371,6 +4366,7 @@ syn keyword cp2kKeyword SANITY_CHECK
 syn keyword cp2kKeyword SAP_OCE
 syn keyword cp2kKeyword SAP_PPNL
 syn keyword cp2kKeyword SAVE_MEM
+syn keyword cp2kKeyword SAVE_RF
 syn keyword cp2kKeyword SCALE
 syn keyword cp2kKeyword SCALED
 syn keyword cp2kKeyword SCALE_C
@@ -5426,7 +5422,7 @@ syn keyword cp2kKeyword ZETA
 " CP2K preprocessing directives
 "-----------------------------------------------------------------/
 
-syn keyword cp2kPreProc endif if include set xctype
+syn keyword cp2kPreProc ENDIF FFTYPE IF INCLUDE PRINT SET XCTYPE
 
 "-----------------------------------------------------------------/
 " CP2K strings
