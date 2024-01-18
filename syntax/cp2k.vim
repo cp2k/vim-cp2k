@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:54edd9b)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:a32efcc)
 
 if exists("b:current_syntax")
    finish
@@ -3448,7 +3448,6 @@ syn keyword cp2kKeyword KPOINTS_SELF_ENERGY
 syn keyword cp2kKeyword KPOINT_WEIGHTS_W
 syn keyword cp2kKeyword KP_NGROUPS
 syn keyword cp2kKeyword KP_RI_BUMP_FACTOR
-syn keyword cp2kKeyword KP_RI_EXTENSION_FACTOR
 syn keyword cp2kKeyword KP_STACK_SIZE
 syn keyword cp2kKeyword KP_USE_DELTA_P
 syn keyword cp2kKeyword KSS
@@ -5289,6 +5288,11 @@ syn keyword cp2kKeyword K2 SPRING
 syn keyword cp2kKeyword K4
 syn keyword cp2kKeyword KEEP_WEIGHTS KEEP_QUAD KEEP_WEIGHT
 syn keyword cp2kKeyword KG_POT
+syn keyword cp2kKeyword KP_CUTOFF_RADIUS
+syn keyword cp2kKeyword KP_EPS_FILTER
+syn keyword cp2kKeyword KP_EPS_PGF_ORB
+syn keyword cp2kKeyword KP_OMEGA
+syn keyword cp2kKeyword KP_RI_METRIC
 syn keyword cp2kKeyword L
 syn keyword cp2kKeyword LAMBDA
 syn keyword cp2kKeyword LAPLACE_NUM_QUAD_POINTS
@@ -5380,7 +5384,6 @@ syn keyword cp2kKeyword RESTRICTED_EXCITATIONS_TYPE RES_E_TYPE
 syn keyword cp2kKeyword RESTRICTED_OPEN_KOHN_SHAM
 syn keyword cp2kKeyword RHO0
 syn keyword cp2kKeyword RI_BUMP BUMP BUMP_FACTOR
-syn keyword cp2kKeyword RI_EXTENSION_FACTOR RI_EXT RI_EXT_FACT KP_RI_EXT KP_RI_EXT_FACT KP_RI_BASIS_EXT RI_BASIS_EXT
 syn keyword cp2kKeyword RI_MP2_BASIS_SET RI_RPA_BASIS_SET RI_AUX_BASIS
 syn keyword cp2kKeyword RI_RADIUS
 syn keyword cp2kKeyword ROKS_PARAMETER
