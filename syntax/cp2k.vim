@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:a32efcc)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:14e4311)
 
 if exists("b:current_syntax")
    finish
@@ -1198,6 +1198,7 @@ syn keyword cp2kSection EXT_LAGRANGE_SS
 syn keyword cp2kSection EXT_LAGRANGE_SS0
 syn keyword cp2kSection EXT_LAGRANGE_VVP
 syn keyword cp2kSection EXT_RESTART
+syn keyword cp2kSection E_CONSTITUENTS
 syn keyword cp2kSection E_DENSITY_BQB
 syn keyword cp2kSection E_DENSITY_CUBE
 syn keyword cp2kSection FARMING
