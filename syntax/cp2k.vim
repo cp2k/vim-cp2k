@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:45cb7bc)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:38a20dc)
 
 if exists("b:current_syntax")
    finish
@@ -797,6 +797,7 @@ syn keyword cp2kConstant SLATER
 syn keyword cp2kConstant SM
 syn keyword cp2kConstant SMM
 syn keyword cp2kConstant SOE
+syn keyword cp2kConstant SOFT_DENSITY
 syn keyword cp2kConstant SPARSE
 syn keyword cp2kConstant SPATIALLY_DEPENDENT
 syn keyword cp2kConstant SPATIALLY_RHO_DEPENDENT
@@ -853,6 +854,8 @@ syn keyword cp2kConstant TETRAGONAL_AB
 syn keyword cp2kConstant TETRAGONAL_AC
 syn keyword cp2kConstant TETRAGONAL_BC
 syn keyword cp2kConstant TMC
+syn keyword cp2kConstant TOTAL_DENSITY
+syn keyword cp2kConstant TOTAL_HARD_APPROX
 syn keyword cp2kConstant TPSS
 syn keyword cp2kConstant TP_FH
 syn keyword cp2kConstant TP_FLEX
@@ -2857,6 +2860,7 @@ syn keyword cp2kKeyword DELTA_RI
 syn keyword cp2kKeyword DELTA_T
 syn keyword cp2kKeyword DENSITY
 syn keyword cp2kKeyword DENSITY_CUTOFF
+syn keyword cp2kKeyword DENSITY_INCLUDE
 syn keyword cp2kKeyword DENSITY_MIXING
 syn keyword cp2kKeyword DENSITY_PROPAGATION
 syn keyword cp2kKeyword DENSITY_SMOOTH_CUTOFF_RANGE
@@ -3893,7 +3897,6 @@ syn keyword cp2kKeyword OMEGA
 syn keyword cp2kKeyword OMEGA_MAX_FIT
 syn keyword cp2kKeyword OMIT_HEADERS
 syn keyword cp2kKeyword ONE_CIRCLE
-syn keyword cp2kKeyword ONLY_ELEC_DENS
 syn keyword cp2kKeyword ON_THE_FLY_LOC
 syn keyword cp2kKeyword OPEN_CLOSE_SCALE
 syn keyword cp2kKeyword OPEN_CLOSE_WEIGHT
@@ -4642,7 +4645,6 @@ syn keyword cp2kKeyword TIP_FILENAME
 syn keyword cp2kKeyword TNADD_METHOD
 syn keyword cp2kKeyword TOL
 syn keyword cp2kKeyword TOLERANCE
-syn keyword cp2kKeyword TOTAL_DENSITY
 syn keyword cp2kKeyword TRACE
 syn keyword cp2kKeyword TRACE_MASTER
 syn keyword cp2kKeyword TRACE_MAX
