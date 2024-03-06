@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:38a20dc)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:0833382)
 
 if exists("b:current_syntax")
    finish
@@ -4196,6 +4196,7 @@ syn keyword cp2kKeyword REFERENCE_SET
 syn keyword cp2kKeyword REFERENCE_TYPE
 syn keyword cp2kKeyword REFINEMENT_FACTOR
 syn keyword cp2kKeyword REFINE_FERMI_LEVEL
+syn keyword cp2kKeyword REF_ADD_LUMO
 syn keyword cp2kKeyword REF_CELL_FILE_NAME
 syn keyword cp2kKeyword REF_EMBED_SUBSYS
 syn keyword cp2kKeyword REF_ENERGY
