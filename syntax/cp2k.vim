@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:2ed94b8)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:e5fdd81)
 
 if exists("b:current_syntax")
    finish
@@ -91,6 +91,7 @@ syn keyword cp2kConstant <ERF(A*R)/R>
 syn keyword cp2kConstant <ERFC(A*R)/R>
 syn keyword cp2kConstant <EXP(-A*R)/R>
 syn keyword cp2kConstant <EXP(-A*R2)/R>
+syn keyword cp2kConstant <H(A-R)/R>
 syn keyword cp2kConstant ABBA
 syn keyword cp2kConstant AC
 syn keyword cp2kConstant AD
