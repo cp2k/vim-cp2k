@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:e7e05ae)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:efbebd7)
 
 if exists("b:current_syntax")
    finish
@@ -4729,7 +4729,6 @@ syn keyword cp2kKeyword USE_MODEL_HESSIAN
 syn keyword cp2kKeyword USE_MPI_ALLOCATOR
 syn keyword cp2kKeyword USE_MPI_RMA
 syn keyword cp2kKeyword USE_OLD_GAUGE_ATOM
-syn keyword cp2kKeyword USE_OLD_GRADIENT_CODE
 syn keyword cp2kKeyword USE_PLUMED
 syn keyword cp2kKeyword USE_RAT_FUN_OPT
 syn keyword cp2kKeyword USE_REPEAT_METHOD
