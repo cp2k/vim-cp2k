@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:efbebd7)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:578b4e2)
 
 if exists("b:current_syntax")
    finish
@@ -133,6 +133,7 @@ syn keyword cp2kConstant AVX512_BLOCK6
 syn keyword cp2kConstant AVX_BLOCK2
 syn keyword cp2kConstant AVX_BLOCK4
 syn keyword cp2kConstant AVX_BLOCK6
+syn keyword cp2kConstant AXK
 syn keyword cp2kConstant B-NEB
 syn keyword cp2kConstant B3LYP
 syn keyword cp2kConstant B97-3C
@@ -805,6 +806,7 @@ syn keyword cp2kConstant SM
 syn keyword cp2kConstant SMM
 syn keyword cp2kConstant SOE
 syn keyword cp2kConstant SOFT_DENSITY
+syn keyword cp2kConstant SOSEX
 syn keyword cp2kConstant SPARSE
 syn keyword cp2kConstant SPATIALLY_DEPENDENT
 syn keyword cp2kConstant SPATIALLY_RHO_DEPENDENT
@@ -1196,6 +1198,7 @@ syn keyword cp2kSection EWALD
 syn keyword cp2kSection EWALD_INFO
 syn keyword cp2kSection EXACT_EXCHANGE
 syn keyword cp2kSection EXCHANGE
+syn keyword cp2kSection EXCHANGE_CORRECTION
 syn keyword cp2kSection EXCITED_STATES
 syn keyword cp2kSection EXCLUDE_EI_LIST
 syn keyword cp2kSection EXCLUDE_VDW_LIST
@@ -2223,7 +2226,6 @@ syn keyword cp2kSection RHO0_INFORMATION
 syn keyword cp2kSection RHO_MIXING
 syn keyword cp2kSection RI
 syn keyword cp2kSection RING_PUCKERING
-syn keyword cp2kSection RI_AXK
 syn keyword cp2kSection RI_DENSITY_COEFFS
 syn keyword cp2kSection RI_INFO
 syn keyword cp2kSection RI_METRIC
@@ -4320,7 +4322,6 @@ syn keyword cp2kKeyword RHO_MAX
 syn keyword cp2kKeyword RHO_MIN
 syn keyword cp2kKeyword RHO_ZERO
 syn keyword cp2kKeyword RI_AUX_BASIS_SET
-syn keyword cp2kKeyword RI_AXK
 syn keyword cp2kKeyword RI_FLAVOR
 syn keyword cp2kKeyword RI_METRIC
 syn keyword cp2kKeyword RI_REGION
@@ -4722,6 +4723,7 @@ syn keyword cp2kKeyword USE_GAUSS_HERMITE
 syn keyword cp2kKeyword USE_GEEP_LIB
 syn keyword cp2kKeyword USE_HALOGEN_CORRECTION
 syn keyword cp2kKeyword USE_HARTREE
+syn keyword cp2kKeyword USE_HFX_IMPLEMENTATION
 syn keyword cp2kKeyword USE_HISTORY
 syn keyword cp2kKeyword USE_IBZ
 syn keyword cp2kKeyword USE_MEMPOOLS_CPU
@@ -5229,7 +5231,6 @@ syn keyword cp2kKeyword ATOMS_LU
 syn keyword cp2kKeyword AT_LIST
 syn keyword cp2kKeyword AUXILIARY_BASIS_SET AUX_BASIS
 syn keyword cp2kKeyword AUXILIARY_FIT_BASIS_SET AUX_FIT_BASIS
-syn keyword cp2kKeyword AXK
 syn keyword cp2kKeyword BINARY_RESTART_FILE
 syn keyword cp2kKeyword CALC_CONDITION_NUMBER
 syn keyword cp2kKeyword CG_POINTS
