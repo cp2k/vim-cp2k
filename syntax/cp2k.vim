@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:578b4e2)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:a391c5a)
 
 if exists("b:current_syntax")
    finish
@@ -467,6 +467,7 @@ syn keyword cp2kConstant INVERSE_CHOLESKY
 syn keyword cp2kConstant INVERSE_DBCSR
 syn keyword cp2kConstant INVERSE_UPDATE
 syn keyword cp2kConstant IORA
+syn keyword cp2kConstant IPI
 syn keyword cp2kConstant IRAC
 syn keyword cp2kConstant ISOKIN
 syn keyword cp2kConstant IT-NEB
