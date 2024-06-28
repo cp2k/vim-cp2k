@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:a391c5a)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:d47cfcf)
 
 if exists("b:current_syntax")
    finish
@@ -270,6 +270,7 @@ syn keyword cp2kConstant DFTB
 syn keyword cp2kConstant DFTD2
 syn keyword cp2kConstant DFTD3
 syn keyword cp2kConstant DFTD3(BJ)
+syn keyword cp2kConstant DFTD4
 syn keyword cp2kConstant DGEMM
 syn keyword cp2kConstant DIAG
 syn keyword cp2kConstant DIAGONAL
@@ -2841,6 +2842,8 @@ syn keyword cp2kKeyword D3BJ_SCALING
 syn keyword cp2kKeyword D3_EXCLUDE_KIND
 syn keyword cp2kKeyword D3_EXCLUDE_KIND_PAIR
 syn keyword cp2kKeyword D3_SCALING
+syn keyword cp2kKeyword D4_CN_CUTOFF
+syn keyword cp2kKeyword D4_CUTOFF
 syn keyword cp2kKeyword DAMPING
 syn keyword cp2kKeyword DATA_FILE_NAME
 syn keyword cp2kKeyword DATA_TYPE
@@ -3195,6 +3198,7 @@ syn keyword cp2kKeyword F0
 syn keyword cp2kKeyword FAB
 syn keyword cp2kKeyword FACTORIZATION
 syn keyword cp2kKeyword FACTOR_LS
+syn keyword cp2kKeyword FACTOR_S9_TERM
 syn keyword cp2kKeyword FAC_MAX_Z_SPACE
 syn keyword cp2kKeyword FERMI_AMALDI
 syn keyword cp2kKeyword FERMI_CONTACT
