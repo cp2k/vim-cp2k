@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:f1d756e)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:cbf02b4)
 
 if exists("b:current_syntax")
    finish
@@ -337,6 +337,8 @@ syn keyword cp2kConstant ESTIMATE
 syn keyword cp2kConstant ETRS
 syn keyword cp2kConstant EV93
 syn keyword cp2kConstant EVERY_STEP
+syn keyword cp2kConstant EVGW
+syn keyword cp2kConstant EVGW0
 syn keyword cp2kConstant EVP
 syn keyword cp2kConstant EWALD
 syn keyword cp2kConstant EWALD_GKS
@@ -398,6 +400,7 @@ syn keyword cp2kConstant FUNCTIONAL
 syn keyword cp2kConstant FUNC_VDWDF
 syn keyword cp2kConstant FUNC_VDWDF2
 syn keyword cp2kConstant FUNC_VDWDFCX
+syn keyword cp2kConstant G0W0
 syn keyword cp2kConstant G87
 syn keyword cp2kConstant G96
 syn keyword cp2kConstant GAPO
@@ -2824,6 +2827,7 @@ syn keyword cp2kKeyword CUBE_FILES
 syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_RADIUS
+syn keyword cp2kKeyword CUTOFF_RADIUS_RI
 syn keyword cp2kKeyword CUTOFF_TYPE
 syn keyword cp2kKeyword CUTOUT
 syn keyword cp2kKeyword CYCLE
@@ -4322,6 +4326,7 @@ syn keyword cp2kKeyword RESULT_SPIN_INDEX
 syn keyword cp2kKeyword RES_ETYPE
 syn keyword cp2kKeyword RETURN_ORTHOGONALIZED_MOS
 syn keyword cp2kKeyword REUSE_PRECOND
+syn keyword cp2kKeyword REVERSE_MO_INDEX
 syn keyword cp2kKeyword RHO
 syn keyword cp2kKeyword RHO0_EXP_RADIUS
 syn keyword cp2kKeyword RHO_MAX
@@ -4441,6 +4446,7 @@ syn keyword cp2kKeyword SEED
 syn keyword cp2kKeyword SEED_NAME
 syn keyword cp2kKeyword SELECTED_STATES_ATOM_RADIUS
 syn keyword cp2kKeyword SELECTED_STATES_ON_ATOM_LIST
+syn keyword cp2kKeyword SELF_CONSISTENCY
 syn keyword cp2kKeyword SELF_CONSISTENT
 syn keyword cp2kKeyword SEMICORE_LEVEL
 syn keyword cp2kKeyword SET_RADII
