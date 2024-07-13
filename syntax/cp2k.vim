@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:cbf02b4)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:aa4c458)
 
 if exists("b:current_syntax")
    finish
@@ -92,7 +92,6 @@ syn keyword cp2kConstant <ERFC(A*R)/R>
 syn keyword cp2kConstant <EXP(-A*R)/R>
 syn keyword cp2kConstant <EXP(-A*R2)/R>
 syn keyword cp2kConstant <H(A-R)/R>
-syn keyword cp2kConstant ABBA
 syn keyword cp2kConstant AC
 syn keyword cp2kConstant AD
 syn keyword cp2kConstant ADAPT
@@ -173,7 +172,6 @@ syn keyword cp2kConstant BLOCK_LMAX
 syn keyword cp2kConstant BLOCK_SURFACE
 syn keyword cp2kConstant BLYP
 syn keyword cp2kConstant BOHR
-syn keyword cp2kConstant BOTH
 syn keyword cp2kConstant BOX
 syn keyword cp2kConstant BOYS
 syn keyword cp2kConstant BP
@@ -859,7 +857,7 @@ syn keyword cp2kConstant TAILORED
 syn keyword cp2kConstant TAMC
 syn keyword cp2kConstant TAYLOR
 syn keyword cp2kConstant TC2
-syn keyword cp2kConstant TDA
+syn keyword cp2kConstant TDA+ABBA
 syn keyword cp2kConstant TDDFPT
 syn keyword cp2kConstant TDLR
 syn keyword cp2kConstant TEST
@@ -2654,7 +2652,6 @@ syn keyword cp2kKeyword BROYDEN_TYPE
 syn keyword cp2kKeyword BROY_W0
 syn keyword cp2kKeyword BROY_WMAX
 syn keyword cp2kKeyword BROY_WREF
-syn keyword cp2kKeyword BSE_APPROX
 syn keyword cp2kKeyword BSE_DEBUG_PRINT
 syn keyword cp2kKeyword BSE_DIAG_METHOD
 syn keyword cp2kKeyword BSPARSITY
@@ -3016,8 +3013,8 @@ syn keyword cp2kKeyword END_STEP_IN
 syn keyword cp2kKeyword END_STEP_OUT
 syn keyword cp2kKeyword ENERGIES
 syn keyword cp2kKeyword ENERGY
+syn keyword cp2kKeyword ENERGY_CUTOFF_EMPTY
 syn keyword cp2kKeyword ENERGY_CUTOFF_OCC
-syn keyword cp2kKeyword ENERGY_CUTOFF_VIRT
 syn keyword cp2kKeyword ENERGY_FILE_NAME
 syn keyword cp2kKeyword ENERGY_FUNCTION
 syn keyword cp2kKeyword ENERGY_FUNCTIONAL
@@ -4625,6 +4622,7 @@ syn keyword cp2kKeyword TAU_CUTOFF
 syn keyword cp2kKeyword TB3_INTERACTION
 syn keyword cp2kKeyword TC_PRESSURE
 syn keyword cp2kKeyword TC_TEMPERATURE
+syn keyword cp2kKeyword TDA
 syn keyword cp2kKeyword TDDFT_SCF
 syn keyword cp2kKeyword TD_MO_INDEX
 syn keyword cp2kKeyword TD_MO_SPIN
