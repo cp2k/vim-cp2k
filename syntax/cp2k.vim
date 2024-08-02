@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:aa4c458)
+" CP2K-Version: CP2K version 2024.1 (Development Version) (git:c415b5d)
 
 if exists("b:current_syntax")
    finish
@@ -1040,6 +1040,7 @@ syn keyword cp2kSection BOX_PROBABILITIES
 syn keyword cp2kSection BS
 syn keyword cp2kSection BSE
 syn keyword cp2kSection BSE_ITERAT
+syn keyword cp2kSection BSE_SPECTRUM
 syn keyword cp2kSection BSSE
 syn keyword cp2kSection BUCK4RANGES
 syn keyword cp2kSection BUCKMORSE
@@ -3266,6 +3267,9 @@ syn keyword cp2kKeyword FRAME_STOP
 syn keyword cp2kKeyword FRAME_STRIDE
 syn keyword cp2kKeyword FREE_HFX_BUFFER
 syn keyword cp2kKeyword FREQUENCY
+syn keyword cp2kKeyword FREQUENCY_END_POINT
+syn keyword cp2kKeyword FREQUENCY_STARTING_POINT
+syn keyword cp2kKeyword FREQUENCY_STEP_SIZE
 syn keyword cp2kKeyword FROM_ENERGY
 syn keyword cp2kKeyword FROZEN_MO_ENERGY_TERM
 syn keyword cp2kKeyword FULLY_PERIODIC
