@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.1 (Development Version) (git:c415b5d)
+" CP2K-Version: CP2K version 2024.2 (Development Version) (git:b1b0434)
 
 if exists("b:current_syntax")
    finish
@@ -3157,6 +3157,7 @@ syn keyword cp2kKeyword ERROR_LIMIT
 syn keyword cp2kKeyword ESCAPE_HISTORY_LENGTH
 syn keyword cp2kKeyword ESIMATE_ACC_PROB
 syn keyword cp2kKeyword ETA
+syn keyword cp2kKeyword ETA_LIST
 syn keyword cp2kKeyword EVAL
 syn keyword cp2kKeyword EVAL_ENERGY_FORCES
 syn keyword cp2kKeyword EVAL_FORCES
