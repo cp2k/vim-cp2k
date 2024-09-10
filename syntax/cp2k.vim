@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.2 (Development Version) (git:b1b0434)
+" CP2K-Version: CP2K version 2024.3 (Development Version) (git:162f36e)
 
 if exists("b:current_syntax")
    finish
@@ -118,6 +118,7 @@ syn keyword cp2kConstant ARNOLDI
 syn keyword cp2kConstant ASPC
 syn keyword cp2kConstant ATOM
 syn keyword cp2kConstant ATOMIC
+syn keyword cp2kConstant ATOMIC_KIND_BASIS
 syn keyword cp2kConstant ATOMS
 syn keyword cp2kConstant AUTO
 syn keyword cp2kConstant AUTOMATIC
@@ -1542,6 +1543,7 @@ syn keyword cp2kSection GW2X
 syn keyword cp2kSection GW_DOS
 syn keyword cp2kSection GYRATION_RADIUS
 syn keyword cp2kSection G_TENSOR
+syn keyword cp2kSection HARRIS_METHOD
 syn keyword cp2kSection HBONDS
 syn keyword cp2kSection HBP
 syn keyword cp2kSection HCTH
@@ -2884,6 +2886,7 @@ syn keyword cp2kKeyword DENSITY_INCLUDE
 syn keyword cp2kKeyword DENSITY_MIXING
 syn keyword cp2kKeyword DENSITY_PROPAGATION
 syn keyword cp2kKeyword DENSITY_SMOOTH_CUTOFF_RANGE
+syn keyword cp2kKeyword DENSITY_SOURCE
 syn keyword cp2kKeyword DENSITY_TOL
 syn keyword cp2kKeyword DENS_CONV_INT
 syn keyword cp2kKeyword DENS_CONV_MAX
@@ -3948,6 +3951,7 @@ syn keyword cp2kKeyword OPTX_A2
 syn keyword cp2kKeyword OPTX_GAMMA
 syn keyword cp2kKeyword OPT_TYPE
 syn keyword cp2kKeyword ORBITALS
+syn keyword cp2kKeyword ORBITAL_BASIS
 syn keyword cp2kKeyword ORBITAL_CENTER
 syn keyword cp2kKeyword ORBITAL_LIST
 syn keyword cp2kKeyword ORBITAL_SELECTION
