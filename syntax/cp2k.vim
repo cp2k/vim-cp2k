@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.3 (Development Version) (git:162f36e)
+" CP2K-Version: CP2K version 2024.3 (Development Version) (git:060abc1)
 
 if exists("b:current_syntax")
    finish
@@ -2470,7 +2470,6 @@ syn keyword cp2kKeyword ALPHA_2
 syn keyword cp2kKeyword ALPHA_BETA_GAMMA
 syn keyword cp2kKeyword ALPHA_IMOMM
 syn keyword cp2kKeyword ALWAYS_CHECKSUM
-syn keyword cp2kKeyword ALWAYS_UPDATE_WF
 syn keyword cp2kKeyword AMBER_INFO
 syn keyword cp2kKeyword ANALYTICAL_GRADIENTS
 syn keyword cp2kKeyword ANALYTICAL_GTERM
@@ -3434,9 +3433,6 @@ syn keyword cp2kKeyword IS_INERTIA_COUNT
 syn keyword cp2kKeyword ITERATION
 syn keyword cp2kKeyword ITER_START_VAL
 syn keyword cp2kKeyword ITIMES_START
-syn keyword cp2kKeyword ITSOL_TOL_MIN
-syn keyword cp2kKeyword ITSOL_TOL_RATIO
-syn keyword cp2kKeyword ITSOL_TOL_SCALE
 syn keyword cp2kKeyword IUPCLTRANS
 syn keyword cp2kKeyword IUPTRANS
 syn keyword cp2kKeyword IUPVOLUME
@@ -3524,7 +3520,6 @@ syn keyword cp2kKeyword LEVY_CORRELATED
 syn keyword cp2kKeyword LEVY_POS_SAMPLE
 syn keyword cp2kKeyword LEVY_SEED
 syn keyword cp2kKeyword LEVY_TEMP_FACTOR
-syn keyword cp2kKeyword LINEAR_MIX_RMS_TOL
 syn keyword cp2kKeyword LINEAR_SOLVER
 syn keyword cp2kKeyword LINESEARCH
 syn keyword cp2kKeyword LINE_SEARCH
@@ -3699,7 +3694,7 @@ syn keyword cp2kKeyword MIN_OR_MAX
 syn keyword cp2kKeyword MIN_PAIR_LIST_RADIUS
 syn keyword cp2kKeyword MIN_RADIUS
 syn keyword cp2kKeyword MIN_RANKS_PER_POLE
-syn keyword cp2kKeyword MIXER_RMS_MIN
+syn keyword cp2kKeyword MIN_TOLERANCE
 syn keyword cp2kKeyword MIXING
 syn keyword cp2kKeyword MIXING_FRACTION
 syn keyword cp2kKeyword MIXING_FUNCTION
@@ -4142,6 +4137,7 @@ syn keyword cp2kKeyword PROJ_VELOCITY_VERLET
 syn keyword cp2kKeyword PROPAGATE_REF
 syn keyword cp2kKeyword PROPAGATOR
 syn keyword cp2kKeyword PSEUDO_CANONICAL
+syn keyword cp2kKeyword PSEUDO_GRID_CUTOFF
 syn keyword cp2kKeyword PSEUDO_TYPE
 syn keyword cp2kKeyword PSF_INFO
 syn keyword cp2kKeyword PSO
@@ -4218,6 +4214,7 @@ syn keyword cp2kKeyword READ_EMBED_POT_CUBE
 syn keyword cp2kKeyword READ_FROM_CUBE
 syn keyword cp2kKeyword REALSPACE
 syn keyword cp2kKeyword REAL_AXIS_INTEGRATION_METHOD
+syn keyword cp2kKeyword REAL_OCCUPATION_MATRIX
 syn keyword cp2kKeyword REAL_SPACE
 syn keyword cp2kKeyword RECALC_RESIDUAL
 syn keyword cp2kKeyword RECURSIVE_DIAGONALIZATION
@@ -4358,6 +4355,7 @@ syn keyword cp2kKeyword RMROT
 syn keyword cp2kKeyword RMSD
 syn keyword cp2kKeyword RMS_DR
 syn keyword cp2kKeyword RMS_FORCE
+syn keyword cp2kKeyword RMS_MIN
 syn keyword cp2kKeyword RMTRANS
 syn keyword cp2kKeyword RMT_MAX
 syn keyword cp2kKeyword RMVOLUME
@@ -4478,6 +4476,7 @@ syn keyword cp2kKeyword SHORT_RANGE_CORRECTION_PARAMETERS
 syn keyword cp2kKeyword SHOULD_SKIP
 syn keyword cp2kKeyword SHOW_STATISTICS
 syn keyword cp2kKeyword SHT_COVERAGE
+syn keyword cp2kKeyword SHT_LMAX
 syn keyword cp2kKeyword SIC_METHOD
 syn keyword cp2kKeyword SIC_SCALING_A
 syn keyword cp2kKeyword SIC_SCALING_B
@@ -4487,6 +4486,7 @@ syn keyword cp2kKeyword SIGN
 syn keyword cp2kKeyword SIGN_METHOD
 syn keyword cp2kKeyword SIGN_ORDER
 syn keyword cp2kKeyword SIGN_SYMMETRIC
+syn keyword cp2kKeyword SIMPLE_LAPW_RI
 syn keyword cp2kKeyword SIP_LIST
 syn keyword cp2kKeyword SIZE
 syn keyword cp2kKeyword SIZE_LATTICE_SUM
@@ -4504,6 +4504,7 @@ syn keyword cp2kKeyword SMEARING
 syn keyword cp2kKeyword SMEARING_WIDTH
 syn keyword cp2kKeyword SMOOTHING
 syn keyword cp2kKeyword SMOOTHING_WIDTH
+syn keyword cp2kKeyword SMOOTH_INITIAL_MAG
 syn keyword cp2kKeyword SMOOTH_WIDTH
 syn keyword cp2kKeyword SOC
 syn keyword cp2kKeyword SOC_ENERGY_WINDOW
@@ -4689,6 +4690,8 @@ syn keyword cp2kKeyword TIP_FILENAME
 syn keyword cp2kKeyword TNADD_METHOD
 syn keyword cp2kKeyword TOL
 syn keyword cp2kKeyword TOLERANCE
+syn keyword cp2kKeyword TOLERANCE_RATIO
+syn keyword cp2kKeyword TOLERANCE_SCALE
 syn keyword cp2kKeyword TRACE
 syn keyword cp2kKeyword TRACE_MASTER
 syn keyword cp2kKeyword TRACE_MAX
@@ -4731,6 +4734,7 @@ syn keyword cp2kKeyword USER_RADII
 syn keyword cp2kKeyword USER_RADIUS
 syn keyword cp2kKeyword USE_ATOMIC_CUTOFF
 syn keyword cp2kKeyword USE_BOHR
+syn keyword cp2kKeyword USE_COARSE_FFT_GRID
 syn keyword cp2kKeyword USE_COLVARS
 syn keyword cp2kKeyword USE_COMM_THREAD
 syn keyword cp2kKeyword USE_CONDITION_NUMBER
@@ -4771,6 +4775,7 @@ syn keyword cp2kKeyword VDW_FUNCTIONAL
 syn keyword cp2kKeyword VDW_RADIUS
 syn keyword cp2kKeyword VDW_SCALE14
 syn keyword cp2kKeyword VEC_POT_INITIAL
+syn keyword cp2kKeyword VEFF_PW_CUTOFF
 syn keyword cp2kKeyword VELOCITY_GAUGE
 syn keyword cp2kKeyword VELOCITY_QUENCH
 syn keyword cp2kKeyword VELOCITY_SCALE
@@ -4850,6 +4855,7 @@ syn keyword cp2kKeyword XC_DENS_TRE
 syn keyword cp2kKeyword XC_DERIV
 syn keyword cp2kKeyword XC_KERNEL_METHOD
 syn keyword cp2kKeyword XC_SMOOTH_RHO
+syn keyword cp2kKeyword XC_USE_LAPL
 syn keyword cp2kKeyword XES_CORE
 syn keyword cp2kKeyword XES_EMPTY_HOMO
 syn keyword cp2kKeyword XPS_ONLY
