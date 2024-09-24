@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.3 (Development Version) (git:4079a9e)
+" CP2K-Version: CP2K version 2024.3 (Development Version) (git:3f890bb)
 
 if exists("b:current_syntax")
    finish
@@ -4886,6 +4886,7 @@ syn keyword cp2kKeyword ZRANGE
 syn keyword cp2kKeyword Z_CUTOFF
 syn keyword cp2kKeyword Z_HI
 syn keyword cp2kKeyword Z_LOW
+syn keyword cp2kKeyword Z_MATRIX_METHOD
 syn keyword cp2kKeyword Z_SPACE_ENERGY_CUTOFF
 syn keyword cp2kKeyword Z_XTNT
 syn keyword cp2kKeyword _A
