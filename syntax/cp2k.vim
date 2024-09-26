@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.3 (Development Version) (git:3de98e9)
+" CP2K-Version: CP2K version 2024.3 (Development Version) (git:bce21c9)
 
 if exists("b:current_syntax")
    finish
@@ -483,6 +483,7 @@ syn keyword cp2kConstant KDSO-D
 syn keyword cp2kConstant KERKER_MIXING
 syn keyword cp2kConstant KOELLING_HARMON
 syn keyword cp2kConstant KOHN-SHAM
+syn keyword cp2kConstant KS
 syn keyword cp2kConstant L1NORM
 syn keyword cp2kConstant L1SD
 syn keyword cp2kConstant LANCZOS
@@ -766,6 +767,7 @@ syn keyword cp2kConstant ROTINV
 syn keyword cp2kConstant ROW
 syn keyword cp2kConstant RPMD
 syn keyword cp2kConstant RSDFT
+syn keyword cp2kConstant RTBSE
 syn keyword cp2kConstant RT_PROPAGATION
 syn keyword cp2kConstant RT_RESTART
 syn keyword cp2kConstant RVV10
@@ -860,6 +862,7 @@ syn keyword cp2kConstant TAYLOR
 syn keyword cp2kConstant TC2
 syn keyword cp2kConstant TDA+ABBA
 syn keyword cp2kConstant TDDFPT
+syn keyword cp2kConstant TDDFT
 syn keyword cp2kConstant TDLR
 syn keyword cp2kConstant TEST
 syn keyword cp2kConstant TEST_LSD
@@ -1134,6 +1137,7 @@ syn keyword cp2kSection DEEPMD
 syn keyword cp2kSection DEFINE_REGION
 syn keyword cp2kSection DENSITY_FITTING
 syn keyword cp2kSection DENSITY_GRADIENT
+syn keyword cp2kSection DENSITY_MATRIX
 syn keyword cp2kSection DERIVATIVES
 syn keyword cp2kSection DERIVED_BASIS_SETS
 syn keyword cp2kSection DETAILED_ENERGY
@@ -2076,6 +2080,7 @@ syn keyword cp2kSection MOL_PROBABILITIES
 syn keyword cp2kSection MOL_SET
 syn keyword cp2kSection MOM
 syn keyword cp2kSection MOMENTS
+syn keyword cp2kSection MOMENTS_FT
 syn keyword cp2kSection MOMENT_OF_INERTIA
 syn keyword cp2kSection MOMENT_OF_INERTIA_AVG
 syn keyword cp2kSection MOS_MOLDEN
@@ -2164,6 +2169,7 @@ syn keyword cp2kSection POISSON
 syn keyword cp2kSection POLAR
 syn keyword cp2kSection POLARISATION_CHARGE_DENSITY
 syn keyword cp2kSection POLARISATION_POTENTIAL
+syn keyword cp2kSection POLARIZABILITY
 syn keyword cp2kSection POLAR_MATRIX
 syn keyword cp2kSection POPULATION
 syn keyword cp2kSection POTENTIAL
@@ -4382,6 +4388,8 @@ syn keyword cp2kKeyword ROW_ORDERING
 syn keyword cp2kKeyword RS2PW
 syn keyword cp2kKeyword RSE
 syn keyword cp2kKeyword RSTART
+syn keyword cp2kKeyword RTBSE_HAMILTONIAN
+syn keyword cp2kKeyword RTP_METHOD
 syn keyword cp2kKeyword RUN_TYPE
 syn keyword cp2kKeyword RWOH
 syn keyword cp2kKeyword R_BUF
@@ -4553,6 +4561,7 @@ syn keyword cp2kKeyword START_ITER
 syn keyword cp2kKeyword START_STEP
 syn keyword cp2kKeyword START_STEP_IN
 syn keyword cp2kKeyword START_STEP_OUT
+syn keyword cp2kKeyword START_TIME
 syn keyword cp2kKeyword STATE
 syn keyword cp2kKeyword STATES
 syn keyword cp2kKeyword STATE_LIST
