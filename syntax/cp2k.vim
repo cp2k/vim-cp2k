@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.3 (Development Version) (git:bce21c9)
+" CP2K-Version: CP2K version 2024.3 (Development Version) (git:d205b35)
 
 if exists("b:current_syntax")
    finish
@@ -672,9 +672,13 @@ syn keyword cp2kConstant PATIENT
 syn keyword cp2kConstant PBC_AWARE_MAX_MINUS_MIN
 syn keyword cp2kConstant PBE
 syn keyword cp2kConstant PBE0
+syn keyword cp2kConstant PBE0_S1
+syn keyword cp2kConstant PBE0_S2
 syn keyword cp2kConstant PBESOL
 syn keyword cp2kConstant PBEX
 syn keyword cp2kConstant PBEX_LIBXC
+syn keyword cp2kConstant PBE_S1
+syn keyword cp2kConstant PBE_S2
 syn keyword cp2kConstant PCG
 syn keyword cp2kConstant PDB
 syn keyword cp2kConstant PDG
@@ -4492,6 +4496,7 @@ syn keyword cp2kKeyword SIC_SCALING_A
 syn keyword cp2kKeyword SIC_SCALING_B
 syn keyword cp2kKeyword SIGMA
 syn keyword cp2kKeyword SIGMA_0
+syn keyword cp2kKeyword SIGMA_FUNCTIONAL
 syn keyword cp2kKeyword SIGN
 syn keyword cp2kKeyword SIGN_METHOD
 syn keyword cp2kKeyword SIGN_ORDER
