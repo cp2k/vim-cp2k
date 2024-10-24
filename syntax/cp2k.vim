@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.3 (Development Version) (git:a1c7dd2)
+" CP2K-Version: CP2K version 2024.3 (Development Version) (git:96bba07)
 
 if exists("b:current_syntax")
    finish
@@ -4141,6 +4141,7 @@ syn keyword cp2kKeyword P2_BOND1
 syn keyword cp2kKeyword P2_BOND2
 syn keyword cp2kKeyword PAOH
 syn keyword cp2kKeyword PAO_BASIS_SIZE
+syn keyword cp2kKeyword PAO_MODEL_FILE
 syn keyword cp2kKeyword PARALLEL_AXIS
 syn keyword cp2kKeyword PARALLEL_BUILD
 syn keyword cp2kKeyword PARALLEL_GROUP_SIZE
