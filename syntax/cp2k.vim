@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.3 (Development Version) (git:8e5fe44)
+" CP2K-Version: CP2K version 2024.3 (Development Version) (git:097ac98)
 
 if exists("b:current_syntax")
    finish
@@ -3164,6 +3164,7 @@ syn keyword cp2kKeyword ENERGY_SPACING
 syn keyword cp2kKeyword ENERGY_STEP
 syn keyword cp2kKeyword ENERGY_TOL
 syn keyword cp2kKeyword ENERGY_TOLERANCE
+syn keyword cp2kKeyword ENERGY_UNIT
 syn keyword cp2kKeyword ENERGY_WEIGHT
 syn keyword cp2kKeyword ENERGY_WINDOW
 syn keyword cp2kKeyword ENFORCE_DECREASE
@@ -3389,6 +3390,7 @@ syn keyword cp2kKeyword FORCE_PAW
 syn keyword cp2kKeyword FORCE_RESCALING
 syn keyword cp2kKeyword FORCE_SCF_CALCULATION
 syn keyword cp2kKeyword FORCE_STATES
+syn keyword cp2kKeyword FORCE_UNIT
 syn keyword cp2kKeyword FORMAT
 syn keyword cp2kKeyword FP
 syn keyword cp2kKeyword FP32_TO_FP64_RMS
@@ -4776,6 +4778,7 @@ syn keyword cp2kKeyword STORE_WFN
 syn keyword cp2kKeyword STO_NG
 syn keyword cp2kKeyword STRENGTH
 syn keyword cp2kKeyword STRESS_TENSOR
+syn keyword cp2kKeyword STRESS_UNIT
 syn keyword cp2kKeyword STRIDE
 syn keyword cp2kKeyword SUBCELLS
 syn keyword cp2kKeyword SUBMATRIX_SIGN_METHOD
@@ -5697,6 +5700,7 @@ syn keyword cp2kKeyword TEMP_TO TEMPERATURE_TOLERANCE
 syn keyword cp2kKeyword TSHPSC_DATA T_C_G_DATA
 syn keyword cp2kKeyword TYPE
 syn keyword cp2kKeyword TYPES
+syn keyword cp2kKeyword UNIT
 syn keyword cp2kKeyword UNRESTRICTED_KOHN_SHAM LSD SPIN_POLARIZED
 syn keyword cp2kKeyword USE_DELTA_P KP_USE_P_DIFF USE_P_DIFF
 syn keyword cp2kKeyword U_EFF
