@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.3 (Development Version) (git:097ac98)
+" CP2K-Version: CP2K version 2024.3 (Development Version) (git:4dc10b3)
 
 if exists("b:current_syntax")
    finish
@@ -3244,10 +3244,12 @@ syn keyword cp2kKeyword EPS_MM_RSPACE
 syn keyword cp2kKeyword EPS_MU
 syn keyword cp2kKeyword EPS_NORM
 syn keyword cp2kKeyword EPS_NO_ERROR_CHECK
+syn keyword cp2kKeyword EPS_NTO_EIGVAL
 syn keyword cp2kKeyword EPS_O3_INT
 syn keyword cp2kKeyword EPS_OCC
 syn keyword cp2kKeyword EPS_OCCUPATION
 syn keyword cp2kKeyword EPS_OCCUPIED
+syn keyword cp2kKeyword EPS_OSC_STR
 syn keyword cp2kKeyword EPS_OUT
 syn keyword cp2kKeyword EPS_PAIRPOTENTIAL
 syn keyword cp2kKeyword EPS_PAO
@@ -4044,6 +4046,8 @@ syn keyword cp2kKeyword NUM_OMEGA_POINTS
 syn keyword cp2kKeyword NUM_POLE
 syn keyword cp2kKeyword NUM_POLYNOM
 syn keyword cp2kKeyword NUM_PRINT_EXC
+syn keyword cp2kKeyword NUM_PRINT_EXC_DESCR
+syn keyword cp2kKeyword NUM_PRINT_EXC_NTOS
 syn keyword cp2kKeyword NUM_SINGULAR
 syn keyword cp2kKeyword NUM_SLATER
 syn keyword cp2kKeyword NUM_STEPS
@@ -4266,6 +4270,7 @@ syn keyword cp2kKeyword PRINT_CUBES
 syn keyword cp2kKeyword PRINT_DENSITY
 syn keyword cp2kKeyword PRINT_DGEMM_INFO
 syn keyword cp2kKeyword PRINT_DIPOLE
+syn keyword cp2kKeyword PRINT_DIRECTIONAL_EXC_DESCR
 syn keyword cp2kKeyword PRINT_ENERGIES
 syn keyword cp2kKeyword PRINT_EXX
 syn keyword cp2kKeyword PRINT_FM_REDISTRIBUTE
