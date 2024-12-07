@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.3 (Development Version) (git:2de90c3)
+" CP2K-Version: CP2K version 2024.3 (Development Version) (git:dbaa6fc)
 
 if exists("b:current_syntax")
    finish
@@ -776,6 +776,7 @@ syn keyword cp2kConstant RM1
 syn keyword cp2kConstant ROHF
 syn keyword cp2kConstant ROTINV
 syn keyword cp2kConstant ROW
+syn keyword cp2kConstant RPA
 syn keyword cp2kConstant RPMD
 syn keyword cp2kConstant RSDFT
 syn keyword cp2kConstant RTBSE
@@ -874,6 +875,7 @@ syn keyword cp2kConstant TC2
 syn keyword cp2kConstant TDA+ABBA
 syn keyword cp2kConstant TDDFPT
 syn keyword cp2kConstant TDDFT
+syn keyword cp2kConstant TDHF
 syn keyword cp2kConstant TDLR
 syn keyword cp2kConstant TEST
 syn keyword cp2kConstant TEST_LSD
@@ -945,6 +947,7 @@ syn keyword cp2kConstant WB97X-V
 syn keyword cp2kConstant WEIGHT_LIST
 syn keyword cp2kConstant WFN_OPT
 syn keyword cp2kConstant WORM
+syn keyword cp2kConstant W_0
 syn keyword cp2kConstant X
 syn keyword cp2kConstant XALMO_1DIAG
 syn keyword cp2kConstant XALMO_SCF
@@ -2276,6 +2279,7 @@ syn keyword cp2kSection SCF
 syn keyword cp2kSection SCF_INFO
 syn keyword cp2kSection SCINE
 syn keyword cp2kSection SCREENING
+syn keyword cp2kSection SCREENING_IN_W
 syn keyword cp2kSection SCREENING_REGION
 syn keyword cp2kSection SCRF
 syn keyword cp2kSection SE
@@ -2363,6 +2367,7 @@ syn keyword cp2kSection TRANSITION_STATE
 syn keyword cp2kSection TRANSLATION_VECTOR
 syn keyword cp2kSection TRANSMISSION
 syn keyword cp2kSection TRANSPORT
+syn keyword cp2kSection TREXIO
 syn keyword cp2kSection U
 syn keyword cp2kSection UB
 syn keyword cp2kSection UMBRELLA_INTEGRATION
@@ -4974,6 +4979,7 @@ syn keyword cp2kKeyword USE_HARTREE
 syn keyword cp2kKeyword USE_HFX_IMPLEMENTATION
 syn keyword cp2kKeyword USE_HISTORY
 syn keyword cp2kKeyword USE_IBZ
+syn keyword cp2kKeyword USE_KS_ENERGIES
 syn keyword cp2kKeyword USE_MEMPOOLS_CPU
 syn keyword cp2kKeyword USE_MODEL_HESSIAN
 syn keyword cp2kKeyword USE_MPI_ALLOCATOR
