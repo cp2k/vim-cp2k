@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2024.3 (Development Version) (git:c7c47bf)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:f8b3abc)
 
 if exists("b:current_syntax")
    finish
@@ -2997,6 +2997,7 @@ syn keyword cp2kKeyword DIPOLE_FILE
 syn keyword cp2kKeyword DIPOLE_FORM
 syn keyword cp2kKeyword DIRECT
 syn keyword cp2kKeyword DIRECTION
+syn keyword cp2kKeyword DIRECTIONAL_EXCITON_DESCRIPTORS
 syn keyword cp2kKeyword DIRECTORIES
 syn keyword cp2kKeyword DIRECTORY
 syn keyword cp2kKeyword DISABLE_CACHE
@@ -3342,6 +3343,7 @@ syn keyword cp2kKeyword EXCH_CORRECTION_FUNC
 syn keyword cp2kKeyword EXCH_SCALING_MODEL
 syn keyword cp2kKeyword EXCITATIONS
 syn keyword cp2kKeyword EXCITED_STATE_INDEX
+syn keyword cp2kKeyword EXCITON_DESCRIPTORS
 syn keyword cp2kKeyword EXCLUDE_BANDS
 syn keyword cp2kKeyword EXCLUDE_EI
 syn keyword cp2kKeyword EXCLUDE_MM
