@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:f8b3abc)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:abdbd49)
 
 if exists("b:current_syntax")
    finish
@@ -5029,6 +5029,7 @@ syn keyword cp2kKeyword VALUES
 syn keyword cp2kKeyword VARIABLE
 syn keyword cp2kKeyword VARIABLES
 syn keyword cp2kKeyword VARIABLE_VOLUME
+syn keyword cp2kKeyword VARIATIONAL_DIPOLE
 syn keyword cp2kKeyword VBIAS
 syn keyword cp2kKeyword VDW_FUNCTIONAL
 syn keyword cp2kKeyword VDW_POTENTIAL
