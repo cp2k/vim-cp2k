@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:09c55f6)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:a2ea924)
 
 if exists("b:current_syntax")
    finish
@@ -2290,6 +2290,7 @@ syn keyword cp2kSection ROTATIONAL_INFO
 syn keyword cp2kSection ROT_OPT
 syn keyword cp2kSection RS_GRID
 syn keyword cp2kSection RS_PW_TRANSFER
+syn keyword cp2kSection RTBSE
 syn keyword cp2kSection RUN_INFO
 syn keyword cp2kSection R_LDOS
 syn keyword cp2kSection S
@@ -4581,7 +4582,6 @@ syn keyword cp2kKeyword RS2PW
 syn keyword cp2kKeyword RSE
 syn keyword cp2kKeyword RSTART
 syn keyword cp2kKeyword RTBSE_HAMILTONIAN
-syn keyword cp2kKeyword RTP_METHOD
 syn keyword cp2kKeyword RUN_TYPE
 syn keyword cp2kKeyword RWOH
 syn keyword cp2kKeyword R_BUF
