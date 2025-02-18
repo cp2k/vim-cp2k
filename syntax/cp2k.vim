@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:8abc00d)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:15a58fb)
 
 if exists("b:current_syntax")
    finish
@@ -3508,7 +3508,7 @@ syn keyword cp2kKeyword GRID_POINTS
 syn keyword cp2kKeyword GRID_POINTS_GH
 syn keyword cp2kKeyword GRID_SPACING
 syn keyword cp2kKeyword GRID_TOL
-syn keyword cp2kKeyword GROUP_ANLYSIS_NR
+syn keyword cp2kKeyword GROUP_ANALYSIS_NR
 syn keyword cp2kKeyword GROUP_CC_SIZE
 syn keyword cp2kKeyword GROUP_ENERGY_NR
 syn keyword cp2kKeyword GROUP_ENERGY_SIZE
