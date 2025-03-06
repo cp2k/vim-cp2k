@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:c38724d)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:32401ac)
 
 if exists("b:current_syntax")
    finish
@@ -3452,6 +3452,8 @@ syn keyword cp2kKeyword FREQUENCY_STEP_SIZE
 syn keyword cp2kKeyword FREQ_MAX_FIT
 syn keyword cp2kKeyword FROM_ENERGY
 syn keyword cp2kKeyword FROZEN_MO_ENERGY_TERM
+syn keyword cp2kKeyword FT_DAMPING
+syn keyword cp2kKeyword FT_START_TIME
 syn keyword cp2kKeyword FULLY_PERIODIC
 syn keyword cp2kKeyword FULL_GRID
 syn keyword cp2kKeyword FULL_ORTHOGONALIZATION
@@ -4800,7 +4802,6 @@ syn keyword cp2kKeyword START_ITER
 syn keyword cp2kKeyword START_STEP
 syn keyword cp2kKeyword START_STEP_IN
 syn keyword cp2kKeyword START_STEP_OUT
-syn keyword cp2kKeyword START_TIME
 syn keyword cp2kKeyword STATE
 syn keyword cp2kKeyword STATES
 syn keyword cp2kKeyword STATE_LIST
