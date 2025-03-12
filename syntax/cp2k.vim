@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:32401ac)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:e1194b5)
 
 if exists("b:current_syntax")
    finish
@@ -318,7 +318,6 @@ syn keyword cp2kConstant EDIP
 syn keyword cp2kConstant EHRENFEST_DYN
 syn keyword cp2kConstant EHT
 syn keyword cp2kConstant EIP
-syn keyword cp2kConstant ELECTRONIC_SPECTRA
 syn keyword cp2kConstant ELEMENT
 syn keyword cp2kConstant ELPA
 syn keyword cp2kConstant ELPA1
@@ -433,7 +432,6 @@ syn keyword cp2kConstant GEO_CENTER
 syn keyword cp2kConstant GEO_OPT
 syn keyword cp2kConstant GGAFXC
 syn keyword cp2kConstant GHO
-syn keyword cp2kConstant GLB
 syn keyword cp2kConstant GLE
 syn keyword cp2kConstant GLLB
 syn keyword cp2kConstant GLOBAL
@@ -500,10 +498,8 @@ syn keyword cp2kConstant LARGE
 syn keyword cp2kConstant LARGEDIAG
 syn keyword cp2kConstant LAST
 syn keyword cp2kConstant LAZY
-syn keyword cp2kConstant LB
 syn keyword cp2kConstant LB94
 syn keyword cp2kConstant LBFGS
-syn keyword cp2kConstant LB_ALPHA
 syn keyword cp2kConstant LC
 syn keyword cp2kConstant LCAO
 syn keyword cp2kConstant LDA
@@ -805,7 +801,6 @@ syn keyword cp2kConstant SETUP_ONLY
 syn keyword cp2kConstant SGP
 syn keyword cp2kConstant SHIFT
 syn keyword cp2kConstant SHORTRANGE
-syn keyword cp2kConstant SIC
 syn keyword cp2kConstant SIGN
 syn keyword cp2kConstant SIGN_SQRT
 syn keyword cp2kConstant SILENT
@@ -813,7 +808,6 @@ syn keyword cp2kConstant SIMPLE
 syn keyword cp2kConstant SIMPSON
 syn keyword cp2kConstant SINGLE
 syn keyword cp2kConstant SINGLET
-syn keyword cp2kConstant SINGLETS
 syn keyword cp2kConstant SINGLEV
 syn keyword cp2kConstant SIRIUS
 syn keyword cp2kConstant SKIP
@@ -828,7 +822,6 @@ syn keyword cp2kConstant SOSEX
 syn keyword cp2kConstant SPARSE
 syn keyword cp2kConstant SPATIALLY_DEPENDENT
 syn keyword cp2kConstant SPATIALLY_RHO_DEPENDENT
-syn keyword cp2kConstant SPECTRA
 syn keyword cp2kConstant SPHERICAL
 syn keyword cp2kConstant SPIN
 syn keyword cp2kConstant SPL3_NOPBC_AINT1
@@ -866,17 +859,14 @@ syn keyword cp2kConstant SYEVD
 syn keyword cp2kConstant SYEVX
 syn keyword cp2kConstant SYMBOLIC
 syn keyword cp2kConstant SYRK
-syn keyword cp2kConstant T
 syn keyword cp2kConstant T92
 syn keyword cp2kConstant TAILORED
 syn keyword cp2kConstant TAMC
 syn keyword cp2kConstant TAYLOR
 syn keyword cp2kConstant TC2
 syn keyword cp2kConstant TDA+ABBA
-syn keyword cp2kConstant TDDFPT
 syn keyword cp2kConstant TDDFT
 syn keyword cp2kConstant TDHF
-syn keyword cp2kConstant TDLR
 syn keyword cp2kConstant TEST
 syn keyword cp2kConstant TEST_LSD
 syn keyword cp2kConstant TETRAGONAL
@@ -900,7 +890,6 @@ syn keyword cp2kConstant TRANSPORT
 syn keyword cp2kConstant TRAPEZOIDAL_RULE
 syn keyword cp2kConstant TRICLINIC
 syn keyword cp2kConstant TRIPLET
-syn keyword cp2kConstant TRIPLETS
 syn keyword cp2kConstant TRS4
 syn keyword cp2kConstant TRUE
 syn keyword cp2kConstant TRUNCATED
@@ -3607,7 +3596,6 @@ syn keyword cp2kKeyword INTERMOLECULAR
 syn keyword cp2kKeyword INTERPOLATE_GRADIENT
 syn keyword cp2kKeyword INTERPOLATE_SHIFT
 syn keyword cp2kKeyword INTERPOLATION
-syn keyword cp2kKeyword INVERT_S
 syn keyword cp2kKeyword INVOLVED_ATOMS
 syn keyword cp2kKeyword IN_MEMORY
 syn keyword cp2kKeyword IONS+CENTERS
@@ -3744,7 +3732,6 @@ syn keyword cp2kKeyword LOWER_BOUND
 syn keyword cp2kKeyword LOWEST_FREQUENCY
 syn keyword cp2kKeyword LRI_BASIS_SET
 syn keyword cp2kKeyword LRI_OVERLAP_MATRIX
-syn keyword cp2kKeyword LSD_SINGLETS
 syn keyword cp2kKeyword LSTOP
 syn keyword cp2kKeyword LS_DIIS
 syn keyword cp2kKeyword LS_SCF
@@ -3978,7 +3965,6 @@ syn keyword cp2kKeyword NENERGIMLINE
 syn keyword cp2kKeyword NENERGREAL
 syn keyword cp2kKeyword NEQUIL_STEPS
 syn keyword cp2kKeyword NEUMANN_DIRECTIONS
-syn keyword cp2kKeyword NEV
 syn keyword cp2kKeyword NEW_PREC_EACH
 syn keyword cp2kKeyword NEXTRA
 syn keyword cp2kKeyword NEXTRA_DOF
@@ -4029,7 +4015,6 @@ syn keyword cp2kKeyword NPROC_REP
 syn keyword cp2kKeyword NPROC_STATE
 syn keyword cp2kKeyword NP_LS
 syn keyword cp2kKeyword NP_SYMB_FACT
-syn keyword cp2kKeyword NREORTHO
 syn keyword cp2kKeyword NREP
 syn keyword cp2kKeyword NRESPA
 syn keyword cp2kKeyword NROW_BLOCK
@@ -4471,7 +4456,6 @@ syn keyword cp2kKeyword REPORT_MAXLOC
 syn keyword cp2kKeyword RESIDUAL_TOLERANCE
 syn keyword cp2kKeyword RESIDUUM_WEIGHT
 syn keyword cp2kKeyword RESTART
-syn keyword cp2kKeyword RESTARTS
 syn keyword cp2kKeyword RESTART_AVERAGES
 syn keyword cp2kKeyword RESTART_BAND
 syn keyword cp2kKeyword RESTART_BAROSTAT
@@ -4532,7 +4516,6 @@ syn keyword cp2kKeyword RESULT_MARKED_STATE
 syn keyword cp2kKeyword RESULT_MO_INDEX
 syn keyword cp2kKeyword RESULT_SCALE
 syn keyword cp2kKeyword RESULT_SPIN_INDEX
-syn keyword cp2kKeyword RES_ETYPE
 syn keyword cp2kKeyword RETURN_ORTHOGONALIZED_MOS
 syn keyword cp2kKeyword REUSE_PRECOND
 syn keyword cp2kKeyword REVERSE_MO_INDEX
@@ -5550,7 +5533,6 @@ syn keyword cp2kKeyword COL_BLOCK_SIZE
 syn keyword cp2kKeyword CONFIGURATION_INTERACTION
 syn keyword cp2kKeyword CONNECTIVITY
 syn keyword cp2kKeyword CONN_FILE
-syn keyword cp2kKeyword CONV
 syn keyword cp2kKeyword COORDINATE
 syn keyword cp2kKeyword COORD_FILE
 syn keyword cp2kKeyword CORE
@@ -5561,7 +5543,6 @@ syn keyword cp2kKeyword CUBES_LU
 syn keyword cp2kKeyword CUTOFF_LIST
 syn keyword cp2kKeyword CUTOFF_RADIUS
 syn keyword cp2kKeyword D3_CUTOFF D4_3B_CUTOFF
-syn keyword cp2kKeyword DIAGONALIZATION_METHOD METHOD
 syn keyword cp2kKeyword DIELECTRIC_CONSTANT EPSILON_RELATIVE EPSILON_SOLVENT
 syn keyword cp2kKeyword DIHEDRAL DIH
 syn keyword cp2kKeyword DIPOLE_XYZ
@@ -5570,7 +5551,6 @@ syn keyword cp2kKeyword DIS
 syn keyword cp2kKeyword DISPERSION_FUNCTIONAL
 syn keyword cp2kKeyword DI_REL
 syn keyword cp2kKeyword DO_GAUGE
-syn keyword cp2kKeyword DO_KERNEL
 syn keyword cp2kKeyword DO_QUADRUPOLE DO_QUAD QUAD
 syn keyword cp2kKeyword DRI
 syn keyword cp2kKeyword EIGENVALUES EIGVALS
@@ -5620,7 +5600,6 @@ syn keyword cp2kKeyword IC
 syn keyword cp2kKeyword INDEX
 syn keyword cp2kKeyword INOROT
 syn keyword cp2kKeyword INTERPOLATION WF_INTERPOLATION
-syn keyword cp2kKeyword INVERT_OVERLAP
 syn keyword cp2kKeyword IOLEVEL
 syn keyword cp2kKeyword IROT
 syn keyword cp2kKeyword K
@@ -5652,7 +5631,6 @@ syn keyword cp2kKeyword MAX_ITER_LUMOS
 syn keyword cp2kKeyword MAX_JOBS
 syn keyword cp2kKeyword MAX_NUM_ITER
 syn keyword cp2kKeyword MAX_SCF_HIST
-syn keyword cp2kKeyword MAX_VECTORS
 syn keyword cp2kKeyword MEMORY
 syn keyword cp2kKeyword MESSAGE_SIZE
 syn keyword cp2kKeyword MINIMAX
@@ -5678,9 +5656,6 @@ syn keyword cp2kKeyword NSKIP_MIXING
 syn keyword cp2kKeyword NUMBER_PROC
 syn keyword cp2kKeyword N_0
 syn keyword cp2kKeyword N_ELECTRONS
-syn keyword cp2kKeyword N_EV EV
-syn keyword cp2kKeyword N_REORTHO REORTHO REORTHOGONALITAZIONS
-syn keyword cp2kKeyword N_RESTARTS
 syn keyword cp2kKeyword N_ROOTS
 syn keyword cp2kKeyword OCCNUMS
 syn keyword cp2kKeyword OCCNUMSTATS
@@ -5688,7 +5663,6 @@ syn keyword cp2kKeyword OMEGA
 syn keyword cp2kKeyword OP OPERATOR POTENTIAL
 syn keyword cp2kKeyword OPEN_SHELL_SHIFT
 syn keyword cp2kKeyword ORBITAL_BASIS_SET ORB_BASIS
-syn keyword cp2kKeyword ORBITAL_EIGENVALUES_CORRECTION
 syn keyword cp2kKeyword ORBITAL_LIST
 syn keyword cp2kKeyword PARMFILE
 syn keyword cp2kKeyword POINT
@@ -5703,7 +5677,6 @@ syn keyword cp2kKeyword POS
 syn keyword cp2kKeyword POS_SCALED
 syn keyword cp2kKeyword POT
 syn keyword cp2kKeyword POT_NAME
-syn keyword cp2kKeyword PRECOND
 syn keyword cp2kKeyword PROGRAM
 syn keyword cp2kKeyword PROJECT
 syn keyword cp2kKeyword PROTEIN
@@ -5720,7 +5693,6 @@ syn keyword cp2kKeyword RELATIVE_CUTOFF
 syn keyword cp2kKeyword RELAX_MULTIP
 syn keyword cp2kKeyword RESTART_FILENAME RST_FILENAME RESTART_FILE RST_FILE
 syn keyword cp2kKeyword RESTART_FILE_NAME
-syn keyword cp2kKeyword RESTRICTED_EXCITATIONS_TYPE RES_E_TYPE
 syn keyword cp2kKeyword RESTRICTED_OPEN_KOHN_SHAM
 syn keyword cp2kKeyword RHO0
 syn keyword cp2kKeyword RI_BUMP BUMP BUMP_FACTOR
