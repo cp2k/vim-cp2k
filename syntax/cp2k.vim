@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:e1194b5)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:9087787)
 
 if exists("b:current_syntax")
    finish
@@ -4163,7 +4163,7 @@ syn keyword cp2kKeyword OUTPUT
 syn keyword cp2kKeyword OUTPUT_EMP
 syn keyword cp2kKeyword OUTPUT_FILE_NAME
 syn keyword cp2kKeyword OUTPUT_TEXT
-syn keyword cp2kKeyword OUT_EACH_MO
+syn keyword cp2kKeyword OUT_EACH_STATE
 syn keyword cp2kKeyword OUT_ITER_EACH
 syn keyword cp2kKeyword OVERLAP
 syn keyword cp2kKeyword OVERLAP_CONDITION_NUMBER
@@ -5664,6 +5664,7 @@ syn keyword cp2kKeyword OP OPERATOR POTENTIAL
 syn keyword cp2kKeyword OPEN_SHELL_SHIFT
 syn keyword cp2kKeyword ORBITAL_BASIS_SET ORB_BASIS
 syn keyword cp2kKeyword ORBITAL_LIST
+syn keyword cp2kKeyword OUT_EACH_MO
 syn keyword cp2kKeyword PARMFILE
 syn keyword cp2kKeyword POINT
 syn keyword cp2kKeyword POINTS
