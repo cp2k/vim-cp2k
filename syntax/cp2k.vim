@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:50da671)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:aabdcc8)
 
 if exists("b:current_syntax")
    finish
@@ -4726,6 +4726,7 @@ syn keyword cp2kKeyword SKIP_FIRST
 syn keyword cp2kKeyword SKIP_LOAD_BALANCE_DISTRIBUTED
 syn keyword cp2kKeyword SKIP_LOCALIZATION
 syn keyword cp2kKeyword SKIP_OPTIMIZATION
+syn keyword cp2kKeyword SKIP_RI_METRIC
 syn keyword cp2kKeyword SK_FILE
 syn keyword cp2kKeyword SLEEP_TIME
 syn keyword cp2kKeyword SLOW_GROWTH
@@ -5716,6 +5717,7 @@ syn keyword cp2kKeyword SHAKE_TOL SHAKE
 syn keyword cp2kKeyword SHELL
 syn keyword cp2kKeyword SIGMA
 syn keyword cp2kKeyword SIGN_SQRT_ORDER
+syn keyword cp2kKeyword SKIP_INVERSE SKIP_2C_INTS SKIP_2C_INTEGRALS
 syn keyword cp2kKeyword SOC
 syn keyword cp2kKeyword STACK_SIZE
 syn keyword cp2kKeyword STORE_WAVEFUNCTION
