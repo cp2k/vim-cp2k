@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:aabdcc8)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:422ac0d)
 
 if exists("b:current_syntax")
    finish
@@ -2167,6 +2167,7 @@ syn keyword cp2kSection OUTER_SCF
 syn keyword cp2kSection OVERLAP_CONDITION
 syn keyword cp2kSection P86C
 syn keyword cp2kSection PADE
+syn keyword cp2kSection PADE_FT
 syn keyword cp2kSection PAIR_POTENTIAL
 syn keyword cp2kSection PAO
 syn keyword cp2kSection PAO_DESCRIPTOR
@@ -3358,7 +3359,10 @@ syn keyword cp2kKeyword EXT_POTENTIAL
 syn keyword cp2kKeyword E_ACCEPT_INIT
 syn keyword cp2kKeyword E_COUPL
 syn keyword cp2kKeyword E_GAP
+syn keyword cp2kKeyword E_MAX
+syn keyword cp2kKeyword E_MIN
 syn keyword cp2kKeyword E_RANGE
+syn keyword cp2kKeyword E_STEP
 syn keyword cp2kKeyword E_TARGET
 syn keyword cp2kKeyword F
 syn keyword cp2kKeyword F0
@@ -3394,6 +3398,8 @@ syn keyword cp2kKeyword FIRST_PREC
 syn keyword cp2kKeyword FIRST_SNAPSHOT
 syn keyword cp2kKeyword FIST_SCALE_FACTOR
 syn keyword cp2kKeyword FIT_EXPRESS
+syn keyword cp2kKeyword FIT_E_MAX
+syn keyword cp2kKeyword FIT_E_MIN
 syn keyword cp2kKeyword FIXED
 syn keyword cp2kKeyword FIXED_MAGNETIC_MOMENT
 syn keyword cp2kKeyword FIXED_MU
