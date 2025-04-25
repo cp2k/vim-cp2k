@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:e43e35a)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:b22f077)
 
 if exists("b:current_syntax")
    finish
@@ -3403,6 +3403,7 @@ syn keyword cp2kKeyword FIT_EXPRESS
 syn keyword cp2kKeyword FIT_E_MAX
 syn keyword cp2kKeyword FIT_E_MIN
 syn keyword cp2kKeyword FIXED
+syn keyword cp2kKeyword FIXED_MAG
 syn keyword cp2kKeyword FIXED_MAGNETIC_MOMENT
 syn keyword cp2kKeyword FIXED_MU
 syn keyword cp2kKeyword FIX_CENTROID_POS
