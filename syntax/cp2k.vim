@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:b22f077)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:ff5662e)
 
 if exists("b:current_syntax")
    finish
@@ -3014,6 +3014,7 @@ syn keyword cp2kKeyword DISTRIBUTION-TYPE
 syn keyword cp2kKeyword DISTRIBUTION_LAYOUT
 syn keyword cp2kKeyword DISTRIBUTION_TYPE
 syn keyword cp2kKeyword DKH_ORDER
+syn keyword cp2kKeyword DLAF_CHOLESKY_N_MIN
 syn keyword cp2kKeyword DLAF_NEIGVEC_MIN
 syn keyword cp2kKeyword DLB
 syn keyword cp2kKeyword DM
@@ -4288,6 +4289,7 @@ syn keyword cp2kKeyword PRECONDITIONER
 syn keyword cp2kKeyword PRECOND_FILTER_THRESHOLD
 syn keyword cp2kKeyword PRECOND_FREQ
 syn keyword cp2kKeyword PRECOND_SOLVER
+syn keyword cp2kKeyword PREFERRED_CHOLESKY_LIBRARY
 syn keyword cp2kKeyword PREFERRED_DGEMM_LIBRARY
 syn keyword cp2kKeyword PREFERRED_DIAG_LIBRARY
 syn keyword cp2kKeyword PREFERRED_FFT_LIBRARY
