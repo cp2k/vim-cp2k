@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:fa5cb7c)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:133b8a2)
 
 if exists("b:current_syntax")
    finish
@@ -430,6 +430,8 @@ syn keyword cp2kConstant GEOMETRICAL_GTO
 syn keyword cp2kConstant GEOMETRY_OPTIMIZATION
 syn keyword cp2kConstant GEO_CENTER
 syn keyword cp2kConstant GEO_OPT
+syn keyword cp2kConstant GFN1
+syn keyword cp2kConstant GFN2
 syn keyword cp2kConstant GGAFXC
 syn keyword cp2kConstant GHO
 syn keyword cp2kConstant GLE
@@ -474,6 +476,7 @@ syn keyword cp2kConstant INVERSE_CHOLESKY
 syn keyword cp2kConstant INVERSE_DBCSR
 syn keyword cp2kConstant INVERSE_UPDATE
 syn keyword cp2kConstant IORA
+syn keyword cp2kConstant IPEA1
 syn keyword cp2kConstant IPI
 syn keyword cp2kConstant IRAC
 syn keyword cp2kConstant ISOKIN
@@ -2343,6 +2346,7 @@ syn keyword cp2kSection SWARM
 syn keyword cp2kSection SYMMETRY
 syn keyword cp2kSection S_CSR_WRITE
 syn keyword cp2kSection TABPOT
+syn keyword cp2kSection TBLITE
 syn keyword cp2kSection TDDFPT
 syn keyword cp2kSection TEMPERATURE
 syn keyword cp2kSection TEMPERATURE_COLVAR
