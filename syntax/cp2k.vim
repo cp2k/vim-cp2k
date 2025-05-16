@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:133b8a2)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:9e7f125)
 
 if exists("b:current_syntax")
    finish
@@ -1561,6 +1561,7 @@ syn keyword cp2kSection GW2X
 syn keyword cp2kSection GW_DOS
 syn keyword cp2kSection GYRATION_RADIUS
 syn keyword cp2kSection G_TENSOR
+syn keyword cp2kSection HAIRY_PROBES
 syn keyword cp2kSection HARRIS_METHOD
 syn keyword cp2kSection HBONDS
 syn keyword cp2kSection HBP
@@ -2564,6 +2565,7 @@ syn keyword cp2kKeyword ATOMS_TO
 syn keyword cp2kKeyword ATOMS_TO_B
 syn keyword cp2kKeyword ATOM_COEF
 syn keyword cp2kKeyword ATOM_COORDINATION_NUMBERS
+syn keyword cp2kKeyword ATOM_IDS
 syn keyword cp2kKeyword ATOM_INDEX_1
 syn keyword cp2kKeyword ATOM_INDEX_2
 syn keyword cp2kKeyword ATOM_LIST
@@ -3253,6 +3255,7 @@ syn keyword cp2kKeyword EPS_GREEN
 syn keyword cp2kKeyword EPS_GRID
 syn keyword cp2kKeyword EPS_GVG_RSPACE
 syn keyword cp2kKeyword EPS_GW2X
+syn keyword cp2kKeyword EPS_HP
 syn keyword cp2kKeyword EPS_INTEGRAL
 syn keyword cp2kKeyword EPS_IRAC
 syn keyword cp2kKeyword EPS_IRAC_FILTER_MATRIX
