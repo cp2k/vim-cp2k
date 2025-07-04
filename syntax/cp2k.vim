@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:9e7f125)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:2e31a49)
 
 if exists("b:current_syntax")
    finish
@@ -4689,6 +4689,7 @@ syn keyword cp2kKeyword SHORT_RANGE_CORRECTION
 syn keyword cp2kKeyword SHORT_RANGE_CORRECTION_PARAMETERS
 syn keyword cp2kKeyword SHORT_RANGE_OMEGA
 syn keyword cp2kKeyword SHOULD_SKIP
+syn keyword cp2kKeyword SHOW_SPACE_GROUP
 syn keyword cp2kKeyword SHOW_STATISTICS
 syn keyword cp2kKeyword SHT_COVERAGE
 syn keyword cp2kKeyword SHT_LMAX
