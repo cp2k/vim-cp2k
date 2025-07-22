@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:2e31a49)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:20eb57b)
 
 if exists("b:current_syntax")
    finish
@@ -2539,6 +2539,9 @@ syn keyword cp2kKeyword APPLY_DELTA_PULSE
 syn keyword cp2kKeyword APPLY_DELTA_PULSE_MAG
 syn keyword cp2kKeyword APPLY_WFN_MIX_INIT_RESTART
 syn keyword cp2kKeyword APPROX_KP_EXTRAPOL
+syn keyword cp2kKeyword APT_FD
+syn keyword cp2kKeyword APT_FD_DE
+syn keyword cp2kKeyword APT_FD_METHOD
 syn keyword cp2kKeyword APX_TYPE
 syn keyword cp2kKeyword ARNOLDI
 syn keyword cp2kKeyword ASPARSITY
@@ -3679,6 +3682,8 @@ syn keyword cp2kKeyword KPOINTS_W
 syn keyword cp2kKeyword KPOINT_WEIGHTS_W
 syn keyword cp2kKeyword KP_NGROUPS
 syn keyword cp2kKeyword KP_RI_BUMP_FACTOR
+syn keyword cp2kKeyword KP_RI_MEMORY_ESTIMATE
+syn keyword cp2kKeyword KP_RI_PROGRESS_BAR
 syn keyword cp2kKeyword KP_STACK_SIZE
 syn keyword cp2kKeyword KP_USE_DELTA_P
 syn keyword cp2kKeyword KSS
@@ -5655,6 +5660,7 @@ syn keyword cp2kKeyword MAX_JOBS
 syn keyword cp2kKeyword MAX_NUM_ITER
 syn keyword cp2kKeyword MAX_SCF_HIST
 syn keyword cp2kKeyword MEMORY
+syn keyword cp2kKeyword MEMORY_ESTIMATE
 syn keyword cp2kKeyword MESSAGE_SIZE
 syn keyword cp2kKeyword MINIMAX
 syn keyword cp2kKeyword MINIMIZER
@@ -5702,6 +5708,7 @@ syn keyword cp2kKeyword POS_SCALED
 syn keyword cp2kKeyword POT
 syn keyword cp2kKeyword POT_NAME
 syn keyword cp2kKeyword PROGRAM
+syn keyword cp2kKeyword PROGRESS_BAR PROGRESS KP_PROGRESS KP_PROGRESS_BAR
 syn keyword cp2kKeyword PROJECT
 syn keyword cp2kKeyword PROTEIN
 syn keyword cp2kKeyword PSEUDO_CANO
