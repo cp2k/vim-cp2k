@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:20eb57b)
+" CP2K-Version: CP2K version 2025.1 (Development Version) (git:3158929)
 
 if exists("b:current_syntax")
    finish
@@ -2272,6 +2272,7 @@ syn keyword cp2kSection RHO0_INFORMATION
 syn keyword cp2kSection RHO_MIXING
 syn keyword cp2kSection RI
 syn keyword cp2kSection RING_PUCKERING
+syn keyword cp2kSection RIXS
 syn keyword cp2kSection RI_DENSITY_COEFFS
 syn keyword cp2kSection RI_INFO
 syn keyword cp2kSection RI_METRIC
@@ -4792,6 +4793,7 @@ syn keyword cp2kKeyword SPIN_CONFIG
 syn keyword cp2kKeyword SPIN_CONFIGURATION
 syn keyword cp2kKeyword SPIN_DENS_CONV_INT
 syn keyword cp2kKeyword SPIN_DENS_CONV_MAX
+syn keyword cp2kKeyword SPIN_DIPOLE
 syn keyword cp2kKeyword SPIN_ORBIT_COUPLING
 syn keyword cp2kKeyword SPLINE_DATA
 syn keyword cp2kKeyword SPLINE_FIND_COEFFS
@@ -5573,6 +5575,7 @@ syn keyword cp2kKeyword CUTOFF_RADIUS
 syn keyword cp2kKeyword D3_CUTOFF D4_3B_CUTOFF
 syn keyword cp2kKeyword DIELECTRIC_CONSTANT EPSILON_RELATIVE EPSILON_SOLVENT
 syn keyword cp2kKeyword DIHEDRAL DIH
+syn keyword cp2kKeyword DIPOLE_SPIN
 syn keyword cp2kKeyword DIPOLE_XYZ
 syn keyword cp2kKeyword DIP_FORM
 syn keyword cp2kKeyword DIS
