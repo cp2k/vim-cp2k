@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.1 (Development Version) (git:3158929)
+" CP2K-Version: CP2K version 2025.2 (Development Version) (git:dfe34b9)
 
 if exists("b:current_syntax")
    finish
@@ -86,12 +86,6 @@ syn keyword cp2kConstant 4F
 syn keyword cp2kConstant 4P
 syn keyword cp2kConstant 4S
 syn keyword cp2kConstant 93
-syn keyword cp2kConstant <1/R>
-syn keyword cp2kConstant <ERF(A*R)/R>
-syn keyword cp2kConstant <ERFC(A*R)/R>
-syn keyword cp2kConstant <EXP(-A*R)/R>
-syn keyword cp2kConstant <EXP(-A*R2)/R>
-syn keyword cp2kConstant <H(A-R)/R>
 syn keyword cp2kConstant AC
 syn keyword cp2kConstant AD
 syn keyword cp2kConstant ADAPT
@@ -298,7 +292,6 @@ syn keyword cp2kConstant DKH(3)
 syn keyword cp2kConstant DLAF
 syn keyword cp2kConstant DMC
 syn keyword cp2kConstant DMFET
-syn keyword cp2kConstant DMFT
 syn keyword cp2kConstant DOGLEG
 syn keyword cp2kConstant DOMAIN
 syn keyword cp2kConstant DOS
@@ -528,6 +521,7 @@ syn keyword cp2kConstant LOW
 syn keyword cp2kConstant LOWDIN
 syn keyword cp2kConstant LR
 syn keyword cp2kConstant LRIGPW
+syn keyword cp2kConstant LR_TRUNC
 syn keyword cp2kConstant LS_HOTELLING
 syn keyword cp2kConstant LS_TAYLOR
 syn keyword cp2kConstant LWDN
@@ -777,7 +771,6 @@ syn keyword cp2kConstant ROTINV
 syn keyword cp2kConstant ROW
 syn keyword cp2kConstant RPA
 syn keyword cp2kConstant RPMD
-syn keyword cp2kConstant RSDFT
 syn keyword cp2kConstant RTBSE
 syn keyword cp2kConstant RT_PROPAGATION
 syn keyword cp2kConstant RT_RESTART
@@ -3624,7 +3617,6 @@ syn keyword cp2kKeyword IN_MEMORY
 syn keyword cp2kKeyword IONS+CENTERS
 syn keyword cp2kKeyword IPRINT
 syn keyword cp2kKeyword IRAC_DEGREE
-syn keyword cp2kKeyword ISOLATED_SYSTEM
 syn keyword cp2kKeyword ISSC_ON_ATOM_LIST
 syn keyword cp2kKeyword IS_INERTIA_COUNT
 syn keyword cp2kKeyword ITERATION
@@ -3911,7 +3903,6 @@ syn keyword cp2kKeyword MM_STACK_SIZE
 syn keyword cp2kKeyword MM_STYLE
 syn keyword cp2kKeyword MM_SUBSYS
 syn keyword cp2kKeyword MODEFACTOR
-syn keyword cp2kKeyword MODEL
 syn keyword cp2kKeyword MODEL_GRAD_NORM_RATIO
 syn keyword cp2kKeyword MOLECULAR_PROPERTIES
 syn keyword cp2kKeyword MOLECULE
@@ -4150,7 +4141,6 @@ syn keyword cp2kKeyword ON_THE_FLY_LOC
 syn keyword cp2kKeyword OPEN_CLOSE_SCALE
 syn keyword cp2kKeyword OPEN_CLOSE_WEIGHT
 syn keyword cp2kKeyword OPERATOR
-syn keyword cp2kKeyword OPERATOR_PARAMETER
 syn keyword cp2kKeyword OPTIMIZE
 syn keyword cp2kKeyword OPTIMIZER
 syn keyword cp2kKeyword OPTIMIZE_END_POINTS
