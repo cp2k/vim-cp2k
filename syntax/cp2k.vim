@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.2 (Development Version) (git:dfe34b9)
+" CP2K-Version: CP2K version 2025.2 (Development Version) (git:6958f25)
 
 if exists("b:current_syntax")
    finish
@@ -4597,6 +4597,7 @@ syn keyword cp2kKeyword R_QM
 syn keyword cp2kKeyword SAB_AUX_FIT
 syn keyword cp2kKeyword SAB_AUX_FIT_VS_ORB
 syn keyword cp2kKeyword SAB_CN
+syn keyword cp2kKeyword SAB_CNEO
 syn keyword cp2kKeyword SAB_CORE
 syn keyword cp2kKeyword SAB_LRC
 syn keyword cp2kKeyword SAB_ORB
