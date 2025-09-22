@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.2 (Development Version) (git:6958f25)
+" CP2K-Version: CP2K version 2025.2 (Development Version) (git:b69419f)
 
 if exists("b:current_syntax")
    finish
@@ -215,6 +215,7 @@ syn keyword cp2kConstant CN
 syn keyword cp2kConstant COAC
 syn keyword cp2kConstant COEFFICIENTS
 syn keyword cp2kConstant COLD
+syn keyword cp2kConstant COLLINEAR
 syn keyword cp2kConstant COLLOCATE
 syn keyword cp2kConstant COLUMN
 syn keyword cp2kConstant COM
@@ -615,6 +616,7 @@ syn keyword cp2kConstant NN6
 syn keyword cp2kConstant NN6_SMOOTH
 syn keyword cp2kConstant NNP
 syn keyword cp2kConstant NO
+syn keyword cp2kConstant NONCOLLINEAR
 syn keyword cp2kConstant NONE
 syn keyword cp2kConstant NONE_DM
 syn keyword cp2kConstant NON_LOCAL
@@ -4779,6 +4781,7 @@ syn keyword cp2kKeyword SPGR_PRINT_ATOMS
 syn keyword cp2kKeyword SPHERICAL_CUTOFF
 syn keyword cp2kKeyword SPHERICAL_HARMONICS
 syn keyword cp2kKeyword SPINCONFLEADS
+syn keyword cp2kKeyword SPINFLIP
 syn keyword cp2kKeyword SPIN_CHANNEL
 syn keyword cp2kKeyword SPIN_CONFIG
 syn keyword cp2kKeyword SPIN_CONFIGURATION
