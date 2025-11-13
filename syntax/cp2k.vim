@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.2 (Development Version) (git:61791e1)
+" CP2K-Version: CP2K version 2025.2 (Development Version) (git:5ef3a49)
 
 if exists("b:current_syntax")
    finish
@@ -1266,6 +1266,7 @@ syn keyword cp2kSection FRAGMENT_ENERGIES
 syn keyword cp2kSection FRAME
 syn keyword cp2kSection FREE_ENERGY
 syn keyword cp2kSection FREE_ENERGY_INFO
+syn keyword cp2kSection FT
 syn keyword cp2kSection FULL_RESTART
 syn keyword cp2kSection G3X3
 syn keyword cp2kSection G4X6
@@ -2168,7 +2169,6 @@ syn keyword cp2kSection OUTER_SCF
 syn keyword cp2kSection OVERLAP_CONDITION
 syn keyword cp2kSection P86C
 syn keyword cp2kSection PADE
-syn keyword cp2kSection PADE_FT
 syn keyword cp2kSection PAIR_POTENTIAL
 syn keyword cp2kSection PAO
 syn keyword cp2kSection PAO_DESCRIPTOR
@@ -3459,8 +3459,6 @@ syn keyword cp2kKeyword FREQUENCY_STEP_SIZE
 syn keyword cp2kKeyword FREQ_MAX_FIT
 syn keyword cp2kKeyword FROM_ENERGY
 syn keyword cp2kKeyword FROZEN_MO_ENERGY_TERM
-syn keyword cp2kKeyword FT_DAMPING
-syn keyword cp2kKeyword FT_START_TIME
 syn keyword cp2kKeyword FULLY_PERIODIC
 syn keyword cp2kKeyword FULL_GRID
 syn keyword cp2kKeyword FULL_ORTHOGONALIZATION
@@ -4810,6 +4808,7 @@ syn keyword cp2kKeyword START_ITER
 syn keyword cp2kKeyword START_STEP
 syn keyword cp2kKeyword START_STEP_IN
 syn keyword cp2kKeyword START_STEP_OUT
+syn keyword cp2kKeyword START_TIME
 syn keyword cp2kKeyword STATE
 syn keyword cp2kKeyword STATES
 syn keyword cp2kKeyword STATE_LIST
