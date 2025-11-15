@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.2 (Development Version) (git:5ef3a49)
+" CP2K-Version: CP2K version 2025.2 (Development Version) (git:f56c6e3)
 
 if exists("b:current_syntax")
    finish
@@ -3917,6 +3917,7 @@ syn keyword cp2kKeyword MOMENTUM_CONSERVATION_REGION
 syn keyword cp2kKeyword MOMENTUM_CONSERVATION_TYPE
 syn keyword cp2kKeyword MOMENT_OF_INERTIA
 syn keyword cp2kKeyword MOM_TYPE
+syn keyword cp2kKeyword MONOVALENT
 syn keyword cp2kKeyword MORE_WORK
 syn keyword cp2kKeyword MOVES_FILE_NAME
 syn keyword cp2kKeyword MOVE_CENTER_OF_MASS
