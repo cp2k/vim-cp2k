@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.2 (Development Version) (git:f56c6e3)
+" CP2K-Version: CP2K version 2025.2 (Development Version) (git:552e9fd)
 
 if exists("b:current_syntax")
    finish
@@ -2243,6 +2243,7 @@ syn keyword cp2kSection RAMP_ENV
 syn keyword cp2kSection RDF
 syn keyword cp2kSection REACTION_PATH
 syn keyword cp2kSection REAL_TIME_PROPAGATION
+syn keyword cp2kSection REDUCED_EXCITATION_SPACE
 syn keyword cp2kSection REFERENCES
 syn keyword cp2kSection REFLECTIVE
 syn keyword cp2kSection REFTRAJ
@@ -3747,6 +3748,7 @@ syn keyword cp2kKeyword LOG_PRINT_KEY
 syn keyword cp2kKeyword LONG_RANGE_CORRECTION
 syn keyword cp2kKeyword LOWDIN
 syn keyword cp2kKeyword LOWER_BOUND
+syn keyword cp2kKeyword LOWER_ENERGY_CUTOFF
 syn keyword cp2kKeyword LOWEST_FREQUENCY
 syn keyword cp2kKeyword LRI_BASIS_SET
 syn keyword cp2kKeyword LRI_OVERLAP_MATRIX
@@ -3910,6 +3912,7 @@ syn keyword cp2kKeyword MOLECULE
 syn keyword cp2kKeyword MOLECULES_FILE_NAME
 syn keyword cp2kKeyword MOLECULE_CORRECTION
 syn keyword cp2kKeyword MOLECULE_CORRECTION_C8
+syn keyword cp2kKeyword MOLECULE_LIST
 syn keyword cp2kKeyword MOLNAME
 syn keyword cp2kKeyword MOLPROP_FILE_NAME
 syn keyword cp2kKeyword MOL_CHECK
@@ -5002,6 +5005,7 @@ syn keyword cp2kKeyword UNIT_WN
 syn keyword cp2kKeyword UNIX
 syn keyword cp2kKeyword UPDATE_XC_ENERGY
 syn keyword cp2kKeyword UPPER_BOUND
+syn keyword cp2kKeyword UPPER_ENERGY_CUTOFF
 syn keyword cp2kKeyword UPPER_TRIANGULAR
 syn keyword cp2kKeyword USER_RADII
 syn keyword cp2kKeyword USER_RADIUS
