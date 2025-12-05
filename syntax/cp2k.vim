@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.2 (Development Version) (git:552e9fd)
+" CP2K-Version: CP2K version 2025.2 (Development Version) (git:3a1353c)
 
 if exists("b:current_syntax")
    finish
@@ -1561,6 +1561,7 @@ syn keyword cp2kSection HAIRY_PROBES
 syn keyword cp2kSection HARRIS_METHOD
 syn keyword cp2kSection HBONDS
 syn keyword cp2kSection HBP
+syn keyword cp2kSection HCORE_CSR_WRITE
 syn keyword cp2kSection HCTH
 syn keyword cp2kSection HELIUM
 syn keyword cp2kSection HESSIAN
@@ -2223,6 +2224,7 @@ syn keyword cp2kSection PW92
 syn keyword cp2kSection PW_DFT
 syn keyword cp2kSection PW_TRANSFER
 syn keyword cp2kSection PZ81
+syn keyword cp2kSection P_CSR_WRITE
 syn keyword cp2kSection QMMM
 syn keyword cp2kSection QMMM_CHARGES
 syn keyword cp2kSection QMMM_LINK_INFO
