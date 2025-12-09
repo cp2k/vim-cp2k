@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.2 (Development Version) (git:3a1353c)
+" CP2K-Version: CP2K version 2025.2 (Development Version) (git:cb19969)
 
 if exists("b:current_syntax")
    finish
@@ -3389,6 +3389,7 @@ syn keyword cp2kKeyword FERMI_CONTACT
 syn keyword cp2kKeyword FERMI_EXP
 syn keyword cp2kKeyword FERMI_LEVEL
 syn keyword cp2kKeyword FERMI_LEVEL_OFFSET
+syn keyword cp2kKeyword FERMI_LEVEL_SHIFTED
 syn keyword cp2kKeyword FFT
 syn keyword cp2kKeyword FFTW_PLAN_TYPE
 syn keyword cp2kKeyword FFTW_WISDOM_FILE_NAME
