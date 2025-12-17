@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.2 (Development Version) (git:53a46e8)
+" CP2K-Version: CP2K version 2025.2 (Development Version) (git:ddb311d)
 
 if exists("b:current_syntax")
    finish
@@ -2867,6 +2867,7 @@ syn keyword cp2kKeyword CORE_CORR_DIP
 syn keyword cp2kKeyword CORE_HAMILTONIAN
 syn keyword cp2kKeyword CORE_PPL
 syn keyword cp2kKeyword CORE_RELATIVITY
+syn keyword cp2kKeyword CORE_STATES
 syn keyword cp2kKeyword CORR_MOS_OCC
 syn keyword cp2kKeyword CORR_MOS_VIRT
 syn keyword cp2kKeyword CORR_RADIUS
@@ -5048,6 +5049,7 @@ syn keyword cp2kKeyword UTIL_INFO
 syn keyword cp2kKeyword U_MINUS_J
 syn keyword cp2kKeyword U_RAMPING
 syn keyword cp2kKeyword VALENCE_RELATIVITY
+syn keyword cp2kKeyword VALENCE_STATES
 syn keyword cp2kKeyword VALIDATE
 syn keyword cp2kKeyword VALUE
 syn keyword cp2kKeyword VALUES
