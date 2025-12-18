@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.2 (Development Version) (git:ddb311d)
+" CP2K-Version: CP2K version 2025.2 (Development Version) (git:a535875)
 
 if exists("b:current_syntax")
    finish
@@ -2240,7 +2240,6 @@ syn keyword cp2kSection QUADRATIC
 syn keyword cp2kSection QUADRUPOLE
 syn keyword cp2kSection QUADRUPOLES
 syn keyword cp2kSection QUARTIC
-syn keyword cp2kSection QUIP
 syn keyword cp2kSection RADII
 syn keyword cp2kSection RAMP_ENV
 syn keyword cp2kSection RDF
@@ -2745,7 +2744,6 @@ syn keyword cp2kKeyword CALCMPSH
 syn keyword cp2kKeyword CALCULATE_C9_TERM
 syn keyword cp2kKeyword CALCULATE_DERIVATIVES
 syn keyword cp2kKeyword CALCULATE_STATES
-syn keyword cp2kKeyword CALC_ARGS
 syn keyword cp2kKeyword CALC_COND_NUM
 syn keyword cp2kKeyword CALLGRAPH
 syn keyword cp2kKeyword CALLGRAPH_FILE_NAME
@@ -3587,7 +3585,6 @@ syn keyword cp2kKeyword INITIAL_TRUST_RADIUS
 syn keyword cp2kKeyword INITIAL_WFN
 syn keyword cp2kKeyword INITTRANSMRANGE
 syn keyword cp2kKeyword INIT_ACC_PROB
-syn keyword cp2kKeyword INIT_ARGS
 syn keyword cp2kKeyword INIT_EVAL_OLD
 syn keyword cp2kKeyword INIT_METHOD
 syn keyword cp2kKeyword INIT_SUBSPACE
