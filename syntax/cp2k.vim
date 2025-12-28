@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.2 (Development Version) (git:a535875)
+" CP2K-Version: CP2K version 2025.2 (Development Version) (git:f4c5fea)
 
 if exists("b:current_syntax")
    finish
@@ -2246,6 +2246,7 @@ syn keyword cp2kSection RDF
 syn keyword cp2kSection REACTION_PATH
 syn keyword cp2kSection REAL_TIME_PROPAGATION
 syn keyword cp2kSection REDUCED_EXCITATION_SPACE
+syn keyword cp2kSection REFERENCE
 syn keyword cp2kSection REFERENCES
 syn keyword cp2kSection REFLECTIVE
 syn keyword cp2kSection REFTRAJ
