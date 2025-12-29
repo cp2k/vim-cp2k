@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.2 (Development Version) (git:f4c5fea)
+" CP2K-Version: CP2K version 2025.2 (Development Version) (git:7f1b8e3)
 
 if exists("b:current_syntax")
    finish
@@ -552,6 +552,7 @@ syn keyword cp2kConstant MEDIUM
 syn keyword cp2kConstant MERLOT
 syn keyword cp2kConstant METADYN
 syn keyword cp2kConstant METHFESEL_PAXTON
+syn keyword cp2kConstant MIMIC
 syn keyword cp2kConstant MINIMA_CRAWLING
 syn keyword cp2kConstant MINIMA_HOPPING
 syn keyword cp2kConstant MINIMIZATION
@@ -4428,6 +4429,7 @@ syn keyword cp2kKeyword READ_DMFET_POT
 syn keyword cp2kKeyword READ_EMBED_POT
 syn keyword cp2kKeyword READ_EMBED_POT_CUBE
 syn keyword cp2kKeyword READ_FROM_CUBE
+syn keyword cp2kKeyword READ_WRITE_HS
 syn keyword cp2kKeyword REALSPACE
 syn keyword cp2kKeyword REAL_AXIS_INTEGRATION_METHOD
 syn keyword cp2kKeyword REAL_OCCUPATION_MATRIX
