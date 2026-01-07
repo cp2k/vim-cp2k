@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2025.2 (Development Version) (git:71983cd)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:04040e4)
 
 if exists("b:current_syntax")
    finish
@@ -1169,6 +1169,7 @@ syn keyword cp2kSection EIGENSOLVER
 syn keyword cp2kSection EIP
 syn keyword cp2kSection ELECTRIC_FIELD_GRADIENT
 syn keyword cp2kSection ELF_CUBE
+syn keyword cp2kSection ELF_OPENPMD
 syn keyword cp2kSection EMBED
 syn keyword cp2kSection EMBED_DENS_DIFF
 syn keyword cp2kSection EMBED_POT_CUBE
@@ -1209,6 +1210,7 @@ syn keyword cp2kSection EXT_RESTART
 syn keyword cp2kSection E_CONSTITUENTS
 syn keyword cp2kSection E_DENSITY_BQB
 syn keyword cp2kSection E_DENSITY_CUBE
+syn keyword cp2kSection E_DENSITY_OPENPMD
 syn keyword cp2kSection FARMING
 syn keyword cp2kSection FATTEBERT-GYGI
 syn keyword cp2kSection FCIDUMP
@@ -2099,6 +2101,7 @@ syn keyword cp2kSection MOVE_UPDATES
 syn keyword cp2kSection MO_CUBES
 syn keyword cp2kSection MO_MAGNITUDE
 syn keyword cp2kSection MO_MOLDEN
+syn keyword cp2kSection MO_OPENPMD
 syn keyword cp2kSection MO_ORTHONORMALITY
 syn keyword cp2kSection MP2
 syn keyword cp2kSection MSD
@@ -4071,6 +4074,9 @@ syn keyword cp2kKeyword OMEGA_MAX_FIT
 syn keyword cp2kKeyword OMIT_HEADERS
 syn keyword cp2kKeyword ONE_CIRCLE
 syn keyword cp2kKeyword ON_THE_FLY_LOC
+syn keyword cp2kKeyword OPENPMD_CFG
+syn keyword cp2kKeyword OPENPMD_CFG_FILE
+syn keyword cp2kKeyword OPENPMD_EXTENSION
 syn keyword cp2kKeyword OPEN_CLOSE_SCALE
 syn keyword cp2kKeyword OPEN_CLOSE_WEIGHT
 syn keyword cp2kKeyword OPERATOR
@@ -5008,6 +5014,7 @@ syn keyword cp2kKeyword WORKER_PER_MINIMA
 syn keyword cp2kKeyword WRITE_CUBE
 syn keyword cp2kKeyword WRITE_CYCLES
 syn keyword cp2kKeyword WRITE_FREQUENCY
+syn keyword cp2kKeyword WRITE_OPENPMD
 syn keyword cp2kKeyword WTGAMMA
 syn keyword cp2kKeyword WW
 syn keyword cp2kKeyword W_MATRIX
