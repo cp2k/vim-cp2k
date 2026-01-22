@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:1f1a7a2)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:8ebf9ad)
 
 if exists("b:current_syntax")
    finish
@@ -3052,8 +3052,8 @@ syn keyword cp2kKeyword ELEMENT_CUTOFF
 syn keyword cp2kKeyword ELPA_FORCE_REDISTRIBUTE
 syn keyword cp2kKeyword ELPA_KERNEL
 syn keyword cp2kKeyword ELPA_NEIGVEC_MIN
+syn keyword cp2kKeyword ELPA_ONE_STAGE
 syn keyword cp2kKeyword ELPA_QR
-syn keyword cp2kKeyword ELPA_QR_UNSAFE
 syn keyword cp2kKeyword EM.ADDRHOGATE
 syn keyword cp2kKeyword EM.ADDVGISOLATEDLOCALCHARGES
 syn keyword cp2kKeyword EM.CALLIMPURITYSOLVER
