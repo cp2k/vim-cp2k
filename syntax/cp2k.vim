@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:d5a0441)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:dbde302)
 
 if exists("b:current_syntax")
    finish
@@ -845,7 +845,6 @@ syn keyword cp2kConstant TDA+ABBA
 syn keyword cp2kConstant TDDFT
 syn keyword cp2kConstant TDHF
 syn keyword cp2kConstant TEST
-syn keyword cp2kConstant TEST_LSD
 syn keyword cp2kConstant TETRAGONAL
 syn keyword cp2kConstant TETRAGONAL_AB
 syn keyword cp2kConstant TETRAGONAL_AC
@@ -2490,6 +2489,7 @@ syn keyword cp2kKeyword ALPHA_1
 syn keyword cp2kKeyword ALPHA_2
 syn keyword cp2kKeyword ALPHA_BETA_GAMMA
 syn keyword cp2kKeyword ALPHA_IMOMM
+syn keyword cp2kKeyword ALPHA_WEIGHTS
 syn keyword cp2kKeyword ALWAYS_CHECKSUM
 syn keyword cp2kKeyword AM.ATOMLISTBS
 syn keyword cp2kKeyword AM.CRITERIUM
@@ -3430,7 +3430,6 @@ syn keyword cp2kKeyword FUNCTION
 syn keyword cp2kKeyword FUNCTIONAL
 syn keyword cp2kKeyword FUNCTIONAL_FORM
 syn keyword cp2kKeyword FUNCTIONAL_MODEL
-syn keyword cp2kKeyword FUNCTIONAL_ROUTINE
 syn keyword cp2kKeyword FUNCTIONAL_TYPE
 syn keyword cp2kKeyword F_EXPONENTS
 syn keyword cp2kKeyword F_QUANTUM_NUMBERS
@@ -3440,6 +3439,7 @@ syn keyword cp2kKeyword GAMMA_KT
 syn keyword cp2kKeyword GAMMA_ONLY_SIGMA
 syn keyword cp2kKeyword GAP
 syn keyword cp2kKeyword GAPW_1C_BASIS
+syn keyword cp2kKeyword GAPW_ACCURATE_XCINT
 syn keyword cp2kKeyword GAPW_MAX_ALPHA
 syn keyword cp2kKeyword GAPW_PRJ_RADII
 syn keyword cp2kKeyword GAUGE
