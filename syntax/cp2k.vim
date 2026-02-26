@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:a43c040)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:ed9ef77)
 
 if exists("b:current_syntax")
    finish
@@ -2868,6 +2868,7 @@ syn keyword cp2kKeyword CUBES_LU_BOUNDS
 syn keyword cp2kKeyword CUBE_EVAL_RANGE
 syn keyword cp2kKeyword CUBE_FILES
 syn keyword cp2kKeyword CURRENT.WRITETRANSMISSION
+syn keyword cp2kKeyword CUSOLVER_GENERALIZED
 syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_RADIUS
