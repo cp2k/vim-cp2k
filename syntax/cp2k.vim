@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:ed9ef77)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:23351c3)
 
 if exists("b:current_syntax")
    finish
@@ -427,6 +427,7 @@ syn keyword cp2kConstant GREEDY
 syn keyword cp2kConstant GRID
 syn keyword cp2kConstant GROUND_STATE
 syn keyword cp2kConstant GTH
+syn keyword cp2kConstant GTO
 syn keyword cp2kConstant HAGER_ZHANG
 syn keyword cp2kConstant HARMONIC
 syn keyword cp2kConstant HARRIS
@@ -516,6 +517,7 @@ syn keyword cp2kConstant MASS
 syn keyword cp2kConstant MASSIVE
 syn keyword cp2kConstant MASTER
 syn keyword cp2kConstant MATMUL
+syn keyword cp2kConstant MATRIX
 syn keyword cp2kConstant MATRIX_SIGN
 syn keyword cp2kConstant MAURI_SPZ
 syn keyword cp2kConstant MAURI_US
@@ -2098,6 +2100,7 @@ syn keyword cp2kSection MOVE_PROBABILITIES
 syn keyword cp2kSection MOVE_TYPE
 syn keyword cp2kSection MOVE_UPDATES
 syn keyword cp2kSection MO_CUBES
+syn keyword cp2kSection MO_KP
 syn keyword cp2kSection MO_MAGNITUDE
 syn keyword cp2kSection MO_MOLDEN
 syn keyword cp2kSection MO_OPENPMD
@@ -4127,6 +4130,7 @@ syn keyword cp2kKeyword OUT_ITER_EACH
 syn keyword cp2kKeyword OVERLAP
 syn keyword cp2kKeyword OVERLAP_CONDITION_NUMBER
 syn keyword cp2kKeyword OVERLAP_DELTAT
+syn keyword cp2kKeyword OVERLAP_EXPORT_TYPE
 syn keyword cp2kKeyword OVERLAP_THRESHOLD
 syn keyword cp2kKeyword OVERWRITE
 syn keyword cp2kKeyword OVERWRITE_MOS
