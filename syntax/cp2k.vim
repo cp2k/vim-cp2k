@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:23351c3)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:5064cfc)
 
 if exists("b:current_syntax")
    finish
@@ -962,7 +962,6 @@ syn keyword cp2kSection ADMM_BASIS
 syn keyword cp2kSection AD_LANGEVIN
 syn keyword cp2kSection AE_BASIS
 syn keyword cp2kSection ALCHEMICAL_CHANGE
-syn keyword cp2kSection ALLEGRO
 syn keyword cp2kSection ALMO_CTA
 syn keyword cp2kSection ALMO_EDA_CT
 syn keyword cp2kSection ALMO_OPTIMIZER_DIIS
@@ -3860,6 +3859,7 @@ syn keyword cp2kKeyword MM_STYLE
 syn keyword cp2kKeyword MM_SUBSYS
 syn keyword cp2kKeyword MODEFACTOR
 syn keyword cp2kKeyword MODEL_GRAD_NORM_RATIO
+syn keyword cp2kKeyword MODEL_TYPE
 syn keyword cp2kKeyword MOLECULAR_PROPERTIES
 syn keyword cp2kKeyword MOLECULE
 syn keyword cp2kKeyword MOLECULES_FILE_NAME
@@ -4912,11 +4912,10 @@ syn keyword cp2kKeyword UKS
 syn keyword cp2kKeyword UNIQUE_SPLINE
 syn keyword cp2kKeyword UNIT
 syn keyword cp2kKeyword UNITS
-syn keyword cp2kKeyword UNIT_CELL
-syn keyword cp2kKeyword UNIT_COORDS
 syn keyword cp2kKeyword UNIT_ENERGY
 syn keyword cp2kKeyword UNIT_EV
 syn keyword cp2kKeyword UNIT_FORCES
+syn keyword cp2kKeyword UNIT_LENGTH
 syn keyword cp2kKeyword UNIT_WN
 syn keyword cp2kKeyword UNIX
 syn keyword cp2kKeyword UPDATE_HS
@@ -5576,6 +5575,8 @@ syn keyword cp2kKeyword MINIMIZER
 syn keyword cp2kKeyword MM
 syn keyword cp2kKeyword MM1
 syn keyword cp2kKeyword MM2
+syn keyword cp2kKeyword MODEL
+syn keyword cp2kKeyword MODEL_FILE_NAME
 syn keyword cp2kKeyword MOL
 syn keyword cp2kKeyword MO_RANGE RANGE
 syn keyword cp2kKeyword MULTIP
