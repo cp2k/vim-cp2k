@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:5064cfc)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:9782eda)
 
 if exists("b:current_syntax")
    finish
@@ -4120,6 +4120,7 @@ syn keyword cp2kKeyword ORTHO_IRAC
 syn keyword cp2kKeyword OR_PARAMETER
 syn keyword cp2kKeyword OSCILLATING_FRACTION
 syn keyword cp2kKeyword OT_INITIAL_GUESS
+syn keyword cp2kKeyword OT_NLUMO
 syn keyword cp2kKeyword OUTER_ATOMS
 syn keyword cp2kKeyword OUTER_RADIUS
 syn keyword cp2kKeyword OUTPUT_EMP
