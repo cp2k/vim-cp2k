@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:9782eda)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:23d6dbe)
 
 if exists("b:current_syntax")
    finish
@@ -5024,9 +5024,11 @@ syn keyword cp2kKeyword WINDING_CYCLE_2
 syn keyword cp2kKeyword WINDING_NUMBER_2
 syn keyword cp2kKeyword WINDOW_SIZE
 syn keyword cp2kKeyword WORKER_PER_MINIMA
+syn keyword cp2kKeyword WRITE_CELL
 syn keyword cp2kKeyword WRITE_CUBE
 syn keyword cp2kKeyword WRITE_CYCLES
 syn keyword cp2kKeyword WRITE_FREQUENCY
+syn keyword cp2kKeyword WRITE_NVAL
 syn keyword cp2kKeyword WRITE_OPENPMD
 syn keyword cp2kKeyword WTGAMMA
 syn keyword cp2kKeyword WW
