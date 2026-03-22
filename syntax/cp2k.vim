@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:f8e9481)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:34a1bdb)
 
 if exists("b:current_syntax")
    finish
@@ -769,7 +769,6 @@ syn keyword cp2kConstant SAME_AS_PARTICLE
 syn keyword cp2kConstant SAOP
 syn keyword cp2kConstant SCALAPACK
 syn keyword cp2kConstant SCDM
-syn keyword cp2kConstant SCF
 syn keyword cp2kConstant SCF_WFN
 syn keyword cp2kConstant SCMP
 syn keyword cp2kConstant SCZORA(MP)
@@ -921,7 +920,6 @@ syn keyword cp2kConstant X
 syn keyword cp2kConstant XALMO_1DIAG
 syn keyword cp2kConstant XALMO_SCF
 syn keyword cp2kConstant XALMO_X
-syn keyword cp2kConstant XAS_TDP
 syn keyword cp2kConstant XC_FUNCTIONAL
 syn keyword cp2kConstant XMOL
 syn keyword cp2kConstant XSC
@@ -4380,7 +4378,6 @@ syn keyword cp2kKeyword REFERENCE_ORB_CANONICAL
 syn keyword cp2kKeyword REFERENCE_POINT
 syn keyword cp2kKeyword REFERENCE_POINT_2
 syn keyword cp2kKeyword REFERENCE_SET
-syn keyword cp2kKeyword REFERENCE_TYPE
 syn keyword cp2kKeyword REFINEMENT_FACTOR
 syn keyword cp2kKeyword REFINE_FERMI_LEVEL
 syn keyword cp2kKeyword REF_ADD_LUMO
