@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:34a1bdb)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:7b94146)
 
 if exists("b:current_syntax")
    finish
@@ -2335,6 +2335,7 @@ syn keyword cp2kSection TENSOR
 syn keyword cp2kSection TERSOFF
 syn keyword cp2kSection TEST
 syn keyword cp2kSection TF
+syn keyword cp2kSection TFUNC
 syn keyword cp2kSection TFW
 syn keyword cp2kSection THERMAL_REGION
 syn keyword cp2kSection THERMOSTAT
