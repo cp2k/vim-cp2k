@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:7b94146)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:0f88175)
 
 if exists("b:current_syntax")
    finish
@@ -3006,6 +3006,8 @@ syn keyword cp2kKeyword DOT_PRODUCT_BLKSIZE
 syn keyword cp2kKeyword DOT_TREE
 syn keyword cp2kKeyword DO_AUX_BAS_GW
 syn keyword cp2kKeyword DO_BSE
+syn keyword cp2kKeyword DO_BSE_GW_ONLY
+syn keyword cp2kKeyword DO_BSE_W_ONLY
 syn keyword cp2kKeyword DO_CALIBRATE_CUTOFF
 syn keyword cp2kKeyword DO_DSO
 syn keyword cp2kKeyword DO_ELECTROSTATICS
@@ -3930,6 +3932,7 @@ syn keyword cp2kKeyword ND
 syn keyword cp2kKeyword NDIGITS
 syn keyword cp2kKeyword NDIM
 syn keyword cp2kKeyword ND_B
+syn keyword cp2kKeyword NEGF_SCF
 syn keyword cp2kKeyword NEGLECT_ABC
 syn keyword cp2kKeyword NEIGHBOR_LISTS_FROM_SCRATCH
 syn keyword cp2kKeyword NEL
@@ -4452,6 +4455,7 @@ syn keyword cp2kKeyword RESTART_QMMM
 syn keyword cp2kKeyword RESTART_RANDOMG
 syn keyword cp2kKeyword RESTART_READ
 syn keyword cp2kKeyword RESTART_RTP
+syn keyword cp2kKeyword RESTART_SCF
 syn keyword cp2kKeyword RESTART_SHELL_POS
 syn keyword cp2kKeyword RESTART_SHELL_THERMOSTAT
 syn keyword cp2kKeyword RESTART_SHELL_VELOCITY
