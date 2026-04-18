@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:7a2a232)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:d5b0302)
 
 if exists("b:current_syntax")
    finish
@@ -2496,6 +2496,7 @@ syn keyword cp2kKeyword ALPHA_1
 syn keyword cp2kKeyword ALPHA_2
 syn keyword cp2kKeyword ALPHA_BETA_GAMMA
 syn keyword cp2kKeyword ALPHA_IMOMM
+syn keyword cp2kKeyword ALPHA_MAG
 syn keyword cp2kKeyword ALPHA_WEIGHTS
 syn keyword cp2kKeyword ALWAYS_CHECKSUM
 syn keyword cp2kKeyword AM.ATOMLISTBS
@@ -2641,6 +2642,7 @@ syn keyword cp2kKeyword BETA_2
 syn keyword cp2kKeyword BETA_3
 syn keyword cp2kKeyword BETA_DM_CONV_INT
 syn keyword cp2kKeyword BETA_DM_CONV_MAX
+syn keyword cp2kKeyword BETA_MAG
 syn keyword cp2kKeyword BH
 syn keyword cp2kKeyword BIAS
 syn keyword cp2kKeyword BIGD
