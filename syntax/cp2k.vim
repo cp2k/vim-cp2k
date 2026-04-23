@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:8b341f7)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:d749a20)
 
 if exists("b:current_syntax")
    finish
@@ -3678,6 +3678,7 @@ syn keyword cp2kKeyword KEEP_ANGLES
 syn keyword cp2kKeyword KEEP_QUADRATURE
 syn keyword cp2kKeyword KEEP_SPACE_GROUP
 syn keyword cp2kKeyword KEEP_SYMMETRY
+syn keyword cp2kKeyword KEEP_VOLUME
 syn keyword cp2kKeyword KERNEL
 syn keyword cp2kKeyword KERNEL_FILE_NAME
 syn keyword cp2kKeyword KG_METHOD
