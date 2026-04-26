@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:d749a20)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:e887d2c)
 
 if exists("b:current_syntax")
    finish
@@ -853,6 +853,7 @@ syn keyword cp2kConstant STAGE
 syn keyword cp2kConstant STANDARD
 syn keyword cp2kConstant STDA
 syn keyword cp2kConstant STEEPEST_DESCENT
+syn keyword cp2kConstant STILLINGER_WEBER
 syn keyword cp2kConstant STRICT
 syn keyword cp2kConstant SUBLATTICE
 syn keyword cp2kConstant SUBMATRIX
@@ -872,6 +873,7 @@ syn keyword cp2kConstant TC2
 syn keyword cp2kConstant TDA+ABBA
 syn keyword cp2kConstant TDDFT
 syn keyword cp2kConstant TDHF
+syn keyword cp2kConstant TERSOFF
 syn keyword cp2kConstant TEST
 syn keyword cp2kConstant TETRAGONAL
 syn keyword cp2kConstant TETRAGONAL_AB
