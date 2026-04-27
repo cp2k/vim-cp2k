@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:e887d2c)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:3a22a26)
 
 if exists("b:current_syntax")
    finish
@@ -2999,6 +2999,8 @@ syn keyword cp2kKeyword DETERM_COEFF
 syn keyword cp2kKeyword DEVIATION
 syn keyword cp2kKeyword DFET_EMBEDDED
 syn keyword cp2kKeyword DFTB3_PARAM
+syn keyword cp2kKeyword DFTD3_CORRECTION
+syn keyword cp2kKeyword DFTD4_CORRECTION
 syn keyword cp2kKeyword DGEMM
 syn keyword cp2kKeyword DIAGONALIZATION
 syn keyword cp2kKeyword DIAGONAL_DFTB3
@@ -4993,6 +4995,7 @@ syn keyword cp2kKeyword TOL
 syn keyword cp2kKeyword TOLERANCE
 syn keyword cp2kKeyword TOLERANCE_RATIO
 syn keyword cp2kKeyword TOLERANCE_SCALE
+syn keyword cp2kKeyword TOL_NE
 syn keyword cp2kKeyword TRACE
 syn keyword cp2kKeyword TRACE_MASTER
 syn keyword cp2kKeyword TRACE_MAX
@@ -5177,6 +5180,7 @@ syn keyword cp2kKeyword XB
 syn keyword cp2kKeyword XB_RADIUS
 syn keyword cp2kKeyword XC_DENS_TRE
 syn keyword cp2kKeyword XC_DERIV
+syn keyword cp2kKeyword XC_FUNCTIONALS_WEIGHT
 syn keyword cp2kKeyword XC_KERNEL_METHOD
 syn keyword cp2kKeyword XC_SMOOTH_RHO
 syn keyword cp2kKeyword XC_USE_LAPL
