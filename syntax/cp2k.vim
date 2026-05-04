@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:d78ff4c)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:33b928f)
 
 if exists("b:current_syntax")
    finish
@@ -483,6 +483,7 @@ syn keyword cp2kConstant ITER
 syn keyword cp2kConstant ITERATIVE
 syn keyword cp2kConstant ITERDIAG
 syn keyword cp2kConstant JACOBI
+syn keyword cp2kConstant K290
 syn keyword cp2kConstant KDSO
 syn keyword cp2kConstant KDSO-D
 syn keyword cp2kConstant KERKER_MIXING
@@ -827,6 +828,7 @@ syn keyword cp2kConstant SOSEX
 syn keyword cp2kConstant SPARSE
 syn keyword cp2kConstant SPATIALLY_DEPENDENT
 syn keyword cp2kConstant SPATIALLY_RHO_DEPENDENT
+syn keyword cp2kConstant SPGLIB
 syn keyword cp2kConstant SPHERICAL
 syn keyword cp2kConstant SPIN
 syn keyword cp2kConstant SPL3_NOPBC_AINT1
@@ -3642,6 +3644,7 @@ syn keyword cp2kKeyword INTERMOLECULAR
 syn keyword cp2kKeyword INTERPOLATE_GRADIENT
 syn keyword cp2kKeyword INTERPOLATE_SHIFT
 syn keyword cp2kKeyword INTERPOLATION
+syn keyword cp2kKeyword INVERSION_SYMMETRY_ONLY
 syn keyword cp2kKeyword INVOLVED_ATOMS
 syn keyword cp2kKeyword IN_MEMORY
 syn keyword cp2kKeyword IONS+CENTERS
@@ -4904,6 +4907,7 @@ syn keyword cp2kKeyword SW_CONFIDENCE_LIMIT
 syn keyword cp2kKeyword SYMMETRIC
 syn keyword cp2kKeyword SYMMETRY
 syn keyword cp2kKeyword SYMMETRY_ELEMENTS
+syn keyword cp2kKeyword SYMMETRY_REDUCTION_METHOD
 syn keyword cp2kKeyword SYMM_EXCLUDE_RANGE
 syn keyword cp2kKeyword SYMM_REDUCTION
 syn keyword cp2kKeyword S_EXPONENTS
@@ -5640,6 +5644,7 @@ syn keyword cp2kKeyword EPSTAYLOR
 syn keyword cp2kKeyword EPSVRHO0 EPS_VRHO0
 syn keyword cp2kKeyword EPS_FILTER_MATRIX
 syn keyword cp2kKeyword EPS_FIT
+syn keyword cp2kKeyword EPS_GEO
 syn keyword cp2kKeyword EPS_GVG
 syn keyword cp2kKeyword EPS_ISO
 syn keyword cp2kKeyword EPS_ITER TAU_POL
