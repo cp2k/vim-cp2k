@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:33b928f)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:4733e3f)
 
 if exists("b:current_syntax")
    finish
@@ -3436,6 +3436,7 @@ syn keyword cp2kKeyword FILTER_FACTOR_SCALE
 syn keyword cp2kKeyword FILTER_TEMPERATURE
 syn keyword cp2kKeyword FINALTRANSMRANGE
 syn keyword cp2kKeyword FINAL_DETERMINANT
+syn keyword cp2kKeyword FINE_GRID_FACTOR
 syn keyword cp2kKeyword FINGERPRINT_PRECISION
 syn keyword cp2kKeyword FIRST_PREC
 syn keyword cp2kKeyword FIRST_SNAPSHOT
@@ -4906,6 +4907,7 @@ syn keyword cp2kKeyword SWITCH_SET_STATE
 syn keyword cp2kKeyword SW_CONFIDENCE_LIMIT
 syn keyword cp2kKeyword SYMMETRIC
 syn keyword cp2kKeyword SYMMETRY
+syn keyword cp2kKeyword SYMMETRY_BACKEND
 syn keyword cp2kKeyword SYMMETRY_ELEMENTS
 syn keyword cp2kKeyword SYMMETRY_REDUCTION_METHOD
 syn keyword cp2kKeyword SYMM_EXCLUDE_RANGE
@@ -5669,6 +5671,7 @@ syn keyword cp2kKeyword EXP_PRE
 syn keyword cp2kKeyword EXTERNAL_FILE
 syn keyword cp2kKeyword EXTRAPOLATE
 syn keyword cp2kKeyword E_RANGE
+syn keyword cp2kKeyword FINE_XC_FACTOR
 syn keyword cp2kKeyword FIST_CHARGE_SCALE FIST_CHARGE_FACTOR FIST_SCALE_CHARGE
 syn keyword cp2kKeyword FRACTION
 syn keyword cp2kKeyword FRAGMENT_A_FILE
