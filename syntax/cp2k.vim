@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:4733e3f)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:cccd2f3)
 
 if exists("b:current_syntax")
    finish
@@ -64,6 +64,8 @@ syn match cp2kComment "!.*$" contains=cp2kTodo
 syn keyword cp2kConstant -X
 syn keyword cp2kConstant -Y
 syn keyword cp2kConstant -Z
+syn keyword cp2kConstant 0
+syn keyword cp2kConstant 1
 syn keyword cp2kConstant 1-1
 syn keyword cp2kConstant 1-2
 syn keyword cp2kConstant 1-3
@@ -871,6 +873,7 @@ syn keyword cp2kConstant T92
 syn keyword cp2kConstant TAILORED
 syn keyword cp2kConstant TAMC
 syn keyword cp2kConstant TAYLOR
+syn keyword cp2kConstant TBLITE
 syn keyword cp2kConstant TC2
 syn keyword cp2kConstant TDA+ABBA
 syn keyword cp2kConstant TDDFT
@@ -2261,6 +2264,7 @@ syn keyword cp2kSection REAL_TIME_PROPAGATION
 syn keyword cp2kSection REDUCED_EXCITATION_SPACE
 syn keyword cp2kSection REFERENCE
 syn keyword cp2kSection REFERENCES
+syn keyword cp2kSection REFERENCE_CLI
 syn keyword cp2kSection REFLECTIVE
 syn keyword cp2kSection REFTRAJ
 syn keyword cp2kSection RELATIVISTIC
@@ -2806,6 +2810,8 @@ syn keyword cp2kKeyword CHECK_ATOMIC_CHARGES
 syn keyword cp2kKeyword CHECK_ATOM_FORCE
 syn keyword cp2kKeyword CHECK_DIIS
 syn keyword cp2kKeyword CHECK_DIPOLE_DIRS
+syn keyword cp2kKeyword CHECK_ENERGY
+syn keyword cp2kKeyword CHECK_FORCES
 syn keyword cp2kKeyword CHECK_GRADIENT_TOL
 syn keyword cp2kKeyword CHECK_INTERATOMIC_DISTANCES
 syn keyword cp2kKeyword CHECK_MOS_CONV
@@ -2813,6 +2819,7 @@ syn keyword cp2kKeyword CHECK_ONLY
 syn keyword cp2kKeyword CHECK_SYMMETRY
 syn keyword cp2kKeyword CHECK_S_INV
 syn keyword cp2kKeyword CHECK_UNITARY_TOL
+syn keyword cp2kKeyword CHECK_VIRIAL
 syn keyword cp2kKeyword CHI_PBC
 syn keyword cp2kKeyword CHOLESKY
 syn keyword cp2kKeyword CI
@@ -2918,7 +2925,6 @@ syn keyword cp2kKeyword CUBES_LU_BOUNDS
 syn keyword cp2kKeyword CUBE_EVAL_RANGE
 syn keyword cp2kKeyword CUBE_FILES
 syn keyword cp2kKeyword CURRENT.WRITETRANSMISSION
-syn keyword cp2kKeyword CUSOLVER_GENERALIZED
 syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_RADIUS
@@ -3022,6 +3028,7 @@ syn keyword cp2kKeyword DIRECTION
 syn keyword cp2kKeyword DIRECTIONAL_EXCITON_DESCRIPTORS
 syn keyword cp2kKeyword DIRECTORIES
 syn keyword cp2kKeyword DIRECTORY
+syn keyword cp2kKeyword DIRECT_GENERALIZED_DIAGONALIZATION
 syn keyword cp2kKeyword DISABLE_CACHE
 syn keyword cp2kKeyword DISABLE_EXCLUSION_LISTS
 syn keyword cp2kKeyword DISCRETE_STEP
@@ -3654,6 +3661,7 @@ syn keyword cp2kKeyword IRAC_DEGREE
 syn keyword cp2kKeyword ISSC_ON_ATOM_LIST
 syn keyword cp2kKeyword IS_INERTIA_COUNT
 syn keyword cp2kKeyword ITERATION
+syn keyword cp2kKeyword ITERATIONS
 syn keyword cp2kKeyword ITER_START_VAL
 syn keyword cp2kKeyword ITIMES_START
 syn keyword cp2kKeyword IUPCLTRANS
@@ -3684,6 +3692,7 @@ syn keyword cp2kKeyword KBS12
 syn keyword cp2kKeyword KBS32
 syn keyword cp2kKeyword KEEPSPARSE
 syn keyword cp2kKeyword KEEP_ANGLES
+syn keyword cp2kKeyword KEEP_FILES
 syn keyword cp2kKeyword KEEP_QUADRATURE
 syn keyword cp2kKeyword KEEP_SPACE_GROUP
 syn keyword cp2kKeyword KEEP_SYMMETRY
@@ -4344,6 +4353,7 @@ syn keyword cp2kKeyword PREFERRED_CHOLESKY_LIBRARY
 syn keyword cp2kKeyword PREFERRED_DGEMM_LIBRARY
 syn keyword cp2kKeyword PREFERRED_DIAG_LIBRARY
 syn keyword cp2kKeyword PREFERRED_FFT_LIBRARY
+syn keyword cp2kKeyword PREFIX
 syn keyword cp2kKeyword PREFIX_ANA_FILES
 syn keyword cp2kKeyword PREOPT_DM_FILE
 syn keyword cp2kKeyword PREOPT_NLCC
@@ -4483,6 +4493,7 @@ syn keyword cp2kKeyword REFERENCE_2
 syn keyword cp2kKeyword REFERENCE_BASIS
 syn keyword cp2kKeyword REFERENCE_C9_TERM
 syn keyword cp2kKeyword REFERENCE_CHARGE
+syn keyword cp2kKeyword REFERENCE_CLI
 syn keyword cp2kKeyword REFERENCE_FUNCTIONAL
 syn keyword cp2kKeyword REFERENCE_ORB_CANONICAL
 syn keyword cp2kKeyword REFERENCE_POINT
@@ -4691,6 +4702,7 @@ syn keyword cp2kKeyword SCALING_FACTOR
 syn keyword cp2kKeyword SCAN_DIRECTION
 syn keyword cp2kKeyword SCAN_POINTS
 syn keyword cp2kKeyword SCAN_STEP
+syn keyword cp2kKeyword SCC_MIXER
 syn keyword cp2kKeyword SCF_EMBEDDING
 syn keyword cp2kKeyword SCF_GUESS
 syn keyword cp2kKeyword SCF_TYPE
@@ -4873,6 +4885,7 @@ syn keyword cp2kKeyword STEP_SIZE
 syn keyword cp2kKeyword STEP_SIZE_SCALING
 syn keyword cp2kKeyword STEP_START_VAL
 syn keyword cp2kKeyword STOP_AFTER_CUBES
+syn keyword cp2kKeyword STOP_ON_ERROR
 syn keyword cp2kKeyword STOP_ON_MISMATCH
 syn keyword cp2kKeyword STORAGE_LOCATION
 syn keyword cp2kKeyword STORE_STEP_NUMBER
@@ -4940,6 +4953,7 @@ syn keyword cp2kKeyword TAU
 syn keyword cp2kKeyword TAUCUT
 syn keyword cp2kKeyword TAU_CUTOFF
 syn keyword cp2kKeyword TB3_INTERACTION
+syn keyword cp2kKeyword TBLITE_MIXER_DAMPING
 syn keyword cp2kKeyword TC_PRESSURE
 syn keyword cp2kKeyword TC_TEMPERATURE
 syn keyword cp2kKeyword TDA
@@ -5165,6 +5179,7 @@ syn keyword cp2kKeyword WINDING_CYCLE_2
 syn keyword cp2kKeyword WINDING_NUMBER_2
 syn keyword cp2kKeyword WINDOW_SIZE
 syn keyword cp2kKeyword WORKER_PER_MINIMA
+syn keyword cp2kKeyword WORK_DIRECTORY
 syn keyword cp2kKeyword WRITE_CELL
 syn keyword cp2kKeyword WRITE_CUBE
 syn keyword cp2kKeyword WRITE_CYCLES
