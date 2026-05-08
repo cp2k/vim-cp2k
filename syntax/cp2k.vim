@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:cccd2f3)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:495eafe)
 
 if exists("b:current_syntax")
    finish
@@ -1251,7 +1251,7 @@ syn keyword cp2kSection FF_INFO
 syn keyword cp2kSection FF_PARAMETER_FILE
 syn keyword cp2kSection FIELD
 syn keyword cp2kSection FILTER_MATRIX
-syn keyword cp2kSection FINAL_CIF
+syn keyword cp2kSection FINAL_STRUCTURE
 syn keyword cp2kSection FIT_BASIS
 syn keyword cp2kSection FIT_CHARGE
 syn keyword cp2kSection FIT_DENSITY
@@ -4365,6 +4365,7 @@ syn keyword cp2kKeyword PRINT_ATOM_KIND
 syn keyword cp2kKeyword PRINT_BASIS
 syn keyword cp2kKeyword PRINT_CALIB
 syn keyword cp2kKeyword PRINT_CELL
+syn keyword cp2kKeyword PRINT_CIF
 syn keyword cp2kKeyword PRINT_COORDS
 syn keyword cp2kKeyword PRINT_CUBES
 syn keyword cp2kKeyword PRINT_DBT_CONTRACT
@@ -4387,6 +4388,7 @@ syn keyword cp2kKeyword PRINT_SELF_ENERGY
 syn keyword cp2kKeyword PRINT_STRESS
 syn keyword cp2kKeyword PRINT_TEST_OUTPUT
 syn keyword cp2kKeyword PRINT_VIRTUALS
+syn keyword cp2kKeyword PRINT_XYZ
 syn keyword cp2kKeyword PRIOR
 syn keyword cp2kKeyword PROB
 syn keyword cp2kKeyword PROCESSING_UNIT
