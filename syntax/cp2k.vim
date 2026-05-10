@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:495eafe)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:6aff1db)
 
 if exists("b:current_syntax")
    finish
@@ -100,6 +100,7 @@ syn keyword cp2kConstant ADMMQ
 syn keyword cp2kConstant ADMMS
 syn keyword cp2kConstant AD_LANGEVIN
 syn keyword cp2kConstant ALL
+syn keyword cp2kConstant ALPB
 syn keyword cp2kConstant ALPHA
 syn keyword cp2kConstant AM1
 syn keyword cp2kConstant AMBER
@@ -139,6 +140,7 @@ syn keyword cp2kConstant B97_GRIMME
 syn keyword cp2kConstant BAND
 syn keyword cp2kConstant BANDED
 syn keyword cp2kConstant BAND_STRUCTURE
+syn keyword cp2kConstant BAR1MOL
 syn keyword cp2kConstant BARRIER
 syn keyword cp2kConstant BASIC
 syn keyword cp2kConstant BASIS_CENTER_OPT
@@ -199,6 +201,7 @@ syn keyword cp2kConstant CD3
 syn keyword cp2kConstant CD5
 syn keyword cp2kConstant CD7
 syn keyword cp2kConstant CDFT_CONSTRAINT
+syn keyword cp2kConstant CEH
 syn keyword cp2kConstant CELL_OPT
 syn keyword cp2kConstant CEPERLEY
 syn keyword cp2kConstant CG
@@ -235,6 +238,7 @@ syn keyword cp2kConstant COULOMB
 syn keyword cp2kConstant COUPLED
 syn keyword cp2kConstant COVALENT
 syn keyword cp2kConstant CP2K
+syn keyword cp2kConstant CPCM
 syn keyword cp2kConstant CPU
 syn keyword cp2kConstant CRAZY
 syn keyword cp2kConstant CRD
@@ -311,6 +315,7 @@ syn keyword cp2kConstant DZX
 syn keyword cp2kConstant EB
 syn keyword cp2kConstant ECP
 syn keyword cp2kConstant EDIP
+syn keyword cp2kConstant EEQ
 syn keyword cp2kConstant EHRENFEST_DYN
 syn keyword cp2kConstant EHT
 syn keyword cp2kConstant EIP
@@ -412,6 +417,9 @@ syn keyword cp2kConstant GAUSSIAN
 syn keyword cp2kConstant GAUSSIAN_PROCESS
 syn keyword cp2kConstant GAUSSIAN_SPLINE
 syn keyword cp2kConstant GAUSS_CHEBYSHEV
+syn keyword cp2kConstant GB
+syn keyword cp2kConstant GBE
+syn keyword cp2kConstant GBSA
 syn keyword cp2kConstant GC_LOG
 syn keyword cp2kConstant GC_SIMPLE
 syn keyword cp2kConstant GC_TRANSFORMED
@@ -444,8 +452,11 @@ syn keyword cp2kConstant GPW_HALF_TRANSFORM
 syn keyword cp2kConstant GREEDY
 syn keyword cp2kConstant GRID
 syn keyword cp2kConstant GROUND_STATE
+syn keyword cp2kConstant GSOLV
 syn keyword cp2kConstant GTH
 syn keyword cp2kConstant GTO
+syn keyword cp2kConstant GVD
+syn keyword cp2kConstant GVR
 syn keyword cp2kConstant HAGER_ZHANG
 syn keyword cp2kConstant HARMONIC
 syn keyword cp2kConstant HARRIS
@@ -581,6 +592,7 @@ syn keyword cp2kConstant MME
 syn keyword cp2kConstant MNDO
 syn keyword cp2kConstant MNDOD
 syn keyword cp2kConstant MO
+syn keyword cp2kConstant MODIFIED_BROYDEN_MIXING
 syn keyword cp2kConstant MOLDEN_RESTART
 syn keyword cp2kConstant MOLECULAR
 syn keyword cp2kConstant MOLECULAR_DYNAMICS
@@ -676,6 +688,7 @@ syn keyword cp2kConstant OS_SPIN_FLIP
 syn keyword cp2kConstant OT
 syn keyword cp2kConstant OT_DIAG
 syn keyword cp2kConstant OVERLAP
+syn keyword cp2kConstant P16
 syn keyword cp2kConstant PADE
 syn keyword cp2kConstant PADEFXC
 syn keyword cp2kConstant PAIR_POTENTIAL
@@ -792,6 +805,7 @@ syn keyword cp2kConstant R_AND_STEP_FUNCTION
 syn keyword cp2kConstant S
 syn keyword cp2kConstant S-WAVE
 syn keyword cp2kConstant S2_CONSTRAINT
+syn keyword cp2kConstant SAD
 syn keyword cp2kConstant SAME_AS_PARTICLE
 syn keyword cp2kConstant SAOP
 syn keyword cp2kConstant SCALAPACK
@@ -857,6 +871,7 @@ syn keyword cp2kConstant STAGE
 syn keyword cp2kConstant STANDARD
 syn keyword cp2kConstant STDA
 syn keyword cp2kConstant STEEPEST_DESCENT
+syn keyword cp2kConstant STILL
 syn keyword cp2kConstant STILLINGER_WEBER
 syn keyword cp2kConstant STRICT
 syn keyword cp2kConstant SUBLATTICE
@@ -1254,6 +1269,7 @@ syn keyword cp2kSection FILTER_MATRIX
 syn keyword cp2kSection FINAL_STRUCTURE
 syn keyword cp2kSection FIT_BASIS
 syn keyword cp2kSection FIT_CHARGE
+syn keyword cp2kSection FIT_CLI
 syn keyword cp2kSection FIT_DENSITY
 syn keyword cp2kSection FIT_KGPOT
 syn keyword cp2kSection FIT_KIND
@@ -1565,11 +1581,13 @@ syn keyword cp2kSection GRID
 syn keyword cp2kSection GRID_INFORMATION
 syn keyword cp2kSection GRRM
 syn keyword cp2kSection GTH_POTENTIAL
+syn keyword cp2kSection GUESS_CLI
 syn keyword cp2kSection GUESS_VECTORS
 syn keyword cp2kSection GV09
 syn keyword cp2kSection GW
 syn keyword cp2kSection GW2X
 syn keyword cp2kSection GW_DOS
+syn keyword cp2kSection GW_RI_RS
 syn keyword cp2kSection GYRATION_RADIUS
 syn keyword cp2kSection G_TENSOR
 syn keyword cp2kSection HAIRY_PROBES
@@ -1771,6 +1789,7 @@ syn keyword cp2kSection IMAGE_CHARGE_INFO
 syn keyword cp2kSection IMAGE_CHARGE_RESTART
 syn keyword cp2kSection IMPLICIT
 syn keyword cp2kSection IMPLICIT_PSOLVER
+syn keyword cp2kSection IMPLICIT_SOLVATION
 syn keyword cp2kSection IMPROPER
 syn keyword cp2kSection IMPROPERS
 syn keyword cp2kSection INIT
@@ -2194,6 +2213,7 @@ syn keyword cp2kSection PAO_DESCRIPTOR
 syn keyword cp2kSection PAO_POTENTIAL
 syn keyword cp2kSection PARAMETER
 syn keyword cp2kSection PARAMETERS
+syn keyword cp2kSection PARAM_CLI
 syn keyword cp2kSection PBE
 syn keyword cp2kSection PBE_HOLE_T_C_LR
 syn keyword cp2kSection PDOS
@@ -2364,7 +2384,9 @@ syn keyword cp2kSection SWARM
 syn keyword cp2kSection SYMMETRY
 syn keyword cp2kSection S_CSR_WRITE
 syn keyword cp2kSection TABPOT
+syn keyword cp2kSection TAGDIFF_CLI
 syn keyword cp2kSection TBLITE
+syn keyword cp2kSection TBLITE_MIXER
 syn keyword cp2kSection TDDFPT
 syn keyword cp2kSection TEMPERATURE
 syn keyword cp2kSection TEMPERATURE_COLVAR
@@ -2500,6 +2522,7 @@ syn keyword cp2kKeyword ACQUISITION_START_TIME
 syn keyword cp2kKeyword ACTIVE_ELECTRONS
 syn keyword cp2kKeyword ACTIVE_ORBITALS
 syn keyword cp2kKeyword ACTIVE_ORBITAL_INDICES
+syn keyword cp2kKeyword ACTUAL
 syn keyword cp2kKeyword ADAPTIVE_EXCLUDE_MOLECULES
 syn keyword cp2kKeyword ADDED_MOS
 syn keyword cp2kKeyword ADD_LAST
@@ -2712,6 +2735,7 @@ syn keyword cp2kKeyword BONDLENGTH_MIN
 syn keyword cp2kKeyword BONDPARM
 syn keyword cp2kKeyword BONDPARM_FACTOR
 syn keyword cp2kKeyword BOND_ORDER
+syn keyword cp2kKeyword BORN_KERNEL
 syn keyword cp2kKeyword BOUNDARIES
 syn keyword cp2kKeyword BOUNDARY_CONDITIONS
 syn keyword cp2kKeyword BOX2_FILE_NAME
@@ -2822,6 +2846,7 @@ syn keyword cp2kKeyword CHECK_UNITARY_TOL
 syn keyword cp2kKeyword CHECK_VIRIAL
 syn keyword cp2kKeyword CHI_PBC
 syn keyword cp2kKeyword CHOLESKY
+syn keyword cp2kKeyword CHUNK_SIZE_DBCSR
 syn keyword cp2kKeyword CI
 syn keyword cp2kKeyword CIF_INFO
 syn keyword cp2kKeyword CIJ
@@ -2929,6 +2954,7 @@ syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_RADIUS
 syn keyword cp2kKeyword CUTOFF_RADIUS_RI
+syn keyword cp2kKeyword CUTOFF_RADIUS_RI_RS
 syn keyword cp2kKeyword CUTOFF_TYPE
 syn keyword cp2kKeyword CUTOUT
 syn keyword cp2kKeyword CYCLE
@@ -3090,6 +3116,7 @@ syn keyword cp2kKeyword DO_SMEARING
 syn keyword cp2kKeyword DO_SVD
 syn keyword cp2kKeyword DR
 syn keyword cp2kKeyword DROPLET_RADIUS
+syn keyword cp2kKeyword DRY_RUN
 syn keyword cp2kKeyword DT
 syn keyword cp2kKeyword DX
 syn keyword cp2kKeyword DYNAMIC_THRESHOLD
@@ -3103,6 +3130,7 @@ syn keyword cp2kKeyword ECHO_INPUT
 syn keyword cp2kKeyword ECONS_START_VAL
 syn keyword cp2kKeyword ECP_SEMI_LOCAL
 syn keyword cp2kKeyword EFG
+syn keyword cp2kKeyword EFIELD
 syn keyword cp2kKeyword EFIELD_FILE_NAME
 syn keyword cp2kKeyword EIGENVALUES
 syn keyword cp2kKeyword EIP_MODEL
@@ -3110,6 +3138,7 @@ syn keyword cp2kKeyword EI_SCALE14
 syn keyword cp2kKeyword ELECTRIC_POTENTIAL
 syn keyword cp2kKeyword ELECTRONIC_STRUCTURE_METHOD
 syn keyword cp2kKeyword ELECTRONIC_TEMPERATURE
+syn keyword cp2kKeyword ELECTRONIC_TEMPERATURE_GUESS
 syn keyword cp2kKeyword ELECTRON_CONFIGURATION
 syn keyword cp2kKeyword ELEC_CONF
 syn keyword cp2kKeyword ELEMENT
@@ -3448,6 +3477,7 @@ syn keyword cp2kKeyword FINGERPRINT_PRECISION
 syn keyword cp2kKeyword FIRST_PREC
 syn keyword cp2kKeyword FIRST_SNAPSHOT
 syn keyword cp2kKeyword FIST_SCALE_FACTOR
+syn keyword cp2kKeyword FIT
 syn keyword cp2kKeyword FIT_EXPRESS
 syn keyword cp2kKeyword FIT_E_MAX
 syn keyword cp2kKeyword FIT_E_MIN
@@ -3548,12 +3578,14 @@ syn keyword cp2kKeyword GPUS_PER_POINT
 syn keyword cp2kKeyword GPW_TYPE
 syn keyword cp2kKeyword GP_NOISE_VAR
 syn keyword cp2kKeyword GP_SCALE
+syn keyword cp2kKeyword GRAD
 syn keyword cp2kKeyword GRADIENT_CUTOFF
 syn keyword cp2kKeyword GRID
 syn keyword cp2kKeyword GRID_2D
 syn keyword cp2kKeyword GRID_OPT
 syn keyword cp2kKeyword GRID_POINTS
 syn keyword cp2kKeyword GRID_POINTS_GH
+syn keyword cp2kKeyword GRID_SELECT
 syn keyword cp2kKeyword GRID_SPACING
 syn keyword cp2kKeyword GRID_TOL
 syn keyword cp2kKeyword GROUP_ANALYSIS_NR
@@ -3565,6 +3597,7 @@ syn keyword cp2kKeyword GROUP_SIZE
 syn keyword cp2kKeyword GSPACE_SMOOTHING
 syn keyword cp2kKeyword GTOP_INFO
 syn keyword cp2kKeyword GTO_KIND
+syn keyword cp2kKeyword GUESS
 syn keyword cp2kKeyword GVEC_CHUNK_SIZE
 syn keyword cp2kKeyword G_R
 syn keyword cp2kKeyword H
@@ -3631,7 +3664,9 @@ syn keyword cp2kKeyword INJECTION_METHOD
 syn keyword cp2kKeyword INJECTION_SIGN
 syn keyword cp2kKeyword INNER_ATOMS
 syn keyword cp2kKeyword INNER_RADIUS
+syn keyword cp2kKeyword INPUT_FILE
 syn keyword cp2kKeyword INPUT_FILE_NAME
+syn keyword cp2kKeyword INPUT_FORMAT
 syn keyword cp2kKeyword INTEGER_TOTAL_CHARGE
 syn keyword cp2kKeyword INTEGRAL_SCREENING
 syn keyword cp2kKeyword INTEGRATION
@@ -3682,6 +3717,7 @@ syn keyword cp2kKeyword JITTER
 syn keyword cp2kKeyword JITTER_AMPLITUDE
 syn keyword cp2kKeyword JITTER_SEED
 syn keyword cp2kKeyword JOB_ID
+syn keyword cp2kKeyword JSON
 syn keyword cp2kKeyword JUST_ENERGY
 syn keyword cp2kKeyword K
 syn keyword cp2kKeyword K-DIMER
@@ -3890,6 +3926,7 @@ syn keyword cp2kKeyword MAX_STEP_SIZE
 syn keyword cp2kKeyword MAX_TAYLOR
 syn keyword cp2kKeyword MAX_TRUST_RADIUS
 syn keyword cp2kKeyword MAX_VAR_FRACTION
+syn keyword cp2kKeyword MAX_WEIGHT
 syn keyword cp2kKeyword MC
 syn keyword cp2kKeyword MCWEENY_EPS
 syn keyword cp2kKeyword MCWEENY_MAX_ITER
@@ -3937,6 +3974,7 @@ syn keyword cp2kKeyword MIN_PAIR_LIST_RADIUS
 syn keyword cp2kKeyword MIN_RADIUS
 syn keyword cp2kKeyword MIN_RANKS_PER_POLE
 syn keyword cp2kKeyword MIN_TOLERANCE
+syn keyword cp2kKeyword MIN_WEIGHT
 syn keyword cp2kKeyword MIXING
 syn keyword cp2kKeyword MIXING_FRACTION
 syn keyword cp2kKeyword MIXING_FUNCTION
@@ -3950,6 +3988,7 @@ syn keyword cp2kKeyword MM_STACK_SIZE
 syn keyword cp2kKeyword MM_STYLE
 syn keyword cp2kKeyword MM_SUBSYS
 syn keyword cp2kKeyword MODEFACTOR
+syn keyword cp2kKeyword MODEL
 syn keyword cp2kKeyword MODEL_GRAD_NORM_RATIO
 syn keyword cp2kKeyword MODEL_TYPE
 syn keyword cp2kKeyword MOLECULAR_PROPERTIES
@@ -4185,6 +4224,7 @@ syn keyword cp2kKeyword OE_CORR
 syn keyword cp2kKeyword OLD_HILL_NUMBER
 syn keyword cp2kKeyword OLD_HILL_STEP
 syn keyword cp2kKeyword OMEGA
+syn keyword cp2kKeyword OMEGA0
 syn keyword cp2kKeyword OMEGA_MAX_FIT
 syn keyword cp2kKeyword OMIT_HEADERS
 syn keyword cp2kKeyword ONE_CIRCLE
@@ -4260,6 +4300,7 @@ syn keyword cp2kKeyword PARALLEL_BUILD
 syn keyword cp2kKeyword PARALLEL_GROUP_SIZE
 syn keyword cp2kKeyword PARALLEL_PLANE
 syn keyword cp2kKeyword PARALLEL_SCHEME
+syn keyword cp2kKeyword PARAM
 syn keyword cp2kKeyword PARAMETER
 syn keyword cp2kKeyword PARAMETERIZATION
 syn keyword cp2kKeyword PARAMETERS
@@ -4269,6 +4310,7 @@ syn keyword cp2kKeyword PARAMETER_KEY
 syn keyword cp2kKeyword PARAMETER_SET
 syn keyword cp2kKeyword PARAMETER_X
 syn keyword cp2kKeyword PARAMETRIZATION
+syn keyword cp2kKeyword PARAM_FILE
 syn keyword cp2kKeyword PARAM_FILE_NAME
 syn keyword cp2kKeyword PARAM_FILE_PATH
 syn keyword cp2kKeyword PARA_RES
@@ -4326,6 +4368,8 @@ syn keyword cp2kKeyword POSITION
 syn keyword cp2kKeyword POSITION_FILE
 syn keyword cp2kKeyword POSITION_OPERATOR_BERRY
 syn keyword cp2kKeyword POSITION_SCALED
+syn keyword cp2kKeyword POST_PROCESSING
+syn keyword cp2kKeyword POST_PROCESSING_OUTPUT
 syn keyword cp2kKeyword POTENTIAL
 syn keyword cp2kKeyword POTENTIAL_DATA
 syn keyword cp2kKeyword POTENTIAL_ENERGY
@@ -4825,6 +4869,9 @@ syn keyword cp2kKeyword SOC_ENERGY_WINDOW
 syn keyword cp2kKeyword SOLUTE_HE
 syn keyword cp2kKeyword SOLUTE_INTERACTION
 syn keyword cp2kKeyword SOLUTE_RADIUS
+syn keyword cp2kKeyword SOLUTION_STATE
+syn keyword cp2kKeyword SOLVENT
+syn keyword cp2kKeyword SOLVER
 syn keyword cp2kKeyword SOLVER_METHOD
 syn keyword cp2kKeyword SOME
 syn keyword cp2kKeyword SOO_LIST
@@ -4955,7 +5002,6 @@ syn keyword cp2kKeyword TAU
 syn keyword cp2kKeyword TAUCUT
 syn keyword cp2kKeyword TAU_CUTOFF
 syn keyword cp2kKeyword TB3_INTERACTION
-syn keyword cp2kKeyword TBLITE_MIXER_DAMPING
 syn keyword cp2kKeyword TC_PRESSURE
 syn keyword cp2kKeyword TC_TEMPERATURE
 syn keyword cp2kKeyword TDA
@@ -5001,6 +5047,7 @@ syn keyword cp2kKeyword THICKNESS
 syn keyword cp2kKeyword THREAD_BUFFERS
 syn keyword cp2kKeyword THRESHOLD
 syn keyword cp2kKeyword TH_TORB
+syn keyword cp2kKeyword TIKHONOV
 syn keyword cp2kKeyword TILE_CUBES
 syn keyword cp2kKeyword TILL_ENERGY
 syn keyword cp2kKeyword TIMECON
@@ -5166,6 +5213,7 @@ syn keyword cp2kKeyword WEIGHTING_FUNCTION
 syn keyword cp2kKeyword WEIGHTS
 syn keyword cp2kKeyword WEIGHT_DELTA_ENERGY
 syn keyword cp2kKeyword WEIGHT_ELECTRON_CONFIGURATION
+syn keyword cp2kKeyword WEIGHT_FACTOR
 syn keyword cp2kKeyword WEIGHT_METHOD
 syn keyword cp2kKeyword WEIGHT_POT_NODE
 syn keyword cp2kKeyword WEIGHT_POT_SEMICORE
