@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:6aff1db)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:432ceb1)
 
 if exists("b:current_syntax")
    finish
@@ -2988,6 +2988,7 @@ syn keyword cp2kKeyword DEBUG
 syn keyword cp2kKeyword DEBUG_DIPOLE
 syn keyword cp2kKeyword DEBUG_EXTERNAL_METHOD
 syn keyword cp2kKeyword DEBUG_FORCES
+syn keyword cp2kKeyword DEBUG_FULL_KPOINT_SYMMETRY
 syn keyword cp2kKeyword DEBUG_LRI_INTEGRALS
 syn keyword cp2kKeyword DEBUG_NSUM_MAX
 syn keyword cp2kKeyword DEBUG_POLARIZABILITY
@@ -3541,6 +3542,7 @@ syn keyword cp2kKeyword F_EXPONENTS
 syn keyword cp2kKeyword F_QUANTUM_NUMBERS
 syn keyword cp2kKeyword G96_INFO
 syn keyword cp2kKeyword GAMMA
+syn keyword cp2kKeyword GAMMA_CENTERED
 syn keyword cp2kKeyword GAMMA_KT
 syn keyword cp2kKeyword GAMMA_ONLY_SIGMA
 syn keyword cp2kKeyword GAMMA_POINT
