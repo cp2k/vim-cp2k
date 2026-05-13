@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:432ceb1)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:42dbd02)
 
 if exists("b:current_syntax")
    finish
@@ -361,6 +361,7 @@ syn keyword cp2kConstant EXT_VERY_LARGE
 syn keyword cp2kConstant FALSE
 syn keyword cp2kConstant FARMING
 syn keyword cp2kConstant FATTEBERT-GYGI
+syn keyword cp2kConstant FCI
 syn keyword cp2kConstant FD1
 syn keyword cp2kConstant FD1_BACKWARD
 syn keyword cp2kConstant FD1_CENTRAL
@@ -609,6 +610,7 @@ syn keyword cp2kConstant MO_NO_DIAG
 syn keyword cp2kConstant MO_SOLVER
 syn keyword cp2kConstant MP
 syn keyword cp2kConstant MP2_GPW
+syn keyword cp2kConstant MP_GRID
 syn keyword cp2kConstant MSST
 syn keyword cp2kConstant MSST_DAMPED
 syn keyword cp2kConstant MT
@@ -810,6 +812,7 @@ syn keyword cp2kConstant SAME_AS_PARTICLE
 syn keyword cp2kConstant SAOP
 syn keyword cp2kConstant SCALAPACK
 syn keyword cp2kConstant SCDM
+syn keyword cp2kConstant SCF
 syn keyword cp2kConstant SCF_WFN
 syn keyword cp2kConstant SCMP
 syn keyword cp2kConstant SCZORA(MP)
@@ -3753,6 +3756,7 @@ syn keyword cp2kKeyword KOHN_SHAM_MATRIX
 syn keyword cp2kKeyword KPOINT
 syn keyword cp2kKeyword KPOINTS
 syn keyword cp2kKeyword KPOINTS_SELF_ENERGY
+syn keyword cp2kKeyword KPOINTS_SOURCE
 syn keyword cp2kKeyword KPOINTS_W
 syn keyword cp2kKeyword KPOINT_WEIGHTS_W
 syn keyword cp2kKeyword KP_NGROUPS
