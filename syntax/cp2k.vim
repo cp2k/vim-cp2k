@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:42dbd02)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:d43dca4)
 
 if exists("b:current_syntax")
    finish
@@ -242,6 +242,7 @@ syn keyword cp2kConstant CPCM
 syn keyword cp2kConstant CPU
 syn keyword cp2kConstant CRAZY
 syn keyword cp2kConstant CRD
+syn keyword cp2kConstant CS
 syn keyword cp2kConstant CSVR
 syn keyword cp2kConstant CUBE
 syn keyword cp2kConstant CUBIC
@@ -800,6 +801,7 @@ syn keyword cp2kConstant ROW
 syn keyword cp2kConstant RPA
 syn keyword cp2kConstant RPMD
 syn keyword cp2kConstant RTBSE
+syn keyword cp2kConstant RTP
 syn keyword cp2kConstant RT_PROPAGATION
 syn keyword cp2kConstant RT_RESTART
 syn keyword cp2kConstant RVV10
@@ -947,6 +949,7 @@ syn keyword cp2kConstant USE_PREV_WF
 syn keyword cp2kConstant VDW
 syn keyword cp2kConstant VECTOR
 syn keyword cp2kConstant VELOCITY
+syn keyword cp2kConstant VELOCITY_OLD
 syn keyword cp2kConstant VERY_LARGE
 syn keyword cp2kConstant VIBRATIONAL
 syn keyword cp2kConstant VIBRATIONAL_ANALYSIS
@@ -1819,6 +1822,7 @@ syn keyword cp2kSection KPOINTS
 syn keyword cp2kSection KPOINT_SET
 syn keyword cp2kSection KRYLOV
 syn keyword cp2kSection KS_CSR_WRITE
+syn keyword cp2kSection KUBO_TRANSPORT
 syn keyword cp2kSection K_MATRIX
 syn keyword cp2kSection LAGRANGE_MULTIPLIERS
 syn keyword cp2kSection LANCZOS
@@ -1906,6 +1910,7 @@ syn keyword cp2kSection LINK
 syn keyword cp2kSection LINRES
 syn keyword cp2kSection LOAD_BALANCE
 syn keyword cp2kSection LOCALIZE
+syn keyword cp2kSection LOCALIZED_MOMENTS
 syn keyword cp2kSection LOCAL_BANDGAP
 syn keyword cp2kSection LOCAL_ENERGY_CUBE
 syn keyword cp2kSection LOCAL_STRESS_CUBE
@@ -3070,6 +3075,7 @@ syn keyword cp2kKeyword DISPLACED_ATOM
 syn keyword cp2kKeyword DISPLACEMENT_FIELD
 syn keyword cp2kKeyword DISPLACEMENT_SHELL_TOL
 syn keyword cp2kKeyword DISPLACEMENT_TOL
+syn keyword cp2kKeyword DISSIPATION
 syn keyword cp2kKeyword DISTANCE
 syn keyword cp2kKeyword DISTANCES
 syn keyword cp2kKeyword DISTANCES_RMSD
@@ -3128,6 +3134,7 @@ syn keyword cp2kKeyword D_EXPONENTS
 syn keyword cp2kKeyword D_FILTER
 syn keyword cp2kKeyword D_QUANTUM_NUMBERS
 syn keyword cp2kKeyword E
+syn keyword cp2kKeyword EACH
 syn keyword cp2kKeyword EARLY_RESTART
 syn keyword cp2kKeyword ECHO_ALL_HOSTS
 syn keyword cp2kKeyword ECHO_INPUT
@@ -3740,6 +3747,7 @@ syn keyword cp2kKeyword KEEP_SYMMETRY
 syn keyword cp2kKeyword KEEP_VOLUME
 syn keyword cp2kKeyword KERNEL
 syn keyword cp2kKeyword KERNEL_FILE_NAME
+syn keyword cp2kKeyword KG
 syn keyword cp2kKeyword KG_METHOD
 syn keyword cp2kKeyword KG_POTENTIAL
 syn keyword cp2kKeyword KG_POTENTIAL_FILE_NAME
@@ -4078,6 +4086,8 @@ syn keyword cp2kKeyword NENERGIMLINE
 syn keyword cp2kKeyword NENERGREAL
 syn keyword cp2kKeyword NEQUIL_STEPS
 syn keyword cp2kKeyword NEUMANN_DIRECTIONS
+syn keyword cp2kKeyword NEUTRAL_GRID
+syn keyword cp2kKeyword NEUTRAL_MU
 syn keyword cp2kKeyword NEW_PREC_EACH
 syn keyword cp2kKeyword NEXTRA
 syn keyword cp2kKeyword NEXTRA_DOF
@@ -4205,6 +4215,7 @@ syn keyword cp2kKeyword N_ITER
 syn keyword cp2kKeyword N_KPOINTS
 syn keyword cp2kKeyword N_LOOP
 syn keyword cp2kKeyword N_MINIMAX
+syn keyword cp2kKeyword N_MU
 syn keyword cp2kKeyword N_OUTER
 syn keyword cp2kKeyword N_POINTS_BEYN
 syn keyword cp2kKeyword N_POINTS_INV
