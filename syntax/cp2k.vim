@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:3d3abc6)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:358cae4)
 
 if exists("b:current_syntax")
    finish
@@ -3863,6 +3863,7 @@ syn keyword cp2kKeyword MAO_IOLEVEL
 syn keyword cp2kKeyword MAO_MAX_ITER
 syn keyword cp2kKeyword MAP
 syn keyword cp2kKeyword MAP_ATOMS
+syn keyword cp2kKeyword MARK_GHOST
 syn keyword cp2kKeyword MARK_STATES
 syn keyword cp2kKeyword MASS
 syn keyword cp2kKeyword MASS_FRACTION
@@ -4659,6 +4660,7 @@ syn keyword cp2kKeyword RESULT_SCALE
 syn keyword cp2kKeyword RESULT_SPIN_INDEX
 syn keyword cp2kKeyword RETURN_ORTHOGONALIZED_MOS
 syn keyword cp2kKeyword REUSE_PRECOND
+syn keyword cp2kKeyword REUSE_SCF_MOS
 syn keyword cp2kKeyword REVERSE_MO_INDEX
 syn keyword cp2kKeyword RHO
 syn keyword cp2kKeyword RHO0_EXP_RADIUS
@@ -5138,6 +5140,7 @@ syn keyword cp2kKeyword UPPER_TRIANGULAR
 syn keyword cp2kKeyword USER_RADII
 syn keyword cp2kKeyword USER_RADIUS
 syn keyword cp2kKeyword USE_ATOMIC_CUTOFF
+syn keyword cp2kKeyword USE_BLOCH_PHASES
 syn keyword cp2kKeyword USE_BOHR
 syn keyword cp2kKeyword USE_COARSE_FFT_GRID
 syn keyword cp2kKeyword USE_COLVARS
@@ -5173,6 +5176,7 @@ syn keyword cp2kKeyword U_RAMPING
 syn keyword cp2kKeyword VALENCE_RELATIVITY
 syn keyword cp2kKeyword VALENCE_STATES
 syn keyword cp2kKeyword VALIDATE
+syn keyword cp2kKeyword VALIDATE_REUSE_SCF_MOS
 syn keyword cp2kKeyword VALUE
 syn keyword cp2kKeyword VALUES
 syn keyword cp2kKeyword VARIABLE
@@ -5251,8 +5255,8 @@ syn keyword cp2kKeyword WRITE_CELL
 syn keyword cp2kKeyword WRITE_CUBE
 syn keyword cp2kKeyword WRITE_CYCLES
 syn keyword cp2kKeyword WRITE_FREQUENCY
-syn keyword cp2kKeyword WRITE_NVAL
 syn keyword cp2kKeyword WRITE_OPENPMD
+syn keyword cp2kKeyword WRITE_PSEUDO
 syn keyword cp2kKeyword WTGAMMA
 syn keyword cp2kKeyword WW
 syn keyword cp2kKeyword W_MATRIX
