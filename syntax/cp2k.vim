@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:358cae4)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:f658ef2)
 
 if exists("b:current_syntax")
    finish
@@ -268,6 +268,7 @@ syn keyword cp2kConstant DENSE_CHOLESKY
 syn keyword cp2kConstant DENSITY
 syn keyword cp2kConstant DENSITY_DEPENDENT
 syn keyword cp2kConstant DETAILED
+syn keyword cp2kConstant DEVICE
 syn keyword cp2kConstant DFET
 syn keyword cp2kConstant DFTB
 syn keyword cp2kConstant DFTD2
@@ -378,6 +379,7 @@ syn keyword cp2kConstant FFTW3
 syn keyword cp2kConstant FFT_USE_DEPS
 syn keyword cp2kConstant FFT_USE_DRHO
 syn keyword cp2kConstant FILTER_MATRIX
+syn keyword cp2kConstant FINE
 syn keyword cp2kConstant FIST
 syn keyword cp2kConstant FIT
 syn keyword cp2kConstant FIX_POINT
@@ -447,6 +449,8 @@ syn keyword cp2kConstant GLE
 syn keyword cp2kConstant GLLB
 syn keyword cp2kConstant GLOBAL
 syn keyword cp2kConstant GLOBAL_OPT
+syn keyword cp2kConstant GM3
+syn keyword cp2kConstant GM5
 syn keyword cp2kConstant GOLD
 syn keyword cp2kConstant GPU
 syn keyword cp2kConstant GPW
@@ -474,6 +478,7 @@ syn keyword cp2kConstant HIGH-SPIN
 syn keyword cp2kConstant HIRSHFELD
 syn keyword cp2kConstant HISTORY_RESTART
 syn keyword cp2kConstant HLE
+syn keyword cp2kConstant HOST
 syn keyword cp2kConstant HOTELLING
 syn keyword cp2kConstant HYDROSTATICSHOCK
 syn keyword cp2kConstant IDENTITY
@@ -621,6 +626,8 @@ syn keyword cp2kConstant MULTIPOLE
 syn keyword cp2kConstant MULTISECANT_MIXING
 syn keyword cp2kConstant MULTI_LEVEL
 syn keyword cp2kConstant MUMPS
+syn keyword cp2kConstant MURAKNOWLES
+syn keyword cp2kConstant MURRAYHANDYLAMING
 syn keyword cp2kConstant MWATER
 syn keyword cp2kConstant NE
 syn keyword cp2kConstant NEGATIVE
@@ -794,6 +801,7 @@ syn keyword cp2kConstant RIGPW
 syn keyword cp2kConstant RI_EMBEDDING
 syn keyword cp2kConstant RKS
 syn keyword cp2kConstant RM1
+syn keyword cp2kConstant ROBUST
 syn keyword cp2kConstant ROHF
 syn keyword cp2kConstant ROTINV
 syn keyword cp2kConstant ROW
@@ -883,6 +891,7 @@ syn keyword cp2kConstant SUBLATTICE
 syn keyword cp2kConstant SUBMATRIX
 syn keyword cp2kConstant SUM
 syn keyword cp2kConstant SUM_EIGENVALUES
+syn keyword cp2kConstant SUPERFINE
 syn keyword cp2kConstant SUPERLU
 syn keyword cp2kConstant SWARM
 syn keyword cp2kConstant SYEVD
@@ -920,6 +929,8 @@ syn keyword cp2kConstant TRANSITION_STATE
 syn keyword cp2kConstant TRANSMISSION
 syn keyword cp2kConstant TRANSPORT
 syn keyword cp2kConstant TRAPEZOIDAL_RULE
+syn keyword cp2kConstant TREUTLER
+syn keyword cp2kConstant TREUTLERAHLRICHS
 syn keyword cp2kConstant TRICLINIC
 syn keyword cp2kConstant TRIPLET
 syn keyword cp2kConstant TRS4
@@ -932,12 +943,14 @@ syn keyword cp2kConstant UFF
 syn keyword cp2kConstant UHF
 syn keyword cp2kConstant UI
 syn keyword cp2kConstant UKS
+syn keyword cp2kConstant ULTRAFINE
 syn keyword cp2kConstant UMFPACK
 syn keyword cp2kConstant UNIFORM
 syn keyword cp2kConstant UNIT
 syn keyword cp2kConstant UNITY
 syn keyword cp2kConstant UNOCCUPIED
 syn keyword cp2kConstant UNPAIRED
+syn keyword cp2kConstant UNPRUNED
 syn keyword cp2kConstant UPF
 syn keyword cp2kConstant UPSF
 syn keyword cp2kConstant USER
@@ -1313,6 +1326,7 @@ syn keyword cp2kSection GAL21
 syn keyword cp2kSection GAPW
 syn keyword cp2kSection GAUSSIAN
 syn keyword cp2kSection GAUSSIAN_ENV
+syn keyword cp2kSection GAUXC
 syn keyword cp2kSection GCN
 syn keyword cp2kSection GCP_POTENTIAL
 syn keyword cp2kSection GENERATE
@@ -3699,6 +3713,7 @@ syn keyword cp2kKeyword INTERMOLECULAR
 syn keyword cp2kKeyword INTERPOLATE_GRADIENT
 syn keyword cp2kKeyword INTERPOLATE_SHIFT
 syn keyword cp2kKeyword INTERPOLATION
+syn keyword cp2kKeyword INT_EXECUTION_SPACE
 syn keyword cp2kKeyword INVERSION_SYMMETRY_ONLY
 syn keyword cp2kKeyword INVOLVED_ATOMS
 syn keyword cp2kKeyword IN_MEMORY
@@ -3793,6 +3808,7 @@ syn keyword cp2kKeyword LAMBDA3
 syn keyword cp2kKeyword LANGEVIN
 syn keyword cp2kKeyword LAST_SNAPSHOT
 syn keyword cp2kKeyword LBIAS
+syn keyword cp2kKeyword LB_EXECUTION_SPACE
 syn keyword cp2kKeyword LDISCRETE
 syn keyword cp2kKeyword LDOS_THRESHOLD_GAP
 syn keyword cp2kKeyword LEAST_SQ_FT
@@ -4466,6 +4482,7 @@ syn keyword cp2kKeyword PROJ_FORMULA
 syn keyword cp2kKeyword PROJ_VELOCITY_VERLET
 syn keyword cp2kKeyword PROPAGATE_REF
 syn keyword cp2kKeyword PROPAGATOR
+syn keyword cp2kKeyword PRUNING_SCHEME
 syn keyword cp2kKeyword PSEUDO_CANONICAL
 syn keyword cp2kKeyword PSEUDO_GRID_CUTOFF
 syn keyword cp2kKeyword PSEUDO_TYPE
@@ -4523,6 +4540,7 @@ syn keyword cp2kKeyword R1
 syn keyword cp2kKeyword R2
 syn keyword cp2kKeyword R3
 syn keyword cp2kKeyword RADIAL_GRID
+syn keyword cp2kKeyword RADIAL_QUADRATURE
 syn keyword cp2kKeyword RADII
 syn keyword cp2kKeyword RADIUS
 syn keyword cp2kKeyword RANDOMIZE
