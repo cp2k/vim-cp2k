@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:0eb17da)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:919a8b9)
 
 if exists("b:current_syntax")
    finish
@@ -2542,6 +2542,7 @@ syn keyword cp2kKeyword ACCURACY
 syn keyword cp2kKeyword ACCURACY_LEVEL
 syn keyword cp2kKeyword ACCURACY_REFINEMENT
 syn keyword cp2kKeyword ACQUISITION_START_TIME
+syn keyword cp2kKeyword ACTIVE
 syn keyword cp2kKeyword ACTIVE_ELECTRONS
 syn keyword cp2kKeyword ACTIVE_ORBITALS
 syn keyword cp2kKeyword ACTIVE_ORBITAL_INDICES
@@ -4024,6 +4025,9 @@ syn keyword cp2kKeyword MODEL
 syn keyword cp2kKeyword MODEL_GRAD_NORM_RATIO
 syn keyword cp2kKeyword MODEL_TYPE
 syn keyword cp2kKeyword MOLECULAR_PROPERTIES
+syn keyword cp2kKeyword MOLECULAR_VIRIAL
+syn keyword cp2kKeyword MOLECULAR_VIRIAL_DEBUG
+syn keyword cp2kKeyword MOLECULAR_VIRIAL_DEBUG_DX
 syn keyword cp2kKeyword MOLECULE
 syn keyword cp2kKeyword MOLECULES_FILE_NAME
 syn keyword cp2kKeyword MOLECULE_CORRECTION
@@ -4566,6 +4570,7 @@ syn keyword cp2kKeyword REALSPACE
 syn keyword cp2kKeyword REAL_AXIS_INTEGRATION_METHOD
 syn keyword cp2kKeyword REAL_OCCUPATION_MATRIX
 syn keyword cp2kKeyword REAL_SPACE
+syn keyword cp2kKeyword REBUILD_FREQUENCY
 syn keyword cp2kKeyword RECALC_RESIDUAL
 syn keyword cp2kKeyword RECURSIVE_DIAGONALIZATION
 syn keyword cp2kKeyword REDUCE_AUX_BF
