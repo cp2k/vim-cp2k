@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:919a8b9)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:9fc00bd)
 
 if exists("b:current_syntax")
    finish
@@ -461,7 +461,7 @@ syn keyword cp2kConstant GRID
 syn keyword cp2kConstant GROUND_STATE
 syn keyword cp2kConstant GSOLV
 syn keyword cp2kConstant GTH
-syn keyword cp2kConstant GTO
+syn keyword cp2kConstant GTO_BASIS
 syn keyword cp2kConstant GVD
 syn keyword cp2kConstant GVR
 syn keyword cp2kConstant HAGER_ZHANG
@@ -561,7 +561,6 @@ syn keyword cp2kConstant MASS
 syn keyword cp2kConstant MASSIVE
 syn keyword cp2kConstant MASTER
 syn keyword cp2kConstant MATMUL
-syn keyword cp2kConstant MATRIX
 syn keyword cp2kConstant MATRIX_SIGN
 syn keyword cp2kConstant MAURI_SPZ
 syn keyword cp2kConstant MAURI_US
@@ -698,6 +697,7 @@ syn keyword cp2kConstant OS_SPIN_FLIP
 syn keyword cp2kConstant OT
 syn keyword cp2kConstant OT_DIAG
 syn keyword cp2kConstant OVERLAP
+syn keyword cp2kConstant OVERLAP_MATRIX
 syn keyword cp2kConstant P16
 syn keyword cp2kConstant PADE
 syn keyword cp2kConstant PADEFXC
@@ -2599,6 +2599,7 @@ syn keyword cp2kKeyword ANGVEL_TOL
 syn keyword cp2kKeyword ANGVEL_ZERO
 syn keyword cp2kKeyword ANNEALING
 syn keyword cp2kKeyword ANNEALING_CELL
+syn keyword cp2kKeyword AO_EXPORT_TYPE
 syn keyword cp2kKeyword APOL
 syn keyword cp2kKeyword APPEND
 syn keyword cp2kKeyword APPLY_CUTOFF
@@ -2819,6 +2820,7 @@ syn keyword cp2kKeyword CALLGRAPH
 syn keyword cp2kKeyword CALLGRAPH_FILE_NAME
 syn keyword cp2kKeyword CAPTAIN_MINION
 syn keyword cp2kKeyword CARTESIAN
+syn keyword cp2kKeyword CARTESIAN_OVERLAP
 syn keyword cp2kKeyword CAVITY_CONFINE
 syn keyword cp2kKeyword CAVITY_PRINT
 syn keyword cp2kKeyword CAVITY_RADIUS
@@ -4312,13 +4314,13 @@ syn keyword cp2kKeyword OUTER_RADIUS
 syn keyword cp2kKeyword OUTPUT
 syn keyword cp2kKeyword OUTPUT_EMP
 syn keyword cp2kKeyword OUTPUT_FILE_NAME
+syn keyword cp2kKeyword OUTPUT_PATH
 syn keyword cp2kKeyword OUTPUT_TEXT
 syn keyword cp2kKeyword OUT_EACH_STATE
 syn keyword cp2kKeyword OUT_ITER_EACH
 syn keyword cp2kKeyword OVERLAP
 syn keyword cp2kKeyword OVERLAP_CONDITION_NUMBER
 syn keyword cp2kKeyword OVERLAP_DELTAT
-syn keyword cp2kKeyword OVERLAP_EXPORT_TYPE
 syn keyword cp2kKeyword OVERLAP_THRESHOLD
 syn keyword cp2kKeyword OVERWRITE
 syn keyword cp2kKeyword OVERWRITE_MOS
