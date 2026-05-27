@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:9fc00bd)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:f506c3b)
 
 if exists("b:current_syntax")
    finish
@@ -543,6 +543,7 @@ syn keyword cp2kConstant LLP
 syn keyword cp2kConstant LMKLL
 syn keyword cp2kConstant LOCAL_SCF
 syn keyword cp2kConstant LONGRANGE
+syn keyword cp2kConstant LORENTZIAN
 syn keyword cp2kConstant LOW
 syn keyword cp2kConstant LOWDIN
 syn keyword cp2kConstant LR
@@ -748,6 +749,7 @@ syn keyword cp2kConstant PSEUDOPOTENTIAL
 syn keyword cp2kConstant PSEUDOPOTENTIAL_OPTIMIZATION
 syn keyword cp2kConstant PSEUDO_INVERSE_DIAG
 syn keyword cp2kConstant PSEUDO_INVERSE_SVD
+syn keyword cp2kConstant PSEUDO_VOIGT
 syn keyword cp2kConstant PSF
 syn keyword cp2kConstant PULAY_MIXING
 syn keyword cp2kConstant PW
@@ -1103,6 +1105,7 @@ syn keyword cp2kSection BULK_REGION
 syn keyword cp2kSection CANONICAL_GRADIENTS
 syn keyword cp2kSection CARTESIAN_EIGS
 syn keyword cp2kSection CASCADE
+syn keyword cp2kSection CASINO
 syn keyword cp2kSection CDFT
 syn keyword cp2kSection CDFT_OPT
 syn keyword cp2kSection CELL
@@ -2768,6 +2771,8 @@ syn keyword cp2kKeyword BRACK_LIMIT
 syn keyword cp2kKeyword BRENT_MAX_ITER
 syn keyword cp2kKeyword BRENT_TOL
 syn keyword cp2kKeyword BROADENING
+syn keyword cp2kKeyword BROADEN_TYPE
+syn keyword cp2kKeyword BROADEN_WIDTH
 syn keyword cp2kKeyword BROYDEN_ADAPTIVE_SIGMA
 syn keyword cp2kKeyword BROYDEN_BETA
 syn keyword cp2kKeyword BROYDEN_ENABLE_FLIP
@@ -3357,6 +3362,7 @@ syn keyword cp2kKeyword EPS_ITER
 syn keyword cp2kKeyword EPS_JACOBI
 syn keyword cp2kKeyword EPS_KG_ORB
 syn keyword cp2kKeyword EPS_KPOINT
+syn keyword cp2kKeyword EPS_KPOINT_REAL
 syn keyword cp2kKeyword EPS_KRYLOV
 syn keyword cp2kKeyword EPS_LANCZOS
 syn keyword cp2kKeyword EPS_LIMIT
@@ -3560,6 +3566,7 @@ syn keyword cp2kKeyword FROM_ENERGY
 syn keyword cp2kKeyword FROZEN_MO_ENERGY_TERM
 syn keyword cp2kKeyword FULLY_PERIODIC
 syn keyword cp2kKeyword FULL_GRID
+syn keyword cp2kKeyword FULL_KPOINT_GRID
 syn keyword cp2kKeyword FULL_ORTHOGONALIZATION
 syn keyword cp2kKeyword FUNCTION
 syn keyword cp2kKeyword FUNCTIONAL
@@ -4308,7 +4315,6 @@ syn keyword cp2kKeyword ORTHO_RF
 syn keyword cp2kKeyword OR_PARAMETER
 syn keyword cp2kKeyword OSCILLATING_FRACTION
 syn keyword cp2kKeyword OT_INITIAL_GUESS
-syn keyword cp2kKeyword OT_NLUMO
 syn keyword cp2kKeyword OUTER_ATOMS
 syn keyword cp2kKeyword OUTER_RADIUS
 syn keyword cp2kKeyword OUTPUT
@@ -5233,6 +5239,7 @@ syn keyword cp2kKeyword VIRIAL
 syn keyword cp2kKeyword VIRIAL_TEMPS
 syn keyword cp2kKeyword VIRTUAL_NLMOS
 syn keyword cp2kKeyword VN_CONFIDENCE_LIMIT
+syn keyword cp2kKeyword VOIGT_MIXING
 syn keyword cp2kKeyword VOLUME
 syn keyword cp2kKeyword VOLUME_ISOTROPIC
 syn keyword cp2kKeyword VORONOI_RADII
@@ -5283,6 +5290,7 @@ syn keyword cp2kKeyword WRITE_CYCLES
 syn keyword cp2kKeyword WRITE_FREQUENCY
 syn keyword cp2kKeyword WRITE_OPENPMD
 syn keyword cp2kKeyword WRITE_PSEUDO
+syn keyword cp2kKeyword WRITE_PSEUDOPOTENTIALS
 syn keyword cp2kKeyword WTGAMMA
 syn keyword cp2kKeyword WW
 syn keyword cp2kKeyword W_MATRIX
