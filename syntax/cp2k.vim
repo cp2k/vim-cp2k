@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:f506c3b)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:48c6336)
 
 if exists("b:current_syntax")
    finish
@@ -1331,6 +1331,7 @@ syn keyword cp2kSection GAPW
 syn keyword cp2kSection GAUSSIAN
 syn keyword cp2kSection GAUSSIAN_ENV
 syn keyword cp2kSection GAUXC
+syn keyword cp2kSection GCE
 syn keyword cp2kSection GCN
 syn keyword cp2kSection GCP_POTENTIAL
 syn keyword cp2kSection GENERATE
@@ -2255,6 +2256,8 @@ syn keyword cp2kSection PIGLET
 syn keyword cp2kSection PILE
 syn keyword cp2kSection PINT
 syn keyword cp2kSection PLANAR
+syn keyword cp2kSection PLANAR_AVERAGED_V_HARTREE
+syn keyword cp2kSection PLANAR_COUNTER_CHARGE
 syn keyword cp2kSection PLANE
 syn keyword cp2kSection PLENGTH
 syn keyword cp2kSection PLUS_U
@@ -2823,6 +2826,7 @@ syn keyword cp2kKeyword CALCULATE_STATES
 syn keyword cp2kKeyword CALC_COND_NUM
 syn keyword cp2kKeyword CALLGRAPH
 syn keyword cp2kKeyword CALLGRAPH_FILE_NAME
+syn keyword cp2kKeyword CANONICALIZE
 syn keyword cp2kKeyword CAPTAIN_MINION
 syn keyword cp2kKeyword CARTESIAN
 syn keyword cp2kKeyword CARTESIAN_OVERLAP
@@ -3109,6 +3113,7 @@ syn keyword cp2kKeyword DISTRIBUTED_ORIGIN
 syn keyword cp2kKeyword DISTRIBUTION-TYPE
 syn keyword cp2kKeyword DISTRIBUTION_LAYOUT
 syn keyword cp2kKeyword DISTRIBUTION_TYPE
+syn keyword cp2kKeyword DIST_EDGE
 syn keyword cp2kKeyword DKH_ORDER
 syn keyword cp2kKeyword DLAF_CHOLESKY_N_MIN
 syn keyword cp2kKeyword DLAF_NEIGVEC_MIN
@@ -3592,6 +3597,7 @@ syn keyword cp2kKeyword GAUGE_ORIG
 syn keyword cp2kKeyword GAUGE_ORIG_MANUAL
 syn keyword cp2kKeyword GAUSSIAN_RADIUS
 syn keyword cp2kKeyword GAUSSIAN_SHAPE
+syn keyword cp2kKeyword GAU_C
 syn keyword cp2kKeyword GCUT
 syn keyword cp2kKeyword GENERATE_INFO
 syn keyword cp2kKeyword GEN_EVP_SOLVER_NAME
@@ -4018,6 +4024,7 @@ syn keyword cp2kKeyword MIN_RANKS_PER_POLE
 syn keyword cp2kKeyword MIN_TOLERANCE
 syn keyword cp2kKeyword MIN_WEIGHT
 syn keyword cp2kKeyword MIXING
+syn keyword cp2kKeyword MIXING_COEF
 syn keyword cp2kKeyword MIXING_FRACTION
 syn keyword cp2kKeyword MIXING_FUNCTION
 syn keyword cp2kKeyword MIXING_TYPE
@@ -5044,6 +5051,7 @@ syn keyword cp2kKeyword TARGET_POT_SEMICORE
 syn keyword cp2kKeyword TARGET_POT_VALENCE
 syn keyword cp2kKeyword TARGET_POT_VIRTUAL
 syn keyword cp2kKeyword TARGET_PSIR0
+syn keyword cp2kKeyword TARGET_WORKFUNCTION
 syn keyword cp2kKeyword TASKS_PER_ENERGY_POINT
 syn keyword cp2kKeyword TASKS_PER_INTEGRATION_POINT
 syn keyword cp2kKeyword TASKS_PER_POLE
