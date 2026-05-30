@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:48c6336)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:bff9b1f)
 
 if exists("b:current_syntax")
    finish
@@ -600,6 +600,7 @@ syn keyword cp2kConstant MNDO
 syn keyword cp2kConstant MNDOD
 syn keyword cp2kConstant MO
 syn keyword cp2kConstant MODIFIED_BROYDEN_MIXING
+syn keyword cp2kConstant MOLDEN
 syn keyword cp2kConstant MOLDEN_RESTART
 syn keyword cp2kConstant MOLECULAR
 syn keyword cp2kConstant MOLECULAR_DYNAMICS
@@ -1316,6 +1317,7 @@ syn keyword cp2kSection FORCE_MATCHING
 syn keyword cp2kSection FORCE_MIXING
 syn keyword cp2kSection FORCE_MIXING_LABELS
 syn keyword cp2kSection FRAGMENT
+syn keyword cp2kSection FRAGMENTS
 syn keyword cp2kSection FRAGMENT_ENERGIES
 syn keyword cp2kSection FRAME
 syn keyword cp2kSection FREE_ENERGY
@@ -1806,6 +1808,7 @@ syn keyword cp2kSection HYPERFINE_COUPLING_TENSOR
 syn keyword cp2kSection IAO_ANALYSIS
 syn keyword cp2kSection IAO_CUBES
 syn keyword cp2kSection IAO_MOLDEN
+syn keyword cp2kSection IAO_OVERLAP
 syn keyword cp2kSection IBO_CUBES
 syn keyword cp2kSection IBO_MOLDEN
 syn keyword cp2kSection IC
@@ -3557,6 +3560,7 @@ syn keyword cp2kKeyword FRAGMENT_A_SPIN_FILE
 syn keyword cp2kKeyword FRAGMENT_B_FILE_NAME
 syn keyword cp2kKeyword FRAGMENT_B_SPIN_FILE
 syn keyword cp2kKeyword FRAGMENT_CONSTRAINT
+syn keyword cp2kKeyword FRAG_RANGE
 syn keyword cp2kKeyword FRAME_COUNT
 syn keyword cp2kKeyword FRAME_START
 syn keyword cp2kKeyword FRAME_STOP
@@ -5243,6 +5247,9 @@ syn keyword cp2kKeyword VERY_OVERLOADED
 syn keyword cp2kKeyword VGATE
 syn keyword cp2kKeyword VG_COM_NL
 syn keyword cp2kKeyword VIB_EIGS_FILE_NAME
+syn keyword cp2kKeyword VIB_INDEX
+syn keyword cp2kKeyword VIB_MOLDEN_NAME
+syn keyword cp2kKeyword VIB_WEIGHT
 syn keyword cp2kKeyword VIRIAL
 syn keyword cp2kKeyword VIRIAL_TEMPS
 syn keyword cp2kKeyword VIRTUAL_NLMOS
@@ -5903,6 +5910,7 @@ syn keyword cp2kKeyword QM
 syn keyword cp2kKeyword QMMM_CHARGE_SCALE QMMM_CHARGE_FACTOR QMMM_SCALE_CHARGE
 syn keyword cp2kKeyword QMMM_COUPLING ECOUPL
 syn keyword cp2kKeyword Q_MAXIMUM
+syn keyword cp2kKeyword RANGE
 syn keyword cp2kKeyword REF
 syn keyword cp2kKeyword REF_2
 syn keyword cp2kKeyword REF_POINT
