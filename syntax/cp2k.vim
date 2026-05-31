@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:bff9b1f)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:0997921)
 
 if exists("b:current_syntax")
    finish
@@ -64,6 +64,8 @@ syn match cp2kComment "!.*$" contains=cp2kTodo
 syn keyword cp2kConstant -X
 syn keyword cp2kConstant -Y
 syn keyword cp2kConstant -Z
+syn keyword cp2kConstant .FALSE.
+syn keyword cp2kConstant .TRUE.
 syn keyword cp2kConstant 0
 syn keyword cp2kConstant 1
 syn keyword cp2kConstant 1-1
@@ -361,6 +363,7 @@ syn keyword cp2kConstant EXT_LARGE
 syn keyword cp2kConstant EXT_MEDIUM
 syn keyword cp2kConstant EXT_SMALL
 syn keyword cp2kConstant EXT_VERY_LARGE
+syn keyword cp2kConstant F
 syn keyword cp2kConstant FALSE
 syn keyword cp2kConstant FARMING
 syn keyword cp2kConstant FATTEBERT-GYGI
@@ -902,6 +905,7 @@ syn keyword cp2kConstant SYEVD
 syn keyword cp2kConstant SYEVX
 syn keyword cp2kConstant SYMBOLIC
 syn keyword cp2kConstant SYRK
+syn keyword cp2kConstant T
 syn keyword cp2kConstant T92
 syn keyword cp2kConstant TAILORED
 syn keyword cp2kConstant TAMC
