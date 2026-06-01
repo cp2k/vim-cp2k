@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:0997921)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:d5c4d39)
 
 if exists("b:current_syntax")
    finish
@@ -620,6 +620,7 @@ syn keyword cp2kConstant MO_NO_DIAG
 syn keyword cp2kConstant MO_SOLVER
 syn keyword cp2kConstant MP
 syn keyword cp2kConstant MP2_GPW
+syn keyword cp2kConstant MPI
 syn keyword cp2kConstant MP_GRID
 syn keyword cp2kConstant MSST
 syn keyword cp2kConstant MSST_DAMPED
@@ -835,6 +836,7 @@ syn keyword cp2kConstant SCMP
 syn keyword cp2kConstant SCZORA(MP)
 syn keyword cp2kConstant SD
 syn keyword cp2kConstant SECANT
+syn keyword cp2kConstant SELF
 syn keyword cp2kConstant SELF_CONSISTENT
 syn keyword cp2kConstant SEMI_ANALYTIC
 syn keyword cp2kConstant SEQUENTIAL
@@ -3075,6 +3077,7 @@ syn keyword cp2kKeyword DETAILED_ENERGY
 syn keyword cp2kKeyword DETERMINANT_TOLERANCE
 syn keyword cp2kKeyword DETERM_COEFF
 syn keyword cp2kKeyword DEVIATION
+syn keyword cp2kKeyword DEVICE_RUNTIME_FILL_FRACTION
 syn keyword cp2kKeyword DFET_EMBEDDED
 syn keyword cp2kKeyword DFTB3_PARAM
 syn keyword cp2kKeyword DFTD3_CORRECTION
@@ -4105,6 +4108,12 @@ syn keyword cp2kKeyword N
 syn keyword cp2kKeyword N0
 syn keyword cp2kKeyword NAB_MIN
 syn keyword cp2kKeyword NAME_BODY
+syn keyword cp2kKeyword NATIVE_GRID
+syn keyword cp2kKeyword NATIVE_GRID_ATOM_CHUNKS
+syn keyword cp2kKeyword NATIVE_GRID_ATOM_CHUNK_ROUTING
+syn keyword cp2kKeyword NATIVE_GRID_CUDA_DEVICE
+syn keyword cp2kKeyword NATIVE_GRID_DIAGNOSTICS
+syn keyword cp2kKeyword NATIVE_GRID_USE_CUDA
 syn keyword cp2kKeyword NATOMS
 syn keyword cp2kKeyword NBAS
 syn keyword cp2kKeyword NBEADS
@@ -4290,6 +4299,7 @@ syn keyword cp2kKeyword OMEGA
 syn keyword cp2kKeyword OMEGA0
 syn keyword cp2kKeyword OMEGA_MAX_FIT
 syn keyword cp2kKeyword OMIT_HEADERS
+syn keyword cp2kKeyword ONEDFT_ATOM_CHUNK_SIZE
 syn keyword cp2kKeyword ONE_CIRCLE
 syn keyword cp2kKeyword ON_THE_FLY_LOC
 syn keyword cp2kKeyword OPENPMD_CFG
@@ -4390,6 +4400,7 @@ syn keyword cp2kKeyword PERIODIC
 syn keyword cp2kKeyword PERIODICITY
 syn keyword cp2kKeyword PERIODIC_CORRECTION
 syn keyword cp2kKeyword PERIODIC_DIPOLE_OPERATOR
+syn keyword cp2kKeyword PERIODIC_REFERENCE
 syn keyword cp2kKeyword PERIODIC_REGION
 syn keyword cp2kKeyword PF
 syn keyword cp2kKeyword PFACTOR
@@ -4912,6 +4923,7 @@ syn keyword cp2kKeyword SIMPLE_LAPW_RI
 syn keyword cp2kKeyword SIP_LIST
 syn keyword cp2kKeyword SIZE
 syn keyword cp2kKeyword SIZE_LATTICE_SUM
+syn keyword cp2kKeyword SKALA_RUNTIME
 syn keyword cp2kKeyword SKIPLASTITER
 syn keyword cp2kKeyword SKIP_EC
 syn keyword cp2kKeyword SKIP_FIRST
