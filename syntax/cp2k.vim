@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:d5c4d39)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:e9e4980)
 
 if exists("b:current_syntax")
    finish
@@ -90,6 +90,7 @@ syn keyword cp2kConstant 4F
 syn keyword cp2kConstant 4P
 syn keyword cp2kConstant 4S
 syn keyword cp2kConstant 93
+syn keyword cp2kConstant ABSOLUTE
 syn keyword cp2kConstant AC
 syn keyword cp2kConstant AD
 syn keyword cp2kConstant ADAPT
@@ -343,6 +344,7 @@ syn keyword cp2kConstant EQUIVARIANT
 syn keyword cp2kConstant ERFC
 syn keyword cp2kConstant ESTIMATE
 syn keyword cp2kConstant ETRS
+syn keyword cp2kConstant EV
 syn keyword cp2kConstant EV93
 syn keyword cp2kConstant EVERY_STEP
 syn keyword cp2kConstant EVGW
@@ -374,6 +376,7 @@ syn keyword cp2kConstant FD1_CENTRAL
 syn keyword cp2kConstant FD2
 syn keyword cp2kConstant FD2_BACKWARD
 syn keyword cp2kConstant FE
+syn keyword cp2kConstant FERMI
 syn keyword cp2kConstant FERMI_AMALDI
 syn keyword cp2kConstant FERMI_DIRAC
 syn keyword cp2kConstant FFT
@@ -470,6 +473,7 @@ syn keyword cp2kConstant GVR
 syn keyword cp2kConstant HAGER_ZHANG
 syn keyword cp2kConstant HARMONIC
 syn keyword cp2kConstant HARRIS
+syn keyword cp2kConstant HARTREE
 syn keyword cp2kConstant HARTREE-FOCK
 syn keyword cp2kConstant HCTH120
 syn keyword cp2kConstant HESTENES_STIEFEL
@@ -482,6 +486,7 @@ syn keyword cp2kConstant HIGH-SPIN
 syn keyword cp2kConstant HIRSHFELD
 syn keyword cp2kConstant HISTORY_RESTART
 syn keyword cp2kConstant HLE
+syn keyword cp2kConstant HOCO
 syn keyword cp2kConstant HOST
 syn keyword cp2kConstant HOTELLING
 syn keyword cp2kConstant HYDROSTATICSHOCK
@@ -3310,6 +3315,7 @@ syn keyword cp2kKeyword ENERGY_TOLERANCE
 syn keyword cp2kKeyword ENERGY_UNIT
 syn keyword cp2kKeyword ENERGY_WEIGHT
 syn keyword cp2kKeyword ENERGY_WINDOW
+syn keyword cp2kKeyword ENERGY_ZERO
 syn keyword cp2kKeyword ENFORCE_DECREASE
 syn keyword cp2kKeyword ENSCALE
 syn keyword cp2kKeyword ENSEMBLE
@@ -4392,6 +4398,8 @@ syn keyword cp2kKeyword PBC
 syn keyword cp2kKeyword PBIAS
 syn keyword cp2kKeyword PCUT
 syn keyword cp2kKeyword PDB_INFO
+syn keyword cp2kKeyword PDOS
+syn keyword cp2kKeyword PDOS_RAW
 syn keyword cp2kKeyword PENALTY_DISTANCE
 syn keyword cp2kKeyword PENALTY_STRENGTH
 syn keyword cp2kKeyword PENALTY_STRENGTH_DECREASE_FACTOR
