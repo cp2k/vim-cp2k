@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:e9e4980)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:49523fb)
 
 if exists("b:current_syntax")
    finish
@@ -4398,8 +4398,6 @@ syn keyword cp2kKeyword PBC
 syn keyword cp2kKeyword PBIAS
 syn keyword cp2kKeyword PCUT
 syn keyword cp2kKeyword PDB_INFO
-syn keyword cp2kKeyword PDOS
-syn keyword cp2kKeyword PDOS_RAW
 syn keyword cp2kKeyword PENALTY_DISTANCE
 syn keyword cp2kKeyword PENALTY_STRENGTH
 syn keyword cp2kKeyword PENALTY_STRENGTH_DECREASE_FACTOR
@@ -4596,6 +4594,7 @@ syn keyword cp2kKeyword RANDOMIZE_VARIABLES
 syn keyword cp2kKeyword RANDOMTOSKIP
 syn keyword cp2kKeyword RANGE
 syn keyword cp2kKeyword RAOH
+syn keyword cp2kKeyword RAW
 syn keyword cp2kKeyword RCLUS
 syn keyword cp2kKeyword RCOV_MULTIPLICATION
 syn keyword cp2kKeyword RCUT
