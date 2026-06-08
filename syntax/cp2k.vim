@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:e0f0c17)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:be2ee82)
 
 if exists("b:current_syntax")
    finish
@@ -2609,6 +2609,7 @@ syn keyword cp2kKeyword AM.DELTATODE
 syn keyword cp2kKeyword AM.MAXDEPTH
 syn keyword cp2kKeyword AM.NUMBERDIVISIONS
 syn keyword cp2kKeyword AMBER_INFO
+syn keyword cp2kKeyword AMPLITUDE
 syn keyword cp2kKeyword ANALYTICAL_GRADIENTS
 syn keyword cp2kKeyword ANALYTICAL_GTERM
 syn keyword cp2kKeyword ANALYTIC_CONTINUATION
@@ -3897,6 +3898,7 @@ syn keyword cp2kKeyword LRI_OVERLAP_MATRIX
 syn keyword cp2kKeyword LSTOP
 syn keyword cp2kKeyword LS_DIIS
 syn keyword cp2kKeyword LS_SCF
+syn keyword cp2kKeyword LWD_KERNEL
 syn keyword cp2kKeyword M
 syn keyword cp2kKeyword M-RATIO
 syn keyword cp2kKeyword M-VALUE
@@ -4116,6 +4118,7 @@ syn keyword cp2kKeyword NAB_MIN
 syn keyword cp2kKeyword NAME_BODY
 syn keyword cp2kKeyword NATIVE_GRID
 syn keyword cp2kKeyword NATIVE_GRID_ATOM_CHUNKS
+syn keyword cp2kKeyword NATIVE_GRID_ATOM_CHUNK_MAX_ROWS
 syn keyword cp2kKeyword NATIVE_GRID_ATOM_CHUNK_ROUTING
 syn keyword cp2kKeyword NATIVE_GRID_CUDA_DEVICE
 syn keyword cp2kKeyword NATIVE_GRID_DIAGNOSTICS
@@ -4306,6 +4309,7 @@ syn keyword cp2kKeyword OMEGA0
 syn keyword cp2kKeyword OMEGA_MAX_FIT
 syn keyword cp2kKeyword OMIT_HEADERS
 syn keyword cp2kKeyword ONEDFT_ATOM_CHUNK_SIZE
+syn keyword cp2kKeyword ONEDFT_GRADIENT_RUNTIME
 syn keyword cp2kKeyword ONE_CIRCLE
 syn keyword cp2kKeyword ON_THE_FLY_LOC
 syn keyword cp2kKeyword OPENPMD_CFG
