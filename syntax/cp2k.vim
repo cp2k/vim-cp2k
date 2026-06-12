@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:be2ee82)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:424e1d4)
 
 if exists("b:current_syntax")
    finish
@@ -3022,6 +3022,7 @@ syn keyword cp2kKeyword D3BJ_PARAM
 syn keyword cp2kKeyword D3BJ_SCALING
 syn keyword cp2kKeyword D3_EXCLUDE_KIND
 syn keyword cp2kKeyword D3_EXCLUDE_KIND_PAIR
+syn keyword cp2kKeyword D3_REFERENCE_CODE
 syn keyword cp2kKeyword D3_SCALING
 syn keyword cp2kKeyword D4_CN_CUTOFF
 syn keyword cp2kKeyword D4_CUTOFF
