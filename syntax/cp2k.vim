@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:9dda3dd)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:9a1f30a)
 
 if exists("b:current_syntax")
    finish
@@ -471,6 +471,7 @@ syn keyword cp2kConstant GTO_BASIS
 syn keyword cp2kConstant GVD
 syn keyword cp2kConstant GVR
 syn keyword cp2kConstant HAGER_ZHANG
+syn keyword cp2kConstant HARD
 syn keyword cp2kConstant HARMONIC
 syn keyword cp2kConstant HARRIS
 syn keyword cp2kConstant HARTREE
@@ -865,6 +866,7 @@ syn keyword cp2kConstant SL
 syn keyword cp2kConstant SLATER
 syn keyword cp2kConstant SM
 syn keyword cp2kConstant SMM
+syn keyword cp2kConstant SMOOTH
 syn keyword cp2kConstant SOE
 syn keyword cp2kConstant SOFT_DENSITY
 syn keyword cp2kConstant SOSEX
@@ -1313,6 +1315,7 @@ syn keyword cp2kSection FIT_PSEUDO
 syn keyword cp2kSection FIXED_ATOMS
 syn keyword cp2kSection FIX_ATOM_RESTART
 syn keyword cp2kSection FLEXIBLE_PARTITIONING
+syn keyword cp2kSection FLOQUET
 syn keyword cp2kSection FM
 syn keyword cp2kSection FM_DIAG_SETTINGS
 syn keyword cp2kSection FOCK_EIGENVALUES
@@ -3369,6 +3372,7 @@ syn keyword cp2kKeyword EPS_FILTER_2C
 syn keyword cp2kKeyword EPS_FILTER_FACTOR
 syn keyword cp2kKeyword EPS_FILTER_MATRIX
 syn keyword cp2kKeyword EPS_FILTER_MO
+syn keyword cp2kKeyword EPS_FLOQUET
 syn keyword cp2kKeyword EPS_FUNCTION
 syn keyword cp2kKeyword EPS_GEO
 syn keyword cp2kKeyword EPS_GRAD
@@ -3550,6 +3554,7 @@ syn keyword cp2kKeyword FLETCHER_REEVES
 syn keyword cp2kKeyword FLIP_FRAGMENT_A
 syn keyword cp2kKeyword FLIP_FRAGMENT_B
 syn keyword cp2kKeyword FLOATING_BASIS_CENTER
+syn keyword cp2kKeyword FLOQUET_DOS_FILE_NAME
 syn keyword cp2kKeyword FLUSH_SHOULD_FLUSH
 syn keyword cp2kKeyword FOLD_COORD
 syn keyword cp2kKeyword FORCE_BLOCKSIZE
@@ -3948,6 +3953,7 @@ syn keyword cp2kKeyword MAX_DR
 syn keyword cp2kKeyword MAX_ELEMENTS_PER_BLOCK
 syn keyword cp2kKeyword MAX_ENERGY
 syn keyword cp2kKeyword MAX_FILE_SIZE_MB
+syn keyword cp2kKeyword MAX_FLOQUET_INDEX
 syn keyword cp2kKeyword MAX_FORCE
 syn keyword cp2kKeyword MAX_FUN
 syn keyword cp2kKeyword MAX_F_PER_ITER
@@ -4122,6 +4128,7 @@ syn keyword cp2kKeyword NATIVE_GRID
 syn keyword cp2kKeyword NATIVE_GRID_ATOM_CHUNKS
 syn keyword cp2kKeyword NATIVE_GRID_ATOM_CHUNK_MAX_ROWS
 syn keyword cp2kKeyword NATIVE_GRID_ATOM_CHUNK_ROUTING
+syn keyword cp2kKeyword NATIVE_GRID_ATOM_PARTITION
 syn keyword cp2kKeyword NATIVE_GRID_CUDA_DEVICE
 syn keyword cp2kKeyword NATIVE_GRID_DIAGNOSTICS
 syn keyword cp2kKeyword NATIVE_GRID_USE_CUDA
@@ -4418,6 +4425,7 @@ syn keyword cp2kKeyword PF
 syn keyword cp2kKeyword PFACTOR
 syn keyword cp2kKeyword PGF_RADII
 syn keyword cp2kKeyword PHASE
+syn keyword cp2kKeyword PHASE_OFFSETS
 syn keyword cp2kKeyword PHI0
 syn keyword cp2kKeyword PHYSCON
 syn keyword cp2kKeyword PIMD_BEADWISE_CONSTRAINT
@@ -4576,6 +4584,7 @@ syn keyword cp2kKeyword QT_FORMALISM
 syn keyword cp2kKeyword QUADRATURE
 syn keyword cp2kKeyword QUADRATURE_POINTS
 syn keyword cp2kKeyword QUADRUPOLE
+syn keyword cp2kKeyword QUASI_ENERGIES_FILE_NAME
 syn keyword cp2kKeyword QWOH
 syn keyword cp2kKeyword Q_BEAD
 syn keyword cp2kKeyword Q_CENTROID
