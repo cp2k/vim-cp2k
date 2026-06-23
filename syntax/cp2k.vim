@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:9a1f30a)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:3c69fd1)
 
 if exists("b:current_syntax")
    finish
@@ -472,6 +472,8 @@ syn keyword cp2kConstant GVD
 syn keyword cp2kConstant GVR
 syn keyword cp2kConstant HAGER_ZHANG
 syn keyword cp2kConstant HARD
+syn keyword cp2kConstant HARD_MINUS_SOFT
+syn keyword cp2kConstant HARD_ONLY
 syn keyword cp2kConstant HARMONIC
 syn keyword cp2kConstant HARRIS
 syn keyword cp2kConstant HARTREE
@@ -650,6 +652,7 @@ syn keyword cp2kConstant NEVER
 syn keyword cp2kConstant NEWTON
 syn keyword cp2kConstant NEWTONSCHULZ
 syn keyword cp2kConstant NEWTON_LS
+syn keyword cp2kConstant NEW_PULAY_MIXING
 syn keyword cp2kConstant NN10
 syn keyword cp2kConstant NN10_SMOOTH
 syn keyword cp2kConstant NN4
@@ -869,6 +872,7 @@ syn keyword cp2kConstant SMM
 syn keyword cp2kConstant SMOOTH
 syn keyword cp2kConstant SOE
 syn keyword cp2kConstant SOFT_DENSITY
+syn keyword cp2kConstant SOFT_ONLY
 syn keyword cp2kConstant SOSEX
 syn keyword cp2kConstant SPARSE
 syn keyword cp2kConstant SPATIALLY_DEPENDENT
@@ -3460,8 +3464,6 @@ syn keyword cp2kKeyword ESIMATE_ACC_PROB
 syn keyword cp2kKeyword ETA
 syn keyword cp2kKeyword ETA_LIST
 syn keyword cp2kKeyword EVAL
-syn keyword cp2kKeyword EVAL_ENERGY_FORCES
-syn keyword cp2kKeyword EVAL_FORCES
 syn keyword cp2kKeyword EVERY_N_STEP
 syn keyword cp2kKeyword EV_GW_ITER
 syn keyword cp2kKeyword EV_SHIFT
@@ -4131,6 +4133,7 @@ syn keyword cp2kKeyword NATIVE_GRID_ATOM_CHUNK_ROUTING
 syn keyword cp2kKeyword NATIVE_GRID_ATOM_PARTITION
 syn keyword cp2kKeyword NATIVE_GRID_CUDA_DEVICE
 syn keyword cp2kKeyword NATIVE_GRID_DIAGNOSTICS
+syn keyword cp2kKeyword NATIVE_GRID_GAPW_DENSITY_PARTITION
 syn keyword cp2kKeyword NATIVE_GRID_USE_CUDA
 syn keyword cp2kKeyword NATOMS
 syn keyword cp2kKeyword NBAS
@@ -4570,6 +4573,8 @@ syn keyword cp2kKeyword QAOH
 syn keyword cp2kKeyword QCSCHEMA
 syn keyword cp2kKeyword QCUT
 syn keyword cp2kKeyword QF
+syn keyword cp2kKeyword QK
+syn keyword cp2kKeyword QKAPPA
 syn keyword cp2kKeyword QM
 syn keyword cp2kKeyword QMMM_SCALE_FACTOR
 syn keyword cp2kKeyword QM_EXTENDED_SEED_IS_ONLY_CORE_LIST
