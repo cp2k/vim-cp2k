@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:3c69fd1)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:5fdc47c)
 
 if exists("b:current_syntax")
    finish
@@ -1633,7 +1633,6 @@ syn keyword cp2kSection GV09
 syn keyword cp2kSection GW
 syn keyword cp2kSection GW2X
 syn keyword cp2kSection GW_DOS
-syn keyword cp2kSection GW_RI_RS
 syn keyword cp2kSection GYRATION_RADIUS
 syn keyword cp2kSection G_TENSOR
 syn keyword cp2kSection HAIRY_PROBES
@@ -2904,7 +2903,6 @@ syn keyword cp2kKeyword CHECK_UNITARY_TOL
 syn keyword cp2kKeyword CHECK_VIRIAL
 syn keyword cp2kKeyword CHI_PBC
 syn keyword cp2kKeyword CHOLESKY
-syn keyword cp2kKeyword CHUNK_SIZE_DBCSR
 syn keyword cp2kKeyword CI
 syn keyword cp2kKeyword CIF_INFO
 syn keyword cp2kKeyword CIJ
@@ -4295,6 +4293,7 @@ syn keyword cp2kKeyword N_MU
 syn keyword cp2kKeyword N_OUTER
 syn keyword cp2kKeyword N_POINTS_BEYN
 syn keyword cp2kKeyword N_POINTS_INV
+syn keyword cp2kKeyword N_PROCS_PER_ATOM_Z_LP
 syn keyword cp2kKeyword N_PRTN
 syn keyword cp2kKeyword N_RAND
 syn keyword cp2kKeyword N_RAND_CC
@@ -4757,6 +4756,7 @@ syn keyword cp2kKeyword RI_AUX_BASIS_SET
 syn keyword cp2kKeyword RI_FLAVOR
 syn keyword cp2kKeyword RI_METRIC
 syn keyword cp2kKeyword RI_REGION
+syn keyword cp2kKeyword RI_RS
 syn keyword cp2kKeyword RI_SIGMA_X
 syn keyword cp2kKeyword RI_SINV
 syn keyword cp2kKeyword RI_STATISTIC
