@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:31876b5)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:5976d25)
 
 if exists("b:current_syntax")
    finish
@@ -834,6 +834,7 @@ syn keyword cp2kConstant R_AND_STEP_FUNCTION
 syn keyword cp2kConstant S
 syn keyword cp2kConstant S-WAVE
 syn keyword cp2kConstant S2_CONSTRAINT
+syn keyword cp2kConstant SAA_ANDREUSSI
 syn keyword cp2kConstant SAD
 syn keyword cp2kConstant SAME_AS_PARTICLE
 syn keyword cp2kConstant SAOP
@@ -2379,6 +2380,7 @@ syn keyword cp2kSection RUN_INFO
 syn keyword cp2kSection R_LDOS
 syn keyword cp2kSection S
 syn keyword cp2kSection S2_RESTRAINT
+syn keyword cp2kSection SAA_ANDREUSSI
 syn keyword cp2kSection SAOP
 syn keyword cp2kSection SCATTERING_REGION
 syn keyword cp2kSection SCCS
@@ -2609,6 +2611,7 @@ syn keyword cp2kKeyword ALPHA_BETA_GAMMA
 syn keyword cp2kKeyword ALPHA_IMOMM
 syn keyword cp2kKeyword ALPHA_MAG
 syn keyword cp2kKeyword ALPHA_WEIGHTS
+syn keyword cp2kKeyword ALPHA_ZETA
 syn keyword cp2kKeyword ALWAYS_CHECKSUM
 syn keyword cp2kKeyword AM.ATOMLISTBS
 syn keyword cp2kKeyword AM.CRITERIUM
@@ -3064,6 +3067,7 @@ syn keyword cp2kKeyword DELTA_ALPHA
 syn keyword cp2kKeyword DELTA_CHARGE
 syn keyword cp2kKeyword DELTA_E
 syn keyword cp2kKeyword DELTA_ENERGY
+syn keyword cp2kKeyword DELTA_ETA
 syn keyword cp2kKeyword DELTA_I_REL
 syn keyword cp2kKeyword DELTA_NPOLES
 syn keyword cp2kKeyword DELTA_PULSE_DIRECTION
@@ -3071,6 +3075,7 @@ syn keyword cp2kKeyword DELTA_PULSE_SCALE
 syn keyword cp2kKeyword DELTA_RHO
 syn keyword cp2kKeyword DELTA_RI
 syn keyword cp2kKeyword DELTA_T
+syn keyword cp2kKeyword DELTA_ZETA
 syn keyword cp2kKeyword DENSITY
 syn keyword cp2kKeyword DENSITY_CUTOFF
 syn keyword cp2kKeyword DENSITY_INCLUDE
@@ -4808,6 +4813,7 @@ syn keyword cp2kKeyword R_CORE
 syn keyword cp2kKeyword R_CUTOFF
 syn keyword cp2kKeyword R_FACTOR
 syn keyword cp2kKeyword R_QM
+syn keyword cp2kKeyword R_SOLV
 syn keyword cp2kKeyword SAB_AUX_FIT
 syn keyword cp2kKeyword SAB_AUX_FIT_VS_ORB
 syn keyword cp2kKeyword SAB_CN
