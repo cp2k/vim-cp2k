@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:5976d25)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:1f9fd2c)
 
 if exists("b:current_syntax")
    finish
@@ -176,6 +176,7 @@ syn keyword cp2kConstant BLOCK_LMAX
 syn keyword cp2kConstant BLOCK_SURFACE
 syn keyword cp2kConstant BLYP
 syn keyword cp2kConstant BOHR
+syn keyword cp2kConstant BOTH
 syn keyword cp2kConstant BOX
 syn keyword cp2kConstant BOYS
 syn keyword cp2kConstant BP
@@ -543,6 +544,8 @@ syn keyword cp2kConstant LEGENDRE
 syn keyword cp2kConstant LENGTH
 syn keyword cp2kConstant LENOSKY
 syn keyword cp2kConstant LEVEL_SHIFT
+syn keyword cp2kConstant LIBGINT
+syn keyword cp2kConstant LIBINT
 syn keyword cp2kConstant LINEAR
 syn keyword cp2kConstant LINEAR_COMBINATION
 syn keyword cp2kConstant LINEAR_P
@@ -3692,6 +3695,7 @@ syn keyword cp2kKeyword HELIUM_ONLY
 syn keyword cp2kKeyword HE_HE
 syn keyword cp2kKeyword HFXSR_PRIMBAS
 syn keyword cp2kKeyword HFX_BALANCE_IN_CORE
+syn keyword cp2kKeyword HFX_LIBRARY
 syn keyword cp2kKeyword HIGH_LEVEL_EMBED_SUBSYS
 syn keyword cp2kKeyword HILL_TAIL_CUTOFF
 syn keyword cp2kKeyword HISTORY
