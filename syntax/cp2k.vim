@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.1 (Development Version) (git:440cf4f)
+" CP2K-Version: CP2K version 2026.1 (Development Version) (git:97cfbf5)
 
 if exists("b:current_syntax")
    finish
@@ -1114,6 +1114,7 @@ syn keyword cp2kSection BOND_ORBITALS
 syn keyword cp2kSection BOND_ROTATION
 syn keyword cp2kSection BOX_DISPLACEMENTS
 syn keyword cp2kSection BOX_PROBABILITIES
+syn keyword cp2kSection BROADEN
 syn keyword cp2kSection BS
 syn keyword cp2kSection BS.SUBSYSTEMSBOUNDARIES
 syn keyword cp2kSection BSE
@@ -1197,6 +1198,7 @@ syn keyword cp2kSection CUBES
 syn keyword cp2kSection CURRENT
 syn keyword cp2kSection CURRENT_CUBES
 syn keyword cp2kSection CURRENT_INT
+syn keyword cp2kSection CURVE
 syn keyword cp2kSection CURVY_STEPS
 syn keyword cp2kSection CUSTOM_ENV
 syn keyword cp2kSection CUTOFF_CALIB
@@ -2803,8 +2805,6 @@ syn keyword cp2kKeyword BRACK_LIMIT
 syn keyword cp2kKeyword BRENT_MAX_ITER
 syn keyword cp2kKeyword BRENT_TOL
 syn keyword cp2kKeyword BROADENING
-syn keyword cp2kKeyword BROADEN_TYPE
-syn keyword cp2kKeyword BROADEN_WIDTH
 syn keyword cp2kKeyword BROYDEN_ADAPTIVE_SIGMA
 syn keyword cp2kKeyword BROYDEN_BETA
 syn keyword cp2kKeyword BROYDEN_ENABLE_FLIP
@@ -4625,7 +4625,6 @@ syn keyword cp2kKeyword RANDOMIZE_VARIABLES
 syn keyword cp2kKeyword RANDOMTOSKIP
 syn keyword cp2kKeyword RANGE
 syn keyword cp2kKeyword RAOH
-syn keyword cp2kKeyword RAW
 syn keyword cp2kKeyword RCLUS
 syn keyword cp2kKeyword RCOV_MULTIPLICATION
 syn keyword cp2kKeyword RCUT
