@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:a0df33d)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:15c7cac)
 
 if exists("b:current_syntax")
    finish
@@ -3040,8 +3040,11 @@ syn keyword cp2kKeyword CURRENT.WRITETRANSMISSION
 syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_RADIUS
+syn keyword cp2kKeyword CUTOFF_RADIUS_G_W
 syn keyword cp2kKeyword CUTOFF_RADIUS_RI
-syn keyword cp2kKeyword CUTOFF_RADIUS_RI_RS
+syn keyword cp2kKeyword CUTOFF_RADIUS_RL_AO
+syn keyword cp2kKeyword CUTOFF_RADIUS_RL_RI
+syn keyword cp2kKeyword CUTOFF_RADIUS_RL_W
 syn keyword cp2kKeyword CUTOFF_TYPE
 syn keyword cp2kKeyword CUTOUT
 syn keyword cp2kKeyword CYCLE
@@ -3834,6 +3837,7 @@ syn keyword cp2kKeyword KEEP_ANGLES
 syn keyword cp2kKeyword KEEP_FILES
 syn keyword cp2kKeyword KEEP_QUADRATURE
 syn keyword cp2kKeyword KEEP_SPACE_GROUP
+syn keyword cp2kKeyword KEEP_SPARSITY_RL
 syn keyword cp2kKeyword KEEP_SYMMETRY
 syn keyword cp2kKeyword KEEP_VOLUME
 syn keyword cp2kKeyword KERNEL
@@ -4327,6 +4331,7 @@ syn keyword cp2kKeyword N_LOOP
 syn keyword cp2kKeyword N_MINIMAX
 syn keyword cp2kKeyword N_MU
 syn keyword cp2kKeyword N_OUTER
+syn keyword cp2kKeyword N_PANELS
 syn keyword cp2kKeyword N_POINTS_BEYN
 syn keyword cp2kKeyword N_POINTS_INV
 syn keyword cp2kKeyword N_PROCS_PER_ATOM_Z_LP
@@ -5035,6 +5040,7 @@ syn keyword cp2kKeyword SPHERICAL_CUTOFF
 syn keyword cp2kKeyword SPHERICAL_HARMONICS
 syn keyword cp2kKeyword SPINCONFLEADS
 syn keyword cp2kKeyword SPINFLIP
+syn keyword cp2kKeyword SPINPOL_PARAM_FILE_NAME
 syn keyword cp2kKeyword SPIN_CHANNEL
 syn keyword cp2kKeyword SPIN_CONFIG
 syn keyword cp2kKeyword SPIN_CONFIGURATION
@@ -5042,6 +5048,8 @@ syn keyword cp2kKeyword SPIN_DENS_CONV_INT
 syn keyword cp2kKeyword SPIN_DENS_CONV_MAX
 syn keyword cp2kKeyword SPIN_DIPOLE
 syn keyword cp2kKeyword SPIN_ORBIT_COUPLING
+syn keyword cp2kKeyword SPIN_POLARISATION
+syn keyword cp2kKeyword SPIN_POL_PARAM
 syn keyword cp2kKeyword SPLINE_DATA
 syn keyword cp2kKeyword SPLINE_FIND_COEFFS
 syn keyword cp2kKeyword SPLINE_INFO
