@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:15c7cac)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:9cbee8b)
 
 if exists("b:current_syntax")
    finish
@@ -114,6 +114,7 @@ syn keyword cp2kConstant ANDERSON
 syn keyword cp2kConstant ANDERSON_STABLE
 syn keyword cp2kConstant ANDREUSSI
 syn keyword cp2kConstant ANGSTROM
+syn keyword cp2kConstant AO
 syn keyword cp2kConstant AO_ORTHO
 syn keyword cp2kConstant ARNOLDI
 syn keyword cp2kConstant ASPC
@@ -828,6 +829,7 @@ syn keyword cp2kConstant ROTINV
 syn keyword cp2kConstant ROW
 syn keyword cp2kConstant RPA
 syn keyword cp2kConstant RPMD
+syn keyword cp2kConstant RS
 syn keyword cp2kConstant RTBSE
 syn keyword cp2kConstant RTP
 syn keyword cp2kConstant RT_PROPAGATION
@@ -1972,6 +1974,7 @@ syn keyword cp2kSection LINEAR
 syn keyword cp2kSection LINE_SEARCH
 syn keyword cp2kSection LINK
 syn keyword cp2kSection LINRES
+syn keyword cp2kSection LIOUVILLIAN_EIG
 syn keyword cp2kSection LOAD_BALANCE
 syn keyword cp2kSection LOCALIZE
 syn keyword cp2kSection LOCALIZED_MOMENTS
@@ -3077,6 +3080,8 @@ syn keyword cp2kKeyword DC
 syn keyword cp2kKeyword DE
 syn keyword cp2kKeyword DEBUG
 syn keyword cp2kKeyword DEBUG_DIPOLE
+syn keyword cp2kKeyword DEBUG_DISABLE_HARTREE
+syn keyword cp2kKeyword DEBUG_DISABLE_SEX
 syn keyword cp2kKeyword DEBUG_EXTERNAL_METHOD
 syn keyword cp2kKeyword DEBUG_FORCES
 syn keyword cp2kKeyword DEBUG_FULL_KPOINT_SYMMETRY
@@ -3132,6 +3137,7 @@ syn keyword cp2kKeyword DFTB3_PARAM
 syn keyword cp2kKeyword DFTD3_CORRECTION
 syn keyword cp2kKeyword DFTD4_CORRECTION
 syn keyword cp2kKeyword DGEMM
+syn keyword cp2kKeyword DIAGNOSE_LIOUVILLIAN_EIG
 syn keyword cp2kKeyword DIAGONALIZATION
 syn keyword cp2kKeyword DIAGONAL_DFTB3
 syn keyword cp2kKeyword DIAG_METHOD
@@ -3361,6 +3367,7 @@ syn keyword cp2kKeyword ENERGY_WEIGHT
 syn keyword cp2kKeyword ENERGY_WINDOW
 syn keyword cp2kKeyword ENERGY_ZERO
 syn keyword cp2kKeyword ENFORCE_DECREASE
+syn keyword cp2kKeyword ENFORCE_MAX_DT
 syn keyword cp2kKeyword ENSCALE
 syn keyword cp2kKeyword ENSEMBLE
 syn keyword cp2kKeyword ENVELOP
@@ -3686,6 +3693,7 @@ syn keyword cp2kKeyword GRAD
 syn keyword cp2kKeyword GRADIENT_CUTOFF
 syn keyword cp2kKeyword GRID
 syn keyword cp2kKeyword GRID_2D
+syn keyword cp2kKeyword GRID_FILE_SUFFIX
 syn keyword cp2kKeyword GRID_OPT
 syn keyword cp2kKeyword GRID_POINTS
 syn keyword cp2kKeyword GRID_POINTS_GH
@@ -3842,6 +3850,7 @@ syn keyword cp2kKeyword KEEP_SYMMETRY
 syn keyword cp2kKeyword KEEP_VOLUME
 syn keyword cp2kKeyword KERNEL
 syn keyword cp2kKeyword KERNEL_FILE_NAME
+syn keyword cp2kKeyword KERNEL_RI
 syn keyword cp2kKeyword KG
 syn keyword cp2kKeyword KG_METHOD
 syn keyword cp2kKeyword KG_POTENTIAL
@@ -3902,6 +3911,7 @@ syn keyword cp2kKeyword LEVY_CORRELATED
 syn keyword cp2kKeyword LEVY_POS_SAMPLE
 syn keyword cp2kKeyword LEVY_SEED
 syn keyword cp2kKeyword LEVY_TEMP_FACTOR
+syn keyword cp2kKeyword LINEARIZED_BSE_PROPAGATION
 syn keyword cp2kKeyword LINEAR_SOLVER
 syn keyword cp2kKeyword LINESEARCH
 syn keyword cp2kKeyword LINE_SEARCH
@@ -5158,6 +5168,7 @@ syn keyword cp2kKeyword TB3_INTERACTION
 syn keyword cp2kKeyword TC_PRESSURE
 syn keyword cp2kKeyword TC_TEMPERATURE
 syn keyword cp2kKeyword TDA
+syn keyword cp2kKeyword TDA_SHIFT_TO_FIRST_PEAK
 syn keyword cp2kKeyword TDDFT_SCF
 syn keyword cp2kKeyword TD_MO_INDEX
 syn keyword cp2kKeyword TD_MO_SPIN
@@ -5934,6 +5945,7 @@ syn keyword cp2kKeyword LMAXRHO0
 syn keyword cp2kKeyword LMAXRHO1
 syn keyword cp2kKeyword LOC DO_LOC
 syn keyword cp2kKeyword LRI_BASIS
+syn keyword cp2kKeyword LRRTBSE
 syn keyword cp2kKeyword LSHIFT
 syn keyword cp2kKeyword M
 syn keyword cp2kKeyword MASS
