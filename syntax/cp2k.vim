@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:9cbee8b)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:678364b)
 
 if exists("b:current_syntax")
    finish
@@ -638,6 +638,7 @@ syn keyword cp2kConstant MP_GRID
 syn keyword cp2kConstant MSST
 syn keyword cp2kConstant MSST_DAMPED
 syn keyword cp2kConstant MT
+syn keyword cp2kConstant MTLR
 syn keyword cp2kConstant MULLIKEN
 syn keyword cp2kConstant MULLIKEN_CHARGES
 syn keyword cp2kConstant MULTIPLE_MINIMUM_DEGREE
@@ -935,6 +936,7 @@ syn keyword cp2kConstant TC2
 syn keyword cp2kConstant TDA+ABBA
 syn keyword cp2kConstant TDDFT
 syn keyword cp2kConstant TDHF
+syn keyword cp2kConstant TENSORIAL
 syn keyword cp2kConstant TERSOFF
 syn keyword cp2kConstant TEST
 syn keyword cp2kConstant TETRAGONAL
@@ -1075,6 +1077,7 @@ syn keyword cp2kSection APT
 syn keyword cp2kSection ATOM
 syn keyword cp2kSection ATOMIC
 syn keyword cp2kSection ATOMIC_COORDINATES
+syn keyword cp2kSection ATOMIC_PROJECTOR_TENSORIAL
 syn keyword cp2kSection ATOM_GROUP
 syn keyword cp2kSection ATOM_INFO
 syn keyword cp2kSection ATOM_LIST
@@ -2203,6 +2206,7 @@ syn keyword cp2kSection MINBAS_MOLDEN
 syn keyword cp2kSection MINIMA_CRAWLING
 syn keyword cp2kSection MINIMA_HOPPING
 syn keyword cp2kSection MINIMA_TRAJECTORY
+syn keyword cp2kSection MINIMUM_TRACKING_LINEAR_RESPONSE
 syn keyword cp2kSection MIXED
 syn keyword cp2kSection MIXED_CDFT
 syn keyword cp2kSection MIXED_ENERGIES
@@ -3487,6 +3491,7 @@ syn keyword cp2kKeyword EPS_SYMMETRY
 syn keyword cp2kKeyword EPS_TARGET_FACTOR
 syn keyword cp2kKeyword EPS_TAYLOR
 syn keyword cp2kKeyword EPS_TD_FILTER
+syn keyword cp2kKeyword EPS_U_J_LOOP
 syn keyword cp2kKeyword EPS_U_RAMPING
 syn keyword cp2kKeyword EPS_X
 syn keyword cp2kKeyword EP_LIN_SOLVER
@@ -3752,6 +3757,7 @@ syn keyword cp2kKeyword IMAGE_MATRIX_METHOD
 syn keyword cp2kKeyword IMAGE_RESTART_FILE_NAME
 syn keyword cp2kKeyword IMAGINARY_TIME_STRIDE
 syn keyword cp2kKeyword INCLUDE_IMAGES
+syn keyword cp2kKeyword INDEX_PERTURBED_ATOM
 syn keyword cp2kKeyword INDICES
 syn keyword cp2kKeyword INERTIA
 syn keyword cp2kKeyword INET
@@ -4025,6 +4031,7 @@ syn keyword cp2kKeyword MAX_LEVEL_SPECTRAL
 syn keyword cp2kKeyword MAX_LS
 syn keyword cp2kKeyword MAX_MEMORY
 syn keyword cp2kKeyword MAX_MOMENT
+syn keyword cp2kKeyword MAX_MTLR_LOOP
 syn keyword cp2kKeyword MAX_MULTIPOLE_EXPANSION
 syn keyword cp2kKeyword MAX_NMO
 syn keyword cp2kKeyword MAX_N_QM
@@ -4472,6 +4479,7 @@ syn keyword cp2kKeyword PERIODIC_CORRECTION
 syn keyword cp2kKeyword PERIODIC_DIPOLE_OPERATOR
 syn keyword cp2kKeyword PERIODIC_REFERENCE
 syn keyword cp2kKeyword PERIODIC_REGION
+syn keyword cp2kKeyword PERTURBATION_STRENGTH
 syn keyword cp2kKeyword PF
 syn keyword cp2kKeyword PFACTOR
 syn keyword cp2kKeyword PGF_RADII
