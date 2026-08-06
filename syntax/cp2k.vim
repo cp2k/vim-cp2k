@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:678364b)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:12fe96e)
 
 if exists("b:current_syntax")
    finish
@@ -955,6 +955,7 @@ syn keyword cp2kConstant TP_VAL
 syn keyword cp2kConstant TP_XFH
 syn keyword cp2kConstant TP_XHH
 syn keyword cp2kConstant TRADITIONAL
+syn keyword cp2kConstant TRAJECTORY
 syn keyword cp2kConstant TRANSITION_STATE
 syn keyword cp2kConstant TRANSMISSION
 syn keyword cp2kConstant TRANSPORT
@@ -987,7 +988,6 @@ syn keyword cp2kConstant USER
 syn keyword cp2kConstant USER_DEFINED
 syn keyword cp2kConstant USE_GUESS
 syn keyword cp2kConstant USE_PREV_P
-syn keyword cp2kConstant USE_PREV_RHO_R
 syn keyword cp2kConstant USE_PREV_WF
 syn keyword cp2kConstant VDW
 syn keyword cp2kConstant VECTOR
@@ -3602,6 +3602,7 @@ syn keyword cp2kKeyword FLETCHER_REEVES
 syn keyword cp2kKeyword FLIP_FRAGMENT_A
 syn keyword cp2kKeyword FLIP_FRAGMENT_B
 syn keyword cp2kKeyword FLOATING_BASIS_CENTER
+syn keyword cp2kKeyword FLOQUET_BS_FILE_NAME
 syn keyword cp2kKeyword FLOQUET_DOS_FILE_NAME
 syn keyword cp2kKeyword FLUSH_SHOULD_FLUSH
 syn keyword cp2kKeyword FOLD_COORD
@@ -4071,6 +4072,7 @@ syn keyword cp2kKeyword MEMORY_FACTOR
 syn keyword cp2kKeyword MEMORY_INFO
 syn keyword cp2kKeyword MEMORY_PER_PROC
 syn keyword cp2kKeyword MEMORY_PROGRESSION_FACTOR
+syn keyword cp2kKeyword MEM_FILL_FRACTION
 syn keyword cp2kKeyword METADYNAMICS
 syn keyword cp2kKeyword METALS
 syn keyword cp2kKeyword METHOD
@@ -4666,6 +4668,7 @@ syn keyword cp2kKeyword RADIAL_GRID
 syn keyword cp2kKeyword RADIAL_QUADRATURE
 syn keyword cp2kKeyword RADII
 syn keyword cp2kKeyword RADIUS
+syn keyword cp2kKeyword RAD_SPLINE_N
 syn keyword cp2kKeyword RANDOMIZE
 syn keyword cp2kKeyword RANDOMIZE_POS
 syn keyword cp2kKeyword RANDOMIZE_VARIABLES
