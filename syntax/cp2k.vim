@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:12fe96e)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:852b9a4)
 
 if exists("b:current_syntax")
    finish
@@ -245,6 +245,7 @@ syn keyword cp2kConstant COULOMB
 syn keyword cp2kConstant COUPLED
 syn keyword cp2kConstant COVALENT
 syn keyword cp2kConstant CP2K
+syn keyword cp2kConstant CP2K_DEFAULT
 syn keyword cp2kConstant CPCM
 syn keyword cp2kConstant CPU
 syn keyword cp2kConstant CRAZY
@@ -299,6 +300,7 @@ syn keyword cp2kConstant DIRECT_CELL_OPT
 syn keyword cp2kConstant DIRECT_MUADJ
 syn keyword cp2kConstant DIRECT_MUADJ_LOWMEM
 syn keyword cp2kConstant DIRECT_P_MIXING
+syn keyword cp2kConstant DIRECT_VALENCE
 syn keyword cp2kConstant DISTRIBUTED
 syn keyword cp2kConstant DKH
 syn keyword cp2kConstant DKH(0)
@@ -726,6 +728,8 @@ syn keyword cp2kConstant PAIR_POTENTIAL
 syn keyword cp2kConstant PARALLEL
 syn keyword cp2kConstant PARDISO
 syn keyword cp2kConstant PATIENT
+syn keyword cp2kConstant PAW_ONE_CENTER
+syn keyword cp2kConstant PAW_ONE_CENTER_SPLIT
 syn keyword cp2kConstant PBC_AWARE_MAX_MINUS_MIN
 syn keyword cp2kConstant PBE
 syn keyword cp2kConstant PBE0
@@ -819,6 +823,7 @@ syn keyword cp2kConstant RGF
 syn keyword cp2kConstant RHF
 syn keyword cp2kConstant RHO
 syn keyword cp2kConstant RHOMBOHEDRAL
+syn keyword cp2kConstant RHO_GRAD
 syn keyword cp2kConstant RICHARDSON
 syn keyword cp2kConstant RIGPW
 syn keyword cp2kConstant RI_EMBEDDING
@@ -930,6 +935,7 @@ syn keyword cp2kConstant T
 syn keyword cp2kConstant T92
 syn keyword cp2kConstant TAILORED
 syn keyword cp2kConstant TAMC
+syn keyword cp2kConstant TAU
 syn keyword cp2kConstant TAYLOR
 syn keyword cp2kConstant TBLITE
 syn keyword cp2kConstant TC2
@@ -4190,6 +4196,12 @@ syn keyword cp2kKeyword NATIVE_GRID_ATOM_CHUNK_ROUTING
 syn keyword cp2kKeyword NATIVE_GRID_ATOM_PARTITION
 syn keyword cp2kKeyword NATIVE_GRID_CUDA_DEVICE
 syn keyword cp2kKeyword NATIVE_GRID_DIAGNOSTICS
+syn keyword cp2kKeyword NATIVE_GRID_GAPW_ATOM_COMPOSITE_COMPONENTS
+syn keyword cp2kKeyword NATIVE_GRID_GAPW_ATOM_COMPOSITE_DIAGNOSTIC
+syn keyword cp2kKeyword NATIVE_GRID_GAPW_ATOM_COMPOSITE_FD_STEP
+syn keyword cp2kKeyword NATIVE_GRID_GAPW_ATOM_COMPOSITE_REFERENCE
+syn keyword cp2kKeyword NATIVE_GRID_GAPW_COMPOSITE_DIRECT_AO
+syn keyword cp2kKeyword NATIVE_GRID_GAPW_COMPOSITE_REFERENCE
 syn keyword cp2kKeyword NATIVE_GRID_GAPW_DENSITY_PARTITION
 syn keyword cp2kKeyword NATIVE_GRID_USE_CUDA
 syn keyword cp2kKeyword NATOMS
@@ -4605,6 +4617,7 @@ syn keyword cp2kKeyword PROJ_VELOCITY_VERLET
 syn keyword cp2kKeyword PROPAGATE_REF
 syn keyword cp2kKeyword PROPAGATOR
 syn keyword cp2kKeyword PRUNING_SCHEME
+syn keyword cp2kKeyword PSEUDOPOTENTIAL_GAPW_REPRESENTATION
 syn keyword cp2kKeyword PSEUDO_CANONICAL
 syn keyword cp2kKeyword PSEUDO_GRID_CUTOFF
 syn keyword cp2kKeyword PSEUDO_TYPE
