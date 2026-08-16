@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:852b9a4)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:fdbe441)
 
 if exists("b:current_syntax")
    finish
@@ -122,6 +122,7 @@ syn keyword cp2kConstant ATOM
 syn keyword cp2kConstant ATOMIC
 syn keyword cp2kConstant ATOMIC_KIND_BASIS
 syn keyword cp2kConstant ATOMS
+syn keyword cp2kConstant ATOM_COMPOSITE
 syn keyword cp2kConstant AUTO
 syn keyword cp2kConstant AUTOMATIC
 syn keyword cp2kConstant AUTOSELECT
@@ -232,6 +233,7 @@ syn keyword cp2kConstant COLLOCATE
 syn keyword cp2kConstant COLUMN
 syn keyword cp2kConstant COM
 syn keyword cp2kConstant COMMON
+syn keyword cp2kConstant COMMON_GRID
 syn keyword cp2kConstant COMPLEX
 syn keyword cp2kConstant COMPLEX_8
 syn keyword cp2kConstant CONJUGATE_GRADIENT
@@ -4203,6 +4205,7 @@ syn keyword cp2kKeyword NATIVE_GRID_GAPW_ATOM_COMPOSITE_REFERENCE
 syn keyword cp2kKeyword NATIVE_GRID_GAPW_COMPOSITE_DIRECT_AO
 syn keyword cp2kKeyword NATIVE_GRID_GAPW_COMPOSITE_REFERENCE
 syn keyword cp2kKeyword NATIVE_GRID_GAPW_DENSITY_PARTITION
+syn keyword cp2kKeyword NATIVE_GRID_LAYOUT
 syn keyword cp2kKeyword NATIVE_GRID_USE_CUDA
 syn keyword cp2kKeyword NATOMS
 syn keyword cp2kKeyword NBAS
