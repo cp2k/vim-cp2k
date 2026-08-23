@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:fdbe441)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:ae513ba)
 
 if exists("b:current_syntax")
    finish
@@ -3911,6 +3911,7 @@ syn keyword cp2kKeyword LAMBDA2
 syn keyword cp2kKeyword LAMBDA3
 syn keyword cp2kKeyword LANGEVIN
 syn keyword cp2kKeyword LAST_SNAPSHOT
+syn keyword cp2kKeyword LATTICE_FFT
 syn keyword cp2kKeyword LBIAS
 syn keyword cp2kKeyword LB_EXECUTION_SPACE
 syn keyword cp2kKeyword LDISCRETE
