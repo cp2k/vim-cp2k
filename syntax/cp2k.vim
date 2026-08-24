@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:ae513ba)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:7d24c81)
 
 if exists("b:current_syntax")
    finish
@@ -216,6 +216,7 @@ syn keyword cp2kConstant CG
 syn keyword cp2kConstant CHARGE
 syn keyword cp2kConstant CHARGE_CONSTRAINED_PROJECTION
 syn keyword cp2kConstant CHARMM
+syn keyword cp2kConstant CHEBYSHEV
 syn keyword cp2kConstant CHM
 syn keyword cp2kConstant CHOL
 syn keyword cp2kConstant CHOLESKY
@@ -2929,6 +2930,7 @@ syn keyword cp2kKeyword CHARGE_BETA
 syn keyword cp2kKeyword CHARGE_DISTR_WIDTH
 syn keyword cp2kKeyword CHARGE_EXTENDED
 syn keyword cp2kKeyword CHARGE_OCCUP
+syn keyword cp2kKeyword CHEBYSHEV_DEGREE
 syn keyword cp2kKeyword CHECK
 syn keyword cp2kKeyword CHECK_2C_ACCURACY
 syn keyword cp2kKeyword CHECK_2C_MATRIX
@@ -5068,6 +5070,7 @@ syn keyword cp2kKeyword SORT_BY_SELF_TIME
 syn keyword cp2kKeyword SO_CORRECTION
 syn keyword cp2kKeyword SPARSE
 syn keyword cp2kKeyword SPARSE_MOS
+syn keyword cp2kKeyword SPARSE_THRESHOLD
 syn keyword cp2kKeyword SPATIAL_ORIGIN
 syn keyword cp2kKeyword SPATIAL_ORIGIN_REFERENCE
 syn keyword cp2kKeyword SPECIAL_POINT
