@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:7d24c81)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:6114387)
 
 if exists("b:current_syntax")
    finish
@@ -96,6 +96,7 @@ syn keyword cp2kConstant AD
 syn keyword cp2kConstant ADAPT
 syn keyword cp2kConstant ADAPTIVEGRID
 syn keyword cp2kConstant ADD
+syn keyword cp2kConstant ADIIS
 syn keyword cp2kConstant ADMM1
 syn keyword cp2kConstant ADMM2
 syn keyword cp2kConstant ADMMP
@@ -609,6 +610,7 @@ syn keyword cp2kConstant MIXED
 syn keyword cp2kConstant MIXED_BEND_STRETCH
 syn keyword cp2kConstant MIXED_CDFT
 syn keyword cp2kConstant MIXED_PERIODIC
+syn keyword cp2kConstant MIXING
 syn keyword cp2kConstant MIX_CL
 syn keyword cp2kConstant MIX_CL_TRUNC
 syn keyword cp2kConstant MIX_LG
@@ -1062,6 +1064,7 @@ syn keyword cp2kSection ACTIVE_SPACE
 syn keyword cp2kSection ADD_MM_CHARGE
 syn keyword cp2kSection ADIABATIC_DYNAMICS
 syn keyword cp2kSection ADIABATIC_RESCALING
+syn keyword cp2kSection ADIIS
 syn keyword cp2kSection ADJMAT_WRITE
 syn keyword cp2kSection ADMM
 syn keyword cp2kSection ADMM_BASIS
@@ -1298,6 +1301,7 @@ syn keyword cp2kSection ERI_MME
 syn keyword cp2kSection ERI_MME_INFO
 syn keyword cp2kSection ERI_MME_TEST
 syn keyword cp2kSection ET_COUPLING
+syn keyword cp2kSection EVGW0
 syn keyword cp2kSection EWALD
 syn keyword cp2kSection EWALD_INFO
 syn keyword cp2kSection EXACT_EXCHANGE
@@ -2412,6 +2416,7 @@ syn keyword cp2kSection RI_METRIC
 syn keyword cp2kSection RI_METRIC_2C_INTS
 syn keyword cp2kSection RI_MP2
 syn keyword cp2kSection RI_RPA
+syn keyword cp2kSection RI_RS
 syn keyword cp2kSection RI_SOS_MP2
 syn keyword cp2kSection RMSD
 syn keyword cp2kSection RNG_INIT
@@ -4835,7 +4840,6 @@ syn keyword cp2kKeyword RI_AUX_BASIS_SET
 syn keyword cp2kKeyword RI_FLAVOR
 syn keyword cp2kKeyword RI_METRIC
 syn keyword cp2kKeyword RI_REGION
-syn keyword cp2kKeyword RI_RS
 syn keyword cp2kKeyword RI_SIGMA_X
 syn keyword cp2kKeyword RI_SINV
 syn keyword cp2kKeyword RI_STATISTIC
@@ -5309,6 +5313,7 @@ syn keyword cp2kKeyword UNIT_LENGTH
 syn keyword cp2kKeyword UNIT_WN
 syn keyword cp2kKeyword UNIX
 syn keyword cp2kKeyword UPDATE_HS
+syn keyword cp2kKeyword UPDATE_METHOD
 syn keyword cp2kKeyword UPDATE_XC_ENERGY
 syn keyword cp2kKeyword UPPER_BOUND
 syn keyword cp2kKeyword UPPER_ENERGY_CUTOFF
