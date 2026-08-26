@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:6114387)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:0341268)
 
 if exists("b:current_syntax")
    finish
@@ -128,12 +128,15 @@ syn keyword cp2kConstant AUTO
 syn keyword cp2kConstant AUTOMATIC
 syn keyword cp2kConstant AUTOSELECT
 syn keyword cp2kConstant AVERAGE
+syn keyword cp2kConstant AVX2_BLOCK1
 syn keyword cp2kConstant AVX2_BLOCK2
 syn keyword cp2kConstant AVX2_BLOCK4
 syn keyword cp2kConstant AVX2_BLOCK6
+syn keyword cp2kConstant AVX512_BLOCK1
 syn keyword cp2kConstant AVX512_BLOCK2
 syn keyword cp2kConstant AVX512_BLOCK4
 syn keyword cp2kConstant AVX512_BLOCK6
+syn keyword cp2kConstant AVX_BLOCK1
 syn keyword cp2kConstant AVX_BLOCK2
 syn keyword cp2kConstant AVX_BLOCK4
 syn keyword cp2kConstant AVX_BLOCK6
@@ -656,6 +659,7 @@ syn keyword cp2kConstant MUMPS
 syn keyword cp2kConstant MURAKNOWLES
 syn keyword cp2kConstant MURRAYHANDYLAMING
 syn keyword cp2kConstant MWATER
+syn keyword cp2kConstant NATIVE
 syn keyword cp2kConstant NE
 syn keyword cp2kConstant NEGATIVE
 syn keyword cp2kConstant NEGF
@@ -915,6 +919,7 @@ syn keyword cp2kConstant SPREADMAX
 syn keyword cp2kConstant SPREADMIN
 syn keyword cp2kConstant SQUARE
 syn keyword cp2kConstant SSE
+syn keyword cp2kConstant SSE_BLOCK1
 syn keyword cp2kConstant SSE_BLOCK2
 syn keyword cp2kConstant SSE_BLOCK4
 syn keyword cp2kConstant SSE_BLOCK6
@@ -2344,6 +2349,7 @@ syn keyword cp2kSection POPULATION
 syn keyword cp2kSection POTENTIAL
 syn keyword cp2kSection POWELL
 syn keyword cp2kSection PP_BASIS
+syn keyword cp2kSection PREFERRED_INTEGRAL_LIBRARY
 syn keyword cp2kSection PRINT
 syn keyword cp2kSection PRINT_AVERAGES
 syn keyword cp2kSection PRINT_DFTD
@@ -3029,6 +3035,8 @@ syn keyword cp2kKeyword CORR_MOS_OCC
 syn keyword cp2kKeyword CORR_MOS_VIRT
 syn keyword cp2kKeyword CORR_RADIUS
 syn keyword cp2kKeyword COST_MODEL
+syn keyword cp2kKeyword COULOMB_2C
+syn keyword cp2kKeyword COULOMB_3C
 syn keyword cp2kKeyword COULOMB_CONSTANTS
 syn keyword cp2kKeyword COULOMB_INTEGRALS
 syn keyword cp2kKeyword COULOMB_INTERACTION
@@ -3266,6 +3274,7 @@ syn keyword cp2kKeyword ELECTRON_CONFIGURATION
 syn keyword cp2kKeyword ELEC_CONF
 syn keyword cp2kKeyword ELEMENT
 syn keyword cp2kKeyword ELEMENT_CUTOFF
+syn keyword cp2kKeyword ELPA_COMPLEX_KERNEL
 syn keyword cp2kKeyword ELPA_FORCE_REDISTRIBUTE
 syn keyword cp2kKeyword ELPA_KERNEL
 syn keyword cp2kKeyword ELPA_NEIGVEC_MIN
@@ -5136,6 +5145,7 @@ syn keyword cp2kKeyword STOP_ON_MISMATCH
 syn keyword cp2kKeyword STORAGE_LOCATION
 syn keyword cp2kKeyword STORE_STEP_NUMBER
 syn keyword cp2kKeyword STORE_WFN
+syn keyword cp2kKeyword STO_FLEX
 syn keyword cp2kKeyword STO_NG
 syn keyword cp2kKeyword STRENGTH
 syn keyword cp2kKeyword STRESS_TENSOR
