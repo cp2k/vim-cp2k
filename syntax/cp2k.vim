@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:0341268)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:8ddd909)
 
 if exists("b:current_syntax")
    finish
@@ -3075,6 +3075,7 @@ syn keyword cp2kKeyword CUTOFF_RADIUS_RI
 syn keyword cp2kKeyword CUTOFF_RADIUS_RL_AO
 syn keyword cp2kKeyword CUTOFF_RADIUS_RL_RI
 syn keyword cp2kKeyword CUTOFF_RADIUS_RL_W
+syn keyword cp2kKeyword CUTOFF_RADIUS_W0
 syn keyword cp2kKeyword CUTOFF_TYPE
 syn keyword cp2kKeyword CUTOUT
 syn keyword cp2kKeyword CYCLE
@@ -3094,8 +3095,10 @@ syn keyword cp2kKeyword D3_EXCLUDE_KIND
 syn keyword cp2kKeyword D3_EXCLUDE_KIND_PAIR
 syn keyword cp2kKeyword D3_REFERENCE_CODE
 syn keyword cp2kKeyword D3_SCALING
+syn keyword cp2kKeyword D4_3B_CUTOFF_WIDTH
 syn keyword cp2kKeyword D4_CN_CUTOFF
 syn keyword cp2kKeyword D4_CUTOFF
+syn keyword cp2kKeyword D4_CUTOFF_WIDTH
 syn keyword cp2kKeyword D4_DEBUG
 syn keyword cp2kKeyword D4_REFERENCE_CODE
 syn keyword cp2kKeyword D4_SCALING
@@ -3445,6 +3448,7 @@ syn keyword cp2kKeyword EPS_FILTER_2C
 syn keyword cp2kKeyword EPS_FILTER_FACTOR
 syn keyword cp2kKeyword EPS_FILTER_MATRIX
 syn keyword cp2kKeyword EPS_FILTER_MO
+syn keyword cp2kKeyword EPS_FILTER_RHO
 syn keyword cp2kKeyword EPS_FLOQUET
 syn keyword cp2kKeyword EPS_FUNCTION
 syn keyword cp2kKeyword EPS_GEO
@@ -4404,6 +4408,7 @@ syn keyword cp2kKeyword OCC_ALPHA
 syn keyword cp2kKeyword OCC_BETA
 syn keyword cp2kKeyword OCE_HARD
 syn keyword cp2kKeyword OCE_SOFT
+syn keyword cp2kKeyword ODA
 syn keyword cp2kKeyword OE_CORR
 syn keyword cp2kKeyword OLD_HILL_NUMBER
 syn keyword cp2kKeyword OLD_HILL_STEP
@@ -5910,6 +5915,7 @@ syn keyword cp2kKeyword CUBES_LU
 syn keyword cp2kKeyword CUTOFF_LIST
 syn keyword cp2kKeyword CUTOFF_RADIUS
 syn keyword cp2kKeyword D3_CUTOFF D4_3B_CUTOFF
+syn keyword cp2kKeyword D4_2B_CUTOFF_WIDTH
 syn keyword cp2kKeyword DIELECTRIC_CONSTANT EPSILON_RELATIVE EPSILON_SOLVENT
 syn keyword cp2kKeyword DIHEDRAL DIH
 syn keyword cp2kKeyword DIPOLE_SPIN
