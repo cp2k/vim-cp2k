@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:fd7f302)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:d2a9ebd)
 
 if exists("b:current_syntax")
    finish
@@ -1371,6 +1371,8 @@ syn keyword cp2kSection FRAGMENT_ENERGIES
 syn keyword cp2kSection FRAME
 syn keyword cp2kSection FREE_ENERGY
 syn keyword cp2kSection FREE_ENERGY_INFO
+syn keyword cp2kSection FRONTIER_ORBITALS
+syn keyword cp2kSection FRONTIER_ORBITAL_SCREENING
 syn keyword cp2kSection FT
 syn keyword cp2kSection FULL_RESTART
 syn keyword cp2kSection G3X3
@@ -2975,6 +2977,7 @@ syn keyword cp2kKeyword COARSE_GRAINED_WIDTH
 syn keyword cp2kKeyword COEFF
 syn keyword cp2kKeyword COEFFICIENT
 syn keyword cp2kKeyword COEFFICIENTS
+syn keyword cp2kKeyword COEFFICIENT_WEIGHT
 syn keyword cp2kKeyword COLLECTIVE
 syn keyword cp2kKeyword COLLECTIVE_COMMUNICATION
 syn keyword cp2kKeyword COLORING_METHOD
@@ -3365,6 +3368,7 @@ syn keyword cp2kKeyword EMBED_METHOD
 syn keyword cp2kKeyword EMBED_RESTART_FILE_NAME
 syn keyword cp2kKeyword EMBED_SPIN_CUBE_FILE_NAME
 syn keyword cp2kKeyword EMPDOSKSO
+syn keyword cp2kKeyword EMPTY_OVERLAP_WEIGHT
 syn keyword cp2kKeyword EMPTY_STATES_TOLERANCE
 syn keyword cp2kKeyword ENABLE_MPI_IO
 syn keyword cp2kKeyword END_ELEM
@@ -3693,6 +3697,8 @@ syn keyword cp2kKeyword GAPW_1C_BASIS
 syn keyword cp2kKeyword GAPW_ACCURATE_XCINT
 syn keyword cp2kKeyword GAPW_MAX_ALPHA
 syn keyword cp2kKeyword GAPW_PRJ_RADII
+syn keyword cp2kKeyword GAP_ENERGY_SCALE
+syn keyword cp2kKeyword GAP_WEIGHT
 syn keyword cp2kKeyword GAUGE
 syn keyword cp2kKeyword GAUGE_ATOM_RADIUS
 syn keyword cp2kKeyword GAUGE_ORIG
@@ -4329,6 +4335,7 @@ syn keyword cp2kKeyword NT_HILLS
 syn keyword cp2kKeyword NUMBERLINEARMIX
 syn keyword cp2kKeyword NUMBER_INTEGRATION_GROUPS
 syn keyword cp2kKeyword NUMBER_OF_ATOMS
+syn keyword cp2kKeyword NUMBER_OF_OPTIMIZATIONS
 syn keyword cp2kKeyword NUMBER_OF_REPLICA
 syn keyword cp2kKeyword NUMBER_OF_SHELLS
 syn keyword cp2kKeyword NUMBER_OF_WALKERS
@@ -4406,6 +4413,7 @@ syn keyword cp2kKeyword OCCUPATION
 syn keyword cp2kKeyword OCCUPATION_NUMBERS
 syn keyword cp2kKeyword OCCUPATION_NUMBERS_STATS
 syn keyword cp2kKeyword OCCUPATION_PRECONDITIONER
+syn keyword cp2kKeyword OCCUPIED_WEIGHT
 syn keyword cp2kKeyword OCC_ALPHA
 syn keyword cp2kKeyword OCC_BETA
 syn keyword cp2kKeyword OCE_HARD
@@ -5406,7 +5414,10 @@ syn keyword cp2kKeyword VIB_MOLDEN_NAME
 syn keyword cp2kKeyword VIB_WEIGHT
 syn keyword cp2kKeyword VIRIAL
 syn keyword cp2kKeyword VIRIAL_TEMPS
+syn keyword cp2kKeyword VIRTUAL_ENERGY_CUTOFF
+syn keyword cp2kKeyword VIRTUAL_ENERGY_SMOOTHING
 syn keyword cp2kKeyword VIRTUAL_NLMOS
+syn keyword cp2kKeyword VIRTUAL_WEIGHT
 syn keyword cp2kKeyword VN_CONFIDENCE_LIMIT
 syn keyword cp2kKeyword VOIGT_MIXING
 syn keyword cp2kKeyword VOLUME
