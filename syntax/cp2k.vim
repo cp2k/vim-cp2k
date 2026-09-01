@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:d2a9ebd)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:d02dd26)
 
 if exists("b:current_syntax")
    finish
@@ -260,6 +260,7 @@ syn keyword cp2kConstant CRD
 syn keyword cp2kConstant CS
 syn keyword cp2kConstant CSVR
 syn keyword cp2kConstant CUBE
+syn keyword cp2kConstant CUBE_FIT
 syn keyword cp2kConstant CUBIC
 syn keyword cp2kConstant CUSOLVER
 syn keyword cp2kConstant CUSTOM
@@ -482,6 +483,7 @@ syn keyword cp2kConstant GTH
 syn keyword cp2kConstant GTO_BASIS
 syn keyword cp2kConstant GVD
 syn keyword cp2kConstant GVR
+syn keyword cp2kConstant GW
 syn keyword cp2kConstant HAGER_ZHANG
 syn keyword cp2kConstant HARD
 syn keyword cp2kConstant HARD_MINUS_SOFT
@@ -2555,6 +2557,7 @@ syn keyword cp2kSection VEL_CONTROL
 syn keyword cp2kSection VIBRATIONAL_ANALYSIS
 syn keyword cp2kSection VIRTUAL_SITE
 syn keyword cp2kSection VORONOI
+syn keyword cp2kSection VORONOIIPZ
 syn keyword cp2kSection VWN
 syn keyword cp2kSection V_HARTREE_CUBE
 syn keyword cp2kSection V_RESP_CUBE
@@ -3256,6 +3259,10 @@ syn keyword cp2kKeyword DRY_RUN
 syn keyword cp2kKeyword DT
 syn keyword cp2kKeyword DX
 syn keyword cp2kKeyword DYNAMIC_THRESHOLD
+syn keyword cp2kKeyword D_0
+syn keyword cp2kKeyword D_1
+syn keyword cp2kKeyword D_2
+syn keyword cp2kKeyword D_3
 syn keyword cp2kKeyword D_EXPONENTS
 syn keyword cp2kKeyword D_FILTER
 syn keyword cp2kKeyword D_QUANTUM_NUMBERS
@@ -3621,9 +3628,13 @@ syn keyword cp2kKeyword FIRST_PREC
 syn keyword cp2kKeyword FIRST_SNAPSHOT
 syn keyword cp2kKeyword FIST_SCALE_FACTOR
 syn keyword cp2kKeyword FIT
+syn keyword cp2kKeyword FIT_EPS
 syn keyword cp2kKeyword FIT_EXPRESS
 syn keyword cp2kKeyword FIT_E_MAX
 syn keyword cp2kKeyword FIT_E_MIN
+syn keyword cp2kKeyword FIT_MAX_BACKTRACK
+syn keyword cp2kKeyword FIT_MAX_ITER
+syn keyword cp2kKeyword FIT_STEP_SIZE
 syn keyword cp2kKeyword FIXED
 syn keyword cp2kKeyword FIXED_MAG
 syn keyword cp2kKeyword FIXED_MAGNETIC_MOMENT
@@ -3740,6 +3751,8 @@ syn keyword cp2kKeyword GRID_POINTS_GH
 syn keyword cp2kKeyword GRID_SELECT
 syn keyword cp2kKeyword GRID_SPACING
 syn keyword cp2kKeyword GRID_TOL
+syn keyword cp2kKeyword GROUPA
+syn keyword cp2kKeyword GROUPB
 syn keyword cp2kKeyword GROUP_ANALYSIS_NR
 syn keyword cp2kKeyword GROUP_CC_SIZE
 syn keyword cp2kKeyword GROUP_ENERGY_NR
@@ -4281,6 +4294,7 @@ syn keyword cp2kKeyword NICS_FILE_NAME
 syn keyword cp2kKeyword NIMAGES_IJ
 syn keyword cp2kKeyword NKRYLOV
 syn keyword cp2kKeyword NLUMO
+syn keyword cp2kKeyword NL_CUTOFF
 syn keyword cp2kKeyword NMC_FILE_NAME
 syn keyword cp2kKeyword NMIXING
 syn keyword cp2kKeyword NMOL
@@ -4319,6 +4333,7 @@ syn keyword cp2kKeyword NREP
 syn keyword cp2kKeyword NRESPA
 syn keyword cp2kKeyword NROW_BLOCK
 syn keyword cp2kKeyword NROW_BLOCKS
+syn keyword cp2kKeyword NRX
 syn keyword cp2kKeyword NR_NMC_STEPS
 syn keyword cp2kKeyword NR_TEMPERATURE
 syn keyword cp2kKeyword NSAMPLE_3C
@@ -5520,7 +5535,9 @@ syn keyword cp2kKeyword ZEEMANTERMBZ
 syn keyword cp2kKeyword ZERO_INITIAL_GUESS
 syn keyword cp2kKeyword ZET_MAX
 syn keyword cp2kKeyword ZET_MIN
+syn keyword cp2kKeyword ZIDX
 syn keyword cp2kKeyword ZLEFTVCTE
+syn keyword cp2kKeyword ZMID
 syn keyword cp2kKeyword ZMP_CONSTRAINT
 syn keyword cp2kKeyword ZORA_TYPE
 syn keyword cp2kKeyword ZRANGE
