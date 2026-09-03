@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:d02dd26)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:24d69ee)
 
 if exists("b:current_syntax")
    finish
@@ -552,6 +552,7 @@ syn keyword cp2kConstant LCAO
 syn keyword cp2kConstant LDA
 syn keyword cp2kConstant LDAFXC
 syn keyword cp2kConstant LDA_X_LIBXC
+syn keyword cp2kConstant LEAST_SQUARES
 syn keyword cp2kConstant LEGENDRE
 syn keyword cp2kConstant LENGTH
 syn keyword cp2kConstant LENOSKY
@@ -819,6 +820,7 @@ syn keyword cp2kConstant REDUCE
 syn keyword cp2kConstant REFERENCE
 syn keyword cp2kConstant REFLECTIVE
 syn keyword cp2kConstant REFTRAJ
+syn keyword cp2kConstant RELATIVE_ENTROPY
 syn keyword cp2kConstant REMOVE
 syn keyword cp2kConstant REPLICATED
 syn keyword cp2kConstant RES
@@ -1666,6 +1668,7 @@ syn keyword cp2kSection GOLD
 syn keyword cp2kSection GOODWIN
 syn keyword cp2kSection GRID
 syn keyword cp2kSection GRID_INFORMATION
+syn keyword cp2kSection GRID_OPTIMIZATION
 syn keyword cp2kSection GRRM
 syn keyword cp2kSection GTH_POTENTIAL
 syn keyword cp2kSection GUESS_CLI
@@ -3075,6 +3078,7 @@ syn keyword cp2kKeyword CUBE_FILES
 syn keyword cp2kKeyword CURRENT.WRITETRANSMISSION
 syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
+syn keyword cp2kKeyword CUTOFF_ATOMIC_CLUSTER
 syn keyword cp2kKeyword CUTOFF_RADIUS
 syn keyword cp2kKeyword CUTOFF_RADIUS_G_W
 syn keyword cp2kKeyword CUTOFF_RADIUS_RI
@@ -3191,6 +3195,7 @@ syn keyword cp2kKeyword DIRECTION
 syn keyword cp2kKeyword DIRECTIONAL_EXCITON_DESCRIPTORS
 syn keyword cp2kKeyword DIRECTORIES
 syn keyword cp2kKeyword DIRECTORY
+syn keyword cp2kKeyword DIRECT_DENSITY_MATRIX_ENERGY
 syn keyword cp2kKeyword DIRECT_GENERALIZED_DIAGONALIZATION
 syn keyword cp2kKeyword DISABLE_CACHE
 syn keyword cp2kKeyword DISABLE_EXCLUSION_LISTS
@@ -3634,7 +3639,10 @@ syn keyword cp2kKeyword FIT_E_MAX
 syn keyword cp2kKeyword FIT_E_MIN
 syn keyword cp2kKeyword FIT_MAX_BACKTRACK
 syn keyword cp2kKeyword FIT_MAX_ITER
+syn keyword cp2kKeyword FIT_METHOD
+syn keyword cp2kKeyword FIT_RELATIVE_ENTROPY_WEIGHT
 syn keyword cp2kKeyword FIT_STEP_SIZE
+syn keyword cp2kKeyword FIT_TEMPERATURE
 syn keyword cp2kKeyword FIXED
 syn keyword cp2kKeyword FIXED_MAG
 syn keyword cp2kKeyword FIXED_MAGNETIC_MOMENT
@@ -3749,6 +3757,7 @@ syn keyword cp2kKeyword GRID_OPT
 syn keyword cp2kKeyword GRID_POINTS
 syn keyword cp2kKeyword GRID_POINTS_GH
 syn keyword cp2kKeyword GRID_SELECT
+syn keyword cp2kKeyword GRID_SIZE
 syn keyword cp2kKeyword GRID_SPACING
 syn keyword cp2kKeyword GRID_TOL
 syn keyword cp2kKeyword GROUPA
@@ -4305,6 +4314,7 @@ syn keyword cp2kKeyword NNP_INPUT_FILE_NAME
 syn keyword cp2kKeyword NN_B
 syn keyword cp2kKeyword NN_RADIUS
 syn keyword cp2kKeyword NOCOMPATIBILITY
+syn keyword cp2kKeyword NOISE_SCALE
 syn keyword cp2kKeyword NOISY_GAMMA
 syn keyword cp2kKeyword NOISY_GAMMA_REGION
 syn keyword cp2kKeyword NONDIAG_ENERGY
@@ -4413,6 +4423,7 @@ syn keyword cp2kKeyword N_OUTER
 syn keyword cp2kKeyword N_PANELS
 syn keyword cp2kKeyword N_POINTS_BEYN
 syn keyword cp2kKeyword N_POINTS_INV
+syn keyword cp2kKeyword N_POINT_PERCENTAGE
 syn keyword cp2kKeyword N_PROCS_PER_ATOM_Z_LP
 syn keyword cp2kKeyword N_PRTN
 syn keyword cp2kKeyword N_RAND
@@ -4629,8 +4640,6 @@ syn keyword cp2kKeyword PRINT_CELL
 syn keyword cp2kKeyword PRINT_CIF
 syn keyword cp2kKeyword PRINT_COORDS
 syn keyword cp2kKeyword PRINT_CUBES
-syn keyword cp2kKeyword PRINT_DBT_CONTRACT
-syn keyword cp2kKeyword PRINT_DBT_CONTRACT_VERBOSE
 syn keyword cp2kKeyword PRINT_DENSITY
 syn keyword cp2kKeyword PRINT_DGEMM_INFO
 syn keyword cp2kKeyword PRINT_DIPOLE
