@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:375a5ce)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:2d1258d)
 
 if exists("b:current_syntax")
    finish
@@ -373,6 +373,7 @@ syn keyword cp2kConstant EXPLICIT_ORBITALS
 syn keyword cp2kConstant EXPONENTIAL
 syn keyword cp2kConstant EXPONENTS
 syn keyword cp2kConstant EXTERNAL
+syn keyword cp2kConstant EXTERNAL_DENSITY
 syn keyword cp2kConstant EXTXYZ
 syn keyword cp2kConstant EXT_LARGE
 syn keyword cp2kConstant EXT_MEDIUM
@@ -3580,6 +3581,7 @@ syn keyword cp2kKeyword EXPONENT_TAILORED_WEIGHTS
 syn keyword cp2kKeyword EXP_ACCURACY
 syn keyword cp2kKeyword EXTENDED_DELTA_CHARGE
 syn keyword cp2kKeyword EXTENSION_BASIS
+syn keyword cp2kKeyword EXTERNAL_DENSITY_FILE_NAME
 syn keyword cp2kKeyword EXTERNAL_PRESSURE
 syn keyword cp2kKeyword EXTERNAL_RESPONSE_ERROR_FILENAME
 syn keyword cp2kKeyword EXTERNAL_RESPONSE_FILENAME
