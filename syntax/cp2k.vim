@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:2d1258d)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:5e7fe52)
 
 if exists("b:current_syntax")
    finish
@@ -417,6 +417,7 @@ syn keyword cp2kConstant FUES
 syn keyword cp2kConstant FULL
 syn keyword cp2kConstant FULLDIAG
 syn keyword cp2kConstant FULL_ALL
+syn keyword cp2kConstant FULL_ALL_COVARIANT
 syn keyword cp2kConstant FULL_GPW
 syn keyword cp2kConstant FULL_KINETIC
 syn keyword cp2kConstant FULL_POTENTIAL_LAPWLO
@@ -3614,6 +3615,7 @@ syn keyword cp2kKeyword FERMI_LEVEL
 syn keyword cp2kKeyword FERMI_LEVEL_OFFSET
 syn keyword cp2kKeyword FERMI_LEVEL_SHIFTED
 syn keyword cp2kKeyword FERMI_LOW_RANK_BASE
+syn keyword cp2kKeyword FERMI_LOW_RANK_MAX_RANK
 syn keyword cp2kKeyword FFT
 syn keyword cp2kKeyword FFTW_PLAN_TYPE
 syn keyword cp2kKeyword FFTW_WISDOM_FILE_NAME
@@ -3965,6 +3967,7 @@ syn keyword cp2kKeyword LAMBDA3
 syn keyword cp2kKeyword LANGEVIN
 syn keyword cp2kKeyword LAST_SNAPSHOT
 syn keyword cp2kKeyword LATTICE_FFT
+syn keyword cp2kKeyword LATTICE_FFT_LOCAL_CELLS
 syn keyword cp2kKeyword LBFGS_CURVATURE_TOL
 syn keyword cp2kKeyword LBFGS_DAMPING
 syn keyword cp2kKeyword LBIAS
