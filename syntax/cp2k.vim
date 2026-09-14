@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:5e7fe52)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:5c1df3d)
 
 if exists("b:current_syntax")
    finish
@@ -1107,6 +1107,7 @@ syn keyword cp2kSection ATOMIC_PROJECTOR_TENSORIAL
 syn keyword cp2kSection ATOM_GROUP
 syn keyword cp2kSection ATOM_INFO
 syn keyword cp2kSection ATOM_LIST
+syn keyword cp2kSection AUTO_RI
 syn keyword cp2kSection AUXILIARY_DENSITY_MATRIX_METHOD
 syn keyword cp2kSection AVBMC
 syn keyword cp2kSection AVERAGES
@@ -4285,6 +4286,7 @@ syn keyword cp2kKeyword ND_B
 syn keyword cp2kKeyword NEGF_SCF
 syn keyword cp2kKeyword NEGLECT_ABC
 syn keyword cp2kKeyword NEIGHBOR_LISTS_FROM_SCRATCH
+syn keyword cp2kKeyword NEIGHBOR_RADIUS
 syn keyword cp2kKeyword NEL
 syn keyword cp2kKeyword NELEC
 syn keyword cp2kKeyword NELECTRON
@@ -4450,6 +4452,7 @@ syn keyword cp2kKeyword OCCUPATION_PRECONDITIONER
 syn keyword cp2kKeyword OCCUPIED_WEIGHT
 syn keyword cp2kKeyword OCC_ALPHA
 syn keyword cp2kKeyword OCC_BETA
+syn keyword cp2kKeyword OCC_EMPTY_FRONTIER_ORBITAL_WINDOW
 syn keyword cp2kKeyword OCE_HARD
 syn keyword cp2kKeyword OCE_SOFT
 syn keyword cp2kKeyword ODA
@@ -4892,6 +4895,7 @@ syn keyword cp2kKeyword RHO0_EXP_RADIUS
 syn keyword cp2kKeyword RHO_MAX
 syn keyword cp2kKeyword RHO_MIN
 syn keyword cp2kKeyword RHO_ZERO
+syn keyword cp2kKeyword RI_AO_RATIO
 syn keyword cp2kKeyword RI_AUX_BASIS_SET
 syn keyword cp2kKeyword RI_FLAVOR
 syn keyword cp2kKeyword RI_METRIC
