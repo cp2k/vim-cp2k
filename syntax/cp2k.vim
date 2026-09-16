@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:5c1df3d)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:48c3be8)
 
 if exists("b:current_syntax")
    finish
@@ -4232,6 +4232,7 @@ syn keyword cp2kKeyword MP_GRID
 syn keyword cp2kKeyword MSD_PER_KIND
 syn keyword cp2kKeyword MSD_PER_MOLKIND
 syn keyword cp2kKeyword MSD_PER_REGION
+syn keyword cp2kKeyword MTLR_REFERENCE_SCF
 syn keyword cp2kKeyword MTS
 syn keyword cp2kKeyword MU
 syn keyword cp2kKeyword MULTIGRID_CUTOFF
