@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:48c3be8)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:3919fb7)
 
 if exists("b:current_syntax")
    finish
@@ -2648,6 +2648,7 @@ syn keyword cp2kKeyword ACTIVE_ORBITALS
 syn keyword cp2kKeyword ACTIVE_ORBITAL_INDICES
 syn keyword cp2kKeyword ACTUAL
 syn keyword cp2kKeyword ADAPTIVE_EXCLUDE_MOLECULES
+syn keyword cp2kKeyword ADAPTIVE_LEVEL_SHIFT
 syn keyword cp2kKeyword ADDED_MOS
 syn keyword cp2kKeyword ADD_LAST
 syn keyword cp2kKeyword ADJUST_SIZE
@@ -3198,6 +3199,7 @@ syn keyword cp2kKeyword DIPOLE_FILE
 syn keyword cp2kKeyword DIPOLE_FORM
 syn keyword cp2kKeyword DIRECT
 syn keyword cp2kKeyword DIRECTION
+syn keyword cp2kKeyword DIRECTIONAL_EXCITON_CROSSCORRELATION
 syn keyword cp2kKeyword DIRECTIONAL_EXCITON_DESCRIPTORS
 syn keyword cp2kKeyword DIRECTORIES
 syn keyword cp2kKeyword DIRECTORY
@@ -4456,7 +4458,6 @@ syn keyword cp2kKeyword OCC_BETA
 syn keyword cp2kKeyword OCC_EMPTY_FRONTIER_ORBITAL_WINDOW
 syn keyword cp2kKeyword OCE_HARD
 syn keyword cp2kKeyword OCE_SOFT
-syn keyword cp2kKeyword ODA
 syn keyword cp2kKeyword OE_CORR
 syn keyword cp2kKeyword OLD_HILL_NUMBER
 syn keyword cp2kKeyword OLD_HILL_STEP
@@ -4655,6 +4656,7 @@ syn keyword cp2kKeyword PRINT_CUBES
 syn keyword cp2kKeyword PRINT_DENSITY
 syn keyword cp2kKeyword PRINT_DGEMM_INFO
 syn keyword cp2kKeyword PRINT_DIPOLE
+syn keyword cp2kKeyword PRINT_DIRECTIONAL_CROSSCORRELATION
 syn keyword cp2kKeyword PRINT_DIRECTIONAL_EXC_DESCR
 syn keyword cp2kKeyword PRINT_ENERGIES
 syn keyword cp2kKeyword PRINT_EXX
