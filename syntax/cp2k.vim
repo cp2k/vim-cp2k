@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:3919fb7)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:d4db4dc)
 
 if exists("b:current_syntax")
    finish
@@ -685,6 +685,7 @@ syn keyword cp2kConstant NN50
 syn keyword cp2kConstant NN50_SMOOTH
 syn keyword cp2kConstant NN6
 syn keyword cp2kConstant NN6_SMOOTH
+syn keyword cp2kConstant NNKP
 syn keyword cp2kConstant NNP
 syn keyword cp2kConstant NO
 syn keyword cp2kConstant NONCOLLINEAR
@@ -1036,6 +1037,7 @@ syn keyword cp2kConstant WAVELET
 syn keyword cp2kConstant WB97X-V
 syn keyword cp2kConstant WEIGHT_LIST
 syn keyword cp2kConstant WFN_OPT
+syn keyword cp2kConstant WILSON
 syn keyword cp2kConstant WORM
 syn keyword cp2kConstant W_0
 syn keyword cp2kConstant X
@@ -2975,6 +2977,7 @@ syn keyword cp2kKeyword CHECK_SYMMETRY
 syn keyword cp2kKeyword CHECK_S_INV
 syn keyword cp2kKeyword CHECK_UNITARY_TOL
 syn keyword cp2kKeyword CHECK_VIRIAL
+syn keyword cp2kKeyword CHERN
 syn keyword cp2kKeyword CHI_PBC
 syn keyword cp2kKeyword CHOLESKY
 syn keyword cp2kKeyword CI
@@ -4322,6 +4325,7 @@ syn keyword cp2kKeyword NMIXING
 syn keyword cp2kKeyword NMOL
 syn keyword cp2kKeyword NMOVES
 syn keyword cp2kKeyword NN
+syn keyword cp2kKeyword NNKP_FILE
 syn keyword cp2kKeyword NNOS
 syn keyword cp2kKeyword NNP_INPUT_FILE_NAME
 syn keyword cp2kKeyword NN_B
@@ -4490,6 +4494,7 @@ syn keyword cp2kKeyword ORBITAL_SET
 syn keyword cp2kKeyword ORDER
 syn keyword cp2kKeyword ORDERING
 syn keyword cp2kKeyword ORDER_LANCZOS
+syn keyword cp2kKeyword ORDER_WEIGHTS
 syn keyword cp2kKeyword ORIGIN_DEPENDENT_MFP
 syn keyword cp2kKeyword ORIG_EXT_FILE_NAME
 syn keyword cp2kKeyword ORIG_MARKED_STATE
@@ -4825,6 +4830,7 @@ syn keyword cp2kKeyword REPLICA
 syn keyword cp2kKeyword REPLICA_EVAL
 syn keyword cp2kKeyword REPORT_ALL_SPARSITIES
 syn keyword cp2kKeyword REPORT_MAXLOC
+syn keyword cp2kKeyword REQUIRE_GLOBAL_GAP
 syn keyword cp2kKeyword RESIDUAL_TOLERANCE
 syn keyword cp2kKeyword RESIDUUM_WEIGHT
 syn keyword cp2kKeyword RESTART
@@ -5181,6 +5187,7 @@ syn keyword cp2kKeyword START_STEP_OUT
 syn keyword cp2kKeyword START_TIME
 syn keyword cp2kKeyword STATE
 syn keyword cp2kKeyword STATES
+syn keyword cp2kKeyword STATE_EXPORT
 syn keyword cp2kKeyword STATE_LIST
 syn keyword cp2kKeyword STATE_SEARCH
 syn keyword cp2kKeyword STATE_TYPE
@@ -5319,6 +5326,7 @@ syn keyword cp2kKeyword TIMECON_NH
 syn keyword cp2kKeyword TIMESTEP
 syn keyword cp2kKeyword TIME_CUMUL
 syn keyword cp2kKeyword TIME_MPI
+syn keyword cp2kKeyword TIME_REVERSAL
 syn keyword cp2kKeyword TIME_START_VAL
 syn keyword cp2kKeyword TIMINGS_LEVEL
 syn keyword cp2kKeyword TINY_STEP_SIZE
@@ -5498,6 +5506,14 @@ syn keyword cp2kKeyword WELL_TEMPERED
 syn keyword cp2kKeyword WFN_OVERLAP
 syn keyword cp2kKeyword WFN_RESTART_FILE_NAME
 syn keyword cp2kKeyword WIDTH
+syn keyword cp2kKeyword WILSON_DIRECTION
+syn keyword cp2kKeyword WILSON_GAP_TOL
+syn keyword cp2kKeyword WILSON_LOOP
+syn keyword cp2kKeyword WILSON_MAX_REFINEMENT
+syn keyword cp2kKeyword WILSON_MESH
+syn keyword cp2kKeyword WILSON_ORIGIN
+syn keyword cp2kKeyword WILSON_TOL
+syn keyword cp2kKeyword WILSON_TRANSVERSE
 syn keyword cp2kKeyword WINDING_CYCLE_2
 syn keyword cp2kKeyword WINDING_NUMBER_2
 syn keyword cp2kKeyword WINDOW_SIZE
@@ -5551,6 +5567,7 @@ syn keyword cp2kKeyword YRANGE
 syn keyword cp2kKeyword Y_HI
 syn keyword cp2kKeyword Y_LOW
 syn keyword cp2kKeyword Y_XTNT
+syn keyword cp2kKeyword Z2
 syn keyword cp2kKeyword ZBL_SCATTERING
 syn keyword cp2kKeyword ZBROADENINGG
 syn keyword cp2kKeyword ZEEMANTERMBX
