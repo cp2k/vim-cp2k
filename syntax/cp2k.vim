@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:d4db4dc)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:691081d)
 
 if exists("b:current_syntax")
    finish
@@ -1366,6 +1366,7 @@ syn keyword cp2kSection FM
 syn keyword cp2kSection FM_DIAG_SETTINGS
 syn keyword cp2kSection FOCK_EIGENVALUES
 syn keyword cp2kSection FOCK_GAP
+syn keyword cp2kSection FOD
 syn keyword cp2kSection FORCE
 syn keyword cp2kSection FORCEFIELD
 syn keyword cp2kSection FORCES
@@ -3081,6 +3082,7 @@ syn keyword cp2kKeyword CSPARSITY
 syn keyword cp2kKeyword CSR_SCREENING
 syn keyword cp2kKeyword CT
 syn keyword cp2kKeyword CTYPE
+syn keyword cp2kKeyword CUBE
 syn keyword cp2kKeyword CUBES_LIST
 syn keyword cp2kKeyword CUBES_LU_BOUNDS
 syn keyword cp2kKeyword CUBE_EVAL_RANGE
