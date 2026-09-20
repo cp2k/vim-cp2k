@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:691081d)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:744416f)
 
 if exists("b:current_syntax")
    finish
@@ -989,6 +989,7 @@ syn keyword cp2kConstant TRAPEZOIDAL_RULE
 syn keyword cp2kConstant TREUTLER
 syn keyword cp2kConstant TREUTLERAHLRICHS
 syn keyword cp2kConstant TRICLINIC
+syn keyword cp2kConstant TRIM
 syn keyword cp2kConstant TRIPLET
 syn keyword cp2kConstant TRS4
 syn keyword cp2kConstant TRUE
@@ -3880,6 +3881,7 @@ syn keyword cp2kKeyword INTERPOLATE_SHIFT
 syn keyword cp2kKeyword INTERPOLATION
 syn keyword cp2kKeyword INT_EXECUTION_SPACE
 syn keyword cp2kKeyword INVERSION_SYMMETRY_ONLY
+syn keyword cp2kKeyword INVERSION_TQC
 syn keyword cp2kKeyword INVOLVED_ATOMS
 syn keyword cp2kKeyword IN_MEMORY
 syn keyword cp2kKeyword IONS+CENTERS
@@ -4558,6 +4560,10 @@ syn keyword cp2kKeyword PARAM_FILE
 syn keyword cp2kKeyword PARAM_FILE_NAME
 syn keyword cp2kKeyword PARAM_FILE_PATH
 syn keyword cp2kKeyword PARA_RES
+syn keyword cp2kKeyword PARITY
+syn keyword cp2kKeyword PARITY_ENERGY_TOL
+syn keyword cp2kKeyword PARITY_ORIGIN
+syn keyword cp2kKeyword PARITY_TOLERANCE
 syn keyword cp2kKeyword PARMTYPE
 syn keyword cp2kKeyword PARM_FILE_NAME
 syn keyword cp2kKeyword PBC
@@ -5339,6 +5345,7 @@ syn keyword cp2kKeyword TOLERANCE
 syn keyword cp2kKeyword TOLERANCE_RATIO
 syn keyword cp2kKeyword TOLERANCE_SCALE
 syn keyword cp2kKeyword TOL_NE
+syn keyword cp2kKeyword TQC_DIMENSION
 syn keyword cp2kKeyword TRACE
 syn keyword cp2kKeyword TRACE_MASTER
 syn keyword cp2kKeyword TRACE_MAX
