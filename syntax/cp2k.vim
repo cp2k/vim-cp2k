@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:744416f)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:73bd903)
 
 if exists("b:current_syntax")
    finish
@@ -3773,7 +3773,6 @@ syn keyword cp2kKeyword GRID_OPT
 syn keyword cp2kKeyword GRID_POINTS
 syn keyword cp2kKeyword GRID_POINTS_GH
 syn keyword cp2kKeyword GRID_SELECT
-syn keyword cp2kKeyword GRID_SIZE
 syn keyword cp2kKeyword GRID_SPACING
 syn keyword cp2kKeyword GRID_TOL
 syn keyword cp2kKeyword GROUPA
@@ -4444,7 +4443,6 @@ syn keyword cp2kKeyword N_OUTER
 syn keyword cp2kKeyword N_PANELS
 syn keyword cp2kKeyword N_POINTS_BEYN
 syn keyword cp2kKeyword N_POINTS_INV
-syn keyword cp2kKeyword N_POINT_PERCENTAGE
 syn keyword cp2kKeyword N_PROCS_PER_ATOM_Z_LP
 syn keyword cp2kKeyword N_PRTN
 syn keyword cp2kKeyword N_RAND
@@ -4483,6 +4481,7 @@ syn keyword cp2kKeyword OPEN_CLOSE_WEIGHT
 syn keyword cp2kKeyword OPERATOR
 syn keyword cp2kKeyword OPTIMIZE
 syn keyword cp2kKeyword OPTIMIZER
+syn keyword cp2kKeyword OPTIMIZE_AUGMENTATION_FUNCTIONS
 syn keyword cp2kKeyword OPTIMIZE_END_POINTS
 syn keyword cp2kKeyword OPTIMIZE_FILE_NAME
 syn keyword cp2kKeyword OPTX_A1
@@ -4958,6 +4957,7 @@ syn keyword cp2kKeyword ROW_ORDERING
 syn keyword cp2kKeyword RS2PW
 syn keyword cp2kKeyword RSE
 syn keyword cp2kKeyword RSTART
+syn keyword cp2kKeyword RS_AO_RATIO
 syn keyword cp2kKeyword RTBSE_HAMILTONIAN
 syn keyword cp2kKeyword RUN_TYPE
 syn keyword cp2kKeyword RWOH
