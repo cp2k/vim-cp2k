@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:73bd903)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:92574dc)
 
 if exists("b:current_syntax")
    finish
@@ -90,6 +90,7 @@ syn keyword cp2kConstant 4F
 syn keyword cp2kConstant 4P
 syn keyword cp2kConstant 4S
 syn keyword cp2kConstant 93
+syn keyword cp2kConstant ABORT
 syn keyword cp2kConstant ABSOLUTE
 syn keyword cp2kConstant AC
 syn keyword cp2kConstant AD
@@ -111,6 +112,7 @@ syn keyword cp2kConstant AMBER
 syn keyword cp2kConstant AMD_GPU
 syn keyword cp2kConstant ANALYTIC
 syn keyword cp2kConstant ANALYTICAL
+syn keyword cp2kConstant AND
 syn keyword cp2kConstant ANDERSON
 syn keyword cp2kConstant ANDERSON_STABLE
 syn keyword cp2kConstant ANDREUSSI
@@ -227,6 +229,7 @@ syn keyword cp2kConstant CHOLESKY
 syn keyword cp2kConstant CI-NEB
 syn keyword cp2kConstant CIF
 syn keyword cp2kConstant CIRCUMSCRIBED
+syn keyword cp2kConstant CLAMP
 syn keyword cp2kConstant CLENSHAW-CURTIS
 syn keyword cp2kConstant CMD
 syn keyword cp2kConstant CN
@@ -418,6 +421,7 @@ syn keyword cp2kConstant FULL
 syn keyword cp2kConstant FULLDIAG
 syn keyword cp2kConstant FULL_ALL
 syn keyword cp2kConstant FULL_ALL_COVARIANT
+syn keyword cp2kConstant FULL_DIAGONAL
 syn keyword cp2kConstant FULL_GPW
 syn keyword cp2kConstant FULL_KINETIC
 syn keyword cp2kConstant FULL_POTENTIAL_LAPWLO
@@ -624,6 +628,7 @@ syn keyword cp2kConstant MIXING
 syn keyword cp2kConstant MIX_CL
 syn keyword cp2kConstant MIX_CL_TRUNC
 syn keyword cp2kConstant MIX_LG
+syn keyword cp2kConstant MK_DAVIDSON
 syn keyword cp2kConstant MM
 syn keyword cp2kConstant MM2
 syn keyword cp2kConstant MM3
@@ -718,6 +723,7 @@ syn keyword cp2kConstant OFF
 syn keyword cp2kConstant OFGPW
 syn keyword cp2kConstant OL1
 syn keyword cp2kConstant OL2
+syn keyword cp2kConstant OLSEN_STRATMANN
 syn keyword cp2kConstant OLYP
 syn keyword cp2kConstant ON
 syn keyword cp2kConstant OPLS
@@ -805,6 +811,7 @@ syn keyword cp2kConstant PZ
 syn keyword cp2kConstant QISKIT
 syn keyword cp2kConstant QM
 syn keyword cp2kConstant QMMM
+syn keyword cp2kConstant QP_DIFFERENCE
 syn keyword cp2kConstant QS
 syn keyword cp2kConstant QTBM
 syn keyword cp2kConstant QUADRATIC
@@ -1033,6 +1040,7 @@ syn keyword cp2kConstant WALL_PLUS
 syn keyword cp2kConstant WAN
 syn keyword cp2kConstant WANNIER
 syn keyword cp2kConstant WANNIER_PROJECTION
+syn keyword cp2kConstant WARN
 syn keyword cp2kConstant WAVEFUNCTION_OPTIMIZATION
 syn keyword cp2kConstant WAVELET
 syn keyword cp2kConstant WB97X-V
@@ -2638,6 +2646,7 @@ syn keyword cp2kKeyword A2T
 syn keyword cp2kKeyword A3
 syn keyword cp2kKeyword A4
 syn keyword cp2kKeyword AB
+syn keyword cp2kKeyword ABBA_SOLVER
 syn keyword cp2kKeyword ABC
 syn keyword cp2kKeyword ABC_THRESHOLD
 syn keyword cp2kKeyword ABSOLUTE_POSITION
@@ -3032,6 +3041,7 @@ syn keyword cp2kKeyword CONSTRUCT_NLMOS
 syn keyword cp2kKeyword CONTACT_FILLING
 syn keyword cp2kKeyword CONTINUE_LS
 syn keyword cp2kKeyword CONVERGENCE
+syn keyword cp2kKeyword CONVERGENCE_CRITERION
 syn keyword cp2kKeyword CONVERGE_BY_ENERGY
 syn keyword cp2kKeyword CONV_MOS_PERCENT
 syn keyword cp2kKeyword COORDINATE
@@ -3128,7 +3138,6 @@ syn keyword cp2kKeyword D4_SCALING
 syn keyword cp2kKeyword DAMPING
 syn keyword cp2kKeyword DATA_FILE_NAME
 syn keyword cp2kKeyword DATA_TYPE
-syn keyword cp2kKeyword DAVIDSON_ABORT_COND
 syn keyword cp2kKeyword DC
 syn keyword cp2kKeyword DE
 syn keyword cp2kKeyword DEBUG
@@ -3467,9 +3476,9 @@ syn keyword cp2kKeyword EPS_EIGVAL_DEGEN
 syn keyword cp2kKeyword EPS_EIGVAL_S
 syn keyword cp2kKeyword EPS_EIGVAL_S_GAMMA
 syn keyword cp2kKeyword EPS_ENE
+syn keyword cp2kKeyword EPS_ENERGY
 syn keyword cp2kKeyword EPS_ERROR
 syn keyword cp2kKeyword EPS_ERROR_EARLY
-syn keyword cp2kKeyword EPS_EXC_EN
 syn keyword cp2kKeyword EPS_FB
 syn keyword cp2kKeyword EPS_FERMI
 syn keyword cp2kKeyword EPS_FERMI_DIRAC
@@ -3616,7 +3625,6 @@ syn keyword cp2kKeyword FAB
 syn keyword cp2kKeyword FACTORIZATION
 syn keyword cp2kKeyword FACTOR_LS
 syn keyword cp2kKeyword FACTOR_S9_TERM
-syn keyword cp2kKeyword FAC_MAX_Z_SPACE
 syn keyword cp2kKeyword FERMI_AMALDI
 syn keyword cp2kKeyword FERMI_CONTACT
 syn keyword cp2kKeyword FERMI_EXP
@@ -4064,6 +4072,7 @@ syn keyword cp2kKeyword MATRICES_FILE_NAME
 syn keyword cp2kKeyword MATRIX_CLUSTER_TYPE
 syn keyword cp2kKeyword MATRIX_INVERSION_METHOD
 syn keyword cp2kKeyword MATRIX_VXC
+syn keyword cp2kKeyword MATVEC_BLOCK_COLUMNS
 syn keyword cp2kKeyword MAT_EXP
 syn keyword cp2kKeyword MAX
 syn keyword cp2kKeyword MAXL
@@ -4130,6 +4139,7 @@ syn keyword cp2kKeyword MAX_STEP
 syn keyword cp2kKeyword MAX_STEPS
 syn keyword cp2kKeyword MAX_STEPSIZE
 syn keyword cp2kKeyword MAX_STEP_SIZE
+syn keyword cp2kKeyword MAX_SUBSPACE_FACTOR
 syn keyword cp2kKeyword MAX_TAYLOR
 syn keyword cp2kKeyword MAX_TRUST_RADIUS
 syn keyword cp2kKeyword MAX_VAR_FRACTION
@@ -4143,6 +4153,8 @@ syn keyword cp2kKeyword MD.TRCSKIP
 syn keyword cp2kKeyword MDIIS
 syn keyword cp2kKeyword MD_BUMPS_MAX
 syn keyword cp2kKeyword MEMORY
+syn keyword cp2kKeyword MEMORY_BUDGET_GB
+syn keyword cp2kKeyword MEMORY_CHECK
 syn keyword cp2kKeyword MEMORY_CUT
 syn keyword cp2kKeyword MEMORY_FACTOR
 syn keyword cp2kKeyword MEMORY_INFO
@@ -4386,10 +4398,9 @@ syn keyword cp2kKeyword NUMBER_OF_SHELLS
 syn keyword cp2kKeyword NUMBER_OF_WALKERS
 syn keyword cp2kKeyword NUMBER_OF_WORKERS
 syn keyword cp2kKeyword NUMB_POLES
-syn keyword cp2kKeyword NUM_ADD_START_Z_SPACE
 syn keyword cp2kKeyword NUM_BANDS
 syn keyword cp2kKeyword NUM_BANDS_TO_PRINT
-syn keyword cp2kKeyword NUM_DAVIDSON_ITER
+syn keyword cp2kKeyword NUM_BUFFER_STATES
 syn keyword cp2kKeyword NUM_DFT_ITER
 syn keyword cp2kKeyword NUM_ELECTRON_INITIAL_TOLERANCE
 syn keyword cp2kKeyword NUM_ELECTRON_PEXSI_TOLERANCE
@@ -4405,6 +4416,7 @@ syn keyword cp2kKeyword NUM_GTO
 syn keyword cp2kKeyword NUM_GTO_CORE
 syn keyword cp2kKeyword NUM_GTO_EXTENDED
 syn keyword cp2kKeyword NUM_GTO_POLARIZATION
+syn keyword cp2kKeyword NUM_GUESS_TRANSITIONS
 syn keyword cp2kKeyword NUM_INTEG_GROUPS
 syn keyword cp2kKeyword NUM_INTERVAL
 syn keyword cp2kKeyword NUM_KP_GRIDS
@@ -4413,7 +4425,6 @@ syn keyword cp2kKeyword NUM_MAG_DIMS
 syn keyword cp2kKeyword NUM_MC_ELEM
 syn keyword cp2kKeyword NUM_MULT_IMAGES
 syn keyword cp2kKeyword NUM_MV_ELEM_IN_CELL
-syn keyword cp2kKeyword NUM_NEW_T
 syn keyword cp2kKeyword NUM_OMEGA_POINTS
 syn keyword cp2kKeyword NUM_POLE
 syn keyword cp2kKeyword NUM_POLYNOM
@@ -5598,7 +5609,6 @@ syn keyword cp2kKeyword Z_CUTOFF
 syn keyword cp2kKeyword Z_HI
 syn keyword cp2kKeyword Z_LOW
 syn keyword cp2kKeyword Z_MATRIX_METHOD
-syn keyword cp2kKeyword Z_SPACE_ENERGY_CUTOFF
 syn keyword cp2kKeyword Z_XTNT
 syn keyword cp2kKeyword _A
 syn keyword cp2kKeyword _A0
