@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:92574dc)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:6ba6522)
 
 if exists("b:current_syntax")
    finish
@@ -1354,6 +1354,7 @@ syn keyword cp2kSection E_DENSITY_OPENPMD
 syn keyword cp2kSection FARMING
 syn keyword cp2kSection FATTEBERT-GYGI
 syn keyword cp2kSection FCIDUMP
+syn keyword cp2kSection FDE
 syn keyword cp2kSection FF_INFO
 syn keyword cp2kSection FF_PARAMETER_FILE
 syn keyword cp2kSection FIELD
@@ -3012,6 +3013,7 @@ syn keyword cp2kKeyword COLVAR
 syn keyword cp2kKeyword COLVAR_AVG_TEMPERATURE_RESTART
 syn keyword cp2kKeyword COLZERO_THRESHOLD
 syn keyword cp2kKeyword COL_BLOCK
+syn keyword cp2kKeyword COMMAND
 syn keyword cp2kKeyword COMMENSURATE
 syn keyword cp2kKeyword COMMON_CENTER
 syn keyword cp2kKeyword COMMON_ITERATION_LEVELS
@@ -3489,6 +3491,8 @@ syn keyword cp2kKeyword EPS_FILTER_MATRIX
 syn keyword cp2kKeyword EPS_FILTER_MO
 syn keyword cp2kKeyword EPS_FILTER_RHO
 syn keyword cp2kKeyword EPS_FLOQUET
+syn keyword cp2kKeyword EPS_FT_DENSITY
+syn keyword cp2kKeyword EPS_FT_ENERGY
 syn keyword cp2kKeyword EPS_FUNCTION
 syn keyword cp2kKeyword EPS_GEO
 syn keyword cp2kKeyword EPS_GRAD
@@ -3710,6 +3714,7 @@ syn keyword cp2kKeyword FRAME_COUNT
 syn keyword cp2kKeyword FRAME_START
 syn keyword cp2kKeyword FRAME_STOP
 syn keyword cp2kKeyword FRAME_STRIDE
+syn keyword cp2kKeyword FREEZE_AND_THAW
 syn keyword cp2kKeyword FREE_HFX_BUFFER
 syn keyword cp2kKeyword FREQUENCY
 syn keyword cp2kKeyword FREQUENCY_END_POINT
@@ -3776,6 +3781,7 @@ syn keyword cp2kKeyword GRAD
 syn keyword cp2kKeyword GRADIENT_CUTOFF
 syn keyword cp2kKeyword GRID
 syn keyword cp2kKeyword GRID_2D
+syn keyword cp2kKeyword GRID_FILE
 syn keyword cp2kKeyword GRID_FILE_SUFFIX
 syn keyword cp2kKeyword GRID_OPT
 syn keyword cp2kKeyword GRID_POINTS
@@ -4095,6 +4101,7 @@ syn keyword cp2kKeyword MAX_ENERGY
 syn keyword cp2kKeyword MAX_FILE_SIZE_MB
 syn keyword cp2kKeyword MAX_FLOQUET_INDEX
 syn keyword cp2kKeyword MAX_FORCE
+syn keyword cp2kKeyword MAX_FT_ITER
 syn keyword cp2kKeyword MAX_FUN
 syn keyword cp2kKeyword MAX_F_PER_ITER
 syn keyword cp2kKeyword MAX_GVEC_EXP
@@ -4214,6 +4221,7 @@ syn keyword cp2kKeyword MODEL_ATOM_CHUNK_SIZE
 syn keyword cp2kKeyword MODEL_GRADIENT_RUNTIME
 syn keyword cp2kKeyword MODEL_GRAD_NORM_RATIO
 syn keyword cp2kKeyword MODEL_TYPE
+syn keyword cp2kKeyword MOLCAS_INPUT_TEMPLATE
 syn keyword cp2kKeyword MOLECULAR_PROPERTIES
 syn keyword cp2kKeyword MOLECULAR_VIRIAL
 syn keyword cp2kKeyword MOLECULAR_VIRIAL_DEBUG
@@ -4641,6 +4649,7 @@ syn keyword cp2kKeyword POTENTIAL_FILE_NAME
 syn keyword cp2kKeyword POTENTIAL_NAME
 syn keyword cp2kKeyword POTENTIAL_PARAM
 syn keyword cp2kKeyword POTENTIAL_TYPE
+syn keyword cp2kKeyword POT_FILE
 syn keyword cp2kKeyword POT_FILE_NAME
 syn keyword cp2kKeyword POT_GUESS
 syn keyword cp2kKeyword POT_TYPE
@@ -4705,6 +4714,7 @@ syn keyword cp2kKeyword PROC_DIST_TYPE
 syn keyword cp2kKeyword PROC_PER_REPLICA
 syn keyword cp2kKeyword PROGRAM_NAME
 syn keyword cp2kKeyword PROGRESSION_FACTOR
+syn keyword cp2kKeyword PROJECT
 syn keyword cp2kKeyword PROJECTED_AREA
 syn keyword cp2kKeyword PROJECTED_AREA_2
 syn keyword cp2kKeyword PROJECT_NAME
@@ -4908,6 +4918,7 @@ syn keyword cp2kKeyword RESTRAINT_TARGET
 syn keyword cp2kKeyword RESTRAIN_HEAVIES_STRENGTH
 syn keyword cp2kKeyword RESTRAIN_HEAVIES_TO_ZERO
 syn keyword cp2kKeyword RESTRICT_RANGE
+syn keyword cp2kKeyword RESULT_FILE
 syn keyword cp2kKeyword RESULT_LIST_IN_MEMORY
 syn keyword cp2kKeyword RESULT_MARKED_STATE
 syn keyword cp2kKeyword RESULT_MO_INDEX
@@ -4919,6 +4930,7 @@ syn keyword cp2kKeyword REUSE_SCF_MOS
 syn keyword cp2kKeyword REVERSE_MO_INDEX
 syn keyword cp2kKeyword RHO
 syn keyword cp2kKeyword RHO0_EXP_RADIUS
+syn keyword cp2kKeyword RHO_FILE
 syn keyword cp2kKeyword RHO_MAX
 syn keyword cp2kKeyword RHO_MIN
 syn keyword cp2kKeyword RHO_ZERO
@@ -5537,6 +5549,7 @@ syn keyword cp2kKeyword WILSON_TRANSVERSE
 syn keyword cp2kKeyword WINDING_CYCLE_2
 syn keyword cp2kKeyword WINDING_NUMBER_2
 syn keyword cp2kKeyword WINDOW_SIZE
+syn keyword cp2kKeyword WORKDIR
 syn keyword cp2kKeyword WORKER_PER_MINIMA
 syn keyword cp2kKeyword WORK_DIRECTORY
 syn keyword cp2kKeyword WRAP
