@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:6ba6522)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:16f85b0)
 
 if exists("b:current_syntax")
    finish
@@ -4008,6 +4008,7 @@ syn keyword cp2kKeyword LEVY_CORRELATED
 syn keyword cp2kKeyword LEVY_POS_SAMPLE
 syn keyword cp2kKeyword LEVY_SEED
 syn keyword cp2kKeyword LEVY_TEMP_FACTOR
+syn keyword cp2kKeyword LIBXC_GPU_BACKEND
 syn keyword cp2kKeyword LINEARIZED_BSE_PROPAGATION
 syn keyword cp2kKeyword LINEAR_SOLVER
 syn keyword cp2kKeyword LINESEARCH
