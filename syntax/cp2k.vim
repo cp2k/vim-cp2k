@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:f2099e5)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:f2a7cfd)
 
 if exists("b:current_syntax")
    finish
@@ -90,7 +90,6 @@ syn keyword cp2kConstant 4F
 syn keyword cp2kConstant 4P
 syn keyword cp2kConstant 4S
 syn keyword cp2kConstant 93
-syn keyword cp2kConstant ABORT
 syn keyword cp2kConstant ABSOLUTE
 syn keyword cp2kConstant AC
 syn keyword cp2kConstant AD
@@ -229,7 +228,6 @@ syn keyword cp2kConstant CHOLESKY
 syn keyword cp2kConstant CI-NEB
 syn keyword cp2kConstant CIF
 syn keyword cp2kConstant CIRCUMSCRIBED
-syn keyword cp2kConstant CLAMP
 syn keyword cp2kConstant CLENSHAW-CURTIS
 syn keyword cp2kConstant CMD
 syn keyword cp2kConstant CN
@@ -812,6 +810,7 @@ syn keyword cp2kConstant QISKIT
 syn keyword cp2kConstant QM
 syn keyword cp2kConstant QMMM
 syn keyword cp2kConstant QP_DIFFERENCE
+syn keyword cp2kConstant QP_UPDATE
 syn keyword cp2kConstant QS
 syn keyword cp2kConstant QTBM
 syn keyword cp2kConstant QUADRATIC
@@ -1040,7 +1039,6 @@ syn keyword cp2kConstant WALL_PLUS
 syn keyword cp2kConstant WAN
 syn keyword cp2kConstant WANNIER
 syn keyword cp2kConstant WANNIER_PROJECTION
-syn keyword cp2kConstant WARN
 syn keyword cp2kConstant WAVEFUNCTION_OPTIMIZATION
 syn keyword cp2kConstant WAVELET
 syn keyword cp2kConstant WB97X-V
@@ -3006,6 +3004,7 @@ syn keyword cp2kKeyword COEFF
 syn keyword cp2kKeyword COEFFICIENT
 syn keyword cp2kKeyword COEFFICIENTS
 syn keyword cp2kKeyword COEFFICIENT_WEIGHT
+syn keyword cp2kKeyword COHSEX
 syn keyword cp2kKeyword COLLECTIVE
 syn keyword cp2kKeyword COLLECTIVE_COMMUNICATION
 syn keyword cp2kKeyword COLORING_METHOD
@@ -4162,8 +4161,6 @@ syn keyword cp2kKeyword MD.TRCSKIP
 syn keyword cp2kKeyword MDIIS
 syn keyword cp2kKeyword MD_BUMPS_MAX
 syn keyword cp2kKeyword MEMORY
-syn keyword cp2kKeyword MEMORY_BUDGET_GB
-syn keyword cp2kKeyword MEMORY_CHECK
 syn keyword cp2kKeyword MEMORY_CUT
 syn keyword cp2kKeyword MEMORY_FACTOR
 syn keyword cp2kKeyword MEMORY_INFO
@@ -5022,6 +5019,8 @@ syn keyword cp2kKeyword SAVE_RF
 syn keyword cp2kKeyword SCALE
 syn keyword cp2kKeyword SCALED
 syn keyword cp2kKeyword SCALE_C
+syn keyword cp2kKeyword SCALE_COHSEX_OCC
+syn keyword cp2kKeyword SCALE_COHSEX_VIRT
 syn keyword cp2kKeyword SCALE_COULOMB
 syn keyword cp2kKeyword SCALE_FILE_NAME
 syn keyword cp2kKeyword SCALE_GAUSSIAN
