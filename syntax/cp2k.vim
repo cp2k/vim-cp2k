@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:f2a7cfd)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:cdd058b)
 
 if exists("b:current_syntax")
    finish
@@ -222,6 +222,7 @@ syn keyword cp2kConstant CHARGE
 syn keyword cp2kConstant CHARGE_CONSTRAINED_PROJECTION
 syn keyword cp2kConstant CHARMM
 syn keyword cp2kConstant CHEBYSHEV
+syn keyword cp2kConstant CHERN
 syn keyword cp2kConstant CHM
 syn keyword cp2kConstant CHOL
 syn keyword cp2kConstant CHOLESKY
@@ -281,6 +282,7 @@ syn keyword cp2kConstant DEBUG
 syn keyword cp2kConstant DEFAULT
 syn keyword cp2kConstant DEFAULT_LIBXC
 syn keyword cp2kConstant DEFINED
+syn keyword cp2kConstant DENSE
 syn keyword cp2kConstant DENSE_CHOLESKY
 syn keyword cp2kConstant DENSITY
 syn keyword cp2kConstant DENSITY_DEPENDENT
@@ -403,6 +405,7 @@ syn keyword cp2kConstant FFT_USE_DEPS
 syn keyword cp2kConstant FFT_USE_DRHO
 syn keyword cp2kConstant FILTER_MATRIX
 syn keyword cp2kConstant FINE
+syn keyword cp2kConstant FINITE
 syn keyword cp2kConstant FIST
 syn keyword cp2kConstant FIT
 syn keyword cp2kConstant FIX_POINT
@@ -989,6 +992,7 @@ syn keyword cp2kConstant TP_XHH
 syn keyword cp2kConstant TRADITIONAL
 syn keyword cp2kConstant TRAJECTORY
 syn keyword cp2kConstant TRANSITION_STATE
+syn keyword cp2kConstant TRANSLATION
 syn keyword cp2kConstant TRANSMISSION
 syn keyword cp2kConstant TRANSPORT
 syn keyword cp2kConstant TRAPEZOIDAL_RULE
@@ -1064,6 +1068,7 @@ syn keyword cp2kConstant Y
 syn keyword cp2kConstant YUKAWA
 syn keyword cp2kConstant YZ
 syn keyword cp2kConstant Z
+syn keyword cp2kConstant Z2
 syn keyword cp2kConstant ZERO
 syn keyword cp2kConstant ZORA
 syn keyword cp2kConstant ZORA(MP)
@@ -2404,6 +2409,7 @@ syn keyword cp2kSection QS
 syn keyword cp2kSection QS_DERIVATIVES
 syn keyword cp2kSection QTB
 syn keyword cp2kSection QUADRATIC
+syn keyword cp2kSection QUADRATIC_PSEUDOSPECTRUM
 syn keyword cp2kSection QUADRUPOLE
 syn keyword cp2kSection QUADRUPOLES
 syn keyword cp2kSection QUARTIC
@@ -2496,6 +2502,7 @@ syn keyword cp2kSection SPAWNED_HILLS_HEIGHT
 syn keyword cp2kSection SPAWNED_HILLS_INVDT
 syn keyword cp2kSection SPAWNED_HILLS_POS
 syn keyword cp2kSection SPAWNED_HILLS_SCALE
+syn keyword cp2kSection SPECTRAL_LOCALIZER
 syn keyword cp2kSection SPECTRUM
 syn keyword cp2kSection SPHERE
 syn keyword cp2kSection SPHERE_SAMPLING
@@ -2504,6 +2511,7 @@ syn keyword cp2kSection SPLINE
 syn keyword cp2kSection SPL_COEFFS
 syn keyword cp2kSection SR_CUTOFF
 syn keyword cp2kSection STAGING
+syn keyword cp2kSection STATES
 syn keyword cp2kSection STDA
 syn keyword cp2kSection STM
 syn keyword cp2kSection STRESS
@@ -3104,10 +3112,8 @@ syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_ATOMIC_CLUSTER
 syn keyword cp2kKeyword CUTOFF_RADIUS
-syn keyword cp2kKeyword CUTOFF_RADIUS_G_W
 syn keyword cp2kKeyword CUTOFF_RADIUS_RI
 syn keyword cp2kKeyword CUTOFF_RADIUS_RL_AO
-syn keyword cp2kKeyword CUTOFF_RADIUS_RL_RI
 syn keyword cp2kKeyword CUTOFF_RADIUS_RL_W
 syn keyword cp2kKeyword CUTOFF_RADIUS_W0
 syn keyword cp2kKeyword CUTOFF_TYPE
@@ -3210,6 +3216,7 @@ syn keyword cp2kKeyword DIELECTRIC_FUNCTION_TYPE
 syn keyword cp2kKeyword DIFF_ORDER
 syn keyword cp2kKeyword DIHEDRAL_ANGLE
 syn keyword cp2kKeyword DIIS_BUFFER_LENGTH
+syn keyword cp2kKeyword DIMENSION
 syn keyword cp2kKeyword DIPOLE_ANALYSIS
 syn keyword cp2kKeyword DIPOLE_FILE
 syn keyword cp2kKeyword DIPOLE_FORM
@@ -3470,12 +3477,14 @@ syn keyword cp2kKeyword EPS_DERIV
 syn keyword cp2kKeyword EPS_DIIS
 syn keyword cp2kKeyword EPS_DISP
 syn keyword cp2kKeyword EPS_DIST
+syn keyword cp2kKeyword EPS_EIGEN
 syn keyword cp2kKeyword EPS_EIGENVAL
 syn keyword cp2kKeyword EPS_EIGENVALUE
 syn keyword cp2kKeyword EPS_EIGVAL
 syn keyword cp2kKeyword EPS_EIGVAL_DEGEN
 syn keyword cp2kKeyword EPS_EIGVAL_S
 syn keyword cp2kKeyword EPS_EIGVAL_S_GAMMA
+syn keyword cp2kKeyword EPS_ELECTRONIC_GAP
 syn keyword cp2kKeyword EPS_ENE
 syn keyword cp2kKeyword EPS_ENERGY
 syn keyword cp2kKeyword EPS_ERROR
@@ -3489,10 +3498,12 @@ syn keyword cp2kKeyword EPS_FILTER_FACTOR
 syn keyword cp2kKeyword EPS_FILTER_MATRIX
 syn keyword cp2kKeyword EPS_FILTER_MO
 syn keyword cp2kKeyword EPS_FILTER_RHO
+syn keyword cp2kKeyword EPS_FLATTENING
 syn keyword cp2kKeyword EPS_FLOQUET
 syn keyword cp2kKeyword EPS_FT_DENSITY
 syn keyword cp2kKeyword EPS_FT_ENERGY
 syn keyword cp2kKeyword EPS_FUNCTION
+syn keyword cp2kKeyword EPS_GAP
 syn keyword cp2kKeyword EPS_GEO
 syn keyword cp2kKeyword EPS_GRAD
 syn keyword cp2kKeyword EPS_GREEN
@@ -3517,6 +3528,7 @@ syn keyword cp2kKeyword EPS_LIMIT_CC
 syn keyword cp2kKeyword EPS_LOCALIZATION
 syn keyword cp2kKeyword EPS_LUMO
 syn keyword cp2kKeyword EPS_MAX_VAL
+syn keyword cp2kKeyword EPS_METRIC
 syn keyword cp2kKeyword EPS_MM_RSPACE
 syn keyword cp2kKeyword EPS_MU
 syn keyword cp2kKeyword EPS_NORM
@@ -3675,6 +3687,7 @@ syn keyword cp2kKeyword FIXED_MAG
 syn keyword cp2kKeyword FIXED_MAGNETIC_MOMENT
 syn keyword cp2kKeyword FIXED_MU
 syn keyword cp2kKeyword FIX_CENTROID_POS
+syn keyword cp2kKeyword FLATTENING_SCALE
 syn keyword cp2kKeyword FLAVOR_SWITCH_MEMORY_CUT
 syn keyword cp2kKeyword FLETCHER_REEVES
 syn keyword cp2kKeyword FLIP_FRAGMENT_A
@@ -3699,6 +3712,7 @@ syn keyword cp2kKeyword FORCE_SCF_CALCULATION
 syn keyword cp2kKeyword FORCE_STATES
 syn keyword cp2kKeyword FORCE_UNIT
 syn keyword cp2kKeyword FORMAT
+syn keyword cp2kKeyword FORMULATION
 syn keyword cp2kKeyword FP
 syn keyword cp2kKeyword FP32_TO_FP64_RMS
 syn keyword cp2kKeyword FRACTION
@@ -3782,7 +3796,6 @@ syn keyword cp2kKeyword GRADIENT_CUTOFF
 syn keyword cp2kKeyword GRID
 syn keyword cp2kKeyword GRID_2D
 syn keyword cp2kKeyword GRID_FILE
-syn keyword cp2kKeyword GRID_FILE_SUFFIX
 syn keyword cp2kKeyword GRID_OPT
 syn keyword cp2kKeyword GRID_POINTS
 syn keyword cp2kKeyword GRID_POINTS_GH
@@ -3893,6 +3906,7 @@ syn keyword cp2kKeyword INTERPOLATE_GRADIENT
 syn keyword cp2kKeyword INTERPOLATE_SHIFT
 syn keyword cp2kKeyword INTERPOLATION
 syn keyword cp2kKeyword INT_EXECUTION_SPACE
+syn keyword cp2kKeyword INVARIANT
 syn keyword cp2kKeyword INVERSION_SYMMETRY_ONLY
 syn keyword cp2kKeyword INVERSION_TQC
 syn keyword cp2kKeyword INVOLVED_ATOMS
@@ -3931,6 +3945,7 @@ syn keyword cp2kKeyword K-DIMER
 syn keyword cp2kKeyword K2_SPRING
 syn keyword cp2kKeyword K4_SPRING
 syn keyword cp2kKeyword KAB_PARAM
+syn keyword cp2kKeyword KAPPA
 syn keyword cp2kKeyword KBS12
 syn keyword cp2kKeyword KBS32
 syn keyword cp2kKeyword KEEPSPARSE
@@ -3938,7 +3953,6 @@ syn keyword cp2kKeyword KEEP_ANGLES
 syn keyword cp2kKeyword KEEP_FILES
 syn keyword cp2kKeyword KEEP_QUADRATURE
 syn keyword cp2kKeyword KEEP_SPACE_GROUP
-syn keyword cp2kKeyword KEEP_SPARSITY_RL
 syn keyword cp2kKeyword KEEP_SYMMETRY
 syn keyword cp2kKeyword KEEP_VOLUME
 syn keyword cp2kKeyword KERNEL
@@ -4078,6 +4092,7 @@ syn keyword cp2kKeyword MATMUL
 syn keyword cp2kKeyword MATRICES_FILE_NAME
 syn keyword cp2kKeyword MATRIX_CLUSTER_TYPE
 syn keyword cp2kKeyword MATRIX_INVERSION_METHOD
+syn keyword cp2kKeyword MATRIX_TOLERANCE
 syn keyword cp2kKeyword MATRIX_VXC
 syn keyword cp2kKeyword MATVEC_BLOCK_COLUMNS
 syn keyword cp2kKeyword MAT_EXP
@@ -4086,6 +4101,7 @@ syn keyword cp2kKeyword MAXL
 syn keyword cp2kKeyword MAXR
 syn keyword cp2kKeyword MAX_ALLOWED_STEP
 syn keyword cp2kKeyword MAX_ANGULAR_MOMENTUM
+syn keyword cp2kKeyword MAX_AO
 syn keyword cp2kKeyword MAX_BLOCK_SIZE_MO
 syn keyword cp2kKeyword MAX_COARSE_GRAINED_WIDTH
 syn keyword cp2kKeyword MAX_CONDITION_NUM
@@ -4458,10 +4474,8 @@ syn keyword cp2kKeyword N_LOOP
 syn keyword cp2kKeyword N_MINIMAX
 syn keyword cp2kKeyword N_MU
 syn keyword cp2kKeyword N_OUTER
-syn keyword cp2kKeyword N_PANELS
 syn keyword cp2kKeyword N_POINTS_BEYN
 syn keyword cp2kKeyword N_POINTS_INV
-syn keyword cp2kKeyword N_PROCS_PER_ATOM_Z_LP
 syn keyword cp2kKeyword N_PRTN
 syn keyword cp2kKeyword N_RAND
 syn keyword cp2kKeyword N_RAND_CC
@@ -4608,6 +4622,7 @@ syn keyword cp2kKeyword PHYSCON
 syn keyword cp2kKeyword PIMD_BEADWISE_CONSTRAINT
 syn keyword cp2kKeyword PINT
 syn keyword cp2kKeyword PINT_UNIT
+syn keyword cp2kKeyword PLANE
 syn keyword cp2kKeyword PLOT_REL_ENERGY
 syn keyword cp2kKeyword PLUMED_INPUT_FILE
 syn keyword cp2kKeyword PLUS_U_METHOD
@@ -5179,6 +5194,7 @@ syn keyword cp2kKeyword SPARSE_THRESHOLD
 syn keyword cp2kKeyword SPATIAL_ORIGIN
 syn keyword cp2kKeyword SPATIAL_ORIGIN_REFERENCE
 syn keyword cp2kKeyword SPECIAL_POINT
+syn keyword cp2kKeyword SPECTRAL_FLATTENING
 syn keyword cp2kKeyword SPECULATIVE_CANCELING
 syn keyword cp2kKeyword SPGLIB_TOLERANCE
 syn keyword cp2kKeyword SPGR_PRINT_ATOMS
@@ -5378,6 +5394,8 @@ syn keyword cp2kKeyword TRAJ_FILE_NAME
 syn keyword cp2kKeyword TRANSA
 syn keyword cp2kKeyword TRANSB
 syn keyword cp2kKeyword TRANSFORMATION
+syn keyword cp2kKeyword TRANSLATION_SCALE
+syn keyword cp2kKeyword TRANSLATION_VECTOR
 syn keyword cp2kKeyword TRANSMISSIONEMBED
 syn keyword cp2kKeyword TRANSMISSIONOVERK
 syn keyword cp2kKeyword TRANSPORT
@@ -5522,6 +5540,7 @@ syn keyword cp2kKeyword WANTED_PROJ_GRADIENT
 syn keyword cp2kKeyword WANTED_REL_F_ERROR
 syn keyword cp2kKeyword WAVEFUNCTIONS
 syn keyword cp2kKeyword WAVELENGTH
+syn keyword cp2kKeyword WAVE_VECTOR
 syn keyword cp2kKeyword WEIGHT
 syn keyword cp2kKeyword WEIGHTING_FUNCTION
 syn keyword cp2kKeyword WEIGHTS
