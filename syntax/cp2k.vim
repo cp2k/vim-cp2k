@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:cdd058b)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:f89ef83)
 
 if exists("b:current_syntax")
    finish
@@ -3013,6 +3013,8 @@ syn keyword cp2kKeyword COEFFICIENT
 syn keyword cp2kKeyword COEFFICIENTS
 syn keyword cp2kKeyword COEFFICIENT_WEIGHT
 syn keyword cp2kKeyword COHSEX
+syn keyword cp2kKeyword COHSEX_SCALE_OCC
+syn keyword cp2kKeyword COHSEX_SCALE_VIRT
 syn keyword cp2kKeyword COLLECTIVE
 syn keyword cp2kKeyword COLLECTIVE_COMMUNICATION
 syn keyword cp2kKeyword COLORING_METHOD
@@ -5034,8 +5036,6 @@ syn keyword cp2kKeyword SAVE_RF
 syn keyword cp2kKeyword SCALE
 syn keyword cp2kKeyword SCALED
 syn keyword cp2kKeyword SCALE_C
-syn keyword cp2kKeyword SCALE_COHSEX_OCC
-syn keyword cp2kKeyword SCALE_COHSEX_VIRT
 syn keyword cp2kKeyword SCALE_COULOMB
 syn keyword cp2kKeyword SCALE_FILE_NAME
 syn keyword cp2kKeyword SCALE_GAUSSIAN
