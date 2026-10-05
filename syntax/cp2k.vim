@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:f89ef83)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:8a559f8)
 
 if exists("b:current_syntax")
    finish
@@ -4312,6 +4312,7 @@ syn keyword cp2kKeyword NATIVE_GRID_GAPW_COMPOSITE_DIRECT_AO
 syn keyword cp2kKeyword NATIVE_GRID_GAPW_COMPOSITE_REFERENCE
 syn keyword cp2kKeyword NATIVE_GRID_GAPW_DENSITY_PARTITION
 syn keyword cp2kKeyword NATIVE_GRID_LAYOUT
+syn keyword cp2kKeyword NATIVE_GRID_MODEL_FP64
 syn keyword cp2kKeyword NATIVE_GRID_USE_CUDA
 syn keyword cp2kKeyword NATOMS
 syn keyword cp2kKeyword NBAS
