@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:8a559f8)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:d597271)
 
 if exists("b:current_syntax")
    finish
@@ -1227,6 +1227,7 @@ syn keyword cp2kSection COORD_AVG
 syn keyword cp2kSection COORD_FIT_POINTS
 syn keyword cp2kSection COORD_VAR
 syn keyword cp2kSection CORE_COORD
+syn keyword cp2kSection CORE_FILL_KIND
 syn keyword cp2kSection CORE_FORCES
 syn keyword cp2kSection CORE_TRAJECTORY
 syn keyword cp2kSection CORE_VELOCITIES
@@ -3069,6 +3070,8 @@ syn keyword cp2kKeyword CORE_CHARGES_RADII
 syn keyword cp2kKeyword CORE_CHARGE_RADII
 syn keyword cp2kKeyword CORE_CORRECTION
 syn keyword cp2kKeyword CORE_CORR_DIP
+syn keyword cp2kKeyword CORE_FILL
+syn keyword cp2kKeyword CORE_FILL_SPREAD
 syn keyword cp2kKeyword CORE_HAMILTONIAN
 syn keyword cp2kKeyword CORE_PPL
 syn keyword cp2kKeyword CORE_RELATIVITY
