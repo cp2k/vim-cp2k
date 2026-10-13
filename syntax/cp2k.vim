@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:d5a0442)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:103fa69)
 
 if exists("b:current_syntax")
    finish
@@ -75,6 +75,7 @@ syn keyword cp2kConstant 1-4
 syn keyword cp2kConstant 120
 syn keyword cp2kConstant 147
 syn keyword cp2kConstant 1S
+syn keyword cp2kConstant 2
 syn keyword cp2kConstant 2P
 syn keyword cp2kConstant 2PNT
 syn keyword cp2kConstant 2S
@@ -117,7 +118,9 @@ syn keyword cp2kConstant ANDERSON_STABLE
 syn keyword cp2kConstant ANDREUSSI
 syn keyword cp2kConstant ANGSTROM
 syn keyword cp2kConstant AO
+syn keyword cp2kConstant AO_HYBRID
 syn keyword cp2kConstant AO_ORTHO
+syn keyword cp2kConstant AO_SCDM
 syn keyword cp2kConstant ARNOLDI
 syn keyword cp2kConstant ASPC
 syn keyword cp2kConstant ATOM
@@ -2268,6 +2271,7 @@ syn keyword cp2kSection MM_POTENTIAL
 syn keyword cp2kSection MO
 syn keyword cp2kSection MODEL
 syn keyword cp2kSection MODE_SELECTIVE
+syn keyword cp2kSection MOLDEN
 syn keyword cp2kSection MOLDEN_VIB
 syn keyword cp2kSection MOLECULAR_DIPOLES
 syn keyword cp2kSection MOLECULAR_MOMENTS
@@ -3256,6 +3260,10 @@ syn keyword cp2kKeyword DISTRIBUTION-TYPE
 syn keyword cp2kKeyword DISTRIBUTION_LAYOUT
 syn keyword cp2kKeyword DISTRIBUTION_TYPE
 syn keyword cp2kKeyword DIST_EDGE
+syn keyword cp2kKeyword DIS_FROZ_MAX
+syn keyword cp2kKeyword DIS_FROZ_MIN
+syn keyword cp2kKeyword DIS_WIN_MAX
+syn keyword cp2kKeyword DIS_WIN_MIN
 syn keyword cp2kKeyword DKH_ORDER
 syn keyword cp2kKeyword DLAF_CHOLESKY_N_MIN
 syn keyword cp2kKeyword DLAF_NEIGVEC_MIN
@@ -3870,6 +3878,7 @@ syn keyword cp2kKeyword INITIALIZATION_METHOD
 syn keyword cp2kKeyword INITIAL_CONFIGURATION_INFO
 syn keyword cp2kKeyword INITIAL_DEGREES_OF_FREEDOM
 syn keyword cp2kKeyword INITIAL_GUESS
+syn keyword cp2kKeyword INITIAL_PROJECTIONS
 syn keyword cp2kKeyword INITIAL_STEP
 syn keyword cp2kKeyword INITIAL_STEP_SIZE
 syn keyword cp2kKeyword INITIAL_TRANSLATION_VECTOR
