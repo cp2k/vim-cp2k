@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:103fa69)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:be2a531)
 
 if exists("b:current_syntax")
    finish
@@ -128,6 +128,7 @@ syn keyword cp2kConstant ATOMIC
 syn keyword cp2kConstant ATOMIC_KIND_BASIS
 syn keyword cp2kConstant ATOMS
 syn keyword cp2kConstant ATOM_COMPOSITE
+syn keyword cp2kConstant ATOM_EMBEDDING
 syn keyword cp2kConstant AUTO
 syn keyword cp2kConstant AUTOMATIC
 syn keyword cp2kConstant AUTOSELECT
@@ -178,6 +179,7 @@ syn keyword cp2kConstant BINARY_IO
 syn keyword cp2kConstant BISECT
 syn keyword cp2kConstant BISECTION
 syn keyword cp2kConstant BLAS
+syn keyword cp2kConstant BLOCH
 syn keyword cp2kConstant BLOCKED
 syn keyword cp2kConstant BLOCKED_PROJECTION
 syn keyword cp2kConstant BLOCKED_PROJECTION_PURIFY_FULL
@@ -294,6 +296,7 @@ syn keyword cp2kConstant DEVICE
 syn keyword cp2kConstant DFET
 syn keyword cp2kConstant DFTB
 syn keyword cp2kConstant DFTD2
+syn keyword cp2kConstant DFTD2(CHG)
 syn keyword cp2kConstant DFTD3
 syn keyword cp2kConstant DFTD3(BJ)
 syn keyword cp2kConstant DFTD4
@@ -793,6 +796,7 @@ syn keyword cp2kConstant POPLE
 syn keyword cp2kConstant POSITIVE
 syn keyword cp2kConstant POTENTIAL
 syn keyword cp2kConstant PRIMITIVE
+syn keyword cp2kConstant PROJECTED_AO
 syn keyword cp2kConstant PROJECT_R0_OUT
 syn keyword cp2kConstant PROOT
 syn keyword cp2kConstant PS
@@ -3117,6 +3121,7 @@ syn keyword cp2kKeyword CUBES_LU_BOUNDS
 syn keyword cp2kKeyword CUBE_EVAL_RANGE
 syn keyword cp2kKeyword CUBE_FILES
 syn keyword cp2kKeyword CURRENT.WRITETRANSMISSION
+syn keyword cp2kKeyword CURRENT_OPERATOR
 syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_ATOMIC_CLUSTER
@@ -3583,6 +3588,7 @@ syn keyword cp2kKeyword EPS_STORAGE
 syn keyword cp2kKeyword EPS_STORAGE_SCALING
 syn keyword cp2kKeyword EPS_SVD
 syn keyword cp2kKeyword EPS_SYMMETRY
+syn keyword cp2kKeyword EPS_SYMMETRY_OPERATORS
 syn keyword cp2kKeyword EPS_TARGET_FACTOR
 syn keyword cp2kKeyword EPS_TAYLOR
 syn keyword cp2kKeyword EPS_TD_FILTER
@@ -3830,6 +3836,7 @@ syn keyword cp2kKeyword GUESS
 syn keyword cp2kKeyword GVEC_CHUNK_SIZE
 syn keyword cp2kKeyword G_R
 syn keyword cp2kKeyword H
+syn keyword cp2kKeyword HALL_RESPONSE
 syn keyword cp2kKeyword HALOGEN_BINDING
 syn keyword cp2kKeyword HALO_REDUCTION_FACTOR
 syn keyword cp2kKeyword HALO_SIZE
@@ -4154,6 +4161,7 @@ syn keyword cp2kKeyword MAX_LEVEL_SELF_ENERGY
 syn keyword cp2kKeyword MAX_LEVEL_SPECTRAL
 syn keyword cp2kKeyword MAX_LS
 syn keyword cp2kKeyword MAX_MEMORY
+syn keyword cp2kKeyword MAX_MEMORY_MB
 syn keyword cp2kKeyword MAX_MOMENT
 syn keyword cp2kKeyword MAX_MTLR_LOOP
 syn keyword cp2kKeyword MAX_MULTIPOLE_EXPANSION
