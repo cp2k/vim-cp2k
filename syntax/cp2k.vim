@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:62906da)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:55939f2)
 
 if exists("b:current_syntax")
    finish
@@ -1576,6 +1576,7 @@ syn keyword cp2kSection EVGW0
 syn keyword cp2kSection EWALD
 syn keyword cp2kSection EWALD_INFO
 syn keyword cp2kSection EXACT_EXCHANGE
+syn keyword cp2kSection EXACT_RPA_DIAG
 syn keyword cp2kSection EXCHANGE
 syn keyword cp2kSection EXCHANGE_CORRECTION
 syn keyword cp2kSection EXCITED_STATES
@@ -3136,6 +3137,7 @@ syn keyword cp2kKeyword BRACK_LIMIT
 syn keyword cp2kKeyword BRENT_MAX_ITER
 syn keyword cp2kKeyword BRENT_TOL
 syn keyword cp2kKeyword BROADENING
+syn keyword cp2kKeyword BROADENING_ETA
 syn keyword cp2kKeyword BROYDEN_ADAPTIVE_SIGMA
 syn keyword cp2kKeyword BROYDEN_BETA
 syn keyword cp2kKeyword BROYDEN_ENABLE_FLIP
