@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:55939f2)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:e41e4ec)
 
 if exists("b:current_syntax")
    finish
@@ -244,6 +244,8 @@ syn keyword cp2kConstant CANONICAL
 syn keyword cp2kConstant CARTESIAN
 syn keyword cp2kConstant CAUCHY
 syn keyword cp2kConstant CAUCHY_SUBSPACE
+syn keyword cp2kConstant CCSD
+syn keyword cp2kConstant CCSD_T
 syn keyword cp2kConstant CD3
 syn keyword cp2kConstant CD5
 syn keyword cp2kConstant CD7
@@ -797,6 +799,7 @@ syn keyword cp2kConstant MO_DIAG
 syn keyword cp2kConstant MO_NO_DIAG
 syn keyword cp2kConstant MO_SOLVER
 syn keyword cp2kConstant MP
+syn keyword cp2kConstant MP2
 syn keyword cp2kConstant MP2_GPW
 syn keyword cp2kConstant MPI
 syn keyword cp2kConstant MPW1B95
@@ -862,6 +865,7 @@ syn keyword cp2kConstant NORMAL
 syn keyword cp2kConstant NORMAL_MODES
 syn keyword cp2kConstant NOROWPERM
 syn keyword cp2kConstant NOSE
+syn keyword cp2kConstant NOTICE
 syn keyword cp2kConstant NO_SHORTCUT
 syn keyword cp2kConstant NPE_F
 syn keyword cp2kConstant NPE_I
@@ -1163,6 +1167,7 @@ syn keyword cp2kConstant SSE_BLOCK1
 syn keyword cp2kConstant SSE_BLOCK2
 syn keyword cp2kConstant SSE_BLOCK4
 syn keyword cp2kConstant SSE_BLOCK6
+syn keyword cp2kConstant STACK
 syn keyword cp2kConstant STAGE
 syn keyword cp2kConstant STANDARD
 syn keyword cp2kConstant STDA
@@ -1415,6 +1420,7 @@ syn keyword cp2kSection CANONICAL_GRADIENTS
 syn keyword cp2kSection CARTESIAN_EIGS
 syn keyword cp2kSection CASCADE
 syn keyword cp2kSection CASINO
+syn keyword cp2kSection CC4S
 syn keyword cp2kSection CDFT
 syn keyword cp2kSection CDFT_OPT
 syn keyword cp2kSection CELL
@@ -2958,6 +2964,7 @@ syn keyword cp2kKeyword AM.MAXDEPTH
 syn keyword cp2kKeyword AM.NUMBERDIVISIONS
 syn keyword cp2kKeyword AMBER_INFO
 syn keyword cp2kKeyword AMPLITUDE
+syn keyword cp2kKeyword AMPLITUDES_CONVERGENCE
 syn keyword cp2kKeyword ANALYTICAL_GRADIENTS
 syn keyword cp2kKeyword ANALYTICAL_GTERM
 syn keyword cp2kKeyword ANALYTIC_CONTINUATION
@@ -3680,6 +3687,7 @@ syn keyword cp2kKeyword ENERGIES
 syn keyword cp2kKeyword ENERGLOWESTBOUND
 syn keyword cp2kKeyword ENERGY
 syn keyword cp2kKeyword ENERGYGRIDTYPE
+syn keyword cp2kKeyword ENERGY_CONVERGENCE
 syn keyword cp2kKeyword ENERGY_CUTOFF_EMPTY
 syn keyword cp2kKeyword ENERGY_CUTOFF_OCC
 syn keyword cp2kKeyword ENERGY_FILE_NAME
@@ -4181,6 +4189,7 @@ syn keyword cp2kKeyword ISSC_ON_ATOM_LIST
 syn keyword cp2kKeyword IS_INERTIA_COUNT
 syn keyword cp2kKeyword ITERATION
 syn keyword cp2kKeyword ITERATIONS
+syn keyword cp2kKeyword ITER_LEVEL_VERBOSITY
 syn keyword cp2kKeyword ITER_START_VAL
 syn keyword cp2kKeyword ITIMES_START
 syn keyword cp2kKeyword IUPCLTRANS
@@ -4734,6 +4743,7 @@ syn keyword cp2kKeyword N_BCH_HISTORY
 syn keyword cp2kKeyword N_CHEBYSHEV
 syn keyword cp2kKeyword N_DIIS
 syn keyword cp2kKeyword N_EXCITED
+syn keyword cp2kKeyword N_FROZEN_CORE
 syn keyword cp2kKeyword N_GRIDPOINTS
 syn keyword cp2kKeyword N_HISTORY_VEC
 syn keyword cp2kKeyword N_INNER
