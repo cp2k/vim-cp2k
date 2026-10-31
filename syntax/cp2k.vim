@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:e41e4ec)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:d077e66)
 
 if exists("b:current_syntax")
    finish
@@ -2567,6 +2567,7 @@ syn keyword cp2kSection NMR
 syn keyword cp2kSection NNP
 syn keyword cp2kSection NONBONDED
 syn keyword cp2kSection NONBONDED14
+syn keyword cp2kSection NONLINEAR_OPTICS
 syn keyword cp2kSection NON_LOCAL
 syn keyword cp2kSection NORMALMODE
 syn keyword cp2kSection NOSE
@@ -3586,6 +3587,7 @@ syn keyword cp2kKeyword ELECTRONIC_TEMPERATURE_GUESS
 syn keyword cp2kKeyword ELECTRON_CONFIGURATION
 syn keyword cp2kKeyword ELEC_CONF
 syn keyword cp2kKeyword ELEMENT
+syn keyword cp2kKeyword ELEMENTS
 syn keyword cp2kKeyword ELEMENT_CUTOFF
 syn keyword cp2kKeyword ELPA_COMPLEX_KERNEL
 syn keyword cp2kKeyword ELPA_FORCE_REDISTRIBUTE
@@ -4003,6 +4005,11 @@ syn keyword cp2kKeyword FREQUENCY
 syn keyword cp2kKeyword FREQUENCY_END_POINT
 syn keyword cp2kKeyword FREQUENCY_STARTING_POINT
 syn keyword cp2kKeyword FREQUENCY_STEP_SIZE
+syn keyword cp2kKeyword FREQ_1
+syn keyword cp2kKeyword FREQ_2
+syn keyword cp2kKeyword FREQ_3
+syn keyword cp2kKeyword FREQ_4
+syn keyword cp2kKeyword FREQ_5
 syn keyword cp2kKeyword FREQ_MAX_FIT
 syn keyword cp2kKeyword FROM_ENERGY
 syn keyword cp2kKeyword FROZEN_MO_ENERGY_TERM
@@ -4261,6 +4268,7 @@ syn keyword cp2kKeyword KSS
 syn keyword cp2kKeyword KT_CORRECTION
 syn keyword cp2kKeyword K_B
 syn keyword cp2kKeyword K_CONFIDENCE_LIMIT
+syn keyword cp2kKeyword K_MESH
 syn keyword cp2kKeyword K_MESH_G_FACTOR
 syn keyword cp2kKeyword K_RHO
 syn keyword cp2kKeyword K_SPRING
@@ -5579,6 +5587,10 @@ syn keyword cp2kKeyword S_SQRT_METHOD
 syn keyword cp2kKeyword S_SQRT_ORDER
 syn keyword cp2kKeyword T
 syn keyword cp2kKeyword T0
+syn keyword cp2kKeyword T1
+syn keyword cp2kKeyword T1_T2
+syn keyword cp2kKeyword T1_T2_SMOOTHING_WIDTH
+syn keyword cp2kKeyword T2
 syn keyword cp2kKeyword TAMCSTEPS
 syn keyword cp2kKeyword TAMM_DANCOFF
 syn keyword cp2kKeyword TARGET
