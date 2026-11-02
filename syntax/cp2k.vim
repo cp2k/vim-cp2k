@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:d077e66)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:f824184)
 
 if exists("b:current_syntax")
    finish
@@ -1445,6 +1445,7 @@ syn keyword cp2kSection CHI_TENSOR
 syn keyword cp2kSection CI_NEB
 syn keyword cp2kSection CLS_FUNCTION_CUBES
 syn keyword cp2kSection COEFFICIENTS
+syn keyword cp2kSection COHSEX
 syn keyword cp2kSection COLLECTIVE
 syn keyword cp2kSection COLVAR
 syn keyword cp2kSection COLVAR_FUNC_INFO
@@ -5326,11 +5327,13 @@ syn keyword cp2kKeyword SCALE_COULOMB
 syn keyword cp2kKeyword SCALE_FILE_NAME
 syn keyword cp2kKeyword SCALE_GAUSSIAN
 syn keyword cp2kKeyword SCALE_LONGRANGE
+syn keyword cp2kKeyword SCALE_OCC
 syn keyword cp2kKeyword SCALE_RPA
 syn keyword cp2kKeyword SCALE_S
 syn keyword cp2kKeyword SCALE_STEP_SIZE
 syn keyword cp2kKeyword SCALE_T
 syn keyword cp2kKeyword SCALE_TEMP_KIND
+syn keyword cp2kKeyword SCALE_VIRT
 syn keyword cp2kKeyword SCALE_WITH_OCCUPATION_NUMBERS
 syn keyword cp2kKeyword SCALE_WITH_PHASES
 syn keyword cp2kKeyword SCALE_X
