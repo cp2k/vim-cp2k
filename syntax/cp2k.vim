@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:123285f)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:0761fd1)
 
 if exists("b:current_syntax")
    finish
@@ -4616,7 +4616,6 @@ syn keyword cp2kKeyword ND_B
 syn keyword cp2kKeyword NEGF_SCF
 syn keyword cp2kKeyword NEGLECT_ABC
 syn keyword cp2kKeyword NEIGHBOR_LISTS_FROM_SCRATCH
-syn keyword cp2kKeyword NEIGHBOR_RADIUS
 syn keyword cp2kKeyword NEL
 syn keyword cp2kKeyword NELEC
 syn keyword cp2kKeyword NELECTRON
@@ -5239,6 +5238,7 @@ syn keyword cp2kKeyword RHO_MIN
 syn keyword cp2kKeyword RHO_ZERO
 syn keyword cp2kKeyword RI_AO_RATIO
 syn keyword cp2kKeyword RI_AUX_BASIS_SET
+syn keyword cp2kKeyword RI_CUTOFF_ATTENUATION
 syn keyword cp2kKeyword RI_FLAVOR
 syn keyword cp2kKeyword RI_METRIC
 syn keyword cp2kKeyword RI_REGION
