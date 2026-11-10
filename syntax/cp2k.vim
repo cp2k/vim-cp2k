@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:0761fd1)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:db0abe2)
 
 if exists("b:current_syntax")
    finish
@@ -1559,6 +1559,7 @@ syn keyword cp2kSection EFIELD_CUBE
 syn keyword cp2kSection EIGENSOLVER
 syn keyword cp2kSection EIP
 syn keyword cp2kSection ELECTRIC_FIELD_GRADIENT
+syn keyword cp2kSection ELECTRONS
 syn keyword cp2kSection ELF_CUBE
 syn keyword cp2kSection ELF_OPENPMD
 syn keyword cp2kSection EMBED
@@ -3231,6 +3232,9 @@ syn keyword cp2kKeyword CHARGE
 syn keyword cp2kKeyword CHARGE_BETA
 syn keyword cp2kKeyword CHARGE_DISTR_WIDTH
 syn keyword cp2kKeyword CHARGE_EXTENDED
+syn keyword cp2kKeyword CHARGE_MIXING
+syn keyword cp2kKeyword CHARGE_MIXING_INPLACE
+syn keyword cp2kKeyword CHARGE_MIXING_SPAN
 syn keyword cp2kKeyword CHARGE_OCCUP
 syn keyword cp2kKeyword CHEBYSHEV_DEGREE
 syn keyword cp2kKeyword CHECK
@@ -3368,7 +3372,9 @@ syn keyword cp2kKeyword CUBES_LU_BOUNDS
 syn keyword cp2kKeyword CUBE_EVAL_RANGE
 syn keyword cp2kKeyword CUBE_FILES
 syn keyword cp2kKeyword CURRENT.WRITETRANSMISSION
+syn keyword cp2kKeyword CURRENT_FERMI_LEVEL
 syn keyword cp2kKeyword CURRENT_OPERATOR
+syn keyword cp2kKeyword CURRENT_WORKFUNCTION
 syn keyword cp2kKeyword CUSTOM_PATH
 syn keyword cp2kKeyword CUTOFF
 syn keyword cp2kKeyword CUTOFF_ATOMIC_CLUSTER
@@ -3883,6 +3889,7 @@ syn keyword cp2kKeyword EXCLUDE_MM
 syn keyword cp2kKeyword EXCLUDE_QM
 syn keyword cp2kKeyword EXCLUDE_VDW
 syn keyword cp2kKeyword EXPONENT_TAILORED_WEIGHTS
+syn keyword cp2kKeyword EXPORT_PROJECTION_CANDIDATES
 syn keyword cp2kKeyword EXP_ACCURACY
 syn keyword cp2kKeyword EXTENDED_DELTA_CHARGE
 syn keyword cp2kKeyword EXTENSION_BASIS
@@ -4624,6 +4631,7 @@ syn keyword cp2kKeyword NENERGIMLINE
 syn keyword cp2kKeyword NENERGREAL
 syn keyword cp2kKeyword NEQUIL_STEPS
 syn keyword cp2kKeyword NEUMANN_DIRECTIONS
+syn keyword cp2kKeyword NEUTRAL_ELECTRONS
 syn keyword cp2kKeyword NEUTRAL_GRID
 syn keyword cp2kKeyword NEUTRAL_MU
 syn keyword cp2kKeyword NEW_PREC_EACH
@@ -4945,12 +4953,15 @@ syn keyword cp2kKeyword POSITION_SCALED
 syn keyword cp2kKeyword POST_PROCESSING
 syn keyword cp2kKeyword POST_PROCESSING_OUTPUT
 syn keyword cp2kKeyword POTENTIAL
+syn keyword cp2kKeyword POTENTIAL_AVERAGE_AXIS
+syn keyword cp2kKeyword POTENTIAL_AVERAGE_REGION
 syn keyword cp2kKeyword POTENTIAL_DATA
 syn keyword cp2kKeyword POTENTIAL_ENERGY
 syn keyword cp2kKeyword POTENTIAL_FILE_NAME
 syn keyword cp2kKeyword POTENTIAL_NAME
 syn keyword cp2kKeyword POTENTIAL_PARAM
 syn keyword cp2kKeyword POTENTIAL_TYPE
+syn keyword cp2kKeyword POTENTIOSTAT_ENERGY
 syn keyword cp2kKeyword POT_FILE
 syn keyword cp2kKeyword POT_FILE_NAME
 syn keyword cp2kKeyword POT_GUESS
@@ -5047,6 +5058,7 @@ syn keyword cp2kKeyword PW_HFX
 syn keyword cp2kKeyword PW_HFX_BLOCKSIZE
 syn keyword cp2kKeyword P_EXPONENT
 syn keyword cp2kKeyword P_EXPONENTS
+syn keyword cp2kKeyword P_INIT
 syn keyword cp2kKeyword P_QUANTUM_NUMBERS
 syn keyword cp2kKeyword P_SCREEN_CORRECTION_FACTOR
 syn keyword cp2kKeyword QAOH
@@ -5075,6 +5087,7 @@ syn keyword cp2kKeyword Q_BEAD
 syn keyword cp2kKeyword Q_CENTROID
 syn keyword cp2kKeyword Q_END
 syn keyword cp2kKeyword Q_EXPONENT
+syn keyword cp2kKeyword Q_INIT
 syn keyword cp2kKeyword Q_MAX
 syn keyword cp2kKeyword R
 syn keyword cp2kKeyword R0
@@ -5600,6 +5613,7 @@ syn keyword cp2kKeyword TAMM_DANCOFF
 syn keyword cp2kKeyword TARGET
 syn keyword cp2kKeyword TARGETS
 syn keyword cp2kKeyword TARGET_DELTA_ENERGY
+syn keyword cp2kKeyword TARGET_FERMI_LEVEL
 syn keyword cp2kKeyword TARGET_GROWTH
 syn keyword cp2kKeyword TARGET_LIMIT
 syn keyword cp2kKeyword TARGET_POT_SEMICORE
@@ -5615,6 +5629,7 @@ syn keyword cp2kKeyword TAS_SPLIT_FACTOR
 syn keyword cp2kKeyword TAU
 syn keyword cp2kKeyword TAUCUT
 syn keyword cp2kKeyword TAU_CUTOFF
+syn keyword cp2kKeyword TAU_POTENTIOSTAT
 syn keyword cp2kKeyword TB3_INTERACTION
 syn keyword cp2kKeyword TC_PRESSURE
 syn keyword cp2kKeyword TC_TEMPERATURE
@@ -5634,6 +5649,7 @@ syn keyword cp2kKeyword TEMPSTEP_BASE
 syn keyword cp2kKeyword TEMPSTEP_MAX
 syn keyword cp2kKeyword TEMP_FAST
 syn keyword cp2kKeyword TEMP_KIND
+syn keyword cp2kKeyword TEMP_POTENTIOSTAT
 syn keyword cp2kKeyword TEMP_SLOW
 syn keyword cp2kKeyword TEMP_TOL
 syn keyword cp2kKeyword TEMP_TOL_FAST
