@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:db0abe2)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:c641773)
 
 if exists("b:current_syntax")
    finish
@@ -383,6 +383,7 @@ syn keyword cp2kConstant DODSVWN5
 syn keyword cp2kConstant DOGLEG
 syn keyword cp2kConstant DOMAIN
 syn keyword cp2kConstant DOS
+syn keyword cp2kConstant DOUBLE
 syn keyword cp2kConstant DRIVER
 syn keyword cp2kConstant DRPA75
 syn keyword cp2kConstant DRSLL
@@ -4072,6 +4073,7 @@ syn keyword cp2kKeyword GMAX
 syn keyword cp2kKeyword GMIX_P
 syn keyword cp2kKeyword GOLD_TARGET
 syn keyword cp2kKeyword GPUS_PER_POINT
+syn keyword cp2kKeyword GPU_PRECISION
 syn keyword cp2kKeyword GPW_TYPE
 syn keyword cp2kKeyword GP_NOISE_VAR
 syn keyword cp2kKeyword GP_SCALE
@@ -5770,6 +5772,7 @@ syn keyword cp2kKeyword USE_FINER_GRID
 syn keyword cp2kKeyword USE_G96_VELOCITY
 syn keyword cp2kKeyword USE_GAUSS_HERMITE
 syn keyword cp2kKeyword USE_GEEP_LIB
+syn keyword cp2kKeyword USE_GPU
 syn keyword cp2kKeyword USE_HALOGEN_CORRECTION
 syn keyword cp2kKeyword USE_HARTREE
 syn keyword cp2kKeyword USE_HFX_IMPLEMENTATION
