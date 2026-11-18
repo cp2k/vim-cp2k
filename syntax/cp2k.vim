@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:dae9da4)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:5057c24)
 
 if exists("b:current_syntax")
    finish
@@ -4135,6 +4135,7 @@ syn keyword cp2kKeyword HYDROGENS
 syn keyword cp2kKeyword HYDROGEN_STO_NG
 syn keyword cp2kKeyword IC_CORR_LIST
 syn keyword cp2kKeyword IC_CORR_LIST_BETA
+syn keyword cp2kKeyword IDPP
 syn keyword cp2kKeyword IGNORE_CONVERGENCE_FAILURE
 syn keyword cp2kKeyword IGNORE_EXCITED
 syn keyword cp2kKeyword IGNORE_MISSING_CRITICAL_PARAMS
