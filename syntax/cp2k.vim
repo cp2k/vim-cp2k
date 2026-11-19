@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:5057c24)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:ec04593)
 
 if exists("b:current_syntax")
    finish
@@ -2827,6 +2827,7 @@ syn keyword cp2kSection TREXIO
 syn keyword cp2kSection U
 syn keyword cp2kSection UB
 syn keyword cp2kSection UMBRELLA_INTEGRATION
+syn keyword cp2kSection UNFOLDING
 syn keyword cp2kSection UPDATE
 syn keyword cp2kSection UPF_FILE
 syn keyword cp2kSection UVAR
@@ -5601,6 +5602,7 @@ syn keyword cp2kKeyword SYMMETRY_ELEMENTS
 syn keyword cp2kKeyword SYMMETRY_REDUCTION_METHOD
 syn keyword cp2kKeyword SYMM_EXCLUDE_RANGE
 syn keyword cp2kKeyword SYMM_REDUCTION
+syn keyword cp2kKeyword SYMM_TOL
 syn keyword cp2kKeyword S_EXPONENTS
 syn keyword cp2kKeyword S_INVERSION
 syn keyword cp2kKeyword S_PRECONDITIONER
@@ -5713,6 +5715,7 @@ syn keyword cp2kKeyword TRAJ_FILE_NAME
 syn keyword cp2kKeyword TRANSA
 syn keyword cp2kKeyword TRANSB
 syn keyword cp2kKeyword TRANSFORMATION
+syn keyword cp2kKeyword TRANSFORMATION_MATRIX
 syn keyword cp2kKeyword TRANSLATION_SCALE
 syn keyword cp2kKeyword TRANSLATION_VECTOR
 syn keyword cp2kKeyword TRANSMISSIONEMBED
