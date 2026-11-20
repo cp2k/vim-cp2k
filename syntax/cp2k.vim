@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:ec04593)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:4f857eb)
 
 if exists("b:current_syntax")
    finish
@@ -1238,7 +1238,6 @@ syn keyword cp2kConstant TRS4
 syn keyword cp2kConstant TRUE
 syn keyword cp2kConstant TRUNCATED
 syn keyword cp2kConstant TRUST_REGION
-syn keyword cp2kConstant TSHPSC
 syn keyword cp2kConstant TWO_POLE
 syn keyword cp2kConstant UFF
 syn keyword cp2kConstant UHF
@@ -2747,6 +2746,7 @@ syn keyword cp2kSection SHG_INTEGRALS_TEST
 syn keyword cp2kSection SHIELDING_TENSOR
 syn keyword cp2kSection SIC
 syn keyword cp2kSection SIEPMANN
+syn keyword cp2kSection SKALA_NATIVE
 syn keyword cp2kSection SLAB_SAMPLING
 syn keyword cp2kSection SMEAGOL
 syn keyword cp2kSection SMEAR
@@ -3016,6 +3016,8 @@ syn keyword cp2kKeyword ATOMS_MEMORY
 syn keyword cp2kKeyword ATOMS_PLANE
 syn keyword cp2kKeyword ATOMS_TO
 syn keyword cp2kKeyword ATOMS_TO_B
+syn keyword cp2kKeyword ATOM_CHUNKS
+syn keyword cp2kKeyword ATOM_CHUNK_MAX_ROWS
 syn keyword cp2kKeyword ATOM_COEF
 syn keyword cp2kKeyword ATOM_COORDINATION_NUMBERS
 syn keyword cp2kKeyword ATOM_IDS
@@ -3023,6 +3025,7 @@ syn keyword cp2kKeyword ATOM_INDEX_1
 syn keyword cp2kKeyword ATOM_INDEX_2
 syn keyword cp2kKeyword ATOM_LIST
 syn keyword cp2kKeyword ATOM_NUMBER
+syn keyword cp2kKeyword ATOM_PARTITION
 syn keyword cp2kKeyword ATOM_POINT
 syn keyword cp2kKeyword ATOM_TYPE
 syn keyword cp2kKeyword ATYPE
@@ -3217,9 +3220,11 @@ syn keyword cp2kKeyword CBS.SUBSYSTEM
 syn keyword cp2kKeyword CELL_FILE
 syn keyword cp2kKeyword CELL_FILE_FORMAT
 syn keyword cp2kKeyword CELL_FILE_NAME
+syn keyword cp2kKeyword CELL_MATRIX
 syn keyword cp2kKeyword CELL_OPT
 syn keyword cp2kKeyword CELL_SHAPE
 syn keyword cp2kKeyword CELL_SIZE
+syn keyword cp2kKeyword CELL_WEIGHT
 syn keyword cp2kKeyword CENTER
 syn keyword cp2kKeyword CENTER_GRID
 syn keyword cp2kKeyword CENTER_POINT
@@ -3478,6 +3483,7 @@ syn keyword cp2kKeyword DFTD3_CORRECTION
 syn keyword cp2kKeyword DFTD4_CORRECTION
 syn keyword cp2kKeyword DGEMM
 syn keyword cp2kKeyword DIAGNOSE_LIOUVILLIAN_EIG
+syn keyword cp2kKeyword DIAGNOSTICS
 syn keyword cp2kKeyword DIAGONALIZATION
 syn keyword cp2kKeyword DIAGONAL_DFTB3
 syn keyword cp2kKeyword DIAG_METHOD
@@ -4044,6 +4050,13 @@ syn keyword cp2kKeyword GAMMA_POINT
 syn keyword cp2kKeyword GAP
 syn keyword cp2kKeyword GAPW_1C_BASIS
 syn keyword cp2kKeyword GAPW_ACCURATE_XCINT
+syn keyword cp2kKeyword GAPW_ATOM_COMPOSITE_COMPONENTS
+syn keyword cp2kKeyword GAPW_ATOM_COMPOSITE_DIAGNOSTIC
+syn keyword cp2kKeyword GAPW_ATOM_COMPOSITE_FD_STEP
+syn keyword cp2kKeyword GAPW_ATOM_COMPOSITE_REFERENCE
+syn keyword cp2kKeyword GAPW_COMPOSITE_DIRECT_AO
+syn keyword cp2kKeyword GAPW_COMPOSITE_REFERENCE
+syn keyword cp2kKeyword GAPW_DENSITY_PARTITION
 syn keyword cp2kKeyword GAPW_MAX_ALPHA
 syn keyword cp2kKeyword GAPW_PRJ_RADII
 syn keyword cp2kKeyword GAP_ENERGY_SCALE
@@ -4300,6 +4313,7 @@ syn keyword cp2kKeyword LAST_SNAPSHOT
 syn keyword cp2kKeyword LATTICE_FFT
 syn keyword cp2kKeyword LATTICE_FFT_LOCAL_CELLS
 syn keyword cp2kKeyword LATTICE_WEIGHT
+syn keyword cp2kKeyword LAYOUT
 syn keyword cp2kKeyword LBFGS_CURVATURE_TOL
 syn keyword cp2kKeyword LBFGS_DAMPING
 syn keyword cp2kKeyword LBIAS
@@ -4530,6 +4544,7 @@ syn keyword cp2kKeyword MM_SUBSYS
 syn keyword cp2kKeyword MODEFACTOR
 syn keyword cp2kKeyword MODEL
 syn keyword cp2kKeyword MODEL_ATOM_CHUNK_SIZE
+syn keyword cp2kKeyword MODEL_FP64
 syn keyword cp2kKeyword MODEL_GRADIENT_RUNTIME
 syn keyword cp2kKeyword MODEL_GRAD_NORM_RATIO
 syn keyword cp2kKeyword MODEL_TYPE
@@ -4592,23 +4607,6 @@ syn keyword cp2kKeyword N
 syn keyword cp2kKeyword N0
 syn keyword cp2kKeyword NAB_MIN
 syn keyword cp2kKeyword NAME_BODY
-syn keyword cp2kKeyword NATIVE_GRID
-syn keyword cp2kKeyword NATIVE_GRID_ATOM_CHUNKS
-syn keyword cp2kKeyword NATIVE_GRID_ATOM_CHUNK_MAX_ROWS
-syn keyword cp2kKeyword NATIVE_GRID_ATOM_CHUNK_ROUTING
-syn keyword cp2kKeyword NATIVE_GRID_ATOM_PARTITION
-syn keyword cp2kKeyword NATIVE_GRID_CUDA_DEVICE
-syn keyword cp2kKeyword NATIVE_GRID_DIAGNOSTICS
-syn keyword cp2kKeyword NATIVE_GRID_GAPW_ATOM_COMPOSITE_COMPONENTS
-syn keyword cp2kKeyword NATIVE_GRID_GAPW_ATOM_COMPOSITE_DIAGNOSTIC
-syn keyword cp2kKeyword NATIVE_GRID_GAPW_ATOM_COMPOSITE_FD_STEP
-syn keyword cp2kKeyword NATIVE_GRID_GAPW_ATOM_COMPOSITE_REFERENCE
-syn keyword cp2kKeyword NATIVE_GRID_GAPW_COMPOSITE_DIRECT_AO
-syn keyword cp2kKeyword NATIVE_GRID_GAPW_COMPOSITE_REFERENCE
-syn keyword cp2kKeyword NATIVE_GRID_GAPW_DENSITY_PARTITION
-syn keyword cp2kKeyword NATIVE_GRID_LAYOUT
-syn keyword cp2kKeyword NATIVE_GRID_MODEL_FP64
-syn keyword cp2kKeyword NATIVE_GRID_USE_CUDA
 syn keyword cp2kKeyword NATOMS
 syn keyword cp2kKeyword NBAS
 syn keyword cp2kKeyword NBEADS
@@ -5486,6 +5484,7 @@ syn keyword cp2kKeyword SOC_NBANDS_VIRT
 syn keyword cp2kKeyword SOC_WINDOW_OCC
 syn keyword cp2kKeyword SOC_WINDOW_SMEARING
 syn keyword cp2kKeyword SOC_WINDOW_VIRT
+syn keyword cp2kKeyword SOLID_STATE
 syn keyword cp2kKeyword SOLUTE_HE
 syn keyword cp2kKeyword SOLUTE_INTERACTION
 syn keyword cp2kKeyword SOLUTE_RADIUS
@@ -6551,9 +6550,9 @@ syn keyword cp2kKeyword SURFACE_DIPOLE SURF_DIP
 syn keyword cp2kKeyword SURFACE_TENSION
 syn keyword cp2kKeyword TDA
 syn keyword cp2kKeyword TEMP_TO TEMPERATURE_TOLERANCE
-syn keyword cp2kKeyword TSHPSC_DATA T_C_G_DATA
 syn keyword cp2kKeyword TYPE
 syn keyword cp2kKeyword TYPES
+syn keyword cp2kKeyword T_C_G_DATA
 syn keyword cp2kKeyword UNIT
 syn keyword cp2kKeyword UNRESTRICTED_KOHN_SHAM LSD SPIN_POLARIZED
 syn keyword cp2kKeyword USE_DELTA_P KP_USE_P_DIFF USE_P_DIFF
