@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:4f857eb)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:dbd702d)
 
 if exists("b:current_syntax")
    finish
@@ -708,6 +708,8 @@ syn keyword cp2kConstant LINEAR_RESPONSE
 syn keyword cp2kConstant LINEAR_WF
 syn keyword cp2kConstant LIST
 syn keyword cp2kConstant LIU_STOREY
+syn keyword cp2kConstant LI_BISECT
+syn keyword cp2kConstant LI_IDPP
 syn keyword cp2kConstant LLP
 syn keyword cp2kConstant LMKLL
 syn keyword cp2kConstant LOCAL_SCF
@@ -1188,6 +1190,7 @@ syn keyword cp2kConstant SYEVD
 syn keyword cp2kConstant SYEVX
 syn keyword cp2kConstant SYMBOLIC
 syn keyword cp2kConstant SYRK
+syn keyword cp2kConstant S_IDPP
 syn keyword cp2kConstant T
 syn keyword cp2kConstant T92
 syn keyword cp2kConstant TAILORED
@@ -4149,7 +4152,6 @@ syn keyword cp2kKeyword HYDROGENS
 syn keyword cp2kKeyword HYDROGEN_STO_NG
 syn keyword cp2kKeyword IC_CORR_LIST
 syn keyword cp2kKeyword IC_CORR_LIST_BETA
-syn keyword cp2kKeyword IDPP
 syn keyword cp2kKeyword IGNORE_CONVERGENCE_FAILURE
 syn keyword cp2kKeyword IGNORE_EXCITED
 syn keyword cp2kKeyword IGNORE_MISSING_CRITICAL_PARAMS
@@ -4209,6 +4211,7 @@ syn keyword cp2kKeyword INTERMOLECULAR
 syn keyword cp2kKeyword INTERPOLATE_GRADIENT
 syn keyword cp2kKeyword INTERPOLATE_SHIFT
 syn keyword cp2kKeyword INTERPOLATION
+syn keyword cp2kKeyword INTERPOLATION_METHOD
 syn keyword cp2kKeyword INT_EXECUTION_SPACE
 syn keyword cp2kKeyword INVARIANT
 syn keyword cp2kKeyword INVERSION_SYMMETRY_ONLY
