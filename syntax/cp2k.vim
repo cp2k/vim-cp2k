@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:dbd702d)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:1be8651)
 
 if exists("b:current_syntax")
    finish
@@ -503,8 +503,6 @@ syn keyword cp2kConstant FERMI_AMALDI
 syn keyword cp2kConstant FERMI_DIRAC
 syn keyword cp2kConstant FERMI_LOW_RANK
 syn keyword cp2kConstant FFT
-syn keyword cp2kConstant FFTSG
-syn keyword cp2kConstant FFTW
 syn keyword cp2kConstant FFTW3
 syn keyword cp2kConstant FFT_USE_DEPS
 syn keyword cp2kConstant FFT_USE_DRHO
@@ -2864,6 +2862,7 @@ syn keyword cp2kSection WEIGHTS
 syn keyword cp2kSection WEIGHT_FUNCTION
 syn keyword cp2kSection WFC_GPW
 syn keyword cp2kSection WFN_MIX
+syn keyword cp2kSection WFN_RESTART
 syn keyword cp2kSection WF_CORRELATION
 syn keyword cp2kSection WILLIAMS
 syn keyword cp2kSection WINDING_NUMBER
@@ -3940,6 +3939,7 @@ syn keyword cp2kKeyword FERMI_LOW_RANK_BASE
 syn keyword cp2kKeyword FERMI_LOW_RANK_MAX_RANK
 syn keyword cp2kKeyword FFT
 syn keyword cp2kKeyword FFTW_PLAN_TYPE
+syn keyword cp2kKeyword FFTW_USE_GURU_INTERFACE
 syn keyword cp2kKeyword FFTW_WISDOM_FILE_NAME
 syn keyword cp2kKeyword FFT_GRID_SIZE
 syn keyword cp2kKeyword FFT_MODE
@@ -4361,6 +4361,7 @@ syn keyword cp2kKeyword LOAD_BALANCE_INFO
 syn keyword cp2kKeyword LOAD_SCALE
 syn keyword cp2kKeyword LOCALIZATION_OPERATOR
 syn keyword cp2kKeyword LOCALIZE
+syn keyword cp2kKeyword LOCALIZE_INITIAL_WFN
 syn keyword cp2kKeyword LOCHOMO_RESTART_FILE_NAME
 syn keyword cp2kKeyword LOCKING
 syn keyword cp2kKeyword LOCK_DISTRIBUTION
@@ -5141,6 +5142,7 @@ syn keyword cp2kKeyword REFERENCE
 syn keyword cp2kKeyword REFERENCE_2
 syn keyword cp2kKeyword REFERENCE_BASIS
 syn keyword cp2kKeyword REFERENCE_C9_TERM
+syn keyword cp2kKeyword REFERENCE_CELL
 syn keyword cp2kKeyword REFERENCE_CHARGE
 syn keyword cp2kKeyword REFERENCE_CLI
 syn keyword cp2kKeyword REFERENCE_FUNCTIONAL
