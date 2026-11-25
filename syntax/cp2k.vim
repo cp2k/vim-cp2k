@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:1be8651)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:c4c41e3)
 
 if exists("b:current_syntax")
    finish
@@ -2708,6 +2708,7 @@ syn keyword cp2kSection RI_METRIC_2C_INTS
 syn keyword cp2kSection RI_MP2
 syn keyword cp2kSection RI_RPA
 syn keyword cp2kSection RI_RS
+syn keyword cp2kSection RI_RS_RPA
 syn keyword cp2kSection RI_SOS_MP2
 syn keyword cp2kSection RMSD
 syn keyword cp2kSection RNG_INIT
@@ -3584,6 +3585,7 @@ syn keyword cp2kKeyword D_2
 syn keyword cp2kKeyword D_3
 syn keyword cp2kKeyword D_EXPONENTS
 syn keyword cp2kKeyword D_FILTER
+syn keyword cp2kKeyword D_LP_COMPUTATION
 syn keyword cp2kKeyword D_QUANTUM_NUMBERS
 syn keyword cp2kKeyword E
 syn keyword cp2kKeyword EACH
@@ -5022,6 +5024,7 @@ syn keyword cp2kKeyword PRINT_ONLY_ACC
 syn keyword cp2kKeyword PRINT_PAO
 syn keyword cp2kKeyword PRINT_PHASES
 syn keyword cp2kKeyword PRINT_SELF_ENERGY
+syn keyword cp2kKeyword PRINT_SPIN_TEXTURE
 syn keyword cp2kKeyword PRINT_STRESS
 syn keyword cp2kKeyword PRINT_TEST_OUTPUT
 syn keyword cp2kKeyword PRINT_VIRTUALS
@@ -5483,9 +5486,9 @@ syn keyword cp2kKeyword SMOOTHING_WIDTH
 syn keyword cp2kKeyword SMOOTH_INITIAL_MAG
 syn keyword cp2kKeyword SMOOTH_WIDTH
 syn keyword cp2kKeyword SOC
+syn keyword cp2kKeyword SOC_DIAG_OCC
+syn keyword cp2kKeyword SOC_DIAG_VIRT
 syn keyword cp2kKeyword SOC_ENERGY_WINDOW
-syn keyword cp2kKeyword SOC_NBANDS_OCC
-syn keyword cp2kKeyword SOC_NBANDS_VIRT
 syn keyword cp2kKeyword SOC_WINDOW_OCC
 syn keyword cp2kKeyword SOC_WINDOW_SMEARING
 syn keyword cp2kKeyword SOC_WINDOW_VIRT
@@ -5527,6 +5530,7 @@ syn keyword cp2kKeyword SPIN_DIPOLE
 syn keyword cp2kKeyword SPIN_ORBIT_COUPLING
 syn keyword cp2kKeyword SPIN_POLARISATION
 syn keyword cp2kKeyword SPIN_POL_PARAM
+syn keyword cp2kKeyword SPIN_TEXTURE_ATOMS
 syn keyword cp2kKeyword SPLINE_DATA
 syn keyword cp2kKeyword SPLINE_FIND_COEFFS
 syn keyword cp2kKeyword SPLINE_INFO
