@@ -7,7 +7,7 @@
 " - XSLT dump and improved syntax highlighting (10.12.2013, Matthias Krack)
 " - Folding and automatic indentation added (13.12.2013, Matthias Krack)
 " - Remove folding since it overrides user's defaults (18.11.2016, Patrick Seewald)
-" CP2K-Version: CP2K version 2026.2 (Development Version) (git:c4c41e3)
+" CP2K-Version: CP2K version 2026.2 (Development Version) (git:62e77a6)
 
 if exists("b:current_syntax")
    finish
@@ -509,6 +509,8 @@ syn keyword cp2kConstant FFT_USE_DRHO
 syn keyword cp2kConstant FILTER_MATRIX
 syn keyword cp2kConstant FINE
 syn keyword cp2kConstant FINITE
+syn keyword cp2kConstant FIRE
+syn keyword cp2kConstant FIRE2
 syn keyword cp2kConstant FIST
 syn keyword cp2kConstant FIT
 syn keyword cp2kConstant FIX_POINT
@@ -640,6 +642,7 @@ syn keyword cp2kConstant INSCRIBED
 syn keyword cp2kConstant INTEL_GPU
 syn keyword cp2kConstant INTERLEAVED
 syn keyword cp2kConstant INVERSE
+syn keyword cp2kConstant INVERSE_1C
 syn keyword cp2kConstant INVERSE_CHOLESKY
 syn keyword cp2kConstant INVERSE_DBCSR
 syn keyword cp2kConstant INVERSE_UPDATE
@@ -1617,6 +1620,7 @@ syn keyword cp2kSection FIELD
 syn keyword cp2kSection FILTER_MATRIX
 syn keyword cp2kSection FINAL_BAND
 syn keyword cp2kSection FINAL_STRUCTURE
+syn keyword cp2kSection FIRE
 syn keyword cp2kSection FIT_BASIS
 syn keyword cp2kSection FIT_CHARGE
 syn keyword cp2kSection FIT_CLI
@@ -3223,6 +3227,7 @@ syn keyword cp2kKeyword CBS.SUBSYSTEM
 syn keyword cp2kKeyword CELL_FILE
 syn keyword cp2kKeyword CELL_FILE_FORMAT
 syn keyword cp2kKeyword CELL_FILE_NAME
+syn keyword cp2kKeyword CELL_MASS_FACTOR
 syn keyword cp2kKeyword CELL_MATRIX
 syn keyword cp2kKeyword CELL_OPT
 syn keyword cp2kKeyword CELL_SHAPE
@@ -4482,6 +4487,7 @@ syn keyword cp2kKeyword MAX_STEPSIZE
 syn keyword cp2kKeyword MAX_STEP_SIZE
 syn keyword cp2kKeyword MAX_SUBSPACE_FACTOR
 syn keyword cp2kKeyword MAX_TAYLOR
+syn keyword cp2kKeyword MAX_TIMESTEP_FACTOR
 syn keyword cp2kKeyword MAX_TRUST_RADIUS
 syn keyword cp2kKeyword MAX_VAR_FRACTION
 syn keyword cp2kKeyword MAX_WEIGHT
@@ -4926,7 +4932,6 @@ syn keyword cp2kKeyword PHI0
 syn keyword cp2kKeyword PHYSCON
 syn keyword cp2kKeyword PIMD_BEADWISE_CONSTRAINT
 syn keyword cp2kKeyword PINT
-syn keyword cp2kKeyword PINT_UNIT
 syn keyword cp2kKeyword PLANE
 syn keyword cp2kKeyword PLOT_REL_ENERGY
 syn keyword cp2kKeyword PLUMED_INPUT_FILE
@@ -5805,6 +5810,7 @@ syn keyword cp2kKeyword USE_SCF_CORRECTION
 syn keyword cp2kKeyword USE_SCF_ENERGY_INFO
 syn keyword cp2kKeyword USE_SECOND_VARIATION
 syn keyword cp2kKeyword USE_SYMMETRY
+syn keyword cp2kKeyword USPP_METHOD
 syn keyword cp2kKeyword UTIL_INFO
 syn keyword cp2kKeyword U_MINUS_J
 syn keyword cp2kKeyword U_RAMPING
@@ -6500,6 +6506,7 @@ syn keyword cp2kKeyword ORBITAL_BASIS_SET ORB_BASIS
 syn keyword cp2kKeyword ORBITAL_LIST
 syn keyword cp2kKeyword OUT_EACH_MO
 syn keyword cp2kKeyword PARMFILE
+syn keyword cp2kKeyword PINT_UNIT
 syn keyword cp2kKeyword POINT
 syn keyword cp2kKeyword POINTS
 syn keyword cp2kKeyword POINTS_FROM
